@@ -1,0 +1,94 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Bündner Urkundenbuch (Ed. Meyer-Marthaler/Perret) Nr. 3</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Bündner Urkundenbuches</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/880043962</idno>
+                  <title level="m" type="main">Bündner Urkundenbuch</title>
+                  <title level="m" type="volume">390-1199</title>
+                  <editor xml:id="meyermarthaler">Meyer-Marthaler, Elisabeth</editor>
+                  <editor xml:id="perret">Perret, Franz</editor>
+                  <imprint>
+                     <pubPlace>Chur</pubPlace>
+                     <date when="1955" n="originalAusgabe">1955</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  4
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Bündner Urkundenbuches, welches 1955 von Elisabeth Meyer-Marthaler und Franz Perret herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="buenden.meyer-marthaler0003">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Eine Bestallungsformel für den Dukat beider Rätien bezeichnet diese als die Festen Italiens und mahnt den neueingesetzten Dux, die Barbaren abzufangen und dem römischen Volk den Frieden zu wahren.</p>
+               </div>
+         <dateline>
+                  <date notBefore="0400" notAfter="0507">Vor 507</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:buenden.meyer-marthaler0003.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <head xml:space="preserve"><w>Formula</w> <w>ducatus</w> <w>Raetiarum</w>.</head>
+                     <p xml:space="preserve"><w>Quamvis</w> <w>spectabilitatis</w> <w>honor</w> <w>unus</w> <w>esse</w> <w>videatur</w> <w>nec</w> <w>in</w> <w>his</w> <w>aliquid</w> <w>aIiud</w> <w>nisi</w> <w>tempus</w> <w>soleat</w> <w>anteferri</w>, <w>tamen</w> <w>rerum</w> <w>qualitate</w> <w>perpensa</w> <w>multum</w> <w>his</w> <w>creditum</w> <w>videtur</w> <w>quibus</w> <w>confinales</w> <w>populi</w> <w>deputantur</w>, <w>quia</w> <w>non</w> <w>est</w> <w>tale</w> <w>pacatis</w> <w>regionibus</w> <w>ius</w> <w>dicere</w>, <w>quale</w> <w>suspectis</w> <w>gentibus</w> <w>assidere</w>, <w>ubi</w> <w>non</w> <w>tantum</w> <w>vitia</w> <w>quantum</w> <w>bella</w> <w>suspecta</w> <w>sunt</w> <w>nec</w> <w>solum</w> <w>vox</w> <w>praeconis</w> <w>insonat</w>, <w>sed</w> <w>tubarum</w> <w>crepitus</w> <w>frequenter</w> <w>insultat</w>. <w>Raetiae</w> <w>namque</w> <w>munimina</w> <w>sunt</w> <w>Italiae</w> <w>et</w> <w>claustra</w> <w>provinciae</w>: <w>quae</w> <w>non</w> <w>immerito</w> <w>sic</w> <w>appellate</w> <w>esse</w> <w>iudicamus</w>, <w>quando</w> <w>contra</w> <w>feras</w> <w>et</w> <w>agrestissimas</w> <w>gentes</w> <w>velut</w> <w>quaedam</w> <w>plagarum</w> <w>obstacula</w> <w>disponuntur</w>. <w>Ibi</w> <w>enim</w> <w>impetus</w> <w>gentilis</w> <w>excipitur</w> <w>et</w> <w>transmissis</w> <w>iaculis</w> <w>sauciatur</w> <w>furibunda</w> <w>praesumptio</w>, <w>sic</w> <w>gentilis</w> <w>impetus</w> <w>vestra</w> <w>venatio</w> <w>est</w> <w>et</w> <w>ludo</w> <w>geritis</w> <w>quod</w> <w>vos</w> <w>assidue</w> <w>feliciter</w> <w>egisse</w> <w>sentitis</w>. <w>Ideoque</w> <w>validum</w> <w>te</w> <w>ingenio</w> <w>ac</w> <w>viribus</w> <w>audientes</w> <w>per</w> <w>illam</w> <w>indictionem</w> <w>ducatum</w> <w>tibi</w> <w>cedimus</w> <w>Raetiarum</w>, <w>ut</w> <w>milites</w> <w>et</w> <w>in</w> <w>pace</w> <w>regas</w> <w>et</w> <w>cum</w> <w>eis</w> <w>fines</w> <w>nostros</w> <w>sollemni</w> <w>alacritate</w> <w>circum</w> <w>eas</w>, <w>quia</w> <w>non</w> <w>parvam</w> <w>rem</w> <w>tibi</w> <w>respicis</w> <w>fuisse</w> <w>commissam</w>, <w>quando</w> <w>tranquillitas</w> <w>regni</w> <w>nostri</w> <w>tua</w> <w>creditur</w> <w>sollicitudine</w> <w>custodiri</w>. <w>Ita</w> <w>tamen</w>, <w>ut</w> <w>milites</w> <w>tibi</w> <w>commissi</w> <w>vivant</w> <w>cum</w> <w>provincialibus</w> <w>iure</w> <w>civili</w> <w>nec</w> <w>insolescat</w> <w>animus</w>, <w>qui</w> <w>se</w> <w>sentit</w> <w>armatum</w>, <w>quia</w> <w>clipeus</w> <w>ille</w> <w>exercitus</w> <w>nostri</w> <w>quietem</w> <w>debet</w> <w>praestare</w> <w>Romanis</w>, <w>quos</w> <w>ideo</w> <w>constat</w> <w>appositos</w>, <w>ut</w> <w>intus</w> <w>vita</w> <w>felicior</w> <w>secura</w> <w>libertate</w> <w>carpatur</w>. <w>Quapropter</w> <w>responde</w> <w>nostro</w> <w>iudicio</w>, <w>fide</w> <w>nobis</w> <w>et</w> <w>industria</w> <w>placiturus</w>, <w>ut</w> <w>nec</w> <w>gentiles</w> <w>sine</w> <w>discussione</w> <w>suscipias</w> <w>nec</w> <w>nostros</w> <w>ad</w> <w>gentes</w> <w>sub</w> <w>incuriositate</w> <w>transmittas</w>; <w>ad</w> <w>necessitatem</w> <w>siquidem</w> <w>rarius</w> <w>venitur</w> <w>armorum</w>, <w>ubi</w> <w>suscepta</w> <w>surreptio</w> <w>custodiri</w> <w>posse</w> <w>sentitur</w>. <w>Privilegia</w> <w>vero</w> <w>dignitatis</w> <w>tuae</w> <w>nostris</w> <w>tibi</w> <w>iussionibus</w> <w>vindicabis</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

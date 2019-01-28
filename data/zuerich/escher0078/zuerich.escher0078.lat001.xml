@@ -1,0 +1,96 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 80</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0078.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  28–29
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0080">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Wolven vergabt seinen Besitz im Thurgau mit Ausnahme desjenigen zu Laufen, an das von seinen Vorfahren gegründete und von seinen Verwandten geschädigte Kloster Rheinau durch die Hand des Königs</p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Ulm</p>
+               </div>
+         <dateline>
+                  <date when="0858-02-19">858 02 19</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0078.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Ego</w> <w>itaque</w> <w>Wolvene</w> <w>in</w> <w>die</w> <w>nomine</w>. <w>Notum</w> <w>esse</w> <w>cupio</w> <w>tam</w> <w>praesentibus</w> <w>quam</w> <w>et</w> <w>futuris</w>, <w>qualiter</w> <w>ab</w> <w>anteccessoribus</w> <w>meis</w> <w>in</w> <w>loco</w>, <w>qui</w> <w>dictur</w> <w>Renaugia</w>, <w>monasterium</w> <w>monachorum</w> <w>constructum</w> <w>est</w>; <w>sed</w> <w>quia</w> <w>ipse</w> <w>locus</w> <w>parentibus</w> <w>meis</w> <w>inter</w> <w>se</w> <w>litigantibus</w> <w>atque</w> <w>vastantibus</w> <w>paene</w> <w>stirpatum</w> <w>evenit</w>, <w>ideo</w> <w>praedictum</w> <w>locum</w> <w>a</w> <w>me</w> <w>pro</w> <w>remedio</w> <w>animae</w> <w>meae</w> <w>ac</w> <w>parentum</w> <w>meorum</w> <w>sub</w> <w>honore</w> <w>anctae</w> <w>Mariae</w> <w>semper</w> <w>virginis</w> <w>et</w> <w>sancti</w> <w>Petri</w> <w>principis</w> <w>apostolorum</w> <w>ceterorumque</w> <w>sanctorum</w> <w>iterum</w> <w>restauratum</w> <w>domino</w> <w>meo</w> <w>ac</w> <w>gloriosissimo</w> <w>rege</w> <w>Ludewico</w> <w>contradidi</w>, <w>quantinus</w> <w>ipsius</w> <w>et</w> <w>successorum</w> <w>suorum</w>, <w>mei</w> <w>quoque</w> <w>vel</w> <w>parentum</w> <w>meorum</w> <w>memoria</w> <w>in</w> <w>oracionibus</w> <w>monachorum</w> <w>ibidem</w> <w>consistentium</w> <w>assidue</w> <w>frequenter</w> <w>atque</w> <w>praefatus</w> <w>locus</w> <w>sub</w> <w>illius</w> <w>mundiburdio</w> <w>vel</w> <w>successorum</w> <w>suorum</w> <w>stabilis</w> <w>inconvulsusque</w> <w>consistens</w> <w>laudes</w> <w>imperatuum</w> <w>actori</w> <w>nostro</w> <w>deo</w> <w>ibi</w> <w>valeat</w> <w>persolvere</w>. <w>Et</w> <w>hoc</w> <w>est</w>, <w>quod</w> <w>tradidi</w>, <w>quicquid</w> <w>in</w> <w>pago</w> <w>Turgouense</w> <w>tempore</w> <w>praesenti</w> <w>habere</w> <w>visus</w> <w>sum</w>, <w>excepto</w> <w>quod</w> <w>ad</w> <w>Louden</w> <w>tradidi</w>, <w>pascuis</w>, <w>silvis</w>, <w>aquarumve</w> <w>decursibus</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>seu</w> <w>quicquid</w> <w>dici</w> <w>aut</w> <w>nominari</w> <w>potest</w>, <w>manu</w> <w>potestavia</w> <w>in</w> <w>ius</w> <w>et</w> <w>dominationem</w> <w>atque</w> <w>mundiburdium</w> <w>domini</w> <w>et</w> <w>gloriosissimi</w> <w>regis</w> <w>nostri</w> <w>Ludewici</w> <w>contradidi</w> <w>sub</w> <w>ea</w> <w>videlicet</w> <w>racione</w>, <w>ut</w>, <w>quamdiu</w> <w>vixero</w>, <w>ipsas</w> <w>res</w> <w>sub</w> <w>potestate</w> <w>mea</w> <w>habeam</w> <w>et</w> <w>post</w> <w>obitum</w> <w>meum</w> <w>privilegium</w> <w>monachi</w> <w>in</w> <w>ipso</w> <w>loco</w> <w>commorantes</w> <w>habeant</w>, <w>quantiis</w> <w>abbas</w>, <w>quem</w> <w>ibsi</w> <w>elegerint</w>, <w>eis</w> <w>imperpetuum</w> <w>praeponatur</w>, <w>ut</w> <w>quieto</w> <w>ordine</w> <w>deo</w> <w>deservientes</w> <w>pro</w> <w>rege</w> <w>ac</w> <w>successoribus</w> <w>suis</w> <w>assiduis</w> <w>precibus</w> <w>dei</w> <w>misericordiam</w> <w>implorent</w> <w>nullumque</w> <w>servicium</w> <w>potestati</w> <w>regie</w> <w>ipse</w> <w>abbas</w>, <w>qui</w> <w>ibi</w> <w>constituitur</w>, <w>aliud</w> <w>persolveat</w>, <w>nisi</w> <w>singulis</w> <w>annis</w> <w>eaballum</w> <w>unum</w> <w>et</w> <w>scutum</w> <w>cum</w> <w>lancea</w> <w>pro</w> <w>dono</w> <w>regi</w> <w>venire</w> <w>faciat</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>quod</w> <w>futurum</w> <w>esse</w> <w>non</w> <w>credo</w>, <w>et</w> <w>quod</w> <w>deus</w> <w>ab</w> <w>omnibus</w> <w>avertat</w>, <w>hanc</w> <w>traditionem</w> <w>a</w> <w>me</w> <w>legaliter</w> <w>factam</w> <w>infringere</w> <w>aut</w> <w>mutare</w> <w>vouerit</w>, <w>inprimis</w> <w>iram</w> <w>die</w> <w>et</w> <w>sanctorum</w> <w>eius</w> <w>incurrat</w> <w>et</w> <w>mecum</w> <w>ante</w> <w>tribunal</w> <w>dei</w> <w>in</w> <w>die</w> <w>iudicii</w> <w>contendat</w> <w>et</w> <w>domini</w> <w>sententia</w> <w>compulsus</w> <w>detrudatur</w> <w>imperpetuum</w> <w>incendum</w> <w>et</w> <w>insuper</w> <w>inchoatum</w> <w>suum</w> <w>nullatenus</w> <w>possit</w> <w>perficere</w>, <w>sed</w> <w>pro</w> <w>contrariente</w>, <w>quam</w> <w>loco</w> <w>sancti</w> <w>inferre</w> <w>conatus</w> <w>est</w>, <w>in</w> <w>erarium</w> <w>regis</w> <w>multam</w> <w>persolvat</w>, <w>id</w> <w>est</w> <w>auri</w> <w>uncias</w> <w>XX</w>, <w>argenti</w> <w>pondera</w> <w>XL</w>, <w>et</w> <w>praesens</w> <w>carta</w> <w>firma</w> <w>inconvulsaque</w> <w>permaneat</w> <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>Ulma</w> <w>palacio</w> <w>regio</w>, <w>anno</w> <w>XXIII</w> <w>regni</w> <w>gloriosissimi</w> <w>Ludewici</w> <w>regis</w> <w>in</w> <w>orientali</w> <w>Francia</w>, <w>mense</w> <w>Februario</w>, <w>XI</w>. <w>kalendes</w> <w>eiusdem</w> <w>mensis</w>, <w>die</w> <w>Saturni</w>, <w>ipso</w> <w>rege</w> <w>praesente</w> <w>caeterisque</w> <w>quam</w> <w>plurimis</w>, <w>VI</w> <w>anno</w> <w>Nicolai</w> <w>papae</w>. <w>Signum</w> <w>Wolvini</w>, <w>qui</w> <w>hanc</w> <w>traditionem</w> <w>manu</w> <w>potestavia</w> <w>fecit</w> <w>ceterosque</w> <w>per</w> <w>imposicionem</w> <w>manuum</w> <w>confirmare</w> <w>rogavit</w>, <w>Signum</w> <w>Gozberti</w> <w>comitis</w>, <w>Adilberti</w> <w>comitis</w>, <w>Adilhelmi</w> <w>comitis</w>, <w>item</w> <w>Adilberti</w> <w>comitis</w>, <w>Liutonis</w> <w>comitis</w>, <w>Adelonis</w> <w>comitis</w>, <w>Lantfridi</w> <w>comitis</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

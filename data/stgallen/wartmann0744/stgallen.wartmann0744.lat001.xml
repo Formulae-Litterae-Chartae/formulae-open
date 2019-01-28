@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Abtei Sanct Gallen (Ed. Wartmann) Nr. 744</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription des Urkundenbuchs der Abtei Sanct Gallen
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0744.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+		       <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/810983249</idno>
+                  <title level="m" type="main">Urkundenbuch der Abtei Sanct Gallen</title>
+                  <title level="m" type="volume">Theil 1, Jahr 700 - 840</title>
+                  <editor>Wartmann, Hermann</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1863" n="originalAusgabe">1863</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  347 – 348
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stgallen.wartmann0744">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Folcherat vertauscht an das Kloster Sanct Gallen eine Hufe zu Wolarammeswilare gegen eine andere zu Fischen.</p>
+               </div>
+         <dateline>
+               <date when="0905-05-10" cert="unknown">905</date> 
+               <date when="0906-05-10" cert="unknown">(906) 05 10 (09)</date>
+               <date when="0905-05-09" cert="unknown"/> 
+               <date when="0906-05-09" cert="unknown"/>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:stgallen.wartmann0744.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Omnis</w> <w>commutatio</w>, <w>quae</w> <w>inter</w> <w>diversos</w> <w>causa</w> <w>utilitatis</w> <w>fieri</w> <w>solet</w>, <w>propter</w> <w>futura</w> <w>iurgia</w> <w>praecavenda</w>, <w>facile</w> <w>in</w> <w>rebus</w> <w>talibus</w> <w>oborientia</w>, <w>necesse</w> <w>est</w> <w>vinculo</w> <w>conscriptionis</w> <w>colligare</w>. <w>Propter</w> <w>hoc</w> <w>notum</w> <w>sit</w> <w>omnibus</w>, <w>quod</w> <w>ego</w> <w>Folcherat</w> <w>quoddam</w> <w>concambium</w> <w>feci</w> <w>cum</w> <w>rectoribus</w> <w>monasterii</w> <w>sancti</w> <w>Galli</w>. <w>Ego</w> <w>itaque</w> <w>Folcherat</w> <w>tradidi</w> <w>ad</w> <w>praefatum</w> <w>monasterium</w>, <w>ubi</w> <w>modo</w> <w>venerabilis</w> <w>Salomon</w> <w>abba</w> <w>praeesse</w> <w>videtur</w>, <w>hobam</w> <w>I</w> <w>in</w> <w>Wolarammeswilare</w> <w>in</w> <w>pago</w> <w>Argungeuve</w>, <w>cum</w> <w>omnibus</w> <w>rebus</w> <w>ad</w> <w>eam</w> <w>pertinentibus</w>, <w>hoc</w> <w>est</w> <w>agris</w>, <w>pratis</w>, <w>campis</w>, <w>pascuis</w>, <w>silvis</w>, <w>viis</w>, <w>aquis</w>; <w>ea</w> <w>ratione</w>, <w>ut</w> <w>econtra</w> <w>de</w> <w>eodem</w> <w>monasterio</w> <w>recipiam</w> <w>hobam</w> <w>I</w> <w>in</w> <w>pago</w> <w>Albegeuve</w> <w>in</w> <w>loco</w> <w>Fiskina</w>, <w>cum</w> <w>omnibus</w> <w>adiacentiis</w> <w>suis</w>, <w>hoc</w> <w>est</w> <w>agris</w>, <w>pratis</w>, <w>campis</w>, <w>pascuis</w>, <w>silvis</w>, <w>viis</w>, <w>aquis</w>; <w>eo</w> <w>denique</w> <w>pacto</w>, <w>ut</w> <w>utraeque</w> <w>res</w> <w>fiant</w> <w>in</w> <w>perpetuum</w> <w>concambiatae</w> <w>firmiter</w> <w>atque</w> <w>stabiliter</w>, <w>et</w> <w>neque</w> <w>praefati</w> <w>monasterii</w> <w>rectores</w> <w>mihi</w> <w>meisque</w> <w>posteris</w> <w>aliquid</w> <w>inquietudinis</w> <w>inferant</w>, <w>nec</w> <w>ego</w> <w>ipse</w> <w>aut</w> <w>ullus</w> <w>haeredum</w> <w>meorum</w> <w>pro</w> <w>ipsa</w> <w>commutatione</w> <w>aliquam</w> <w>molestiam</w> <w>illis</w> <w>ulterius</w> <w>ingerere</w> <w>licentiam</w> <w>habeat</w>; <w>sed</w> <w>sicut</w> <w>modo</w> <w>utrisque</w> <w>complacuit</w>, <w>sic</w> <w>et</w> <w>in</w> <w>aevum</w> <w>inviolabiliter</w> <w>permaneat</w>. <w>Actum</w> <w>in</w> <w>Pacenhovan</w> <w>publice</w>, <w>praesentibus</w> <w>quorum</w> <w>hic</w> <w>signacula</w> <w>subnotantur</w>. <w>Signum</w> <w>ipsius</w> <w>Folcherati</w>, <w>qui</w> <w>hoc</w> <w>concambium</w> <w>fecit</w>. <w>Signa</w> <w>et</w> <w>aliorum</w> <w>testium</w> <w>ibidem</w> <w>praesentium</w>. <w>Uodalrich</w> <w>comes</w>. <w>Chuonrat</w>. <w>Hug</w>. <w>Isanbreht</w>. <w>Ruadman</w>. <w>Sigibret</w>. <w>Madalbret</w>. <w>Pernhart</w> <w>Adalbret</w>. <w>Wichere</w>. <w>Reginbret</w>. <w>item</w> <w>Pernhart</w>. <w>Eskirich</w>. <w>item</w> <w>Sigibret</w>. <w>Uotilo</w>. <w>Ego</w> <w>Elolf</w> <w>monachus</w> <w>ad</w> <w>vicem</w> <w>Witonis</w> <w>prepositi</w> <w>ab</w> <w>eo</w> <w>rogatus</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>. <w>Notavi</w> <w>diem</w> <w>VI</w> <w>fer</w>., <w>VI</w> <w>id</w>. <w>mai</w>, <w>anno</w> <w>VII</w> <w>Hludowici</w> <w>regis</w>, <w>sub</w> <w>comite</w> <w>Uodalrico</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

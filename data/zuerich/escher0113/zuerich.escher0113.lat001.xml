@@ -1,0 +1,100 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 113</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0113.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  44
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0113">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Amilger überträgt Besitz in Trüllikon an Kloster Rheinau.</p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Insel Rheinau</p>
+               </div>
+         <dateline>
+                     <date when="0870-03-05" cert="unknown">870 03 05, </date>
+                     <date when="0870-03-12" cert="unknown">870 03 12, </date>
+                     <date when="0870-03-19" cert="unknown">870 03 19, </date>
+                     <date when="0870-03-26" cert="unknown">870 03 26</date>
+                  
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0113.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>In</w> <w>dei</w> <w>nomine</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>presentibus</w> <w>et</w> <w>futuris</w>, <w>qualiter</w> <w>ego</w> <w>Amilger</w> <w>pro</w> <w>remedio</w> <w>manimae</w> <w>meae</w> <w>tale</w> <w>do</w> <w>predium</w>, <w>quale</w> <w>comparavi</w> <w>in</w> <w>villa</w> <w>Trullinchoven</w> <w>a</w> <w>duobus</w> <w>fratribus</w> <w>Tancherado</w> <w>et</w> <w>Othachero</w>, <w>in</w> <w>proprietatem</w> <w>ad</w> <w>monasterium</w>, <w>quod</w> <w>vocatur</w> <w>Rinowa</w>, <w>quod</w> <w>est</w> <w>constructum</w> <w>in</w> <w>honore</w> <w>conventione</w>, <w>ut</w> <w>Wichrammus</w> <w>frater</w> <w>meus</w> <w>habeat</w> <w>omnibus</w> <w>diebus</w> <w>vitae</w> <w>suae</w> <w>monachisque</w> <w>in</w> <w>festivitate</w> <w>sancti</w> <w>Benedicti</w> <w>prandium</w> <w>singulis</w> <w>annis</w> <w>det</w>, <w>post</w> <w>exitum</w> <w>vero</w> <w>Wichrammi</w> <w>filius</w> <w>meus</w> <w>Amilger</w> <w>habeat</w>, <w>ea</w> <w>denique</w> <w>pactione</w>, <w>ut</w> <w>hoc</w> <w>ipsum</w> <w>predium</w>, <w>quod</w> <w>in</w> <w>marcha</w> <w>eat</w>, <w>quae</w> <w>vocatur</w> <w>Trullinchoven</w> <w>et</w> <w>ad</w> <w>prefatum</w> <w>monasterium</w> <w>pertinet</w>, <w>habeat</w> <w>omnibus</w> <w>diebus</w> <w>vitae</w> <w>suae</w>, <w>post</w> <w>obitum</w> <w>vero</w> <w>amborum</w> <w>utraque</w> <w>pars</w> <w>predii</w> <w>redeat</w> <w>ad</w> <w>predictum</w> <w>monasterium</w> <w>et</w> <w>ad</w> <w>mensam</w> <w>monachorum</w> <w>sine</w> <w>ullius</w> <w>contradictione</w>. <w>Actum</w> <w>in</w> <w>Renaugensi</w> <w>insula</w>, <w>coram</w> <w>frequentia</w> <w>populi</w> <w>et</w> <w>idoneis</w> <w>testibus</w>, <w>mense</w> <w>Martio</w>, <w>die</w> <w>lune</w>, <w>anno</w> <w>quo</w> <w>supra</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

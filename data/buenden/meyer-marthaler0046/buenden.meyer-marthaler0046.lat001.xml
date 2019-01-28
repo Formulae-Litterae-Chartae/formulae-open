@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Bündner Urkundenbuch (Ed. Meyer-Marthaler/Perret) Nr. 46</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Bündner Urkundenbuches</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/880043962</idno>
+                  <title level="m" type="main">Bündner Urkundenbuch</title>
+                  <title level="m" type="volume">390-1199</title>
+                  <editor xml:id="meyermarthaler">Meyer-Marthaler, Elisabeth</editor>
+                  <editor xml:id="perret">Perret, Franz</editor>
+                  <imprint>
+                     <pubPlace>Chur</pubPlace>
+                     <date when="1955" n="originalAusgabe">1955</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  38–40
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Bündner Urkundenbuches, welches 1955 von Elisabeth Meyer-Marthaler und Franz Perret herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="buenden.meyer-marthaler0046">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Bischof Viktor III. von Chur richtet an Kaiser Ludwig den Frommen (in Frankfurt) eine neue Eingabe, beklagt darin den Verfall seiner Diözese durch die sofort nach der von Karl dem Großen durchgeführten Trennung von Grafschaft und Bistum Chur von Graf Roderich und seinen Genossen Herloin vorgenommenen Obergriffe und bittet um Schutz und Untersuchung der Fälle durch einen Missus</p>
+               </div>
+         <dateline>
+                  <date when="0823-06">823 06</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:buenden.meyer-marthaler0046.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Audiat</w> <w>piissimi</w> <w>imperatoris</w> <w>clementia</w> <w>vocem</w> <w>proclamationis</w> <w>servi</w> <w>sui</w> <w>Victoris</w> <w>episcopi</w> ... <w>et</w> <w>cunctorum</w> <w>sacerdotum</w> <w>Curiensis</w> <w>pagelli</w>. <w>Qui</w> <w>magna</w> <w>constricti</w> <w>necessitate</w> <w>aliqua</w> <w>vestris</w> <w>clarissimis</w> <w>auribus</w> <w>nuntiare</w> <w>praesumimus</w>. <w>Distructa</w> <w>domus</w> <w>ac</w> <w>depraedata</w> <w>est</w> <w>sancta</w> <w>Curiensis</w> <w>ecclesia</w>, <w>et</w> <w>ab</w> <w>omnibus</w> <w>legibus</w> <w>sola</w> <w>sub</w> <w>sacro</w> <w>vestro</w> <w>regimine</w> <w>habetur</w> <w>aliena</w>. <w>Nullus</w> <w>quidem</w> <w>ibi</w> <w>est</w> <w>ut</w> <w>decet</w> <w>canonicus</w> <w>ordo</w>. <w>Distructa</w> <w>est</w> <w>paene</w> <w>omnis</w> <w>religionis</w> <w>antiqua</w> <w>institutio</w>. <w>Distructa</w> <w>sunt</w> <w>synodochia</w> <w>vel</w> <w>pauperum</w> <w>susceptiones</w>. <w>Extincta</w> <w>est</w> <w>elymosina</w> <w>praediscessorum</w> <w>regum</w>, <w>parentum</w> <w>scilicet</w> <w>vestrorum</w>, <w>vel</w> <w>vestra</w>, <w>seu</w> <w>et</w> <w>religiosorum</w> <w>hominum</w>, <w>qui</w> <w>sanctas</w> <w>ecclesias</w> <w>ex</w> <w>propriis</w> <w>facultatibus</w> <w>fundaverunt</w>. <w>Quae</w> <w>distructio</w> <w>vel</w> <w>preda</w> <w>post</w> <w>illam</w> <w>divisionem</w>, <w>quam</w> <w>bonae</w> <w>memoriae</w> <w>genitor</w> <w>vester</w> <w>inter</w> <w>episcopatum</w>. <w>et</w> <w>comitatum</w> <w>fieri</w> <w>praecepit</w>, <w>et</w> <w>nos</w> <w>longo</w> <w>tempore</w> <w>ab</w> .<w>ipso</w> <w>fuimus</w> <w>vestiti</w>, <w>subito</w> <w>a</w> <w>Roderico</w> <w>et</w> <w>suo</w> <w>pravo</w> <w>socio</w> <w>Herloino</w> <w>post</w> <w>acceptum</w> <w>comitatum</w> <w>facta</w> <w>est</w> <w>et</w> <w>adhuc</w> <w>ita</w> <w>permanet</w>. <w>Nulla</w> <w>ratio</w> <w>nostra</w> <w>ab</w> <w>eis</w> <w>fuit</w> <w>suscepta</w>. <w>Nullum</w> <w>scriptum</w> <w>nostrum</w> <w>saltim</w> <w>audire</w> <w>dignati</w> <w>sunt</w>. <w>Tulerunt</w>, <w>domine</w>, <w>omnes</w> <w>ecclesias</w> <w>in</w> <w>circuitu</w> <w>sedis</w> <w>nostrae</w>, <w>quae</w> <w>antiquitus</w> <w>semper</w> <w>ab</w> <w>episcopis</w> <w>fuerunt</w> <w>possesse</w>, <w>et</w> <w>in</w> <w>praedicta</w> <w>sede</w> <w>diebus</w> <w>singulis</w> <w>officia</w> <w>celebrabant</w>. <w>Nec</w> <w>etiam</w> <w>illud</w> <w>sacratissimum</w> <w>corpus</w> <w>beati</w> <w>Lucii</w> <w>confessoris</w> <w>nobis</w> <w>reliquerunt</w>, <w>qui</w> ... <w>ipsam</w> <w>civitatem</w> <w>de</w> <w>diabolico</w> <w>errore</w> <w>ad</w> <w>cultum</w> <w>veri</w> <w>die</w> <w>praedicando</w> <w>convertit</w>. <w>Tulerunt</w> <w>et</w> <w>reliquas</w> <w>ecclesias</w> <w>vel</w> <w>curtes</w>, <w>servos</w> <w>et</w> <w>ancillas</w>, <w>et</w> <w>omnia</w> <w>in</w> <w>quibus</w> <w>illorum</w> <w>animus</w> <w>delectabat</w>. <w>Animadvertat</w> <w>nunc</w> <w>sancta</w> <w>pietas</w> <w>vestra</w>, <w>qualiter</w> <w>se</w> <w>res</w> <w>haec</w> <w>habet</w>. <w>Ducente</w> <w>siquidem</w> <w>XXX</w> <w>et</w> <w>eo</w> <w>amplius</w> <w>ecclesiae</w> <w>sunt</w> <w>infra</w> <w>parrochia</w> <w>nostra</w>, <w>ex</w> <w>quibus</w> <w>non</w> <w>amplius</w> <w>quam</w> <w>sex</w> <w>baptisteria</w>, <w>et</w> <w>viginti</w> <w>quinque</w> <w>minores</w> <w>tituli</w> <w>ad</w> <w>episcopatum</w> <w>remanserunt</w>, <w>et</w> <w>ipse</w> <w>male</w> <w>depraedata</w>. <w>Sunt</w> <w>ibidem</w> <w>sanctorum</w> <w>corpora</w> <w>quinque</w>, <w>ex</w> <w>quibus</w> <w>nec</w> <w>unum</w> <w>quidem</w> <w>habemus</w>, <w>Monasteria</w> <w>similiter</w> <w>quinque</w>, <w>ex</w> <w>quibus</w> <w>duos</w> <w>tantum</w> <w>ad</w> <w>nutriendum</w> <w>habemus</w> <w>puellarum</w>, <w>et</w> <w>de</w> <w>hoc</w>, <w>quod</w> <w>nobis</w> <w>perparum</w> <w>remansit</w>, <w>potestatem</w> <w>pleniter</w> <w>non</w> <w>habemus</w>. <w>Qualiter</w> <w>vero</w> <w>nobis</w> <w>vel</w> <w>sacerdotibus</w> <w>nostris</w> <w>nunc</w> <w>vivendum</w> <w>sit</w> <w>ignoramus</w>, <w>quia</w> <w>in</w> <w>nullo</w> <w>ministerium</w> <w>nobis</w> <w>commissum</w> <w>secundum</w> <w>canonicam</w> <w>auctoritatem</w> <w>pleniter</w> <w>perficere</w> <w>possumus</w>, <w>et</w> <w>nisi</w> <w>miseratio</w> <w>vestra</w> <w>ad</w> <w>augmentum</w> <w>suae</w> <w>mercedis</w> <w>hoc</w> <w>aliter</w> <w>quam</w> <w>quod</w> <w>nunc</w> <w>est</w> <w>ordinare</w> <w>dignata</w> <w>fuerit</w>, <w>episcopatus</w> <w>ibidem</w> <w>ministerium</w> <w>peragi</w> <w>a</w> <w>quolibet</w> <w>difficile</w> <w>poterit</w>. <w>Ipse</w> <w>namque</w> <w>ecclesiasticae</w> <w>res</w>, <w>quae</w> <w>ad</w> <w>episcopatum</w> <w>legibus</w> <w>pertinent</w>, <w>et</w> <w>de</w> <w>quibus</w> <w>nos</w> <w>auctoritatem</w> <w>firmam</w> <w>habemus</w> <w>et</w> <w>nobis</w> <w>iniuste</w> <w>abstractae</w> <w>sunt</w>, <w>ab</w> <w>aliquibus</w> <w>iam</w> <w>per</w> <w>vestrum</w> <w>preceptum</w> <w>ad</w> <w>proprietatem</w> <w>tenentur</w>, <w>quod</w> <w>vobis</w> <w>omnino</w> <w>celatum</w> <w>credimus</w>. <w>Nos</w> <w>tamen</w> <w>hoc</w> <w>vobis</w> <w>celare</w> <w>ausi</w> <w>non</w> <w>sumus</w> <w>propter</w> <w>ministerium</w> <w>nobis</w> <w>iniunctum</w>, <w>et</w> <w>fidem</w> <w>quam</w> <w>erga</w> <w>vos</w> <w>deo</w> <w>nos</w> <w>adiuvante</w> <w>inlaesam</w> <w>in</w> <w>omnibus</w> <w>conservare</w> <w>cupimus</w>. <w>Nunc</w> <w>quidem</w>, <w>domine</w>, <w>ac</w> <w>si</w> <w>vestris</w> <w>omnes</w> <w>provoluti</w> <w>vestigiis</w> <w>iterum</w> <w>petimus</w>, <w>ut</w> <w>pro</w> <w>amore</w> <w>dei</w> <w>digneris</w> <w>eiusdem</w> <w>sanctae</w> <w>matris</w> <w>ecclesie</w>, <w>cuius</w> <w>te</w> <w>tutorem</w> <w>ac</w> <w>defensorem</w> <w>ubique</w> <w>scimus</w> <w>esse</w> <w>promptissimum</w>, <w>advocatus</w> <w>esse</w> <w>et</w> <w>iudex</w>, <w>qualiter</w> <w>temporibus</w> <w>vestris</w> <w>ad</w> <w>suam</w> <w>possit</w> <w>pervenire</w> <w>iustitiam</w>, <w>quia</w> <w>nullus</w> <w>est</w> <w>in</w> <w>terra</w> <w>illa</w>, <w>qui</w> <w>possit</w> <w>nobis</w> <w>prestare</w> <w>solatium</w> <w>nisi</w> <w>dei</w> <w>primitus</w> <w>et</w> <w>vestra</w> <w>nos</w> <w>defendat</w> <w>clementia</w>. <w>Haec</w> <w>vero</w>, <w>domine</w>, <w>quae</w> <w>in</w> <w>superioribus</w> <w>sunt</w> <w>adnotata</w>, <w>si</w> <w>adprobare</w> <w>vultis</w>, <w>utrum</w> <w>vera</w> <w>sint</w> <w>an</w> <w>non</w>, <w>mittite</w> <w>si</w> <w>placet</w> <w>deo</w> <w>primitus</w> <w>et</w> <w>animae</w> <w>vestrae</w>, <w>missum</w> <w>fidelem</w> <w>qui</w> <w>abiecto</w> <w>omni</w> <w>terreno</w> <w>timore</w> <w>et</w> <w>saecularium</w> <w>hominum</w> <w>amicitias</w> <w>studiose</w> <w>inquirat</w> <w>per</w> <w>obtimos</w> <w>viros</w> <w>terrae</w> <w>illius</w>, <w>quanta</w> <w>ac</w> <w>qualia</w> <w>ibidem</w> <w>latent</w> <w>mala</w>. <w>Cognoscetis</w> <w>tunc</w> <w>certe</w> <w>non</w> <w>aliter</w> <w>quam</w> <w>vera</w> <w>nos</w> <w>vobis</w> <w>denuntiasse</w>. <w>Inquirat</w> <w>etiam</w> <w>si</w> <w>iubet</w> <w>misericordia</w> <w>vestra</w> <w>ob</w> <w>amore</w> <w>dei</w> <w>genetricis</w> <w>Mariae</w> <w>predictus</w> <w>missus</w> <w>res</w> <w>ecclesiasticas</w> <w>ad</w> <w>iam</w> <w>dictum</w> <w>episcopatum</w> <w>pertinentes</w> <w>et</w> <w>ad</w> <w>vestras</w> <w>perducat</w> <w>aures</w>. <w>Vestra</w> <w>siquidem</w> <w>celsitudo</w> <w>atque</w> <w>misericordia</w> <w>de</w> <w>hoc-</w> <w>dispositura</w> <w>erit</w>, <w>prout</w> <w>optime</w> <w>novit</w>. <w>Illud</w> <w>nobis</w> <w>tunc</w> <w>sufficit</w> <w>quod</w> <w>vobis</w> <w>placet</w>, <w>in</w> <w>tantum</w>, <w>ut</w> <w>in</w> <w>tali</w> <w>non</w> <w>simus</w> <w>tribulatione</w> <w>vel</w> <w>periculo</w> <w>constituti</w>. <w>Et</w> <w>ut</w> <w>de</w> <w>hoc</w> <w>quod</w> <w>per</w> <w>largitatem</w> <w>vestram</w> <w>nobis</w> <w>conceditur</w> <w>habendum</w> <w>firmitatem</w> <w>vestram</w>, <w>ob</w> <w>vestrae</w> <w>mercedis</w> <w>augmentum</w> <w>habere</w> <w>mereamur</w>, <w>sicuti</w> <w>ceteri</w> <w>in</w> <w>regno</w> <w>vestro</w> <w>merentur</w> <w>habere</w> <w>ecclesiastici</w> <w>meique</w> <w>ordinis</w> <w>viri</w>, <w>et</w> <w>liceat</w> <w>nobis</w> <w>absque</w> <w>contentionibus</w> <w>pravis</w> <w>atque</w> <w>dissensionibus</w> <w>deo</w> <w>servire</w> <w>et</w> <w>pro</w> <w>vobis</w> <w>fideliter</w> <w>orare</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

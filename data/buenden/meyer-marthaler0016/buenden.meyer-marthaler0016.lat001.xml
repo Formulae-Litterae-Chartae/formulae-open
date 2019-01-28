@@ -1,0 +1,97 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Bündner Urkundenbuch (Ed. Meyer-Marthaler/Perret) Nr. 16</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Bündner Urkundenbuches</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/880043962</idno>
+                  <title level="m" type="main">Bündner Urkundenbuch</title>
+                  <title level="m" type="volume">390-1199</title>
+                  <editor xml:id="meyermarthaler">Meyer-Marthaler, Elisabeth</editor>
+                  <editor xml:id="perret">Perret, Franz</editor>
+                  <imprint>
+                     <pubPlace>Chur</pubPlace>
+                     <date when="1955" n="originalAusgabe">1955</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  11–13
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Bündner Urkundenbuches, welches 1955 von Elisabeth Meyer-Marthaler und Franz Perret herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="buenden.meyer-marthaler0016">
+      <front xml:lang="deu">
+        <div type="section" subtype="regest">
+                  <p>Graf Wido von Lomello schenkt dem Kloster Disentis Güter und Rechte.</p>
+               </div>
+		       <div type="section" subtype="ausstellungsort">
+                  <p>Disentis</p>
+               </div>
+        <dateline>
+           <date notBefore="0751" notAfter="0760" cert="unknown">751–759/60</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:buenden.meyer-marthaler0016.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w> <w>nostri</w> <w>Iesu</w> <w>Christi</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>tam</w> <w>posteris</w> <w>quam</w> <w>praesentibus</w>, <w>quod</w> <w>comes</w> <w>Wido</w> <w>de</w> <w>Lomello</w> <w>et</w> <w>Sparavayra</w> <w>tale</w> <w>praedium</w>, <w>quale</w> <w>habuit</w> <w>Anthsona</w>, <w>quod</w> <w>situm</w> <w>est</w> <w>iuxta</w> <w>Vareia</w>, <w>dedit</w> <w>libera</w> <w>et</w> <w>potestativa</w> <w>manu</w> <w>sine</w> <w>omni</w> <w>contradictione</w> <w>mortua</w> <w>Adelheida</w> <w>uxore</w> <w>sua</w> <w>et</w> <w>post</w> <w>mortem</w> <w>suam</w> <w>anno</w> <w>duodecimo</w> <w>sancto</w> <w>Martino</w>, <w>Sigisberto</w>, <w>Placido</w>, <w>patronis</w> <w>Disertinae</w>, <w>cum</w> <w>omnibus</w> <w>pertinentiis</w> <w>eiusdem</w> <w>praedii</w>, <w>scilicet</w> <w>cum</w> <w>duabus</w> <w>capellis</w> <w>sancti</w> <w>Blasii</w> <w>et</w> <w>sancti</w> <w>Galli</w> <w>et</w> <w>alia</w> <w>capella</w> <w>sancti</w> <w>Steffani</w> <w>protomartyris</w> <w>sita</w> <w>iuxta</w> <w>fluvium</w> <w>Dagonda</w> <w>cum</w> <w>decimis</w> <w>primitiis</w> <w>dotalibus</w>, <w>cum</w> <w>familia</w> <w>viris</w> <w>et</w> <w>mulieribus</w>, <w>aquis</w> <w>aquae</w> <w>ducti</w> <w>bus</w> <w>piscinis</w> <w>piscationibus</w> <w>molendinis</w> <w>olivetis</w> <w>ficetis</w> <w>castanetis</w> <w>vitetis</w> <w>exitibus</w> <w>et</w> <w>reditibus</w> <w>agris</w> <w>pratis</w> <w>pascuis</w>, <w>et</w> <w>omnia</w> <w>eius</w> <w>reliqua</w> <w>praedia</w> <w>sita</w> <w>a</w> <w>fluvio</w> <w>Dagonda</w> <w>usque</w> <w>ad</w> <w>Cugirum</w> <w>et</w> <w>usque</w> <w>ad</w> <w>Vareia</w> <w>et</w> <w>usque</w> <w>ad</w> <w>terminos</w> <w>Cambiri</w> <w>ea</w> <w>conditione</w>, <w>ut</w> <w>semper</w> <w>praedicta</w> <w>capella</w> <w>sancti</w> <w>Blasii</w> <w>semper</w> <w>munita</w> <w>monachis</w> <w>esset</w> <w>Disertinensis</w> <w>coenobii</w> <w>et</w> <w>iidem</w> <w>monachi</w> <w>victuarent</w> <w>de</w> <w>praedictis</w> <w>dotalitiis</w> <w>et</w> <w>rebus</w> <w>et</w> <w>ut</w> <w>ibidem</w> <w>praedicarent</w> <w>iidem</w> <w>fratres</w> <w>docerent</w>, <w>communicarent</w>, <w>absolverent</w> <w>paenitentes</w>, <w>baptizarent</w>, <w>sepelirent</w> <w>omnes</w> <w>de</w> <w>eadem</w> <w>familia</w> <w>et</w> <w>omnes</w> <w>christianos</w>, <w>qui</w> <w>eadem</w> <w>sacramenta</w> <w>inibi</w> <w>quaererunt</w>. <w>Reliqua</w> <w>quoque</w> <w>multa</w> <w>alia</w> <w>praedia</w> <w>coenobio</w> <w>dedit</w> <w>Disertinensi</w>, <w>scilicet</w> <w>Docimbir</w>, <w>quidquid</w> <w>in</w> <w>eodem</w> <w>vico</w> <w>et</w> <w>reliquis</w> <w>subscriptis</w> <w>vicis</w> <w>habuit</w>, <w>omnia</w> <w>dedit</w> <w>fratribus</w> <w>coenobitis</w> <w>Desertinae</w> <w>in</w> <w>vico</w> <w>Amortinzun</w>, <w>Assisurr</w>, <w>Asgozila</w>, <w>Acaminach</w>, <w>Adaguna</w>, <w>Adcursenna</w>, <w>Appiubia</w>, <w>Aduliagas</w>, <w>Ecedia</w>, <w>Admine</w>, <w>Adinmunge</w>, <w>ad</w> <w>Centum</w> <w>Valle</w>, <w>ad</w> <w>Lucarne</w>, <w>Gadampiri</w>, <w>Vartelotosa</w>, <w>Piura</w>, <w>Primuna</w>, <w>Pladamia</w>, <w>Amurcukot</w>, <w>Crenarde</w>, <w>Crantula</w>, <w>Luvin</w>, <w>Ferraira</w>, <w>Belede</w>. <w>Ista</w> <w>praedia</w> <w>et</w> <w>possessiones</w>, <w>quas</w> <w>habuit</w> <w>praedictus</w> <w>comes</w> <w>Wido</w> <w>in</w> <w>istis</w> <w>vicis</w> <w>et</w> <w>praedictis</w> <w>terminis</w>, <w>omnia</w> <w>libere</w>, <w>sicut</w> <w>possedit</w> <w>dedit</w> <w>coenobio</w> <w>Disertino</w>. <w>Siquidem</w> <w>beatus</w> <w>et</w> <w>piae</w> <w>memoriae</w> <w>predictus</w> <w>comes</w> <w>Wido</w> <w>satisfacturus</w> <w>imperio</w> <w>Pipini</w> <w>imperatoris</w>, <w>patris</w> <w>Caroli</w> <w>Magni</w>, <w>qui</w> <w>visitaturus</w> <w>Curiam</w> <w>venit</w> <w>Desertinam</w> <w>sub</w> <w>Ursicino</w>, <w>tunc</w> <w>temporis</w> <w>episcopo</w> <w>Curiensi</w> <w>et</w> <w>abbate</w> <w>Disertinae</w>, <w>ibique</w> <w>infirmatus</w> <w>est</w> <w>fratribus</w> <w>vero</w> <w>orationibus</w> <w>subvenientibus</w> <w>et</w> <w>gemitibus</w> <w>condolendo</w> <w>compatientibus</w> <w>conpunctione</w> <w>et</w> <w>instinctu</w> <w>spiritus</w> <w>sancti</w> <w>confortatus</w> <w>rogavit</w>, <w>ut</w> <w>intercederent</w> <w>patronos</w> <w>suos</w> <w>Martinum</w> <w>scilicet</w> <w>Sigisbertum</w> <w>et</w> <w>Placidum</w>, <w>quorum</w> <w>precibus</w> <w>consolidatus</w> <w>pristinis</w> <w>redintegratus</w> <w>ea</w>, <w>quae</w> <w>praediximus</w>, <w>dedit</w> <w>coenobio</w> <w>Disertinensi</w>. <w>Huius</w> <w>rei</w> <w>testes</w> <w>sunt</w>: <w>Hugilo</w>, <w>Vitalis</w>, <w>Wernerus</w>, <w>Udalricus</w>, <w>Lanzo</w>, <w>Huno</w>, <w>Gothescalcus</w>.</p>
+                     <p xml:space="preserve"><w>Perrexit</w> <w>autem</w> <w>praedictus</w> <w>comes</w> <w>Wido</w> <w>ad</w> <w>Curiam</w> <w>et</w> <w>donationem</w> <w>istam</w> <w>et</w> <w>quae</w> <w>ipse</w> <w>dedit</w> <w>sancto</w> <w>Martino</w> <w>Disertinensi</w> <w>in</w> <w>praesentia</w> <w>imperatoris</w> <w>confirmavit</w>. <w>In</w> <w>reditu</w> <w>vero</w> <w>iterum</w> <w>infirmatus</w> <w>et</w> <w>mortuus</w> <w>est</w> <w>apud</w> <w>Disertinam</w> <w>sepultus</w>. <w>Imperator</w> <w>autem</w> <w>Pipinus</w> <w>fecit</w> <w>sententiam</w> <w>supra</w> <w>hanc</w> <w>donationem</w> <w>Wydonis</w> <w>tenoris</w> <w>huius</w>, <w>ut</w> <w>quicunque</w> <w>temere</w> <w>haec</w> <w>praedia</w> <w>violaverit</w> <w>vel</w> <w>invaserit</w>, <w>centum</w> <w>talenta</w> <w>auri</w> <w>fischo</w> <w>imperatoris</w> <w>persolvat</w>, <w>si</w> <w>liber</w> <w>est</w>; <w>si</w> <w>servus</w>, <w>centum</w> <w>uncias</w> <w>debeat</w> <w>dare</w> <w>et</w> <w>regionem</w> <w>terrae</w> <w>suae</w> <w>exeat</w>. <w>Et</w> <w>si</w> <w>liber</w> <w>aut</w> <w>servus</w> <w>uterque</w> <w>ablata</w> <w>non</w> <w>reddiderint</w> <w>bona</w> <w>eorum</w> <w>publicentur</w> <w>et</w>, <w>quamdiu</w> <w>haec</w> <w>non</w> <w>fecerint</w>, <w>a</w> <w>lege</w> <w>gentis</w> <w>suae</w> <w>alieni</w> <w>existant</w>. <w>Acta</w> <w>feliciter</w> <w>donatio</w> <w>Wydonis</w> <w>comitis</w> <w>in</w> <w>loco</w> <w>Disertinensi</w>. <w>Confirmatio</w> <w>autem</w> <w>Pipini</w> <w>imperatoris</w> <w>in</w> <w>loco</w> <w>qui</w> <w>dicitur</w> <w>Asia</w>; <w>Ursicino</w> <w>simul</w> <w>episcopo</w> <w>Curiae</w> <w>et</w> <w>abbate</w> <w>Disertinae</w>. <w>Debent</w> <w>et</w> <w>enim</w> <w>reges</w> <w>locis</w> <w>illis</w>, <w>qui</w> <w>specialiter</w> <w>ad</w> <w>regales</w> <w>fasces</w> <w>pertinent</w>, <w>specialem</w> <w>defensionem</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

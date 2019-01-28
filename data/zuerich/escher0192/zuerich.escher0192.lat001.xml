@@ -1,0 +1,101 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 192</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0192.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  83
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0192">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Verzeichnis der Hörigen des Großmünster- und Frauenmünster-Stiftes welche durch Heirat vom einen Stift in die Gewalt des anderen gekommen sind, und Austausch derselben auf Anordnung des Herzogs Hermann von Schwaben</p>
+               </div>
+         <dateline>
+                  <date when="0929-05-25">929 05 25</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0192.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <head xml:space="preserve"><w>De</w> <w>concambitione</w> <w>fammiliarum</w> <w>de</w> <w>duce</w> <w>Herimanno</w> <w>facta</w>.</head>
+                     <p xml:space="preserve"><w>Hanc</w> <w>etiam</w> <w>descriptionem</w> <w>iussit</w> <w>dominus</w> <w>Herimannus</w> <w>fieri</w> <w>ob</w> <w>irgationem</w> <w>scindendem</w> <w>perpetualique</w> <w>coadunatione</w>, <w>ex</w> <w>fammiliis</w> <w>clericorum</w> <w>quae</w> <w>ex</w> <w>coniugio</w> <w>in</w> <w>potestatem</w> <w>monialium</w> <w>devenerunt</w> <w>et</w> <w>ab</w> <w>illarum</w> <w>parte</w> <w>in</w> <w>ius</w> <w>clericorum</w> <w>venerunt</w>, <w>ex</w> <w>utraque</w> <w>parte</w> <w>enumerando</w> <w>equali</w> <w>modo</w> <w>coequentur</w>, <w>ut</w> <w>ultra</w> <w>inter</w> <w>illos</w> <w>cum</w> <w>amicitia</w> <w>persisterent</w> <w>cum</w> <w>cambitione</w> <w>manu</w> <w>sua</w> <w>facta</w> <w>minimeque</w> <w>propter</w> <w>rixam</w> <w>inter</w> <w>se</w> <w>unbent</w>. <w>Primum</w> <w>numerantur</w>, <w>quae</w> <w>ex</w> <w>parte</w> <w>clericorum</w> <w>fuerunt</w> <w>in</w> <w>Swamundinga</w>, <w>et</w> <w>filii</w> <w>eius</w>: <w>Burchart</w>, <w>Comilin</w>, <w>Hizilin</w> <w>et</w> <w>Hizila</w>. <w>Item</w> <w>filia</w> <w>Mannilini</w> <w>servi</w> <w>clericorum</w> <w>ex</w> <w>ipso</w> <w>loco</w> <w>nomine</w> <w>Liubsind</w> <w>et</w> <w>filii</w> <w>eius</w> <w>his</w> <w>nominibus</w>: <w>Hiltirat</w>, <w>Wolfriram</w>, <w>Adilmar</w> <w>et</w> <w>sorores</w> <w>eorum</w> <w>Liuza</w> <w>et</w> <w>Ratsind</w>; <w>item</w> <w>filia</w> <w>Wolvinis</w> <w>Woffila</w> <w>et</w> <w>filius</w> <w>eius</w> <w>Svabilin</w>.</p>
+                     <p xml:space="preserve"><w>In</w> <w>Feniclanda</w>: <w>Fridiburc</w> <w>soror</w> <w>Zubilini</w> <w>de</w> <w>Flobotisreine</w> <w>servi</w> <w>clericorum</w> <w>et</w> <w>Hackilini</w> <w>et</w> <w>filii</w> <w>eius</w> <w>Herich</w>, <w>Cuncilin</w>, <w>Heinzilin</w> <w>et</w> <w>Hita</w>; <w>item</w> <w>Meginhart</w> <w>et</w> <w>filii</w> <w>eius</w> <w>II</w> <w>et</w> <w>duae</w> <w>filiae</w> <w>et</w> <w>frater</w> <w>eius</w> <w>Reginbold</w> <w>et</w> <w>filii</w> <w>eius</w>, <w>quorum</w> <w>mater</w> <w>fuit</w> <w>ancilla</w> <w>clericorum</w> <w>nomine</w> <w>Isinrat</w>. </p> 
+					          <p xml:space="preserve"><w>In</w> <w>Mure</w> <w>sunt</w> <w>filii</w> <w>Azzun</w> <w>ancillae</w> <w>clericorum</w>, <w>sororis</w> <w>Pezilini</w> <w>et</w> <w>Adilgeri</w>.</p> 
+					          <p xml:space="preserve"><w>In</w> <w>Flobostisreine</w>: <w>filii</w> <w>Aziloni</w>, <w>quos</w> <w>genuit</w> <w>ex</w> <w>Liba</w>, <w>filia</w> <w>Kerboldi</w> <w>filii</w> <w>Hiltbrandi</w> <w>servorum</w> <w>de</w> <w>Svamundina</w>.</p>
+					          <p xml:space="preserve"><w>In</w> <w>Turego</w>: <w>Engiza</w> <w>uxor</w> <w>Cozperti</w> <w>calvi</w> <w>et</w> <w>filii</w> <w>eius</w> <w>V</w>, <w>ipsa</w> <w>fuit</w> <w>filia</w> <w>Wazoni</w> <w>et</w> <w>Engilburge</w>.</p>
+                     <p xml:space="preserve"><w>De</w> <w>Rieda</w>: <w>soror</w> <w>Linbinzoni</w> <w>Cuozila</w> <w>et</w> <w>filii</w> <w>eius</w> <w>IIII</w>, <w>quae</w> <w>post</w> <w>cambitionem</w> <w>nupsit</w> <w>sine</w> <w>licentia</w> <w>in</w> <w>potestatem</w> <w>monialium</w>.</p>
+                     <p xml:space="preserve"><w>Insuper</w> <w>sunt</w> <w>cambiati</w> <w>filii</w> <w>Regingeri</w>, <w>quos</w> <w>genuit</w> <w>ex</w> <w>muliere</w> <w>Azila</w>.</p> 
+					          <p xml:space="preserve"><w>Econtra</w> <w>vero</w> <w>habent</w> <w>in</w> <w>potestate</w> <w>eius</w> <w>tantum</w> <w>clerici</w>: <w>de</w> <w>natione</w> <w>mulieris</w> <w>nomine</w> <w>Wasa</w> <w>filii</w> <w>Williharti</w>, <w>id</w> <w>est</w> <w>Abila</w> <w>et</w> <w>filii</w> <w>eius</w> <w>II</w>, <w>Liuzilinum</w> <w>et</w> <w>Pezilinum</w>, <w>atque</w> <w>Engizun</w> <w>et</w> <w>filii</w> <w>eius</w>, <w>tres</w> <w>filios</w> <w>et</w> <w>tres</w> <w>filiae</w>; <w>filii</w> <w>Ecgihardi</w>, <w>fratris</w> <w>Williharti</w>, <w>Alfredum</w>, <w>Eckilinum</w>, <w>Atilin</w>, <w>Willizonem</w>, <w>et</w> <w>Lanzilini</w> <w>prefati</w> <w>Williharti</w> <w>fratris</w> <w>filiae</w> <w>IIII</w>. <w>Filiae</w> <w>autem</w> <w>due</w> <w>predicate</w> <w>Engizun</w>, <w>quae</w> <w>fuit</w> <w>Williharti</w> <w>filia</w>, <w>sunt</w> <w>nuc</w> <w>sine</w> <w>licentia</w> <w>clericorum</w> <w>in</w> <w>potestate</w> <w>somine</w> <w>Reginlide</w> <w>hîc</w> <w>in</w> <w>Turego</w> <w>nomine</w> <w>Hitila</w> <w>et</w> <w>Fridigart</w>. <w>Hanc</w> <w>ergo</w> <w>vestituram</w> <w>fecit</w> <w>ipse</w> <w>dux</w> <w>Alamannorum</w> <w>in</w> <w>scena</w> <w>Turicinae</w> <w>civitatis</w> <w>cum</w> <w>licentia</w> <w>et</w> <w>petitione</w> <w>monialium</w> <w>et</w> <w>clericorum</w> <w>cum</w> <w>uno</w> <w>servo</w> <w>monialium</w> <w>nomine</w> <w>Lendilo</w> <w>clericis</w> <w>et</w> <w>cum</w> <w>alio</w> <w>servo</w> <w>clericorum</w> <w>monialibus</w> <w>nomine</w> <w>Meginhart</w> <w>coram</w> <w>cunctis</w> <w>et</w> <w>multis</w> <w>ibidem</w> <w>cum</w> <w>illo</w> <w>manentibus</w>. <w>Ipso</w> <w>die</w> <w>vero</w> <w>ipse</w> <w>dux</w> <w>Herimannus</w> <w>ex</w> <w>petitione</w> <w>Reginlindae</w> <w>et</w> <w>clericorum</w> <w>questionem</w> <w>scindendo</w> <w>concambiavit</w>, <w>quae</w> <w>ex</w> <w>familia</w> <w>suae</w> <w>Curtis</w> <w>in</w> <w>Turego</w> <w>in</w> <w>potestate</w> <w>fratrum</w> <w>errant</w>; <w>dedit</w> <w>ipse</w> <w>dux</w> <w>Reginzonem</w> <w>et</w> <w>vestivit</w> <w>et</w> <w>econtra</w> <w>dederunt</w> <w>ipsi</w> <w>Herratin</w> <w>et</w> <w>fratris</w> <w>sui</w> <w>Jungilini</w> <w>tres</w> <w>filios</w>: <w>Ratmannum</w> <w>et</w> <w>Coldilinum</w>, <w>Azilinum…</w>.. <w>contra</w> <w>Engizonem</w> <w>et</w> <w>fratrem</w> <w>et</w> <w>sororem</w> <w>I</w>, <w>et</w> <w>filii</w> <w>Cozharti</w> <w>contra</w> <w>Ruopilinum</w> <w>et</w> <w>sororem</w> <w>eius</w>, <w>uxorem</w> <w>Copilini</w> <w>calvi</w> <w>nomine</w> <w>Engiza</w> <w>sine</w> <w>filio</w> <w>et</w> <w>tribus</w> <w>filiabus</w>; <w>ex</w> <w>his</w> <w>duae</w> <w>sunt</w> <w>in</w> <w>potestatem</w> <w>domine</w> <w>coniugatae</w>, <w>pro</w> <w>his</w> <w>duabus</w> <w>habent</w> <w>Liuzilinum</w> <w>et</w> <w>Pezilinum</w>, <w>filios</w> <w>Abilun</w>, <w>sororis</w> <w>ipse</w> <w>Engilburgae</w>. <w>Haec</w> <w>facta</w> <w>sunt</w> <w>in</w> <w>prefata</w> <w>scena</w> <w>in</w> <w>presentia</w>, <w>quorum</w> <w>hic</w> <w>subnotantur</w> <w>nomina</w>: <w>domina</w> <w>Reginlinda</w>, <w>Buchert</w> <w>comes</w>, <w>Tuto</w>, <w>Hiltilin</w>, <w>Kerhart</w> <w>advocatus</w>, <w>Huozo</w>, <w>preposita</w> <w>Cotisthiu</w> <w>cum</w> <w>suis</w> <w>familiis</w>, <w>Uto</w>, <w>Cundilo</w>, <w>et</w> <w>Landolt</w> <w>et</w> <w>familia</w> <w>ducis</w>, <w>Wolfpert</w> <w>et</w> <w>Wodilmar</w>, <w>Ortire</w>, <w>Harpert</w> <w>cum</w> <w>fratribus</w> <w>et</w> <w>familiis</w> <w>fratrum</w>. <w>VIII</w>. <w>Kal</w>. <w>Iun</w>. <w>Anno</w> <w>X</w>. <w>regnante</w> <w>rege</w> <w>Heimrico</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

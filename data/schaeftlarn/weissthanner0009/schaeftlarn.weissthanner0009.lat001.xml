@@ -1,0 +1,100 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Traditionen des Klosters Schäftlarn (Ed. Weissthanner) Nr. 9</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription der Traditionen des Klosters Schäftlarn
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+			      <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/455441456</idno>
+                  <title>Die Traditionen des Klosters Schäftlarn 760-1305</title>
+                  <editor>Weissthanner, Alois</editor>
+                  <imprint>
+                     <pubPlace>München</pubPlace>
+                     <date when="1953" n="originalAusgabe">1953</date>
+                     <biblScope unit="pp">
+                  13-14
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Quellen und Erörterungen zur bayerischen Geschichte</title>
+                  <title level="s">Neue Folge</title>
+                  <biblScope unit="volume">10</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="schaeftlarn.weissthanner0009">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Aduni schenkt die Hälfte seines Besitzes zu Sendling (StK München) an Schäftlarn. </p>
+               </div>
+         <dateline>
+                  <date notBefore="0779" notAfter="0806">nach 779 – vor 806</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:schaeftlarn.weissthanner0009.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <head xml:space="preserve"><w>Tra[ditio]</w> <w>Aduni</w> <w>de</w> <w>Sentilinga</w>.</head>
+                     <p xml:space="preserve"><w>In</w> <w>Christi</w> <w>nomine</w>! <w>Sacrosancto</w> <w>monasterio</w> <w>sancti</w> <w>Dionisii</w>, <w>qui</w> <w>est</w> <w>constructus</w> <w>in</w> <w>ducatu</w> <w>Baiouuariorum</w> <w>in</w> <w>ripa</w> <w>fluvii</w>, <w>quae</w> <w>dicitur</w> <w>Isura</w>, <w>ubi</w> <w>Petto</w> <w>abba</w> <w>ad</w> <w>regendum</w> <w>praesse</w> <w>videtur</w>, <w>ego</w> <w>Aduni</w> <w>cogitans</w> <w>casum</w> <w>fragilitatis</w> <w>meae</w> <w>vel</w> <w>pro</w> <w>remedium</w> <w>anime</w> <w>meae</w>, <w>maxime</w> <w>cum</w> <w>veritas</w> <w>dicat</w>: <w>Thesaurizate</w> <w>vobis</w> <w>thesauros</w> <w>in</w> <w>caelo</w>, <w>hanc</w> <w>vocem</w> <w>ego</w> <w>audiens</w>, <w>imitare</w> <w>desiderans</w> <w>amore·divinitatis</w> <w>conpunctus</w> <w>trado</w> <w>a</w> <w>die</w> <w>praesente</w> <w>atque</w> <w>transfundo</w> <w>pro</w> <w>redemptionem</w> <w>anime</w> <w>meae</w> <w>medietatem</w> <w>hereditatis</w> <w>meae</w>, <w>quicquid</w> <w>habere</w> <w>videor</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Sentilinga</w> <w>mansis</w>, <w>ratis</w>, <w>silvis</w>, <w>campis</w>, <w>pomiferis</w>, <w>|</w> <w>aquis</w>, <w>aquarumque</w> <w>decursibus</w>, <w>egressibus</w> <w>et</w> <w>regressibus</w>, <w>mobile</w> <w>vel</w> <w>immobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>integro</w> <w>ita</w>, <w>ut</w> <w>iam</w> <w>dixi</w>, <w>a</w> <w>die</w> <w>praesente</w> <w>trado</w> <w>de</w> <w>iure</w> <w>meo</w> <w>in</w> <w>iure</w> <w>dominationis</w> <w>agentis</w> <w>ipsae</w> <w>ecclesiae</w> <w>sancti</w> <w>Dionisii</w> <w>medietatem</w> <w>in</w> <w>omnibus</w>. <w>Si</w> <w>quis</w>, <w>quod</w> <w>fieri</w> <w>non</w> <w>credo</w>, <w>aut</w> <w>aliquis</w> <w>de</w> <w>heredibus</w> <w>coheredibusque</w> <w>meis</w> <w>aut</w> <w>quislibet</w> <w>ulla</w> <w>opposita</w> <w>persona</w>, <w>qui</w> <w>contra</w> <w>hanc</w> <w>traditionem</w>, <w>quam</w> <w>ego</w> <w>plenissima</w> <w>voluntate</w> <w>peregi</w> <w>et</w> <w>conscribere</w> <w>rogavi</w>, <w>temptare</w> <w>conaverit</w>, <w>ne</w> <w>hoc</w> <w>valeat</w> <w>evindicare</w>, <w>sed</w> <w>iram</w> <w>dei</w> <w>omnipotentis</w> <w>incurrat</w> <w>et</w> <w>cum</w> <w>athleta</w> <w>Christi</w> <w>mereat</w> <w>rationem</w> <w>habere</w> <w>ante</w> <w>conspectu</w> <w>omnium</w> <w>sanctorum</w> <w>et</w> <w>haec</w> <w>traditio</w> <w>firma</w> <w>permaneat</w>. <w>Acta</w> <w>in</w> <w>monasterio</w> <w>sancti</w> <w>Dionisii</w> <w>sub</w> <w>oppido</w> <w>villa</w> <w>nuncupante</w> <w>Sceftilari</w> <w>et</w> <w>haec</w> <w>testes</w> <w>per</w> <w>aures</w> <w>tracti</w>: <w>Oaspald</w> <w>presbiter</w>, <w>Oasuni</w>, <w>Cundalperht</w>, <w>Ezzilo</w>, <w>Oadalrich</w>, <w>Rihperht</w>, <w>Madalker</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

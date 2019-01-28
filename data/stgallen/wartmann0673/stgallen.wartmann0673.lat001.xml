@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Abtei Sanct Gallen (Ed. Wartmann) Nr. 673</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription des Urkundenbuchs der Abtei Sanct Gallen
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0673.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+		       <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/810983249</idno>
+                  <title level="m" type="main">Urkundenbuch der Abtei Sanct Gallen</title>
+                  <title level="m" type="volume">Theil 1, Jahr 700 - 840</title>
+                  <editor>Wartmann, Hermann</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1863" n="originalAusgabe">1863</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  275 - 276
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stgallen.wartmann0673">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Bestimmung über Besitz und Verwaltung der Kirche Löffingen. </p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Dürrheim</p>
+               </div>
+         <dateline>
+                  <date when="0889">889</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:stgallen.wartmann0673.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>tam</w> <w>praesentibus</w>, <w>quam</w> <w>futuris</w>, <w>quod</w> <w>anno</w> <w>secundo</w> <w>domni</w> <w>Arnolfi</w> <w>regis</w> <w>factum</w> <w>est</w> <w>placitum</w> <w>in</w> <w>pago</w>, <w>qui</w> <w>dicitur</w> <w>Para</w>, <w>in</w> <w>villa</w> <w>nuncupata</w> <w>Durroheim</w>, <w>coram</w> <w>Burghardo</w> <w>comite</w>, <w>filio</w> <w>Adalberti</w> <w>illustris</w>, <w>de</w> <w>ecclesia</w> <w>in</w> <w>Leffingon</w>, <w>qui</w> <w>essent</w> <w>a</w> <w>progenitoribus</w> <w>suis</w> <w>in</w> <w>rebus</w> <w>eiusdem</w> <w>ecclesiae</w> <w>possidendis</w> <w>aut</w> <w>ordinandis</w> <w>potentissimi</w>. <w>Et</w> <w>sacramento</w> <w>in</w> <w>sanctorum</w> <w>reliquiis</w> <w>praemisso</w>, <w>sicut</w> <w>et</w> <w>nuper</w> <w>factum</w> <w>est</w> <w>in</w> <w>diebus</w> <w>Karoli</w> <w>imperatoris</w> <w>secundi</w>, <w>testificatisunt</w> <w>primores</w> <w>populi</w>, <w>Ruodpret</w> <w>videlicet</w> <w>et</w> <w>Nandker</w>, <w>Ratpret</w>, <w>Cozbret</w>, <w>Zuppo</w>, <w>Walah</w>, <w>Theotpret</w>, <w>Richkis</w>, <w>Walthere</w>, <w>Engeibret</w>, <w>Cundbret</w>, <w>Reginhart</w>, <w>Ruodhoh</w>, <w>Kerbret</w>, <w>Richpret</w>, <w>Waldhere</w>, <w>Uodalhart</w>, <w>Liuppo</w>, <w>Roholf</w>, <w>Theoterich</w>, <w>Polio</w>, <w>Ruodhart</w>, <w>Adalrich</w>, <w>Engelbreht</w>, <w>Walthere</w>, <w>Irimbreht</w>. <w>Testimonium</w> <w>ergo</w> <w>hi</w> <w>omnes</w> <w>iuxta</w> <w>sacramentum</w> <w>suum</w> <w>perhibuerunt</w>, <w>quod</w> <w>solummodo</w> <w>parentes</w> <w>subtus</w> <w>scriptorum</w> <w>hominum</w> <w>et</w> <w>hi</w> <w>ipsi</w> <w>potestatem</w> <w>haberent</w> <w>ordinandi</w> <w>ecclesiam</w> <w>in</w> <w>Leffingon</w> <w>absque</w> <w>ullius</w> <w>inferioris</w> <w>aut</w> <w>suppositae</w> <w>personae</w> <w>contradictione</w>: <w>Erchanbret</w>, <w>Emrit</w>, <w>Hunolt</w>, <w>Liutpret</w>, <w>Cozbret</w>. <w>Et</w> <w>his</w> <w>ita</w> <w>patratis</w>, <w>cum</w> <w>adhuc</w> <w>quidam</w> <w>de</w> <w>illis</w>, <w>qui</w> <w>se</w> <w>in</w> <w>illa</w> <w>ecclesia</w> <w>heredes</w> <w>ac</w> <w>dispositores</w> <w>haberi</w> <w>voluerunt</w>, <w>alii</w> <w>garriendo</w>, <w>alii</w> <w>musitando</w> <w>contradicerent</w>, <w>optimates</w> <w>eiusdem</w> <w>concilii</w> <w>apprehensis</w> <w>spatis</w> <w>suis</w> <w>devotaverunt</w>, <w>se</w> <w>haec</w> <w>ita</w> <w>affirmaturos</w> <w>esse</w> <w>coram</w> <w>regibus</w> <w>et</w> <w>cunctis</w> <w>principibus</w> <w>usque</w> <w>ad</w> <w>sanguinis</w> <w>effusionem</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

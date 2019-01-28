@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 140</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0140.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  59–60
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0140">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Aufzeichnung über die Familie der Stifthörigen Fridigart, ihre Verheiratung mit Sigihart und dessen Versuch, sein Eigengut in (Samilin-)Rüti dem Chorherrenstift zu Gunsten des Nonnenklosters zu entfremden</p>
+               </div>
+         <dateline>
+                  <date notBefore="0876" notAfter="0880">876-880</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0140.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>De</w> <w>analoia</w>, <w>id</w> <w>est</w> <w>de</w> <w>genere</w> <w>IIII</w> <w>fratrum</w> <w>servorum</w> <w>celricorum</w>. <w>Isti</w> <w>autem</w> <w>tres</w> <w>fratres</w> <w>fuerunt</w> <w>his</w> <w>nominibus</w>: <w>Wolvine</w>, <w>Irinbold</w>, <w>Herrath</w>, <w>qui</w> <w>in</w> <w>frequenti</w> <w>et</w> <w>familiari</w> <w>servitio</w> <w>erant</w> <w>canonicorum</w>, <w>qui</w> <w>habebant</w> <w>duas</w> <w>sorores</w>: <w>Cuollindam</w> <w>et</w> <w>Fridigartam</w>. <w>Filii</w> <w>autem</w> <w>Wolvinis</w> <w>predicti</w> <w>isti</w> <w>erant</w>: <w>Woffilin</w>, <w>Nizzo</w>, <w>Onsind</w> <w>filii</w> <w>autem</w> <w>Onsinde</w>: <w>Heidirich</w> <w>et</w> <w>Azila</w>; <w>filia</w> <w>autem</w> <w>Irinboldi</w> <w>fuit</w> <w>Woffila</w>, <w>mater</w> <w>Waningi</w> <w>presbyteri</w> <w>et</w> <w>sororum</w> <w>Thruze</w> <w>et</w> <w>Rihze</w>; <w>filia</w> <w>Herrati</w>: <w>Tuzila</w>, <w>que</w> <w>fuit</w> <w>mater</w> <w>Herrati</w> <w>et</w> <w>Junkilini</w>; <w>filii</w> <w>autem</w> <w>Cuollindae</w>: <w>Perorlt</w> <w>minister</w> <w>et</w> <w>pater</w> <w>Regingeri</w>, <w>Irinboldu</w> <w>et</w> <w>sororis</w> <w>Zeizelun</w>; <w>soror</w> <w>Perorldi</w> <w>Hiltigund</w> <w>mater</w> <w>Coldilini</w> <w>et</w> <w>fratris</w> <w>eius</w> <w>Wovilini</w>. <w>Filii</w> <w>autem</w> <w>Fridigartae</w>: <w>Samilin</w> <w>qui</w> <w>dictur</w> <w>Sigihart</w>, <w>Eckihart</w>, <w>Irinbold</w>. <w>Ipsam</w> <w>Fridigartam</w> <w>desponsavit</w> <w>Siginhart</w> <w>filius</w> <w>Wichrammi</w>, <w>frater</w> <w>Tuotun</w> <w>et</w> <w>Wttun</w>, <w>Thiezun</w> <w>et</w> <w>Engilsinde</w> <w>ad</w> <w>clericos</w> <w>et</w> <w>ad</w> <w>prefatos</w> <w>fratres</w> <w>suos</w> <w>cum</w> <w>tali</w> <w>proprietate</w>, <w>sicut</w> <w>ei</w> <w>pater</w> <w>suus</w> <w>in</w> <w>Riutin</w> <w>et</w> <w>illa</w> <w>marcha</w> <w>quesitam</w> <w>et</w> <w>inquirendam</w> <w>reliquit</w>, <w>cum</w> <w>licentia</w> <w>Willeharii</w> <w>advocati</w> <w>regis</w> <w>Karoli</w>, <w>in</w> <w>presentia</w> <w>suorum</w> <w>amicorum</w>: <w>Liumnot</w>, <w>Nordilo</w>, <w>Herich</w>, <w>Wichere</w>, <w>Cuotilin</w>, <w>Fardman</w>, <w>Atelo</w>, <w>Ozilin</w>, <w>et</w> <w>duxit</w> <w>in</w> <w>ipsam</w> <w>proprietatem</w> <w>et</w> <w>peperit</w> <w>ibidem</w> <w>predictos</w> <w>filios</w> <w>ibique</w>, <w>usque</w> <w>dum</w> <w>vivebat</w>, <w>manebat</w>. <w>Postmodum</w> <w>vero</w> <w>ecclesiam</w> <w>et</w> <w>clericos</w> <w>fugiendo</w> <w>ipse</w> <w>Sigehart</w> <w>ipsum</w> <w>proprium</w> <w>tradidit</w> <w>pro</w> <w>uno</w> <w>solido</w> <w>ad</w> <w>monasterium</w> <w>monialium</w>; <w>et</w> <w>ipse</w> <w>Samilin</w> <w>clam</w> <w>postea</w> <w>ipsum</w> <w>censum</w> <w>sigulis</w> <w>annis</w> <w>solvebat</w>, <w>usque</w> <w>dum</w> <w>Hedirich</w> <w>cum</w> <w>aliis</w> <w>prohibebat</w> <w>fratribus</w>, <w>et</w> <w>ipsum</w> <w>cum</w> <w>licentia</w> <w>et</w> <w>iudicio</w> <w>advocati</w> <w>ad</w> <w>proprium</w> <w>servum</w> <w>cum</w> <w>ipso</w> <w>predio</w> <w>tenebant</w> <w>ex</w> <w>ipsa</w> <w>ancilla</w> <w>Fridigarta</w> <w>et</w> <w>propter</w> <w>iniustum</w> <w>quem</w> <w>illuc</w> <w>solvebat</w> <w>censum</w> <w>et</w>, <w>usque</w> <w>dum</w> <w>vivebat</w>, <w>in</w> <w>eorum</w> <w>servitio</w> <w>manebat</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

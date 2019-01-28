@@ -1,0 +1,96 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Bündner Urkundenbuch (Ed. Meyer-Marthaler/Perret) Nr. 28</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Bündner Urkundenbuches</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/880043962</idno>
+                  <title level="m" type="main">Bündner Urkundenbuch</title>
+                  <title level="m" type="volume">390-1199</title>
+                  <editor xml:id="meyermarthaler">Meyer-Marthaler, Elisabeth</editor>
+                  <editor xml:id="perret">Perret, Franz</editor>
+                  <imprint>
+                     <pubPlace>Chur</pubPlace>
+                     <date when="1955" n="originalAusgabe">1955</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  30
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Bündner Urkundenbuches, welches 1955 von Elisabeth Meyer-Marthaler und Franz Perret herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="buenden.meyer-marthaler0028">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Der Richter Daumerius schenkt der Kirche St. Hilarius zu seinem Seelenheil und zum Gedächtnis seines Namens eine Wiese in Tesquene.</p>
+               </div>
+         <dateline>
+               <date notBefore="0768" notAfter="0800" cert="unknown">768–800</date> 
+               <date when="0814" cert="unknown" resp="#meyermarthaler #perret">[814]</date>
+            
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:buenden.meyer-marthaler0028.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>[+</w> <w>In]</w> <w>Christi</w> <w>nomine</w>. <w>Do</w> <w>ego</w> <w>Daumerius</w> <w>ad</w> <w>aecclesiam</w> <w>sancti</w> <w>Elarii</w> <w>pra[t]um</w> <w>in</w> <w>Tesquene</w> <w>honus</w> <w>II</w>, <w>quod</w> <w>mihi</w> <w>advenit</w> <w>ex</w> <w>conpactione</w> <w>da</w> <w>Foscione</w> <w>pro</w> <w>remedium</w> <w>animae</w> <w>meae</w> <w>et</w> <w>nominis</w> <w>mei</w> <w>recitatione</w>, <w>confinat</w> <w>da</w> <w>una</w> <w>parte</w> <w>Uigilii</w>, <w>da</w> <w>alia</w> <w>in</w> <w>Uictoriani</w> <w>coloni</w>, <w>da</w> <w>supra</w> <w>in</w> <w>Massanesco</w>. <w>Signum</w> <w>[D]aumerii</w> <w>a</w> <w>iudicis</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>ob</w> <w>mercedis</w> <w>sue</w> <w>augmentum</w> <w>fieri</w> <w>petiit</w>. <w>Signum</w> <w>Urseceni</w> <w>nepotis</w> <w>Daume[ri]i</w> <w>testes</w>. <w>Signum</w> <w>Agarici</w> <w>iudices</w> <w>testes</w>. <w>Signum</w> <w>Uigelii</w> <w>de</w> <w>vico</w> <w>[T]remune</w> <w>testes</w>. <w>Signum</w> <w>Gisonis</w> <w>testes</w>. <w>Signum</w> <w>Prestancii</w> <w>testes</w>. <w>[S]ignum</w> <w>Ingenni</w> <w>testes</w>.</p>
+					          <p xml:space="preserve"><w>Ego</w> <w>Orsacius</w> <w>per</w> <w>misericordiam</w> <w>dei</w> <w>[v]ocatus</w> <w>presbiter</w> <w>a</w> <w>vice</w> <w>Lubucionis</w> <w>diaconi</w> <w>scripsi</w> <w>et</w> <w>suscripsi</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

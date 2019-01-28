@@ -1,0 +1,100 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 208</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0208.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  98
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0208">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Thiepirc übergibt acht Hörige an den Altar der Heiligen Felix und Regula </p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Zürich</p>
+               </div>
+         <dateline>
+                     <date when="0964-10-05" cert="unknown">964 10 05, </date>
+                     <date when="0964-10-12" cert="unknown">964 10 12, </date>
+                     <date when="0964-10-19" cert="unknown">964 10 19 o. </date>
+                     <date when="0964-10-26" cert="unknown">964 10 26</date>
+                  
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0208.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Scitum</w> <w>esse</w> <w>volumus</w> <w>omnibus</w> <w>presentibus</w> <w>scilicet</w> <w>et</w> <w>futuris</w>, <w>qualiter</w> <w>ego</w> <w>Thiepirc</w> <w>cum</w> <w>manu</w> <w>advocati</w> <w>mei</w> <w>Purchardi</w> <w>comitis</w> <w>quedam</w> <w>manticipia</w> <w>utriusque</w> <w>sexus</w> <w>iuris</w> <w>meae</w> <w>sic</w> <w>nominata</w>: <w>Routhere</w>, <w>Ernist</w>, <w>Renger</w>, <w>Adilgart</w>, <w>Hadiburc</w>, <w>Opirc</w>, <w>Reginwiz</w>, <w>Liucart</w> <w>tradidi</w> <w>ad</w> <w>aeclaesiam</w> <w>et</w> <w>ad</w> <w>altare</w> <w>sanctorum</w> <w>martyrum</w> <w>Felicis</w> <w>et</w> <w>Regulae</w>, <w>in</w> <w>eo</w> <w>scilicet</w> <w>rationis</w> <w>firmamento</w>, <w>ut</w> <w>luminaria</w> <w>sanctorum</w> <w>incendenda</w> <w>et</w> <w>istum</w> <w>censum</w> <w>reddendo</w> <w>liberi</w> <w>exeant</w> <w>et</w> <w>permaneant</w>, <w>muntpurdium</w> <w>et</w> <w>dominatorem</w> <w>et</w> <w>defensorem</w>, <w>ubicumque</w> <w>eis</w> <w>placuerit</w>, <w>eligant</w>. <w>Actum</w> <w>in</w> <w>loco</w>, <w>qui</w> <w>dicitur</w> <w>Zurich</w>, <w>in</w> <w>publico</w> <w>comitis</w> <w>Purchardi</w> <w>concilio</w> <w>presentibus</w> <w>plurimis</w>, <w>quorum</w> <w>nomina</w> <w>suppontur</w>. <w>Signum</w> <w>mei</w> <w>ipsius</w> <w>Thiepirgae</w>, <w>quae</w> <w>cum</w> <w>manu</w> <w>advocate</w> <w>mei</w> <w>Pereckeri</w>, <w>quem</w> <w>predictus</w> <w>Purchardus</w> <w>potestativum</w> <w>fecit</w>, <w>hanc</w> <w>cartam</w> <w>scriber</w> <w>rogavi</w>. <w>Signum</w> <w>aliorum</w>: <w>Manigolt</w>, <w>Wipreht</w>, <w>Libo</w>, <w>Ato</w>, <w>Helmirihc</w>, <w>Landirihc</w>, <w>Thietirihc</w>, <w>Wipreht</w>, <w>Adilbreht</w>, <w>Periker</w>, <w>item</w> <w>Periker</w>, <w>Immo</w>, <w>Francho</w>, <w>Ezilo</w>, <w>Kerlo</w>, <w>Ebirhart</w>, <w>Adilbero</w>, <w>Meginolt</w>. <w>Ego</w> <w>itaque</w> <w>Ebirhardus</w> <w>cancellarius</w> <w>scripsi</w>, <w>notavi</w> <w>diem</w> <w>et</w> <w>mensem</w> <w>et</w> <w>annum</w>, <w>di</w> <w>Mercurii</w>, <w>mense</w> <w>Oct</w>., <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>DCCCLXIIII</w>., <w>regnante</w> <w>rege</w> <w>Ottono</w>, <w>sub</w> <w>duce</w> <w>Purchardo</w> <w>et</w> <w>sub</w> <w>comite</w> <w>Purchardo</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

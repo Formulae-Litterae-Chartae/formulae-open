@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Stadt und der Landschaft Zürich (Ed. Escher/Schweizer) Nr. 226</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Urkundenbuches der Stadt und der Landschaft Zürich</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen(Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:zuerich.escher0226.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/019870175</idno>
+                  <title>Urkundenbuch der Stadt und Landschaft Zürich</title>
+                  <editor>Escher, J.</editor>
+                  <editor>Schweizer, P.</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1888" n="originalAusgabe">1888</date>
+                     <biblScope unit="pp">
+                  117
+               </biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="zuerich.escher0226">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Archidiacon Konrad von Metz dediciert der Aebtissen Ermendrud von Zürich ein zu diesem Behuf geschriebenes Exemplar von Gergorii Moralia pars. I.</p>
+               </div>
+         <dateline>
+                  <date when="1000" scope="circa" precision="medium">c. 1000</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:zuerich.escher0226.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <head xml:space="preserve"><w>Epistola</w> <w>domni</w> <w>Conradi</w> <w>Metensis</w> <w>archidiaconi</w> <w>missa</w> <w>ad</w> <w>Turegense</w> <w>cenobium</w>.</head>
+                     <p xml:space="preserve"><w>Sanctae</w> <w>Duregensis</w> <w>aecclesiae</w> <w>reverendae</w> <w>Ermendrudi</w> <w>abbatisae</w> <w>et</w> <w>cunctae</w> <w>sanctimonialium</w> <w>catervae</w> <w>sibi</w> <w>commissae</w> <w>Conradus</w> <w>Mettensis</w> <w>archidiaconus</w> <w>debitas</w> <w>in</w> <w>Christo</w> <w>cum</w> <w>devotione</w> <w>preces</w>. <w>Quod</w> <w>me</w> <w>beatorum</w> <w>apostolorum</w> <w>Petri</w> <w>et</w> <w>Pauli</w> <w>limina</w> <w>petentem</w> <w>in</w> <w>vestris</w> <w>finibus</w> <w>non</w> <w>solum</w> <w>honorifice</w> <w>suscepistis</w>, <w>verum</w> <w>aetiam</w> <w>omnem</w> <w>humanitatem</w> <w>spetiali</w> <w>dilectione</w> <w>generaliter</w> <w>exhibuistis</w>, <w>si</w> <w>opera</w> <w>sicut</w> <w>volo</w> <w>dignas</w> <w>grates</w> <w>vobis</w> <w>rependere</w> <w>nequeo</w>, <w>solum</w> <w>id</w> <w>quod</w> <w>valeo</w> <w>eo</w> <w>studiosius</w> <w>devote</w> <w>mente</w> <w>facere</w> <w>desidero</w>, <w>quo</w> <w>me</w> <w>in</w> <w>aliquot</w> <w>huiuscemodi</w> <w>negotio</w> <w>defecisse</w> <w>cognosco</w>.</p>
+                     <p xml:space="preserve"><w>Nam</w> <w>licet</w> <w>in</w> <w>divina</w> <w>pagina</w> <w>legatur</w>, <w>quod</w> <w>exhibito</w> <w>operis</w> <w>probation</w> <w>sit</w> <w>verae</w> <w>dilectionis</w>, <w>attamen</w> <w>cogente</w> <w>necessitate</w>, <w>quandocumque</w> <w>facultas</w> <w>bonae</w> <w>operationis</w> <w>defecerit</w>, <w>si</w> <w>voluntas</w> <w>integrae</w> <w>devotionis</w> <w>permanserit</w>, <w>nullum</w> <w>ex</w> <w>hoc</w> <w>detrimentum</w> <w>karitas</w> <w>habebit</w>, <w>quia</w> <w>si</w> <w>quid</w> <w>defuerit</w> <w>ex</w> <w>operatione</w>, <w>id</w> <w>totum</w> <w>implet</w> <w>karitas</w> <w>pro</w> <w>bona</w> <w>volunate</w>. <w>Igitur</w>, <w>ut</w> <w>praefatus</w> <w>sum</w>, <w>non</w> <w>meis</w> <w>meritis</w>, <w>sed</w> <w>gratia</w> <w>verae</w> <w>karitatis</w> <w>honorabiliter</w> <w>a</w> <w>vobis</w> <w>susceptus</w> <w>tanta</w> <w>detentus</w> <w>sum</w> <w>familiaritate</w> <w>vobiscum</w>, <w>ut</w> <w>omnino</w> <w>non</w> <w>hospitem</w>, <w>sed</w> <w>potius</w> <w>unum</w> <w>vestre</w> <w>sanctitati</w> <w>familiarissimum</w> <w>me</w> <w>esse</w> <w>putarem</w>. <w>Unde</w> <w>dum</w> <w>inter</w> <w>ipsa</w> <w>sacra</w> <w>eloquia</w> <w>vestra</w>, <w>quae</w> <w>mihi</w> <w>videbantur</w> <w>quodammodo</w> <w>flatu</w> <w>sancti</w> <w>spiritus</w> <w>ignita</w> <w>et</w> <w>quasi</w> <w>ex</w> <w>ipso</w> <w>fonte</w> <w>salutaris</w> <w>scientiae</w> <w>salientia</w>, <w>primam</w> <w>partem</w> <w>moralium</w> <w>beati</w> <w>Gregorii</w> <w>in</w> <w>librum</w> <w>Iob</w> <w>vos</w> <w>non</w> <w>habere</w> <w>doleretis</w> <w>et</w> <w>gravibus</w> <w>suspiriis</w> <w>aegre</w> <w>tolerartis</w>, <w>ego</w> <w>quoque</w> <w>super</w> <w>hoc</w> <w>non</w> <w>minori</w> <w>cura</w> <w>sollicitus</w> <w>mecum</w> <w>tacitus</w> <w>cogitavi</w>, <w>quomodo</w> <w>in</w> <w>hac</w> <w>re</w> <w>vestro</w> <w>desiderio</w> <w>sastifacerem</w>. <w>Et</w> <w>cum</w> <w>ipsam</w> <w>partem</w> <w>moralium</w> <w>non</w> <w>haberem</w>, <w>pro</w> <w>vestra</w> <w>dilectione</w> <w>querere</w> <w>proposui</w>, <w>sicubi</w> <w>potuissem</w> <w>invenire</w>, <w>idque</w> <w>ne</w> <w>deleretur</w> <w>oblivion</w>, <w>tenaci</w> <w>potius</w> <w>commendavi</w> <w>memoriae</w>. <w>Post</w> <w>haec</w> <w>itaque</w> <w>cum</w> <w>reversus</w> <w>venissem</w> <w>ad</w> <w>patriam</w>, <w>favente</w> <w>domino</w> <w>quasi</w> <w>ex</w> <w>potato</w> <w>in</w> <w>nostro</w> <w>monasterio</w> <w>citius</w> <w>repperi</w>, <w>quod</w> <w>prius</w> <w>non</w> <w>habere</w> <w>vehementer</w> <w>extimui</w>. <w>Hanc</w> <w>partem</w> <w>continuo</w> <w>promptissima</w> <w>diligentia</w> <w>descriptam</w> <w>karitati</w> <w>vestrae</w> <w>dirigere</w> <w>destinabam</w>, <w>ut</w> <w>eo</w> <w>tenacious</w> <w>vera</w> <w>dilectio</w> <w>quasi</w> <w>glutine</w> <w>fidei</w> <w>ad</w> <w>unguem</w> <w>usque</w> <w>perducta</w> <w>inter</w> <w>nos</w> <w>iugiter</w> <w>valeat</w> <w>permanere</w>, <w>quo</w> <w>ego</w> <w>vobis</w> <w>sanctae</w> <w>karitas</w> <w>dulcedine</w> <w>copulates</w> <w>et</w> <w>singularis</w> <w>amicitae</w> <w>vos</w> <w>faedere</w> <w>complexus</w> <w>gratum</w> <w>quid</w> <w>vobis</w> <w>et</w> <w>amicabile</w> <w>videar</w> <w>obtulisse</w>:</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Abtei Sanct Gallen (Ed. Wartmann) Nr. 607</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription des Urkundenbuchs der Abtei Sanct Gallen
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0607.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+		       <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/810983249</idno>
+                  <title level="m" type="main">Urkundenbuch der Abtei Sanct Gallen</title>
+                  <title level="m" type="volume">Theil 1, Jahr 700 - 840</title>
+                  <editor>Wartmann, Hermann</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1863" n="originalAusgabe">1863</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  218
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stgallen.wartmann0607">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Kerenbold überträgt den von ihm zu Leutmärken und Oberdorf und von seinem Vater zu Hessikofen erworbenen Besitz an Sanct Gallen.</p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Kloster St. Gallen</p>
+               </div>
+         <dateline>
+                  <date when="0878-05-01">878 05 01</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:stgallen.wartmann0607.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>In</w> <w>Christi</w> <w>nomine</w>. <w>Ego</w> <w>Kerenbold</w> <w>trado</w> <w>ad</w> <w>coenobium</w> <w>sancti</w> <w>Galli</w> <w>cum</w> <w>manu</w> <w>advocati</w> <w>mei</w> <w>Lantolti</w> <w>quicquid</w> <w>adquisitionis</w> <w>in</w> <w>Liutmarinchovan</w> <w>et</w> <w>in</w> <w>ipsa</w> <w>marcha</w> <w>et</w> <w>in</w> <w>Obordorfarromarcha</w> <w>hodierna</w> <w>die</w> <w>visus</w> <w>sum</w> <w>possidere</w> <w>et</w> <w>quicquid</w> <w>pater</w> <w>suus</w> <w>Wolfpret</w> <w>in</w> <w>Hassinchovarromarcha</w> <w>conquisivit</w>, <w>curtem</w> <w>cum</w> <w>domo</w> <w>caeterisque</w> <w>edificiis</w>, <w>campis</w>, <w>pratis</w>, <w>pascuis</w>, <w>silvis</w>, <w>viis</w>, <w>aquis</w> <w>aquarumque</w> <w>decursibus</w>, <w>quicquid</w> <w>dici</w> <w>vel</w> <w>nominari</w> <w>potest</w>, <w>omnia</w> <w>videlicet</w> <w>ex</w> <w>integro</w> <w>trado</w> <w>ad</w> <w>coenobium</w> <w>sancti</w> <w>Galli</w>, <w>cui</w> <w>modo</w> <w>venerabilis</w> <w>abba</w> <w>Hartmotus</w> <w>praeesse</w> <w>videtur</w>; <w>eo</w> <w>pacto</w>, <w>ut</w> <w>easdem</w> <w>res</w> <w>ad</w> <w>me</w> <w>recipiens</w> <w>tempus</w> <w>vitae</w> <w>meae</w> <w>possideam</w> <w>sub</w> <w>censu</w> <w>duorum</w> <w>denariorum</w>. <w>Et</w> <w>si</w> <w>aliquando</w> <w>mihi</w> <w>placeat</w> <w>monachicam</w> <w>vitam</w> <w>subire</w>, <w>licentiam</w> <w>habeam</w> <w>in</w> <w>praedicto</w> <w>monasterio</w> <w>regularem</w> <w>vitam</w> <w>suscipere</w>. <w>Sive</w> <w>enim</w> <w>regularem</w> <w>vitam</w> <w>suscipiam</w>, <w>sive</w> <w>non</w>, <w>praedictae</w> <w>tamen</w> <w>res</w> <w>in</w> <w>ius</w> <w>monasterii</w> <w>redeant</w> <w>absque</w> <w>ullius</w> <w>contradictione</w> <w>perpetualiter</w> <w>possidendae</w>. <w>Quod</w> <w>si</w> <w>quis</w> <w>inventus</w> <w>fuerit</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>traditionis</w> <w>irrumpere</w> <w>voluerit</w>, <w>primitus</w> <w>iram</w> <w>Dei</w> <w>incurrat</w>, <w>deinde</w> <w>ad</w> <w>aerarium</w> <w>regis</w> <w>ea</w> <w>componat</w>, <w>quae</w> <w>in</w> <w>lege</w> <w>Alamannorum</w> <w>continentur</w>, <w>et</w> <w>haec</w> <w>carta</w> <w>firma</w> <w>permaneat</w> <w>cum</w> <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>in</w> <w>ipso</w> <w>monasterio</w>, <w>praesentibus</w> <w>quorum</w> <w>hic</w> <w>signa</w> <w>continentur</w>. <w>Signum</w> <w>Kerenboldi</w> <w>et</w> <w>advocati</w> <w>eius</w> <w>Lantolti</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>traditionis</w> <w>fieri</w> <w>rogaverunt</w>. <w>†</w> <w>Wetti</w>. <w>Engilbold</w>. <w>Cozolt</w>. <w>Heribrant</w>. <w>Nandker</w>. <w>Ruodpret</w>. <w>Uodalbret</w>. <w>Lanzo</w>. <w>item</w> <w>Ruodpret</w>. <w>Amalunc</w>. <w>Reginbold</w>. <w>Lantpret</w>. <w>Cozbret</w>. <w>Thiotpret</w>. <w>Puoto</w>. <w>Willihelm</w>. <w>Hungoz</w>. <w>Ego</w> <w>itaque</w> <w>Purgolf</w> <w>cum</w> <w>iussione</w> <w>domini</w> <w>mei</w> <w>Hartmoti</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>. <w>Notavi</w> <w>diem</w> <w>V</w> <w>feriam</w>, <w>hoc</w> <w>est</w> <w>kal</w>. <w>mai</w>., <w>annum</w> <w>secundum</w> <w>regni</w> <w>domni</w> <w>Karoli</w>, <w>Adalbertum</w> <w>comitem</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

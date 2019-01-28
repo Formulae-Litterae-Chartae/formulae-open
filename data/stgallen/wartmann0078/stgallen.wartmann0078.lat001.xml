@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Abtei Sanct Gallen (Ed. Wartmann) Nr. 78</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription des Urkundenbuchs der Abtei Sanct Gallen
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0078.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+		       <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/810983249</idno>
+                  <title level="m" type="main">Urkundenbuch der Abtei Sanct Gallen</title>
+                  <title level="m" type="volume">Theil 1, Jahr 700 - 840</title>
+                  <editor>Wartmann, Hermann</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1863" n="originalAusgabe">1863</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  75
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stgallen.wartmann0078">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Atta schenkt der Kirche des heiligen Gallus in Egringen zwei Hörige.</p>
+               </div>
+         <dateline>
+                  <date when="0775-06-26">775 06 26</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:stgallen.wartmann0078.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Domno</w> <w>sacrosancto</w> <w>eclesia</w> <w>sancti</w> <w>Caliani</w>, <w>qui</w> <w>est</w> <w>constructa</w> <w>in</w> <w>wiilla</w>, <w>qui</w> <w>dicitur</w> <w>Agurincas</w>, <w>et</w> <w>eius</w> <w>aspectus</w>, <w>ubi</w> <w>ipsi</w> <w>domnus</w> <w>in</w> <w>corpore</w> <w>requiescit</w>. <w>Atta</w> <w>cuitavi</w> <w>de</w> <w>Dei</w> <w>timure</w> <w>vel</w> <w>eterna</w> <w>bona</w> <w>retribucioni</w>, <w>donavi</w> <w>ad</w> <w>ipso</w> <w>sancto</w> <w>mancipia</w> <w>dua</w> <w>is</w> <w>numinibus</w> <w>Adalrico</w> <w>et</w> <w>Waldtrudi</w>, <w>pro</w> <w>anima</w> <w>remedie</w> <w>mei</w> <w>ipsi</w> <w>sancti</w> <w>abiant</w>, <w>teniant</w> <w>adque</w> <w>possaediant</w>, <w>quidque</w> <w>exinde</w> <w>facire</w> <w>voluerint</w>, <w>liberam</w> <w>abiant</w> <w>potestate</w>. <w>Si</w> <w>quis</w> <w>viro</w> <w>ego</w> <w>ipse</w> <w>aut</w> <w>heredes</w> <w>mei</w> <w>aut</w> <w>ulla</w> <w>oposita</w> <w>persona</w> <w>cuntra</w> <w>hanc</w> <w>dunacioni</w> <w>ista</w> <w>vinire</w> <w>timtavirit</w>, <w>quod</w> <w>ne</w> <w>fiere</w> <w>credo</w>, ...... <w>et</w> <w>sit</w> <w>culpabilis</w> <w>dubla</w> <w>repidicioni</w> <w>et</w> <w>in</w> <w>fisco</w> <w>auri</w> <w>uncias</w> <w>II</w>, <w>argento</w> <w>pondus</w> <w>II</w>, <w>et</w> <w>nihilominum</w> <w>dunacio</w> <w>is</w> <w>firma</w> <w>permaniat</w> <w>istibulacio</w> <w>supnexa</w>. <w>Actum</w> <w>in</w> <w>Agurincas</w> <w>willa</w> <w>publici</w>, <w>precamus</w> <w>ad</w> <w>ipso</w> <w>loco</w> <w>siant</w> <w>in</w> <w>Agorincas</w>. <w>Signum</w> <w>†</w> <w>Attani</w>, <w>qui</w> <w>fiere</w> <w>rocawit</w>. <w>sig</w>. <w>†</w> <w>Dodoni</w>, <w>qui</w> <w>cunsinsit</w>. <w>sig</w>. <w>†</w> <w>Salacchoni</w>. <w>sig</w>. <w>†</w> <w>Witperto</w>. <w>sig</w>. <w>†</w> <w>Haitoni</w>. <w>sig</w>. <w>†</w> <w>Waldgero</w>. <w>sig</w>. <w>†</w> <w>Lantfrido</w>. <w>sig</w>. <w>†</w> <w>Maginberto</w>. <w>sig</w>. <w>†</w> <w>Rammolfo</w>. <w>sig</w>. <w>†</w> <w>Atoni</w>. <w>Ego</w> <w>in</w> <w>Dei</w> <w>numen</w> <w>Lantarius</w>, <w>ac</w> <w>si</w> <w>indignus</w> <w>vocatus</w> <w>presbiter</w>, <w>rocatus</w> <w>scripsi</w> <w>et</w> <w>suscripsi</w>. <w>Dadavi</w> <w>VI</w> <w>kal</w>. <w>iul</w>., <w>anno</w> <w>VII</w> <w>regni</w> <w>domni</w> <w>nostri</w> <w>Carlo</w> <w>reges</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

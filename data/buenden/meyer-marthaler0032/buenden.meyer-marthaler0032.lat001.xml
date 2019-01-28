@@ -1,0 +1,96 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Bündner Urkundenbuch (Ed. Meyer-Marthaler/Perret) Nr. 32</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transkription des Bündner Urkundenbuches</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                    Distributed under a Creative Commons Attribution 4.0 International License.
+                </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/880043962</idno>
+                  <title level="m" type="main">Bündner Urkundenbuch</title>
+                  <title level="m" type="volume">390-1199</title>
+                  <editor xml:id="meyermarthaler">Meyer-Marthaler, Elisabeth</editor>
+                  <editor xml:id="perret">Perret, Franz</editor>
+                  <imprint>
+                     <pubPlace>Chur</pubPlace>
+                     <date when="1955" n="originalAusgabe">1955</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  32–33
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Bündner Urkundenbuches, welches 1955 von Elisabeth Meyer-Marthaler und Franz Perret herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="buenden.meyer-marthaler0032">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Alkuin dankt Bischof Remedius für seine Briefe und sein Gebet und ermahnt ihn.</p>
+               </div>
+         <dateline>
+                  <date notBefore="0801" notAfter="0804">801-804</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:buenden.meyer-marthaler0032.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Beatissimo</w> <w>patri</w> <w>Remedio</w> <w>episcopo</w> <w>humilis</w> <w>levita</w> <w>Alchvinus</w> <w>salutem</w>. <w>Acceptis</w> <w>amabiliter</w> <w>venerandae</w> <w>dilectionis</w> <w>vestrae</w> <w>litteris</w>, <w>quae</w> <w>me</w> <w>multo</w> <w>gaudio</w> <w>laetificaverunt</w>, <w>de</w> <w>prosperitate</w> <w>dignitatis</w> <w>vestrae</w> <w>seu</w> <w>de</w> <w>recordatione</w> <w>nominis</w> <w>nostri</w>. <w>Quia</w> <w>multum</w> <w>confido</w> <w>per</w> <w>dei</w> <w>gratiam</w> <w>de</w> <w>intercessionibus</w> <w>sanctitatis</w> <w>vestrae</w>; <w>et</w> <w>quanto</w> <w>me</w> <w>plus</w> <w>peccatorem</w> <w>agnosco</w>, <w>tanto</w> <w>magis</w> <w>me</w> <w>indigere</w> <w>sanctas</w> <w>orationes</w> <w>vestras</w> <w>novi</w>. <w>Non</w> <w>solum</w> <w>me</w> <w>aliquid</w> <w>venie</w> <w>mereri</w> <w>non</w> <w>dubito</w> <w>per</w> <w>vestrae</w> <w>caritatis</w> <w>continuas</w> <w>supplicationes</w>, <w>sed</w> <w>vosmetipsos</w> <w>magnam</w> <w>habere</w> <w>mercedem</w> <w>pro</w> <w>integritate</w> <w>sanctae</w> <w>fidei</w> <w>congratulor</w>; <w>nam</w> <w>et</w> <w>promissionem</w> <w>verissimam</w> <w>ipsius</w> <w>veritatis</w> <w>habemus</w>, <w>quae</w> <w>ait</w>: „<w>Ubi</w> <w>sunt</w> <w>duo</w> <w>vel</w> <w>tres</w> <w>congregati</w> <w>in</w> <w>nomine</w> <w>meo</w>, <w>ibi</w> <w>sum</w> <w>in</w> <w>medio</w> <w>eorum</w>“. <w>Congregatio</w> <w>nostra</w> <w>est</w> <w>in</w> <w>spiritu</w> <w>caritatis</w>, <w>non</w> <w>in</w> <w>corporis</w> <w>praesentia</w>; <w>et</w> <w>cui</w> <w>omnia</w> <w>praesto</w> <w>sunt</w>, <w>non</w> <w>latet</w> <w>eum</w> <w>caritatis</w> <w>nostrae</w> <w>puritas</w>, <w>sine</w> <w>qua</w> <w>nil</w> <w>placet</w> <w>deo</w>, <w>nec</w> <w>munus</w> <w>ad</w> <w>aram</w>. <w>Hanc</w> <w>ergo</w> <w>sequamur</w> <w>intimo</w> <w>cordis</w> <w>affectu</w>, <w>ut</w> <w>ad</w> <w>illum</w> <w>pervenire</w> <w>mereamur</w>, <w>qui</w> <w>est</w> <w>vera</w> <w>caritas</w>, <w>et</w> <w>indeficiens</w> <w>beatitudo</w>, <w>et</w> <w>beata</w> <w>aeternitas</w>, <w>ut</w> <w>labor</w> <w>non</w> <w>sit</w> <w>inanis</w>, <w>sed</w> <w>ad</w> <w>perfectae</w> <w>retributionis</w> <w>perveniat</w> <w>gloriam</w>.</p>
+                     <p xml:space="preserve"><w>Ad</w> <w>hanc</w> <w>vicissitudinem</w> <w>solicita</w> <w>litterarum</w> <w>tuarum</w> <w>dilectio</w> <w>meam</w> <w>segnitiem</w> <w>hortari</w> <w>nullatenus</w> <w>inmemor</w> <w>esto</w>, <w>quatenus</w> <w>ad</w> <w>illam</w> <w>beatissimam</w> <w>visionem</w> <w>domini</w> <w>nostri</w> <w>Iesu</w> <w>Christi</w> <w>pervenire</w> <w>mereamur</w>, <w>ubi</w> <w>est</w> <w>lumen</w> <w>aeternum</w> <w>et</w> <w>quies</w> <w>perpetuae</w> <w>pacis</w> <w>laetissima</w>. <w>Ad</w> <w>huius</w> <w>beatitudinis</w> <w>pacem</w> <w>omnes</w> <w>ad</w> <w>te</w> <w>venientes</w>, <w>vel</w> <w>etiam</w> <w>pertinentes</w> <w>exemplis</w> <w>optimae</w> <w>vitae</w> <w>trahere</w> <w>non</w> <w>desistas</w>; <w>nec</w> <w>admonitionibus</w> <w>dulcissimis</w> <w>corda</w> <w>arentia</w> <w>inrigare</w> <w>segnis</w> <w>esto</w>, <w>ut</w> <w>culmen</w> <w>nominate</w> <w>dignitatis</w> <w>in</w> <w>te</w> <w>sublimitatem</w> <w>meritorum</w> <w>habeat</w> <w>in</w> <w>conspectu</w> <w>dei</w>. </p>
+                     <p xml:space="preserve"><w>Sint</w> <w>verba</w> <w>tua</w> <w>sale</w> <w>sapientiae</w> <w>condita</w>, <w>ut</w> <w>te</w> <w>verissime</w> <w>dicatur</w>: „<w>Ecce</w> <w>sacerdos</w> <w>magnus</w>, <w>qui</w> <w>in</w> <w>diebus</w> <w>suis</w> <w>placuit</w> <w>deo</w>?“; <w>qui</w> <w>multiplicatis</w> <w>dominice</w> <w>pecunie</w> <w>talentis</w> <w>domini</w> <w>suo</w> <w>occurrere</w> <w>dignus</w> <w>habeatur</w>, <w>et</w> <w>audire</w> <w>vocem</w> <w>desiderabilem</w>: „<w>Euge</w> <w>serve</w> <w>bone</w> <w>et</w> <w>fidelis</w>, <w>intra</w> <w>in</w> <w>gaudium</w> <w>domini</w> <w>dei</w> <w>tui</w>“. <w>Properat</w> <w>enim</w> <w>dies</w> <w>ultimus</w>, <w>et</w> <w>tacito</w> <w>pede</w> <w>fessa</w> <w>senectus</w> <w>ingreditur</w> <w>cubile</w> <w>nostrum</w>, <w>stat</w> <w>ostium</w> <w>qui</w> <w>pulsat</w>, <w>si</w> <w>leto</w> <w>animo</w> <w>adventum</w> <w>ipsius</w> <w>suscipiamus</w>. <w>Dies</w> <w>sunt</w> <w>pauci</w> <w>laboris</w> <w>nostri</w>, <w>sed</w> <w>bene</w> <w>laborantem</w> <w>sequitur</w> <w>merces</w> <w>sine</w> <w>numero</w> <w>dierum</w>, <w>eius</w> <w>ordinatione</w>, <w>qui</w> <w>ordinat</w> <w>diem</w> <w>aeternum</w>, <w>secundum</w> <w>merita</w> <w>singulorum</w>; <w>in</w> <w>cuius</w> <w>domo</w> <w>mansiones</w> <w>multae</w> <w>sunt</w>; <w>sed</w> <w>hae</w> <w>omnes</w> <w>divitiis</w> <w>felicitatis</w> <w>et</w> <w>gloria</w> <w>beatitudinis</w> <w>sunt</w> <w>plenae</w>, <w>ubi</w> <w>sancti</w> <w>post</w> <w>huius</w> <w>vitae</w> <w>sudorem</w> <w>aeterna</w> <w>pace</w> <w>fruuntur</w>, <w>qui</w> <w>nostrum</w> <w>de</w> <w>supernis</w> <w>sedibus</w> <w>expectant</w> <w>agonem</w>, <w>desiderantes</w> <w>ex</w> <w>nobis</w> <w>augeri</w> <w>numerum</w> <w>suum</w>, <w>quo</w> <w>tu</w> <w>properans</w>, <w>beatissime</w> <w>pater</w>, <w>meque</w> <w>precibus</w> <w>tecum</w> <w>rapere</w> <w>secundum</w> <w>fidelissimas</w> <w>promissiones</w> <w>tuas</w> <w>satage</w>, <w>ut</w> <w>corona</w> <w>gloriae</w> <w>tuae</w> <w>mihi</w> <w>proficiat</w>, <w>Christo</w> <w>donante</w>, <w>in</w> <w>perpetuam</w> <w>miserationis</w> <w>dei</w> <w>salutem</w>. </p>
+                     <p xml:space="preserve"><w>Divina</w> <w>gratia</w> <w>te</w> <w>tuosque</w> <w>fideliter</w> <w>in</w> <w>ecclesia</w> <w>Christi</w> <w>servientes</w> <w>in</w> <w>omnibus</w> <w>proficere</w> <w>faciat</w>, <w>dilectissime</w> <w>et</w> <w>sanctissime</w> <w>pater</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

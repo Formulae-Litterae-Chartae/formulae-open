@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Abtei Sanct Gallen (Ed. Wartmann) Nr. 206</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               Digitale Transkription des Urkundenbuchs der Abtei Sanct Gallen
+            </edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Tabea Henn (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML/TEI</resp>
+               <persName>Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+            <sponsor>Akademie der Wissenschaften in Hamburg</sponsor>
+            <sponsor>Universität Hamburg</sponsor>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0206.lat001"
+                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+		       <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/810983249</idno>
+                  <title level="m" type="main">Urkundenbuch der Abtei Sanct Gallen</title>
+                  <title level="m" type="volume">Theil 1, Jahr 700 - 840</title>
+                  <editor>Wartmann, Hermann</editor>
+                  <imprint>
+                     <pubPlace>Zürich</pubPlace>
+                     <date when="1863" n="originalAusgabe">1863</date>
+                     <biblScope unit="volume">1</biblScope>
+                     <biblScope unit="pp">
+                  196 - 197
+               </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stgallen.wartmann0206">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+                  <p>Lantbert überträgt seinen Besitz zu Kempten und Irgenhausen, mit Ausnahme einer Hörigen und deren Kinder, an Sanct Gallen.</p>
+               </div>
+         <div type="section" subtype="ausstellungsort">
+                  <p>Bülauch</p>
+               </div>
+         <dateline>
+                  <date when="0811-09-19">811 09 19</date>
+               </dateline>
+      </front>
+      <body>
+               <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:stgallen.wartmann0206.lat001">
+                  <div type="textpart" subtype="charta" n="1">
+                     <p xml:space="preserve"><w>Sacrosancto</w> <w>monasterio</w> <w>in</w> <w>honore</w> <w>sancte</w> <w>Mariaae</w> <w>et</w> <w>sancti</w> <w>Gallonis</w> <w>constructus</w> <w>in</w> <w>pago</w> <w>Turgauensi</w> <w>sibi</w> <w>ad</w> <w>Arbonensi</w>, <w>ubi</w> <w>viris</w> <w>venerabilis</w> <w>Wolfleozzus</w> <w>episcopus</w> <w>et</w> <w>Werdo</w> <w>abba</w> <w>cum</w> <w>beata</w> <w>congregacione</w> <w>monachorum</w> <w>illorum</w> <w>servientes</w> <w>esse</w> <w>videntur</w>. <w>Ego</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w>Lantbertus</w> <w>in</w> <w>amorem</w> <w>domini</w> <w>nostri</w> <w>iesu</w> <w>Christi</w> <w>et</w> <w>remissione</w> <w>peccatorum</w> <w>meorum</w> <w>cedo</w> <w>ad</w> <w>ipsum</w> <w>monasterium</w> <w>cessumque</w> <w>quod</w> <w>in</w> <w>perpetuum</w> <w>esse</w> <w>volo</w>, <w>id</w> <w>est</w> <w>in</w> <w>pago</w> <w>Turgauensi</w> <w>in</w> <w>loco</w>, <w>qui</w> <w>vocatur</w> <w>Camputuna</w> <w>sive</w> <w>Irincheshusa</w>, <w>quicquid</w> <w>in</w> <w>ipso</w> <w>loco</w> <w>et</w> <w>in</w> <w>ipsa</w> <w>marca</w> <w>visus</w> <w>sum</w> <w>habere</w> <w>et</w> <w>genetrix</w> <w>mea</w> <w>ibidem</w> <w>mihi</w> <w>moriens</w> <w>dereliquid</w> <w>et</w> <w>quod</w> <w>ego</w> <w>ipse</w> <w>legibus</w> <w>conquesivi</w>, <w>id</w> <w>est</w> <w>tam</w> <w>terris</w>, <w>casis</w>, <w>casalis</w>, <w>mancipiis</w>, <w>pumariis</w>, <w>campis</w>, <w>pratis</w>, <w>silvis</w>, <w>pascuis</w>, <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>ex</w> <w>omnibus</w> <w>et</w> <w>in</w> <w>omnibus</w>, <w>totum</w> <w>et</w> <w>ad</w> <w>intecrum</w>, <w>excepto</w> <w>una</w> <w>ancilla</w> <w>cum</w> <w>filiis</w> <w>suis</w> <w>nomine</w> <w>Tuba</w>, <w>alia</w> <w>vero</w> <w>omnia</w>, <w>sicut</w> <w>hic</w> <w>superius</w> <w>dictum</w> <w>est</w>, <w>ad</w> <w>ipsum</w> <w>monasterium</w> <w>trado</w> <w>adque</w> <w>transfundo</w> <w>in</w> <w>dominacione</w>; <w>et</w> <w>in</w> <w>ea</w> <w>vero</w> <w>racione</w>, <w>ut</w> <w>liceat</w> <w>mihi</w> <w>et</w> <w>filiis</w> <w>meis</w> <w>ipsam</w> <w>rem</w> <w>in</w> <w>censum</w> <w>habere</w>, <w>et</w> <w>exinde</w> <w>annis</w> <w>singulis</w> <w>dare</w> <w>solidos</w> <w>duos</w> <w>in</w> <w>qualecumque</w> <w>precio</w> <w>potuerimus</w>. <w>Et</w> <w>dum</w> <w>istum</w> <w>censum</w> <w>exsolvimus</w>, <w>ipsam</w> <w>rem</w> <w>ad</w> <w>usu</w> <w>fructuario</w> <w>excolere</w> <w>debeamus</w>; <w>et</w> <w>si</w> <w>filii</w> <w>filiorum</w> <w>meorum</w> <w>ipsam</w> <w>rem</w> <w>habere</w> <w>voluerint</w>, <w>ipsum</w> <w>censum</w> <w>solvant</w>. <w>Et</w> <w>si</w> <w>ego</w> <w>ipse</w> <w>aut</w> <w>heredis</w> <w>mei</w> <w>de</w> <w>isto</w> <w>censo</w> <w>hic</w> <w>supradicto</w> <w>necligentes</w> <w>fuerimus</w>, <w>tunc</w> <w>pastor</w> <w>ipsius</w> <w>monasterii</w> <w>vel</w> <w>agentes</w> <w>eius</w> <w>ipsam</w> <w>rem</w> <w>in</w> <w>eorum</w> <w>dominacione</w> <w>revocare</w> <w>faciant</w> <w>perpetualiter</w> <w>ad</w> <w>possedendum</w> <w>vel</w> <w>quicquid</w> <w>exinde</w> <w>facere</w> <w>voluerint</w> <w>liberam</w> <w>in</w> <w>omnibus</w> <w>habeant</w> <w>potestatem</w> <w>faciendi</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>quod</w> <w>futurum</w> <w>esse</w> <w>non</w> <w>credo</w>, <w>ego</w> <w>ipse</w>, <w>quod</w> <w>absit</w>, <w>aut</w> <w>aliquis</w> <w>de</w> <w>heredibus</w> <w>meis</w> <w>vel</w> <w>proheredibus</w> <w>seu</w> <w>quislibet</w> <w>ulla</w> <w>opposita</w> <w>persona</w> <w>vel</w> <w>qui</w> <w>contra</w> <w>hanc</w> <w>tradicionem</w> <w>venire</w> <w>temptaverint</w> <w>aut</w> <w>eam</w> <w>infrangere</w> <w>voluerint</w>, <w>tunc</w> <w>sit</w> <w>culpabilis</w> <w>dublum</w> <w>tantum</w>, <w>quantum</w> <w>tradicio</w> <w>ista</w> <w>contenit</w> <w>et</w> <w>in</w> <w>fisco</w> <w>auri</w> <w>uncias</w> <w>tres</w> <w>et</w> <w>argento</w> <w>libras</w> <w>V</w> <w>exsolvat</w> <w>et</w> <w>quod</w> <w>repetit</w> <w>vindicare</w> <w>non</w> <w>valeat</w>, <w>sed</w> <w>presens</w> <w>tradicio</w> <w>ista</w> <w>omni</w> <w>tempore</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>permaneat</w> <w>stibulacione</w> <w>subnexa</w>. <w>Actum</w> <w>in</w> <w>Pulacha</w>, <w>in</w> <w>atrio</w> <w>sancti</w> <w>Laurenti</w> <w>martiris</w>. <w>Signum</w> <w>†</w> <w>Lantbert</w>, <w>qui</w> <w>tradicione</w> <w>ista</w> <w>fieri</w> <w>rogavit</w>. <w>†</w> <w>Erinbert</w>. <w>†</w> <w>Deotcher</w>. <w>†</w> <w>Otbert</w>. <w>†</w> <w>Huadalbert</w>. <w>†</w> <w>Rech</w>...<w>er</w>. <w>†</w> <w>Deotalha</w>. <w>†</w> <w>Willabert</w>. <w>†</w> <w>Hildibert</w>. <w>†</w> <w>Adalbert</w>. <w>†</w> <w>Rihibert</w>. <w>†</w> <w>alio</w> <w>Rihibert</w>. <w>†</w> <w>Ruadalha</w> <w>testibus</w>. <w>†</w> <w>Cherho</w>. <w>†</w> <w>Hildichern</w>. <w>†</w> <w>Hildibold</w>. <w>†</w> <w>Otbold</w>. <w>†</w> <w>Isanbold</w>. <w>†</w> <w>Deotcher</w>. <w>Ego</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w>Perincher</w> <w>peccator</w> <w>vocatus</w> <w>presbiter</w> <w>rogatus</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>. <w>Notavi</w> <w>die</w> <w>XIII</w> <w>kal</w>. <w>octubris</w>, <w>anno</w> <w>XLIIII</w> <w>regnante</w> <w>domno</w> <w>nostro</w> <w>Carolo</w> <w>rex</w> <w>Frangorum</w> <w>et</w> <w>Langobardorum</w> <w>et</w> <w>anno</w> <w>XI</w> <w>imperator</w> <w>et</w> <w>gubernator</w> <w>Romanorum</w>. <w>Erfcher</w> <w>servus</w> <w>dominicus</w> <w>resedebat</w>.</p>
+                  </div>
+               </div>
+            </body>
+   </text>
+</TEI>

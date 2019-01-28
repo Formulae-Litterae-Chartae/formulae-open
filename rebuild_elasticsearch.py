@@ -69,7 +69,7 @@ coll_type = {'andecavensis': 'formulae'}
 # These older indices should probably be deleted by hand instead of being removed automatically.
 # es.indices.delete('*') #replace with the index to be deleted or "*" for all indices.
 
-files = glob('/home/matt/results/formulae-open/search/*.txt')
+files = [x for x in glob('/home/matt/results/formulae-open/search/*.txt') if 'stgallen' not in x]
 # This is the mapping for normalization of place names
 with open('place_mapping.json') as f:
     place_mapping = json.load(f)

@@ -2,6 +2,7 @@ from elasticsearch import Elasticsearch
 from glob import glob
 import re
 import json
+import datetime
 
 def split_dates(multidate_str):
     date_list = multidate_str.rstrip(',').split(',')
@@ -54,6 +55,25 @@ def find_all_dates(date_dict):
         date_list.append(year_string + month_string + day_string)
     return date_list
 
+def find_specific_days(multidate_str):
+    date_list = multidate_str.rstrip(',').split(',')
+    pattern = re.compile('\d{4}\-\d{2}\-\d{2}')
+    days = dict()
+    for date_str in date_list:
+        if re.fullmatch(pattern, date_str):
+            for k, v in special_days.items():
+                if k == 'Lent':
+                    year, month, day = date_str.split('-')
+                    to_check = datetime.date(int(year), int(month), int(day))
+                    for lents in v:
+                        s_y, s_m, s_d = lents[0].split('-')
+                        e_y, e_m, e_d = lents[1].split('-')
+                        if to_check >= datetime.date(int(s_y), int(s_m), int(s_d)) and to_check < datetime.date(int(e_y), int(e_m), int(e_d)):
+                            days['Lent'] = True
+                            break
+                else:
+                    days[k] = date_str in v
+    return [x for x in days.keys() if days[x] is True]
 
 # For local ES
 # es = Elasticsearch('http://localhost:9200')
@@ -73,6 +93,9 @@ files = [x for x in glob('/home/matt/results/formulae-open/search/*.txt') if 'st
 # This is the mapping for normalization of place names
 with open('place_mapping.json') as f:
     place_mapping = json.load(f)
+    
+with open('special_search_days.json') as f:
+    special_days = json.load(f)
 
 # The 'auto_analyzer' and 'auto_filter' are for the 'autocomplete field. Since this is not supported, and may never be necessary, I am commenting them out.
 auto_filter = {"filter": {"autocomplete_filter": {"type": "edge_ngram", "min_gram": 1, "max_gram": 20}}}
@@ -86,6 +109,7 @@ index_properties.update({'dating': {'type': 'date_range', 'format': 'yyyy-MM-dd|
                          'min_date': {'type': 'date', 'format': 'yyyy-MM-dd||yyyy-MM||yyyy'}})
 index_properties.update({'comp_ort': {"type": "keyword"}})
 index_properties.update({'orig_comp_ort': {"type": "keyword"}})
+index_properties.update({'days': {"type": "keyword"}})
 index_properties.update({'autocomplete': {"type": "text", "analyzer": "autocompletion", "search_analyzer": "standard"}})
 index_properties.update({'autocomplete_lemmas': {"type": "text", "analyzer": "autocompletion", "search_analyzer": "standard"}})
 
@@ -103,7 +127,7 @@ for file in files:
     orig_comp_ort = comp_ort
     comp_ort = place_mapping.get(comp_ort, comp_ort)
     name = re.sub('\s+', ' ', name)
-    dates = {'specific_date': [], "dating": [], 'all_dates': []}
+    dates = {'specific_date': [], "dating": [], 'all_dates': [], 'days': []}
     for date in dating.strip().split('\n'):
         groups = {}
         for m in re.finditer(r'(\w+): ([\d\-,]+)', date):
@@ -111,10 +135,12 @@ for file in files:
         if 'when' in groups.keys():
             try:
                 dates['specific_date'] += [x for x in split_dates(groups['when'])]
+                dates['days'] += find_specific_days(groups['when'])
             except ValueError as E:
                 print(E, file)
         elif "gte" in groups.keys() or "lte" in groups.keys():
             dates['dating'].append(groups)
+    dates['days'] = list(set(dates['days']))
     dates['all_dates'] = find_all_dates(dates)
     if coll not in new_indices:
         new_indices[coll] = {'old': [], 'new': ''}
@@ -153,6 +179,8 @@ for file in files:
     if dates['all_dates']:
         body['all_dates'] = dates['all_dates']
         body['min_date'] = min(dates['all_dates'])
+    if dates['days']:
+        body['days'] = dates['days']
     try:
         es.index(index=new_indices[coll]['new'], doc_type=coll, id=urn, body=body)
     except Exception as E:

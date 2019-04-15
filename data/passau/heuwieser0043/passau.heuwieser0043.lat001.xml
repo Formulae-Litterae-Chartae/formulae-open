@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,14 +82,9 @@
          <div type="section" subtype="regest">
             <p>ŎDALOLF UND SEINE GEMAHLIN ÜBERGEBEN BESITZ ZU ST. GEORGEN.</p>
          </div>
-         <dateline>
-                  <date notBefore="0795" notAfter="0805">795-805</date>
-               </dateline>
-      </front>
+         <dateline>795-805<date notBefore="0795" notAfter="0805"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0043.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0043.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>dei</w> <w>summi</w>. <w>Igitur</w> <w>ego</w> <w>Ŏdalolf</w> <w>in</w> <w>dei</w> <w>nomine</w> <w>vel</w> <w>coniux</w> <w>mea</w> <w>pro</w> <w>remedium</w> <w>animae</w> <w>mae</w> <w>vel</w> <w>retributione</w> <w>aeterna</w> <w>trado</w> <w>atque</w> <w>transfundo</w> <w>hereditatem</w> <w>meam</w> <w>in</w> <w>loco</w> <w>qui</w> <w>dicitur</w> <w>ad</w> <w>Lupuhinespah</w> <w>ad</w> <w>sancti</w> <w>Stephani</w> <w>protomartiris</w> <w>ad</w> <w>Pattabis</w> <w>id</w> <w>est</w> <w>terram</w> <w>meam</w> <w>campum</w> <w>silvam</w> <w>pratum</w> <w>rures</w>. <w>Quod</w> <w>sunt</w> <w>testes</w>: <w>Meginrath</w>. <w>Taozi</w>. <w>Cundhart</w>. <w>Haerhart</w>. <w>Sallo</w>. <w>Ermperht</w>. <w>Ego</w> <w>Kaganhart</w> <w>scripsi</w> <w>de</w> <w>carta</w>.</p>
                   </div>

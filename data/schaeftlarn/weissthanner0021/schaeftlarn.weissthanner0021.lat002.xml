@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -85,14 +85,9 @@
          <div type="section" subtype="ausstellungsort">
                   <p>Kl. Schäftlarn</p>
                </div>
-         <dateline>
-                  <date when="0806-08-08">806 08 08</date>
-               </dateline>
-      </front>
+         <dateline>806 08 08<date when="0806-08-08"/></dateline></front>
       <body>
-                     <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0021.lat002">
+                     <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0021.lat002">
                         <div type="textpart" subtype="charta" n="1">
                            <p xml:space="preserve"><w>b</w>) <w>Extat</w> <w>ibi</w> <w>vetus</w> <w>diploma</w>, <w>eius</w> <w>tenor</w> <w>talis</w>: <w>Ego</w> <w>ipse</w> <w>Otto</w> <w>episcopus</w> <w>et</w> <w>abbas</w> <w>monasterii</w> <w>sancti</w> <w>Dyonysii</w> <w>Ariopagitae</w> <w>et</w> <w>sanctae</w> <w>Iulianae</w> <w>virginis</w> <w>ad</w> <w>Schaphas</w>, <w>primum</w> <w>ob</w> <w>dei</w> <w>amorem</w> <w>sive</w> <w>pro</w> <w>peccatis</w> <w>meis</w> <w>minuendis</w> <w>seu</w> <w>pro</w> <w>aeterna</w> <w>retributione</w> <w>dono</w> <w>Hachingen</w> <w>et</w> <w>Puelocham</w>. <w>Actum</w> <w>in</w> <w>monasterio</w> <w>sancti</w> <w>Dionysii</w>, <w>sub</w> <w>oppido</w> <w>villae</w>, <w>quae</w> <w>nuncupatur</w> <w>Schefftlari</w> <w>publice</w>. <w>Testis</w> <w>Orendil</w> <w>comes</w>, <w>sexto</w> <w>idus</w> <w>Augusti</w> <w>anno</w> <w>6</w>. <w>imperii</w> <w>domini</w> <w>nostri</w> <w>Caroli</w> <w>Magni</w> <w>imperatoris</w>, <w>regni</w> <w>eius</w> <w>in</w> <w>Francia</w> <w>38</w>.</p>
                         </div>

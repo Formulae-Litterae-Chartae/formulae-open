@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -85,14 +85,9 @@
          <div type="section" subtype="ausstellungsort">
             <p>Inzing</p>
          </div>
-         <dateline>
-                  <date notBefore="0800-02-27" notAfter="0804-02-27">800-804 Februar 27.</date>
-               </dateline>
-      </front>
+         <dateline>800-804 Februar 27.<date when="0800-02-27"/><date when="0801-02-27"/><date when="0802-02-27"/><date when="0803-02-27"/><date when="0804-02-27"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0050.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0050.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>Dum</w> <w>residissent</w> <w>missi</w> <w>serenissimi</w> <w>imperatoris</w> <w>Karoli</w> <w>in</w> <w>fisco</w> <w>publico</w> <w>ad</w> <w>Inzinga</w> <w>adquirendas</w> <w>causas</w> <w>Arn</w> <w>episcopus</w> <w>et</w> <w>Uualdricus</w> <w>episcopus</w> <w>et</w> <w>predictus</w> <w>abbas</w> <w>Deotker</w> <w>seu</w> <w>iudex</w> <w>Kyslehart</w> <w>ibidem</w> <w>in</w> <w>loco</w> <w>Rantolf</w> <w>comis</w> <w>aderat</w> <w>et</w> <w>omnis</w> <w>turba</w> <w>qui</w> <w>ibidem</w> <w>advenerat</w> <w>in</w> <w>presentia</w> <w>ipsorum</w> <w>exquirebat</w> <w>Uualdricus</w> <w>episcopus</w> <w>istum</w> <w>hominem</w> <w>Eponem</w> <w>ad</w> <w>servitium</w> <w>beati</w> <w>sancti</w> <w>Stephani</w> <w>et</w> <w>sancti</w> <w>Valentini</w> <w>et</w> <w>ipse</w> <w>episcopo</w> <w>in</w> <w>presentia</w> <w>illorum</w> <w>tradidit</w> <w>se</w> <w>ipsum</w> <w>cum</w> <w>filiis</w> <w>et</w> <w>filiabus</w> <w>suis</w> <w>ad</w> <w>serviendum</w> <w>deo</w> <w>et</w> <w>sancto</w> <w>Stephano</w> <w>seu</w> <w>Uualdrico</w> <w>episcopo</w>. <w>Et</w> <w>hoc</w> <w>fuit</w> <w>factum</w> <w>in</w> <w>XIII</w> <w>kal</w>. <w>mar</w>. <w>modo</w> <w>deo</w> <w>auxiliante</w> <w>Uualdricus</w> <w>episcopus</w> <w>iussit</w> <w>scribere</w> <w>hanc</w> <w>paginolam</w> <w>ut</w> <w>sciretis</w> <w>dipsius</w> <w>femina</w> <w>nominae</w> <w>Hroduuar</w> <w>quod</w> <w>ipsa</w> <w>fuit</w> <w>libera</w> <w>genita</w> <w>et</w> <w>modo</w> <w>petimus</w> <w>deum</w> <w>omnipotentem</w> <w>ut</w> <w>nullus</w> <w>episcoporum</w> <w>seu</w> <w>et</w> <w>aliorum</w> <w>quibuscunque</w> <w>beneficiatum</w> <w>fuerit</w> <w>hoc</w> <w>diocesses</w> <w>ut</w> <w>nullus</w> <w>ipsorum</w> <w>hanc</w> <w>libertatem</w> <w>inire</w> <w>seu</w> <w>frangere</w> <w>conaverit</w>, <w>ut</w> <w>ista</w> <w>femina</w> <w>habeat</w> <w>potestatem</w> <w>ingrediendi</w> <w>ad</w> <w>virum</w> <w>suum</w> <w>tamquam</w> <w>si</w> <w>ipse</w> <w>fuiset</w> <w>liber</w>. <w>Denique</w> <w>quanti</w> <w>post</w> <w>istam</w> <w>conventionem</w> <w>nati</w> <w>fuerint</w> <w>ex</w> <w>ea</w> <w>femina</w>, <w>liberi</w> <w>sint</w> <w>semper</w> <w>deo</w> <w>auxiliante</w>. <w>Et</w> <w>ego</w> <w>Uualdpertus</w> <w>iussus</w> <w>a</w> <w>Uualdrico</w> <w>episcopo</w> <w>indicavit</w> <w>scribere</w> <w>hanc</w> <w>paginolam</w>.
                      </p>

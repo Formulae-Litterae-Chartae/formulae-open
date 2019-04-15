@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,14 +82,9 @@
          <div type="section" subtype="regest">
                   <p>Altolf übergibt mit Zustimmung des Herzogs Tassilo seinen Besitz in „Riuttare“ (LK Wolfratshausen). </p>
                </div>
-         <dateline>
-                  <date when="0779">779</date>
-               </dateline>
-      </front>
+         <dateline>779<date when="0779"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0006.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0006.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <head xml:space="preserve"><w>Altolf</w> <w>tradidit</w> <w>de</w> <w>Rute</w>.</head>
                      <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w> <w>dei</w> <w>salvatoris</w> <w>nostri</w> <w>Iesu</w> <w>Christi</w>! <w>Temporibus</w> <w>gloriosissimi</w> <w>ducis</w> <w>Tassilonis</w> <w>anno</w> <w>ducatus</w> <w>eius</w> <w>XXXII</w>., <w>indictione</w> <w>II</w>. <w>cum</w> <w>consensu</w> <w>et</w> <w>licentia</w> <w>predicti</w> <w>principis</w> <w>ego</w> <w>Altolf</w> <w>trado</w> <w>atque</w> <w>confirmo</w> <w>ea</w>, <w>quae</w> <w>habui</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Riuttare</w> <w>servos</w> <w>et</w> <w>ancillas</w> <w>seu</w> <w>tributales</w>, <w>rura</w>, <w>prata</w>, <w>campos</w> <w>et</w> <w>silvas</w> <w>aquarumque</w> <w>decursus</w>, <w>mobile</w> <w>vel</w> <w>inmobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>integro</w> <w>trado</w> <w>ad</w> <w>aecclesiam</w> <w>sancti</w> <w>Dionisii</w> <w>in</w> <w>manus</w> <w>Waltrici</w> <w>episcopi</w>. <w>Isti</w> <w>sunt</w> <w>testes</w>: <w>Meio</w>, <w>Wolfleoz</w>, <w>Lantfrid</w>, <w>Icho</w>, <w>Toto</w>, <w>Reginhart</w>.</p>

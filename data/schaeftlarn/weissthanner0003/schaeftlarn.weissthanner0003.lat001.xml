@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,14 +82,9 @@
          <div type="section" subtype="regest">
                   <p>Atto und dessen Sohn Amo übergeben ihren Besitz zu Bohausen (StK München) und Baierbrunn (LK Wolfratshausen) und an anderen Orten. </p>
                </div>
-         <dateline>
-                  <date notBefore="0776" notAfter="0779">776 - 779</date>
-               </dateline>
-      </front>
+         <dateline>776 - 779<date notBefore="0776" notAfter="0779"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0003.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0003.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <head xml:space="preserve"><w>Traditio</w> <w>Attonis</w> <w>et</w> <w>filii</w> <w>eius</w> <w>Amonis</w> <w>ad</w> <w>Paierbrvnnen</w> <w>et</w> <w>ad</w> <w>Pvbenhvsen</w> <w>|</w> <w>sive</w> <w>in</w> <w>aliis</w> <w>locis</w>.</head>
                      <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w> <w>dei</w> <w>salvatoris</w> <w>nostri</w> <w>Iesu</w> <w>Christi</w>. <w>Temporibus</w> <w>gloriosissimi</w> <w>ducis</w> <w>Tassilonis</w> <w>anno</w> <w>ducatus</w> <w>eius</w> <w>vicesimo</w> <w>nono</w> <w>indictione</w> <w>secunda</w> <w>ego</w> <w>itaque</w> <w>Atto</w> <w>simulque</w> <w>filius</w> <w>meus</w> <w>Amo</w> <w>pro</w> <w>redemptione</w> <w>animae</w> <w>nostrae</w> <w>cum</w> <w>consensu</w> <w>et</w> <w>licentia</w> <w>summi</w> <w>principis</w> <w>Tassilonis</w> <w>tradidi</w> <w>ego</w> <w>Atto</w> <w>et</w> <w>filius</w> <w>meus</w> <w>Amo</w>, <w>quae</w> <w>nobis</w> <w>in</w> <w>partem</w> <w>contigerunt</w>, <w>quando</w> <w>divisimus</w> <w>cum</w> <w>Albrico</w> <w>filio</w> <w>meo</w>, <w>omnia</w> <w>quae</w> <w>nobis</w> <w>contigerunt</w> <w>in</w> <w>partem</w>, <w>id</w> <w>est</w> <w>michi</w> <w>et</w> <w>filio</w> <w>meo</w> <w>Amoni</w>, <w>seu</w> <w>de</w> <w>hereditate</w> <w>nostra</w> <w>sive</w> <w>adquisitione</w> <w>nostra</w>, <w>id</w> <w>est</w> <w>ad</w> <w>Pubenhusen</w> <w>et</w> <w>ad</w> <w>Paierbrunnen</w> <w>seu</w> <w>in</w> <w>aliis</w> <w>locis</w>, <w>ubi</w> <w>aliquid</w> <w>habere</w> <w>videmur</w>: <w>servos</w> <w>et</w> <w>ancillas</w>, <w>colonos</w> <w>seu</w> <w>tributales</w>, <w>rura</w> <w>et</w> <w>prata</w>, <w>campos</w> <w>et</w> <w>silvas</w> <w>aquarumque</w> <w>de</w> <w>mobile</w> <w>vel</w> <w>inmobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>tradidimus</w> <w>ad</w> <w>aecclesiam</w> <w>beati</w> <w>Dionisii</w>, <w>quae</w> <w>constructa</w> <w>est</w> <w>iuxta</w> <w>fluvium</w> <w>Ísurae</w>, <w>ubi</w> <w>villa</w> <w>nuncupatur</w> <w>Sceftlare</w>, <w>ubi</w> <w>preerat</w> <w>reverentissimus</w> <w>Waldericus</w> <w>episcopus</w>, <w>ut</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>ibi</w> <w>sit</w> <w>traditum</w> <w>et</w> <w>firmiter</w> <w>stabilitum</w>, <w>ita</w> <w>tamen</w> <w>ut</w> <w>haec</w> <w>omnia</w> <w>quae</w> <w>prediximus</w>, <w>ut</w> <w>supra</w> <w>continetur</w>, <w>ad</w> <w>predictam</w> <w>basilicam</w> <w>tradita</w> <w>sint</w>. <w>Si</w> <w>quis</w> <w>autem</w> <w>obposita</w> <w>vel</w> <w>ulla</w> <w>obmissa</w> <w>persona</w> <w>sive</w> <w>ego</w> <w>ipse</w>, <w>quod</w> <w>contingere</w> <w>non</w> <w>arbitror</w>, <w>haec</w> <w>irrita</w> <w>facere</w> <w>conatus</w> <w>fuerit</w>, <w>iram</w> <w>dei</w> <w>omnipotentis</w> <w>super</w> <w>se</w> <w>provocet</w> <w>et</w> <w>partem</w> <w>habeat</w> <w>cum</w> <w>Iuda</w> <w>traditore</w> <w>et</w> <w>causam</w> <w>cum</w> <w>beato</w> <w>Dionisio</w> <w>et</w> <w>cartula</w> <w>haec</w> <w>nihilominus</w> <w>firma</w> <w>permaneat</w>. <w>Et</w> <w>hi</w> <w>testes</w>: <w>Pippi</w>, <w>Cundhart</w>, <w>Adalgart</w>, <w>Ǒdalgar</w>, <w>Stracholf</w>, <w>Erchanolf</w>. <w>Scripsi</w> <w>autem</w> <w>ego</w> <w>Snelhart</w> <w>indignus</w> <w>ac</w> <w>vilis</w> <w>tamen</w> <w>diaconus</w> <w>hanc</w> <w>cartulam</w> <w>traditionis</w> <w>iussus</w> <w>a</w> <w>summo</w> <w>principe</w> <w>Tassilone</w> <w>consentiens</w> <w>et</w> <w>perficiens</w>.</p>

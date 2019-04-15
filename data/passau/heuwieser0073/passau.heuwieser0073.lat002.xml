@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -85,14 +85,9 @@
          <div type="section" subtype="ausstellungsort">
             <p>Triftern</p>
          </div>
-         <dateline>
-                  <date notBefore="0818" notAfter="0838">818-838.</date>
-               </dateline>
-      </front>
+         <dateline>818-838.<date notBefore="0818" notAfter="0838"/></dateline></front>
       <body>
-                     <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0073.lat002">
+                     <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0073.lat002">
                         <div type="textpart" subtype="charta" n="1">
                            <p xml:space="preserve">
                               <w>aa</w>) <w>Isti</w> <w>iuraverunt</w> <w>pro</w> <w>marcam</w> <w>ad</w> <w>Rotu</w>:<w>inprimis</w> <w>Hemo</w> <w>Arfrid</w> <w>Ato</w> <w>Isanker</w> <w>Liutolt</w> <w>Uuelaperht</w> <w>Arpeo</w> <w>Plidker</w> <w>Reginperht</w> <w>Kerleip</w>. <w>Isti</w> <w>consocii</w> <w>eorum</w> <w>et</w> <w>iuraverunt</w>: <w>Emicho</w> <w>Anulo</w> <w>Haduperht</w> <w>Reginhelm</w> <w>Helmperht</w> <w>Uuolfperht</w> <w>Perhtger</w> <w>Palachar</w> <w>Altuni</w> <w>Uuhing</w> <w>in</w> <w>presentia</w> <w>Reginharii</w> <w>episcopi</w> <w>et</w> <w>Geroldo</w> <w>comitis</w> <w>et</w> <w>Engildeo</w> <w>comitis</w> <w>Engilpald</w> <w>vassi</w> <w>dominici</w>.</p>

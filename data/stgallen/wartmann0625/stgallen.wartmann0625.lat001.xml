@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -41,8 +43,7 @@
             <pubPlace>Hamburg</pubPlace>
             <date when="2018"/>
             <availability>
-                <licence corresp="urn:cts:formulae:stgallen.wartmann0625.lat001"
-                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0625.lat001" target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
             </availability>
          </publicationStmt>
 		       <sourceDesc>
@@ -67,9 +68,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -81,16 +80,9 @@
          <div type="section" subtype="ausstellungsort">
                   <p>Kloster St. Gallen</p>
                </div>
-         <dateline>
-               <date when="0882" cert="unknown">882 </date> 
-               <date when="0883" cert="unknown">(883)</date>
-            
-               </dateline>
-      </front>
+         <dateline>882 (883)<date when="0882"/><date when="0883"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:stgallen.wartmann0625.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:stgallen.wartmann0625.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>Complacuit</w> <w>mihi</w> <w>Hartmoto</w> <w>abbati</w> <w>monasterii</w> <w>sancti</w> <w>Galli</w> <w>una</w> <w>cum</w> <w>consensu</w> <w>fratrum</w> <w>et</w> <w>advocati</w> <w>mei</w> <w>Witonis</w>, <w>ut</w> <w>res</w>, <w>quas</w> <w>nobis</w> <w>tradidit</w> <w>Hiltithiu</w> <w>cum</w> <w>manu</w> <w>filii</w> <w>sui</w> <w>Thiotini</w>, <w>ei</w> <w>iterum</w> <w>per</w> <w>hanc</w> <w>precariam</w> <w>represtaremus</w>, <w>quod</w> <w>ita</w> <w>et</w> <w>fecimus</w>. <w>Tradidit</w> <w>itaque</w> <w>praedicta</w> <w>mulier</w> <w>cum</w> <w>manu</w> <w>filii</w> <w>sui</w> <w>Thiotini</w> <w>quicquid</w> <w>habuit</w> <w>in</w> <w>Helfoltiswilare</w> <w>et</w> <w>quicquid</w> <w>in</w> <w>monte</w>, <w>qui</w> <w>dicitur</w> <w>Hemmemberch</w>, <w>de</w> <w>parte</w> <w>silvae</w> <w>habuit</w>; <w>ea</w> <w>scilicet</w> <w>ratione</w>, <w>ut</w> <w>praedictus</w> <w>filius</w> <w>eius</w> <w>easdem</w> <w>res</w> <w>ad</w> <w>se</w> <w>recipiat</w> <w>et</w> <w>censum</w> <w>exinde</w> <w>persolvat</w> <w>II</w> <w>denariis</w> <w>aut</w> <w>I</w> <w>maldro</w>. <w>Similiter</w> <w>et</w> <w>legitima</w> <w>posteritas</w> <w>eius</w> <w>sub</w> <w>eodem</w> <w>censu</w> <w>teneat</w>, <w>redemptione</w> <w>illi</w> <w>et</w> <w>posteritati</w> <w>eius</w> <w>omnino</w> <w>denegata</w>. <w>Actum</w> <w>in</w> <w>ipso</w> <w>monasterio</w> <w>publice</w>, <w>praesentibus</w> <w>istis</w>, <w>quorum</w> <w>hic</w> <w>nomina</w> <w>subnotantur</w>. <w>Signum</w> <w>Hartmoti</w> <w>abbatis</w> <w>et</w> <w>advocati</w> <w>sui</w> <w>Witonis</w>, <w>qui</w> <w>hanc</w> <w>precariam</w> <w>fieri</w> <w>rogaverunt</w>. <w>sig</w>. <w>Folcharti</w> <w>decani</w> <w>et</w> <w>Werimberti</w> <w>aeditui</w> <w>et</w> <w>Kerberti</w> <w>cellararii</w>. <w>Thiothardi</w> <w>portarii</w>. <w>Ruadini</w> <w>hospitarii</w>. <w>Otwini</w> <w>camerarii</w>. <w>Signa</w> <w>et</w> <w>aliorum</w> <w>testium</w>, <w>qui</w> <w>ibi</w> <w>praesentes</w> <w>fuerunt</w>. <w>sig</w>. <w>Engilbold</w>. <w>Ruadpret</w>. <w>Cozpret</w>. <w>Adalram</w>. <w>Hungoz</w>. <w>Oadalpret</w>. <w>Waldpret</w>. <w>Ego</w> <w>Werimpret</w> <w>subdiaconus</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>. <w>Notavi</w> <w>diem</w> <w>veneris</w>, <w>annum</w> <w>II</w> <w>domni</w> <w>Karoli</w> <w>imperatoris</w>, <w>Adalbertum</w> <w>comitem</w>.</p>
                   </div>

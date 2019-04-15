@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,20 +82,9 @@
          <div type="section" subtype="regest">
                   <p>Sunderhere übergibt einen Wald bei (Pullach) (LK München). </p>
                </div>
-         <dateline>
-                  <date>
-                     <date when="--10-09"
-                     notBefore="0790"
-                     notAfter="0800"
-                     precision="medium"
-                     scope="circa">ca. 790 – ca. 800 10 09</date>
-            </date>
-               </dateline>
-      </front>
+         <dateline>(ca. 790 – ca. 800) 10 09<date when="0790-10-09"/><date when="0791-10-09"/><date when="0792-10-09"/><date when="0793-10-09"/><date when="0794-10-09"/><date when="0795-10-09"/><date when="0796-10-09"/><date when="0797-10-09"/><date when="0798-10-09"/><date when="0799-10-09"/><date when="0800-10-09"/></dateline></front>
       <body>
-                     <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0012.lat002">
+                     <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0012.lat002">
                         <div type="textpart" subtype="charta" n="1">
                            <p xml:space="preserve"><w>b</w>) <w>Ego</w> <w>Sundehere</w> <w>ad</w> <w>ecclesiam</w> <w>sancti</w> <w>Dyonisii</w> <w>sancteque</w> <w>Ivliane</w> <w>unam</w> <w>silvam</w> <w>Gemein</w> <w>nuncupatam</w>.</p>
                         </div>

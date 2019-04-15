@@ -78,7 +78,7 @@ def find_specific_days(multidate_str):
 # For local ES
 # es = Elasticsearch('http://localhost:9200')
 # For Formulae - Litterae - Chartae Bonsai ES
-es = Elasticsearch('https://7rjmvb3g9l:q3j3ss5xpe@matthews-first-sandb-6890251342.eu-central-1.bonsaisearch.net')
+es = Elasticsearch('https://bukltab6es:oydcb7vdpv@formulae-nemo-dev-5305820135.eu-central-1.bonsaisearch.net')
 # For CJHNT Bonsai ES
 # es = Elasticsearch('https://fkiyh8udo5:iuwd6ekete@cjhnt-testing-6879850075.eu-central-1.bonsaisearch.net')
 # This list includes all collections that are not chartae. 

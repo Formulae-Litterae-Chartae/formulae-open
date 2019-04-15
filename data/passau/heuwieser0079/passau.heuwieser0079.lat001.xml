@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,14 +82,9 @@
          <div type="section" subtype="regest">
             <p>BRUCHSTÜCK (TITEL) ÜBER DEN BESITZ DER PASSAUER KIRCHE.</p>
          </div>
-         <dateline>
-                  <date notBefore="0814" notAfter="0914">Nach 814.</date>
-               </dateline>
-      </front>
+         <dateline>Nach 814.<date notBefore="0814" notAfter="0914"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0079.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0079.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve">
                         <w>Breve</w> <w>commemoratorium</w> <w>de</w> <w>rebus</w> <w>sancti</w> <w>Stephani</w> <w>quas</w> <w>antecessores</w> <w>nostri</w> <w>episcopi</w> <w>vestiti</w> <w>erant</w> <w>temporibus</w> <w>Karoli</w> <w>imperatoris</w> <w>et</w> <w>deinceps</w>.

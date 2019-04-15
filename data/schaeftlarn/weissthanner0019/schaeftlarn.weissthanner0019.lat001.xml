@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,17 +82,9 @@
          <div type="section" subtype="regest">
                   <p>Diakon Eliwart übergibt seinen Besitz zu Puchschlagen (LK Dachau). </p>
                </div>
-         <dateline>
-                  <date notBefore="0806"
-                  notAfter="0813"
-                  precision="medium"
-                  scope="circa">ca. 806 – ca. 813</date>
-               </dateline>
-      </front>
+         <dateline>ca. 806 – ca. 813<date notBefore="0806" notAfter="0813"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0019.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0019.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <head xml:space="preserve"><w>Istam</w> <w>traditionem</w> <w>fecit</w> <w>Eliwart</w> <w>diaconus</w> <w>de</w> <w>Puochslage</w>.</head>
                      <p xml:space="preserve"><w>Sacrosancto</w> <w>monasterio</w> <w>sancti</w> <w>Dionisii</w>, <w>quod</w> <w>est</w> <w>constructum</w> <w>super</w> <w>fluvium</w>, <w>qui</w> <w>dicitur</w> <w>Isura</w>, <w>ubi</w> <w>Petto</w> <w>episcopus</w> <w>preesse</w> <w>videtur</w>, <w>ego</w> <w>Eliwart</w> <w>diaconus</w> <w>cogitavi</w> <w>primum</w> <w>ob</w> <w>dei</w> <w>timorem</w> <w>seu</w> <w>pro</w> <w>peccatis</w> <w>meis</w> <w>minuendis</w> <w>vel</w> <w>pro</w> <w>aeterna</w> <w>retributione</w> <w>tradidi</w> <w>ad</w> <w>aecclesiam</w> <w>sancti</w> <w>Dionisii</w> <w>omnia</w>, <w>quae</w> <w>habui</w> <w>ad</w> <w>Puochslagen</w>: <w>casas</w>, <w>rura</w>, <w>prata</w>, <w>campos</w> <w>et</w> <w>silvas</w> <w>aquarumque</w> <w>decursus</w>, <w>mobile</w> <w>vel</w> <w>inmobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>integro</w>, <w>ut</w> <w>ibi</w> <w>sit</w> <w>firmum</w> <w>et</w> <w>stabilitum</w>. <w>Isti</w> <w>sunt</w> <w>testes</w>: <w>Pippi</w> <w>comes</w>, <w>Cundhart</w> <w>comes</w>, <w>Amalrich</w>, <w>Erchnolf</w>, <w>Kagenhart</w>, <w>Othram</w>. <w>Actum</w> <w>est</w> <w>III</w>. <w>nonas</w> <w>Decembris</w>.</p>

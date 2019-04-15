@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -41,8 +43,7 @@
             <pubPlace>Hamburg</pubPlace>
             <date when="2018"/>
             <availability>
-                <licence corresp="urn:cts:formulae:stgallen.wartmann0093.lat001"
-                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0093.lat001" target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
             </availability>
          </publicationStmt>
 		       <sourceDesc>
@@ -67,9 +68,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -81,14 +80,9 @@
          <div type="section" subtype="ausstellungsort">
                   <p>Kloster St. Gallen</p>
                </div>
-         <dateline>
-                  <date when="0780">780</date>
-               </dateline>
-      </front>
+         <dateline>780<date when="0780"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:stgallen.wartmann0093.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:stgallen.wartmann0093.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>In</w> <w>Dei</w> <w>nomine</w> <w>iohannis</w> <w>episcopus</w>, <w>gratia</w> <w>Dei</w> <w>abba</w> <w>vocatus</w>, <w>una</w> <w>cum</w> <w>fratribus</w>, <w>qui</w> <w>in</w> <w>monasterio</w> <w>sancti</w> <w>Galli</w> <w>degunt</w>, <w>ubi</w> <w>eius</w> <w>sacre</w> <w>requiescit</w> <w>corpus</w>. <w>Igitur</w> <w>quod</w> <w>non</w> <w>est</w> <w>incognitum</w>, <w>quod</w> <w>Managoldus</w> <w>pro</w> <w>remedium</w> <w>anime</w> <w>fratris</w> <w>sui</w> <w>Hugiberti</w> <w>casato</w> <w>uno</w> <w>cum</w> <w>hoba</w> <w>sua</w> <w>ad</w> <w>supradicta</w> <w>ecclesia</w> <w>tradedisset</w> <w>in</w> <w>villa</w>, <w>qui</w> <w>dicitur</w> <w>Sveiningas</w>, <w>his</w> <w>nominibus</w>: <w>Dheotinc</w>, <w>Hiltimunt</w>, <w>Adalhilt</w>, <w>petivit</w>, <w>ut</w> <w>per</w> <w>precariam</w> <w>ei</w> <w>prestare</w> <w>deberemus</w>, <w>quod</w> <w>una</w> <w>cum</w> <w>consensu</w> <w>fratrum</w> <w>nostrorum</w> <w>ita</w> <w>fecimus</w>; <w>in</w> <w>ea</w> <w>vero</w> <w>ratione</w>, <w>ut</w> <w>per</w> <w>annis</w> <w>singulis</w> <w>censum</w> <w>exinde</w> <w>solvat</w>, <w>hoc</w> <w>est</w> <w>XV</w> <w>siclas</w> <w>de</w> <w>cervisa</w> <w>et</w> <w>maldra</w> <w>de</w> <w>chernone</w> <w>et</w> <w>friskinga</w> <w>trimisse</w> <w>valente</w> <w>et</w> <w>in</w> <w>omne</w> <w>zelga</w> <w>iornale</w> <w>uno</w> <w>arare</w> <w>et</w> <w>III</w> <w>dies</w> <w>asecare</w> <w>et</w> <w>III</w> <w>amadere</w>. <w>Et</w> <w>si</w> <w>ei</w> <w>aliquando</w> <w>voluntas</w> <w>evenerit</w> <w>aut</w> <w>necessitas</w> <w>exigerit</w>, <w>ut</w> <w>ipsas</w> <w>res</w> <w>ad</w> <w>usum</w> <w>proprium</w> <w>recipere</w> <w>voluerit</w>, <w>solvat</w> <w>eas</w> <w>cum</w> <w>XXX</w> <w>solidos</w>, <w>et</w> <w>quidquid</w> <w>inde</w> <w>voluerit</w> <w>postea</w> <w>agere</w> <w>nostris</w> <w>partibus</w> <w>liberam</w> <w>habeat</w> <w>potestatem</w>. <w>Et</w> <w>hoc</w> <w>ei</w> <w>concedimus</w>, <w>ut</w> <w>si</w> <w>ipsos</w> <w>solidos</w> <w>infra</w> <w>unius</w> <w>anni</w> <w>spacium</w> <w>exsolvere</w> <w>non</w> <w>valuerit</w> <w>vel</w> <w>infra</w> <w>trium</w> <w>annorum</w> <w>curricula</w> <w>eos</w> <w>nobis</w> <w>ex-</w> <w>solvat</w>; <w>interea</w> <w>autem</w> <w>census</w>, <w>quod</w> <w>nos</w> <w>cum</w> <w>illo</w> <w>convenit</w>, <w>sicut</w> <w>supra</w> <w>memoravimus</w>, <w>nobis</w> <w>exinde</w> <w>currat</w>. <w>A</w> <w>die</w> <w>autem</w>, <w>quando</w> <w>supradictum</w> <w>precium</w> <w>nobis</w> <w>habuerit</w> <w>expensum</w> <w>et</w> <w>nos</w> <w>nostris</w> <w>partibus</w> <w>eum</w> <w>visi</w> <w>fuerimus</w> <w>possedere</w>, <w>sic</w> <w>cesset</w> <w>ab</w> <w>ipso</w> <w>censo</w>. <w>Et</w> <w>si</w> <w>filio</w> <w>eius</w> <w>conventio</w> <w>ista</w> <w>placuerit</w> <w>et</w> <w>id</w> <w>ipsud</w> <w>facere</w> <w>voluerit</w>, <w>ipsas</w> <w>res</w> <w>possedeat</w>. <w>Facta</w> <w>precaria</w> <w>in</w> <w>monasterio</w> <w>sancti</w> <w>Galloni</w> <w>confessoris</w>. <w>Signum</w> <w>iohanne</w> <w>episcopo</w>. <w>sig</w>. <w>iohanne</w> <w>diaconi</w>. <w>sig</w>. <w>Aeginone</w> <w>presbiteri</w>. <w>sig</w>. <w>Stephani</w> <w>presbiteri</w>. <w>sig</w>. <w>Adalrih</w> <w>presbiteri</w>. <w>sig</w>. <w>Hugiberto</w>.<w>sig</w>. <w>Perahther</w>. <w>sig</w>. <w>Paldolt</w>. <w>sig</w>. <w>Sigybreht</w>. <w>sig</w>. <w>Waldbert</w>. <w>sig</w>. <w>Friccho</w>. <w>Ego</w> <w>Rodolaicus</w> <w>lector</w> <w>scripsi</w> <w>anno</w> <w>XII</w> <w>regnante</w> <w>domno</w> <w>nostro</w> <w>Carolo</w> <w>gloriosissimo</w> <w>rege</w> <w>Franchorum</w>.</p>
                   </div>

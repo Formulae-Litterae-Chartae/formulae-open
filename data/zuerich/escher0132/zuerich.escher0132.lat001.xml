@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -37,8 +39,7 @@
             <pubPlace>Hamburg</pubPlace>
             <date when="2018"/>
             <availability>
-                <licence corresp="urn:cts:formulae:zuerich.escher0132.lat001"
-                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+                <licence corresp="urn:cts:formulae:zuerich.escher0132.lat001" target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -65,9 +66,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuches der Stadt und der Landschaft Zürich, welches 1888 von J. Escher und P. Schweizer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -76,15 +75,9 @@
          <div type="section" subtype="regest">
                   <p>Wolvene, Abt von Rheinau, beurkundet seinen früher getroffenen Gütertausch mit dem Grafen Gozpert</p>
                </div>
-		       <dateline>
-               <date notBefore="0877-08-01" notAfter="0877-12-31" cert="unknown">877 August-Dezember</date> o. <date notBefore="0878-08-01" notAfter="0878-12-31" cert="unknown">878 August-Dezember</date>
-            
-               </dateline>
-      </front>
+		       <dateline>877 August-Dezember o. 878 August-Dezember<date notBefore="0877-08-01" notAfter="0877-12-31"/><date notBefore="0878-08-01" notAfter="0878-12-31"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:zuerich.escher0132.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:zuerich.escher0132.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>tam</w> <w>presentibus</w> <w>quam</w> <w>futuris</w>, <w>quia</w> <w>precipiente</w> <w>domno</w> <w>Karlo</w> <w>rege</w> <w>ego</w> <w>Wolvene</w> <w>humilis</w> <w>abbas</w> <w>cum</w> <w>consensu</w> <w>fratrum</w> <w>meo</w> <w>regimini</w> <w>subiacentium</w> <w>quondam</w> <w>concambium</w> <w>cum</w> <w>Gozperto</w> <w>comite</w> <w>fecimus</w>. <w>Dedimus</w> <w>namque</w> <w>predicto</w> <w>Gozperto</w>, <w>quiquid</w> <w>in</w> <w>pago</w> <w>Turgowe</w> <w>in</w> <w>Loufarro</w> <w>marcho</w> <w>in</w> <w>villulis</w> <w>nuncupatis</w>, <w>id</w> <w>est</w> <w>Langenwisa</w>, <w>Flörlingen</w>, <w>Moranwilare</w>, <w>Stamheim</w> <w>habuimus</w>, <w>cum</w> <w>aedificiis</w>, <w>terris</w> <w>et</w> <w>silvis</w>, <w>exceptis</w> <w>veteribus</w> <w>agris</w> <w>et</w> <w>pratis</w>, <w>quae</w> <w>antea</w> <w>ad</w> <w>Pechinchovin</w> <w>et</w> <w>Holzheim</w> <w>pertinebant</w>, <w>et</w> <w>piscatione</w> <w>ad</w> <w>Loufin</w>, <w>et</w> <w>ad</w> <w>predicta</w> <w>loca</w> <w>pertinebant</w>, <w>firmiter</w> <w>ad</w> <w>ea</w> <w>pertineant</w>: <w>et</w> <w>in</w> <w>pago</w> <w>nuncopato</w> <w>Chleggowe</w>, <w>quiquid</w> <w>in</w> <w>Lozesteten</w> <w>et</w> <w>in</w> <w>Rafso</w> <w>habuimus</w>, <w>tam</w> <w>terris</w> <w>quam</w> <w>domibus</w>, <w>pratis</w>, <w>pascuis</w>, <w>silvis</w>, <w>aquis</w> <w>aquarumque</w> <w>decursibus</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>seu</w> <w>quiquid</w> <w>dici</w> <w>aut</w> <w>nominari</w> <w>potest</w>, <w>exceptis</w> <w>veteribus</w> <w>agris</w> <w>et</w> <w>patris</w>, <w>quae</w> <w>antea</w> <w>ad</w> <w>Balbo</w> <w>pertinebant</w>. <w>Et</w> <w>accepimus</w> <w>ab</w> <w>eodem</w> <w>Gozperto</w>, <w>quicuid</w> <w>in</w> <w>pago</w> <w>Chleggowe</w> <w>habuit</w> <w>in</w> <w>villa</w>, <w>quae</w> <w>dicitur</w> <w>Arcingen</w>, <w>rem</w> <w>aecclesiasticam</w> <w>et</w> <w>decimationis</w> <w>integritatem</w> <w>et</w> <w>illam</w> <w>etiqam</w> <w>partem</w>, <w>quam</w> <w>idem</w> <w>comes</w> <w>ab</w> <w>episcopo</w> <w>Salomone</w> <w>Constantiensis</w> <w>aecclesiae</w> <w>cum</w> <w>prediorum</w> <w>suorum</w> <w>commutacione</w> <w>acquisitam</w> <w>recepit</w>, <w>talemque</w> <w>hereditatem</w>, <w>qualem</w> <w>apud</w> <w>Rikerum</w> <w>acquisivit</w> <w>in</w> <w>Trasmundingen</w> <w>et</w> <w>Rehpergin</w>, <w>et</w> <w>illam</w> <w>parentem</w>, <w>quam</w> <w>in</w> <w>Svabowa</w> <w>habuit</w>, <w>et</w> <w>omnem</w> <w>decimationem</w> <w>in</w> <w>Jedestetin</w> <w>et</w> <w>in</w> <w>Hovenstetin</w>, <w>excepto</w> <w>quod</w> <w>decima</w> <w>hoba</w>, <w>quae</w> <w>ad</w> <w>Loufen</w> <w>pertinent</w>, <w>et</w> <w>in</w> <w>villa</w>, <w>quae</w> <w>vocatur</w> <w>Balba</w>, <w>hobas</w>, <w>quas</w> <w>ibidem</w> <w>habuit</w>, <w>cum</w> <w>cunctis</w> <w>rebus</w> <w>ad</w> <w>easdem</w> <w>pertinentibus</w>, <w>exceptis</w> <w>veteribus</w> <w>agris</w> <w>et</w> <w>patris</w>, <w>quae</w> <w>antea</w> <w>ad</w> <w>Lozenstetin</w> <w>pertinebant</w>; <w>cetera</w> <w>omnia</w>, <w>hoc</w> <w>est</w> <w>tam</w> <w>terris</w>, <w>quam</w> <w>aedifiviis</w>, <w>pratis</w>, <w>pascuis</w>, <w>silvis</w>, <w>aquis</w> <w>aquarumque</w> <w>decusibus</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>seu</w> <w>quicuid</w> <w>dici</w> <w>aut</w> <w>nominari</w> <w>potest</w>, <w>ab</w> <w>eodem</w> <w>in</w> <w>commutacionem</w> <w>antedictarum</w> <w>rerum</w> <w>accepimus</w>, <w>in</w> <w>eam</w> <w>racionem</w>, <w>ut</w> <w>ego</w> <w>Wolvene</w> <w>abba</w> <w>fratresque</w> <w>mihi</w> <w>subiecti</w> <w>atque</w> <w>predictus</w> <w>comes</w> <w>Gozpertus</w> <w>secundum</w> <w>prefixam</w> <w>commutatcionem</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>omni</w> <w>tempore</w> <w>habendi</w>, <w>tenendi</w>, <w>vel</w> <w>quiquid</w> <w>de</w> <w>ipsus</w> <w>rebus</w> <w>ad</w> <w>nostram</w> <w>utilitatem</w> <w>cupimus</w>, <w>liberam</w> <w>in</w> <w>omnibus</w> <w>potestatem</w> <w>faciendi</w> <w>habeamus</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>quod</w> <w>fieri</w> <w>non</w> <w>credimus</w>, <w>nos</w> <w>ipsi</w> <w>aut</w> <w>ullus</w> <w>succesorum</w> <w>nostrorum</w> <w>hanc</w> <w>commutacionis</w> <w>cartam</w> <w>infringere</w> <w>temptaverit</w>, <w>sociante</w> <w>fisco</w> <w>multan</w> <w>imponat</w>, <w>hoc</w> <w>est</w> <w>auri</w> <w>uncias</w> <w>X</w>, <w>argenti</w> <w>pondera</w> <w>totidem</w> <w>coactus</w> <w>perolvat</w>, <w>et</w> <w>insuper</w> <w>haec</w> <w>commutacio</w> <w>stabilis</w> <w>atque</w> <w>inconvulsa</w> <w>omni</w> <w>tempore</w> <w>permaneat</w>. <w>Actum</w> <w>in</w> <w>loco</w>, <w>qui</w> <w>vaocatur</w> <w>Hagin</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>DCCCLXXVIII</w>., <w>anno</w> <w>V</w> <w>Iohannis</w> <w>pape</w> <w>VIII</w>., <w>regni</w> <w>autem</w> <w>domni</w> <w>Caroli</w> <w>regis</w> <w>II</w>, <w>coram</w> <w>Adilberto</w> <w>misso</w> <w>dominico</w> <w>et</w> <w>multitudine</w> <w>populi</w> <w>et</w> <w>idoneis</w> <w>testibus</w>, <w>presente</w> <w>Salomone</w> <w>episcopo</w> <w>et</w> <w>Wolvene</w> <w>abbate</w> <w>et</w> <w>Gozperto</w> <w>comite</w> <w>et</w> <w>advocato</w> <w>Liutone</w>, <w>qui</w> <w>hanc</w> <w>commutacionem</w> <w>inter</w> <w>se</w> <w>fecerunt</w>.</p>
                   </div>

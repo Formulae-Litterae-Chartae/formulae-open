@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -41,8 +43,7 @@
             <pubPlace>Hamburg</pubPlace>
             <date when="2018"/>
             <availability>
-                <licence corresp="urn:cts:formulae:stgallen.wartmann0001.lat001"
-                        target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+                <licence corresp="urn:cts:formulae:stgallen.wartmann0001.lat001" target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
             </availability>
          </publicationStmt>
 		       <sourceDesc>
@@ -67,9 +68,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription des Urkundenbuchs der Abtei Sanct Gallen, welches 1863 von Hermann Wartmann herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -81,14 +80,9 @@
 		       <div type="section" subtype="ausstellungsort">
 				        <p>Cannstadt</p>
 			      </div>
-         <dateline>
-                  <date when="0700">700</date>
-               </dateline>
-      </front>
+         <dateline>700<date when="0700"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:stgallen.wartmann0001.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:stgallen.wartmann0001.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve"><w>Gotefridus</w> <w>Alemanniae</w> <w>dux</w> <w>tradit</w> <w>Biberburgum</w> <w>vicum</w> <w>ad</w> <w>Neccarum</w>. <w>Godafridus</w> <w>dux</w>, <w>vir</w> <w>inluster</w>. <w>Magulfus</w> <w>presbyter</w> <w>et</w> <w>pastor</w> <w>sancti</w> <w>Galluni</w> <w>ad</w> <w>potentiam</w> <w>nostram</w> <w>veniens</w> <w>suggessit</w> <w>atque</w> <w>petivit</w> <w>consolationem</w> <w>nostram</w>, <w>ut</w> <w>aliquid</w> <w>ad</w> <w>luminaria</w> <w>sancti</w> <w>Galluni</w> <w>ecclesiae</w> <w>concedere</w> <w>debuerimus</w> <w>etc</w>. <w>Actum</w> <w>Canstat</w> <w>ad</w> <w>Neccarum</w>.</p>
                   </div>

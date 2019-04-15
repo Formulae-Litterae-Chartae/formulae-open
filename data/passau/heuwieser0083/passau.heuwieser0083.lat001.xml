@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,14 +82,9 @@
          <div type="section" subtype="regest">
             <p>EINHERI MIT SEINER GEMAHLIN IRMINSUIIND SCHENKT SEINEN BESITZ ZU ASTÄTT NEBST ZWEI UNFREIEN UNTER VORBEHALT LEBENSLÄNGLICHER NUTZBIESSUNG DIESER UND EINER FRÜHEREN SCHENKUNG SEINES BRUDERS, DES PRIESTERS GAGANHART.</p>
          </div>
-         <dateline>
-                  <date notBefore="0866" notAfter="0874">866-874</date>
-               </dateline>
-      </front>
+         <dateline>866-874<date notBefore="0866" notAfter="0874"/></dateline></front>
       <body>
-                     <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0083.lat001">
+                     <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0083.lat001">
                         <div type="textpart" subtype="charta" n="1">
                            <p xml:space="preserve">
                               <w>a</w>) <w>In</w> <w>nomine</w> <w>omnipotentis</w> <w>dei</w>. 

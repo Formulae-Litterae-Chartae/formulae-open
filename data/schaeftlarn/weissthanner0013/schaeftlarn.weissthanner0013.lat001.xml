@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -82,17 +82,9 @@
          <div type="section" subtype="regest">
                   <p>Priester Albune und dessen Neffe Angilfrid übergeben ihren Erbbesitz mit Kirche in „Reginprehteshusen“ (beim Würmsee).</p>
                </div>
-         <dateline>
-                  <date notBefore="0800"
-                  notAfter="0820"
-                  precision="medium"
-                  scope="circa">ca. 800 – ca. 820 </date>
-               </dateline>
-      </front>
+         <dateline>ca. 800 – ca. 820<date notBefore="0800" notAfter="0820"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0013.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0013.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <head xml:space="preserve"><w>Istam</w> <w>traditionem</w> <w>fecit</w> <w>Albuni</w> <w>presbiter</w>.</head>
                      <p xml:space="preserve"><w>Dum</w> <w>et</w> <w>omnibus</w> <w>non</w> <w>est</w> <w>incognitum</w> <w>sed</w> <w>plurimis</w> <w>ponitur</w> <w>noticia</w>, <w>qualiter</w> <w>venerabilis</w> <w>vir</w> <w>Albune</w> <w>presbiter</w> <w>propriam</w> <w>hereditatem</w> <w>suam</w> <w>tradidit</w> <w>nepoti</w> <w>suo</w> <w>Angilfrido</w>, <w>quando</w> <w>illum</w> <w>tonsuravit</w> <w>temporibus</w> <w>gloriosissimi</w> <w>ducis</w> <w>Tassilonis</w>; <w>post</w> <w>multum</w> <w>vero</w> <w>temporis</w> <w>iam</w> <w>eo</w> <w>cogitante</w> <w>prefato</w> <w>presbitero</w> <w>de</w> <w>diversis</w> <w>causis</w> <w>huius</w> <w>seculi</w> <w>seu</w> <w>de</w> <w>caducis</w> <w>rebus</w> <w>transitoriis</w>, <w>nisi</w> <w>qui</w> <w>tantum</w> <w>propter</w> <w>amorem</w> <w>dei</w> <w>largitate</w> <w>bona</w> <w>deo</w> <w>donaverit</w> <w>et</w> <w>ad</w> <w>domum</w> <w>dei</w> <w>tradiderit</w>, <w>in</w> <w>paenale</w> <w>iudicium</w> <w>deum</w> <w>contemnens</w> <w>inciderit</w>, <w>quapropter</w> <w>prefatus</w> <w>presbiter</w> <w>atque</w> <w>nepos</w> <w>eius</w> <w>Engilfrid</w> <w>presbiter</w> <w>donaverunt</w> <w>atque</w> <w>tradiderunt</w> <w>omnia</w>, <w>quae</w> <w>habuerunt</w>, <w>ad</w> <w>monasterium</w> <w>sancti</w> <w>Dionisii</w> <w>propter</w> <w>amorem</w> <w>dei</w> <w>donatumque</w> <w>in</w> <w>perpetuum</w> <w>permanere</w> <w>voluerunt</w>, <w>hoc</w> <w>est</w> <w>in</w> <w>villa</w> <w>nuncupata</w> <w>Reginprehteshusen</w>, <w>quicquid</w> <w>genitores</w> <w>illorum</w> <w>Werinpreht</w> <w>et</w> <w>Reginpreht</w> <w>ipsis</w> <w>presbiteris</w> <w>reliquerunt</w>, <w>hoc</w> <w>est</w> <w>aecclesiam</w> <w>cum</w> <w>domo</w> <w>simulque</w> <w>alias</w> <w>omnes</w> <w>edificationes</w> <w>ad</w> <w>eas·pertinentes</w>, <w>servos</w> <w>et</w> <w>ancillas</w> <w>seu</w> <w>tributales</w>, <w>rura</w>, <w>prata</w>, <w>campos</w> <w>et</w> <w>silvas</w> <w>aquarumque</w> <w>decursus</w>, <w>mobile</w> <w>vel</w> <w>inmobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>integro</w> <w>tradiderunt</w> <w>ad</w> <w>altare</w> <w>sancti</w> <w>Dionisii</w> <w>pro</w> <w>aeterna</w> <w>retributione</w>, <w>ut</w> <w>ibidem</w> <w>perpetualiter</w> <w>permansisset</w>. <w>Isti</w> <w>sunt</w> <w>testes</w>: <w>Pippi</w>, <w>Reginhart</w>, <w>Amalrih</w>, <w>Kagenhart</w>, <w>Hitto</w>, <w>Gundhart</w>, <w>Erchnolf</w>, <w>Adelhart</w>, <w>Wolfpreht</w>, <w>Ferholt</w>, <w>Odolt</w>.</p>

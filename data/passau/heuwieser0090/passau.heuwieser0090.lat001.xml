@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Hochstifts Passau, welche 1930 von Max Heuwieser herausgegeben worden ist.Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -85,16 +85,9 @@
          <div type="section" subtype="ausstellungsort">
             <p>Passau</p>
          </div>
-         <dateline>
-            <date>
-               <date when="--05-07" notBefore="0899" notAfter="0903">Mai 7 899-903</date>
-            </date>
-               </dateline>
-      </front>
+         <dateline>Mai 7 899-903<date when="0899-05-07"/><date when="0900-05-07"/><date when="0901-05-07"/><date when="0902-05-07"/><date when="0903-05-07"/><date when="0904-05-07"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:passau.heuwieser0090.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:passau.heuwieser0090.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <p xml:space="preserve">
                         <w>In</w> <w>nomine</w> <w>domini</w> <w>nostri</w> <w>Jesu</w> <w>Christi</w>. <w>Noverit</w> <w>namque</w> <w>omnium</w> <w>fidelium</w> <w>industria</w> <w>sanctae</w> <w>dei</w> <w>aecclesiae</w> <w>tam</w> <w>presentium</w> <w>quam</w> <w>et</w> <w>futurorum</w>, <w>qualiter</w> <w>ego</w> <w>Fato</w> <w>humilis</w> <w>clericus</w> <w>tradidi</w> <w>quasdam</w> <w>res</w> <w>proprietatis</w> <w>maeae</w> <w>ad</w> <w>sanctum</w> <w>Stephanum</w> <w>protomartirem</w> <w>Christi</w> <w>sanctumque</w> <w>confessorem</w> <w>Ualentinum</w> <w>et</w> <w>ubi</w> <w>venerabilis</w> <w>episcopus</w> <w>Riharius</w> <w>regulariter</w> <w>atque</w> <w>canonicae</w> <w>Patauiensi</w> <w>sedi</w> <w>divina</w> <w>largiente</w> <w>gracia</w> <w>preesse</w> <w>cognoscitur</w> <w>et</w> <w>hoc</w> <w>est</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Heiminga</w> <w>specialiter</w> <w>Hufzahus</w> <w>iuxta</w> <w>fluvium</w> <w>quod</w> <w>vocatur</w> <w>Salzaha</w> <w>australi</w> <w>parte</w> <w>predicti</w> <w>fluminis</w> <w>et</w> <w>septentrionali</w> <w>in</w> <w>loco</w> <w>qui</w> <w>dicitur</w> <w>Holzhusa</w> <w>cum</w> <w>mancipiis</w> <w>ibidem</w> <w>servientibus</w> <w>cum</w> <w>aecclesia</w> <w>et</w> <w>curtis</w> <w>septis</w> <w>casis</w> <w>scuriis</w> <w>aedificiis</w> <w>terris</w> <w>agris</w> <w>pratis</w> <w>pascuis</w> <w>silvis</w> <w>aquis</w> <w>aquarumque</w> <w>decursibus</w> <w>cultis</w> <w>et</w> <w>incultis</w> <w>mobilibus</w> <w>et</w> <w>inmobilibus</w> <w>et</w> <w>cum</w> <w>omnibus</w> <w>appendiciis</w> <w>et</w> <w>adiacentiis</w> <w>earum</w> <w>in</w> <w>manus</w> <w>supradicti</w> <w>episcopi</w> <w>Rihharii</w> <w>et</w> <w>Engilbarni</w> <w>advocati</w> <w>eius</w>. <w>Haec</w> <w>omnia</w> <w>iure</w> <w>hereditario</w> <w>tradidi</w> <w>atque</w> <w>transfirmavi</w> <w>ea</w> <w>videlicet</w> <w>racione</w>, <w>ut</w> <w>quicquid</w> <w>beneficii</w> <w>ex</w> <w>suprascripta</w> <w>sede</w> <w>habere</w> <w>visus</w> <w>sum</w> <w>ex</w> <w>hodierno</w> <w>tempore</w> <w>usque</w> <w>ad</w> <w>terminum</w> <w>vitae</w> <w>meae</w> <w>securiter</w> <w>et</w> <w>absque</w> 

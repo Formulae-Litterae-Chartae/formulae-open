@@ -1,4 +1,6 @@
-<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
       <fileDesc>
          <titleStmt>
@@ -71,9 +73,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription der Traditionen des Klosters Schäftlarn, welches 1953 von Alois Weissthanner herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -85,16 +85,9 @@
          <div type="section" subtype="ausstellungsort">
                   <p>Kl. Schäftlarn</p>
                </div>
-         <dateline>
-                  <date>
-                     <date when="--09-28" notBefore="0801" notAfter="0813">801 – 813 09 28</date>
-            </date>
-               </dateline>
-      </front>
+         <dateline>(801 – 813) 09 28<date when="0801-09-28"/><date when="0802-09-28"/><date when="0803-09-28"/><date when="0804-09-28"/><date when="0805-09-28"/><date when="0806-09-28"/><date when="0807-09-28"/><date when="0808-09-28"/><date when="0809-09-28"/><date when="0810-09-28"/><date when="0811-09-28"/><date when="0812-09-28"/><date when="0813-09-28"/></dateline></front>
       <body>
-               <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:schaeftlarn.weissthanner0014.lat001">
+               <div type="edition" xml:lang="lat" n="urn:cts:formulae:schaeftlarn.weissthanner0014.lat001">
                   <div type="textpart" subtype="charta" n="1">
                      <head xml:space="preserve"><w>Traditio</w> <w>Willibvrgae</w> <w>de</w> <w>Walchsteti</w>.</head>
                      <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w> <w>nostri</w> <w>Iesu</w> <w>Christi</w>. <w>Temporibus</w> <w>gloriosissimi</w> <w>imperatoris</w> <w>Francorum</w> <w>et</w> <w>Langobardorum</w> <w>Caroli</w>, <w>patricii</w> <w>Romanorum</w>, <w>trado</w> <w>ego</w> <w>Williburch</w> <w>pro</w> <w>remedio</w> <w>animae</w> <w>meae</w> <w>atque</w> <w>confirmo</w>, <w>quicquid</w> <w>habui</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Walchsteti</w> <w>servos</w> <w>vel</w> <w>ancillas</w>, <w>quorum</w> <w>nomina</w> <w>sunt</w>: <w>Anthelm</w>, <w>Ruodrich</w>, <w>Meginhilt</w>, <w>Egina</w>, <w>Walhin</w>, <w>Liudswind</w>, <w>Heriswind</w> <w>necnon</w> <w>in</w> <w>edificiis</w> <w>duas</w> <w>casas</w>, <w>rura</w> <w>et</w> <w>prata</w>, <w>campos</w> <w>et</w> <w>silvas</w> <w>et</w> <w>agros</w> <w>totos</w>, <w>aquas</w> <w>aquarumque</w> <w>decursus</w>, <w>mobile</w> <w>vel</w> <w>inmobile</w>, <w>cultum</w> <w>vel</w> <w>incultum</w>, <w>omnia</w> <w>ex</w> <w>integro</w> <w>trado</w> <w>ad</w> <w>ecclesiam</w> <w>sancti</w> <w>Dionisii</w> <w>pro</w> <w>redemptione</w> <w>animarum</w> <w>nostrarum</w>, <w>quod</w> <w>Helmrich</w> <w>maritus</w> <w>meus</w> <w>mihi</w> <w>in</w> <w>partem</w> <w>dedit</w>. <w>Et</w> <w>dedit</w> <w>michi</w> <w>et</w> <w>filiae</w> <w>meae</w> <w>Swidbvrgae</w> <w>Petto</w> <w>episcopus</w> <w>pecuniam</w> <w>sancti</w> <w>Dionisii</w> <w>in</w> <w>mancipiis</w>, <w>quorum</w> <w>nomina</w> <w>sunt</w> <w>Deotni</w> <w>et</w> <w>filia</w> <w>eius</w> <w>Sigiburch</w>, <w>et</w> <w>aliam</w> <w>pecuniam</w>: <w>III</w> <w>caballos</w> <w>et</w> <w>in</w> <w>auro</w> <w>fabricato</w> <w>duos</w> <w>oringos</w> <w>et</w> <w>|</w> <w>unam</w> <w>spannam</w> <w>et</w> <w>unam</w> <w>tunicam</w> <w>de</w> <w>serico</w> <w>atque</w> <w>in</w> <w>aliis</w> <w>rebus</w> <w>multis</w>, <w>quod</w> <w>mihi</w> <w>bene</w> <w>placuit</w>, <w>ut</w> <w>ista</w> <w>traditio</w> <w>firma</w> <w>fieret</w> <w>atque</w> <w>stabilitum</w> <w>ad</w> <w>sanctum</w> <w>Dionisium</w>. <w>Si</w> <w>quis</w> <w>aut</w> <w>ego</w>, <w>quod</w> <w>fieri</w> <w>non</w> <w>arbitror</w>, <w>aut</w> <w>aliquis</w> <w>de</w> <w>heredibus</w> <w>meis</w> <w>seu</w> <w>quaelibet</w> <w>ulla</w> <w>opposita</w> <w>persona</w>, <w>quae</w> <w>contra</w> <w>hanc</w> <w>donationem</w>, <w>quam</w> <w>ego</w> <w>plenissima</w> <w>voluntate</w> <w>scribere</w> <w>postulavi</w>, <w>venire</w> <w>temptaverit</w>, <w>ne</w> <w>hoc</w> <w>valeat</w> <w>evindicare</w> <w>aut</w> <w>prepedire</w>, <w>ubi</w> <w>donatum</w> <w>est</w>, <w>sed</w> <w>haec</w> <w>donatio</w> <w>in</w> <w>perpetuum</w> <w>firma</w> <w>permaneat</w>. <w>Acta</w> <w>est</w> <w>in</w> <w>monasterio</w> <w>sancti</w> <w>Dionisii</w> <w>sub</w> <w>oppido</w> <w>villae</w>, <w>quae</w> <w>nuncupatur</w> <w>Sceftlare</w> <w>publice</w>. <w>Isti</w> <w>sunt</w> <w>testes</w> <w>veri</w>: <w>Amalrich</w>, <w>Cundhart</w>, <w>Heypo</w>, <w>Heiio</w>, <w>Altolf</w>, <w>Albrich</w>, <w>Deotbald</w>. <w>Et</w> <w>ista</w> <w>traditio</w> <w>fuit</w> <w>facta</w> <w>in</w> <w>IIII</w>. <w>kalendis</w> <w>Octobris</w> <w>in</w> <w>presentia</w> <w>Pettonis</w> <w>episcopi</w>.</p>

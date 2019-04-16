@@ -4,6 +4,9 @@ import re
 import json
 import datetime
 
+# Set up the location of the Elasticsearch server you are using
+es_server = 'http...'
+
 def split_dates(multidate_str):
     date_list = multidate_str.rstrip(',').split(',')
     for date_str in date_list:
@@ -75,14 +78,8 @@ def find_specific_days(multidate_str):
                     days[k] = date_str in v
     return [x for x in days.keys() if days[x] is True]
 
-# For local ES
-# es = Elasticsearch('http://localhost:9200')
-# For Formulae - Litterae - Chartae Bonsai ES
-es = Elasticsearch('https://bukltab6es:oydcb7vdpv@formulae-nemo-dev-5305820135.eu-central-1.bonsaisearch.net')
-# For CJHNT Bonsai ES
-# es = Elasticsearch('https://fkiyh8udo5:iuwd6ekete@cjhnt-testing-6879850075.eu-central-1.bonsaisearch.net')
-# This list includes all collections that are not chartae. 
-# I use coll_type.get(k, 'chartae') below to return 'chartae' if the coll isn't listed here.
+es = Elasticsearch(es_server)
+
 coll_type = {'andecavensis': 'formulae'}
 
 # I have commented the following line out in a move to using aliases and keeping at least one older version of indices.

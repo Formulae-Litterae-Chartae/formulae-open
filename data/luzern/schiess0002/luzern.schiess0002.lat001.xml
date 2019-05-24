@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft, 9.2</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transcription von "Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft"</edition>
+            <respStmt>
+               <resp>Projekt Leiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Pr. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+               <p><!-- To be filled in when a decision is made by the team. --></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/367663430</idno>
+                  <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft</title>
+                  <editor>Traugott Schiess</editor>
+                  <imprint>
+                     <pubPlace>Aarau</pubPlace>
+                     <date when="1933" n="originalAusgabe">1933</date>
+                     <biblScope unit="pp">5–6</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Abteilung 1</title>
+                  <biblScope unit="volume">Band 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Diese Datei ist ein richtig Umschreiben der 1933 Ausgabe von Traugott Schiess. Der OCR-Text war in einer Docx-Datei berichtigt, den in einzeln XML-TEI-Dataien, gemäß der TEI-P5-Vorgaben ausgeschnitten war, um die Formulae-Litterae-Chartae-Projektdatenbank gemäß der CapiTainS-Vorgaben zu machen.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="luzern.schiess0002">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Atha und ihre Schwester Chriemilt, die ihr ganzes Erbteil an das Kloster Luzern geben wollen und kürzlich vernommen haben, daß der Mann Gottes Wichard dahin gekommen sei und das Kloster im Äußern und Innern neu aufgerichtet habe, schenken all ihren Besitz in Kriens von der Höhe des Pilatus bis zum See und weiterhin bis zur Mitte der Reuß mit allen Zugehörden im Umkreis an den Ort, den Mönchen daselbst zu dauerndem Besitz und zum Nutzen der Kirche St. Leodegars. Wer gegen diese Schenkung der Töchter von Witerada handeln will, soll das Doppelte von dem, was er zurückverlangt, an das Kloster und an den königlichen Fiskus 3 Unzen Gold, 12 Pfund Silber bezahlen. Geschehen (5)43 in der Vorhalle der Kirche vor dem Vogt Wilhelm und vielem Volk an einem Sonntag zur Zeit Karls III.</p>
+         </div>
+         <dateline>Vor 840<date notBefore="0800" notAfter="0840"/></dateline></front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:luzern.schiess0002.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Omnibus</w> <w>fidelibus</w> <w>notum</w> <w>fieri</w> <w>volumus</w> <w>tam</w> <w>presentibus</w> <w>quam</w> <w>futuris</w>, <w>qualiter</w> <w>ego</w> <w>Atha</w> <w>et</w> <w>soror</w> <w>mea</w> <w>Chriemilt</w> <w>in</w> <w>omnipotentis</w> <w>dei</w> <w>nomine</w> <w>omnem</w> <w>hereditatem</w> <w>nostram</w> <w>dare</w> <w>optamus</w> <w>ad</w> <w>monasterium</w> <w>Lucernense</w> <w>pro</w> <w>remedio</w> <w>animarum</w> <w>nostrarum</w>. <w>Et</w> <w>quia</w> <w>nuper</w> <w>audivimus</w> <w>opinatissimum</w> <w>virum</w> <w>dei</w> <w>Wichardum</w> <w>in</w> <w>supradictum</w> <w>locum</w> <w>venisse</w> <w>et</w> <w>de</w> <w>reditibus</w> <w>suis</w> <w>monasterialibus</w> <w>muris</w> <w>reedifficasse</w> <w>omnibusque</w> <w>bonis</w> <w>spiritualibus</w> <w>et</w> <w>carnalibus</w> <w>commodis</w> <w>renovasse</w>, <w>ideo</w> <w>libuit</w> <w>etiam</w> <w>nos</w> <w>omnes</w> <w>res</w> <w>nostras</w>, <w>quas</w> <w>in</w> <w>Chrientes</w> <w>habemus</w>, <w>ad</w> <w>eundem</w> <w>locum</w> <w>tradere</w>, <w>id</w> <w>est</w> <w>ab</w> <w>altitudine</w> <w>Fracti</w> <w>Montis</w> <w>usque</w> <w>ad</w> <w>Lacum</w> <w>et</w> <w>inde</w> <w>ad</w> <w>medietatem</w> <w>fluminis</w> <w>Rusae</w> <w>in</w> <w>omnibus</w> <w>utensilibus</w> <w>per</w> <w>circuitum</w>, <w>quicquid</w> <w>dici</w> <w>vel</w> <w>nominari</w> <w>potest</w>, <w>ex</w> <w>integro</w> <w>donamus</w> <w>monachis</w> <w>ibidem</w> <w>deo</w> <w>servientibus</w>, <w>ut</w> <w>in</w> <w>aevum</w> <w>teneant</w> <w>atque</w> <w>possideant</w> <w>sine</w> <w>ullius</w> <w>contradictione</w> <w>et</w>, <w>quicquid</w> <w>exinde</w> <w>pro</w> <w>oportunitate</w> <w>basilice</w> <w>sancti</w> <w>Leodegarii</w> <w>facere</w> <w>decreverint</w>, <w>libera</w> <w>potestate</w> <w>perfruantur</w> <w>faciendi</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>istam</w> <w>traditionem</w> <w>destruere</w> <w>voluerit</w>, <w>quam</w> <w>nos</w> <w>filie</w> <w>Witeradae</w> <w>pari</w> <w>consensu</w> <w>facere</w> <w>decrevimus</w>, <w>nullatenus</w> <w>valeat</w> <w>perficere</w>, <w>quod</w> <w>inchoavit</w>, <w>et</w> <w>pro</w> <w>temeritate</w> <w>sua</w> <w>persolvat</w> <w>monasterio</w> <w>aliud</w> <w>duplum</w>, <w>quantum</w> <w>repetit</w>, <w>et</w> <w>insuper</w> <w>sit</w> <w>culpabilis</w> <w>in</w> <w>erarium</w> <w>regis</w> <w>auri</w> <w>untias</w> <w>iii</w>, <w>argenti</w> <w>libras</w> <w>xii</w>. <w>Actum</w> <w>est</w> <w>anno</w> <w>incarnationis</w> <w>domini</w> <w>nostri</w> <w>xliii</w>. <w>in</w> <w>atrio</w> <w>sepedictae</w> <w>aecclesiae</w> <w>coram</w> <w>advocato</w> <w>Wilhelmo</w> <w>et</w> <w>populi</w> <w>multitudine</w> <w>in</w> <w>dominica</w> <w>die</w> <w>in</w> <w>diebus</w> <w>Karoli</w> <w>imperatoris</w> <w>iii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

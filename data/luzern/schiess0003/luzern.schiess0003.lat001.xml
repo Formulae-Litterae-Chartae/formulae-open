@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft, 9.3</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transcription von "Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft"</edition>
+            <respStmt>
+               <resp>Projekt Leiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Pr. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+               <p><!-- To be filled in when a decision is made by the team. --></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/367663430</idno>
+                  <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft</title>
+                  <editor>Traugott Schiess</editor>
+                  <imprint>
+                     <pubPlace>Aarau</pubPlace>
+                     <date when="1933" n="originalAusgabe">1933</date>
+                     <biblScope unit="pp">6</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Abteilung 1</title>
+                  <biblScope unit="volume">Band 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Diese Datei ist ein richtig Umschreiben der 1933 Ausgabe von Traugott Schiess. Der OCR-Text war in einer Docx-Datei berichtigt, den in einzeln XML-TEI-Dataien, gemäß der TEI-P5-Vorgaben ausgeschnitten war, um die Formulae-Litterae-Chartae-Projektdatenbank gemäß der CapiTainS-Vorgaben zu machen.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="luzern.schiess0003">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Die Brüder Henger und Witowo schenken an das Kloster Luzern, dem Wichard vorsteht, ihren ganzen Besitz in der Mark Malters. Wer die Schenkung anfeindet, soll das Vierfache an den Ort geben und dem königlichen Fiskus 4 Unzen Gold, 12 π Silber bezahlen. Geschehen (5)45, in der 1. Indiktion, in der Vorhalle der Kirche, vor Vogt Engelger und zahlreichem Volk in den Tagen Kaiser Karls III.</p>
+         </div>
+         <dateline>Vor 840<date notBefore="0800" notAfter="0840"/></dateline></front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:luzern.schiess0003.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>dei</w> <w>nomine</w>. <w>Nos</w> <w>fratres</w> <w>Heriger</w> <w>et</w> <w>Witowo</w> <w>tradimus</w> <w>ad</w> <w>monasterium</w> <w>Lucernense</w>, <w>ubi</w> <w>venerandus</w> <w>vir</w> <w>dei</w> <w>Wichardus</w> <w>gregi</w> <w>dei</w> <w>preesse</w> <w>dinoscitur</w>, <w>et</w> <w>hoc</w> <w>est</w>, <w>quod</w> <w>donamus</w>, <w>omne</w>, <w>quod</w> <w>ad</w> <w>nos</w> <w>pertinet</w> <w>in</w> <w>Maltrensi</w> <w>marcha</w>, <w>sine</w> <w>ullius</w> <w>contradictione</w>, <w>ut</w> <w>firmiter</w> <w>teneant</w> <w>atque</w> <w>possideant</w>. <w>Si</w> <w>quis</w> <w>hanc</w> <w>traditionem</w> <w>destruere</w> <w>voluerit</w>, <w>quod</w> <w>fieri</w> <w>non</w> <w>credimus</w>, <w>aliud</w> <w>quadruplum</w> <w>ad</w> <w>supradictum</w> <w>locum</w> <w>restituat</w> <w>et</w> <w>in</w> <w>erarium</w> <w>regis</w> <w>coactus</w> <w>persolvat</w> <w>auri</w> <w>untias</w> <w>iiii</w>, <w>argenti</w> <w>libras</w> <w>xii</w>. <w>Actum</w> <w>anno</w> <w>incarnationis</w> <w>xlv</w>. <w>indictione</w> <w>i</w>. <w>in</w> <w>atrio</w> <w>supradictae</w> <w>aecclesiae</w> <w>coram</w> <w>advocato</w> <w>Engelgero</w> <w>et</w> <w>populi</w> <w>multitudine</w> <w>lunis</w> <w>die</w> <w>in</w> <w>diebus</w> <w>Karo1i</w> <w>imperatoris</w> <w>iii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft, 9.6</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transcription von "Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft"</edition>
+            <respStmt>
+               <resp>Projekt Leiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Pr. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+               <p><!-- To be filled in when a decision is made by the team. --></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/367663430</idno>
+                  <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft</title>
+                  <editor>Traugott Schiess</editor>
+                  <imprint>
+                     <pubPlace>Aarau</pubPlace>
+                     <date when="1933" n="originalAusgabe">1933</date>
+                     <biblScope unit="pp">8</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Abteilung 1</title>
+                  <biblScope unit="volume">Band 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Diese Datei ist ein richtig Umschreiben der 1933 Ausgabe von Traugott Schiess. Der OCR-Text war in einer Docx-Datei berichtigt, den in einzeln XML-TEI-Dataien, gemäß der TEI-P5-Vorgaben ausgeschnitten war, um die Formulae-Litterae-Chartae-Projektdatenbank gemäß der CapiTainS-Vorgaben zu machen.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="luzern.schiess0006">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Recho begehrt die Welt zu verlassen und schenkt zu seinem Seelenheil an das Kloster Luzern den dortigen Mönchen alles, was er in Küßnacht, Alpnach, Samen und Giswil besaß. Wenn er oder einer seiner Nachkommen die Schenkung angreifen will, soll er das Vierfache erstatten und an den Fiskus als Buße 14 Unzen Gold 70 it Silber bezahlen. Der Mönch Reginbold hat dies geschrieben, unterschrieben und Tag und Jahr beigefügt. Geschehen im Jahr (5)09, am …</p>
+         </div>
+         <dateline>Vor 840<date notBefore="0800" notAfter="0840"/></dateline></front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:luzern.schiess0006.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>presentibus</w> <w>quam</w> <w>futuris</w>, <w>qualiter</w> <w>ego</w> <w>Reccho</w> <w>in</w> <w>dei</w> <w>nomine</w> <w>desideravi</w> <w>seculum</w> <w>relinquere</w> <w>et</w> <w>pro</w> <w>remedio</w> <w>animae</w> <w>meae</w> <w>donavi</w> <w>ad</w> <w>Lucernense</w> <w>monasterium</w> <w>monachis</w> <w>ibidem</w> <w>deo</w> <w>servientibus</w>, <w>quicquid</w> <w>in</w> <w>Chussenacho</w> <w>et</w> <w>in</w> <w>Alpenacho</w>, <w>[i]n</w> <w>Sarnono</w>, <w>in</w> <w>Kisewilare</w> <w>habui</w>, <w>firmiter</w> <w>tenendum</w> <w>et</w> <w>in</w> <w>perpetuo</w> <w>possidendum</w>. <w>Si</w> <w>ego</w> <w>aut</w> <w>ullus</w> <w>posterorum</w> <w>meorum</w> <w>hanc</w> <w>donationem</w> <w>irrumpere</w> <w>voluerit</w>, <w>aliud</w> <w>quadruplum</w> <w>restituat</w> <w>et</w>, <w>quod</w> <w>cepit</w>, <w>non</w> <w>perficiat</w>, <w>insuper</w> <w>ad</w> <w>fiscum</w> <w>regis</w> <w>multa</w> <w>componat</w>, <w>id</w> <w>est</w> <w>auri</w> <w>untias</w> <w>xiiii</w>, <w>argenti</w> <w>libras</w> <w>lxx</w>. <w>Ego</w> <w>Reginboldus</w> <w>manachus</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>, <w>notavi</w> <w>diem</w> <w>et</w> <w>annum</w>. <w>Anno</w> <w>incarnationis</w> <w>domini</w> <w>nostri</w> <w>viiii</w>. <w>die</w> <w>…</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

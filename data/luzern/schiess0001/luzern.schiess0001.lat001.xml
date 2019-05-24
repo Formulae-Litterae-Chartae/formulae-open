@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft, 9.1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digitale Transcription von "Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft"</edition>
+            <respStmt>
+               <resp>Projekt Leiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Pr. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2018"/>
+            <availability>
+               <p><!-- To be filled in when a decision is made by the team. --></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/367663430</idno>
+                  <title>Quellenwerk zur Entstehung der Schweizerischen Eidgenossenschaft</title>
+                  <editor>Traugott Schiess</editor>
+                  <imprint>
+                     <pubPlace>Aarau</pubPlace>
+                     <date when="1933" n="originalAusgabe">1933</date>
+                     <biblScope unit="pp">4–5</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Abteilung 1</title>
+                  <biblScope unit="volume">Band 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Diese Datei ist ein richtig Umschreiben der 1933 Ausgabe von Traugott Schiess. Der OCR-Text war in einer Docx-Datei berichtigt, den in einzeln XML-TEI-Dataien, gemäß der TEI-P5-Vorgaben ausgeschnitten war, um die Formulae-Litterae-Chartae-Projektdatenbank gemäß der CapiTainS-Vorgaben zu machen.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="luzern.schiess0001">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Wichard, Priester, und sein Bruder Ruopert, Heerführer König Ludwigs, teilten mit Erlaubnis und Beistand des Königs, ihres Verwandten, ihren gesamten aus väterlicher Erbschaft stammenden Grundbesitz. Darauf übergab Ruopert seinen ganzen Teil dem König, damit er im Castrum Zürich an der Limmat eine Kirche und ständigen Gottesdienst aufrichte. Wichard aber, ein Priester, errichtete an einem von altersher Luzern geheißenen Ort am Flusse Reuß, der aus dem großen See fließt, St. Mauricius und seinen Gefährten, dem Märtyrer St. Leodegar und allen Heiligen zu Ehren eine kleine Zelle, gab all seinen Besitz, am Berge Albis bei seinem Gut Lunkhofen und dem umliegenden Land beginnend, mit Erlaubnis des Königs an diesen Ort, begab sich selbst dahin zum (Gottes-) Dienst und sammelte so viele Mönche, als er konnte, daselbst. Daher kam ein Vornehmer Namens Alwic zu ihm, der, zum Mönch angenommen, die Bewohner der Gegend zur Liebe Gottes entflammte, sodaß Wichard ihn zu seinem Nachfolger machte und als Vorsteher zurückließ. Geschehen zur Zeit König Ludwigs, im Jahr (5)03, in der 13. Indiktion.</p>
+         </div>
+         <dateline>Vor 840<date notBefore="0800" notAfter="0840"/></dateline></front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:luzern.schiess0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>nobilibus</w> <w>et</w> <w>ignobilibus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>qualiter</w> <w>ego</w> <w>Wichardus</w> <w>et</w> <w>frater</w> <w>meus</w> <w>Ruopertus</w>, <w>dux</w> <w>militum</w> <w>regis</w> <w>Luodewici</w>, <w>qui</w> <w>nobis</w> <w>ex</w> <w>consanguini</w>(<w>ta</w>)<w>te</w> <w>coniunctus</w> <w>est</w>, <w>omnia</w> <w>predia</w> <w>nostra</w>, <w>quae</w> <w>nobis</w> <w>ex</w> <w>paterna</w> <w>hereditate</w> <w>advenerunt</w>, <w>ex</w> <w>illius</w> <w>permissione</w> <w>et</w> <w>iuvamine</w> <w>dividimus</w>. <w>Postea</w> <w>frater</w> <w>meus</w> <w>pro</w> <w>amore</w> <w>dei</w> <w>et</w> <w>remedio</w> <w>anime</w> <w>suae</w> <w>ductus</w> <w>omnem</w> <w>partem</w> <w>suam</w>, <w>quae</w> <w>ad</w> <w>eum</w> <w>pertinebat</w>, <w>domino</w> <w>suo</w> <w>regi</w> <w>contradidit</w>, <w>ea</w> <w>videlicet</w> <w>ratione</w>, <w>ut</w> <w>in</w> <w>castro</w> <w>Turicino</w> <w>iuxta</w> <w>fluvium</w> <w>Lindemaci</w> <w>ecclesiam</w> <w>construeret</w> <w>et</w> <w>servicium</w> <w>dei</w> <w>ibidem</w> <w>perpetualiter</w> <w>constitueret</w>. <w>Unde</w> <w>ego</w> <w>Wichardus</w> <w>presbyter</w> <w>quamvis</w> <w>indignus</w> <w>ex</w> <w>intimo</w> <w>desiderio</w> <w>compunctus</w> <w>in</w> <w>quodam</w> <w>loco</w>, <w>qui</w> <w>Lucerna</w> <w>ex</w> <w>antiquitate</w> <w>est</w> <w>dictus</w>, <w>iuxta</w> <w>fluvium</w>, <w>qui</w> <w>Rusa</w> <w>vocatur</w>, <w>qui</w> <w>de</w> <w>sumitate</w> <w>magni</w> <w>laci</w> <w>fluit</w>, <w>in</w> <w>honore</w> <w>sancti</w> <w>Mauricii</w> <w>et</w> <w>sociorum</w> <w>eius</w> <w>et</w> <w>sancti</w> <w>Leodegarii</w> <w>martyris</w> <w>et</w> <w>omnium</w> <w>sanctorum</w> <w>parvum</w> <w>tugurium</w> <w>construxi</w>, <w>omnem</w> <w>substantiam</w>, <w>quae</w> <w>me</w> <w>contingit</w> <w>de</w> <w>monte</w>, <w>qui</w> <w>A1bis</w> <w>vocatur</w>, <w>incipiens</w> <w>a</w> <w>predio</w> <w>meo</w> <w>Lunchunft</w> <w>et</w> <w>omnibus</w> <w>locis</w> <w>circumquaque</w> <w>iacentibus</w>, <w>ex</w> <w>permissione</w> <w>regis</w>, <w>cognati</w> <w>mei</w>, <w>ad</w> <w>ipsum</w> <w>locum</w> <w>contradidi</w> <w>et</w> <w>me</w> <w>ipsum</w> <w>illic</w> <w>propter</w> <w>servicium</w> <w>collocavi</w> <w>et</w> <w>tantos</w> <w>monachos</w>, <w>quantos</w> <w>potui</w>, <w>illic</w> <w>congregavi</w>. <w>Unde</w> <w>vir</w> <w>quidam</w> <w>nobilis</w> <w>ac</w> <w>bonus</w> <w>ad</w> <w>me</w> <w>veniens</w>, <w>qui</w> <w>spretis</w> <w>omnibus</w> <w>curis</w> <w>huius</w> <w>seculi</w>, <w>quem</w> <w>ego</w> <w>ipse</w> <w>monachum</w> <w>illic</w> <w>ordinavi</w>, <w>nomine</w> <w>A1wicus</w>, <w>ita</w> <w>ut</w> <w>pene</w> <w>dicam</w> <w>per</w> <w>omnia</w> <w>dei</w> <w>amicus</w>, <w>prudens</w> <w>in</w> <w>scripturis</w> <w>sanctis</w>, <w>qui</w> <w>suis</w> <w>admonitionibus</w> <w>ac</w> <w>verbis</w> <w>salutaribus</w> <w>corda</w> <w>omnium</w> <w>civium</w> <w>regionis</w> <w>illius</w> <w>in</w> <w>dei</w> <w>provocavit</w> <w>affectum</w>. <w>Inde</w> <w>de</w> <w>die</w> <w>in</w> <w>diem</w> <w>crescente</w> <w>servicio</w> <w>dei</w> <w>ipsum</w> <w>Alwicum</w> <w>mei</w> <w>successorem</w> <w>ac</w> <w>rectorem</w> <w>ipso</w> <w>loco</w> <w>dereliqui</w>. <w>Acta</w> <w>sunt</w> <w>haec</w> <w>temporibus</w> <w>Ludewici</w> <w>regis</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>iii</w>. <w>indictione</w> <w>xiii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

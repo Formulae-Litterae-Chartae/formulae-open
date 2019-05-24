@@ -7,6 +7,9 @@ import datetime
 # Set up the location of the Elasticsearch server you are using
 es_server = 'http...'
 
+# Set up the folder that contains the individual plain text search files
+search_folder = 'XXXXX'
+
 def split_dates(multidate_str):
     date_list = multidate_str.rstrip(',').split(',')
     for date_str in date_list:
@@ -86,7 +89,7 @@ coll_type = {'andecavensis': 'formulae'}
 # These older indices should probably be deleted by hand instead of being removed automatically.
 # es.indices.delete('*') #replace with the index to be deleted or "*" for all indices.
 
-files = [x for x in glob('/home/matt/results/formulae-open/search/*.txt') if 'stgallen' not in x]
+files = [x for x in glob('{}/*.txt'.format(search_folder)) if not re.search('stgallen|freising', x)]
 # This is the mapping for normalization of place names
 with open('place_mapping.json') as f:
     place_mapping = json.load(f)

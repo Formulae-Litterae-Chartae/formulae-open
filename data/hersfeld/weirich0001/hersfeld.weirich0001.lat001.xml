@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Reichsabtei Hersfeld. Erster Band (Ed. Weirich) Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Urkundenbuch der Reichsabtei Hersfeld. Erster Band (Ed. Weirich)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>André Petersen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Margherita Mariani (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lena Gebhard (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2019"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/362932166</idno>
+                  <title>Urkundenbuch der Reichsabtei Hersfeld. Erster Band</title>
+                  <editor>Hans Weirich</editor>
+                  <editor>Karl Hörgers</editor>
+                  <imprint>
+                     <pubPlace>Marburg</pubPlace>
+                     <date when="1936" n="originalAusgabe">1936</date>
+                     <biblScope unit="pp">1-4</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch der Reichsabtei Hersfeld. Erster Band, welches 1936 von Hans Weirich herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="hersfeld.weirich0001">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>König Karl verleiht dem Kloster Hersfeld Schutz, Asylrecht, Einschränkung der bischöflichen Gewalt und freie Abtswahl.</p>
+         </div>
+         <dateline>&lt;771 10 09-772 10 08&gt;<date notBefore="0771-10-09" notAfter="0772-10-08"/></dateline>
+      </front>
+      <body>
+         <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:hersfeld.weirich0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Carolus</w> <w>dei</w> <w>gracia</w> <w>rex</w> <w>Francorum</w> <w>Longobardorum</w> <w>ac</w> <w>patricius</w> <w>Romanorum</w>. <w>Notum</w> <w>esse</w> <w>volumus</w> <w>principibus</w>, <w>episcopis</w>, <w>abbatibus</w>, <w>ducibus</w>, <w>comitibus</w> <w>nostris</w> <w>omnibus</w> <w>Francie</w> <w>Longobardie</w> <w>et</w> <w>Theutonie</w>, <w>quod</w> <w>vir</w> <w>venerabilis</w> <w>Lullus</w> <w>Mogunciace</w> <w>episcopus</w> <w>ecclesie</w> <w>synodum</w> <w>nostram</w> <w>in</w> <w>Karisiaco</w> <w>adiens</w> <w>cenobium</w> <w>Herolffesvelt</w>, <w>quod</w> <w>in</w> <w>proprietate</w> <w>sua</w> <w>construxerat</w> <w>in</w> <w>honorem</w> <w>sanctorum</w> <w>apostolorum</w> <w>Symonis</w> <w>et</w> <w>Iude</w>, <w>nobis</w> <w>tradidit</w>, <w>ut</w> <w>sub</w> <w>nostra</w> <w>nostrorumque</w> <w>successorum</w> <w>tuicione</w> <w>semper</w> <w>esset</w> <w>supplicavit</w>. <w>Unde</w>, <w>sicuti</w> <w>ipse</w> <w>a</w> <w>nobis</w> <w>petivit</w>, <w>ipsum</w> <w>monasteriolum</w> <w>seu</w> <w>cenobium</w> <w>mere</w> <w>propter</w> <w>deum</w> <w>ad</w> <w>nostram</w> <w>seu</w> <w>successorum</w> <w>nostrorum</w> <w>perpetuam</w> <w>presentibus</w> <w>recipimus</w> <w>protectionem</w> <w>ipsumque</w> <w>eximimus</w> <w>et</w> <w>libertamus</w> <w>nec</w> <w>non</w> <w>precipiendo</w> <w>mandamus</w> <w>et</w> <w>atrocissime</w> <w>interdicimus</w>, <w>ut</w> <w>nullus</w> <w>extraneus</w> <w>homo</w> <w>alicui</w> <w>de</w> <w>dicta</w> <w>sancta</w> <w>dei</w> <w>casa</w> <w>vel</w> <w>confugienti</w> <w>seu</w> <w>interfugienti</w> <w>in</w> <w>illam</w> <w>causa</w> <w>gracie</w> <w>vel</w> <w>metus</w> <w>in</w> <w>ipso</w> <w>sancto</w> <w>vim</w> <w>vel</w> <w>violenciam</w> <w>loco</w> <w>inantea</w> <w>inferre</w> <w>presumat</w>, <w>nec</w> <w>ullus</w> <w>episcoporum</w> <w>vel</w> <w>archidyaconus</w> <w>ipsorum</w> <w>commonachos</w> <w>ad</w> <w>ipsam</w> <w>sanctam</w> <w>casam</w> <w>dei</w> <w>pertinentes</w> <w>per</w> <w>legem</w> <w>canonicam</w> <w>contingere</w> <w>presumat</w>. <w>Nullus</w> <w>quoque</w> <w>successorum</w> <w>nostrorum</w> <w>vel</w> <w>episcoporum</w> <w>vel</w> <w>ulla</w> <w>iudiciaria</w> <w>potestas</w> <w>licenciam</w> <w>habeat</w> <w>hoc</w> <w>privilegium</w> <w>irrumpere</w>, <w>sed</w> <w>sub</w> <w>nostra</w> <w>et</w> <w>nostrorum</w> <w>successorum</w> <w>tuicione</w> <w>et</w> <w>patrum</w> <w>institutis</w> <w>perpetue</w> <w>sint</w>; <w>neque</w> <w>inantea</w> <w>episcopus</w> <w>neque</w> <w>missus</w> <w>ab</w> <w>eo</w> <w>neque</w> <w>comes</w> <w>neque</w> <w>princeps</w> <w>neque</w> <w>iudex</w> <w>publicus</w> <w>neque</w> <w>missi</w> <w>nostri</w> <w>discurrentes</w> <w>neque</w> <w>quis</w> <w>magna</w> <w>parvave</w> <w>persona</w> <w>in</w> <w>villis</w> <w>vel</w> <w>rebus</w> <w>eorum</w> <w>mansionatica</w> <w>preparare</w> <w>vel</w> <w>ullum</w> <w>impedimentum</w> <w>in</w> <w>ipsa</w> <w>sancta</w> <w>casa</w> <w>vel</w> <w>vim</w> <w>alicui</w> <w>facere</w> <w>presumat</w>. <w>Nostra</w> <w>auctoritate</w> <w>licenciam</w> <w>habeant</w> <w>eligendi</w> <w>abbatem</w> <w>secundum</w> <w>canones</w> <w>et</w> <w>regulam</w> <w>sancti</w> <w>Benedicti</w>; <w>ordinaciones</w> <w>vero</w> <w>facere</w> <w>et</w> <w>tabulas</w> <w>benedicere</w> <w>absque</w> <w>munusculis</w> <w>debet</w> <w>episcopus</w> <w>de</w> <w>Moguncia</w>. <w>Si</w> <w>discordant</w> <w>in</w> <w>monasterio</w> <w>et</w> <w>concordare</w> <w>non</w> <w>possunt</w>, <w>ad</w> <w>synodum</w> <w>nostram</w> <w>veniant</w>. <w>Hanc</w> <w>cartam</w> <w>libertatis</w> <w>dedimus</w> <w>ipso</w> <w>Lulloni</w> <w>et</w> <w>in</w> <w>perpetuum</w> <w>omnibus</w> <w>abbatibus</w> <w>cenobii</w> <w>antedicti</w> <w>privilegialem</w> <w>et</w> <w>suis</w> <w>monachis</w> <w>ob</w> <w>reverenciam</w> <w>apostolorum</w> <w>et</w> <w>pure</w> <w>propter</w> <w>deum</w> <w>perpetue</w> <w>duraturam</w>, <w>quam</w> <w>conscribi</w> <w>iussimus</w> <w>et</w> <w>annulo</w> <w>nostro</w>; <w>propria</w> <w>manu</w> <w>signavimus</w> <w>in</w> <w>perpetuam</w> <w>firmitatem</w> <w>super</w> <w>eo</w>, <w>ut</w> <w>liberius</w> <w>deo</w> <w>valeant</w> <w>pro</w> <w>nobis</w> <w>supplicando</w> <w>famulari</w>; <w>quod</w> <w>precipimus</w> <w>sub</w> <w>fidelitatis</w> <w>omagio</w> <w>regni</w> <w>nostri</w> <w>ab</w> <w>omnibus</w> <w>strictissime</w> <w>in</w> <w>perpetuum</w> <w>observari</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch der Reichsabtei Hersfeld. Erster Band (Ed. Weirich) Nr. 105</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Urkundenbuch der Reichsabtei Hersfeld. Erster Band (Ed. Weirich)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>André Petersen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Margherita Mariani (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lena Gebhard (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2019"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/362932166</idno>
+                  <title>Urkundenbuch der Reichsabtei Hersfeld. Erster Band</title>
+                  <editor>Hans Weirich</editor>
+                  <editor>Karl Hörgers</editor>
+                  <imprint>
+                     <pubPlace>Marburg</pubPlace>
+                     <date when="1936" n="originalAusgabe">1936</date>
+                     <biblScope unit="pp">187-188</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch der Reichsabtei Hersfeld. Erster Band, welches 1936 von Hans Weirich herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="hersfeld.weirich0105">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>König Heinrich IV. schenkt dem Kloster Hersfeld 10 Mansus zu Homberg [an der Ohm].</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mainz</p>
+         </div>
+         <dateline>1065 04 05<date when="1065-04-05"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:hersfeld.weirich0105.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>trinitatis</w>. <w>Heinricus</w> <w>divina</w> <w>favente</w> <w>clementia</w> <w>rex</w>. <w>Omnium</w> <w>Christi</w> <w>nostrorumque</w> <w>fidelium</w> <w>tam</w> <w>futurorum</w> <w>quam</w> <w>praesentium</w> <w>universitati</w> <w>notum</w> <w>esse</w> <w>volumus</w>, <w>qualiter</w> <w>nos</w> <w>per</w> <w>interventum</w> <w>ac</w> <w>petitionem</w> <w>matris</w> <w>nostrae</w> <w>Agnetis</w> <w>imperatricis</w> <w>augustae</w>, <w>maxime</w> <w>quoque</w> <w>pro</w> <w>amore</w> <w>divino</w> <w>animaeque</w> <w>nostrae</w> <w>remedio</w> <w>X</w> <w>mansos</w> <w>ad</w> <w>locum</w> <w>qui</w> <w>dicitur</w> <w>Hohunburch</w> <w>pertinentes</w> <w>in</w> <w>comitatu</w> <w>Wernheri</w> <w>et</w> <w>in</w> <w>pago</w> <w>Lognahi</w> <w>sitos</w> <w>sanctae</w> <w>dei</w> <w>aecclesiae</w> <w>Heristfeldin</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Wigberti</w> <w>consecratae</w> <w>cum</w> <w>omnibus</w> <w>appendiciis</w> <w>suis</w>, <w>hoc</w> <w>est</w> <w>utriusque</w> <w>sexus</w> <w>mancipiis</w> <w>areis</w> <w>aedificiis</w> <w>agris</w> <w>cultis</w> <w>et</w> <w>incultis</w> <w>pratis</w> <w>campis</w> <w>pascuis</w> <w>silvis</w> <w>vineis</w> <w>venationibus</w> <w>piscationibus</w> <w>aquis</w> <w>aquarumque</w> <w>decursibus</w> <w>viis</w> <w>et</w> <w>inviis</w> <w>exitibus</w> <w>et</w> <w>reditibus</w> <w>quaesitis</w> <w>et</w> <w>inquirendis</w> <w>molis</w> <w>molendinis</w> <w>et</w> <w>cum</w> <w>omni</w> <w>utilitate</w>, <w>vel</w> <w>quam</w> <w>nunc</w> <w>habent</w> <w>aut</w> <w>quae</w> <w>ullo</w> <w>modo</w> <w>ex</w> <w>eisdem</w> <w>deinceps</w> <w>provenire</w> <w>potuerit</w>, <w>in</w> <w>proprium</w> <w>tradidimus</w>, <w>ea</w> <w>videlicet</w> <w>ratione</w>, <w>ut</w> <w>abbas</w> <w>eiusdem</w> <w>aecclesiae</w> <w>ROtharth</w> <w>omnesque</w> <w>successores</w> <w>illius</w> <w>aliorum</w> <w>fratrum</w> <w>consilio</w> <w>liberam</w> <w>habeant</w> <w>potestatem</w> <w>tenendi</w> <w>praescriptos</w> <w>mansos</w>, <w>precariandi</w>, <w>commutandi</w> <w>vel</w> <w>quicquid</w> <w>ad</w> <w>utilitatem</w> <w>eiusdem</w> <w>aecclesiae</w> <w>placuerit</w> <w>faciendi</w>. <w>Et</w> <w>ut</w> <w>haec</w> <w>nostra</w> <w>regalis</w> <w>traditio</w> <w>stabilis</w> <w>et</w> <w>inconvulsa</w> <w>omni</w> <w>permaneat</w> <w>evo</w>, <w>hanc</w> <w>cartam</w> <w>conscriptam</w> <w>propria</w> <w>manu</w> <w>corroborantes</w> <w>sigilli</w> <w>nostri</w> <w>impressione</w> <w>iussimus</w> <w>insigniri</w>. <w>Signum</w> <w>domni</w> <w>Heinrici</w> <w>quarti</w> <w>regis</w> <w>invictissimi</w>. <w>Sigehardus</w> <w>cancellarius</w> <w>vice</w> <w>Sigifridi</w> <w>archicancellarii</w> <w>recognovi</w>. <w>Data</w> <w>non</w>. <w>april</w>. <w>anno</w> <w>dominicae</w> <w>incarnationis</w> <w>M</w>. <w>LXV</w>, <w>indictione</w> <w>III</w>, <w>anno</w> <w>autem</w> <w>ordinationis</w> <w>Heinrici</w> <w>quarti</w> <w>regis</w> <w>XII</w>, <w>vero</w> <w>VIIII</w>, <w>actum</w> <w>Mogoncie</w>; <w>in</w> <w>dei</w> <w>nomine</w> <w>feliciter</w> <w>amen</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

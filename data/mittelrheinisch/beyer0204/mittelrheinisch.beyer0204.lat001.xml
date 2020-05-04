@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer) Nr. 204</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2019"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/750131527</idno>
+                  <idno type="ISBN">978-3-487-05328-8</idno>
+                  <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien</title>
+                  <editor>Heinrich Beyer</editor>
+                  <imprint>
+                     <pubPlace>Hildesheim, New York</pubPlace>
+                     <date when="1860" n="originalAusgabe">1860</date>
+                     <date when="1974" n="neudruck">1974</date>
+                     <biblScope unit="pp">264–265</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Von den ältesten Zeiten bis zum Jahre 1169</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch zur Geschichte der mittelrheinischen Territorien, welches 1860 von Heinrich Beyer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="mittelrheinisch.beyer0204">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Erzbischof Heinrich bestätigt die Stiftung der Kirche zu Humbach und bestimmt die Grenzen der Pfarrei</p>
+         </div>
+         <dateline>959<date notBefore="0959-01-01" notAfter="0959-12-31"/></dateline>
+      </front>
+      <body>
+         <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:mittelrheinisch.beyer0204.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>trinitatis</w> <w>HEINRICVS</w> <w>dei</w> <w>omnipotentis</w> <w>annvente</w> <w>clementia</w> <w>treuerensium</w> <w>praesul</w> <w>venerabilissimus</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>sanctae</w> <w>dei</w> <w>ecclesiae</w> <w>fidelibus</w> <w>scilicet</w> <w>tam</w> <w>praesentibus</w> <w>quam</w> <w>et</w> <w>futuris</w> <w>quandam</w> <w>in</w> <w>humbacensis</w> <w>castelli</w> <w>suburbio</w> <w>ecclesiam</w> <w>ligneo</w> <w>constructam</w> <w>fundamento</w> <w>ruotbertum</w> <w>nostrum</w> <w>praecessorem</w> <w>ducis</w> <w>herimanni</w> <w>petitionibus</w> <w>consecrasse</w> <w>atque</w> <w>omnem</w> <w>circumquaque</w> <w>decimationem</w> <w>eius</w> <w>subditam</w> <w>dominatui</w> <w>praetitulasse</w> <w>sicque</w> <w>pro</w> <w>animae</w> <w>remedio</w> <w>dei</w> <w>genitricis</w> <w>sub</w> <w>nomine</w> <w>dedicato</w> <w>cuidam</w> <w>monasterio</w> <w>confluentie</w> <w>sito</w> <w>multorum</w> <w>Christi</w> <w>fidelium</w> <w>testimonio</w> <w>comprobante</w> <w>condonasse</w> <w>quatinus</w> <w>fratres</w> <w>eidem</w> <w>loco</w> <w>deservientes</w> <w>dominum</w> <w>perhenniter</w> <w>mererentur</w> <w>exorasse</w>. <w>Postmodum</w> <w>vero</w> <w>non</w> <w>longo</w> <w>temporum</w> <w>spatio</w> <w>praetereunte</w> <w>Willimanum</w> <w>eiusdem</w> <w>monasterii</w> <w>provisorem</w> <w>praescriptam</w> <w>iam</w> <w>sepius</w> <w>ecclesiam</w> <w>lapideo</w> <w>fundamine</w> <w>renovasse</w> <w>ac</w> <w>nostrae</w> <w>paternitatis</w> <w>iuvamen</w> <w>una</w> <w>cum</w> <w>totius</w> <w>cateruae</w> <w>conuentu</w> <w>humiliter</w> <w>inuocando</w> <w>rogasse</w> <w>sibi</w> <w>sub</w> <w>eorundem</w> <w>honore</w> <w>sanctorum</w> <w>quium</w> <w>prius</w> <w>est</w> <w>consecrata</w> <w>videlicet</w> <w>petri</w> <w>principis</w> <w>apostolorum</w> <w>et</w> <w>s</w> <w>georgii</w> <w>martyris</w> <w>dedicasse</w> <w>necnon</w> <w>priori</w> <w>terminatione</w> <w>decimasse</w> <w>sub</w> <w>talique</w> <w>inferius</w> <w>annotata</w> <w>titulatione</w> <w>cunctorum</w> <w>in</w> <w>praesentia</w> <w>paroechianorum</w> <w>recitari</w> <w>mandasse</w> <w>ne</w> <w>amodo</w> <w>quisquam</w> <w>emulorum</w> <w>terminationis</w> <w>cartulam</w> <w>nostra</w> <w>manu</w> <w>simulque</w> <w>fidelium</w> <w>clericorum</w> <w>laicorumue</w> <w>corroboratam</w> <w>et</w> <w>sigillo</w> <w>consignatam</w> <w>posset</w> <w>violasse</w>. <w>Ex</w> <w>fluvio</w> <w>anarae</w>, <w>qua</w> <w>praedium</w> <w>incipit</w> <w>ducis</w> <w>herimanni</w> <w>et</w> <w>inde</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>anarae</w> <w>gesprinc</w> <w>et</w> <w>inde</w> <w>usque</w> <w>in</w> <w>minorem</w> <w>anaram</w> <w>et</w> <w>per</w> <w>minorem</w> <w>anaram</w> <w>deorsum</w> <w>sicut</w> <w>se</w> <w>dividunt</w> <w>praedia</w> <w>praefati</w> <w>ducis</w> <w>atque</w> <w>Cuonradi</w> <w>comitis</w> <w>necnon</w> <w>quicquid</w> <w>herimannus</w> <w>vel</w> <w>eius</w> <w>famuli</w> <w>in</w> <w>confinio</w> <w>brencede</w> <w>videntur</w> <w>usque</w> <w>in</w> <w>clingenebach</w> <w>possidere</w> <w>et</w> <w>clingenebach</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>eius</w> <w>ursprinc</w> <w>de</w> <w>clingenebach</w> <w>autem</w> <w>usque</w> <w>in</w> <w>diofbach</w> <w>veluti</w> <w>se</w> <w>dividit</w> <w>herimanni</w> <w>praedium</w> <w>et</w> <w>inde</w> <w>usque</w> <w>in</w> <w>anaram</w> <w>ac</w> <w>anaram</w> <w>sursum</w> <w>usque</w> <w>adellonis</w> <w>praedium</w> <w>eiusque</w> <w>possessorum</w> <w>et</w> <w>inter</w> <w>adiacentia</w> <w>astinae</w> <w>praedia</w> <w>usque</w> <w>in</w> <w>fontem</w> <w>diufbach</w> <w>vocitatum</w> <w>et</w> <w>inde</w> <w>usque</w> <w>in</w> <w>loganam</w> <w>ac</w> <w>logana</w> <w>deorsum</w> <w>usque</w> <w>in</w> <w>eius</w> <w>concursum</w> <w>et</w> <w>anarae</w> <w>et</w> <w>anaram</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>rivum</w> <w>thyeza</w> <w>et</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>eius</w> <w>ursprinc</w> <w>et</w> <w>inde</w> <w>per</w> <w>bernhardesroth</w> <w>super</w> <w>ruzenbach</w> <w>et</w> <w>inde</w> <w>in</w> <w>madalbergostraza</w> <w>in</w> <w>cunesbach</w> <w>et</w> <w>hinc</w> <w>deorsum</w> <w>usque</w> <w>in</w> <w>ouuuza</w> <w>et</w> <w>inde</w> <w>deorsum</w> <w>qua</w> <w>se</w> <w>secernunt</w> <w>confinia</w> <w>ouminci</w> <w>herimannique</w> <w>praedium</w> <w>usque</w> <w>in</w> <w>fachbach</w> <w>et</w> <w>inde</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>eius</w> <w>ursprinc</w> <w>et</w> <w>inde</w> <w>in</w> <w>uuericoz</w> <w>usque</w> <w>in</w> <w>malandram</w> <w>indeque</w> <w>deorsum</w> <w>usque</w> <w>ad</w> <w>sanctam</w> <w>quercum</w> <w>et</w> <w>inde</w> <w>usque</w> <w>in</w> <w>uerrebachae</w> <w>gespringon</w> <w>et</w> <w>inde</w> <w>in</w> <w>brachysa</w> <w>hincque</w> <w>deorsum</w> <w>in</w> <w>detenes</w> <w>buiram</w> <w>et</w> <w>inde</w> <w>sursum</w> <w>usque</w> <w>saltresstraza</w> <w>et</w> <w>inde</w> <w>usque</w> <w>in</w> <w>seinam</w> <w>et</w> <w>seina</w> <w>sursum</w> <w>usque</w> <w>in</w> <w>terminationem</w> <w>helperici</w> <w>atque</w> <w>in</w> <w>ipsam</w> <w>supra</w> <w>scriptam</w> <w>anaram</w> <w>et</w> <w>quicquid</w> <w>praenominatus</w> <w>dux</w> <w>praedii</w> <w>in</w> <w>hana</w> <w>conprobatur</w> <w>habere</w>. <w>Si</w> <w>quis</w> <w>autem</w> <w>ex</w> <w>his</w> <w>quiddam</w> <w>quod</w> <w>absit</w> <w>cupit</w> <w>contradicendo</w> <w>auferre</w> <w>sit</w> <w>anathema</w> <w>maranatha</w>.</p>
+               <p xml:space="preserve"><w>Hi</w> <w>sunt</w> <w>huius</w> <w>cartulae</w> <w>testes</w> <w>Drvdvinvs</w> <w>Hernbertvs</w> <w>comes</w> <w>palatinus</w> <w>Waldbertus</w> <w>Hernustus</w> <w>Guntramnus</w> <w>Adalbertus</w> <w>salego</w> <w>giso</w> <w>Werinherus</w> <w>Arnulfus</w> <w>Huozo</w> <w>Engilricus</w> <w>Anno</w> <w>Fulbertus</w> <w>gerricus</w> <w>Folcnandus</w> <w>godebertus</w> <w>Liubertus</w> <w>Hegizo</w> <w>Vodo</w> <w>Albericus</w> <w>Roingus</w> <w>Nizo</w> <w>Hezzo</w> <w>Gibertus</w> <w>Ruodbertus</w> <w>Reginbaldus</w> <w>Adalgaudus</w> <w>Liudericus</w> <w>Ratboldus</w> <w>Werinherus</w>. <w>Id</w>. <w>Febr</w>. <w>dedicata</w> <w>haec</w> <w>ecclesia</w> <w>ab</w> <w>Heinrico</w> <w>archiepiscopo</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

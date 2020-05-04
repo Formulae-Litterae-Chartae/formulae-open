@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer) Nr. 25</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2019"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/750131527</idno>
+                  <idno type="ISBN">978-3-487-05328-8</idno>
+                  <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien</title>
+                  <editor>Heinrich Beyer</editor>
+                  <imprint>
+                     <pubPlace>Hildesheim, New York</pubPlace>
+                     <date when="1860" n="originalAusgabe">1860</date>
+                     <date when="1974" n="neudruck">1974</date>
+                     <biblScope unit="pp">30</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Von den ältesten Zeiten bis zum Jahre 1169</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch zur Geschichte der mittelrheinischen Territorien, welches 1860 von Heinrich Beyer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="mittelrheinisch.beyer0025">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Schenkung der Bertrud und ihres Sohnes an das Kloster Kessingen</p>
+         </div>
+         <dateline>772 06 29<date when="0772-06-29"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:mittelrheinisch.beyer0025.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>Dominum</w> <w>Bertrudis</w> <w>et</w> <w>filii</w> <w>sui</w> <w>Uuaningi</w> <w>in</w> <w>loco</w> <w>nuncupato</w> <w>Hagane</w> <w>ad</w> <w>Casleucam</w>.</head>
+               <p xml:space="preserve"><w>Si</w> <w>aliquid</w> <w>de</w> <w>rebus</w> <w>nostris</w> <w>ad</w> <w>loca</w> <w>sanctorum</w> <w>vel</w> <w>pauperibus</w> <w>conferimus</w> <w>hoc</w> <w>procul</w> <w>dubio</w> <w>in</w> <w>eterna</w> <w>beatudine</w> <w>apud</w> <w>pium</w> <w>domnum</w> <w>retribuere</w> <w>confidimus</w>. <w>Igitur</w> <w>ego</w> <w>in</w> <w>dei</w> <w>nomine</w> <w>Bertrudis</w> <w>et</w> <w>filius</w> <w>meus</w> <w>uuaningu</w> <w>pro</w> <w>animae</w> <w>nostrae</w> <w>remedium</w> <w>ut</w> <w>aliquid</w> <w>de</w> <w>peccatis</w> <w>nostris</w> <w>in</w> <w>diem</w> <w>iudicii</w> <w>pius</w> <w>dominus</w> <w>minuare</w> <w>dignetur</w> <w>quia</w> <w>ipse</w> <w>dixit</w>: <w>date</w> <w>elemosinam</w> <w>et</w> <w>ecce</w> <w>omnia</w> <w>munda</w> <w>sunt</w> <w>vobis</w>. <w>Propter</w> <w>hoc</w> <w>igitur</w> <w>donamus</w> <w>ad</w> <w>basilicam</w> <w>s</w>. <w>Peti·que</w> <w>est</w> <w>constructa</w> <w>super</w> <w>fluvio</w> <w>casleuc</w> <w>ubi</w> <w>vir</w> <w>venerabilis</w> <w>Asuerus</w> <w>abba</w> <w>preesse</w> <w>videtur</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>adagane</w> <w>sitam</w> <w>in</w> <w>pago</w> <w>efflinse</w> <w>ego</w> <w>bertrudis</w> <w>dono</w> <w>porcione</w> <w>illa</w> <w>quod</w> <w>genitor</w> <w>meus</w> <w>Uuicharius</w> <w>michi</w> <w>in</w> <w>alodo</w> <w>dereliquit</w>. <w>Similiter</w> <w>et</w> <w>ego</w> <w>Uuaningus</w> <w>dono</w> <w>porrione</w> <w>illa</w> <w>quod</w> <w>amita</w> <w>mea</w> <w>Adaldrudis</w> <w>michi</w> <w>tradidit</w> <w>tam</w> <w>in</w> <w>terris</w> <w>silvis</w> <w>pratis</w> <w>pascuis</w> <w>aquis</w> <w>aquarumue</w> <w>decursibus</w> <w>mobilibus</w> <w>et</w> <w>immobilibus</w> <w>cultis</w> <w>et</w> <w>incultis</w> <w>totum</w> <w>et</w> <w>ad</w> <w>integrum</w> <w>quantumcumque</w> <w>ibidem</w> <w>nostra</w> <w>videtur</w> <w>esse</w> <w>possessio</w> <w>vel</w> <w>dominatio</w>. <w>Hec</w> <w>omnia</w> <w>a</w> <w>die</w> <w>presente</w> <w>ad</w> <w>iam</w> <w>dicta</w> <w>ecclesia</w> <w>s</w>. <w>Petri</w> <w>donamus</w> <w>et</w> <w>tradimus</w> <w>perpetualiter</w> <w>ad</w> <w>possiendum</w> <w>ut</w> <w>de</w> <w>hunc</w> <w>diem</w> <w>habendi</w>: <w>tenendi</w> <w>et</w> <w>possidendi</w> <w>quicquid</w> <w>pars</w> <w>predicta</w> <w>aecclesia</w> <w>s</w>. <w>Petri</w> <w>eiusque</w> <w>rectores</w> <w>facere</w> <w>voluerint</w> <w>liberam</w> <w>et</w> <w>firmissimam</w> <w>in</w> <w>omnibus</w> <w>habeant</w> <w>potestatem</w> <w>ad</w> <w>faciendum</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>quod</w> <w>futurum</w> <w>esse</w> <w>non</w> <w>credimus</w> <w>si</w> <w>nos</w> <w>ipsi</w> <w>aut</w> <w>ullus</w> <w>de</w> <w>heredibus</w> <w>nostris</w> <w>ac</w> <w>proheredibus</w> <w>seu</w> <w>quislibet</w> <w>homo</w> <w>aut</w> <w>ulla</w> <w>persona</w> <w>qui</w> <w>contra</w> <w>hanc</w> <w>epistolam</w> <w>donacionis</w> <w>nostrae</w>, <w>quam</w> <w>nos</w> <w>propter</w> <w>nomen</w> <w>domini</w> <w>fieri</w> <w>decrevimus</w> <w>venire</w> <w>aut</w> <w>eam</w> <w>infringere</w> <w>voluerit</w> <w>una</w> <w>cum</w> <w>cogente</w> <w>fisco</w> <w>auri</w> <w>libras</w> <w>duas</w> <w>argento</w> <w>pondus</w> <w>tres</w> <w>coactus</w> <w>exsolvat</w> <w>et</w> <w>quod</w> <w>repetit</w> <w>evindicare</w> <w>non</w> <w>valeat</w> <w>sed</w> <w>presens</w> <w>donacio</w> <w>ista</w> <w>omni</w> <w>tempore</w> <w>firma</w> <w>et</w> <w>inviolata</w> <w>permaneat</w> <w>stipulatione</w> <w>subnixa</w>.</p>
+               <p xml:space="preserve"><w>Actum</w> <w>Casleuc</w> <w>sub</w> <w>die</w> <w>III</w> <w>Kal</w> <w>Julyas</w> <w>anno</w> <w>IIII</w> <w>regnante</w> <w>domno</w> <w>nostro</w> <w>karolo</w> <w>gloriosissimo</w> <w>rege</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Bertrudis</w> <w>quae</w> <w>hanc</w> <w>donationem</w> <w>fieri</w> <w>et</w> <w>affirmare</w> <w>rogavit</w>. <w>Ego</w> <w>Cicianingus</w> <w>hanc</w> <w>donacionem</w> <w>a</w> <w>me</w> <w>facta</w>, <w>S</w>. <w>cursone</w> <w>comite</w> <w>S</w>. <w>rodingo</w> <w>germano</w> <w>meo</w>. <w>S</w>. <w>odillario</w> <w>germano</w> <w>meo</w>. <w>S</w>. <w>Raginberto</w>. <w>S</w>. <w>Gisleberto</w>. <w>S</w>. <w>Uuichario</w>. <w>Ego</w> <w>Nodricus</w> <w>monachus</w> <w>scripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer) Nr. 255</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Urkundenbuch zur Geschichte der mittelrheinischen Territorien (Ed. Beyer)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2019"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">http://d-nb.info/750131527</idno>
+                  <idno type="ISBN">978-3-487-05328-8</idno>
+                  <title>Urkundenbuch zur Geschichte der mittelrheinischen Territorien</title>
+                  <editor>Heinrich Beyer</editor>
+                  <imprint>
+                     <pubPlace>Hildesheim, New York</pubPlace>
+                     <date when="1860" n="originalAusgabe">1860</date>
+                     <date when="1974" n="neudruck">1974</date>
+                     <biblScope unit="pp">311–313</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Von den ältesten Zeiten bis zum Jahre 1169</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch zur Geschichte der mittelrheinischen Territorien, welches 1860 von Heinrich Beyer herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)"
+                         n="charta"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="mittelrheinisch.beyer0255">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p>Erzbischof Egbert schenkt den hl. Paulin zu Trier einen kleinen Ersatz für die Güter zurück, welche demselben entzogen worden waren</p>
+         </div>
+         <dateline>981<date notBefore="0981-01-01" notAfter="0981-12-31"/></dateline>
+      </front>
+      <body>
+         <div type="edition"
+              xml:lang="lat"
+              n="urn:cts:formulae:mittelrheinisch.beyer0255.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>trinitatis</w>. <w>Noverit</w> <w>omnium</w> <w>in</w> <w>Christo</w> <w>fidelium</w> <w>tam</w> <w>presentium</w> <w>quam</w> <w>futurorum</w> <w>industria</w> <w>quod</w> <w>ego</w> <w>Ekebertus</w> <w>divina</w> <w>favente</w> <w>clementia</w> <w>Treuericae</w> <w>sedis</w> <w>archiepiscopus</w> <w>videns</w> <w>ufw</w>, <w>wie</w> <w>in</w> <w>Nro</w> <w>254</w> <w>bis</w> <w>zum</w> <w>Zeichen</w> <w>*</w> (<w>monasteria</w> <w>et</w> <w>ecclesias</w> <w>nostrae</w> <w>diocesis</w> <w>omnibus</w> <w>aecclesiasticis</w> <w>usibus</w> <w>a</w> <w>diebus</w> <w>antecessorum</w> <w>nostrorum</w> <w>usque</w> <w>ad</w> <w>nostra</w> <w>tempora</w> <w>miserabiliter</w> <w>desolatas</w> <w>atque</w> <w>in</w> <w>id</w> <w>redactas</w> <w>ut</w> <w>vix</w> <w>esset</w> <w>spes</w> <w>eas</w> <w>reparandi</w> <w>placuit</w> <w>si</w> <w>non</w> <w>omnibus</w> <w>possem</w> <w>saltem</w> <w>aliquibus</w> <w>pro</w> <w>posse</w> <w>succurrerem</w> <w>Satius</w> <w>ducens</w> <w>quasdam</w> <w>ex</w> <w>illis</w> <w>meis</w> <w>diebus</w> <w>restaurare</w> <w>quam</w> <w>omnes</w> <w>neglectas</w> <w>relinquere</w> <w>quod</w> <w>nunquam</w> <w>convenientius</w> <w>aut</w> <w>stabilius</w> <w>fore</w> <w>credidi</w> <w>quam</w> <w>si</w> <w>unicuique</w> <w>loco</w> <w>propriam</w> <w>terram</w> <w>ut</w> <w>antiquitus</w> <w>statutum</w> <w>et</w> <w>concessum</w> <w>est</w> <w>deliberarem</w>. <w>Cumque</w> <w>in</w> <w>hoc</w> <w>minime</w> <w>prevalerem</w> <w>nec</w> <w>desiderii</w> <w>mei</w> <w>compos</w> <w>in</w> <w>hac</w> <w>re</w> <w>effici</w> <w>possem</w> <w>presertim</w> <w>cum</w> <w>ipsius</w> <w>episcopii</w> <w>maxima</w> <w>pars</w> <w>militibus</w> <w>esset</w> <w>in</w> <w>beneficium</w> <w>distributa</w> <w>ita</w> <w>ut</w> <w>nulli</w> <w>locorum</w> <w>propria</w> <w>hereditate</w> <w>prodesse</w> <w>possem</w>. <w>Illud</w> <w>incidit</w> <w>consilii</w> <w>quatenus</w> <w>ex</w> <w>aliorum</w> <w>terra</w> <w>locorum</w> <w>sumerem</w> <w>unde</w> <w>aliquid</w> <w>ad</w> <w>manum</w> <w>meam</w> <w>tenui</w> <w>quo</w> <w>alia</w> <w>reedificarem</w> <w>unde</w> <w>nichil</w> <w>habui</w>. <w>Quod</w> <w>factum</w> <w>stabile</w> <w>et</w> <w>firmum</w> <w>ea</w> <w>volui</w> <w>conditione</w> <w>ut</w> <w>nichil</w> <w>ex</w> <w>his</w> <w>que</w> <w>taliter</w> <w>ecclesiis</w> <w>contuleram</w> <w>vel</w> <w>a</w> <w>me</w> <w>vel</w> <w>a</w> <w>quovis</w> <w>successorum</w> <w>meorum</w> <w>divelleretur</w> <w>nisi</w> <w>aut</w> <w>melius</w> <w>aut</w> <w>eque</w> <w>bonum</w> <w>vice</w> <w>eius</w> <w>restitueretur</w>) <w>Hoc</w> <w>etiam</w> <w>pacto</w> <w>quicquid</w> <w>Liutwinus</w> <w>dux</w> <w>in</w> <w>monachum</w> <w>conversus</w> <w>et</w> <w>postea</w> <w>huius</w> <w>sedis</w> <w>sacer</w> <w>archiepiscopus</w> <w>in</w> <w>Branbach</w> <w>et</w> <w>in</w> <w>Birkenvelt</w> <w>in</w> <w>ecclesiis</w> <w>aut</w> <w>in</w> <w>omnibus</w> <w>appendiciis</w> <w>aliis</w> <w>ad</w> <w>habendum</w> <w>fratribus</w> <w>deo</w> <w>et</w> <w>s</w>. <w>Paulino</w> <w>servientibus</w> <w>contulit</w> <w>et</w> <w>quidquid</w> <w>Dagobertus</w> <w>orthodoxus</w> <w>rex</w> <w>francorum</w> <w>scilicet</w> <w>Billike</w> <w>cum</w> <w>Sulmana</w> <w>et</w> <w>Rula</w> <w>et</w> <w>Nuvelae</w> <w>cum</w> <w>ecclesiis</w> <w>ac</w> <w>cum</w> <w>omnibus</w> <w>rite</w> <w>ad</w> <w>eadem</w> <w>loca</w> <w>pertinentibus</w> <w>de</w> <w>suo</w> <w>hereditario</w> <w>iure</w> <w>eidem</w> <w>beatissimo</w> <w>confessori</w> <w>contradidit</w>. <w>Et</w> <w>quecunque</w> <w>Ludewicus</w> <w>pius</w> <w>imperator</w> <w>videlicet</w> <w>Mazzolthere</w> <w>cum</w> <w>ecclesia</w> <w>ibidem</w> <w>sita</w> <w>et</w> <w>cum</w> <w>omnibus</w> <w>appendiciis</w> <w>de</w> <w>sua</w> <w>proprietate</w> <w>prefato</w> <w>sancto</w> <w>firma</w> <w>donatione</w> <w>concessit</w>. <w>Et</w> <w>quicquid</w> <w>Hethti</w> <w>archipresul</w> <w>predecessor</w> <w>noster</w> <w>in</w> <w>loco</w> <w>Waderola</w> <w>dicto</w> <w>et</w> <w>Reinoniscampo</w> <w>de</w> <w>suo</w> <w>indominicato</w> <w>subtrahendo</w> <w>supradictis</w> <w>fratribus</w> <w>dedit</w>. <w>Et</w> <w>quecunque</w> <w>loca</w> <w>s</w>. <w>Paulino</w> <w>iniuste</w> <w>prius</w> <w>ablata</w> <w>serenissimus</w> <w>rex</w> <w>Henricus</w> <w>iuste</w> <w>reddidit</w> <w>Videv</w> <w>scilicet</w> <w>cum</w> <w>aecclesia</w> <w>Roscheit</w> <w>cum</w> <w>aecclesia</w> <w>Waltrach</w> <w>cum</w> <w>aecclesia</w> <w>Waderola</w> <w>cum</w> <w>aecclesia</w> <w>et</w> <w>cum</w> <w>appendiciis</w> <w>suis</w> <w>in</w> <w>Castheneith</w> <w>quoque</w> <w>picturas</w> <w>quatuor</w> <w>in</w> <w>Bubiaco</w> <w>picturas</w> <w>tres</w> <w>cum</w> <w>omnibus</w> <w>ad</w> <w>easdem</w> <w>rite</w> <w>pertinentibus</w>. <w>Et</w> <w>quicquid</w> <w>Rabodus</w> <w>archiepiscopus</w> <w>antecessor</w> <w>noster</w> <w>capellam</w> <w>scilicet</w> <w>in</w> <w>loco</w> <w>Wilre</w> <w>dicto</w> <w>cum</w> <w>ipsa</w> <w>villa</w> <w>et</w> <w>cum</w> <w>omnibus</w> <w>appendiciis</w> <w>suis</w> <w>et</w> <w>omnem</w> <w>indominicatam</w> <w>decimationem</w> <w>in</w> <w>villa</w> <w>Nouiant</w> <w>similiter</w> <w>in</w> <w>Gaurici</w> <w>campo</w> <w>ecclesiam</w> <w>mansos</w> <w>cum</w> <w>omni</w> <w>integritate</w> <w>de</w> <w>sua</w> <w>proprietate</w> <w>s</w>. <w>Paulino</w> <w>conscripsit</w>. <w>Quia</w> <w>omnia</w> <w>supradicta</w> <w>predia</w> <w>partim</w> <w>in</w> <w>beneficium</w> <w>militibus</w> <w>distributa</w> <w>partim</w> <w>ad</w> <w>usus</w> <w>nostros</w> <w>ad</w> <w>mensas</w> <w>et</w> <w>ad</w> <w>servicium</w> <w>constituta</w> <w>monasterio</w> <w>unde</w> <w>ablata</w> <w>fuerant</w> <w>restitvere</w> <w>non</w> <w>potui</w> <w>alias</w> <w>possessiones</w> <w>ad</w> <w>usus</w> <w>et</w> <w>ad</w> <w>servicium</w> <w>nostrum</w> <w>pertinentes</w> <w>eidem</w> <w>loco</w> <w>pro</w> <w>restauratione</w> <w>concessi</w>. <w>Itaque</w> <w>de</w> <w>beneficio</w> <w>Luthardi</w> <w>comitis</w> <w>quod</w> <w>michi</w> <w>ipso</w> <w>mortuo</w> <w>sine</w> <w>herede</w> <w>aliquo</w> <w>ad</w> <w>proprios</w> <w>usus</w> <w>contigit</w> <w>quicquid</w> <w>in</w> <w>villa</w> <w>Kerue</w> <w>et</w> <w>in</w> <w>Serchenich</w> <w>Lorreke</w> <w>et</w> <w>Hederichsrode</w> <w>atque</w> <w>Ceruia</w> <w>et</w> <w>Grimolderode</w> <w>habui</w> <w>fratribus</w> <w>deo</w> <w>et</w> <w>s</w> <w>Paulino</w> <w>famulantibus</w> <w>tali</w> <w>sub</w> <w>condicione</w> <w>contradidi</w> <w>ut</w> <w>neque</w> <w>advocatus</w> <w>aliquis</w> <w>neque</w> <w>laicalis</w> <w>aliqua</w> <w>vel</w> <w>mumdana</w> <w>potestas</w> <w>et</w> <w>super</w> <w>hiis</w> <w>que</w> <w>in</w> <w>valle</w> <w>treuerica</w> <w>vel</w> <w>ubicunque</w> <w>sint</w> <w>sita</w> <w>ad</w> <w>usus</w> <w>fratrum</w> <w>pertinentia</w> <w>habeat</w> <w>potestatem</w> <w>aliquam</w> <w>regendi</w> <w>defendendi</w> <w>iudicandi</w> <w>nisi</w> <w>ipsius</w> <w>loci</w> <w>prepositus</w> <w>dum</w> <w>debita</w> <w>fratribus</w> <w>amministrat</w> <w>stipendia</w> <w>et</w> <w>ego</w> <w>et</w> <w>posteri</w> <w>mei</w> <w>archiepiscopi</w> <w>cum</w> <w>stola</w> <w>sua</w> <w>si</w> <w>opus</w> <w>fuerit</w> <w>adversum</w> <w>potentes</w> <w>vel</w> <w>rebelles</w> <w>personas</w>. <w>Et</w> <w>quia</w> <w>earundem</w> <w>possessionum</w> <w>summa</w> <w>a</w> <w>nobis</w> <w>restituta</w> <w>vix</w> <w>ad</w> <w>decimam</w> <w>partem</w> <w>pervenit</w> <w>bonorum</w> <w>que</w> <w>fuerant</w> <w>ablata</w>! <w>ne</w> <w>propter</w> <w>rei</w> <w>familiaris</w> <w>inopiam</w> <w>monasteriale</w> <w>dilaberetur</w> <w>edificium</w> <w>communi</w> <w>consilio</w> <w>fidelium</w> <w>nostrorum</w> <w>clericorum</w> <w>et</w> <w>laicorum</w> <w>michi</w> <w>atque</w> <w>successoribus</w> <w>meis</w> <w>id</w> <w>deinceps</w> <w>constitui</w> <w>atque</w> <w>banno</w> <w>meo</w> <w>confirmavi</w> <w>agendum</w> <w>ut</w> <w>eadem</w> <w>cura</w> <w>eademque</w> <w>diligentia</w> <w>et</w> <w>sollicitudine</w> <w>qua</w> <w>domum</w> <w>b</w>. <w>Petri</w> <w>edificant</w>! <w>et</w> <w>huic</w> <w>monasterio</w> <w>trabes</w> <w>laquearia</w> <w>fenestras</w> <w>ponant</w>! <w>casulis</w> <w>dalmaticis</w> <w>cappis</w> <w>vetustate</w> <w>consumptis</w> <w>meliores</w> <w>restitvant</w> <w>preposito</w> <w>ipsius</w> <w>monasterii</w> <w>cetera</w> <w>in</w> <w>edificiis</w> <w>procurante</w>! <w>custode</w> <w>vero</w> <w>lineas</w> <w>vestes</w> <w>in</w> <w>ecclesia</w> <w>utendas</w> <w>reparante</w>. <w>Hanc</w> <w>tradicionem</w> <w>feci</w> <w>et</w> <w>scripto</w> <w>confirmavi</w> <w>in</w> <w>festivitate</w> <w>s</w>. <w>Paulini</w> <w>ad</w> <w>altare</w> <w>ipsius</w> <w>Sancti</w> <w>in</w> <w>celebratione</w> <w>vero</w> <w>missarum</w> <w>eiusdem</w> <w>sollempnitatis</w> <w>post</w> <w>consecrationem</w> <w>eucharistie</w> <w>coram</w> <w>multis</w> <w>astantibus</w> <w>corpus</w> <w>dominicum</w> <w>accepi</w> <w>in</w> <w>manus</w> <w>inprecans</w> <w>anathematizando</w> <w>ut</w> <w>quicunque</w> <w>aut</w> <w>propria</w> <w>potestate</w> <w>aut</w> <w>aliorum</w> <w>instinctu</w> <w>ex</w> <w>eodem</w> <w>monasterio</w> <w>quicquid</w> <w>sibi</w> <w>ante</w> <w>vel</w> <w>tunc</w> <w>vel</w> <w>postea</w> <w>datum</w> <w>aut</w> <w>constitutum</w> <w>sit</w> <w>subtrahere</w> <w>vellet</w> <w>idem</w> <w>corpus</w> <w>dominicum</w> <w>illi</w> <w>in</w> <w>dampnationem</w> <w>proveniret</w> <w>nisi</w> <w>ei</w> <w>aliud</w> <w>melius</w> <w>vel</w> <w>quod</w> <w>tantumdem</w> <w>valeret</w> <w>vicissim</w> <w>conferret</w>. <w>Hanc</w> <w>kartam</w> <w>Ego</w> <w>Ekebertus</w> <w>archiepiscopus</w> <w>ipsa</w> <w>die</w> <w>sollempnitatis</w> <w>consctiptam</w> <w>astante</w> <w>clero</w> <w>et</w> <w>populo</w> <w>recitari</w> <w>iussi</w>! <w>et</w> <w>signi</w> <w>nostri</w> <w>impressione</w> <w>atque</w> <w>proprie</w> <w>manus</w> <w>subscriptione</w> <w>firmavi</w>. <w>Acta</w> <w>feliciter</w> <w>Treuiris</w> <w>anno</w> <w>dominicae</w> <w>incarnationis</w> <w>DCCCCLXXXI</w> <w>indictione</w> <w>VIII</w> <w>regnante</w> <w>Ottone</w> <w>II</w> <w>Romanorum</w> <w>imperatore</w> <w>augusto</w>. <w>Signum</w> <w>benignissimi</w> <w>Ekeberti</w> <w>Treuirorum</w> <w>archiepiscopi</w>, <w>primatis</w> <w>et</w> <w>cancellarii</w> <w>Signum</w> <w>Luzonis</w> <w>prepositi</w> <w>eiusdem</w> <w>loci</w> <w>S</w>. <w>Ansgeri</w> <w>prepositi</w> <w>S</w>. <w>Adalmari</w> <w>prepositi</w> <w>S</w>. <w>Erkenberti</w> <w>decani</w> <w>S</w>. <w>Roberti</w> <w>archidiaconi</w> <w>S</w>. <w>Heremanni</w> <w>corepiscopi</w> <w>S</w>. <w>Gerardi</w> <w>corepiscopi</w> <w>S</w>. <w>Alsadi</w> <w>presbiteri</w> <w>S</w>. <w>Adalberti</w> <w>presbiteri</w> <w>S</w>. <w>Vdelrici</w> <w>presbiteri</w> <w>S</w>. <w>Martini</w> <w>diaconi</w> <w>S</w>. <w>Roberti</w> <w>subdiaconi</w> <w>S</w>. <w>Tlieoderici</w> <w>comitis</w> <w>S</w>. <w>Christiani</w> <w>comitis</w> <w>cognomento</w> <w>Vesani</w> <w>S</w>. <w>Regeneri</w> <w>rerum</w> <w>s</w>. <w>Mariae</w> <w>advocati</w> <w>S</w>. <w>Sigefridi</w> <w>comitis</w> <w>et</w> <w>rerum</w> <w>s</w>. <w>Maximini</w> <w>advocati</w> <w>S</w>. <w>Vdonis</w> <w>S</w>. <w>Dietfridi</w> <w>S</w>. <w>Luzonis</w> <w>S</w>. <w>Epportis</w> <w>S</w>. <w>Eberwini</w> <w>S</w>. <w>Burgizonis</w> <w>S</w>. <w>Alaframi</w> <w>S</w>. <w>Adalberti</w> <w>S</w>. <w>Megingaudi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

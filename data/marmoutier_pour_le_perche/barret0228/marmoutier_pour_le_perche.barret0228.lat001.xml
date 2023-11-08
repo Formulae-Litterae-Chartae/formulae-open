@@ -1,0 +1,99 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de Marmoutier pour le Perche (N.-D. du Vieux-Château Collégiale de
+               St-Léonard de Bellême et Prieuré de St-Martin-du-Vieux-Bellême) (Ed. Barret) Nr.
+               228</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de Marmoutier pour le Perche (N.-D. du Vieux-Château Collégiale de
+               St-Léonard de Bellême et Prieuré de St-Martin-du-Vieux-Bellême) (Ed.
+               Barret)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Christina Rothe (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc-nd/4.0/"> Distributed
+                  under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+                  License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de Marmoutier pour le Perche (N.-D. du Vieux-Château Collégiale
+                     de St-Léonard de Bellême et Prieuré de St-Martin-du-Vieux-Bellême)</title>
+                  <editor>M. Barret</editor>
+                  <imprint>
+                     <pubPlace>Mortagne</pubPlace>
+                     <date when="1894" n="originalAusgabe">1894</date>
+                     <biblScope unit="pp">216-217</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Documents sur la province du Perche</title>
+                  <biblScope unit="volume">No 2</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de
+            Marmoutier pour le Perche (N.-D. du Vieux-Château Collégiale de St-Léonard de Bellême et
+            Prieuré de St-Martin-du-Vieux-Bellême), welches 1894 von M. Barret herausgegeben worden
+            ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne
+            XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der
+            CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_pour_le_perche.barret0228">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte de Froger, évêque de Sées, confirmant aux moines de Marmoutier la donation, faite par Hilgot de la Ferrière, de la présentation de l’église de la Chapelle-Souëf, des deux parties de la dîme, du domaine qu’il y possédait, d’une maison avec un clos et une grange qui étaient à son frère Hémeri. [Biens situés à la Chapelle-Souëf]</p>
+         </div>
+         <dateline>Vers 1167<date/><date notBefore="1157-01-01" notAfter="1177-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_pour_le_perche.barret0228.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Frogerus</w>, <w>Dei</w> <w>gracia</w> <w>Sagiensis</w> <w lemmaRef="episcopus">episcopus</w>, <w>universis</w> <w>Sancte</w> <w>Matris</w> <w>Ecclesie</w> <w>filiis</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>imperpetuum</w>. <w>Noverit</w> <w>universitas</w> <w>vestra</w> <w>quod</w> <w>Hilgotus</w> <w>de</w> <w>Ferreria</w> <w>dedit</w> <w>monachis</w> <w>Majoris</w> <w>Monasterii</w> <w>in</w> <w>perpetuam</w> <w>elemosinam</w> <w>presentacionem</w> <w>ecclesie</w> <w>de</w> <w>Capella</w> <w>Suavi</w>, <w>et</w> <w>duas</w> <w>partes</w> <w>decime</w>, <w>cum</w> <w>integritate</w> <w>dominii</w> <w>ejusdem</w> <w>ecclesie</w> <w>quam</w> <w>hereditario</w> <w>jure</w> <w>possidebat</w> <w>et</w> <w>domum</w> <w>quam</w> <w>Hamericus</w> <w lemmaRef="frater">frater</w> <w>ejus</w> <w>possidebat</w>, <w>cum</w> <w>clauso</w> <w>et</w> <w>grangia</w>, <w>ita</w> <w>quod</w> <w>redditus</w> <w>monachis</w> <w>Belismensis</w> <w>cenobii</w> <w>remanebunt</w>, <w>et</w> <w>hec</w> <w>omnia</w> <w>in</w> <w>manus</w> <w>nostras</w> <w>misit</w>. <w>Nos</w> <w>autem</w> <w>ea</w> <w>predictis</w> <w>monachis</w> <w>concessimus</w>, <w>et</w> <w>in</w> <w>perpetuam</w> <w>elemosinam</w> <w>sigilli</w> <w>nostri</w> <w>testimonio</w> <w>confirmamus</w>. <w>Testes</w> <w>sunt</w> : <w>Henricus</w> <w lemmaRef="diaconus">archidiaconus</w>, <w>Herbertus</w> <w lemmaRef="diaconus">archidiaconus</w>, <w>Rogerus</w> <w lemmaRef="diaconus">archidiaconus</w>, <w>Aubericus</w> <w>decanus</w> <w>de</w> <w>Corbonnais</w>, <w>magister</w> <w>Ernaudus</w> <w>de</w> <w>Suri</w>, <w>Hugo</w> <w>Barbinus</w>, <w>Lancelinus</w> <w>de</w> <w>Ygeio</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

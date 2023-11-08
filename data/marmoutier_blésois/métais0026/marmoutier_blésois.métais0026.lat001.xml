@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 26</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">32-33</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0026">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Gaultier, chevalier, sur le point de mourir, donne à Marmoutier une terre appelée le pré Guy, et une maison auprès de l'église de Rilly. Cette donation est maintenue contre différends compétiteurs.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Chouzy</p>
+         </div>
+         <dateline>Après 1044<date notBefore="1044-01-01" notAfter="1100-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0026.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>NOTICIA</w> <w>DE</w> <w>DONATIONE</w> <w>PRATI</w> <w>GUIDONIS</w> <w>APUD</w> <w>RULIACUM</w></head>
+               <p xml:space="preserve"><w>Solet</w> <w>prodesse</w> <w>plurimum</w> <w>cum</w> <w>res</w> <w>notificantur</w>. <w>Notum</w> <w>fieri</w> <w>volumus</w> <w>hominem</w> <w>quemdam</w> <w>nomine</w> <w>Galterium</w> <w>militaribus</w> <w>artibus</w>. .... <w>ac</w> <w>per</w> <w>hoc</w> <w>peccatis</w> <w>pluribus</w> <w>obuolutum</w>, <w>de</w> <w>muliere</w> <w>nostra</w> <w>Frideburgi</w>, <w>ante</w> <w>annos</w> <w>plus</w> <w>minusue</w> <w>obitus</w> <w>sui</w>, <w>non</w> <w>longe</w> <w>a</w> <w>casello</w> <w>Calvimontis</w>, <w>parrochia</w> <w>vero</w> <w>Ruliaci</w>, <w>in</w> <w>redemptione</w> <w>animae</w> <w>sue</w>, <w>nobis</w> <w>emisit</w> <w>terram</w> <w>antiquitus</w> <w>pratum</w> <w>Guidonis</w> <w>vocatam</w>. <w>Hoc</w> <w>autem</w> <w>Fredeburgis</w> <w>uxoris</w> <w>erat</w> <w>Gauscelini</w>. <w>Quo</w> <w>videlicet</w> <w>infirmitate</w> <w>qua</w> <w>mortuus</w> <w>est</w> <w>infirmante</w>, <w>timens</w> <w>illam</w> <w>si</w> <w>obiret</w> <w>ejus</w> <w>bonis</w> <w>et</w> <w>jura</w> <w>privare</w>, <w>juram</w> <w>hanc</w> <w>adhuc</w> <w>invenit</w>: <w>de</w> <w>Hugone</w> <w>de</w> <w>cujus</w> <w>beneficio</w> <w>erat</w> <w>emit</w>. <w>Eo</w> <w>vero</w> <w>defuncto</w>, <w>ubi</w> <w>cum</w> <w>nepotem</w> <w>suum</w> <w>brucabruna</w> <w>cognominatum</w> <w>suis</w> <w>liberis</w> <w>preesse</w> <w>instituit</w>. <w>Ergo</w> <w>de</w> <w>muliere</w> <w>hac</w>, <w>Ulrico</w> <w>ejus</w> <w>nepote</w> <w>favente</w>, <w>Galhricus</w> <w>terram</w> <w>emit</w> <w>supradictam</w>, <w>annuentibus</w> <w>Fulchrado</w>, <w>Ingelberto</w>, <w>Rainaldo</w>, <w>Burchardo</w> <w>filiis</w> <w>suis</w> <w>in</w> <w>hoc</w> <w>monastetio</w> <w>Deo</w> <w>in</w> <w>elemosinam</w> <w>dedit</w>. - <w>Addidit</w> <w>etiam</w> <w>domum</w> <w>quamdam</w> <w>ecclesie</w> <w>Ruliaci</w> <w>conjunctam</w>. <w>Post</w> <w>vero</w> <w>multis</w> <w>evolutis</w> <w>annis</w> <w>in</w> <w>illa</w> <w>permutatione</w> <w>dexterae</w> <w>Excelsi</w> <w>qua</w> <w>Gaufridus</w> <w lemmaRef="comes">comes</w> <w>Turonum</w> <w>pervasit</w>, <w>Tetbaldus</w> <w>amisit</w>, <w>dum</w> <w>alii</w> <w>hereditates</w> <w>suas</w>, <w>meritis</w> <w>exigentibus</w> <w>amitterent</w> - <w>quidam</w> <w>ministri</w> <w>comitis</w>, <w>maligno</w> <w>spiritu</w> <w>concitati</w>, <w>domum</w> <w>quietam</w> <w>cepe</w> <w>inquietare</w> - <w>sed</w> <w>statim</w> <w>advocatus</w> <w>nepos</w> <w>Fredeburgis</w> <w>auctorque</w> <w>venditionis</w> <w>affuit</w> <w>Vlricus</w>, <w>praclio</w> <w>et</w> <w>comodis</w> <w>defensionibus</w> <w>juram</w> <w>nostram</w> <w>defendere</w> <w>paratus</w>. <w>Quadere</w> <w>placito</w> <w>habito</w>, <w>cum</w> <w>deesset</w> <w>qui</w> <w>contra</w> <w>eum</w> <w>iniret</w> <w>praelium</w>, <w>tandem</w> <w>jurejurando</w> <w>vindicavit</w> <w>jus</w> <w>nostrum</w>. <w>Testis</w> <w>est</w> <w>unde</w> <w>nostra</w> <w>illa</w> <w>placita</w> <w>fuit</w>, <w>de</w> <w>Calvomonte</w> <w>Lisoius</w> <w>et</w> <w>Guano</w> <w>similiter</w> <w>de</w> <w>Calvomonte</w>, <w>Gaufridus</w> <w>quem</w> <w>bigotus</w> <w>et</w> <w>Rainaldus</w> <w lemmaRef="vicarius">vicarius</w>. <w>Sed</w> <w>ne</w> <w>sit</w> <w>monachorum</w> <w>quies</w>, <w>semper</w> <w>invidens</w> <w>inimicus</w> <w>ab</w> <w>inquietudine</w> <w>nostra</w> (<w>non</w>) <w>destitit</w>, <w>et</w> <w>per</w> <w>Rainerium</w> <w>de</w> <w>Calvomonte</w> <w>in</w> <w>cujus</w> <w>parte</w> <w>cesserat</w> <w lemmaRef="hereditas">hereditas</w> <w>Hugonis</w> <w>et</w> <w>cujus</w> <w>beneficio</w> <w>illa</w> <w>nostra</w> <w>terra</w> <w>fuerat</w>, <w>inquietare</w> <w>coepit</w>. <w>Unde</w> <w>rursus</w> <w>placito</w> <w>habito</w> <w>in</w> <w lemmaRef="curia">curia</w> <w>comitis</w>, <w>Gausifredus</w> <w>illius</w> <w>reclamationem</w> <w>injustam</w> <w>esse</w> <w>adjudicavit</w>, <w>cum</w> <w>inde</w> <w>contra</w> <w>ministros</w> <w>suos</w> <w lemmaRef="placitum">placitum</w> <w>habuissemus</w>, <w>et</w> <w>inde</w> <w lemmaRef="ius">ius</w> <w>nostrum</w> <w>teste</w> <w>et</w> <w>sacramento</w> <w>vindicassemus</w>, <w>tamen</w> <w>inde</w> <w>Fulco</w> <w>prior</w> <w>2</w> <w>denariorum</w> <w>solidos</w> <w>illi</w> <w>dedit</w> <w>et</w> <w>terram</w> <w>nostram</w> <w>quietam</w> <w>proclamavit</w>. <w>Testium</w> <w>nomina</w>: <w>Sulpicius</w> <w>de</w> <w>Brisca</w>, <w>Gualcherius</w> <w>de</w> <w>Brisca</w>, <w>RaduIfus</w> <w>de</w> <w>Apuleia</w>, <w>Amalricus</w> <w>de</w> <w>Fisco</w> <w>Arnulphus</w> <w>filius</w> <w>Leoni</w>, <w>Lescelinus</w> <w>de</w> <w>Ambaziaco</w>, <w>Pontelinus</w> <w>de</w> <w>Amtariaco</w>, <w>Fulco</w> <w>prior</w> <w>et</w> <w>alii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

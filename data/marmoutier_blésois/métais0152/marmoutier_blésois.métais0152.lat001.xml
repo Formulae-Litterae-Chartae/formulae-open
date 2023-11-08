@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 152</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">143-144</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0152">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le prieur d’Orchaise doit payer chaque année 7 sols blésois, pour la garde et la défense de la terre du Rouge-Boeuf, confiée d’abord à Barthelémy de Vendôme, et par lui à Frodon de Saint-Martin.</p>
+         </div>
+         <dateline>1125-1137<date notBefore="1125-01-01" notAfter="1137-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0152.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>CIROGRAPHUM</w> <w>DE</w> <w>TERRA</w> <w>DE</w> <w>RUBEO</w> <w>MONTE</w></head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>presentibus</w> <w>et</w> <w>futuris</w> <w>maioris</w> <w>monasterii</w> <w>habitatoribus</w>, <w>quod</w> <w>cum</w> <w>terra</w> <w>de</w> <w>Rubeo</w> <w>boue</w>, <w>quae</w> <w>ad</w> <w>domum</w> <w>Orcicasae</w> <w>pertinet</w>, <w>in</w> <w>tanta</w> <w>guerra</w> <w>esset</w>, <w>vt</w> <w>vix</w> <w>jn</w> <w>ea</w> <w>aliquis</w> <w>hospitari</w> <w>vel</w> <w>eam</w> <w>jncolere</w> <w>auderet</w>, <w>jnter</w> <w>domnum</w> <w>Herbertum</w> <w>piellum</w> <w>tunc</w> <w>pannetarium</w>, <w>domnumque</w> <w>Guillelmum</w> <w>rebrac</w> <w>obedientiae</w> <w>prepositum</w>, <w>et</w> <w>domnum</w> <w>Bartholomeum</w> <w>vindocinensem</w>, <w>eo</w> <w>tempore</w> <w>conuenit</w> <w>vt</w> <w>jdem</w> <w lemmaRef="dominus">domnus</w> <w>Bartholomeus</w> <w>et</w> <w>heredes</w> <w>sui</w> <w>per</w> <w>eum</w> <w>praefatam</w> <w>terram</w> <w>omnibus</w> <w>modis</w>, <w>tanquam</w> <w>suam</w> <w>propriam</w> <w>deffenderent</w> <w>et</w> <w>conseruarent</w>, <w>et</w> <w>pro</w> <w>ista</w> <w>conseruatione</w> <w>et</w> <w>deffensione</w> <w>quamdiu</w> <w>eadem</w> <w>terra</w> <w>jncoleretur</w>, <w>de</w> <w>quantiscumque</w> <w>hospitibus</w> <w>ibi</w> <w>consistentibus</w> <w>nihil</w> <w>omnino</w> <w>prefatus</w> <w lemmaRef="dominus">dominus</w> <w>Bartholomeus</w>, <w>aut</w> <w>sui</w> <w>heredes</w>, <w>per</w> <w>ipsum</w> <w>annuatim</w> <w>haberent</w> <w>nisi</w> <w>septem</w> <w>tantum</w> <w>solidos</w> <w>blesenses</w>, <w>quos</w> <w>prior</w> <w>eiusdem</w> <w>obedientiae</w>, <w>per</w> <w>singulos</w> <w>annos</w> <w>illis</w> <w>persolueret</w>, <w>exclusis</w> <w>omnibus</w> <w>aliis</w> <w>consuetudinibus</w> <w>vel</w> <w>exactionibus</w>, <w>cum</w> <w>igitur</w> <w>sub</w> <w>jstius</w> <w>consuetudinis</w> <w>tenore</w> <w>sepefatus</w> <w>Bartholomeus</w> <w>terram</w> <w>ipsam</w> <w>diu</w> <w>optime</w> <w>conseruasset</w>, <w>placuit</w> <w>ei</w> <w>vt</w> <w>Frodoni</w> <w>de</w> <w>Sancto</w> <w>Martino</w> <w>jn</w> <w>jncrementum</w> <w>feui</w> <w>sui</w> <w>quod</w> <w>de</w> <w>illo</w> <w>tenebat</w> <w>jstam</w> <w>consuetudinem</w> <w>jn</w> <w>terra</w> <w>nostra</w> <w>daret</w>. <w>Quam</w> <w>cum</w> <w>ei</w> <w>dedisset</w>, <w>venit</w> <w>praedictus</w> <w>Frodo</w> <w>jn</w> <w>capitulum</w> <w>nostrum</w> <w>maioris</w> <w>scilicet</w> <w>monasterii</w>, <w>et</w> <w>ipsam</w> <w>consuetudinem</w> <w>ipsi</w> <w>et</w> <w>heredibus</w> <w>eius</w>, <w>qui</w> <w>vindocinensem</w> <w>illius</w> <w>hereditatem</w> <w>obtinebant</w>, <w>sicut</w> <w>supra</w> <w>dissertum</w> <w>est</w>, <w>concessimus</w>, <w>ita</w> <w>vt</w> <w lemmaRef="dominus">domnus</w> <w>Bartholomeus</w> <w>quamdiu</w> <w>vixerit</w> <w>et</w> <w>heredes</w> <w>sui</w> <w>per</w> <w>eum</w>, <w>cum</w> <w>Frodone</w> <w>et</w> <w>et</w> <w>heredibus</w> <w>illius</w>, <w>predictam</w> <w>terram</w> <w>sicut</w> <w>suam</w> <w>conseruent</w>, <w>nullam</w> <w>omnino</w> <w>aliam</w> <w>consuetudinem</w> <w>ipse</w> <w>Frodo</w> <w>et</w> <w>heredes</w> <w>sui</w> <w>jn</w> <w>eadem</w> <w>terra</w>, <w>quamdiu</w> <w>culta</w> <w>vel</w> <w>hospitata</w> <w>fuerit</w>, <w>habebunt</w>, <w>nisi</w> <w>prescriptos</w> <w>septem</w> <w>solidos</w> <w>per</w> <w>annum</w>; <w>si</w> <w>vero</w> <w>terra</w> <w>jnculta</w> <w>et</w> <w>inhospitata</w> <w>forte</w> <w>remanserit</w>, <w>nihil</w> <w>jnde</w> <w>habebunt</w>; <w>nec</w>, <w>si</w> <w>ab</w> <w>hominibus</w> <w>terram</w> <w>incolentibus</w> <w>aliquod</w> <w>forisfactum</w> <w>aduersus</w> <w>Frodonem</w> <w>vel</w> <w>heredes</w> <w>eius</w> <w>illatum</w> <w>fuerit</w>, <w>vindicare</w> <w>se</w> <w>super</w> <w>aliis</w> <w>hominibus</w> <w>nostris</w>, <w>aut</w> <w>super</w> <w>alia</w> <w>terra</w> <w>nostra</w> <w>poterunt</w>. <w>Terminus</w> <w>autem</w> <w>reddendi</w> <w>septem</w> <w>solidos</w> <w>est</w> <w>a</w> <w>dominica</w> <w>de</w> <w>ramis</w> <w>palmarum</w>, <w>vsque</w> <w>ad</w> <w>diem</w> <w>paschae</w>. <w>Testes</w> <w>huius</w> <w>conuenientiae</w> <w>cum</w> <w>Frodone</w>: <w>Gaufridus</w> <w>filius</w> <w>eius</w>, <w>Siluester</w> <w>filius</w> <w>Hugonis</w> <w>filii</w> <w>Ebrardi</w>, <w>Thomas</w> <w>de</w> <w>Cureollia</w>, <w>Vrsio</w> <w>de</w> <w>Aona</w>, <w>Farcellus</w> <w>armiger</w> <w>Hugonis</w> <w>filii</w> <w>Ebrardi</w>. <w>De</w> <w>monasterio</w>: <w>Odo</w> <w lemmaRef="abbas">abbas</w>, <w>Laurentius</w> <w>prior</w>, <w>Hugo</w> <w>hospitalarius</w>, <w>Garnerius</w> <w>precentor</w>, <w>Guiscelinus</w> <w lemmaRef="notarius">notarius</w>, <w>Guilelmus</w> <w>Bigotus</w> <w>de</w> <w>Orcicasa</w>. <w>De</w> <w>famulis</w>: <w lemmaRef="pagus">Paganus</w> <w>beliardus</w> <w>hospitalarius</w>, <w>Eschinardus</w> <w>xrispianus</w> <w>filius</w> <w>Oegerii</w> <w>mariscali</w>, <w>Giraldus</w> <w>de</w> <w>Loratorio</w> <w>famulus</w> <w>prioris</w>, <w>Gaufridus</w> <w>pilaratum</w>, <w>Galterius</w> <w>cellararius</w> <w>elemosinae</w>, <w>Almaricus</w> <w>prepositus</w> <w>monachorum</w> <w>sparnonensium</w>, <w>Balduinus</w> <w lemmaRef="maior">maior</w> <w>Holmeriaci</w>, <w>Stephanus</w> <w>Carnotus</w>, <w>Robertus</w> <w>de</w> <w>Gahaardo</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 280</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">523 – 524 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0280">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Gérard, abbé de Prüm et de Stavelot, avec l'assentiment des religieux de Malmedy, accorde aux moines de Rosière le passage libre de la Meuse à Ougrée ou à Sclessin, comme ceux de Stavelot-Malmedy en jouissent.</p>
+         </div>
+         <dateline>[1192-1197]<date notBefore="1192-01-01" notAfter="1197-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0280.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w>. <w>Ego</w> <w>Gerardus</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Promiensis</w> <w>et</w> <w>Stabulensis</w> <w lemmaRef="abbas">abbas</w>, <w>notum</w> <w>facio</w> <w>omnibus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>quod</w> <w>monachis</w> <w>de</w> <w>Roseriensi</w> <w>monasterio</w>, <w>sociis</w> <w>et</w> <w>fratribus</w> <w>nostris</w>, <w>concessi</w> <w>gratis</w> <w>habere</w> <w>transitum</w> <w>Mose</w> <w>apud</w> <w>Vgrees</w> <w>seu</w> <w>Sclacins</w>, <w>eodem</w> <w>jure</w> <w>quo</w> <w>Stabulenses</w> <w>et</w> <w>Malinundarienses</w> <w>monachi</w> <w>ibidem</w> <w>sine</w> <w>alicujus</w> <w>precii</w> <w>exactione</w> <w>habere</w> <w>cognoscuntur</w>. <w>Et</w> <w>hoc</w> <w>eis</w> <w>concessum</w> <w>est</w> <w>ex</w> <w>consensu</w> <w>et</w> <w>benivolenlia</w> <w>Malmundariensis</w> <w>monasterii</w> <w>ad</w> <w>quod</w> <w>ex</w> <w>antiqua</w> <w>possessione</w> <w>idem</w> <w>transitus</w> <w>pertinere</w> <w>comprobatur</w>. <w>Hujus</w> <w>rei</w> <w>testes</w> <w>sunt</w> <w>de</w> <w>predicto</w> <w>cenobio</w> : <w>Mauricius</w> <w>decanus</w>, <w>Phylippus</w> <w>prepositus</w> <w>Hasbanie</w>, <w>Petrus</w> <w>prepositus</w> <w>Moselle</w>, <w>Cuno</w> <w>custos</w>, <w>Henricus</w> <w>cellerarius</w>, <w>et</w> <w>totus</w> <w>conventus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

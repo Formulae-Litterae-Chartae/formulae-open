@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 49</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">60</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0049">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le comte Thibaud ordonne à ses officiers de n'imposer aucune coutume injuste aux habitants de Mesland, et force Ascelin de leur rendre 4 livres qu'il avait exigées pour la commandise.</p>
+         </div>
+         <dateline>1072-1086<date notBefore="1072-01-01" notAfter="1086-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0049.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>QUICTATIONE</w> <w>FONTIS</w> <w>MERLANDI</w> <w>AB</w> <w>OMNI</w> <w>EXACTIONE</w> <w>PER</w> <w>COMITEM</w> <w>TETBALDUM</w> <w>CONCESSA</w>.</head>
+               <p xml:space="preserve"><w>Cum</w> <w>quadam</w> <w>vice</w> <w>moraretur</w> <w lemmaRef="comes">comes</w> <w>Thetbaldus</w> <w>apud</w> <w lemmaRef="castrum">castrum</w> <w>Blesis</w> <w>adiit</w> <w>cum</w> <w lemmaRef="dominus">dominus</w> <w>Petrus</w> <w>prior</w>, <w>et</w> <w>alii</w> <w>de</w> <w>monachis</w> <w>nostris</w>, <w>et</w> <w>fecerunt</w> <w>clamorem</w> <w>ad</w> <w>ipsum</w> <w>de</w> <w>ministerialibus</w> <w>suis</w> <w>qui</w> <w>immittebant</w> <w>malas</w> <w>consuetudines</w> <w>in</w> <w>terram</w> <w>nostram</w> <w>de</w> <w>Fonte</w> <w>merlandi</w>; <w>transierant</w> <w>plurimi</w> <w lemmaRef="villa">villam</w> <w>de</w> <w>terra</w> <w>sancti</w> <w>Martini</w> <w>de</w> <w>Castro</w> <w>novo</w> <w>ad</w> <w>terram</w> <w>nostram</w> <w>ut</w> <w>ibi</w> <w>hospitarentur</w>, <w>et</w> <w>cogebant</w> <w>eos</w> <w>ministeriales</w> <w>comitis</w> <w>reddere</w> <w>sibi</w> <w>commandisiam</w>. <w>Quam</w> <w>cum</w> <w>primo</w> <w>nollent</w> <w>reddere</w> <w>villani</w>, <w>destrinxit</w> <w>inde</w> <w>eos</w> <w>unus</w> <w>de</w> <w>predictis</w> <w>ministerialibus</w> <w>Ascelinus</w> <w>nomine</w>, <w>et</w> <w>pro</w> <w>hoc</w> <w>abstulit</w> <w>eis</w> <w>IIII</w><seg type="superscript "><w>or</w></seg> <w>libras</w> <w>denariorum</w> <w>in</w> <w>emandacione</w>. <w>De</w> <w>quo</w> <w>cum</w> <w>fecissent</w> <w>monachi</w> <w>nostri</w> <w>clamorem</w> <w>ad</w> <w>comitem</w>, <w>jussit</w> <w lemmaRef="comes">comes</w> <w>vocari</w> <w>ad</w> <w>se</w> <w>Hugonem</w> <w>prepositum</w>, <w>et</w> <w>Ascelinum</w> <w>auctores</w> <w>predicte</w> <w>emendacionis</w>, <w>et</w> <w>precepit</w> <w>eis</w> <w>ut</w> <w>nullam</w> <w>amplius</w> <w>injustam</w> <w>consuetudinem</w> <w>inferrent</w> <w>villanis</w>, <w>qui</w> <w>hospitarentur</w> <w>in</w> <w>terram</w> <w>sancti</w> <w>Martini</w>. <w>Hoc</w> <w>etiam</w> <w>ex</w> <w>precepto</w> <w>suo</w> <w>judicans</w> <w>ut</w> <w>quicumque</w> <w>terram</w> <w>sancti</w> <w>Martini</w> <w>incolere</w> <w>vellent</w>, <w>securi</w> <w>et</w> <w>liberi</w> <w>ab</w> <w>omni</w> <w>exactione</w> <w>viverent</w>, <w>sicut</w> <w>et</w> <w>reliqui</w> <w>naturales</w> <w lemmaRef="villa">villam</w> <w>eiusdem</w> <w>sancti</w>. <w>Et</w> <w>jubente</w> <w>eo</w> <w>guadiavit</w> <w>Ascelinus</w> <w>domno</w> <w>Petro</w> <w>priori</w> <w>illas</w> <w>quatuor</w> <w>libras</w> <w>emendationis</w>, <w>quas</w> <w>tulerat</w> <w>prefatis</w> <w>villanis</w>. <w>Testes</w> <w>qui</w> <w>affuerunt</w>: <w>Warinus</w> <w lemmaRef="comes">comes</w> <w>de</w> <w>Rosniaco</w>, <w>Girardus</w> <w lemmaRef="seniscalco">senescalcus</w> <w>comitis</w>, <w>Rainaldus</w> <w>camberlancius</w> <w>comitis</w>, <w>Herbertus</w> <w>brito</w>, <w>Warinus</w> <w>filius</w> <w>Gradulphi</w>, <w>Guaufredus</w> <w>decanus</w> <w>sancti</w> <w>Martini</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

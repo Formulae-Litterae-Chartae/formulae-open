@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 162</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">182-184</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0162">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte par lequel Mainard, abbé de Saint-Julien, l´archidiacre et l´archiprêtre de Tours, commissaires délégués par le pape, statuent sur le litige existant entre le prieur de Chemillé et les deux chapelains de Notre-Dame, au sujet du droit de patronage des six chapelles de Chemillié.</p>
+         </div>
+         <dateline>1218<date notBefore="1218-01-01" notAfter="1218-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0162.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Mainardus</w>, <w>Dei</w> <w>miseratione</w> <w lemmaRef="abbas">abbas</w> <w>Sancti</w> <w>Juliani</w>, ... , <w lemmaRef="diaconus">archidiaconus</w>, <w>et</w> <w>A</w>., <w>archipresbiter</w> <w>Turonenses</w>, <w>omnibus</w> <w>ad</w> <w>quos</w> <w>presentes</w> <w>littere</w> <w>pervenerint</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Salutis</w> <w>Auctore</w>. <w>Universitati</w> <w>vestre</w> <w>lucidum</w> <w>fieri</w> <w>volumus</w> <w>et</w> <w>apertum</w> <w>quod</w>, <w>cum</w> <w>auctoritate</w> <w>apostolica</w> <w>nobis</w> <w>commissa</w> <w>fuisset</w> <w lemmaRef="causa">causa</w> <w>illa</w> <w>que</w> <w>vertebatur</w> <w>inter</w> <w>priorem</w> <w>et</w> <w>conventum</w> <w>Sancti</w> <w>Petri</w> <w>de</w> <w>Camilliaco</w>, <w>ex</w> <w>una</w> <w>parte</w>, <w>et</w> <w>Andream</w> <w>Papin</w> <w>et</w> <w>Radulphum</w> <w>Machesche</w>, <w>capellanos</w> <w>Beate</w> <w>Marie</w>, <w>ex</w> <w>altera</w>, <w>super</w> <w>patronatus</w> <w>istarum</w> <w>sex</w> <w>capellaniarum</w>, <w>videlicet</w>: <w>capellanie</w> <w>leprosorum</w>; <w>capellanie</w> <w>domus</w> <w>elemosinarie</w>; <w>capellanie</w> <w>Laurentii</w> <w>Le</w> <w>Ferle</w>; <w>capellanie</w> <w>Pinelli</w>, <w>capellanie</w> <w>Bordi</w> <w>et</w> <w>capellanie</w> <w>Johannis</w> <w>Maoss</w>, <w>quarum</w> <w>patronatum</w> <w>dictus</w> <w>prior</w> <w>asserebat</w> <w>ad</w> <w>se</w> <w>et</w> <w>ecclesiam</w> <w>suam</w> <w>pertinere</w>, <w>dicti</w> <w>vero</w> <w>capellani</w> <w>contra</w> <w>constanter</w> <w>asserebant</w> <w>quod</w> <w>dictarum</w> <w>patronatus</w> <w>capellaniarum</w> <w>a</w> <w>tempore</w> <w>institutionis</w> <w>et</w> <w>ab</w> <w>antiqua</w> <w>et</w> <w>approbata</w> <w>consuetudine</w> <w>ad</w> <w>ipsos</w> <w>sine</w> <w>interruptione</w> <w>et</w> <w>reclamatione</w> <w>aliqua</w> <w>pertinebat</w>. <w>Cum</w> <w>igitur</w> <w>super</w> <w>hoc</w> <w>coram</w> <w>nobis</w> <w>partes</w> <w>diutius</w> <w>litigassent</w>, <w>nos</w>, <w>volentes</w> <w>earum</w> <w>parcere</w> <w>laboribus</w> <w>et</w> <w>expensis</w>, <w>audientes</w> <w>ex</w> <w>proborum</w> <w>relatione</w> <w>virorum</w> <w>destructionem</w> <w>castelli</w> <w>Camiliaci</w>, <w>quod</w> <w>propter</w> <w>guerram</w> <w>destructum</w> <w>fuerat</w> <w>et</w> <w>combustum</w>; <w>attendentes</w> <w>etiam</w> <w>quod</w> <w>ad</w> <w>tantam</w> <w>deveniant</w> <w>tenuitatem</w> <w>redditus</w> <w>ecclesie</w> <w>Beate</w> <w>Marie</w> <w>de</w> <w>Camiliaco</w> <w>quod</w> <w>duo</w> <w>capellani</w> <w>qui</w> <w>in</w> <w>ea</w> <w>instituti</w> <w>sunt</w> <w>non</w> <w>poterant</w> <w>etiam</w> <w>mediocriter</w> <w>sustentari</w>, <w>ad</w> <w>instantiam</w> <w>precum</w> <w>domini</w> <w>Willelmi</w>, <w>Andegavensis</w> <w>episcopi</w>, <w>ad</w> <w>hujus</w> <w>formam</w> <w>pacis</w> <w>partes</w> <w>dignum</w> <w>duximus</w> <w>inducendas</w>. <w>Concessum</w> <w>est</w> <w>itaque</w> <w>a</w> <w>partibus</w> <w>coram</w> <w>nobis</w> <w>et</w> <w>firmatum</w> <w>quod</w> <w>dicti</w> <w>capellani</w> <w>in</w> <w>propriis</w> <w>personis</w> <w>aut</w> <w>per</w> <w>aliquem</w> <w>commensalem</w> <w>presbiterum</w> <w>deservient</w> <w>capelle</w> <w>leprosorum</w>, <w>nec</w> <w>licebit</w> <w>eis</w> <w>in</w> <w>ea</w> <w>de</w> <w>cetero</w> <w>instituere</w> <w>capellanum</w>, <w>sed</w> <w>ad</w> <w>proprios</w> <w>usus</w> <w>suos</w> <w>habebunt</w> <w>dicti</w> <w>redditus</w> <w>capellanie</w> <w>sicut</w> <w>solebat</w> <w>esse</w> <w>antiquitus</w>, <w>quod</w> <w>in</w> <w>cartis</w> <w>domus</w> <w>Sancti</w> <w>Petri</w> <w>plenius</w> <w>continetur</w>. <w>Redditus</w> <w>autem</w> <w>capellanie</w> <w>Bordi</w> <w>erunt</w> <w>ad</w> <w>usum</w> <w>luminaris</w> <w>in</w> <w>ecclesia</w> <w>Beate</w> <w>Marie</w>. <w>In</w> <w>capellania</w> <w>domus</w> <w>elemosinarie</w> <w>eligent</w> <w>capellani</w> <w>quemdam</w> <w>laicum</w> <w>ad</w> <w lemmaRef="consilium">consilium</w> <w>parochianorum</w>, <w>qui</w>, <w>secundum</w> <w>facultatem</w> <w>domus</w>, <w>pauperibus</w> <w>ad</w> <w>eam</w> <w>confluentibus</w> <w>in</w> <w>necessariis</w> <w>providebit</w>, <w>sicut</w> <w>solebat</w> <w>esse</w> <w>temporibus</w> <w>retroactis</w>. <w>De</w> <w>tribus</w> <w>autem</w> <w>que</w> <w>supersunt</w> <w>capellanis</w> <w>habebit</w> <w>prior</w> <w>et</w> <w>conventus</w> <w>Sancti</w> <w>Petri</w> <w>ad</w> <w>proprios</w> <w>usus</w> <w>mense</w> <w>sue</w> <w>illam</w> <w>capellaniam</w> <w>quam</w> <w>Johannes</w> <w>Maoss</w> <w>instituit</w> <w>libere</w> <w>et</w> <w>quiete</w>. <w>Alie</w> <w>due</w>, <w>videlicet</w> <w>capellanie</w> <w>Laurentii</w> <w>Le</w> <w>Ferle</w> <w>et</w> <w>Pinelli</w>, <w>erunt</w> <w>et</w> <w>remanebunt</w> <w>integre</w> <w>sepedictis</w> <w>capellanis</w> <w>ad</w> <w>proprios</w> <w>usus</w> <w>mense</w> <w>sue</w>, <w>nec</w> <w>licebit</w> <w>capellanis</w> <w>de</w> <w>cetero</w> <w>instituere</w> <w>capellanos</w> <w>in</w> <w>illis</w>. <w>Quod</w> <w>ut</w> <w>perpetua</w> <w>gaudeat</w> <w>firmitate</w>, <w>et</w> <w>ne</w> <w>aliqua</w> <w>super</w> <w>hoc</w> <w>possit</w> <w>contentio</w> <w>imposterum</w> <w>suboriri</w>, <w>ad</w> <w>utriusque</w> <w>partis</w> <w>petitionem</w>, <w>presentes</w> <w>fecimus</w> <w>litteras</w> <w>sigillari</w>. <w>Actum</w> <w>anno</w> <w>gratie</w> <w>M</w><seg type="superscript "><w>o</w></seg> <w>CC</w><seg type="superscript "><w>o</w></seg> <w>VIII</w><seg type="superscript "><w>o</w></seg> <w>X</w><seg type="superscript "><w>o</w></seg>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

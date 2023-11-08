@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 107</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">109-110</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0107">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Don de dix quartiers de pré fait à l’obédience de la Borde par Fulcodius de Galeri et les moines de Mesland.»</p>
+         </div>
+         <dateline>1100-1108<date notBefore="1100-01-01" notAfter="1108-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0107.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>PRATIS</w> <w>QUE</w> <w>CONCESSERUNT</w> <w>BORDE</w> <w>FULCODIUS</w> <w>DE</w> <w>GALERI</w> <w>ET</w> <w>MONACHI</w> <w>DE</w> <w>FONTE</w> <w>MELLANDI</w> - <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>presentibus</w> <w>et</w> <w>futuris</w> <w>fratribus</w> <w>nostris</w>, <w>quod</w> <w>Fulcodius</w> <w>de</w> <w>Galeri</w> <w>de</w> <w>illis</w> <w>pratis</w>, <w>que</w> <w>dederat</w> <w>et</w> <w>concesserat</w> <w>in</w> <w>elemosinam</w> <w>fratribus</w> <w>nostris</w> <w>de</w> <w>fonte</w> <w>Mellandi</w>, <w>quorum</w> <w>tamen</w> <w>partem</w> <w>sibi</w> <w>in</w> <w>uita</w> <w>sua</w> <w>retinuerat</w>, <w>dedit</w> <w>V</w> <w>quartaria</w> <w>obedientie</w> <w>nostre</w> <w>de</w> <w>Borda</w>, <w>per</w> <w>manum</w> <w>domni</w> <w>Heruei</w>, <w>tunc</w> <w>temporis</w> <w>eiusdem</w> <w>obedientie</w> <w>prepositi</w>, <w>concedentibus</w> <w>predictis</w> <w>fratribus</w> <w>de</w> <w>fonte</w> <w>Mellandi</w>, <w>nec</w> <w>non</w> <w>et</w> <w>alia</w> <w>V</w> <w>quartaria</w> <w>dantibus</w>, <w>de</w> <w>illis</w> <w>que</w> <w>iam</w> <w>acceperant</w>. <w>Sed</w> <w>ne</w> <w>aliquando</w> <w lemmaRef="frater">frater</w> <w>de</w> <w>predicta</w> <w>obedientia</w> <w>Borde</w> <w>iniuriam</w> <w>pateretur</w>, <w>sic</w> <w>libere</w> <w>et</w> <w>solute</w> <w>data</w> <w>et</w> <w>concessa</w> <w>sunt</w> <w>illa</w> <w>decem</w> <w>pratorum</w> <w>quartaria</w> <w>ab</w> <w>utrisque</w>, <w>Fulcodio</w> <w>scilicet</w> <w>et</w> <w>fratribus</w> <w>de</w> <w>fonte</w> <w>Mellandi</w>, <w>ut</w> <w>in</w> <w>perpetuum</w> <w>in</w> <w>iure</w> <w>et</w> <w>dominio</w> <w>sint</w> <w>eidem</w> <w>obedientie</w> <w>de</w> <w>Borda</w>, <w>retentis</w> <w>solummodo</w> <w>decem</w> <w>denariis</w> <w>de</w> <w>censu</w>. <w>Ex</w> <w>concessione</w> <w>et</w> <w>dono</w> <w>Fulcodii</w> <w>sunt</w> <w>isti</w> <w>testes</w>: <w>Gaufredus</w> <w lemmaRef="monachus">monachus</w> <w>noster</w> <w>aurifaber</w>, <w>Gaufredus</w> <w>fergant</w>, <w>Aucherius</w> <w>de</w> <w>Coldreia</w>, <w>Aucherius</w> <w>asinarius</w>. <w>Ex</w> <w>concessione</w> <w>monachorum</w> <w>de</w> <w>fonte</w> <w>Mellandi</w>: <w>Petrus</w> <w>leidet</w>, <w>Gausbertus</w> <w>cellararius</w>, <w>Adelelmus</w> <w>de</w> <w>Pontico</w> <w lemmaRef="monachus">monachus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 144</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">136</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0144">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Hugues de Crucheré sur le point de mourir donne à Marmoutier un cens de 6 s. 4 d. que lui payait le prieur de Lancé, avec le consentement de sa femme, de ses fils et de ses frères.</p>
+         </div>
+         <dateline>1120<date notBefore="1120-01-01" notAfter="1120-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0144.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="donatio">DONATIO</w> <w>HUGONIS</w> <w>DE</w> <w>CRUSCHEREIO</w></head>
+               <p xml:space="preserve"><w>Notum</w> <w>fore</w> <w>uolumus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w> <w>quod</w> <w>Hugo</w> <w>de</w> <w>Cuschere</w> <w>miles</w> <w>quidam</w>, <w>cum</w> <w>egrotaret</w> <w>apud</w> <w>Uindocinum</w> <w lemmaRef="castrum">castrum</w>, <w>infirmitate</w> <w>qua</w> <w>et</w> <w>mortuus</w> <w>est</w>, <w>consulens</w> <w>tam</w> <w>anime</w> <w>sue</w> <w>quam</w> <w>et</w> <w>vxoris</w> <w>sue</w> <w>Rosthe</w> <w>nomine</w>, <w>que</w> <w>et</w> <w>Agnes</w> <w>vocabatur</w>, <w>ipsa</w> <w>concedente</w>, <w>dedit</w> <w>Deo</w> <w>et</w> <w>Beato</w> <w>Martino</w>, <w>et</w> <w>nobis</w> <w>majoris</w> <w>monasterii</w> <w>monachis</w>, <w>habendos</w> <w>6</w> <w>solidos</w> <w>et</w> <w>4</w> <w>denarios</w> <w>de</w> <w>censu</w>, <w>quos</w> <w>ei</w> <w>solebat</w> <w>reddere</w> <w>per</w> <w>singulos</w> <w>annos</w> <w>prior</w> <w>obedientie</w> <w>Lanciaci</w>. — <w>concesserunt</w> <w>fratres</w> <w>ipsius</w> <w>Hugonis</w>, <w>id</w> <w>est</w>, <w>Ingelbertus</w> <w>guanerioth</w> <w>et</w> <w>Rainaldus</w> <w>Cheroth</w>, <w>et</w> <w>Frogerius</w> <w>cognomento</w> <w>uerum-dicit</w>. <w>Nepotes</w> <w>quoque</w> <w>ejus</w>, <w>id</w> <w>est</w> <w>Ernaldus</w>, <w>qui</w> <w>cognominabatur</w> <w>trahit-foras</w>, <w>et</w> <w>Gualterius</w> <w>et</w> <w>Acharias</w>. <w>Hoc</w> <w>audierunt</w> <w>Bartholomeus</w> <w>filius</w> <w>Goffredi</w> <w>Pagani</w> <w>et</w> <w>fratres</w> <w>ejus</w>. <w>Cum</w> <w>ergo</w> <w>supradictus</w> <w>Hugo</w> <w>eadem</w> <w>infirmitate</w> <w>paulo</w> <w>post</w> <w>obisset</w>, <w>deuotissima</w> <w>prefata</w> <w>vxor</w> <w>ejus</w> <w>fecit</w> <w>corpus</w> <w>deferri</w> <w>sepeliendum</w> <w>ad</w> <w>hoc</w> <w>majus</w> <w lemmaRef="monasterium">monasterium</w> <w>nostrum</w>, <w>ipsa</w> <w>etiam</w> <w>cum</w> <w>pluribus</w> <w>ex</w> <w>suis</w> <w>corpus</w> <w>usque</w> <w>ad</w> <w>sepulturam</w> <w>prosecuta</w>, <w>uenitque</w> <w>in</w> <w>capitulum</w> <w>nostrum</w> <w>una</w> <w>cum</w> <w>supranominatis</w> <w>fratribus</w> <w>et</w> <w>nepotibus</w> <w>defuncti</w> <w>uiri</w> <w>sui</w>, <w>tam</w> <w>illa</w> <w>quam</w> <w>et</w> <w>illi</w>, <w>sed</w> <w>et</w> <w>Herueus</w> <w>de</w> <w>Villarebla</w> <w lemmaRef="cognatio">cognatus</w> <w>defuncti</w>, <w>et</w> <w>Achardus</w> <w>uicarius</w> <w>uenerunt</w> <w>cum</w> <w>ea</w>, <w>et</w> <w>iterum</w> <w>concesserunt</w> <w>et</w> <w>donum</w> <w>supra</w> <w>majus</w> <w>altare</w> <w>per</w> <w>quemdam</w> <w>baculum</w> <w>posuerunt</w>, <w>et</w> <w>suscepti</w> <w>sunt</w> <w>omnes</w> <w>in</w> <w>societatem</w>, <w>et</w> <w>participationem</w> <w>totius</w> <w>beneficii</w> <w>nostri</w>. <w>Nos</w> <w>uero</w>, <w>finito</w> <w>capitulo</w> <w>et</w> <w>missis</w> <w>cantatis</w>, <w>honorifice</w> <w>sepeliuimus</w> <w>corpus</w>. <w>Actum</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>1120</w>, <w>presidente</w> <w>nobis</w> <w>domno</w> <w>abbate</w> <w>Willelmo</w>, <w>anno</w> <w>16</w><seg type="superscript "><w>o</w></seg>, <w>procurante</w> <w>obedientiam</w> <w>Lanciaci</w> <w>domno</w> <w>Alberto</w> <w>monacho</w> <w>nostro</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

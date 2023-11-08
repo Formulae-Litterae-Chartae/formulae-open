@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 59</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">141 - 142</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0059">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Les religieux de Stavelot allègent le fardeau de la servitude en faveur de leurs vassaux de Xhoris.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>932 (?)<date notBefore="0932-01-01" notAfter="0932-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0059.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Residente</w> <w>domno</w> <w>Rotaudo</w> <w>preposito</w> <w>atque</w> <w>Hascero</w> <w>decano</w> <w>ceterisque</w> <w>fratribus</w> <w>Deo</w> <w>militantibus</w> <w>in</w> <w>cenobio</w> <w>Stabulensi</w>, <w>adiit</w> <w>quidam</w> <w>noster</w> <w>villicus</w> <w>nomine</w> <w>Remigius</w> <w>pariterque</w> <w>Geroardus</w>, <w>deprecantes</w> <w>nostram</w> <w>clementiam</w> <w>ut</w> <w>alleviaremus</w> <w>quosdam</w> <w>a</w> <w>jugo</w> <w>servitutis</w> <w>de</w> <w>nostris</w> <w>hominibus</w> <w>in</w> <w>Scuritias</w> <w>residentibus</w>, <w>tam</w> <w>pro</w> <w>remedio</w> <w>anime</w> <w>nostre</w> <w>quam</w> <w>etiam</w> <w>ut</w> <w>in</w> <w>melius</w> <w>nostris</w> <w>successoribus</w> <w>servire</w> <w>queant</w>. <w>A</w> <w>die</w> <w>igitur</w> <w>presenti</w> <w>et</w> <w>deinceps</w>, <w>tam</w> <w>illis</w> <w>quam</w> <w>et</w> <w>filiis</w> <w>et</w> <w>sequacibus</w> <w>illorum</w> <w>concedimus</w> <w>so</w> <w>unaquaque</w> <w>ebdomada</w> <w>diem</w> <w>unum</w> <w>servialem</w> <w>sicuti</w> <w>a</w> <w>nobis</w> <w>poposcerunt</w>. <w>Et</w> <w>ut</w> <w>semper</w> <w>stabilis</w> <w>et</w> <w>inconvulsa</w> <w>permaneat</w> <w>et</w> <w>perpetualiter</w> <w>perseveret</w>, <w>presentem</w> <w>cartam</w> <w>fieri</w> <w>jussimus</w> <w>et</w> <w>manu</w> <w>propria</w> <w>firmavimus</w> <w>firmatamque</w> <w>perpetualiter</w> <w>esse</w> <w>cupimus</w>. <w>Signum</w> <w>Rotaudi</w> <w>prepositi</w> <w>Sig</w>. <w>Hasceri</w> <w>decani</w>. <w>S</w>. <w>Odelrici</w>. <w>S</w>. <w>Beremundi</w>. <w>Signum</w> <w>Liutfridi</w>. <w>S</w>. <w>Roderici</w>. <w>S</w>. <w>Hadeboldi</w>. <w>S</w>. <w>Theutdonis</w>. <w>S</w>. <w>Euerardi</w>. <w>S</w>. <w>Wiolandi</w>. <w>S</w>. <w>Heriberti</w> <w>S</w>. <w>Godujni</w>. <w>S</w> <w>Werenfridi</w>. <w>S</w>. <w>Witgeri</w>. <w>S</w>. <w>Hugonis</w>. <w>S</w>. <w>Odonis</w>. <w>S</w>. <w>Asceri</w>. <w>Actum</w> <w>Stabulaus</w> <w>nongentesimo</w> <w>tricesimo</w> <w>II</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w>, <w>regnante</w> <w>domno</w> <w>Heinrico</w> <w>glorioso</w> <w>rege</w> <w>anno</w> <w>sexto</w>, <w>regente</w> <w>abbatiam</w> <w>prefato</w> <w>Gisleberto</w> <w>duce</w> <w>inclito</w>. </p>
+               <p xml:space="preserve"><w>Ego</w> <w>Bernardus</w> <w>jubentibus</w> <w>fratribus</w> <w>hanc</w> <w>cartam</w> <w>scripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 153</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">144-145</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0153">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Payen de Genesta nous confirme la donation de la terre des Esses, faite par Thomas de Genesta, et son père Payen.</p>
+         </div>
+         <dateline>1126<date notBefore="1126-01-01" notAfter="1126-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0153.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>TERRA</w> <w>APUD</w> <w>ESSAM</w> <w>QUAM</w> <w>DEDIT</w> <w>RAINALDUS</w> <w>DE</w> <w>GENESTA</w></head>
+               <p xml:space="preserve"><w>Ne</w> <w>rediviua</w> — <w>huic</w> <w>cartae</w> <w>adnotare</w> <w>curauimus</w> <w>qualiter</w> <w>Rainaldus</w> <w>filius</w> <w>Pagani</w> <w>de</w> <w>Genesta</w> <w>terram</w>, <w>que</w> <w>apud</w> <w>Essam</w> <w>sita</w> <w>est</w>, <w>quam</w> <w>Thomas</w> <w>de</w> <w>Genesta</w> <w>et</w> <w lemmaRef="pagus">Paganus</w> <w lemmaRef="pater">pater</w> <w>ipsius</w> <w>Rainaldi</w> <w>nobis</w> <w>in</w> <w>elemosinam</w> <w>dederant</w> <w>—nobis</w> <w>concesserit</w>. — <w>Hec</w> <w>concordia</w> <w>mediante</w> <w>Domno</w> <w>Rainaldo</w> <w>de</w> <w>Castello</w> — <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w>.<w>C</w>.<w>XXVI</w>, <w>agentibus</w> <w>nobis</w> <w>sub</w> <w>Domno</w> <w>abbate</w> <w>Odone</w>, <w>anno</w> <w>2</w><seg type="superscript "><w>o</w> </seg><w>facta</w> <w>est</w>; — <w>primitus</w> <w>in</w> <w>domo</w> <w>Hainrici</w> <w>de</w> <w>Rupibus</w> <w>apud</w> <w lemmaRef="castrum">Castrum</w> <w>Rainaldi</w>, — <w>et</w> <w>post</w> <w>modum</w> <w>in</w> <w>atrium</w> <w>S</w>. <w>Andree</w>, <w>in</w> <w>die</w> <w>festo</w> <w>S</w>. <w>Trinitatis</w> — <w>De</w> <w>laicis</w>: <w>Rainaldo</w> <w>domino</w> <w>de</w> <w>Castello</w>, <w>Fulcodio</w> <w>de</w> <w>Vallibus</w>, <w>Hilduino</w> <w>de</w> <w>Conan</w>, <w>Bernardo</w> <w>mandros</w>, <w>Petro</w> <w>de</w> <w>Agrone</w>, <w>Algerio</w> <w>de</w> <w>Ferraria</w> <w>et</w> <w>filio</w> <w>ejus</w> <w>Alcherio</w>, <w>Guillelmo</w> <w>Marrone</w>. — <w>Ex</w> <w>parte</w> <w>ejus</w>: <w>Salomone</w> <w>Tritone</w>. <w>Picardo</w>. <w>Huberto</w> <w>querculo</w>. <w>Lisoio</w> <w>fratre</w> <w>Bernardi</w> <w>mandros</w>. <w>Marrando</w> <w>milite</w>. <w>Hilduino</w> <w>sanguinartore</w>. <w>Petro</w> <w>filio</w> <w>Salomoni</w> <w>Britonis</w>. <w>Rainaldo</w> <w>maiore</w>. <w>Bernardo</w> <w>de</w> <w lemmaRef="villa">Villa</w> <w>Sernardi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

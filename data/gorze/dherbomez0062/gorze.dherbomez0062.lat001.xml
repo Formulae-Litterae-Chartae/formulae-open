@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 62</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">112</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0062">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Adventius, évêque de Metz, approuve les donations de biens à Scy et Novéant faites à l'abbaye de Gorze par l'abbé Betto, et garantit à ladite abbaye la propriété des maisons que possédait jadis le clerc Rofridus.</p>
+         </div>
+         <dateline>864<date notBefore="0864-01-01" notAfter="0864-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0062.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>CIROGRAPHUM</w> <w>ADVENTII</w> <w>EPISCOPI</w> <w>DE</w> <w>SIEIO</w>.</head>
+               <p xml:space="preserve"><w>Virtutum</w> <w>meritis</w> <w>ecclesia</w> <w>choruscans</w> <w>venerande</w> <w>sobolum</w> <w>propaginationi</w> <w>typica</w> <w>serere</w> <w>germina</w> <w>non</w> <w>desinit</w>, <w>et</w> <w>ne</w> <w>forte</w> <w>pastores</w> <w>pro</w> <w>dispensatione</w> <w>credita</w> <w>retente</w> <w>pecunie</w> <w>dampna</w> <w>patiantur</w>, <w>caulis</w> <w>dominicis</w> <w>celestis</w> <w>tritici</w> <w>pascua</w> <w>ferre</w> <w>suescunt</w>; <w>unde</w>, <w>non</w> <w>immemores</w> <w>sollicitudinis</w> <w>commisse</w> <w>super</w> <w>gregem</w> <w>Dei</w>, <w>vigilari</w> <w>contendunt</w> <w>ut</w> <w>visionis</w> <w>angelice</w> <w>claritudine</w> <w>solatientur</w>. <w>Idcirco</w> <w>Adventius</w>, <w>dum</w> <w>circa</w> <w>monasteriorum</w> <w>loca</w> <w>michi</w> <w>commissa</w> <w>frequenter</w> <w>invigilo</w>, <w>in</w> <w>cenobio</w> <w>pontificatus</w> <w>nostri</w>, <w>quod</w> <w>in</w> <w>honore</w> <w>sanctorum</w> <w>apostolorum</w> <w>Petri</w> <w>et</w> <w>Pauli</w> <w>constructum</w> <w>est</w> <w>super</w> <w>fluvium</w> <w>Gorzie</w>, <w>ubi</w> <w>ammirabili</w> <w>virtutum</w> <w>gloria</w> <w>vernal</w> <w>inclitus</w> <w>martyr</w> <w>Gorgonius</w>, <w>Bettonem</w> <w>disciplinis</w> <w>monasticis</w> <w>instructum</w> <w>abbatem</w> <w>regularem</w> <w>statui</w>, <w>qui</w> <w>beato</w> <w>agmini</w> <w>exhortamenta</w> <w>doctrine</w> <w>ostendens</w>, <w>ordinationi</w> <w>sue</w> <w>causas</w>, <w>sacris</w> <w>altaribus</w> <w>exhibitis</w> <w>et</w> <w>utilitatibus</w> <w>domesticis</w> <w>impensis</w>, <w>nostre</w> <w>auctoritatis</w> <w>serenitatis</w> <w>reverentia</w> <w>intonuit</w>, <w>quas</w> <w>gratantissime</w> <w>pro</w> <w>studio</w> <w>benivolentie</w> <w>ipsius</w> <w>suscepimus</w> <w>mansurumque</w> <w>in</w> <w>perpetuum</w> <w>volumus</w>, <w>sicut</w> <w>et</w> <w>illud</w> <w>quod</w>, <w>auctoritatis</w> <w>nostre</w> <w>testamento</w>, <w>anteriori</w> <w>tempore</w>, <w>sanctis</w> <w>eiusdem</w> <w>loci</w> <w>basilicis</w> <w>delegavimus</w>. <w>Dedit</w> <w>igitur</w> <w>predictus</w> <w>Betto</w> <w>ad</w> <w>sepulchrum</w> <w>beati</w> <w>Gorgonii</w> <w>martyris</w> <w>gloriosi</w> <w>Christi</w> <w>vineam</w> <w>I</w>, <w>que</w> <w>est</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>episcopii</w> <w>nostri</w> <w>nomine</w> <w>Siegio</w>, <w>ut</w> <w>in</w> <w>lumine</w> <w>et</w> <w>ornatu</w> <w>eiusdem</w> <w>ecclesie</w> <w>perpetuo</w> <w>tempore</w> <w>deserviat</w>. <w>Alteram</w> <w>vineam</w> <w>consistentem</w> <w>in</w> <w>wasatico</w> <w>ecclesie</w> <w>sancti</w> <w>Petri</w>, <w>cum</w> <w>servi</w> <w>tore</w> <w>et</w> <w>superposito</w> <w>manso</w>, <w>et</w> <w>duos</w> <w>mansos</w> <w>in</w> <w>Novianti</w> <w lemmaRef="villa">villa</w>, <w>cum</w> <w>duabus</w> <w>vineis</w>, <w>delegavit</w> <w>ad</w> <w>hospitalem</w> <w>pauperum</w>. <w>Duas</w> <w>etiam</w> <w>vineolas</w>, <w>que</w> <w>fuerunt</w> <w>in</w> <w>prestaria</w> <w>Rainramni</w>, <w>et</w> <w>quod</w> <w>Nevelungus</w> <w>dedit</w> <w>ad</w> <w>portam</w> <w>monasterii</w>, <w>largitus</w> <w>est</w>. <w>Quapropter</w>, <w>quia</w> <w>pro</w> <w>remedio</w> <w>anime</w> <w>nostre</w> <w>illud</w> <w>agere</w> <w>disposuit</w> <w>et</w> <w>honore</w> <w>concessi</w> <w>regiminis</w>, <w>semper</w> <w>hoc</w> <w>datum</w> <w>muneris</w> <w>auctoritati</w> <w>nostre</w> <w>sedis</w> <w>inviolabiliter</w> <w>manere</w> <w>decernimus</w>, <w>nostro</w> <w>cyrographo</w> <w>presentem</w> <w>roboramus</w> <w>conscriptionem</w>. <w>Mansiones</w> <w>etiam</w>, <w>que</w> <w>quondam</w> <w>Rofridi</w> <w>clerici</w> <w>fuerunt</w> <w>iuxta</w> <w>sedem</w> <w>nostram</w>, <w>Bettoni</w> <w>abbati</w> <w>et</w> <w>suis</w> <w>monachis</w> <w>permanere</w> <w>statuo</w>. <w>Adventius</w>, <w>sancte</w> <w>Metensis</w> <w>ecclesie</w> <w lemmaRef="episcopus">episcopus</w>, <w>subscripsi</w>. <w>Betto</w> <w lemmaRef="abbas">abbas</w>.<w>Eodem</w> <w>anno</w> <w>quo</w> <w>supra</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

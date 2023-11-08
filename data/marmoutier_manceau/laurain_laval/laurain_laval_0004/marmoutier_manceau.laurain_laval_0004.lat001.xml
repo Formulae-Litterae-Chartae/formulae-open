@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Laval, Nr. 4</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">340-341</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_laval_0004">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Vente au prix de vingt sous par Eude de Botz de la moitié de la terre de Graviliis, sise entre Laval et Pritz et tenue en fief par Geoffroy de Sanchez.</p>
+         </div>
+         <dateline>1062<date notBefore="1062-01-01" notAfter="1062-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_laval_0004.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w>, <w>Maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>Sancti</w> <w>Martini</w>, <w>Odonem</w> <w>de</w> <w>Bor</w> <w>vendidisse</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>nobis</w> <w>sub</w> <w>regimine</w> <w>nunc</w> <w>agentibus</w> <w>domni</w> <w>Alberti</w> <w>abbatis</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>MLXII</w>, <w>per</w> <w>manum</w> <w>Fulcodii</w> <w>monachi</w>, <w>dimidiam</w> <w>fere</w> <w>terre</w> <w>mansuram</w> <w>que</w> <w>dicitur</w> <w>terra</w> <w>de</w> <w>Graviliis</w> <w>et</w> <w>est</w> <w>inter</w> <w lemmaRef="castrum">castrum</w> <w>quod</w> <w>vocatur</w> <w>Vallis</w> <w>et</w> <w>ecclesiam</w> <w>de</w> <w>Priz</w>, <w>solidis</w> <w>XX</w> <w>precio</w> <w>constante</w>. <w>Terminatur</w> <w>eadem</w> <w>terra</w> <w>his</w> <w>undique</w> <w>finibus</w> <w>a</w> <w>meridie</w>, <w>etc</w>., <w>ab</w> <w>aquilone</w> <w>et</w> <w>ab</w> <w>oriente</w> <w>terra</w> <w>Gauffredi</w> <w>Crispini</w>. <w>Hic</w> <w>autem</w> <w>Gauffredus</w> <w>tenebat</w> <w>eam</w> <w>in</w> <w>fevum</w> <w>de</w> <w>supradicto</w> <w>Odone</w>; <w>sed</w> <w>promittente</w> <w>illo</w> <w>excambionem</w> <w>se</w> <w>pro</w> <w>ea</w> <w>sibi</w> <w>esse</w> <w>daturum</w>, <w>ita</w> <w>illam</w> <w>integre</w> <w>perpetuoque</w> <w>guerpivit</w> <w>ut</w>, <w>etsi</w> <w>promissum</w> <w>illi</w> <w>suum</w> <w>Odo</w> <w>non</w> <w>impleverit</w>, <w>ad</w> <w>nos</w> <w>aut</w> <w>terram</w> <w>illam</w> <w>pro</w> <w>hoc</w> <w>recurrere</w> <w>ultra</w> <w>non</w> <w>possit</w>. <w>Odo</w> <w>quoque</w> <w>ipse</w> <w>terram</w> <w>ipsam</w> <w>habebat</w> <w>in</w> <w>fevum</w> <w>de</w> <w>Gauffredo</w> <w>de</w> <w>Sanchez</w> <w>qui</w> <w>et</w> <w>ipse</w> <w>eam</w> <w>venditionem</w> <w>Odonis</w> <w>nostramque</w> <w>emptionem</w> <w>authorizavit</w>, <w>quam</w> <w>et</w> <w>vicariam</w> <w>nobis</w> <w>et</w> <w>si</w> <w>quas</w> <w>alias</w> <w>consuetudines</w> <w>in</w> <w>eadem</w> <w>terra</w> <w>habebat</w>, <w>donavit</w>. <w>Sepedictus</w> <w>autem</w> <w>Odo</w> <w>una</w> <w>cum</w> <w>filiis</w> <w>suis</w> <w>Abundio</w> <w>atque</w> <w>Herberto</w> <w>paterna</w> <w>venditioni</w> <w>gratenter</w> <w>annuentibus</w>, <w>sepedictam</w> <w>terram</w> <w>ab</w> <w>omni</w> <w>calumnia</w> <w>perpetuo</w> <w>nobis</w> <w>adquietandam</w> <w>toti</w> <w>tres</w> <w>pariter</w> <w>spoponderunt</w> <w>et</w>, <w>servande</w> <w lemmaRef="gratia">gratia</w> <w>fidei</w> <w>sponsionemque</w> <w>suam</w> <w>fideliter</w> <w>observandi</w>, <w>monacho</w> <w>superius</w> <w>nominato</w> <w lemmaRef="osculum">osculum</w> <w>porrexerunt</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>testibus</w> <w>istis</w> <w>Huberto</w> <w>filio</w> <w>Ivonis</w>, <w>Huberto</w> <w>iuvene</w>, <w>Viviano</w> <w>de</w> <w>Montefrotmari</w>, <w>Viviano</w> <w>Infante</w>, <w>Huberto</w> <w>de</w> <w>Priz</w>, <w>Ermenaldo</w> <w>de</w> <w>Montenaco</w>, <w>[Roberto</w> <w>Vitioso</w>, <w>Guarino</w> <w>filio</w> <w>Letberti</w>, <w>Rotberto</w> <w>Vermiculario</w>, <w>Fulberto</w> <w>Vermiculario</w>, <w>Alberico</w> <w>filio</w> <w>Fulcoini</w>, <w>Osmundo</w> <w>burgensi]</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 99</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">125-128</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0099">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte de Guillaume de Passavant, évêque du Mans, attestant la remise fait aux moines de Saint-Julien, par Richard de Lamboul, de l’église de Saint-Aignan de Couptrain, dont il s’était emparé sans y avoir été présenté, la cession a vie moyennant dix sous mansais de rente fait audit Richard par les moines de ladite église et la conformation par l’évêque des églises que l’abbaye de Saint-Julien possédait en son diocèse. </p>
+         </div>
+         <dateline>1156 de février à septembre<date/>
+            <date notBefore="1050-02-01" notAfter="1156-09-30"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0099.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w>Willelmus</w>, <w>Dei</w> <w lemmaRef="misericordia">misericordia</w> <w>Cenomannensis</w> <w lemmaRef="episcopus">episcopus</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>Xpistianam</w> <w>professis</w> <w>religionem</w>, <w>querelam</w> <w>que</w> <w>inter</w> <w>monachos</w> <w>Beati</w> <w>Juliani</w> <w>Turonensis</w> <w>et</w> <w>Richardum</w> <w>de</w> <w>Longoboul</w> <w>diu</w> <w>fuerat</w> <w>agitata</w>, <w>eo</w> <w>quod</w> <w>absque</w> <w>eorum</w> <w>presentatione</w> <w>ecclesie</w> <w>Sancti</w> <w>Aniani</w> <w>presbiteratum</w> <w>invassisset</w>, <w>in</w> <w>presentia</w> <w>nostra</w> <w>hoc</w> <w>modo</w> <w>terminatum</w> <w>fuisse</w>. <w>Presentatio</w> <w>sacerdotis</w>, <w>quam</w> <w>monachi</w> <w>clamabant</w>, <w>asserentes</w> <w>hii</w> <w>bone</w> <w>memorie</w> <w>predecessorem</w> <w>nostrum</w> <w>ad</w> <w>presetationem</w> <w>ipsorum</w> <w>in</w> <w>ecclesia</w> <w>Sancti</w> <w>Aniani</w> <w>sacerdotem</w> <w>posuisse</w>, <w>nobis</w> <w>concedentibus</w> <w>in</w> <w>jus</w> <w>cessit</w> <w>eorum</w>, <w>domini</w> <w>etiam</w> <w>Engelbaudi</w>, <w>Turonensis</w> <w>archiepiscopi</w>, <w>preveniente</w> <w>rogatu</w>, <w>unde</w> <w>et</w> <w>Richardus</w> <w>prefatam</w> <w>in</w> <w>manu</w> <w>nostra</w> <w>refutavit</w> <w>ecclesiam</w>. <w>Que</w> <w>siquidem</w> <w>ex</w> <w>petitione</w> <w>et</w> <w>monachorum</w> <w>presentatione</w> <w>eidem</w> <w>Richardo</w> <w>illic</w> <w>a</w> <w>nobis</w> <w>data</w> <w>et</w> <w>in</w> <w>pace</w> <w>concessa</w>, <w>hac</w> <w>videlicet</w> <w>conditione</w> <w>ut</w> <w>singulis</w> <w>annis</w> <w>Richardus</w>, <w>velut</w> <w>annuum</w> <w>censum</w>, <w>solidos</w> <w>X</w> <w>eis</w> <w>persolvat</w>, <w>V</w> <w>in</w> <w>festum</w> <w>Omnium</w> <w>Sanctorum</w> <w>et</w> <w>alios</w> <w>V</w> <w>in</w> <w>Pascha</w>. <w>Hoc</w> <w>etiam</w> <w>adjuncto</w> <w>ut</w> <w>monachi</w>, <w>post</w> <w>Richardum</w>, <w>censu</w> <w>abolito</w>, <w>duas</w> <w>partes</w> <w>ecclesie</w> <w>obtineant</w>, <w>tercia</w> <w>parte</w> <w>in</w> <w>sui</w> <w>sacerdotis</w> <w>cedente</w>. <w>Illud</w> <w>autem</w> <w>de</w> <w>nuptiarum</w> <w>benedictionibus</w> <w>et</w> <w>purificationibus</w> <w>statutum</w> <w>est</w> <w>ut</w> <w>sponsi</w> <w>et</w> <w>sponse</w> <w>oblationes</w> <w>et</w> <w>mulieris</w> <w>cujus</w> <w>fuerit</w> <w>purificatio</w> <w>solius</w> <w>sint</w> <w>sacerdotis</w>. <w>Cetera</w> <w>vero</w> <w>que</w> <w>sequentur</w> <w>tripertito</w> <w>dividentur</w> <w>ita</w> <w>ut</w> <w>tertia</w> <w>pars</w> <w>sacerdoti</w> <w>sine</w> <w>diminutione</w> <w>remaneat</w>. <w>Confessiones</w> <w>autem</w> <w>cum</w> <w>integritate</w> <w>in</w> <w>jus</w> <w>cedent</w> <w>sacerdotis</w>. <w>De</w> <w>capella</w> <w>etiam</w> <w>de</w> <w>Cupustreyo</w> <w>ad</w> <w>hanc</w> <w>devenere</w> <w>concordiam</w> <w>ut</w> <w>monachis</w> <w>ad</w> <w>sacramenta</w> <w>facienda</w> <w>et</w> <w>reliquias</w> <w>exponere</w> <w>et</w> <w>missas</w> <w>inibi</w> <w>celebrare</w> <w>et</w> <w>omnia</w> <w>beneficia</w> <w>accipere</w> <w>liceat</w>, <w>preter</w> <w>duos</w> <w>denarios</w> <w>de</w> <w>benedictionibus</w> <w>judiciorum</w>, <w>qui</w> <w>semper</w> <w>sacerdoti</w> <w>Sancti</w> <w>Aniani</w> <w>ex</w> <w>debito</w> <w>reddantur</w> <w>utpote</w> <w>in</w> <w>eadem</w> <w>capella</w> <w>supposita</w> <w>est</w> <w>ut</w> <w>membrum</w> <w>ecclesie</w> <w>Sancti</w> <w>Aniani</w>. <w>Ut</w> <w>autem</w> <w>hujusmodi</w> <w>concordia</w> <w>inviolabiliter</w> <w>obtineat</w> <w>firmitatem</w>, <w>sigillo</w> <w>nostro</w> <w>et</w> <w>litterarum</w> <w>munimine</w> <w>eam</w> <w>coroboravimus</w>. <w>Hoc</w> <w>autem</w> <w>totum</w> <w>factum</w> <w>est</w> <w>presentibus</w> <w>istis</w> <w>quorum</w> <w>sunt</w> <w>hec</w> <w>nomina</w>: <w>Harduinus</w>, <w>decanus</w>; <w>Bulgericus</w>, <w>precentor</w>; <w>Philipus</w>, <w>Hugo</w> <w>de</w> <w>Lavarcino</w>, <w>Alberius</w>, <w>archidiaconi</w>; <w>Sevinus</w>, <w>Eustachius</w>, <w>archipresbiteri</w>; <w>Landricus</w>, <w>magister</w> <w>scolarum</w>; <w>Clarus</w>; <w>Wuillermus</w> <w>de</w> <w>Montesorel</w>; <w>Beati</w> <w>Martini</w> <w>Turonensis</w> <w>precentor</w>. <w>Adjecto</w> <w>etiam</w> <w>quorumdam</w> <w>monachorum</w> <w>testimonio</w>, <w>qui</w> <w>suscripti</w> <w>sunt</w>: <w>Ursio</w>, <w lemmaRef="abbas">abbas</w> <w>Culturensis</w>; <w>Guarinus</w>, <w lemmaRef="abbas">abbas</w> <w>Sancti</w> <w>Juliani</w>, <w>sub</w> <w>quo</w> <w>facta</w> <w>est</w> <w>hujusmodi</w> <w>concordia</w>; <w>Garsilius</w>, <w>Maricius</w>, <w>Guido</w>, <w>Guillelmus</w>, <w>Bernardus</w>, <w>monachi</w> <w>sui</w>. <w>Preterea</w> <w>ecclesias</w> <w>potestati</w> <w>nostre</w> <w>suppositas</w> <w>quas</w> <w>quiete</w> <w>obtinebant</w>, <w>ne</w> <w>quis</w> <w>perverse</w> <w>mentis</w> <w>super</w> <w>eisdem</w> <w>inquietare</w> <w>eosdem</w> <w>monachos</w> <w>presumeret</w>, <w>eis</w> <w>episcopali</w> <w>auctoritate</w> <w>confirmavimus</w>. <w>Sunt</w> <w>autem</w> <w>hec</w>: <w>Bellus</w> <w>Mons</w> <w>et</w> <w>capella</w> <w>de</w> <w>Valle</w> <w>Bona</w>; <w>Marcon</w>; <w>capella</w> <w>Sancti</w> <w>Licini</w>; <w lemmaRef="sanctus">Sanctus</w> <w>Audoenus</w> <w>de</w> <w>Miletia</w> <w>et</w> <w>capella</w> <w>Sancti</w> <w>Petri</w>; <w lemmaRef="sanctus">Sanctus</w> <w>Carilelfus</w> <w>de</w> <w>Crenis</w>; <w>ecclesia</w> <w>de</w> <w>Gevrone</w> <w>et</w> <w>capella</w> <w>Sancti</w> <w>Salvatoris</w> <w>et</w> <w>capella</w> <w>Sancti</w> <w>Martini</w>; <w>ecclesia</w> <w>Sancti</w> <w>Aniani</w> <w>et</w> <w>capella</w> <w>Sancti</w> <w>Dionisii</w> <w>et</w> <w>capella</w> <w>Beate</w> <w>Marie</w> <w>de</w> <w>Cuputreio</w>; <w>Maignain</w>; <w>ecclesia</w> <w>de</w> <w>Feritate</w> <w>et</w> <w>due</w> <w>capelle</w>, <w>una</w> <w>Sancti</w> <w>Dionisii</w>, <w>alia</w> <w>Sancti</w> <w>Georgii</w>, <w>et</w> <w>quasdam</w> <w>decimas</w> <w>et</w> <w>oblationes</w> <w>quas</w> <w>habent</w> <w>in</w> <w>ecclesia</w> <w>Sancti</w> <w>Mauricii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

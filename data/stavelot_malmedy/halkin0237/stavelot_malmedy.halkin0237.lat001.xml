@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 237</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">455 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0237">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Lex cardinaux Grégoire de Saint-Ange et Jacinthe de Sainte-Marie engagent Henri, évêque de Liége, à réparer les pertes subies par l’abbé Wibald et le monastère de Stavelot pendant la guerre du comte de Namur contre l’évêque.</p>
+         </div>
+         <dateline>[1152, janvier]<date notBefore="1152-01-01" notAfter="1152-01-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0237.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Leodiensi</w> <w>episcopo</w> <w>Heinrico</w> <w>Gregorius</w> <w>santi</w> <w>Angelo</w> <w>et</w> <w>Jacinthus</w> <w>sanctae</w> <w>Mariae</w> <w>diaconi</w> <w>cardinales</w> <w lemmaRef="in_domino_salutem">salutem</w>.</p>
+               <p xml:space="preserve"><w>Ubi</w> <w lemmaRef="mandatum">mandatum</w> <w>et</w> <w lemmaRef="auctoritas">auctoritas</w> <w>precedit</w> <w>apostolica</w>, <w>securius</w> <w>maxime</w> <w>apud</w> <w>amicum</w> <w>scribere</w> <w>et</w> <w>preces</w> <w>amicas</w> <w>possumus</w> <w>et</w> <w>debemus</w> <w>interserere</w>. <w>Inde</w> <w>est</w>, <w>quod</w> <w>nos</w> <w>dilectioni</w> <w>vestrae</w> <w>scribentes</w>, <w>accurate</w> <w>mandamus</w>, <w>amicabiliter</w> <w>obsecrantes</w>, <w>ut</w> <w>cum</w> <w>dilectissimus</w> <w>noster</w> <w>Wibaldus</w> <w lemmaRef="abbas">abbas</w> <w>Stabulensis</w> <w>in</w> <w>illo</w> <w>eventu</w> <w>bellice</w> <w>altercationis</w> <w>inter</w> <w>vos</w> <w>et</w> <w>Namucensum</w>  <w>multa</w>, <w>immo</w> <w>infinita</w> <w>per</w> <w>militiam</w> <w>vestram</w> <w>perdiderit</w>, <w>et</w> <w>aecclesia</w> <w>ejus</w> <w>in</w> <w>multis</w> <w>et</w> <w>magnis</w> <w>dampnum</w> <w>irrecuperabile</w> <w>sustinuerit</w>, <w>prudentia</w> <w>et</w> <w>discretio</w> <w>vestra</w> <w>sic</w> <w>adversus</w> <w>eum</w> <w>per</w> <w>condignam</w> <w>recompensationem</w> <w>gerat</w> <w>et</w> <w>habeat</w>, <w>quatinus</w> <w>alter</w> <w>cum</w> <w>altero</w> <w>unum</w> <w>et</w> <w>idem</w>, <w>quod</w> <w>fuit</w> <w>et</w> <w>esse</w> <w>competit</w>, <w>inseparabiliter</w> <w>permaneat</w> <w>et</w> <w>postmodum</w> <w>ad</w> <w>nos</w> <w>verbum</w> <w>hujus</w> <w>rei</w> <w>sine</w> <w>sua</w> <w>emendatione</w> <w>non</w> <w>redeat</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

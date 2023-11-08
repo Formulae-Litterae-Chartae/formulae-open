@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 144</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">292 - 293</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0144">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Cuonon, abbé de Stavelot, voulant mettre fin à certains abus, décide que, suivant l’ancienne coutume, les possesseurs de biens ruraux au ban de Stavelot feront, lorsqu’ils y seront requis, les trois transports annuels de chaux au monastère, sans qu’on puisse leur imposer une autre corvée en remplacement de celle-ci.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>1126<date notBefore="1126-01-01" notAfter="1126-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0144.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>. <w>Cuono</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Stabulensis</w> <w lemmaRef="abbas">abbas</w>. <w>Sicut</w> <w>decet</w> <w>ea</w> <w>que</w> <w>inviolata</w>, <w>sancta</w>, <w>bene</w> <w>et</w> <w>ordinabiliter</w> <w>instituta</w> <w>sunt</w> <w>in</w> <w>suo</w> <w>vigore</w> <w>conservare</w>, <w>ita</w> <w>nichilominus</w> <w>convenit</w> <w>illa</w> <w>que</w> <w>pravo</w> <w>usu</w> <w>vitiata</w> <w>sunt</w> <w>in</w> <w>proprium</w> <w>statum</w> <w>reformare</w>. <w>Unde</w> <w>noverit</w> <w>vestra</w> <w>posteritas</w>, <w>quod</w> <w>nos</w> <w>in</w> <w>loco</w> <w>nostro</w> <w>quemdam</w> <w>pravum</w> <w>et</w> <w>omnino</w> <w>dampnosum</w> <w>usum</w>, <w>immo</w> <w>abusionem</w> <w>invenimus</w>, <w>quam</w> <w>nos</w> <w>consilio</w> <w>ecclesie</w> <w>nostre</w> <w>et</w> <w>fidelium</w> <w>nostrorum</w> <w>dato</w> <w>presenti</w> <w>testamento</w> <w>correximus</w>. <w>Cum</w> <w>enim</w> <w>vetus</w> <w lemmaRef="consuetudo">consuetudo</w> <w>esset</w>, <w>ut</w> <w>omnes</w> <w>que</w> <w>intra</w> <w>terminos</w> <w>ville</w> <w>Stabulaus</w> <w>ruralem</w> <w>possessionem</w> <w>habent</w>, <w>ter</w> <w>in</w> <w>anno</w> <w>calcem</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>deferrent</w>, <w>negligentiores</w> <w>ministri</w>, <w>redemptione</w> <w>pro</w> <w>angariis</w> <w>recepta</w>, <w>duo</w> <w>mala</w> <w>operabantur</w>, <w>hoc</w> <w>est</w> <w>et</w> <w>populum</w> <w>exactione</w> <w>opprimebant</w> <w>et</w> <w>muros</w> <w>tam</w> <w>officinarum</w> <w>quam</w> <w>ambitus</w> <w>atrii</w> <w>penitus</w> <w>corruentes</w> <w>negligebant</w>. <w>Nos</w> <w>itaque</w> <w>huic</w> <w>duplici</w> <w>malo</w> <w>occurrentes</w>, <w>statuimus</w> <w>et</w> <w>presenti</w> <w>decreto</w> <w>immobiliter</w> <w>firmavimus</w>, <w>ut</w> <w>deinceps</w> <w>rustici</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>calcem</w> <w>vel</w> <w>lapides</w> <w>ad</w> <w>comburendum</w> <w>deferant</w>, <w>et</w> <w>si</w> <w>jussi</w> <w>non</w> <w>fuerint</w> <w>calcem</w> <w>deportare</w>, <w>nullam</w> <w>prorsus</w> <w>commutationem</w> <w>aut</w> <w>redemptionem</w> <w>pro</w> <w>eo</w> <w>persolvant</w>, <w>excepto</w> <w>quod</w> <w>si</w> <w>calx</w> <w>habundaverit</w>, <w>pro</w> <w>una</w> <w>carrata</w> <w>calcis</w> <w>sex</w> <w>carratas</w> <w>lignorum</w> <w>ad</w> <w>edificandum</w> <w>aut</w> <w>duas</w> <w>ad</w> <w>comburendum</w>. <w>Ibunt</w> <w>autem</w> <w>ter</w> <w>in</w> <w>anno</w>, <w>primo</w> <w>infra</w> <w>maium</w> <w>mensem</w>, <w>secundo</w> <w>inter</w> <w>festum</w> <w>sancti</w> <w>Johannis</w> <w>et</w> <w>sancti</w> <w>Petri</w> <w>in</w> <w>fine</w> <w>mensis</w> <w>junii</w>, <w>tertio</w> <w>inter</w> <w>festum</w> <w>sancti</w> <w>Remacli</w> <w>et</w> <w>sancti</w> <w>Remigii</w>. <w>Quam</w> <w>calcem</w> <w>vel</w> <w>lapides</w> <w>ad</w> <w>comburendum</w> <w>aptos</w> <w>de</w> <w>curtibus</w> <w>nostris</w> <w>deferent</w>, <w>hoc</w> <w>est</w> <w>de</w> <w>Louineis</w>, <w>aut</w> <w>de</w> <w>Scorices</w>, <w>vel</w> <w>de</w> <w>Fielon</w>, <w>vel</w> <w>de</w> <w>Oson</w>. <w>Actum</w> <w>est</w> <w>hoc</w> <w>in</w> <w>Stabulaus</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>M°</w> <w>C°</w> <w>XX°</w> <w>VI°</w>, <w>indictione</w> <w>III</w> , <w>regnante</w> <w>domno</w> <w>Lothario</w> <w>Romanorum</w> <w>III°</w> <w>rege</w>, <w>in</w> <w>Leodio</w> <w>domno</w> <w>Alberone</w> <w>episcopo</w>, <w>in</w> <w>Stabulaus</w> <w>domno</w> <w>Cuonone</w> <w>abbate</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 161</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">326 - 327</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0161">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Les religieux de Stavelot concèdent viagèrement à leur abbé Wibald le village de Bogny.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>1136<date notBefore="1136-01-01" notAfter="1136-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0161.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>. <w>Fratres</w> <w>Stabulensis</w> <w>cenobii</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>. <w>Sicut</w> <w>ad</w> <w>prelatorum</w> <w>discretionem</w> <w>pertinet</w> <w>subditorum</w> <w>necessitatibus</w> <w>studiose</w> <w>ac</w> <w>viriliter</w> <w>subservare</w>, <w>ita</w> <w>nichilominus</w> <w>condecet</w> <w>subditos</w> <w>prelatorum</w> <w>honeste</w> <w>et</w> <w>utili</w> <w>voluntati</w> <w>assensum</w> <w>sine</w> <w>mora</w> <w>prebere</w>. <w>Tue</w> <w>igitur</w> <w>religiose</w> <w>peticioni</w>, <w lemmaRef="pater">pater</w> <w>Wibolde</w> <w lemmaRef="abbas">abba</w>, <w>de</w> <w lemmaRef="villa">villa</w> <w>nostra</w> <w>Boviniaco</w> <w>que</w> <w>ad</w> <w>vestiarium</w> <w>nostrum</w> <w>pertinet</w>, <w>satisfacimus</w>, <w>ut</w> <w>quia</w> <w>tempore</w> <w>persecutionis</w> <w>Danorum</w> <w>sanctum</w> <w>et</w> <w>venerabile</w> <w>corpus</w> <w>sancti</w> <w>patris</w> <w>et</w> <w>patroni</w> <w>nostri</w> <w>Remacli</w> <w>in</w> <w>eadem</w> <w lemmaRef="villa">villa</w> <w>quiete</w> <w>latuit</w>, <w>que</w> <w>nunc</w> <w>in</w> <w>solitudinem</w> <w>redacta</w> <w>et</w> <w>absque</w> <w>habitatore</w> <w>facta</w> <w>est</w>, <w>tu</w>, <w>sicut</w> <w>universa</w> <w>que</w> <w>ad</w> <w>recolendam</w> <w>sancti</w> <w>patris</w> <w>nostri</w> <w>memoriam</w> <w>pertinent</w> <w>singulari</w> <w>desiderio</w> <w>et</w> <w>honore</w> <w>foves</w> <w>et</w> <w>amplecteris</w>, <w>sic</w> <w>eandem</w> <w lemmaRef="villa">villam</w> <w>ob</w> <w>honorem</w> <w>ejusdem</w> <w>sancti</w> <w>patris</w> <w>nostri</w> <w>restaurare</w> <w>et</w> <w>reedificare</w> <w>disponis</w>. <w>Concedimus</w> <w>igitur</w> <w>tibi</w> <w>prefatam</w> <w lemmaRef="villa">villam</w> <w>cum</w> <w>omnibus</w> <w>suis</w> <w>appendiciis</w>, <w>acquisitis</w> <w>vel</w> <w>acquirendis</w>, <w>ut</w> <w>omni</w> <w>tempore</w> <w>vite</w> <w>tue</w>, <w>in</w> <w>omni</w> <w>statu</w> <w>vel</w> <w>ordine</w>, <w>apud</w> <w>nos</w> <w>sive</w> <w>alias</w> <w>positus</w>, <w>pace</w> <w>vel</w> <w>adversitate</w> <w>tua</w>, <w>eam</w> <w>secundum</w> <w>tuam</w> <w>propriam</w> <w>utilitatem</w> <w>libere</w> <w>ordines</w> <w>et</w> <w>disponas</w> <w>et</w> <w>fructu</w> <w>ipsius</w> <w>pro</w> <w>voluntate</w> <w>tua</w> <w>utaris</w>; <w>hac</w> <w>conditione</w> <w>interposita</w>, <w>ut</w> <w>eandem</w> <w lemmaRef="villa">villam</w> <w>tibi</w> <w>non</w> <w>liceat</w> <w>oppignorare</w> <w>et</w> <w>feodo</w> <w>vel</w> <w>commutatione</w> <w>aliqua</w> <w>sine</w> <w>nostra</w> <w>communi</w> <w>astipulatione</w> <w>possis</w> <w lemmaRef="alienare">alienare</w>, <w>post</w> <w>obitum</w> <w>vero</w> <w>tuum</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>cum</w> <w>omni</w> <w>augmento</w> <w>et</w> <w>melioratione</w> <w>sua</w>, <w>cum</w> <w>omni</w> <w>fructu</w> <w>et</w> <w>presenti</w> <w>et</w> <w>futuro</w> <w>ad</w> <w>nostrum</w> <w>vestiarium</w>, <w>sicut</w> <w>et</w> <w>antea</w> <w>fuit</w>, <w>sine</w> <w>ulla</w> <w>abbatum</w> <w>contradictione</w> <w>revertetur</w>. <w>Et</w> <w>ut</w> <w>firma</w> <w>et</w> <w>inconvulsa</w> <w>stabilisque</w> <w>hec</w> <w>pactio</w> <w>queat</w> <w>permanere</w>, <w>in</w> <w>communi</w> <w>nostro</w> <w>capitulo</w> <w>omnium</w> <w>consensu</w> <w>per</w> <w>volumen</w> <w>regule</w> <w>beati</w> <w>Benedicti</w> <w>manu</w> <w>domni</w> <w>Warneri</w> <w>decani</w> <w>ipsam</w> <w lemmaRef="villa">villam</w> <w>tibi</w> <w>dedimus</w>,<w>et</w> <w>presenti</w> <w>scripto</w> <w>confirmamus</w>, <w>et</w> <w>harum</w> <w>conditionum</w> <w>violatores</w> <w>in</w> <w>tremendo</w> <w>Dei</w> <w>judicio</w> <w>terribili</w> <w>anathemate</w> <w>condempnamus</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>Stabulaus</w> <w>in</w> <w>capitulo</w>, <w>anno</w> <w>Domini</w> <w>M°</w> <w>C°</w> <w>XXX°</w> <w>VI°</w>, <w>indictione</w> <w>XIIII°</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 25</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">36-38</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0025">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice qui relate l’abandon fait a l’abbaye de Saint-Julien par Hardouin des Roches, Hardouin, chanoine de Saint-Martin, et Thibauld, chevalier, ses fils, de diverses coutumes établies sur la terre de l’abbaye, a Nouzilly.</p>
+         </div>
+         <dateline>1058<date notBefore="1058-01-01" notAfter="1058-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0025.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Cum</w> <w>in</w> <w>aecclesia</w> <w>memorie</w> <w>tradendum</w> <w>aliquid</w> <w>a</w> <w>fidelibus</w> <w>agitur</w> <w>debent</w> <w>filii</w> <w>[ejusdem</w> <w>aecclesiae</w> <w>illud]</w> <w>ad</w> <w>posterorum</w> <w>noticiam</w> <w>litteris</w> <w>mandare</w>, <w>quatinus</w> <w>et</w> <w>presentes</w> <w>et</w> <w>secuturi</w> <w>omnes</w> <w>agnoscant</w> <w>[qualiter</w> <w>ipsa]</w> <w>res</w> <w>acta</w> <w>sit</w>, <w>quod</w> <w>nos</w> <w>monachi</w> <w>Sancti</w> <w>Juliani</w> <w>agentes</w> <w>notum</w> <w>fore</w> <w>cupimus</w> <w>omnibus</w> <w>nostrae</w> <w>aecclesiae</w> <w>filiis</w>, <w>quod</w> <w>vir</w> <w lemmaRef="nobilis">nobilis</w> <w>simus</w> <w>Harduinus</w> <w>de</w> <w>Rupibus</w>, <w>anno</w> <w>Dominicae</w> <w>Incarnationis</w> <w>MLVIII</w>, <w>infirmitate</w> <w>sui</w> <w>corporis</w> <w>detentus</w>, <w>ad</w> <w>Sancti</w> <w>Juliani</w> <w>coenobium</w> <w>properavit</w> <w lemmaRef="monachus">monachilis</w> <w>ordinis</w> <w lemmaRef="gratia">gratia</w> <w>suscipiendi</w>, <w>quod</w> <w>cum</w> <w>devote</w> <w>ab</w> <w>abbate</w> <w>Richerio</w> <w>et</w> <w>fratribus</w> <w>impetrasset</w>, <w>deprecatus</w> <w>est</w> <w>suos</w> <w>filios</w>, <w>Harduinum</w>, <w>Sancti</w> <w>Martini</w> <w>canonicum</w>, <w>atque</w> <w>Thoebaldum</w>, <w>militem</w>, <w>quatinus</w> <w>pro</w> <w>suis</w> <w>animabus</w> <w>omnes</w> <w>consuetudines</w>, <w>quas</w> <w>in</w> <w>terra</w> <w>Sancti</w> <w>Juliani</w>, <w>de</w> <w>Nuziliaco</w>, <w>[immiserant</w>, <w>ipsi]</w> <w>sancto</w> <w>remitterent</w>. <w>Qui</w>, <w>paternae</w> <w>voluntati</w> <w>obtemperantes</w>, <w>non</w> <w>ficto</w> <w>animo</w> <w>guerpiverunt</w> <w>protinus</w> <w>pasnaticum</w> <w>multonum</w> <w>de</w> <w>Nuziliaco</w>, <w>quod</w> <w>injuste</w> <w>hactenus</w> <w>tenuerant</w>. <w>Dederunt</w> <w>etiam</w> <w>Sancto</w> <w>Juliano</w> <w>vicariam</w> <w>ex</w> <w>integro</w> <w>ejusdem</w> <w>potestatis</w> <w>quam</w> <w>Teachius</w> <w>de</w> <w>ipsis</w> <w>tenebat</w>, <w>tali</w> <w>tenore</w> <w>ut</w> <w>qui</w> <w>eam</w> <w>tenebant</w> <w>de</w> <w>abbate</w> <w>et</w> <w>monachis</w> <w>in</w> <w>futuro</w> <w>tenerent</w>. <w>Partem</w> <w>quoque</w> <w>suam</w> <w>de</w> <w>castaneis</w> <w>de</w> <w>bosco</w> <w>Sancti</w> <w>Juliani</w> <w>Castaneti</w>, <w>quam</w> <w>monachi</w> <w>olim</w> <w>propter</w> <w>defensionem</w> <w>forestae</w>, <w>idcirco</w> <w>quod</w> <w>a</w> <w>vicinis</w> <w>devastabatur</w>, <w>eidem</w> <w>Harduino</w> <w>tali</w> <w>pacto</w> <w>concesserant</w>, <w>ut</w> <w>monachi</w> <w>medietatem</w> <w>castanearum</w> <w>et</w> <w>ipse</w> <w>vir</w> <w>alteram</w> <w>haberet</w>, <w>hanc</w> <w>suam</w> <w>ex</w> <w>integro</w> <w>partem</w> <w lemmaRef="pater">pater</w> <w>filiique</w> <w>eidem</w> <w>Sancto</w> <w>et</w> <w>monachis</w> <w>perpetualiter</w> <w>condonaverunt</w>. <w>Concesserunt</w> <w>itidem</w> <w>monachis</w> <w>omni</w> <w>tempore</w> <w>unius</w> <w>diei</w> <w>quencumque</w> <w>voluissent</w> <w>piscationem</w> <w>in</w> <w>septimana</w> <w>per</w> <w>totam</w> <w>suam</w> <w>aquam</w> <w>Siccidue</w> <w>de</w> <w>Rupibus</w>, <w>tali</w> <w>ratione</w> <w>ut</w> <w>si</w> <w>monachis</w> <w>in</w> <w>[una</w> <w>aut</w> <w>duabus</w> <w>vel]</w> <w>tribus</w> <w>quatuorque</w> <w>seu</w> <w>pluribus</w> <w>septimanis</w> <w>non</w> <w>vacaret</w> <w>piscari</w>, <w>omnes</w> <w>intermissos</w> <w>dies</w> <w>quando</w> <w>eis</w> <w>vacaret</w> <w>recuperent</w>. <w>Duos</w> <w>etiam</w> <w>servos</w> <w>eidem</w> <w>Sancto</w> <w>dederunt</w> <w>Anstasium</w> <w>atque</w> <w>Herbertum</w>. <w>Haec</w> <w>omnia</w> <w>Sancto</w> <w>Juliano</w>, <w>tam</w> <w lemmaRef="pater">pater</w> <w>quam</w> <w>[filii</w> <w>perpetualiter]</w> <w>ad</w> <w>habendum</w>, <w>pro</w> <w>salute</w> <w>suarum</w> <w>animarum</w> <w>et</w> <w>parentum</w> <w>suorum</w>, <w>dederunt</w> <w>et</w> <w>litteris</w> <w>tradi</w> <w>jusserunt</w> <w>cartamque</w> <w>presentem</w> <w>manibus</w> <w>propriis</w> <w>firmaverunt</w> <w>et</w> <w>manibus</w> <w>fidelium</w> <w>suorum</w> <w>atque</w> <w>parentum</w> <w>corroborare</w> <w>fecerunt</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Harduini</w> +. <w>Signum</w> <w>Harduini</w>, <w>filii</w> <w>ejus</w> +. <w>Signum</w> <w>[Thoebaldi</w>, <w>fratris</w> <w>ejus]</w>. <w>Signum</w> <w>Guanilonis</w> <w>et</w> <w>Rainaldi</w>, <w>nepotum</w> <w>ejus</w>.</p>
+               <p xml:space="preserve"><w>Testes</w> <w>etiam</w> <w>alii</w> <w>hujus</w> <w>rei</w>: <w>Drogo</w>; <w>Gofridus</w>, <w>filius</w> <w>Bernardi</w> <w>Blodi</w>; <w>Lanbertus</w> <w>Arcuarius</w>; <w>Galonis</w>, <w lemmaRef="vicarius">vicarius</w>; <w>[Loebertus</w>; <w>Durandus]</w>.</p>
+               <p xml:space="preserve"><w>De</w> <w>hominibus</w> <w>Sancti</w>: <w>Gauzbertus</w>; <w>Rainaldus</w> <w>de</w> <w>Cancellis</w>; <w>Gislebertus</w>; <w>Tetbaldus</w> <w>de</w> <w>[Nuziliaco]</w>; <w>Mauritius</w>; <w>Richardus</w>; <w>Guarinus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

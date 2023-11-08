@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 125</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">152-153</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0125">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Lettres de Henri, évêque de Bayeux, qui, sur la présentation de l’abbé de Saint-Julien, confère la cure de Meuvaines a Richard, clerc du diocèse de Tours.</p>
+         </div>
+         <dateline>1183-1200<date/>
+            <date notBefore="1183-01-01" notAfter="1200-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0125.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Henricus</w>, <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Baiocensis</w> <w lemmaRef="episcopus">episcopus</w>, <w>omnibus</w> <w>Christi</w> <w>fidelibus</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Domino</w>. <w>Noverit</w> <w>universitas</w> <w>vestra</w> <w>nos</w>, <w>ad</w> <w>presentationem</w> <w>P</w>, <w>venerabilis</w> <w>abbatis</w> <w>Sancti</w> <w>Juliani</w> <w>Turonensis</w>, <w>et</w> <w>ejusdem</w> <w>loci</w> <w>monachorum</w> <w>conventus</w>, <w>recepisse</w> <w>Richardum</w>, <w>clericum</w> <w>Turonensem</w>, <w>ipsumque</w> <w>instuisse</w> <w>personam</w> <w>ecclesie</w> <w>de</w> <w>Mevana</w> <w>ut</w> <w>eam</w> <w>possideat</w> <w>in</w> <w>perpetuam</w> <w>elemosinam</w>, <w>cum</w> <w>omnibus</w> <w>ad</w> <w>altagium</w> <w>pertinentibus</w> <w>et</w> <w>cum</w> <w>decima</w> <w>de</w> <w>Marrona</w> <w>in</w> <w>integrum</w>. <w>Dictus</w> <w>autem</w> <w lemmaRef="clericus">clericus</w>, <w>nomine</w> <w>annue</w> <w>pensionis</w>, <w>reddet</w> <w>abbati</w> <w>et</w> <w>conventui</w> <w>dicti</w> <w>monasterii</w> <w>in</w> <w>medio</w> <w>quadragesime</w> <w>annuatim</w> <w>quindecim</w> <w>solidos</w> <w>cenomanensis</w> <w>monete</w>. <w>Et</w> <w>ut</w> <w>id</w> <w>ratum</w> <w>perseveret</w> <w>in</w> <w>posterum</w>, <w>presentis</w> <w>scripti</w> <w>testimonio</w> <w>et</w> <w>sigilli</w> <w>nostri</w> <w>munimine</w> <w>confirmamus</w>. <w>Testibus</w>: <w>magistro</w> <w>Racin</w>, <w>cancellario</w>; <w>Henrico</w>, <w>precentore</w> <w>Baiocensi</w>; <w>Frode</w>, <w>archidiacono</w> <w>Baiocensi</w>; <w>Henrico</w> <w>de</w> <w>Aneriis</w>, <w>presbitero</w>; <w>Roberto</w> <w>de</w> <w>Aneriis</w>, <w>presbitero</w>, <w>et</w> <w>pluribus</w> <w>aliis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

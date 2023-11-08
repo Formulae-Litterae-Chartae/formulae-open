@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 61</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">70-71</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0061">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Donation à Marmoutier d'un clos de vigne, près la tour de Blois, faite par Gilduin, fils de Hervé, vicomte de Blois, pour satisfaire à la volonté de son père, qui s'étoit fait moine.»</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Grèneterie</p>
+         </div>
+         <dateline>Avant 1088<date notBefore="1000-01-01" notAfter="1088-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0061.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>CLAUSO</w> <w>VINEARUM</w> <w>APUD</w> <w>BLESIM</w> <w>SITO</w>, <w>QUEM</w> <w>DEDIT</w> <w>POST</w> <w>MORTEM</w> <w>SUAM</w> <w>GILDUINUS</w> <w>VICECOMES</w>. <w>BLESIS</w>.»</head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w> <w>maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>sancti</w> <w>Martini</w>, <w>notumque</w> <w>sit</w> <w>omnibus</w>, <w>quod</w> <w>Herueus</w>, <w>vicecomes</w> <w>Blesis</w>, <w>emit</w>, <w>longe</w> <w>antequam</w> <w>fieret</w> <w lemmaRef="monachus">monachus</w>, <w>quemdam</w> <w>clausum</w> <w>vinearum</w> <w>prope</w> <w>turrem</w> <w>Blesis</w>; <w>quem</w> <w>ipse</w> <w>quando</w> <w>factus</w> <w>est</w> <w lemmaRef="monachus">monachus</w> <w>reliquit</w> <w>filio</w> <w>suo</w> <w>Gilduino</w>, <w>tali</w> <w>pacto</w> <w>ut</w> <w>ille</w> <w>relinqueret</w> <w>eum</w> <w>post</w> <w>suum</w> <w>decessum</w> <w>sancto</w> <w>Martino</w> <w>maioris</w> <w>monasterii</w>. <w>Itaque</w> <w>Gilduinus</w> <w>antequam</w> <w>moreretur</w> <w>venit</w> <w>in</w> <w>capitulum</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>donavit</w> <w>supradictum</w> <w>clausum</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>monachis</w> <w>eius</w> <w>habendum</w> <w>solutum</w> <w>et</w> <w>quietum</w> <w>post</w> <w>mortem</w> <w>eius</w> <w>et</w> <w>reuestiuit</w> <w>inde</w> <w>monachos</w> <w>per</w> <w>unum</w> <w>modium</w> <w>vini</w> <w>quem</w> <w>pepigit</w> <w>se</w> <w>ex</w> <w>eo</w> <w>dare</w> <w>quotannis</w>. <w>Testes</w>: <w>Hemelinus</w> <w>de</w> <w>Magduno</w>, <w>Ingelbalbus</w> <w>de</w> <w>Ponte</w>, <w>Albertus</w> <w>pistor</w>, <w>Rainaldus</w> <w>pistor</w>, <w>Hilduinus</w> <w>sartor</w>, <w>Vaslinus</w> <w>cellararius</w>, <w>Rainardus</w> <w>de</w> <w>Lauarzino</w>, <w>Iohannes</w> <w>sartor</w>, <w>Durandus</w> <w>de</w> <w>Camera</w>, <w>Stephanus</w> <w>caprarius</w>. <w>Hanc</w> <w>donationem</w> <w>concessit</w> <w lemmaRef="comes">comes</w> <w>Tetbaldus</w>, <w>testibus</w> <w>istis</w>: <w>Gauffredo</w> <w>de</w> <w>Caluomonte</w>, <w>Teoderico</w> <w>de</w> <w>Auaziaco</w>, <w>Hugone</w> <w>preposito</w> <w>blesis</w>, <w>Horrigo</w> <w>rege</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

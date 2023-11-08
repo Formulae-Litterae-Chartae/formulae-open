@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 91</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">116-117</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0091">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Cirographe portant concession a Girard Rebotel, par Aimery, abbé Saint-Julien, d’un fief a Beaulieu.</p>
+         </div>
+         <dateline>1140-1156 01 29<date/>
+            <date notBefore="1140-01-01" notAfter="1156-01-29"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0091.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Donnus</w> <w lemmaRef="abbas">abbas</w> <w>Haimericus</w> <w>et</w> <w>commune</w> <w>capitulum</w> <w>Beati</w> <w>Juliani</w> <w>concesserunt</w> <w>Geraudo</w> <w>Rebotello</w> <w>quoddam</w> <w>feveium</w>, <w>apud</w> <w>Bellumloco</w>, <w>quod</w> <w>tenebant</w> <w>de</w> <w>comite</w>, <w>in</w> <w>vita</w> <w>tantummodo</w> <w>sua</w>, <w>ita</w> <w>ut</w> <w>per</w> <w>singulos</w> <w>annos</w> <w>in</w> <w>octabis</w> <w>Sancti</w> <w>Martini</w> <w>reddat</w> <w>pro</w> <w>eodem</w> <w>feveio</w> <w>XX</w><seg type="superscript "><w>ti</w></seg> <w>V</w><seg type="superscript "><w>que</w></seg> <w>solidos</w> <w>denariorum</w>. <w>Si</w> <w>vero</w> <w>aliquis</w> <w>in</w> <w>eodem</w> <w>feveio</w> <w>reclamare</w> <w>voluerit</w>, <w>adversus</w> <w>omnes</w> <w>homines</w> <w>et</w> <w>mulieres</w> <w lemmaRef="abbas">abbas</w> <w>et</w> <w>monachi</w> <w>erunt</w> <w>illi</w> <w>ajutores</w> <w>et</w> <w>defensores</w>; <w>et</w> <w>si</w> <w lemmaRef="abbas">abbas</w>, <w>et</w> <w>monachi</w> <w>feveium</w> <w>superius</w> <w>nominatum</w> <w>defendere</w> <w>ei</w> <w>non</w> <w>potuerint</w>, <w lemmaRef="abbas">abbas</w> <w>et</w> <w>monachi</w> <w>reddent</w> <w>Geraudo</w> <w>Rebotel</w> <w>omnia</w> <w>quecunque</w> <w>pro</w> <w>concessione</w> <w>ejusdem</w> <w>fevei</w> <w>dedit</w>. <w>Istius</w> <w>convencionis</w> <w>sunt</w> <w>ossides</w>: <w>Hainricus</w> <w>et</w> <w>Rainaudus</w>, <w>filius</w> <w>Rainaudi</w> <w>Frambaudi</w>. <w>Horum</w> <w>testes</w> <w>sunt</w>: <w>Ex</w> <w>parte</w> <w>abbatis</w> <w>et</w> <w>monachorum</w>: <w>Bertrannus</w>, <w>prepositus</w>; <w>Haimericus</w> <w>Bretello</w>; <w>Gauterius</w> <w>de</w> <w>Salmuro</w>; <w>Gaufredus</w> <w>Bigotus</w>; <w>Gossardus</w>, <w>cocus</w>; <w>Mazerinus</w>, <w>cocus</w>; <w>Calvinus</w>; <w>Aalardus</w>; <w>Rainaudus</w> <w>Pelegaudus</w>. <w>Ex</w> <w>parte</w> <w>Geraudo</w>: <w>Radulfus</w>; <w>Rabinus</w>; <w>Bartholomeus</w>; <w>Henricus</w>, <w>prepositus</w>; <w>Fulcherius</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

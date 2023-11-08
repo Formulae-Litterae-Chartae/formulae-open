@@ -1,0 +1,94 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 286</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">531 – 533</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0286">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Répartition du service de garde au château de Logue.</p>
+         </div>
+         <dateline>[Vers 1104]<date notBefore="1094-01-01" notAfter="1114-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0286.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Braz</w> <w>et</w> <w>ilia</w> <w>de</w> <w>Keren</w> <w>totum</w> <w>januarium</w> <w>debent</w>, <w>unam</w> <w>medietatem</w> <w>cum</w> <w>VI</w> <w>viris</w> <w>et</w> <w>alia</w> <w>aliam</w> <w>medietatem</w> <w>cum</w> <w>VI</w> <w>aliis</w> <w>viris</w>. <w>Miez</w> <w>et</w> <w>Ville</w> <w>unaqueque</w> <w>medietatem</w> <w>ejusdem</w> <w>mensis</w> <w>cum</w> <w>VI</w> <w>viris</w>. <w>Filii</w> <w>Johannis</w> <w>de</w> <w>Basunvile</w> <w>medietatem</w> <w>cum</w> <w>duobus</w> <w>viris</w>.</p>
+               <p xml:space="preserve"><w>Tumbes</w> <w>et</w> <w>Amblavia</w> <w>medietatem</w> <w>februarii</w> <w>cum</w> <w>XIIII</w> <w>viris</w>. <w>Ecclesia</w> <w>de</w> <w>Haneffe</w> <w>et</w> <w>medietas</w> <w lemmaRef="villa">villae</w> <w>et</w> <w>medietas</w> <w>aecclesie</w> <w>de</w> <w>Graises</w> <w>medietatem</w> <w>februarii</w> <w>cum</w> <w>VI</w> <w>viris</w>. <w>Kalueheis</w> <w>et</w> <w>Maneffais</w> <w>medietatem</w> <w>ejusdem</w> <w>mensis</w> <w>debet</w> <w>cum</w> <w>IIII</w> <w>viris</w>. <w>Ailgerus</w> <w>de</w> <w>Basunvile</w> <w>medietatem</w> <w>cum</w> <w>duobus</w> <w>viris</w>. <w>Filii</w> <w>Felerici</w> <w>medietatem</w> <w>cum</w> <w>duobus</w> <w>viris</w>. <w>Gislebertus</w> <w>et</w> <w>Widricus</w> <w>de</w> <w>Bone</w> <w>medietatem</w> <w>cum</w> <w>IIII</w> <w>viris</w>. <w>Gerlendus</w> <w>et</w> <w>Folcoldus</w> <w>medietatem</w> <w>cum</w> <w>IIII</w><seg type="superscript "><w>or</w></seg> <w>viris</w>.</p>
+               <p xml:space="preserve"><w>Reinboldus</w> <w>pro</w> <w>ecclesia</w> <w>de</w> <w>Lunnia</w> <w>et</w> <w>pro</w> <w>suo</w> <w>fiodo</w> <w>lotum</w> <w>martium</w> <w>debet</w> <w>cum</w> <w>VI</w> <w>viris</w>. <w>Arnulfus</w> <w>de</w> <w>Leodio</w> <w>et</w> <w>Nycholaus</w> <w>et</w> <w>Widricus</w> <w>de</w> <w>Longia</w> <w>totum</w> <w>martium</w> <w>cum</w> <w>VI</w> <w>viris</w>.</p>
+               <p xml:space="preserve"><w>Reinerus</w> <w>et</w> <w>filii</w> <w>Ratbodi</w> <w>et</w> <w>filius</w> <w>Warneri</w> <w>debent</w> <w>XII</w> <w>viros</w> <w>tota</w> <w>aprili</w>. <w>Odulfus</w> <w>medietatem</w> <w>maii</w> <w>debet</w> <w>cum</w> <w>uno</w> <w>viro</w>. <w>Godefridus</w> <w>de</w> <w>Basunvile</w> <w>pro</w> <w>ecclesia</w> <w>de</w> <w>Otreis</w> <w>dimidium</w> <w>mayum</w> <w>cum</w> <w>II</w> <w>viris</w>. <w>Walterus</w> <w>de</w> <w>Dauerices</w> <w>et</w> <w>Theodericus</w> <w>de</w> <w>Baldon</w> <w>cum</w> <w>duobus</w> <w>viris</w> <w>totum</w> <w>maium</w>. <w>Filii</w> <w>Albrici</w> <w>et</w> <w>filii</w> <w>Hecilini</w> <w>de</w> <w>Lerno</w> <w>totum</w> <w>mayum</w> <w>cum</w> <w>II</w> <w>viris</w>. <w>Emmo</w> <w>de</w> <w>Almaz</w> <w>pro</w> <w>patre</w> <w>suo</w> <w>unam</w> <w>medietatem</w> <w>ejusdem</w> <w>mensis</w> <w>cum</w> <w>uno</w> <w>viro</w>, <w>et</w> <w>aliam</w> <w>medietatem</w> <w>pro</w> <w>uxore</w> <w>sua</w> <w>cum</w> <w>uno</w> <w>viro</w>. <w>Albertus</w> <w>de</w> <w>Veruoi</w> <w>medietatem</w> <w>solus</w>. <w>Alter</w> <w>Albertus</w> <w>medietatem</w> <w>solus</w>. <w>Bescelo</w> <w>de</w> <w>Fai</w> <w>medietatem</w> <w>solus</w>. <w>Rogardus</w> <w>de</w> <w>Almaz</w> <w>medietatem</w> <w>solus</w>. <w>Albertus</w>, <w>Everardus</w> <w>et</w> <w>Gozeis</w> <w>et</w> <w>Benzo</w> <w>totum</w> <w>mensem</w> <w>cum</w> <w>III</w> <w>viris</w>. <w>Benzelinus</w> <w>et</w> <w>Godefridus</w> <w>duo</w> <w>fratres</w> <w>medietatem</w> <w>soli</w>. <w>Petrus</w> <w>de</w> <w>Lerno</w> <w>et</w> <w>Obelinus</w> <w>medietatem</w> <w>soli</w>. <w>Adelardus</w> <w>de</w> <w>Fosses</w> <w>medietatem</w> <w>solus</w>. <w>Heribrandus</w> <w>et</w> <w>Erleboldus</w> <w>medietatem</w> <w>soli</w>. <w>Robertus</w> <w>de</w> <w>Longia</w> <w>per</w> <w>se</w> <w>solum</w> <w>tres</w> <w>dies</w> <w>de</w> <w>maio</w>.</p>
+               <p xml:space="preserve"><w>Cuono</w> <w>de</w> <w>Verine</w> <w>pro</w> <w>Hauersen</w> <w>et</w> <w>pro</w> <w>Braibentel</w> <w>dimidium</w> <w>junium</w> <w>cum</w> <w>X</w> <w>viris</w>. <w>Godefridus</w> <w>et</w> <w>Boso</w> <w>et</w> <w>Widricus</w> <w>de</w> <w>Basunvile</w> <w>dimidium</w> <w>cum</w> <w>IIII</w> <w>viris</w>. <w>Filii</w> <w>Stephani</w> <w>dimidium</w> <w>cum</w> <w>IIII</w> <w>viris</w> <w>pro</w> <w>Erclai</w>. </p>
+               <p xml:space="preserve"><w>Cuono</w> <w>et</w> <w>Hiliinus</w> <w>de</w> <w>Buslers</w> <w>et</w> <w>filii</w> <w>Radulfi</w> <w>de</w> <w>Ligneis</w> <w>totum</w> <w>julium</w> <w>cum</w> <w>XII</w> <w>viris</w>.</p>
+               <p xml:space="preserve"><w>Rogerus</w> <w>de</w> <w>Tomines</w> <w>totum</w> <w>augustum</w> <w>cum</w> <w>XII</w> <w>viris</w>. <w>Emundus</w> <w>de</w> <w>Buslecs</w> <w>totum</w> <w>augustum</w> <w>cum</w> <w>IIII</w> <w>viris</w>. <w>Robertus</w> <w>de</w> <w>Lungia</w> <w>totum</w> <w>eundem</w> <w>mensem</w> <w>cum</w> <w>III</w> <w>viris</w>. <w>Haymo</w> <w>et</w> <w>Gisla</w> <w>de</w> <w>Holdricamp</w> <w>totum</w> <w>cum</w> <w>III</w> <w>viris</w>.</p>
+               <p xml:space="preserve"><w>Reinerus</w> <w>et</w> <w>filii</w> <w>Ratbodi</w> <w>et</w> <w>Raddo</w> <w>filius</w> <w>Warneri</w> <w>tres</w> <w>septimanas</w> <w>de</w> <w>septembrio</w> <w>cum</w> <w>XII</w> <w>viris</w>. <w>Franco</w>, <w>Anselmus</w>, <w>Adelardus</w> <w>fratres</w> <w>debent</w> <w>VII</w> <w>dies</w> <w>ejusdem</w> <w>mensis</w> <w>cum</w> <w>XII</w> <w>viris</w>. </p>
+               <p xml:space="preserve"><w>Rogerus</w> <w>de</w> <w>Bosleis</w> <w>per</w> <w>totum</w> <w>octobrem</w> <w>XII</w> <w>homines</w>. <w>Cuono</w> <w>de</w> <w>Ham</w> <w>pro</w> <w>Halentine</w> <w>dimidium</w> <w>octobrem</w> <w>cum</w> <w>VI</w> <w>viris</w>. </p>
+               <p xml:space="preserve"><w>Liuzo</w> <w>et</w> <w>Theodericus</w> <w>et</w> <w>Adelardus</w> <w>de</w> <w>Baldau</w> <w>dimidium</w> <w>novembrem</w> <w>debent</w> <w>cum</w> <w>XII</w> <w>viris</w>. <w>Franco</w> <w>et</w> <w>Anselmus</w> <w>fratres</w> <w>dimidium</w> <w>novembrem</w> <w>cum</w> <w>XII</w> <w>viris</w> <w>d’Otreis</w>. </p>
+               <p xml:space="preserve"><w>Robertus</w> <w>de</w> <w>Longia</w> <w>totum</w> <w>decembrem</w> <w>cum</w> <w>VI</w> <w>viris</w>. <w>Haymo</w> <w>et</w> <w>Gisla</w> <w>de</w> <w>Holdricamp</w> <w>totum</w> <w>decembrem</w> <w>cum</w> <w>VI</w> <w>viris</w>. </p>
+               <p xml:space="preserve"><w>Cuono</w> <w>de</w> <w>Longia</w> <w>pro</w> <w>uxore</w> <w>sua</w> <w>et</w> <w>Cuno</w> <w>et</w> <w>Gerardus</w> <w>et</w> <w>Elbertus</w> <w>de</w> <w>Vellana</w> : <w>isti</w> <w>debent</w> <w>dimidio</w> <w>junio</w> <w>suam</w> <w>custodiam</w>. </p>
+               <p xml:space="preserve"><w>Godefridus</w> <w>de</w> <w>Orcismunt</w> <w>pro</w> <w>ecclesia</w> <w>de</w> <w>Oiseis</w> <w>debet</w> <w>XV</w> <w>dies</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

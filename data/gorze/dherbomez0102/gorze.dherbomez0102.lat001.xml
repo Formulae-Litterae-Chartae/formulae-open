@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 102</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">188</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0102">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Gerongus vend à l'abbaye de Gorze la terre qu'il possède sur les rives de l'Orne, entre Beaumont et Laneutville.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Gorze</p>
+         </div>
+         <dateline>946<date notBefore="0946-01-01" notAfter="0946-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0102.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>DE</w> <w>TERRA</w> <w>QUAM</w> <w>VENDIDIT</w> <w>GERUNGUS</w>.</head>
+               <p xml:space="preserve"><w>Magnifico</w> <w>in</w> <w>Christo</w> <w>fratri</w> <w>Aginaldo</w>, <w>abbati</w>, <w>et</w> <w>preposito</w> <w>eius</w> <w>Odolberto</w>, <w>pariter</w> <w>emptoribus</w>, <w>ego</w> <w>itaque</w> <w>Gerongus</w>, <w>venditor</w>. <w>Mea</w> <w>spontanea</w> <w>voluntate</w> <w>constat</w> <w>me</w> <w>vendidisse</w> <w>terram</w> <w>ex</w> <w>proprio</w> <w>meo</w>, <w>super</w> <w>fluvium</w> <w>qui</w> <w>dicitur</w> <w>Orna</w>, <w>inter</w> <w>Montem</w> <w>Bivonis</w> <w>et</w> <w>Langei</w> <w lemmaRef="villa">villa</w>. <w>Ex</w> <w>uno</w> <w>latere</w> <w>tenet</w> <w lemmaRef="sanctus">Sanctus</w> <w>Gorgonius</w> <w>et</w> <w>ex</w> <w>altero</w> <w lemmaRef="sanctus">Sanctus</w> <w>Martinus</w>, <w>ex</w> <w>media</w> <w>fronte</w> <w>predictus</w> <w>Gerongus</w>. <w>Et</w> <w>accepi</w> <w>a</w> <w>vobis</w> <w>precium</w> <w>sicut</w> <w>inter</w> <w>nos</w> <w>placuit</w> <w>atque</w> <w>convenit</w>, <w>hoc</w> <w>est</w> <w>in</w> <w>argento</w> <w>solidos</w> <w>XV</w>; <w>ea</w> <w>ratione</w> <w>ut</w> <w>post</w> <w>hune</w> <w>diem</w> <w>habeatis</w> <w lemmaRef="ius">ius</w> <w>habendi</w>, <w>tenendi</w>, <w>vendendi</w>, <w>commutandi</w>, <w>donandi</w>, <w>vel</w> <w>quicquid</w> <w>exinde</w> <w>elegeritis</w> <w>faciendi</w> <w>liberam</w> <w>et</w> <w>firmissimam</w> <w>in</w> <w>omnibus</w> <w>habeatis</w> <w>potestatem</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>de</w> <w>heredibus</w> <w>vel</w> <w>proheredibus</w> <w>meis</w> <w>hanc</w> <w>venditionem</w> <w>a</w> <w>me</w> <w>factam</w> <w>infringere</w> <w>temptaverit</w>, <w>centenos</w> <w>proinde</w> <w>siclos</w> <w>persolvat</w>, <w>et</w> <w>deinceps</w> <w>nec</w> <w>ego</w> <w>nec</w> <w>aliquis</w> <w lemmaRef="heres">heres</w> <w>meus</w> <w>ea</w> <w>fruatur</w>. <w>Et</w> <w>ut</w> <w>hec</w> <w lemmaRef="venditio">venditio</w> <w>firma</w> <w>permaneat</w>, <w>manu</w> <w>propria</w> <w>ipsam</w> <w>firmavi</w>, <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>Gorzie</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>quo</w> <w>supra</w>. <w>Signum</w> <w>Gerongi</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>fieri</w> <w>et</w> <w>firmare</w> <w>rogavit</w>; † <w>Gontranni</w>; † <w>Engizonis</w> <w>diaconi</w>; † <w>Haimonis</w>; † <w>Errebaldi</w>; † <w>Bosonis</w>; † <w>Girardi</w>; † <w>Milonis</w>; † <w>Hadewardi</w>; † <w>Gamutii</w>; † <w>Stephani</w> ; † <w>Geltranni</w>; † <w>Geomari</w>; † <w>lneri</w>; † <w>Tietmari</w>; † <w>Warcheri</w>; † <w>Gisleranni</w>; † <w>Gainardi</w>; † <w>domni</w> <w>abbatis</w> <w>Aginaldi</w>; † <w>Odolberti</w> <w>prepositi</w>; † <w>Randici</w> <w>decani</w>; † <w>Everberti</w> <w>custodis</w>; † <w>Teutheri</w> ; † <w>Winemanni</w>; † <w>Erchengeri</w>; † <w>Bernacri</w>. <w>Signum</w> <w>Rainelmi</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>scripsit</w> <w>et</w> <w>subscripsit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

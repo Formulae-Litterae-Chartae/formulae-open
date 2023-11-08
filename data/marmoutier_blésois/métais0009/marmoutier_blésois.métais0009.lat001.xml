@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 9</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">15-16</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0009">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Salomon de Lavardin et Adèle sa femme donnent à Marmoutier et à l'église de Saint-Gildéric qu'ils ont fondée sur les bords du Loir, deux fours dans le village de Fergoz, la terre de Saint-Genès, des vignes et des prés sur la Braye; ils affranchissent ces terres et toutes celles que les moines pourront acquérir de tous droits féodaux, à l'exception de la connaissance en justice du rapt et de l’homicide.</p>
+            <p xml:space="preserve">En 1207, Jean, comte de Vendôme et seigneur de Lavardin, confirme cette donatio.</p>
+         </div>
+         <dateline>1032-1060 et 1207
+            <date notBefore="1032-01-01" notAfter="1060-12-31"/>
+            <date notBefore="1207-01-01" notAfter="1207-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0009.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>DONATIONIBUS</w> <w>SALOMONIS</w> <w>DE</w> <w>QUIBUSDAM</w> <w>TERRIS</w> <w>ET</w> <w>DE</w> <w>JUSTITIA</w>, <w>QUAS</w> <w>APPROBAT</w> <w>JOHANNES</w> <w lemmaRef="comes">COMES</w> <w>VINDOCINENSIS</w>.</head>
+               <p xml:space="preserve"><w>Quoniam</w> <w>labilis</w> <w>est</w> <w>hominum</w> <w>memoria</w> <w>et</w> <w>brevis</w> <w>etas</w>, <w>iccirco</w> <w>tam</w> <w>futurorum</w> <w>quam</w> <w>presentium</w> <w>memorie</w>, <w>notum</w> <w>fieri</w> <w>desideramus</w>, <w>quod</w> <w>ego</w> <w>Salomon</w> <w>et</w> <w>uxor</w> <w>mea</w> <w>Adela</w>, <w>concedentibus</w> <w>filiabus</w> <w>nostris</w> <w>Matilde</w> <w>et</w> <w>Auelina</w>, <w>in</w> <w>nostrorum</w> <w>remissionem</w> <w>peccatorum</w>, <w>dedimus</w> <w>concessimus</w> <w>et</w> <w>assignavimus</w> <w>ecclesie</w> <w>beati</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w> <w>Turonensis</w>, <w>quamdam</w> <w>terram</w> <w>ex</w> <w>canonicis</w> <w>beati</w> <w>Georgii</w> <w>comparatam</w>, <w>super</w> <w>fluvium</w> <w>Lidi</w> <w>sitam</w>. <w>In</w> <w>qua</w> <w>scilicet</w> <w>terra</w> <w>construximus</w> <w>ecclesiam</w> <w>in</w> <w>honore</w> <w>beati</w> <w>Gilderici</w> <w>confesoris</w>, <w>cui</w> <w>ecclesie</w> <w>de</w> <w>nostris</w> <w>propriis</w> <w>donavimus</w> <w>duos</w> <w>furnos</w> <w>et</w> <w>unam</w> <w>masuram</w> <w>in</w> <w>illa</w> <w lemmaRef="villa">villa</w>, <w>que</w> <w>vocatur</w> <w>Fergoz</w> <w>et</w> <w>in</w> <w>terra</w> <w>sancti</w> <w>Genesii</w> <w>terram</w> <w>ad</w> <w>unum</w> <w>modium</w> <w>et</w> <w>dimidum</w> <w>sementis</w>. <w>De</w> <w>vineis</w> <w>dedimus</w> <w>tres</w> <w>arpennos</w>, <w>de</w> <w>pratis</w> <w>vero</w> <w>duos</w> <w>arpennos</w>, <w>super</w> <w>aquam</w> <w>que</w> <w>appellatur</w> <w>Breia</w>. <w>Que</w> <w>omnia</w> <w>libere</w> <w>et</w> <w>quiete</w>, <w>nemine</w> <w>contradicente</w>, <w>comparatione</w> <w>legitima</w>, <w>censualiter</w> <w>tenemus</w> <w>atque</w> <w>possidemus</w>. <w>Hec</w> <w>autem</w> <w>omnia</w> <w>in</w> <w>integrum</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>in</w> <w>posterum</w>, <w>pro</w> <w>redemptione</w> <w>animarum</w> <w>nostrarum</w>, <w>dedimus</w> <w>supradicto</w> <w>loco</w> <w>Beatissimi</w> <w>Martini</w> <w>et</w> <w>monachis</w> <w>ibidem</w> <w>degentibus</w>, <w>in</w> <w>perpetuum</w> <w>possidenda</w>. <w>Adhuc</w> <w>autem</w> <w>ego</w> <w>Salomon</w> <w>et</w> <w>Adela</w> <w>uxor</w> <w>mea</w>, <w>concedentibus</w> <w>filiabus</w> <w>nostris</w> <w>Mathilde</w> <w>et</w> <w>Auelina</w>, <w>donavimus</w> <w>iam</w> <w>dictis</w> <w>monachis</w> <w>omne</w> <w>quod</w> <w>est</w> <w>in</w> <w>feodo</w> <w>nostro</w> <w>vel</w> <w>in</w> <w>aliis</w> <w>locis</w> <w>datum</w>, <w>vel</w> <w>venditum</w> <w>fuerit</w> <w>ab</w> <w>omnibus</w> <w>hominibus</w> <w>meis</w>, <w>tam</w> <w>militibus</w> <w>quam</w> <w>aliis</w>, <w>exceptis</w> <w>tantummodo</w> <w>hominibus</w> <w>meis</w> <w>propriis</w> <w>servilis</w> <w>conditionis</w>. <w>De</w> <w>tota</w> <w>autem</w> <w>terra</w> <w>quam</w> <w>dedi</w> <w>supradictis</w> <w>monachis</w> <w>sive</w>, <w>ut</w> <w>dictum</w> <w>est</w>, <w>quam</w> <w>donatione</w> <w>vel</w> <w>emptione</w>, <w>vel</w> <w>quolibet</w> <w>alio</w> <w>modo</w> <w>acquierere</w> <w>poterint</w>, <w>habeant</w> <w>in</w> <w>perpetuum</w> <w>monachi</w> <w>ipsi</w> <w>omnes</w> <w>consuetudines</w> <w>et</w> <w>forisfacta</w>, <w>excepto</w> <w>quod</w> <w lemmaRef="raptus">raptus</w> <w>et</w> <w lemmaRef="homicidium">homicidium</w> <w>domino</w> <w>remanebunt</w>. <w>Omnia</w> <w>autem</w> <w>hec</w> <w>monachis</w> <w>integerrime</w> <w>devolverunt</w>, <w>bella</w> <w>siquidem</w> <w>dum</w> <w>in</w> <w>monachorum</w> <w lemmaRef="curia">curia</w> <w>iudicabantur</w>, <w>ibidem</w> <w>fine</w> <w>debito</w> <w>terminabuntur</w>. <w>Ea</w> <w>autem</w> <w>ratione</w> <w>predicta</w> <w>monachis</w> <w>dedimus</w> <w>ut</w> <w>memoriam</w> <w>nostri</w> <w>in</w> <w>suis</w> <w>orationibus</w> <w>et</w> <w>pro</w> <w>nobis</w> <w>peccatoribus</w> <w>Dei</w> <w>clementiam</w> <w>exorent</w>. <w>Si</w> <w>autem</w> <w>aliquis</w> <w>ex</w> <w>fratibus</w> <w>et</w> <w>sororibus</w> <w>vel</w> <w>nepotibus</w> <w>seu</w> <w>propinquis</w>, <w>aut</w> <w>aliquis</w> <w>alius</w> <w>hanc</w> <w>donationem</w>, <w>quam</w> <w>libera</w> <w>mente</w> <w>et</w> <w>propria</w> <w>voluntate</w> <w>ex</w> <w>rebus</w> <w>nostris</w> <w>facimus</w>, <w>aliquo</w> <w>modo</w> <w>calupniare</w> <w>temptaverit</w>, <w>indignationem</w> <w>Dei</w> <w>omnipotentis</w> <w>et</w> <w>sacrosancte</w> <w>Romane</w> <w>Ecclesie</w> <w>et</w> <w>omnium</w> <w>sanctorum</w> <w>Dei</w> <w>se</w> <w>sentiat</w> <w>incursurum</w>. <w>Ut</w> <w>autem</w> <w>hec</w> <w lemmaRef="donatio">donatio</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>et</w> <w>rata</w> <w>in</w> <w>perpetuum</w> <w>permaneat</w>, <w>quam</w> <w>antecessores</w> <w>mei</w> <w>mente</w> <w>benigna</w> <w>fecerunt</w>, <w>ego</w> <w>Johannes</w> <w lemmaRef="comes">comes</w> <w>uindocinensis</w> <w>et</w> <w>Lauardini</w> <w lemmaRef="dominus">dominus</w> <w>presentem</w> <w>cartam</w> <w>sigilli</w> <w>mei</w> <w>munimine</w> <w>roboravi</w>. <w>Actum</w> <w>anno</w> <w>gratie</w> <w>millesimo</w> <w>ducentesimo</w> <w>septimo</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

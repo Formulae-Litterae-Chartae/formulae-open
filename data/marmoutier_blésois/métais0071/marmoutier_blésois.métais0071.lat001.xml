@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 71</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">82-83</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0071">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Agnes, femme de Guarin, et Hildebert son fils aîné, reconnaissent, par le dépôt d'un couteau sur l'autel, les droits de propriété de l'abbaye de MM. sur leur bourg à Vendôme.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Lavardin</p>
+         </div>
+         <dateline>1097<date notBefore="1097-01-01" notAfter="1097-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0071.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>NOTICIA</w> <w>DE</w> <w>BURGO</w> <w>UINDOCINENSI</w> - <w>DE</w> <w>LAVARDINO</w>.»</head>
+               <p xml:space="preserve"><w>Litterali</w> <w>noticia</w> <w>successoribus</w> <w>nostris</w> <w>tradere</w> <w>curavimus</w>, <w>quod</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>millesimo</w> <w>nonagesimo</w> <w>septimo</w>, <w>recuperavimus</w>, <w>justicia</w> <w>exigente</w>, <w>quicquid</w>, <w>Guarinus</w> <w>Fulmerii</w> <w>filius</w> <w>eiusque</w> <w>successores</w>, <w>de</w> <w>terra</w> <w>illa</w> <w>in</w> <w>qua</w> <w>apud</w> <w>Uindocinum</w> <w>burgum</w> <w>habemus</w>, <w>tenuerunt</w>. <w>Quia</w> <w>enim</w> <w>ipse</w> <w>Guarinus</w> <w>terram</w> <w>sancti</w> <w>dum</w> <w>inde</w> <w>esset</w> <w>serviens</w> <w>sibi</w> <w>fraudulenter</w> <w>retinuerat</w>, <w>ipso</w> <w>iam</w> <w>defuncto</w>, <w>Agnes</w> <w>uxor</w> <w>eius</w> <w>et</w> <w>Hildebertus</w> <w>eorum</w> <w>senior</w> <w>filius</w>, <w>Goffredi</w> <w>prulliacencis</w> <w>tunc</w> <w>vindocinensis</w> <w>comitis</w> <w>suorumque</w> <w>judicio</w> <w>coacti</w> <w>sunt</w> <w>recognoscere</w> <w>se</w> <w>iniuste</w> <w>terram</w> <w>sancti</w> <w>possidere</w>, <w>dum</w> <w>absque</w> <w>generalis</w> <w>capituli</w> <w>auctoramento</w>, <w>immo</w> <w>monachis</w> <w>semper</w> <w>calumpniantibus</w>, <w>eam</w> <w>tam</w> <w>ipse</w> <w>Guarinus</w> <w>quam</w> <w>et</w> <w>ipsi</w> <w>tenuerant</w>. <w>Acceptis</w> <w>itaque</w> <w>a</w> <w>domino</w> <w>Radulfo</w> <w>tunc</w> <w>lauarzinensis</w> <w>cellae</w> <w>priore</w> <w>novem</w> <w>libris</w>, <w>super</w> <w>omnibus</w> <w>que</w> <w>inibi</w> <w>habuerant</w> <w>gratanter</w> <w>guirppium</w> <w>fecerunt</w>, <w>per</w> <w>quemdam</w> <w>cultellum</w> <w>qui</w> <w>et</w> <w>ob</w> <w>hoc</w> <w>per</w> <w>plurimos</w> <w>annos</w> <w>apud</w> <w>Lauarzinum</w> <w>in</w> <w>testimonium</w> <w>guirpi</w> <w>illius</w> <w>servatus</w> <w>est</w>. <w>Hanc</w> <w>guirpitionem</w> <w>et</w> <w>totam</w> <w>convenientiam</w> <w>viderunt</w> <w>et</w> <w>audierunt</w> <w>quamplurimi</w>, <w>ex</w> <w>quibus</w> <w>sufficiant</w> <w>in</w> <w>testimonium</w> <w>tam</w> <w>ex</w> <w>nostra</w> <w>quam</w> <w>ex</w> <w>eorum</w> <w>parte</w>, <w>Salomon</w> <w>de</w> <w>Fracta</w> <w>valle</w>, <w>Harduinus</w> <w>de</w> <w>Ponte</w>, <w>Hugo</w> <w>de</w> <w>Martiniaco</w>. <w>Martinus</w> <w>famulus</w>. <w>Herueth</w> <w>filiaster</w> <w>eius</w>, <w>Engelardus</w> <w>famulus</w>, <w>Alcherius</w> <w>de</w> <w>Lauarzino</w>, <w>Galterius</w> <w>nutricius</w>, <w>qui</w> <w>quia</w> <w>eorum</w> <w>consanguineus</w> <w>dicebatur</w>, <w>decem</w> <w>solidos</w> <w>ut</w> <w>auctoraret</w> <w>haec</w> <w>que</w> <w>retulimus</w> <w>a</w> <w>nobis</w> <w>habuit</w>. <w>Quibus</w> <w>ab</w> <w>omnibus</w> <w>concorditer</w> <w>auctoratis</w> <w>tam</w> <w>Agnes</w> <w>mater</w> <w>quam</w> <w>Hildebertus</w> <w>filius</w> <w>eius</w> <w>Lauarzinum</w> <w>aduierunt</w>, <w>sicut</w> <w>pepigerant</w>; <w>ibique</w> <w>in</w> <w>capitulo</w> <w>totam</w> <w>convenientiam</w> <w>superius</w> <w>scriptam</w> <w>multis</w> <w>ibidem</w> <w>assistentibus</w>, <w>reauctoraverunt</w>. <w>Acceptoque</w> <w>ibi</w> <w>sancti</w> <w>Martini</w> <w>benefacto</w> <w>fratrumque</w> <w>societate</w>, <w>cultellum</w> <w>cum</w> <w>quo</w> <w>Uindocini</w> <w>guirpium</w> <w>fecerant</w> <w>accepientes</w>, <w>propriisque</w> <w>manibus</w> <w>portantes</w> <w>super</w> <w>altare</w> <w>obtulerant</w> ..…….. <w>scilicet</w> <w>restituentes</w> <w>sancto</w> <w>quod</w> <w>de</w> <w>suo</w> <w>iniuste</w> <w>possederant</w>. <w>Horum</w> <w>nichilominus</w> <w>testes</w> <w>extiterunt</w>: <w>Salomon</w> <w>de</w> <w>Fracta</w> <w>valle</w>, <w>Hugo</w> <w>de</w> <w>Martiniaco</w>, <w>Harduinus</w> <w>de</w> <w>Ponte</w>, <w>Hugo</w> <w>britellus</w>, <w>Martinus</w> <w>et</w> <w>Ledbertus</w> <w>famuli</w> <w>multique</w> <w>alii</w>. <w>His</w> <w>autem</w> <w>quae</w> <w>retulimus</w> <w>non</w> <w>interfuerant</w> <w>alii</w> <w>duo</w> <w>filii</w> <w>prefati</w> <w>Guarini</w>, <w>Wlgrinus</w> <w>scilicet</w> <w>et</w> <w>Rainaldus</w>. <w>Quos</w> <w>Turonis</w> <w>commorantes</w> <w>in</w> <w>castello</w> <w>novo</w> <w>adivimus</w>. <w>Ubi</w> <w>et</w> <w>ipsi</w> <w>in</w> <w>sancti</w> <w>Martini</w> <w>domo</w>, <w>presente</w> <w>etiam</w> <w>matre</w>, <w>ibi</w> <w>maioris</w> <w>monasterii</w> <w>benefacto</w> <w>a</w> <w>tribus</w> <w>monachis</w>, <w>quos</w> <w>ad</w> <w>hoc</w> <w lemmaRef="dominus">dominus</w> <w>Bernardus</w> <w lemmaRef="abbas">abba</w> <w>ex</w> <w>consensu</w> <w>capituli</w> <w>illuc</w> <w>transmiserat</w>, <w>accepto</w>, <w>reauctoraverunt</w> <w>gratanter</w> <w>totam</w> <w>convenientiam</w> <w>quam</w> <w>cum</w> <w>matre</w> <w>ipsorum</w> <w>et</w> <w>fratre</w> <w>feceramus</w>. <w>Huic</w> <w>vero</w> <w>terciae</w> <w>auctorationi</w> <w>interfuerunt</w> <w>monachi</w> <w>qui</w> <w>ad</w> <w>dandum</w> <w lemmaRef="beneficium">beneficium</w> <w>missi</w> <w>fuerant</w>: <w>Riuallonius</w> <w>scilicet</w> <w>sacrista</w>, <w>Matheus</w> <w>Mathei</w> <w>de</w> <w>aureo</w> <w>monte</w> <w>filiaster</w>, <w>Petrusque</w> <w>britannus</w>. <w>Laici</w> <w>quoque</w> <w>ad</w> <w>fuerunt</w> <w>quorum</w> <w>nomina</w> <w>subterscribuntur</w>: <w>Radulfus</w> <w>popinus</w> <w>Alberti</w> <w>de</w> <w>Malfemer</w>, <w>Johannes</w> <w>gibertus</w>, <w>Ebulo</w> <w>Mercator</w>, <w>Galterius</w> <w>cambiator</w>, <w>Guido</w> <w>pedferre</w>, <w>Vitalis</w> <w>guineherius</w>, <w>Arraldus</w> <w>de</w> <w lemmaRef="cella">Cella</w>, <w>Rainaldus</w>, <w>Goscelinus</w> <w>corduanarius</w>, <w>Garellus</w> <w>merchator</w>, <w>Holdoinus</w> <w>cellerarius</w>, <w>Johannes</w> <w>cellararius</w>. <w>Rotbertus</w> <w>tort</w> <w>chapel</w>, <w>Ascelinus</w> <w>Carpentarius</w>, <w>Stephanus</w> <w>blanchet</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

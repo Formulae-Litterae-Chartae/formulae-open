@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 50</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">89</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0050">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Fredaluus et sa femme Blitgia donnent à l'abbaye de Gorze leurs biens de Rembercourt-sur-Mad, Jaulny et Charey.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Gorze</p>
+         </div>
+         <dateline>848<date notBefore="0848-01-01" notAfter="0848-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0050.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>IN</w> <w lemmaRef="villa">VILLA</w> <w>RAIMBERTI</w> <w>CURTE</w>.</head>
+               <p xml:space="preserve"><w>Nos</w> <w>itaque</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w>Fredaluus</w>, <w>et</w> <w lemmaRef="coniugium">coniunx</w> <w>sua</w> <w>Blitgia</w>, <w>pariter</w> <w>cogitantes</w> <w>pro</w> <w>anime</w> <w>nostre</w> <w>remedio</w> <w>vel</w> <w>etema</w> <w>retributione</w> <w>ut</w> <w>veniam</w> <w>de</w> <w>peccatis</w> <w>nostris</w> <w>consequi</w> <w>mereamur</w> <w>in</w> <w>futuro</w>, <w>donamus</w> <w>res</w> <w>nostras</w>, <w>donatumque</w> <w>in</w> <w>perpetuum</w> <w>esse</w> <w>volumus</w>, <w>et</w> <w>promtissima</w> <w>voluntate</w> <w>confirmamus</w> <w>ad</w> <w>partem</w> <w>sancti</w> <w>Stephani</w> <w>et</w> <w>sancti</w> <w>Petri</w> <w>vel</w> <w>sancti</w> <w>Gorgonii</w>, <w>vel</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>quod</w> <w>vocatur</w> <w>Gorzia</w>, <w>ubi</w> <w lemmaRef="dominus">domnus</w> <w>Drogo</w>, <w lemmaRef="gratia">gratia</w> <w>Dei</w> <w>archiepiscopus</w> <w>atque</w> <w lemmaRef="abbas">abbas</w>, <w>preesse</w> <w>videtur</w>, <w>vel</w> <w>cuncta</w> <w lemmaRef="congregatio">congregatio</w> <w>monacorum</w> <w>fungunt</w> <w>officio</w>, <w>hoc</w> <w>est</w> <w>res</w> <w>nostras</w> <w>in</w> <w>pago</w> <w>Scarponinse</w>, <w>in</w> <w>fine</w> <w>Raginbertiaca</w>, <w>vel</w> <w>in</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>Raginberto</w> <w>curte</w>, <w>hoc</w> <w>est</w> <w>duos</w> <w>mansos</w> <w>vestitos</w>, <w>et</w> <w>alios</w> <w>duos</w> <w>mansos</w>, <w>et</w> <w>vineas</w> <w>duas</w>, <w>et</w> <w>farinarium</w> <w>unum</w>, <w>et</w> <w>de</w> <w>aliis</w> <w>rebus</w> <w>in</w> <w>ipsa</w> <w>fine</w> <w>Ragimbertiaca</w>, <w>et</w> <w>in</w> <w>fine</w> <w>Caderecinse</w>, <w>et</w> <w>in</w> <w>fine</w> <w>Galliniaga</w>, <w>inde</w> <w>sunt</w> <w>campi</w>, <w>et</w> <w>silve</w>, <w>et</w> <w>terre</w> <w>arabiles</w> <w>ad</w> <w>ipsos</w> <w>IIII</w> <w>mansos</w>, <w>ad</w> <w>unumquemque</w> <w lemmaRef="mansus">mansum</w> <w>iurnales</w> <w>LX</w>, <w>una</w> <w>cum</w> <w>terminis</w> <w>et</w> <w>lateranibus</w> <w>eorum</w>, <w>quicquid</w> <w>ab</w> <w>hac</w> <w>die</w> <w>ibidem</w> <w>visi</w> <w>sumus</w> <w>habere</w>, <w>totum</w> <w>in</w> <w>integrum</w>, <w>et</w> <w>in</w> <w>ipsas</w> <w>fines</w> <w>de</w> <w>prato</w> <w>ad</w> <w>fenum</w> <w>faciendum</w> <w>ad</w> <w>carradas</w> <w>XII</w>, <w>et</w> <w>mancipia</w> <w>VI</w> <w>his</w> <w>nominibus</w> : <w>Agnero</w>, <w>Angleero</w>, <w>Autgario</w>, <w>Ratmerane</w>, <w>Anslint</w>, <w>Theutgart</w>. <w>Ista</w> <w>omnia</w> <w>superius</w> <w>nominata</w>, <w>ita</w> <w>ut</w> <w>quicquid</w> <w>pars</w> <w>ipsius</w> <w>monasterii</w> <w>exinde</w> <w>elegerint</w> <w>faciendum</w>, <w>liberam</w> <w>habeant</w> <w>potestatem</w> <w>faciendi</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>nos</w> <w>ipsi</w> <w>aut</w> <w>ullus</w> <w>de</w> <w>heredibus</w> <w>nostris</w>, <w>contra</w> <w>hoc</w> <w lemmaRef="testamentum">testamentum</w> <w>venire</w> <w>temptaverit</w>, <w>aut</w> <w>eum</w> <w>frangere</w> <w>voluerit</w>, <w>inferat</w> <w>ei</w> <w>contra</w> <w>ipsam</w> <w>casam</w> <w>Dei</w>, <w>sancti</w> <w>Stephani</w> <w>vel</w> <w>cos</w> <w>tores</w> <w>auri</w> <w>libram</w> <w>unam</w>, <w>argenti</w> <w>pondera</w> <w>duo</w> <w>muleta</w> <w>sustineat</w>, <w>et</w> <w>quod</w> <w>repetit</w> <w>evendicare</w> <w>non</w> <w>valeat</w>, <w>sed</w> <w>hoc</w> <w lemmaRef="testamentum">testamentum</w> <w>firmum</w> <w>permaneat</w> <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>in</w> <w>Gorzie</w> <w>monasterio</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>DCCCXLVIII</w>, <w>indictione</w> <w>XI</w>, <w>epacta</w> <w>XII</w>, <w>concurrente</w> <w>VII</w>, <w>anno</w> <w>nono</w> <w>imperii</w> <w>Lotharii</w> <w>regis</w>. <w>S</w>. <w>Fredalui</w>, <w>et</w> <w>S</w>. <w>coniugis</w> <w>sue</w> <w>Blitgiane</w>, <w>qui</w> <w>hoc</w> <w lemmaRef="testamentum">testamentum</w> <w>fieri</w> <w>et</w> <w>firmare</w> <w>rogaverunt</w>; <w>S</w>. <w>Ogtulfi</w>, <w>germani</w> <w>sui</w> <w>consentientis</w>; <w>S</w>. <w>Anglemaro</w>; <w>S</w>. <w>Lodovino</w>; <w>†Teulbalt</w>; <w>†Rodulfi</w> ; <w>†Anselomi</w>; <w>Adhelsaroi</w>; <w>†Ernalrt</w>; <w>†Belecrin</w>; <w>†Altavio</w>; <w>†Bertero</w>; <w>†Hiberto</w>; <w>†Ranchero</w>; <w>Guntbert</w>; <w>†Blithero</w>; <w>Raginaldo</w>; <w>†Morlant</w>; <w>Deodenado</w>; <w>†Vundelmaro</w>; <w>†Helmerico</w>; <w>†Albrico</w>; <w>Remigii</w>; <w>Ragembert</w> ; <w>†Filimaro</w>; <w>†Faremont</w>. <w>Ego</w> <w>Hariouos</w>, <w>emmanuensis</w>, <w>hoc</w> <w lemmaRef="testamentum">testamentum</w> <w>scripsi</w> <w>et</w> <w>supscripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

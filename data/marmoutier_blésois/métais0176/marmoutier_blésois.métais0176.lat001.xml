@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 176</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">163-164</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0176">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Sentence arbitrale de Jean, évêque de Chartres, délégué apostolique, en faveur de Ervé, abbé de Marmoutier, au sujet de la quatrième partie du moulin de Champigny, scitué près Orchaise, avec ses dépendances, etc., contre Mathieu Belleau, chanoine de Saint-Martin de Tours, vers l´an 1178.»</p>
+         </div>
+         <dateline>1178<date notBefore="1178-01-01" notAfter="1178-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0176.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Joannes</w>, <w>diuina</w> <w>dignatione</w>, <w>et</w> <w>meritis</w> <w>sancti</w> <w>Thomae</w> <w>Carnotensis</w> <w>minister</w> <w>humilis</w>, <w>omnibus</w> <w>ad</w> <w>quos</w> <w>litterae</w> <w>istae</w> <w>peruenerint</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Domino</w>. <w>Placuit</w> <w>domino</w> <w>papae</w> <w>committere</w> <w>nobis</w> <w>causam</w> <w>audiendam</w>, <w>et</w> <w>fine</w> <w>canonico</w> <w>appellatione</w> <w>remota</w> <w>terminandam</w>, <w>quae</w> <w>vertabatur</w> <w>inter</w> <w>venerabilem</w> <w>fratrem</w> <w>nostrum</w> <w>Herueum</w> <w>Abbatem</w>, <w>et</w> <w>fratres</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>Matheum</w> <w>Belo</w> <w>canonicum</w> <w>b</w>. <w>Martini</w> <w>turonensis</w> <w>super</w> <w>quarta</w> <w>parte</w> <w>molendini</w> <w>cuiusdam</w>, <w>quod</w> <w>est</w> <w>juxta</w> <w>Auricasam</w>, <w>et</w> <w>dicitur</w> <w>de</w> <w>Campiniaco</w>, <w>et</w> <w>decem</w> <w>arpentis</w> <w>terrae</w> <w>arabilis</w>, <w>et</w> <w>tribus</w> <w>arpentis</w> <w>et</w> <w>dimidio</w> <w>prati</w>, <w>et</w> <w>tribus</w> <w>solidis</w> <w>et</w> <w>sex</w> <w>denariis</w> <w>censualibus</w>, <w>et</w> <w>duobus</w> <w>solidis</w> <w>talliatae</w>, <w>et</w> <w>ceteris</w> <w>terrae</w> <w>eiusdem</w> <w>consuetudinibus</w>, <w>atque</w> <w>releuaminibus</w>; <w>quae</w> <w>omnia</w> <w lemmaRef="frater">frater</w> <w>Herbertus</w>, <w>dum</w> <w>esset</w> <w>prior</w> <w>Auricasae</w>, <w>emit</w> <w>a</w> <w>nobili</w> <w>muliere</w> <w>Bruna</w>, <w>quondam</w> <w>uxore</w> <w>Heruei</w> <w>teudi</w>, <w>pro</w> <w>sexaginta</w> <w>libris</w> <w>andegauensibus</w>, <w>et</w> <w>duobus</w> <w>sciphis</w> <w>argenteis</w>; <w>concedentibus</w> <w>filiis</w> <w>suis</w> <w>Herueo</w> <w>teudo</w>, <w>sicut</w> <w>ipsum</w> <w>Herueum</w> <w>audiuimus</w> <w>confitentem</w> <w>Blesis</w>, <w>dum</w> <w lemmaRef="abbas">abbas</w> <w>et</w> <w>prefatus</w> <w>Matheus</w> <w>super</w> <w>his</w> <w>jn</w> <w>nostra</w> <w>presentia</w>, <w>de</w> <w>mandato</w> <w>appostolico</w>, <w>litigarent</w>; <w>assensu</w> <w>etiam</w> <w>Fulconis</w> <w>filii</w> <w>praedictae</w> <w>Brunae</w>, <w>et</w> <w>Belete</w>, <w>et</w> <w>Commitisse</w> <w>filiarum</w> <w>eius</w>. <w>Ab</w> <w>jpso</w> <w>etiam</w> <w>recepimus</w>, <w>quod</w> <w>jpse</w> <w>et</w> <w>Fulco</w> <w lemmaRef="frater">frater</w> <w>suus</w> <w>juramento</w> <w>firmauerant</w>, <w>quod</w> <w>ipsi</w> <w>quoad</w> <w>vixerint</w> <w>fideliter</w> <w>hoc</w> <w>obseruabunt</w>, <w>et</w> <w>si</w> <w>quis</w> <w>aduersus</w> <w>abbatem</w> <w>et</w> <w>fratres</w> <w>questionem</w> <w>mouerent</w>, <w>eis</w> <w>seruarent</w> <w>jndemnes</w>. <w>Praedictus</w> <w>etiam</w> <w>Matheus</w> <w>venditionem</w> <w>se</w> <w>consensisse</w> <w>denegabat</w>, <w>et</w> <w>venditionem</w> <w>factam</w> <w>fuisse</w> <w>asserebat</w>, <w>dum</w> <w>jpse</w> <w>jn</w> <w>minori</w> <w>esset</w> <w>aetate</w> <w>constitutus</w>, <w>verum</w> <w>eam</w> <w>non</w> <w>debere</w> <w>retinere</w> <w>proponebat</w>, <w>cum</w> <w>illa</w>, <w>quae</w> <w>jn</w> <w>emptionem</w> <w>venerant</w>, <w>cessissent</w> <w>ei</w> <w>pro</w> <w>parte</w> <w>hereditatis</w> <w>paternae</w>. <w>Post</w> <w>jgitur</w> <w>multas</w> <w>et</w> <w>magnas</w> <w>hinc</w> <w>inde</w> <w>disceptiones</w>, <w>lis</w>, <w>auctore</w> <w>Domino</w>, <w>jn</w> <w>hunc</w> <w>modum</w> <w>terminata</w> <w>est</w>, <w>amicis</w> <w>intuentibus</w>, <w>quod</w> <w>Matheus</w> <w>liti</w> <w>renunciauit</w> <w>et</w> <w>juri</w>, <w>quod</w> <w>vendicabat</w> <w>jn</w> <w>molendino</w> <w>et</w> <w>ceteris</w> <w>praenotatis</w>, <w>et</w> <w>concessit</w> <w>ea</w> <w>abbati</w> <w>et</w> <w>fratribus</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>eorum</w> <w>successoribus</w>, <w>perpetuo</w>, <w>quiete</w> <w>et</w> <w>libere</w> <w>possidenda</w>, <w>approbans</w> <w>et</w> <w>ratam</w> <w>habens</w> <w>venditionem</w>, <w>quam</w> <w>fecerant</w> <w>mater</w> <w>et</w> <w>fratres</w> <w>sui</w>. <w>Nos</w> <w>vero</w> <w>eidem</w> <w>Matheo</w> <w>perpetuum</w> <w>jndiximus</w> <w>silentium</w> <w>super</w> <w>his</w>, <w>auctoritate</w> <w>susceptae</w> <w>delegationis</w>. <w lemmaRef="abbas">Abbas</w> <w>autem</w> <w>jn</w> <w>recompensationem</w> <w>laboris</w> <w>et</w> <w>sumptuum</w>, <w>quos</w> <w>jdem</w> <w>Matheus</w> <w>fecerat</w> <w>jn</w> <w>eundo</w> <w>Romam</w> <w>et</w> <w>redeundo</w>, <w>quatuor</w> <w>libras</w> <w>andegauenses</w> <w>ei</w> <w>contulit</w> <w>jn</w> <w>charitate</w>. <w>Actum</w> <w>igitur</w> <w>est</w> <w>hoc</w> <w>apud</w> <w>maius</w> <w lemmaRef="monasterium">monasterium</w>, <w>astantibus</w> <w>Nicolao</w> <w>abbate</w> <w>sanctae</w> <w>Mariae</w> <w>Blesis</w>, <w>Gilberto</w> <w>vindocinensi</w> <w>archidiacono</w>, <w>Vuillelmo</w> <w>capellano</w> <w>illustris</w> <w>Anglorum</w> <w>regis</w> <w>Henrici</w> <w>junioris</w>, <w>Roberto</w> <w>de</w> <w>Pignola</w> <w>capellano</w> <w>nostro</w>, <w>magistro</w> <w>Roberto</w> <w>Amaurico</w> <w>nepote</w> <w>archidiaconi</w> <w>vindocinensis</w>, <w>Rainaldo</w> <w>de</w> <w>Veteri-vico</w> <w>et</w> <w>pluribus</w> <w>aliis</w>. <w>Vt</w> <w>autem</w> <w>hoc</w> <w>firmum</w> <w>habeatur</w> <w>et</w> <w>ratum</w>, <w>auctoritate</w> <w>tam</w> <w>scripti</w> <w>quam</w> <w>sigilli</w> <w>nostri</w> <w>fecimus</w> <w>communiri</w>, <w>hoc</w> <w>auctoritate</w> <w>domini</w> <w>papae</w>, <w>cuius</w> <w>vices</w> <w>fungebamus</w> <w>jn</w> <w>hac</w> <w lemmaRef="causa">causa</w>, <w>confirmantes</w>. ...........<w>ab</w> <w>ipso</w> <w>et</w> <w>precepimus</w> <w>quod</w> <w>ipse</w> <w>et</w> <w>Fulco</w> <w lemmaRef="frater">frater</w> <w>suus</w> <w>iuramento</w> <w>apud</w> <w>maius</w> <w lemmaRef="monasterium">monasterium</w>.............. <w>quo</w> <w>ad</w> <w>uixerint</w>, <w>fideliter</w> <w>obseruabunt</w>, <w>et</w> <w>si</w> <w>quis</w> <w>aduersus</w> <w>abbatem</w> <w>et</w> <w>fratres</w> <w>nostros</w> <w>litem</w> <w>emouerent</w>........ <w>seruarent</w> <w>indempnes</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

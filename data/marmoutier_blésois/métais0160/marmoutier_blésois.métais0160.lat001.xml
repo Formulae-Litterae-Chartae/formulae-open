@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 160</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">152-153</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0160">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le pape Eugène III confirme à l´abbaye de Marmoutier la possession des églises de Crucheray, Nourray et Saint-Léonard de Chemillé.</p>
+         </div>
+         <dateline>1145-1153<date notBefore="1145-01-01" notAfter="1153-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0160.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Eugenius</w> <w lemmaRef="episcopus">episcopus</w>, <w>seruus</w> <w>servorum</w> <w>Dei</w>, <w>dilectis</w> <w>filiis</w> <w>G</w>. <w>abbati</w> <w>majoris</w> <w>monasterii</w> <w>ejusque</w> <w>fratribus</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>et</w> <w>apostolicam</w> <w>benedictionem</w>. <w>Oportet</w> <w>nos</w>, <w>ex</w> <w>apostolicae</w> <w>sedis</w> <w>administratione</w>, <w>pro</w> <w>ecclesiarum</w> <w>statu</w> <w>satagere</w>, <w>et</w> <w>earum</w> <w>quieti</w> <w>et</w> <w>utilitati</w> <w>salubriter</w>, <w>auxiliante</w> <w>Domino</w>, <w>prouidere</w>. <w>Proinde</w>, <w>dilecti</w> <w>in</w> <w>Domino</w> <w>filii</w>, <w>vestris</w> <w>justis</w> <w>postulationibus</w> <w>gratum</w> <w>impertientes</w> <w>assensum</w>, <w>ecclesiam</w> <w>de</w> <w>Cuschereio</w> <w>et</w> <w>ecclesiam</w> <w>de</w> <w>Nucario</w>, <w>quemadmodum</w> <w>a</w> <w>venerabili</w> <w>fratre</w> <w>nostro</w> <w>Gaufredo</w>, <w>Carnotensi</w> <w>episcopo</w>, <w>vobis</w> <w>rationabiliter</w> <w>concessae</w> <w>sunt</w>, <w>propterea</w> <w>quidquid</w> <w>habetis</w> <w>in</w> <w>ecclesia</w> <w>S</w>. <w>Leonardi</w> <w>de</w> <w>Chamiliaco</w>, <w>sicut</w> <w>per</w> <w>concessionem</w> <w>episcoporum</w>, <w>et</w> <w>confirmationem</w> <w>venerabilis</w> <w>fratris</w> <w>nostri</w> <w>Brunonis</w>, <w>bonae</w> <w>memoriae</w> <w>signiensis</w> <w>episcopi</w>, <w>tunc</w> <w>apostolicae</w> <w>sedis</w> <w>legati</w>, <w>rationabiliter</w> <w>habetis</w> <w>et</w> <w>possidetis</w>, <w>auctoritate</w> <w>vobis</w> <w>apostolica</w> <w>confirmamus</w>, <w>et</w> <w>rata</w> <w>manere</w> <w>decernimus</w>. <w>Et</w> <w>quoniam</w> <w>praefata</w> <w>ecclesia</w> <w>B</w>. <w>Leonardi</w>, <w>in</w> <w lemmaRef="parochia">parochia</w> <w>vestra</w> <w>sita</w> <w>est</w>, <w>et</w> <w>sub</w> <w>censu</w> <w>vobis</w> <w>annualiter</w> <w>persolvendo</w>, <w>in</w> <w>vestra</w> <w>subjectione</w> <w>consistit</w>, <w>prohibemus</w> <w>ut</w> <w>consecrationem</w> <w>et</w> <w>benedictionem</w> <w>aliquam</w>, <w>baptisterium</w> <w>sive</w> <w>cimiterium</w>, <w>absque</w> <w>assensu</w> <w>vestro</w>, <w>nullus</w> <w>facere</w> <w>in</w> <w>ea</w> <w>presumat</w>. <w>In</w> <w>praefatis</w> <w>vero</w> <w>ecclesiis</w> <w>de</w> <w>Cuscherio</w> <w>et</w> <w>Nucario</w>, <w>juxta</w> <w>rationabilem</w> <w>et</w> <w>antiquam</w> <w>consuetudinem</w>, <w>quam</w> <w>in</w> <w>aliis</w> <w>vestris</w> <w>ecclesiis</w> <w>habetis</w>, <w>sacerdotum</w> <w>ordinationem</w> <w>vobis</w> <w>facere</w> <w>liceat</w>. <w>Datum</w> <w>Lateranis</w> <w>IIII</w> <w>nonas</w> <w>januarii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

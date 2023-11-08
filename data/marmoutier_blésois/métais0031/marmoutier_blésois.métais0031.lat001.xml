@@ -1,0 +1,90 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 31</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">37</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0031">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Elinan de Fréteval donne au prieuré de Lavardin deux sols de rente, la moitié du moulin des Aulnais et deux arpents de pré, pour la sépulture de sa femme dans le monastère, avec l'autorisation de Robert.</p>
+         </div>
+         <dateline>1050-1087<date notBefore="1050-01-01" notAfter="1087-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0031.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>NOTICIA</w> <w>HELINANNI</w> <w>DE</w> <w>FRACTAUALLE</w> <w>DE</w> <w>LAUARDINO</w>. <w>CENOMANIS</w>»</head>
+               <p xml:space="preserve"><w>Noverit</w> <w>posteritas</w> <w>nostra</w> <w>quod</w> <w>Elinannus</w> <w>de</w> <w>fracta</w> <w>valle</w> <w>dedit</w> <w>nobis</w> <w>monachis</w> <w>videlicet</w> <w>sancti</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w>,<w>ad</w> <w>locum</w> <w>nostrum</w> <w>constructum</w> <w>apud</w> <w>Lauarzinum</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Martini</w> <w>pro</w> <w>anima</w> <w>uxoris</w> <w>sue</w> <w>tunc</w> <w>defuncte</w>, <w>et</w> <w>ut</w> <w>eam</w> <w>sepeliremus</w> <w>in</w> <w>eodem</w> <w>monasterio</w> <w>nostro</w> <w>duos</w> <w>solidos</w> <w>quos</w> <w>annuatim</w> <w>reddebant</w> <w>illi</w> <w>monachi</w> <w>nostri</w> <w>de</w> <w>censu</w> <w>terre</w> <w>quam</w> <w>apud</w> <w>pratellam</w> <w>tenent</w>, <w>et</w> <w>suam</w> <w>medietatem</w> <w>molendini</w> <w>qui</w> <w>est</w> <w>ad</w> <w>alnetos</w> <w>et</w> <w>duos</w> <w>arpennos</w> <w>pratorum</w> <w>in</w> <w>eodem</w> <w>loco</w>. <w>Pro</w> <w>molendino</w> <w>auctoramentum</w> <w>Rotberti</w> <w>nigre</w> <w>bodelle</w> <w>quesiuimus</w>, <w>de</w> <w>cuius</w> <w>casamento</w> <w>erat</w>. <w>Ipse</w> <w>vero</w> <w>auctorizavit</w> <w>cum</w> <w>uxore</w> <w>sua</w>. <w>Et</w> <w>nos</w> <w>illi</w> <w>dedimus</w> <w>X</w> <w>solidos</w> <w>et</w> <w>uxori</w> <w>sue</w> <w>II</w><seg type="superscript "><w>os</w></seg>. <w>Horum</w> <w>autem</w> <w>omnium</w> <w>testes</w> <w>donationis</w> <w>videlicet</w> <w>et</w> <w>auctoramenti</w> <w>presenti</w> <w lemmaRef="carta">cartula</w> <w>subnotantur</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Herueus</w> <w>de</w> <w>Lauarzino</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Hugo</w> <w>filius</w> <w>Galdrici</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Mainardus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Fulcradus</w> <w>filius</w> <w>Fulberti</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Guido</w> <w>de</w> <w>Braana</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Hugo</w> <w>filius</w> <w>Fulberti</w>.</cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

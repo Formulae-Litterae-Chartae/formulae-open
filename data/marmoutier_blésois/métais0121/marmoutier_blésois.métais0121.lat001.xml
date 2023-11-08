@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 121</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">120</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0121">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Robert de Montlandais fait remise de la dime de Lancé, et reçoit un palefroy de la main de l´abbé Guillaume.</p>
+         </div>
+         <dateline>1104-1124<date notBefore="1104-01-01" notAfter="1124-12-31"/>&gt;
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0121.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Nouerint</w> <w>fratres</w> <w>nostri</w> <w>habitatores</w> <w>hujus</w> <w>loci</w> <w>B</w>. <w>Martini</w> <w>scilicet</w> <w>majoris</w> <w>monasterii</w>, <w>quod</w> <w>Robertus</w> <w>quidam</w> <w>miles</w> <w>de</w> <w>Montelandiaco</w>, <w>clamabat</w> <w>et</w> <w>calumniabatur</w> <w>nobis</w> <w>4</w><seg type="superscript "><w>am</w></seg> <w>partem</w> <w>decime</w> <w>de</w> <w>Lanciaco</w>, <w>sed</w> <w>faciens</w> <w>concordiam</w> <w>uenit</w> <w>ad</w> <w>majus</w> <w lemmaRef="monasterium">monasterium</w>, <w>in</w> <w>presentia</w> <w>domni</w> <w>Willelmi</w> <w>abbatis</w>, <w>et</w> <w>quorumdam</w> <w>fratrum</w>, <w>et</w> <w>ibi</w> <w>quidquid</w> <w>reclamabat</w> <w>nobis</w> <w>concessit</w>, <w>et</w> <w>dimisit</w>, <w>et</w> <w>dedit</w> <w>eidem</w> <w>Roberto</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abbas</w> <w>quendam</w> <w>palefredum</w>, <w>et</w> <w>40</w> <w>solidos</w>. — <w>Concesserunt</w> <w>tres</w> <w>fratres</w> <w>Roberti</w>, <w>Petrus</w> <w>scilicet</w>, <w>Gosfridus</w> <w>et</w> <w lemmaRef="pagus">Paganus</w>, <w>testibus</w> <w>domno</w> <w>Willelmus</w> <w lemmaRef="abbas">abbas</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

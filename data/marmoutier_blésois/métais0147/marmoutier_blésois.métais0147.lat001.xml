@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 147</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">139-140</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0147">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Geoffroy, évêque de Chartres, remet aux religieux de Marmoutier les églises de Crucheray et de Nourrai, que Barthemy, fils de Geoffroy payen de Vendôme, lui avait restituées quand il etait archidiacre de Vendôme.</p>
+         </div>
+         <dateline>1122<date notBefore="1122-01-01" notAfter="1122-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0147.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="carta">CARTA</w> <w>GAUFRIDI</w> <w>EPISCOPI</w> <w>CARNOTENSIS</w> <w>DE</w> <w>ECCLESIIS</w> <w>DE</w> <w>CUSCHEREIO</w> <w>ET</w> <w>NUCAREIO</w> <w>IN</w> <w>PAGO</w> <w>VINDOCINENSI</w>»</head>
+               <p xml:space="preserve"><w>Cum</w> <w>ex</w> <w>diuina</w> <w>auctoritate</w> <w>et</w> <w>sanctorum</w> <w>patrum</w> <w>exemplis</w> <w>habeamus</w> <w>nobis</w> <w>ad</w> <w>remunerationem</w> <w>profuturum</w>, <w>si</w> <w>iustorum</w> <w>preces</w> <w>operum</w> <w>executione</w> <w>audiamus</w>; <w>in</w> <w>libro</w> <w>quippe</w> <w>Sapientie</w>, <w>sic</w> <w>scriptum</w> <w>est</w>: <w>Benefac</w> <w>iusto</w> <w>et</w> <w>inuenies</w> <w>retributionem</w> <w>magnam</w>, <w>et</w> <w>si</w> <w>non</w> <w>ab</w> <w>ipso</w>, <w>certe</w> <w>a</w> <w>Domino</w>. <w>Utillimum</w> <w>uideri</w> <w>debet</w> <w>tot</w> <w>et</w> <w>tante</w> <w>auctoritatis</w> <w>et</w> <w>religionis</w> <w>fratrum</w>, <w>uidelicet</w> <w>Sancti</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w> <w>monachorum</w>, <w>petitionibus</w> <w>assentire</w>. <w>Quapropter</w> <w>ego</w> <w>Goffredus</w>, <w>Dei</w> <w lemmaRef="misericordia">misericordia</w> <w>sancte</w> <w>carnotensis</w> <w>ecclesie</w> <w lemmaRef="episcopus">episcopus</w>, <w>a</w> <w>domno</w> <w>Guillelmo</w>, <w>uenerabili</w> <w>abbate</w> <w>prefati</w> <w>monasterii</w>, <w>et</w> <w>a</w> <w>quibusdam</w> <w>fratribus</w> <w>eiusdem</w> <w>loci</w> <w>apud</w> <w lemmaRef="castrum">castrum</w> <w>Blesim</w> <w>requisitus</w> <w>et</w> <w>rogatus</w>, <w>ut</w> <w>monasterio</w> <w>eorum</w> <w>darem</w> <w>et</w> <w>concederem</w> <w>ecclesiam</w> <w>de</w> <w>Cuschereio</w> <w>et</w> <w>ecclesiam</w> <w>de</w> <w>Nucareio</w>, <w>sitas</w> <w>in</w> <w>pago</w> <w>uindocinensi</w>, <w>cuius</w> <w>uidelicet</w> <w>pagi</w> <w>ego</w> <w>in</w> <w>manu</w> <w>propria</w> <w>archidiaconatum</w> <w>tunc</w> <w>tenebam</w>; <w>quas</w> <w>ecclesias</w> <w>Bartholomeus</w>, <w>Goffredi</w> <w>pagani</w> <w>de</w> <w>Uindocino</w> <w>filius</w>, <w>eatenus</w> <w>a</w> <w>suis</w> <w>antecessoribus</w> <w>tenuerat</w>, <w>sed</w> <w lemmaRef="peccatum">peccatum</w> <w>suum</w> <w>et</w> <w>suorum</w> <w>antecessorum</w> <w>timens</w>, <w>in</w> <w>elemosinam</w> <w>et</w> <w>possessionem</w> <w>sempiternam</w> <w>predicti</w> <w>monasterii</w> <w>relinquere</w>, <w>si</w> <w>ego</w> <w>concederem</w>, <w>disponebat</w>. <w>Concessi</w> <w>et</w> <w>concedo</w>, <w>concedentibus</w> <w>etiam</w> <w>atque</w> <w>laudantibus</w> <w>canonicis</w> <w>ecclesie</w> <w>nostre</w>, <w>qui</w> <w>in</w> <w>presentia</w> <w>erant</w>, <w>quorum</w> <w>nomina</w> <w>subscripta</w> <w>sunt</w>, <w>easdem</w> <w>ecclesias</w> <w>prefato</w> <w>abbati</w> <w>et</w> <w>fratribus</w> <w>loci</w> <w>in</w> <w>successiones</w> <w>perpetuas</w>, <w>saluo</w> <w>iure</w> <w>sacerdotum</w> <w>et</w> <w>ecclesie</w> <w>carnotensis</w>. <w>Concedo</w>, <w>inquam</w>, <w>ita</w> <w>integre</w> <w>et</w> <w>deuote</w> <w>ut</w> <w>etiam</w> <w>ipsa</w> <w>altaria</w> <w>earumdem</w> <w>ecclesiarum</w>, <w>que</w> <w>de</w> <w>manu</w> <w>laicali</w> <w>iam</w> <w>per</w> <w>aliquot</w> <w>annos</w> <w>in</w> <w>nostram</w> <w>potestatem</w>, <w>absque</w> <w>alicuius</w> <w>reclamatione</w> <w>legitima</w> <w>deuenerant</w>, <w>concedam</w> <w>pariter</w> <w>et</w> <w>confirmem</w>. <w>Et</w> <w>quia</w> <w>eo</w> <w>tempore</w> <w>circa</w> <w>alia</w> <w>nostri</w> <w>ministerii</w> <w>ualde</w> <w>occupatus</w> <w>uirum</w> <w>prefatum</w>, <w>Bartholomeum</w> <w>dico</w>, <w>adire</w> <w>expedite</w> <w>non</w> <w>potui</w> <w>loco</w> <w>nostri</w> <w>misi</w> <w>ad</w> <w>eum</w> <w>archipresbiterum</w> <w>nostrum</w> <w>uindocinensem</w>, <w>Hugonem</w> <w>nomine</w>, <w>qui</w> <w>de</w> <w>manu</w> <w>eius</w> <w>ecclesias</w> <w>uice</w> <w>nostra</w> <w>suscepit</w>, <w>et</w> <w>prefatos</w> <w>fratres</w> <w>iussu</w> <w>nostro</w> <w>de</w> <w>ecclesiis</w> <w>illis</w> <w>cum</w> <w>sibi</w> <w>pertinentibus</w> <w>inuestiuit</w>. <w>Ad</w> <w>cuius</w> <w>doni</w> <w>siue</w> <w>concessionis</w> <w>inuiolabilem</w> <w>et</w> <w>perpetuam</w> <w>firmitatem</w> <w>precepimus</w> <w>presentem</w> <w>cartulam</w> <w>sigilli</w> <w>nostri</w> <w>corroboratione</w> <w>praemuniri</w>. <w>Quod</w> <w>si</w> <w>quis</w> <w>malo</w> <w>spiritu</w> <w>concitatus</w> <w>ulterius</w> <w>attemptauerit</w> <w>deprauare</w>, <w>sciat</w> <w>se</w> <w>ex</w> <w>auctoritate</w> <w>beati</w> <w>Petri</w> <w>et</w> <w>nostra</w>, <w>nisi</w> <w>resipuerit</w>, <w>et</w> <w>ad</w> <w>emendationem</w> <w>uenerit</w>, <w>perpetue</w> <w>excommunicationi</w> <w>subiacere</w>. <w>Actum</w> <w>anno</w> <w>dominicae</w> <w>incarnationis</w> <w>M</w>. <w>C</w>. <w>XXII</w>. <w>indictione</w> <w>XIIII</w>, <w>epacta</w> <w>nulla</w>, <w>regnante</w> <w>francorum</w> <w>rege</w> <w>Ludouico</w>, <w>Gaufredo</w> <w>carnotensi</w> <w>episcopatui</w> <w>praesidente</w> <w>anno</w> <w>VI</w>, <w>Guillelmo</w> <w>abbate</w> <w>majus</w> <w lemmaRef="monasterium">monasterium</w> <w>procurante</w> <w>anno</w> <w>XV</w>. <w>Actum</w>, <w>inquam</w>, <w>prius</w> <w>Blesis</w>, <w>videntibus</w> <w>et</w> <w>concedentibus</w> <w>canonicis</w> <w>nostrae</w> <w>ecclesiae</w>, <w>qui</w> <w>presentes</w> <w>nobis</w> <w>assistebant</w>, <w>quorum</w> <w>nomina</w> <w>haec</w> <w>sunt</w>: <w>Hugo</w> <w>de</w> <w>Liuis</w>, <w lemmaRef="canonicus">canonicus</w> <w>et</w> <w>prepositus</w> <w>ecclesiae</w> <w>carnotensis</w>, <w>Bernardus</w> <w lemmaRef="canonicus">canonicus</w> <w>et</w> <w>capicerius</w>, <w>Radulfhus</w> <w>et</w> <w>Theodericus</w>, <w>et</w> <w>ipsi</w> <w>canonici</w> <w>nostri</w>, <w>Hilgodus</w> <w>capellanus</w> <w>noster</w> <w lemmaRef="canonicus">canonicus</w> <w>regularis</w>; <w>ubi</w> <w>etiam</w> <w>interfuerunt</w> <w>ex</w> <w>parte</w> <w>abbatis</w>: <w>ipse</w> <w>Guillelmus</w> <w lemmaRef="abbas">abbas</w>, <w>Guillelmus</w> <w>prior</w>, <w>Gilduinus</w> <w>filius</w> <w>Gilonis</w>, <w>Gualterius</w> <w>[Gauterius]</w> <w>compendiensis</w>, <w>Johannes</w> <w>de</w> <w>Combornio</w>, <w>Hugo</w> <w>hospitalarius</w> <w>de</w> <w>Sparnone</w>. <w>Deinde</w> <w>in</w> <w>proxima</w> <w>sequenti</w> <w>hebdomada</w>, <w>cum</w> <w>ad</w> <w>prefatum</w> <w lemmaRef="monasterium">monasterium</w> <w>divertissemus</w>, <w>venimus</w> <w>in</w> <w>capitulum</w> <w>fratrum</w>, <w>aedificationis</w> <w lemmaRef="gratia">gratia</w>, <w>audituri</w> <w>aliquid</w> <w>et</w> <w>dicturi</w>. <w>Quo</w> <w>facto</w> <w>suscepti</w> <w>sumus</w> <w>omnes</w>, <w>ego</w> <w>videlicet</w> <w>et</w> <w>supra</w> <w>nominati</w> <w>canonici</w>, <w>in</w> <w>societatem</w> <w>et</w> <w>participationem</w> <w>beneficii</w> <w>fratrum</w>, <w>quibus</w> <w>audientibus</w> <w>recapitulata</w> <w>sunt</w> <w>a</w> <w>nobis</w> <w>donum</w> <w>et</w> <w>concessio</w> <w>suprascripta</w>, <w>et</w> <w>concessa</w> <w>iterum</w> <w>et</w> <w>firmata</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

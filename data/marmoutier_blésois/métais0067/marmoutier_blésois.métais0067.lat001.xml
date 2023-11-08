@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 67</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">77-78</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0067">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Bernard le panetier achète au profit de Marmoutier, de Téduin, fils de Séguin, deux maisons situées à Blois, à Bourg-Moyen, pour 12 livres. - Téduin se désiste de ses réclamations sur la vigne donnée par son père.</p>
+         </div>
+         <dateline>1094<date notBefore="1094-01-01" notAfter="1094-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0067.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>DOMIBUS</w> <w>TEDUINI</w> <w>FILII</w> <w>SEGUINI</w>, <w>QUAS</w> <w>EMIT</w> <w lemmaRef="dominus">DOMNUS</w> <w>BERNARDUS</w> <w>PANETARIUS</w> <w>ET</w> <w>DE</w> <w>VINEA</w> <w>QUAM</w> <w>IPSE</w> <w>CALUMNIABATUR</w> <w>NOBIS</w>. - <w>BLESIS</w>.»</head>
+               <p xml:space="preserve"><w>Noverint</w> <w>posteri</w> <w>nostri</w> <w>quod</w> <w>Bernardus</w> <w>panetarius</w> <w>emit</w> <w>ad</w> <w>opus</w> <w>sancti</w> <w>Martini</w> <w>domos</w> <w>Teduini</w>, <w>filii</w> <w>Seguini</w> <w>arbalestarii</w>, <w>quae</w> <w>sunt</w> <w>Blesis</w> <w>in</w> <w>burgo</w> <w>medio</w>. <w>Et</w> <w>hoc</w> <w>concesserunt</w> <w lemmaRef="comes">comes</w> <w>Stephanus</w> <w>et</w> <w>uxor</w> <w>eius</w> <w>Adela</w> <w>comitissa</w>, <w>et</w> <w>Haimo</w>, <w>prepositus</w>, <w>de</w> <w>cuius</w> <w>feuo</w> <w>erat</w>, <w>et</w> <w>habuit</w> <w>Teduinus</w> <w>XII</w> <w>libras</w>. <w>Et</w> <w>Haimo</w> <w>prepositus</w> <w>C</w> <w>solidos</w>. <w>Hanc</w> <w>emptionem</w> <w>auctorizavit</w> <w>Umberga</w> <w>uxor</w> <w>Teduini</w> <w>et</w> <w>due</w> <w>filie</w> <w>ejus</w> . <w>Et</w> <w>quia</w> <w>domus</w> <w>erant</w> <w>de</w> <w>dotalicio</w> <w>Umbergae</w> <w>habuit</w> <w>ipsa</w> <w>Umberga</w> <w>de</w> <w>supradictis</w> <w>duodecim</w> <w>libris</w> <w>quatuor</w> <w>libras</w>. <w>Promisit</w> <w>etiam</w> <w>Teduinus</w> <w>quod</w> <w>si</w> <w>quisquam</w> <w>calumniaretur</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>monachis</w> <w>eius</w> <w>antedictas</w> <w>domos</w>, <w>ipse</w> <w>acquietaret</w>, <w>aut</w> <w>heredes</w> <w>eius</w>. <w>De</w> <w>hoc</w> <w>est</w> <w>fide</w> <w>iussor</w> <w>Haimo</w> <w>prepositus</w> <w>tali</w> <w>pacto</w> <w>quod</w> <w>si</w> <w>Teduinus</w> <w>aut</w> <w>heredes</w> <w>eius</w> <w>nolunt</w> <w>acquietare</w> <w>calumniam</w>, <w>si</w> <w>insurrexerit</w>, <w>ipse</w> <w>Haimo</w> <w>aut</w> <w lemmaRef="heres">heres</w> <w>eius</w> <w>qui</w> <w>feuum</w> <w>Teduini</w> <w>habebat</w> <w>acquietabit</w> <w>totum</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>monachis</w> <w>eius</w>, <w>et</w> <w>accipiet</w> <w>feuum</w> <w>Teduini</w>, <w>tradetque</w> <w>monachis</w> <w>sancti</w> <w>Martini</w>. <w>Hoc</w> <w>viderunt</w> <w>et</w> <w>audierunt</w> <w>Bernardus</w> <w>flagellus</w>, <w>Herbertus</w> <w>de</w> <w>Torciaco</w>, <w>Gualterius</w> <w>de</w> <w>Valle</w>, <w>Stephanus</w> <w>ridellus</w>, <w>Radulfus</w> <w>de</w> <w>Canta</w> <w>merula</w>, <w>Gauffredus</w> <w>de</w> <w>Rumiliaco</w>, <w>Otbertus</w> <w lemmaRef="clericus">clericus</w>, <w>Haimo</w> <w lemmaRef="praepositus">praepositus</w>, <w>Radulfus</w> <w>de</w> <w>monte</w> <w>Tealdi</w>, <w>Isembardus</w> <w>cellararius</w>, <w>Gualterius</w> <w>de</w> <w>Parciaco</w>, <w>Guillelmus</w> <w>pugil</w>, <w>Guillelmus</w> <w>de</w> <w>Chilziaco</w>, <w>Guarnerius</w> <w>de</w> <w>sancto</w> <w>Aniano</w>, <w>Constantius</w>, <w lemmaRef="benedictio">Benedictus</w> <w>de</w> <w>Beziaco</w>, <w>Johannes</w> <w>de</w> <w>Moncello</w>, <w>Stephanus</w> <w>verroillus</w>, <w>Guarinus</w> <w>pelletarius</w>, <w>Martinus</w> <w>de</w> <w>Rengiaco</w>, <w>Martinus</w> <w>de</w> <w>Vindocino</w>, <w>Herueus</w> <w>filiaster</w> <w>eius</w>, <w>Milo</w> <w>de</w> <w>Vindocino</w>, <w>Otgerius</w> <w>de</w> <w>Muissi</w>, <w>Vaslinus</w> <w>manduca</w> <w>villanum</w>, <w>Petrus</w> <w>treuisca</w>, <w>C</w>… <w>famulus</w>. <w>Istam</w> <w>convenientiam</w> <w>auctorizavit</w> <w>Algerius</w> <w>grandinus</w>, <w>de</w> <w>quo</w> ... <w>prepositus</w> <w>tenet</w> <w>feuum</w> <w>Teduini</w> <w>et</w> <w>uxor</w> <w>eius</w>. <w>Vineam</w> <w>que</w> <w>est</w> <w>ad</w> <w>vicum</w> <w>Hermentrudis</w>, <w>quam</w> <w>Seguinus</w> <w lemmaRef="pater">pater</w> <w>Teduini</w> <w>donaverat</w> <w>monachis</w> <w>sancti</w> <w>Martini</w> <w>calumniabatur</w> <w>eis</w> <w>isdem</w> <w>Teduinus</w>. <w>Postea</w> <w>guerpiuit</w> <w>illam</w> <w>calumniam</w> <w>omnino</w> <w>ipse</w> <w>et</w> <w>Umberga</w> <w>uxor</w> <w>eius</w> <w>et</w> <w>due</w> <w>filie</w> <w>eius</w>, <w>et</w> <w>habuit</w> <w>propter</w> <w>hoc</w> <w>V</w> <w>solidos</w> <w>denariorum</w>. <w>Testes</w> <w>sunt</w> <w>huius</w> <w>rei</w> <w>Guarinus</w> <w>pellitarius</w>, <w>Otbertus</w> <w lemmaRef="clericus">clericus</w>, <w>Isembardus</w>, <w>Lisoius</w>. <w>Actum</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w>.<w>XCIIII</w>, <w>agentibus</w> <w>nobis</w> <w>sub</w> <w>domno</w> <w>abbate</w> <w>Bernardo</w>, <w>XI</w><seg type="superscript "><w>mo</w></seg> <w>anno</w> <w>ordinationis</w> <w>eius</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

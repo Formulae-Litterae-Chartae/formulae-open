@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay) Cartae de Vern, Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette
+                     province publié sous les auspices du Conseil général de Maine et Loire</title>
+                  <editor>Paul Marchegay</editor>
+                  <imprint>
+                     <pubPlace>Angers</pubPlace>
+                     <date when="1853" n="originalAusgabe">1853</date>
+                     <biblScope unit="pp">79</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives d’Anjou</title>
+                  <biblScope unit="volume">2</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Archives
+            d’Anjou. Recueil de documents et mémoires inédits sur cette province publié sous les
+            auspices du Conseil général de Maine et Loire , welches 1853 von Paul Marchegay
+            herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben
+            in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der
+            CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="anjou_archives.marchegay_vern_0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>De dimissione ecclesiae de Ver a canonicis Sancti Maurilii
+                  Andegavensis.</p>
+         </div>
+         <dateline>
+            <date/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:anjou_archives.marchegay_vern_0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Noverint</w> <w>universi</w> <w>qui</w> <w>scripti</w> <w>hujus</w> <w>tenorem</w> <w>inspexerint</w> <w>quamdam</w> <w>extitisse</w> <w>controversiam</w> <w>inter</w> <w>Majoris</w> <w>Monasterii</w> <w>monachos</w> <w>et</w> <w>Sancti</w> <w>Maurilii</w> <w>Andegavensis</w> <w>canonicos</w> <w>super</w> <w>ecclesia</w> <w>de</w> <w>Ver</w>, <w>quam</w> <w>ex</w> <w>dono</w> <w>episcopi</w> <w>Andegavensis</w> <w>Normanni</w> <w>idem</w> <w>monachi</w> <w>possidebant</w> <w>investiti</w>. <w>Canonici</w> <w>suam</w> <w>fuisse</w> <w>et</w> <w>debere</w> <w>esse</w> <w>reclamantes</w>, <w>conquesturi</w> <w>de</w> <w>monachis</w>, <w>apostolicam</w> <w>adierunt</w> <w>praesentiam</w>; <w lemmaRef="dominus">dominus</w> <w>autem</w> <w lemmaRef="papa">papa</w> <w>controversiam</w> <w>supradictam</w> <w>Venetensi</w> <w>et</w> <w>Briocensi</w> <w>commisit</w> <w>episcopis</w> <w>judicio</w> <w>vel</w> <w>concordia</w> <w>terminandam</w>: <w>quae</w> <w>tali</w> <w>tandem</w> <w>compositione</w> <w>pacis</w> <w>et</w> <w>confoederatione</w> <w>in</w> <w>perpetuum</w> <w>est</w> <w>sopita</w>. <w>Venit</w> <w>Andegavis</w> <w>Briocensis</w> <w lemmaRef="episcopus">episcopus</w> <w>Joscius</w> <w>ex</w> <w>auctoritate</w> <w>domini</w> <w>papae</w> <w>et</w> <w>Venetensis</w> (<w>episcopi</w>) <w>assensu</w>, <w>aliis</w> <w>tunc</w> <w>negotiis</w> <w>propediti</w>. <w>Vocatis</w> <w>utriusque</w> <w>personis</w> <w>ecclesiae</w>, <w>monachis</w> <w>videlicet</w> <w>et</w> <w>canonicis</w> <w>supradictis</w>, <w>ibi</w> <w>tandem</w>, <w>pro</w> <w>reformanda</w> <w>pacis</w> <w>integritate</w>, <w>canonici</w> <w>omnes</w> <w>Sancti</w> <w>Maurilii</w>, <w>Morinus</w> <w>scilicet</w>, <w>Peloquinus</w>, <w>Girardus</w>, <w>Turpinus</w>, <w>Gaufredus</w>, <w>Johannes</w>, <w>Matheus</w> <w>et</w> <w>Rainardus</w>, <w>parrochialem</w> <w>ecclesiam</w> <w>illam</w> <w>de</w> <w>Ver</w> <w>absque</w> <w>omni</w> <w>deinceps</w> <w>reclamationis</w> <w>calumnia</w> <w>Majoris</w> <w>Monasterio</w> <w>in</w> <w>perpetuum</w> <w>liberam</w> <w>dimiserunt</w>, <w>in</w> <w>manu</w> <w>Roberti</w> <w>abbatis</w> <w>Vindocinensis</w> <w>et</w> <w>Radulfi</w> <w>prioris</w> <w>Majoris</w> <w>Monasterii</w>; <w>praesentialiter</w> <w>ibi</w> <w>assistentibus</w>: <w>Gaufrido</w> <w>archipresbitero</w> <w>et</w> <w>Petro</w> <w>Fulberti</w> <w>Sancti</w> <w>Martini</w> <w>Andegavensis</w> <w>canonicis</w>; <w>Haimerico</w> <w>priore</w> <w>Camilliaci</w>, <w>Rivallonio</w> <w>priore</w> <w>Andegavensi</w>, <w>Herveo</w> <w>priore</w> <w>Castri</w> <w>Joscelini</w> <w>et</w> <w>Guillelmo</w> <w>Suha</w> <w>Crista</w> <w>Majoris</w> <w>Monasterii</w> <w>monachis</w>. <w>Hanc</w> <w>pacis</w> <w>compositionem</w> <w>et</w> <w>concordiam</w> <w>concesserunt</w> <w>atque</w> <w>confirmaverunt</w> <w>Andegavensis</w> <w>ecclesiae</w> <w>archidiaconi</w> <w>Gaufredus</w>, <w>Stephanus</w> <w>et</w> <w>Gerorius</w>, <w>et</w> <w>Petrus</w> <w>magister</w> <w>scholarum</w>, <w>per</w> <w>cujus</w> <w>manum</w> <w>hujus</w> <w>concessionis</w> <w>scriptum</w> <w>accepimus</w>, <w>universo</w> <w>ejusdem</w> <w>ecclaesiae</w> <w>capitulo</w> <w>id</w> <w>unanimiter</w> <w>approbante</w> <w>et</w> <w>scripto</w> <w>confirmante</w>. <w>Quod</w> <w>ut</w> <w>ratum</w> <w>foret</w> <w>et</w> <w>perpetuae</w> <w>stabilitatis</w> <w>obtineret</w> <w>immobile</w> <w>firmamentum</w>, <w>canonici</w> <w>saepedicti</w> <w>Turonis</w> <w>advenerunt</w>, <w>suam</w> <w>iterato</w> <w>calummiam</w> <w>dimissuri</w>. <w>Cumque</w> <w>in</w> <w>capitulum</w> <w>Majoris</w> <w>Monasterii</w> <w>devenissent</w>, <w>universo</w> <w>teste</w> <w>conventu</w>, <w>in</w> <w>manu</w> <w>domini</w> <w>Roberti</w> <w>abbatis</w> <w>praedictam</w> <w>ecclesiam</w> <w>quietam</w> <w>et</w> <w>liberam</w> <w>secundo</w> <w>dimiserunt</w>; <w>et</w> <w>deinceps</w> <w>Turonis</w>, <w>in</w> <w>praesentia</w> <w>Ingebaldi</w> <w>archiepiscopi</w> <w>et</w> <w>in</w> <w>ejusdem</w> <w>manu</w>, <w>ipso</w> <w>volente</w> <w>et</w> <w>laudante</w>. <w>Actum</w> <w>per</w> <w>manum</w> <w>Briocensis</w> <w>episcopi</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>MCLVo</w>, <w>praesidente</w> <w>summo</w> <w>pontifice</w> <w>Adriano</w>, <w>regnantibus</w> <w>in</w> <w lemmaRef="franci">Francia</w> <w>Ludovico</w>, <w>in</w> <w>Anglia</w> <w>Hainrico</w>, <w>Engelbaldo</w> <w>archiepiscopo</w> <w>Turonensi</w>, <w>Roberto</w> <w>Majoris</w> <w>Monasterii</w> <w>abbate</w>, <w>vacante</w> <w>Andegavensi</w> <w>ecclesia</w> <w>suoque</w> <w>viduata</w> <w>pastore</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

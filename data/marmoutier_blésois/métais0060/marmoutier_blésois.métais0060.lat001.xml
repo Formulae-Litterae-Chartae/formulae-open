@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 60</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">69-70</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0060">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Accord avec Hardouin de Chaumont au sujet des dîmes et autres droits et redevances à percevoir sur les habitants de la forêt de Blémars.»</p>
+         </div>
+         <dateline>Avant 1088<date notBefore="1000-01-01" notAfter="1088-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0060.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>CONVENIENTIAE</w> <w>CUM</w> <w>HARDUINO</w> <w>DE</w> <w>CALVOMONTE</w>, <w>DE</w> <w>BLIMARTIO</w>. <w>BLESIS</w>.»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>sanctae</w> <w>Dei</w> <w>Aecclesiae</w> <w>fidelibus</w>, <w>precipueque</w> <w>nostris</w> <w>successoribus</w>, <w>quod</w> <w>cum</w> <w>Harduino</w> <w>de</w> <w>Calmonte</w> <w>talem</w> <w>concordiam</w> <w>fecimus</w>, <w>in</w> <w lemmaRef="curia">curia</w> <w>comitis</w> <w>Tetbaldi</w>, <w>judicante</w> <w>Radulfo</w> <w>comite</w> <w>de</w> <w>Monte</w> <w>desiderii</w>, <w>et</w> <w>Drocone</w> <w>de</w> <w>Hano</w>, <w>Herueoque</w> <w>vicecomite</w> <w>de</w> <w>Bleso</w>. <w>Guadiatum</w> <w>nobis</w> <w>habebat</w> <w>cum</w> <w>legibus</w>, <w>quicquid</w> <w>ipse</w> <w>suique</w> <w>homines</w> <w>abstulerant</w> <w>de</w> <w>decimis</w> <w>examplarum</w> <w>Blidmartii</w>, <w>sepulturaque</w> <w>hominum</w> <w>in</w> <w>plaxiciis</w> <w>habitantium</w>; <w>cumque</w> <w>terminus</w> <w>affuit</w> <w>in</w> <w>quo</w> <w>tota</w> <w>hec</w> <w>guadiatio</w> <w>persolvi</w> <w>debuit</w>, <w>consilio</w> <w>Hervei</w> <w>vicecomitis</w> <w>et</w> <w>Gauzelini</w> <w>de</w> <w>Bleso</w>, <w>et</w> <w>Vulgrini</w> <w>praepositi</w>, <w>omne</w> <w>catallum</w>, <w>et</w> <w>leges</w> <w>forsfactorum</w> <w>perdonavimus</w> <w>ei</w> <w>pro</w> <w>sex</w> <w>denariis</w>, <w>qui</w> <w>semper</w> <w>sint</w> <w>in</w> <w>testimonio</w> <w>et</w> <w>investitura</w>, <w>ne</w> <w>amplius</w> <w>repetatur</w> <w>emendata</w> <w lemmaRef="causa">causa</w>. <w>Hac</w> <w>autem</w> <w>ratione</w> <w>et</w> <w lemmaRef="convenientia">convenientia</w> <w>perdonatio</w> <w>prefatae</w> <w>emendationis</w> <w>fuit</w> <w>facta</w>, <w>ut</w> <w>omnes</w> <w>decimae</w> <w>et</w> <w>sepultarae</w> <w>et</w> <w>panes</w> <w>et</w> <w>candelae</w> <w>illorum</w> <w>hospitum</w> <w>comitis</w>, <w>quos</w> <w>Rotbertus</w> <w>prepositus</w> <w>heribergavit</w>, <w>vel</w> <w>ex</w> <w>tempore</w> <w>suae</w> <w>prepositurae</w> <w>heribergati</w> <w>sunt</w>, <w>sive</w> <w>in</w> <w>plano</w> <w>sive</w> <w>in</w> <w>plaxiciis</w>, <w>sancto</w> <w>Martino</w> <w>solidae</w> <w>remaneant</w> <w>et</w> <w>quietae</w>; <w>et</w> <w>omnes</w> <w>decimae</w> <w>illius</w> <w>terrae</w>, <w>de</w> <w>qua</w> <w>probatum</w> <w>atque</w> <w>divisum</w> <w>est</w>, <w>comitem</w> <w>terragium</w> <w>habuisse</w>. <w>De</w> <w>illis</w> <w>vero</w> <w>hominibus</w>, <w>qui</w> <w>consuetudinarii</w> <w>erant</w> <w>Harduini</w> <w>ad</w> <w>sepulturam</w> <w>reddendam</w>, <w>et</w> <w>in</w> <w>antiquis</w> <w>heribergati</w> <w>fuerunt</w> <w>plaxiciis</w>, <w>antequam</w> <w lemmaRef="comes">comes</w> <w>Odo</w>, <w>per</w> <w>Rodbertum</w> <w>praepositum</w> <w>exampla</w> <w>et</w> <w>plaxicia</w> <w>saysire</w> <w>fecisset</w>, <w>conventum</w> <w>est</w> <w>ut</w> <w>Harduinus</w> <w>dimidiam</w> <w>sepulturam</w> <w>tantummodo</w> <w>habeat</w>, <w>sed</w> <w>omnes</w> <w>alias</w> <w>aecclesiasticas</w> <w>consuetudines</w>, <w>hoc</w> <w>est</w> <w>decimam</w> <w>et</w> <w>candelam</w>, <w>panem</w>, <w>confessionem</w> <w lemmaRef="sanctus">sanctus</w> <w>Martinus</w> <w>in</w> <w>perpetuum</w> <w>possideat</w>. <w>Hujus</w> <w>autem</w> <w>notitiae</w> <w>testes</w>, <w>qui</w> <w>ad</w> <w>hanc</w> <w>convenientiam</w> <w>audiendam</w> <w>producti</w> <w>fuerunt</w>, <w>subtus</w> <w>notati</w> <w>sunt</w>. <w>S</w>. <w>Comitis</w> <w>Tetbaldi</w> <w>S</w>. <w>S</w>. <w>Hervei</w> <w>vicecomitis</w> <w>S</w>. <w>S</w>. <w>Harduini</w> <w>vicecomitis</w> <w>S</w>. <w>S</w>. <w>Gauzelini</w> <w>de</w> <w>Bleso</w> <w>S</w>. <w>S</w>. <w>Vulgrini</w> <w>prepositi</w> <w>S</w>. <w>S</w>. <w>Rainaldi</w> <w>majoris</w> <w>sancti</w> <w>Martini</w> <w>S</w>. <w>S</w>. <w>Alcherii</w> <w>esperonelli</w> <w>S</w>. <w>S</w>. <w>Guicherii</w> <w>de</w> <w>Solmai</w> <w>S</w>. <w>S</w>. <w>Garini</w> <w>filii</w> <w>Rotberti</w> <w>borni</w> <w>S</w>. <w>S</w>. <w>Guidonis</w> <w>cordellae</w> <w>S</w>. <w>S</w>. <w>Ingelberti</w> <w>hominis</w> <w>Radulfi</w> <w>S</w>. <w>S</w>. <w>Droconis</w> <w>de</w> <w>Calmatone</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

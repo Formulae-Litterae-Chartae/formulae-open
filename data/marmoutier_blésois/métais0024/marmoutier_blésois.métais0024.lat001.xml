@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 24</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">28-30</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0024">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Ingelbault de Vendôme donne aux moines de Saint Gildéric de Lavardin le droit de justice dans leurs terres, le droit de paisson pour 300 porcs dans le forêt du Perche, et la faculté d'y prendre le bois vif ou mort pour tous les besoins du prieuré.</p>
+         </div>
+         <dateline>1040-1070<date notBefore="1040-01-01" notAfter="1070-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0024.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>NOTICIA</w> <w>DE</w> <w>INGELBALDO</w>. - <w>VINDOCINUM</w>, <w>DE</w> <w>SANCTO</w> <w>GILDERICO</w>. - <w>DE</w> <w>LAVARDINO</w>»</head>
+               <p xml:space="preserve"><w>HEC</w>. <w>EST</w>. <w lemmaRef="convenientia">CONVENIENTIA</w>. <w>INTER</w>. <w>INGELBALDUM</w> &amp; <w>MONACHOS</w>. <w>SCI</w>. <w>MARTIN</w>. <w>Omnibus</w> <w>sanctae</w> <w>die</w> <w>aecclesiae</w> <w>fidelibus</w> <w>compertum</w> <w>percognitum</w> <w>fieri</w> <w>volumus</w>, <w>quod</w> <w lemmaRef="dominus">domnus</w> <w>Ingelbaldus</w> <w>de</w> <w>Uindocino</w> <w>in</w> <w>capitulum</w> <w>sancti</w> <w>Martini</w> <w>maioris</w> <w>scilicet</w> <w>monasterii</w> <w>venit</w>, <w>ibique</w> <w>dimisit</w> <w>quod</w> <w>nullam</w> <w>amplius</w> <w>consuetudinem</w> <w>in</w> <w>eiusdem</w> <w>sancti</w> <w>requirat</w> <w>terris</w>, <w>nec</w> <w>capiat</w>, <w>nec</w> <w>capere</w> <w>faciat</w>, <w>exceptis</w> <w>IIII</w><seg type="superscript "><w>or</w></seg> <w>causis</w> <w>de</w> <w>terra</w> <w>sancti</w> <w>Gilderici</w>, <w>videlicet</w> <w>banno</w>, <w>incendio</w>, <w>rapto</w> <w>et</w> <w>furto</w>, <w>et</w> <w>hec</w> <w>mensurate</w> <w>et</w> <w>cum</w> <w>moderantia</w>, <w>ab</w> <w>in</w> <w>huiuscemodi</w> <w>culpis</w> <w>deprehensis</w> <w>accipiat</w>. <w>Cetera</w> <w>vero</w> <w lemmaRef="iustitia">iustitia</w> <w>in</w> <w>monachorum</w> <w>sancti</w> <w>Martini</w> <w>arbitrio</w> <w>pendeat</w>. <w>Hoc</w> <w>quoque</w> <w>similiter</w> <w>dimisit</w>, <w>quod</w> <w>a</w> <w>monachis</w> <w>vel</w> <w>ab</w> <w>hominibus</w> <w>sancti</w> <w>MARTINI</w> <w>in</w> <w>sua</w> <w lemmaRef="curia">curia</w> <w>placita</w> <w>per</w> <w>consuetudinem</w> <w>fieri</w> <w>amplius</w> <w>non</w> <w>requirat</w>. <w>Propter</w> <w>forfacta</w> <w>vero</w> <w>que</w> <w>nobis</w> <w>fecerat</w> <w>donavit</w> <w>sancto</w> <w>Martino</w> <w>VII</w> <w>masuras</w> <w>terre</w>, <w>apud</w> <w>Orgerias</w>. <w>In</w> <w lemmaRef="villa">villa</w> <w>vero</w> <w>sancti</w> <w>Gilderici</w> <w>duas</w>, <w>Burchardi</w> <w>scilicet</w> <w>et</w> <w>Oliuardi</w>. <w>Et</w> <w>de</w> <w>silva</w> <w>Pertici</w> <w>pastionem</w> <w>ad</w> <w>CCC</w>. <w>porcos</w>, <w>per</w> <w>singulos</w> <w>pascendos</w> <w>annos</w>. <w>Et</w> <w>de</w> <w>eiusdem</w> <w>silve</w> <w>sicco</w> <w>bosco</w>, <w>ad</w> <w>opus</w> <w>monachorum</w> <w>apud</w> <w>sanctum</w> <w>Gildericum</w> <w>commorantium</w>, <w>suorumque</w> <w>hominum</w>, <w>quantum</w> <w>eis</w> <w>in</w> <w>omnibus</w> <w>sufficiat</w>. <w>Similiter</w> <w>quoque</w> <w>retortas</w> <w>et</w> <w>rollones</w>, <w>stimulos</w> <w>quoque</w> <w>et</w> <w>cauillas</w> <w>et</w> <w>hucias</w>, <w>et</w> <w>si</w> <w>quid</w> <w>huiusmodi</w> <w>aliud</w> <w>eis</w> <w>in</w> <w>rurali</w> <w>opere</w> <w>necesse</w> <w>fuerit</w>, <w>et</w> <w>quod</w> <w>ibidem</w> <w>habitantium</w> <w>bestie</w> <w>herbarum</w> <w>aquarumue</w> <w>liberos</w> <w>ingressus</w> <w>regressusque</w> <w>habeant</w>. <w>Quorum</w> <w>tamen</w> <w>omnium</w> <w>largitionem</w> <w>et</w> <w>convenientiam</w> <w>ut</w> <w>suum</w> <w>seniorem</w> <w>a</w> <w>quo</w> <w>ista</w> <w>in</w> <w lemmaRef="beneficium">beneficium</w> <w>tenet</w> <w>annuere</w> <w>faciat</w>. <w>Simul</w> <w>hoc</w> <w>quoque</w> <w>annuendo</w> <w>firmavit</w>, <w>dona</w> <w>et</w> <w>laxationes</w> <w>quas</w> <w>habent</w> <w>monachi</w> <w>sancti</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w> <w>vel</w> <w>habituri</w> <w>sunt</w> <w>in</w> <w>suis</w> <w>terris</w>, <w>nec</w> <w>non</w> <w>et</w> <w>emptiones</w> <w>quas</w> <w>fecerunt</w> <w>vel</w> <w>facturi</w> <w>sunt</w>. <w>Quibus</w> <w>ita</w> <w>concessis</w> <w>dedit</w> <w>ei</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abbas</w> <w>nostri</w> <w>loci</w> <w>societatem</w> <w>et</w> <w>quicquid</w> <w>sancto</w> <w>Martino</w> <w>forfecerat</w> <w>ei</w> <w>perdonavit</w>, <w>ea</w> <w>tamen</w> <w>ratione</w>, <w>ut</w> <w>si</w> <w>factam</w> <w>infregerit</w> <w>convenientiam</w>, <w>nollens</w> <w>eam</w> <w>deinceps</w>, <w>ut</w> <w>inter</w> <w>nos</w> <w>pro</w> <w>huiusmodi</w> <w lemmaRef="causa">causa</w> <w>constitutum</w> <w>est</w>, <w>emendare</w> <w>queque</w> <w>perdonata</w> <w>requisita</w> <w>reddat</w>, <w>suasque</w> <w>querelas</w> <w>quas</w> <w>adversum</w> <w>nos</w> <w>faciebat</w>, <w>ulterius</w> <w>non</w> <w>requirat</w>. <w>De</w> <w>cetera</w> <w>quoque</w> <w>in</w> <w>consequentibus</w> <w>futuro</w> <w>nobiscum</w> <w>hanc</w> <w>etiam</w> <w>firmavit</w> <w>convenientiam</w>, <w>ut</w> <w>in</w> <w>terris</w> <w>sancti</w> <w>Martini</w> <w>nihil</w> <w>amplius</w> <w>tollat</w> <w>aut</w> <w>tollere</w> <w>faciat</w> <w>Et</w> <w>si</w> <w>aliquis</w> <w>suorum</w> <w>hominum</w> <w>aliquod</w> <w>in</w> <w>eisdem</w> <w>sancti</w> <w>terris</w> <w>forfactum</w> <w>fecerit</w>, <w>infra</w> <w>XV</w><seg type="superscript "><w>cim</w></seg> <w>dies</w>, <w>ex</w> <w>quo</w> <w>ad</w> <w>eum</w> <w>clamor</w> <w>factus</w> <w>fuerit</w>, <w>rectum</w> <w>inde</w> <w>factum</w> <w>habeat</w>. <w>Et</w> <w>ut</w> <w>hoc</w> <w>firmiorem</w> <w>auctoritatem</w> <w>haberet</w>, <w>hos</w> <w>domno</w> <w>abbati</w> <w>dedit</w> <w>fideiussores</w>, <w>scilicet</w>. <w>Raginaldum</w> <w>filium</w> <w>Burchardi</w>, <w>Adelelmum</w>, <w>Gauscelinum</w> <w>bastardum</w>, <w>Odonem</w> <w>longobardum</w>, <w>Auesgaudum</w> <w>de</w> <w>longo</w> <w>prato</w>, <w>Hugonem</w> <w>filium</w> <w>Eue</w>, <w>Hugonem</w> <w>fratrem</w> <w>Mathei</w>, <w>Fulchradum</w> <w>filium</w> <w>Ingelbaldi</w>. <w>Ad</w> <w>hoc</w> <w>scilicet</w> <w>ut</w> <w>si</w> <w>accepti</w> <w>damni</w>, <w>ut</w> <w>prediximus</w>, <w>infra</w> <w>supra</w> <w>scriptos</w> <w>XV</w><seg type="superscript "><w>cim</w></seg> <w>dies</w> <w>rectum</w> <w>factum</w> <w>non</w> <w>habuerit</w>, <w>isti</w> <w>infra</w> <w>alio</w>, <w>XV</w><seg type="superscript "><w>cim</w></seg> <w>dies</w> <w>forfactum</w> <w>emendent</w>. <w>Quod</w> <w>si</w> <w>facere</w> <w>neglexerint</w>, <w>tanquam</w> <w>transgressae</w> <w>conuenientiae</w> <w>conuicti</w> <w>culpabiles</w>, <w>quaeque</w> <w>forfacta</w> <w>ubi</w> <w>accusati</w> <w>fuerint</w>, <w>quisque</w> <w>cum</w> <w>sua</w> <w>lege</w> <w>emendet</w>. <w>Nomina</w> <w>vero</w> <w>testium</w> <w>qui</w> <w>his</w> <w>interfuerunt</w>, <w>inferius</w> <w>adnotantur</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Arduinus</w> <w>filius</w> <w>Corbonis</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Rainaldus</w> <w>iuenis</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Tetbaldus</w> <w lemmaRef="frater">frater</w> <w>eius</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Eblo</w> <w>archipresbiter</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Tedasius</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Droco</w> <w lemmaRef="vicarius">vicarius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Bernardus</w> <w>tiro</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Hubertus</w> <w>de</w> <w>Pratella</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Richardus</w> <w lemmaRef="maior">maior</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Obtertus</w> <w>cellararius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Warnerius</w> <w lemmaRef="maior">maior</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Andraldus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rotbertus</w> <w lemmaRef="maior">maior</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Hildegarius</w> <w>mariscalcus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rainaldus</w> <w lemmaRef="maior">maior</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Gauscelinus</w> <w>clauellus</w>.</cell></row></table>
+               <p xml:space="preserve">† <w>Signum</w> <w>domni</w> <w>Ingelbaldi</w> <w>et</w> <w>uxoris</w> <w>eius</w> <w>Hildegardis</w>. <w>Fulcherii</w> <w>filii</w> <w>Hugonis</w>, <w>Otberti</w> <w>filii</w> <w>Seuuini</w>, <w>Rainaldi</w> <w>filii</w> <w>Fulchradi</w>, <w>Berohardi</w>, <w>Mainardi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

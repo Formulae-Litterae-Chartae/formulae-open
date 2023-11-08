@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Mayenne, Nr. 22</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">26</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_mayenne_0022">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Concession à Marmoutier par Guy de Ploermel, évêque du Mans, de la cure de Commer à charge de deux sous mançais de devoir annuel.</p>
+         </div>
+         <dateline>1130<date notBefore="1130-01-01" notAfter="1130-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_mayenne_0022.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w>Wido</w>, <w>Cenomannorum</w> <w lemmaRef="episcopus">episcopus</w>, <w>concedo</w> <w>monachis</w> <w>Majoris</w> <w>monasterii</w> <w>qui</w> <w>morantur</w> <w>apud</w> <w>Meduanam</w> <w>presbyterium</w> <w>ecclesie</w> <w>de</w> <w>Comet</w> <w>et</w> <w>cetera</w> <w>quecumque</w> <w>in</w> <w>parrochia</w> <w>ejusdem</w> <w>ecclesie</w> <w>possident</w>, <w>eo</w> <w>modo</w> <w>ut</w> <w>ipsi</w> <w>monachi</w> <w>episcopo</w> <w>Cenomannensi</w>, <w>sive</w> <w>ministris</w> <w>ejus</w>, <w>per</w> <w>singulos</w> <w>annos</w> <w>duos</w> <w>solidos</w> <w>cenomannensis</w> <w>monete</w> <w>reddant</w>, <w>salvis</w> <w>ceteris</w> <w>consuetudinibus</w> <w>que</w> <w>ex</w> <w>eadem</w> <w>ecclesia</w> <w>singulis</w> <w>annis</w> <w>reddi</w> <w>consueverunt</w>, <w>sinodum</w> <w>videlicet</w> <w>et</w> <w>circadas</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 72</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">130</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0072">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Louis le Jeune restitue à l'abbaye de Gorze le domaine de Foug qui lui avait été enlevé.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Metz</p>
+         </div>
+         <dateline>878 05 10<date when="0878-05-10"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0072.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>PRECEPTUM</w> <w>LUDOICI</w> <w>REGIS</w> <w>DE</w> <w lemmaRef="villa">VILLA</w> <w>FAO</w>.</head>
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>. <w>Lodovicus</w>, <w>divina</w> <w>favente</w> <w lemmaRef="gratia">gratia</w> <w>rex</w>. <w>Si</w> <w>liberalitatis</w> <w>nostre</w> <w>munere</w> <w>res</w> <w>sancte</w> <w>Dei</w> <w>ecclesie</w>, <w>et</w> <w>loca</w> <w>divinis</w> <w>cultibus</w> <w>mancipata</w>, <w>per</w> <w>adpeticiones</w> <w>fidelium</w> <w>nostrorum</w> <w>nostro</w> <w>relevemus</w> <w>iuvamine</w>, <w>atque</w> <w>regali</w> <w>tueamur</w> <w>munimine</w>, <w>premium</w> <w>inde</w> <w>apud</w> <w>Deum</w> <w>eteme</w> <w>remunerationis</w> <w>habere</w> <w>non</w> <w>diffidimus</w>. <w>Quapropter</w> <w>noverit</w> <w>omnium</w> <w>fidelium</w> <w>nostrorum</w> <w>presentium</w> <w>scilicet</w> <w>et</w> <w>futurorum</w> <w>industria</w>, <w>qualiter</w> <w>nos</w> <w>ob</w> <w>nostre</w> <w>mercedis</w> <w>augmentum</w>, <w>et</w> <w>dilecte</w> <w>coniugis</w> <w>nostre</w> <w>karissimeque</w> <w>prolis</w> <w>nostre</w>, <w>necnon</w> <w>et</w> <w>pro</w> <w>remedio</w> <w>animarum</w> <w>antecessorum</w> <w>nostrorum</w>, <w>augustorum</w> <w>videlicet</w> <w>imperatorum</w>, <w>et</w> <w>per</w> <w>peticionem</w> <w>Walonis</w>, <w>venerabilis</w> <w>Metensis</w> <w>ecclesie</w> <w>episcopi</w>, <w>quandam</w> <w lemmaRef="villa">villam</w> <w>que</w> <w>vocatur</w> <w>Fao</w>, <w>in</w> <w>pago</w> <w>Bedense</w>, <w>et</w> <w>in</w> <w>comitatu</w> <w>Leuthardi</w>, <w>per</w> <w>nostre</w> <w>auctoritatis</w> <w>preceptum</w> <w>donamus</w> <w>et</w> <w>tradimus</w> <w>ad</w> <w>sanctum</w> <w>Gorgonium</w>, <w>que</w> <w>ante</w>, <w>per</w> <w>auctoritatem</w> <w>et</w> <w>donationem</w> <w>regum</w> <w>antecessorum</w> <w>nostrorum</w>, <w>ad</w> <w>eumdem</w> <w>Christi</w> <w>martyrem</w> <w>donata</w> <w>fuit</w>, <w>et</w> <w>postea</w> <w>iniuste</w> <w>abstracta</w>; <w>ea</w> <w>videlicet</w> <w>ratione</w> <w>ut</w> <w>prefata</w> <w lemmaRef="villa">villa</w>, <w>cum</w> <w>domibus</w>, <w>edificiis</w>, <w>pratis</w>, <w>pascuis</w>, <w>silvis</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>exitibus</w> <w>et</w> <w>regressibus</w>, <w>et</w> <w>omnibus</w> <w>ad</w> <w>eam</w> <w>iure</w> <w>respicientibus</w>, <w>ad</w> <w>sanctum</w> <w>Gorgonium</w> <w>martyrem</w> <w>Christi</w>, <w>absque</w> <w>ullius</w> <w>persone</w> <w>contradictione</w>, <w>et</w> <w>absque</w> <w>ullius</w> <w>episcopii</w> <w>abstractione</w>, <w lemmaRef="causa">causa</w> <w>alicui</w> <w>beneficiandi</w>, <w>firmiter</w> <w>permaneat</w> <w>et</w> <w>in</w> <w>perpetuum</w> <w>pertineat</w>. <w>Et</w> <w>ut</w> <w>hec</w> <w lemmaRef="auctoritas">auctoritas</w> <w>nostre</w> <w>concessionis</w> <w>firmior</w> <w>habeatur</w>, <w>et</w> <w>per</w> <w>futura</w> <w>tempora</w> <w>a</w> <w>fidelibus</w> <w>nostris</w> <w>credatur</w>, <w>verius</w> <w>et</w> <w>diligentius</w> <w>observetur</w>, <w>manu</w> <w>nostra</w> <w>propria</w> <w>subterfirmavimus</w>, <w>et</w> <w>anuli</w> <w>nostri</w> <w>impressione</w> <w>eam</w> <w>assignari</w> <w>iussimus</w>. <w>Signum</w> <w>domni</w> <w>Lodovici</w>, <w>serenissimi</w> <w>regis</w>. <w>Wolferus</w>, <w lemmaRef="cancellarius">cancellarius</w>, <w>recognovi</w> <w>et</w> <w>subscripsi</w>. <w>Data</w> <w>VI</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>maii</w>, <w>anno</w> <w>Dominice</w> <w>incarnationis</w> <w>DCCCLXXVIII</w>, <w>indictione</w> <w>XI</w>, <w>epacta</w> <w>XIIII</w>, <w>concurrente</w> <w>II</w>, <w>anno</w> <w>III</w> <w>regni</w> <w>Ludovici</w> <w>in</w> <w>Orientali</w> <w>Frantia</w> <w>regnantis</w>. <w>Actum</w> <w>Mettis</w> <w>civitate</w>, <w>in</w> <w>Dei</w> <w>nomine</w> <w>feliciter</w>. <w>Amen</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

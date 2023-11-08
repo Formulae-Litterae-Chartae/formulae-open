@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 107</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">225</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0107">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Inscription dédicatoire de l'autel Sainte-Marie dans la crypte, à Stavelot.</p>
+         </div>
+         <dateline>1046<date notBefore="1046-01-01" notAfter="1046-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0107.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Anno</w> <w>Domini</w> <w>M°</w> <w>XL°</w> <w>VI°</w> <w>dedicatum</w> <w>est</w> <w>hoc</w> <w>altare</w> <w>a</w> <w>Richardo</w> <w>Virdunensi</w> <w>episcopo</w> <w>ex</w> <w>consensu</w> <w>Wazonis</w> <w>Leodiensis</w> <w>episcopi</w> <w>in</w> <w>honore</w> <w>Domini</w> <w>nostri</w> <w>Jhesu</w> <w>Christi</w> <w>et</w> <w>intemerate</w> <w>genitricis</w> <w>ejusdem</w> <w>virginis</w> <w>Marie</w> <w>et</w> <w>sancti</w> <w>Johannis</w> <w>evangeliste</w> <w>et</w> <w>beati</w> <w>Lamberti</w> <w>martiris</w>, <w>in</w> <w>quo</w> <w>continentur</w> <w>reliquie</w> <w>de</w> <w>sepulcro</w> <w>Domini</w>, <w>de</w> <w>vestimento</w> <w>Domini</w>, <w>de</w> <w>ligno</w> <w>Domini</w>, <w>de</w> <w>vestimento</w> <w>virginis</w> <w>Marie</w>, <w>de</w> <w>corporibus</w> <w>apostolorum</w> <w>Petri</w>, <w>Johannis</w>, <w>Jacobi</w> <w>fratris</w> <w>Domini</w> <w>et</w> <w>aliorum</w> <w>apostolorum</w>, <w>de</w> <w>corporibus</w> <w>sanctorum</w> <w>Lamberti</w> <w>episcopi</w> <w>et</w> <w>martiris</w>, <w>Pancratii</w>, <w>Ciryaci</w>, <w>Gengulfi</w>, <w>Georgii</w> <w>martirum</w>, <w>de</w> <w>vestimento</w> <w>sancti</w> <w>Apollinaris</w> <w>episcopi</w> <w>et</w> <w>martiris</w> <w>et</w> <w>aliorum</w> <w>martirum</w>, <w>et</w> <w>reliquie</w> <w>Materni</w>, <w>Ursmari</w>, <w>Erminii</w> <w>confessoris</w>, <w>et</w> <w>reliquie</w> <w>sanctarum</w> <w>virginum</w>, <w>de</w> <w>velo</w> <w>sancte</w> <w>Agathe</w> <w>et</w> <w>de</w> <w>ampulla</w> <w>ejus</w>, <w>Agnetis</w> , <w>Darie</w>, <w>Anastasie</w>, <w>Eugenie</w>, <w>Barbare</w>, <w>Columbe</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

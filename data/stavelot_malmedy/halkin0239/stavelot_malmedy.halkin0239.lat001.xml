@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 239</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">459 - 461</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0239">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">L’abbé Wibald écrit au pape Eugène III au sujet du différend qui s’est élevé entre l’abbé de Saint-Laurent de Liége et celui de Saint-Gilles en Publémont; il se plaint à ce propos que l’abbaye de Saint-Gilles ait inscrit parmi ses propriétés l’église de Héron qu’elle tient à cens de l’abbé de Stavelot. </p>
+         </div>
+         <dateline>[1152, juillet]<date notBefore="1152-07-01" notAfter="1152-07-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0239.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Reverentissimo</w> <w>patri</w> <w>suo</w> <w>et</w> <w>domino</w> <w>Eugenio</w> <w>sanctae</w> <w>Romanae</w> <w>ecclesiae</w> <w>summo</w> <w>pontifici</w> <w lemmaRef="frater">frater</w> <w>Wibaldus</w> <w>Die</w> <w lemmaRef="gratia">gratia</w> <w>id</w> <w>quod</w> <w>est</w> <w>in</w> <w>aecclesia</w> <w>catholica</w>, <w>tam</w> <w>devotam</w> <w>quam</w> <w>debitam</w> <w>totius</w> <w>dilectionis</w> <w>et</w> <w>obedientiae</w> <w>plenitudinem</w>.</p>
+               <p xml:space="preserve"><w>De</w> <w>controversia</w>, <w>quae</w> <w>est</w> <w>inter</w> <w>abbatem</w> <w>monasterii</w> <w>sancti</w> <w>Laurentii</w> <w>in</w> <w>suburbio</w> <w>civitatis</w> <w>Leodiensis</w> <w>et</w> <w>abbatem</w> <w>de</w> <w>Monte</w> <w>publico</w>, <w>celsitudini</w> <w>vestrae</w> <w>ea</w> <w>in</w> <w>his</w> <w>litteris</w> <w>suggerere</w> <w>studebimus</w>, <w>quae</w> <w>super</w> <w>his</w> <w>in</w> <w>veritate</w> <w>didicimus</w> <w>ante</w> <w>annos</w> <w>ferme</w> <w>triginta</w> <w>septem</w>, <w>cum</w> <w>essemus</w> <w>pueri</w> <w>sub</w> <w>scolari</w> <w>disciplina</w> <w>in</w> <w>predicta</w> <w>civitate</w> <w>constituti</w>. <w>Non</w> <w>quod</w>, <w>ad</w> <w lemmaRef="consilium">consilium</w> <w>vel</w> <w>actionem</w> <w>talium</w> <w>rereum</w> <w>admissi</w>, <w>hujusmodi</w> <w>conventiones</w> <w>seu</w> <w>pactiones</w> <w>inspicere</w> <w>in</w> <w>testimonium</w> <w>rogaremur</w>; <w>set</w> <w>quod</w> <w>fama</w> <w>iter</w> <w>clerum</w> <w>et</w> <w>scolares</w> <w>collationes</w> <w>vulgabat</w>, <w>qualiter</w> <w>inter</w> <w>predictos</w> <w>abbates</w> <w>fuerat</w> <w>contractum</w>, <w>nobis</w> <w>ex</w> <w>celebri</w> <w>relatione</w> <w>non</w> <w>poterat</w> <w>esse</w> <w>omnino</w> <w>ignotum</w>. <w>Aecclesiam</w> <w>beati</w> <w>Egidii</w>, <w>quae</w> <w>est</w> <w>in</w> <w>Monte</w> <w>publico</w> <w>prenominatae</w> <w>civitatis</w>, <w>Berengerus</w> <w lemmaRef="abbas">abbas</w> <w>de</w> <w>monasterio</w> <w>sancti</w> <w>Laurentii</w> <w>dedit</w> <w>cuidam</w> <w>Gerrico</w> <w>regulari</w> <w>canonico</w> <w>cum</w> <w>quibusdam</w> <w>fratribus</w> <w>ejusdem</w> <w>professionis</w> <w>ad</w> <w>inhabitandum</w> <w>et</w> <w>amplificandum</w> <w>secundum</w> <w>ordinem</w> <w>beatie</w> <w>Augustini</w>, <w>ea</w> <w>scilicet</w> <w>conditionis</w> <w>ratione</w>, <w>ut</w> <w>si</w> <w>prenominatus</w> <w>locus</w> <w>eo</w> <w>usque</w> <w>per</w> <w>divinam</w> <w>largitatem</w> <w>crescendo</w> <w>proficeret</w>, <w>quod</w> <w>pastorem</w> <w>sibi</w> <w>fratres</w> <w>regulariter</w> <w>deberent</w> <w>eligere</w>, <w>idem</w> <w>electus</w> <w>corporalem</w> <w>investituram</w> <w>a</w> <w>predicto</w> <w>abbate</w> <w>susciperet</w>, <w>a</w> <w>quo</w> <w>etiam</w> <w>ad</w> <w>suscipiendam</w> <w>episcopalem</w> <w>benedictionem</w> <w>presentaretur</w>, <w>hac</w> <w>constitutione</w> <w>per</w> <w>omnes</w> <w>successiones</w> <w>valitura</w>. <w>Needum</w> <w>in</w> <w>eis</w> <w>partibus</w> <w>terrae</w> <w lemmaRef="consuetudo">consuetudo</w> <w>processerat</w>, <w>ut</w> <w>canonici</w> <w>qui</w> <w>regulares</w> <w>dicuntur</w>, <w>abbates</w> <w>crearent</w>, <w>nomine</w> <w>prepositorum</w> <w>in</w> <w>prelationis</w> <w>offitio</w> <w>contenti</w>. <w>Quod</w> <w>vero</w> <w>abbates</w> <w>ab</w> <w>abbatibus</w> <w>ordinari</w> <w>possint</w> <w>et</w> <w>soleant</w>, <w>auctoritate</w> <w>sacrae</w> <w>regulae</w> <w>beati</w> <w>Benedicti</w> <w>didicimus</w>, <w>ubi</w> <w>dicit</w> : « <w>per</w> <w>ordinationem</w> <w>prepositi</w> <w>scandala</w> <w>sepius</w> <w>oriri</w>, <w>maxime</w> <w>in</w> <w>illis</w> <w>locis</w> <w>ubi</w> <w>ab</w> <w>eodem</w> <w>sacerdote</w> <w>vel</w> <w>ab</w> <w>eis</w> <w>abbatibus</w>, <w>qui</w> <w>abbatem</w> <w>ordinant</w>, <w>ab</w> <w>ipsis</w> <w>etiam</w> <w>prepositus</w> <w>ordinatur</w>. » <w>Superest</w> <w>usque</w> <w>hodie</w> <w>unus</w> <w>de</w> <w>primis</w> <w>habitatoribus</w> <w>ejusdem</w> <w>loci</w> <w>et</w> <w>ipse</w> <w>primus</w> <w lemmaRef="abbas">abbas</w>, <w>vir</w> <w>religiosus</w> <w>ac</w> <w>timens</w> <w>Deum</w>, <w>qui</w> <w>jam</w> <w>provectus</w> <w>in</w> <w>senectute</w> <w>bona</w> <w>et</w> <w>quasi</w> <w>in</w> <w>labro</w> <w>sepulchri</w> <w>positus</w>, <w>prescriptas</w> <w>conditiones</w> <w>coram</w> <w>lota</w> <w>Leodiensi</w> <w>ecclesia</w> <w>confitetur</w>. <w>Verumtamen</w> <w>quidam</w> <w>ex</w> <w>predicto</w> <w>loco</w> <w>regulares</w> <w>a</w> <w>felicis</w> <w>memoriae</w> <w lemmaRef="papa">papa</w> <w>Innocentio</w> <w lemmaRef="privilegium">privilegium</w> <w>obtinuerunt</w>, <w>in</w> <w>quo</w> <w>prerogativa</w> <w>abbatis</w> <w>Sancti</w> <w>Laurentii</w> <w>reticetur</w>; <w>simili</w> <w>fortasse</w> <w>simplicitatis</w> <w>forma</w> <w>aua</w> <w>in</w> <w>codem</w> <w>privilegio</w> <w>circa</w> <w>Stabulensem</w> <w>aecclesiam</w> <w>et</w> <w>nos</w> <w>usi</w> <w>sunt</w> : <w>quandoquidem</w> <w>possessionem</w> <w>nostram</w>, <w>aecclesiam</w> <w>scilicet</w> <w>de</w> <w>Hera</w>, <w>quae</w> <w>est</w> <w>juris</w> <w>Stabulensis</w> <w>aecclesia</w> <w>et</w> <w>[quam]</w> <w>sub</w> <w>certae</w> <w>pensionis</w> <w>canone</w> <w>jure</w> <w>locationis</w> <w>obtinuerunt</w>, <w>inter</w> <w>proprios</w> <w>aecclesiae</w> <w>fundos</w> <w>asscribi</w> <w>fecerunt</w>. <w>Siquidem</w> <w>ante</w> <w>annos</w> <w>XVI</w> <w>nos</w>, <w>miserati</w> <w>paupertatem</w> <w>predictae</w> <w>ecclesiae</w> <w>et</w> <w>fratrum</w> <w>quos</w> <w>in</w> <w>Domino</w> <w>diligebamus</w>, <w>prenominatam</w> <w>aecclesiam</w> <w>de</w> <w>Heran</w>, <w>cum</w> <w>decimatione</w> <w>quae</w> <w>Stabulensibus</w> <w>fratribus</w> <w>pertinet</w>, <w>eidem</w> <w>abbati</w> <w>qui</w> <w>nunc</w> <w>superest</w> <w>concessimus</w>, <w>et</w> <w>eum</w> <w>dono</w> <w>nostro</w> <w>investivimus</w>, <w>ut</w> <w>aecclesiae</w> <w>Stabulensi</w> <w>inde</w> <w>per</w> <w>singulos</w> <w>annos</w> <w>III</w> <w>marcas</w> <w>et</w> <w>unum</w> <w>fertonem</w> <w>persolveret</w>; <w>quod</w> <w>etiam</w> <w>usque</w> <w>nunc</w> <w>diligenter</w> <w>observatum</w> <w>est</w>. <w>Set</w> <w>quia</w> <w>in</w> <w>eodem</w> <w>privilegio</w>, <w>quod</w> <w>modo</w> <w>primum</w> <w>rescivimus</w>, <w>fraudem</w> <w>aecclesiae</w> <w>Stabulensi</w>, <w>sicut</w> <w>predictum</w> <w>est</w>, <w>fecerunt</w>, <w lemmaRef="pactum">pactum</w> <w>quod</w> <w>contractum</w> <w>fuerat</w>, <w>propter</w> <w>dolum</w> <w>malum</w> <w>qui</w> <w>intervenit</w>, <w>a</w> <w>parte</w> <w>Stabulensi</w> <w>aecclesiae</w> <w>discissum</w> <w>est</w>, <w>et</w> <w lemmaRef="privilegium">privilegium</w> <w>quod</w> <w>acceperant</w> <w>infirmandum</w> <w>est</w> <w>a</w> <w>vestra</w> <w>censura</w> <w>et</w> <w>abolendum</w>. <w>Porro</w> <w>de</w> <w>innocentia</w> <w>abbatis</w> <w>monasterii</w> <w>sancti</w> <w>Laurentii</w> <w>nichil</w> <w>vestrae</w> <w>discretioni</w> <w>dubitandum</w> <w>fore</w> <w>credimus</w>, <w>cum</w> <w>in</w> <w>eodem</w> <w>monasterio</w>, <w>cui</w> <w>nunc</w> <w>Deo</w> <w>auctore</w> <w>preest</w>, <w>a</w> <w>parvulo</w> <w>sit</w> <w>non</w> <w>solum</w> <w>in</w> <w>regularibus</w> <w>set</w> <w>etiam</w> <w>in</w> <w>liberalibus</w> <w>disciplinis</w> <w>adprime</w> <w>eruditus</w>, <w>qui</w> <w>etiam</w> <w>predicitis</w> <w>conventionibus</w> <w>interfuit</w>; <w>et</w> <w>nunc</w> <w>in</w> <w>lege</w> <w>Dei</w> <w>sui</w> <w>die</w> <w>ac</w> <w>nocte</w> <w>meditatur</w> <w>et</w> <w>horam</w> <w>vocationis</w> <w>suae</w> <w>lampade</w> <w>accensa</w> <w>expectat</w>. <w>Quem</w> <w>ut</w> <w>diligere</w> <w>et</w> <w>honorare</w> <w>dignemini</w>, <w>devote</w> <w>supplicamus</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

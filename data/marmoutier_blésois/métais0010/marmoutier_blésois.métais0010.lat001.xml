@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 10</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">17</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0010">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Salomon de Lavardin remet à Marmoutier toutes les coutumes féodales qu'il percevait sur les biens du prêtre Herbert et de son neveu Séhérius devenu moine, et reçoit en retour une paire de souliers d'un travail précieux.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Lavardin</p>
+         </div>
+         <dateline>1032-1060<date notBefore="1032-01-01" notAfter="1060-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0010.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>RECUPERATIONE</w> <w>CONSUETUDINUM</w> <w>DOMUS</w> <w>SEHERII</w> <w>DE</w> <w>LAVARZINO</w>. <w>CENOMANNIS</w>.»</head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w> <w>maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>sancti</w> <w>Martini</w>, <w>Salomonem</w> <w>de</w> <w>Lauarzino</w> <w>remississe</w> <w>nobis</w>, <w>pro</w> <w>anima</w> <w>sua</w>, <w>consuetudines</w> <w>omnes</w> <w>quas</w> <w>habebat</w> <w>in</w> <w>domibus</w> <w>Herberti</w> <w>presbiteri</w> <w>et</w> <w>Seherii</w> <w>nepotis</w> <w>eius</w>, <w>quas</w> <w>idem</w> <w>Seherius</w> <w>huic</w> <w>loco</w> <w lemmaRef="monachus">monachus</w> <w>deveniens</w> <w>dedit</w>. <w>Quae</w> <w>ne</w> <w>aliquando</w> <w>ab</w> <w>ipso</w> <w>vel</w> <w>successoribus</w> <w>eius</w> <w>possint</w> <w>refelli</w>, <w>breviter</w> <w>eas</w> <w>ibi</w> <w>annotauimus</w>, <w>ut</w> <w>sciatis</w> <w>quid</w> <w>ipse</w> <w>remiserit</w>. <w>Habebat</w> <w>itaque</w> <w>ante</w> <w>hoc</w> <w>consuetudinis</w> <w>in</w> <w>his</w> <w>aut</w> <w>in</w> <w>ceteris</w> <w>domibus</w>, <w>ut</w> <w>de</w> <w>singulis</w> <w>singulos</w> <w>vindemiatores</w> <w>ad</w> <w>vindemias</w> <w>suas</w> <w>faciendas</w> <w>tolleret</w> <w>et</w> <w>totidem</w> <w>foenatores</w> <w>tempore</w> <w>sectionis</w>, <w>eiusdem</w> <w>etiam</w> <w>numeri</w> <w>viros</w> <w>in</w> <w>equitatum</w> <w>sumens</w>, <w>coruatam</w> <w>quocumque</w>, <w>si</w> <w>vellet</w> <w>de</w> <w>asinis</w>. <w>De</w> <w>unoquoque</w> <w>modio</w> <w>vini</w> <w>vindemiae</w> … <w>arium</w> <w>habebat</w>, <w>et</w> <w>ad</w> <w>credentiam</w> <w>quantum</w> <w>vellet</w> <w>accipiebat</w>, <w>extorquens</w> <w>etiam</w> <w>de</w> <w>unaquaque</w> <w>domo</w> <w>annuatim</w> <w>sex</w> <w>denarios</w> <w>de</w> <w>excubia</w>, <w>quam</w> <w>vulgus</w> <w>gartagium</w> <w>appellat</w>. <w>Si</w> <w>quae</w> <w>autem</w> <w>forisfacta</w> <w>rapti</w> <w>vel</w> <w>furti</w> <w>seu</w> <w>sanguinis</w> <w>vel</w> <w>alia</w> <w>huius</w> <w>modi</w> <w>in</w> <w>eis</w> <w>vel</w> <w>ab</w> <w>eis</w> <w>fierent</w>, <w>iustificabat</w> <w>ipse</w>, <w>et</w> <w>habebat</w> <w>distractionem</w>. <w>Has</w> <w>igitur</w> <w>consuetudines</w> <w>omnes</w> <w>cum</w> <w>prius</w> <w>Herberto</w> <w>in</w> <w>vita</w> <w>ipsius</w> <w>ac</w> <w>nepoti</w> <w>eius</w> <w>Seherio</w> <w>preter</w> <w>VII</w> <w>denariorum</w> <w>censum</w>, <w>quem</w> <w>sibi</w> <w>retinuit</w>, <w>ex</w> <w>toto</w> <w>dimisisset</w>, <w>postea</w> <w>quam</w> <w>idem</w> <w>Seherius</w> <w>apud</w> <w>nos</w> <w lemmaRef="monachus">monachus</w> <w>deuenit</w>, <w>denuo</w> <w>omnes</w> <w>pro</w> <w>anima</w> <w>sua</w>, <w>sicut</w> <w>dictum</w> <w>est</w>, <w>dimisit</w>, <w>caligis</w> <w>tantum</w> <w>vermiculis</w> <w>et</w> <w>pellibus</w> <w>catinis</w> <w>a</w> <w>nobis</w> <w>propter</w> <w>hoc</w> <w>acceptis</w>, <w>quas</w> <w>ei</w> <w lemmaRef="dominus">domnus</w> <w>Ernaldus</w> <w lemmaRef="frater">frater</w> <w>noster</w> <w>vice</w> <w>nostri</w> <w>dedit</w>. <w>Quas</w> <w>licet</w> <w>non</w> <w>ita</w> <w>ut</w> <w>sunt</w> <w>descriptae</w> <w>nominatim</w> <w>expresserit</w>, <w>in</w> <w>hoc</w> <w>tamen</w> <w>totum</w> <w>comprehendit</w> <w>quod</w> <w>consuetudines</w> <w>omnes</w> <w>praeditarum</w> <w>domorum</w> <w>perpetuo</w> <w>et</w> <w>ad</w> <w>integrum</w> <w>perdonavit</w>. <w>Testibus</w> <w>qui</w> <w>interfuerunt</w> <w>istis</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Hildebertus</w> <w lemmaRef="vicarius">vicarius</w>. </p><p rend="Normal" style="text-align: left; "><w>Fulbertus</w> <w>de</w> <w>Rupe</w>.</p></cell><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Ingelerius</w> <w lemmaRef="canonicus">canonicus</w>. </p><p rend="Normal" style="text-align: left; "><w>Hubertus</w> <w lemmaRef="homo">homo</w> <w>Herberti</w> <w>presbiteri</w>.</p></cell></row></table>
+               <p xml:space="preserve">                                       <w>Fredericus</w> <w>portarius</w>.</p>
+               <p xml:space="preserve">                                       <w>Gausfredus</w> <w>famulus</w> <w>monachorum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

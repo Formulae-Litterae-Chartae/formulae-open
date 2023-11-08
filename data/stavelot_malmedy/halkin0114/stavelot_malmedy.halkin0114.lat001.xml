@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 114</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">236 - 237</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0114">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le monastère de Stavelot, en exécution des dernières volontés du duc Frédéric, est mis en possession de l’alleu de Sprimont que ce prince lui avait engagé précédemment.</p>
+         </div>
+         <dateline>1067 08 30<date when="1067-08-30"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0114.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w>. <w>Noverint</w> <w>presentes</w> <w>et</w> <w>futuri</w> <w>saeculi</w> <w>a</w> <w>fideles</w>, <w>quod</w> <w lemmaRef="dux">dux</w> <w>Fredericus</w>, <w>mortua</w> <w>uxore</w> <w>sua</w> <w>Gerberca|</w>, <w>tradidit</w> <w>ad</w> <w>altare</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Remacli</w> <w>in</w> <w>Stabulau</w> <w>aecclesiam</w> <w>de</w> <w>Sprismont</w> <w>et</w> <w lemmaRef="allodium">allodium</w> <w>quoddam</w> <w>Genape</w>, <w>quod</w> <w>ex</w> <w>|</w> <w>parte</w> <w>ipsius</w> <w>conjugis</w> <w>defunctae</w> <w>sui</w> <w>juris</w> <w>erat</w>. <w>Dedit</w> <w>autem</w> <w>aecclesiae</w> <w lemmaRef="allodium">allodium</w> <w>de</w> <w>Sprismont</w> <w>pro</w> <w>triginta</w> <w>libris</w> <w>in</w> <w>vadimonium</w>, <w>|</w> <w>undae</w> <w>conjugis</w> <w>defunctae</w> <w>necessaria</w> <w>prosecutus</w> <w>est</w> <w>exequiarum</w>. <w>Cumque</w> <w>non</w> <w>posset</w> <w lemmaRef="allodium">allodium</w> <w>Genape</w> <w>aecclesiae</w> <w>solidare</w> <w>et</w> <w>ipse</w> <w>|</w> <w>disposuisset</w> <w>iter</w> <w>suum</w> <w>Romam</w> <w>accelerare</w>, <w>iterum</w> <w>super</w> <w lemmaRef="allodium">allodium</w> <w>Sprismont</w> <w>LX</w> <w>marcas</w> <w>accepit</w>, <w>et</w> <w>admonitus</w> <w>de</w> <w>priori</w> <w>allodio</w> <w>|</w> <w>Genape</w>, <w>ne</w> <w>de</w> <w>non</w> <w>solidata</w> <w>traditione</w> <w>in</w> <w>aecclesiam</w> <w>peccaret</w>, <w>statuit</w> <w>ut</w> <w lemmaRef="allodium">allodium</w> <w>Sprismonte</w> <w>pro</w> <w>illo</w> <w>in</w> <w>fidei</w> <w>manus</w> <w>aecclesiae</w> <w>traderet</w>, <w>|</w> <w>si</w> <w>tamen</w> <w>aut</w> <w>ipse</w> <w>aut</w> <w>successor</w> <w>suus</w> <w>Genape</w> <w>ecclesiae</w> <w>non</w> <w>solidaret</w> <w>et</w> <w>mutuata</w> <w>non</w> <w>restitueret</w>. <w>De</w> <w>qua</w> <w>re</w> <w>fidei</w> <w>manus</w> <w>|</w> <w>hi</w> <w>sunt</w> : <w>Tiezelinus</w> <w>et</w> <w>Albricus</w> <w>de</w> <w>Braz</w>, <w>Adelardus</w> <w>de</w> <w>Ham</w>; <w>fidejussores</w> <w>hi</w> <w>sunt</w> : <w>Franco</w> <w lemmaRef="frater">frater</w> <w>Albrici</w> <w>|</w> <w>de</w> <w>Braz</w>, <w>Warnerus</w> <w>filius</w> <w>Wazelini</w> ; <w>testes</w> <w>vero</w> <w>hii</w> <w>sunt</w> : <w>Adelardus</w> <w>de</w> <w>Liezen</w>, <w>Helfridus</w> <w>de</w> <w>Aluenz</w>, <w lemmaRef="comes">comes</w> <w>Otto</w> <w>de</w> <w>Loz</w>, <w>Erleboldus</w> <w>de</w> <w>Molins</w>, <w>Tietbaldus</w> <w>de</w> <w>Longo</w> <w>prato</w>, <w>Rodericus</w> <w>de</w> <w>Contere</w>, <w>Fastradus</w> <w>filius</w> <w>|</w> <w>Wazelini</w> <w>de</w> <w>Boclenville</w>, <w>Ratbodo</w> <w>de</w> <w>Clavieres</w>, <w>Gontrannus</w> <w>de</w> <w>Summe</w>. <w>Reversus</w> <w>autem</w> <w>a</w> <w>Roma</w>, <w>cum</w> <w>infirmatus</w> <w>|</w> <w>visitaretur</w> <w>ab</w> <w>abbate</w> <w>Theoderico</w> <w>et</w> <w>fratribus</w> <w>et</w> <w>sibi</w> <w>locum</w> <w>sepulturae</w> <w>juxta</w> <w>conjugem</w> <w>petisset</w> <w>in</w> <w>predicta</w> <w>aecclesia</w> <w>Stabulensi</w>, <w>|</w> <w>constituit</w> <w>ut</w> <w lemmaRef="allodium">allodium</w> <w>predictum</w> <w>Sprismont</w> <w>fidei</w> <w>manus</w> <w>pro</w> <w>remedio</w> <w>animae</w> <w>suae</w> <w>traderent</w> <w>et</w> <w>solidarent</w> <w>jure</w> <w>perpetuo</w> <w>aecclesiae</w>. <w>|</w> <w>Quod</w> <w>et</w> <w>fecerunt</w> <w>in</w> <w>manus</w> <w>Adelardi</w> <w>advocati</w> <w>de</w> <w>Liezen</w>. <w>Cujus</w> <w>traditionis</w> <w>testes</w> <w>hii</w> <w>sunt</w> : <w>Albertus</w> <w lemmaRef="comes">comes</w> <w>de</w> <w>Namuco</w> <w>|</w> <w>et</w> <w lemmaRef="frater">frater</w> <w>ejus</w> <w>Heinricus</w>, <w>Balduinus</w> <w>de</w> <w>Sarto</w>, <w>Elbertus</w> <w>de</w> <w>Olnon</w>, <w>Rolfridus</w> <w>de</w> <w>Daueles</w> <w>et</w> <w>Walterus</w> <w lemmaRef="frater">frater</w> <w>ejus</w>, <w>Goderannus</w> <w>de</w> <w>Daueles</w>, <w>|</w> <w>Boso</w> <w>et</w> <w>Widricus</w> <w>de</w> <w>Breus</w>, <w>Roricus</w> <w>cum</w> <w>barba</w>, <w>Albricus</w> <w>de</w> <w>Monte</w>, <w>Stepelinus</w> <w>de</w> <w>Malisoil</w>, <w>Franco</w> <w>de</w> <w>Argeon</w>, <w>Adelardus</w> <w>|</w> <w>de</w> <w>Ureismont</w> <w>et</w> <w>filius</w> <w>ejus</w> <w>Boso</w>, <w>Thiezelinus</w> <w>de</w> <w>Urcismont</w>, <w>Lambertus</w> <w>de</w> <w>Hubin</w>, <w>Albricus</w> <w>de</w> <w>Braz</w> <w>et</w> <w lemmaRef="frater">frater</w> <w>ejus</w> <w>Franco</w> , <w>|</w> <w>Stephanus</w> <w>de</w> <w>Fals</w>, <w>Erleboldus</w> <w>de</w> <w>Molins</w>, <w>Heinricus</w> <w>Bauwariensis</w> . <w>Acta</w> <w>est</w> <w lemmaRef="donatio">donatio</w> <w>anno</w> <w>incarnati</w> <w>Verbi</w> <w>MXLVII°</w>, <w>|</w> <w>indictione</w> <w>V°</w>, <w>III</w> <w>kalend</w>. <w>Septembris</w>, <w>Heinrico</w> <w>IIII°</w> <w>imperante</w>, <w>Thietduino</w> <w>Leodiensium</w> <w>presule</w>, <w>Theoderico</w> <w>abbate</w>, <w>Domino</w> <w>Deo</w> <w>per</w> <w>saecula</w> <w>regnante</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

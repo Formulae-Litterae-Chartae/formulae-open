@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 29</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">35-36</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0029">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Guazo, chevalier de Chaumont, donne deux quartes de terre, situées à la Borde, du consentement du seigneur Geoffroy de Chaumont, et après sa mort, Marmoutier en prit possession.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mesland</p>
+         </div>
+         <dateline>1050-1060<date notBefore="1050-01-01" notAfter="1060-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0029.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Rerum</w> <w>gestarum</w> <w>noticiam</w> <w>edax</w> <w>solet</w> <w>oblivio</w> <w>consumere</w>, <w>et</w> <w>temporibus</w> <w>futuris</w> <w>preteritorum</w> <w>obducere</w> <w>facta</w>. <w>Proinde</w> <w>ne</w> <w>apud</w> <w>posteros</w> <w>priorum</w> <w>penitus</w> <w>acta</w> <w>depereant</w> <w>et</w> <w>uetustate</w> <w>notio</w> <w>obsolescat</w>, <w>fugax</w> <w>rerum</w> <w>memoria</w> <w>litterarum</w> <w>vinculis</w> <w>est</w> <w>religanda</w>, <w>et</w> <w>quod</w> <w>tempore</w> <w>elabitur</w> <w>scripto</w> <w>retinendum</w>. <w>Notum</w> <w>sit</w> <w>igitur</w> <w>presentibus</w> <w>et</w> <w>futuris</w> <w>universalis</w> <w>ecclesie</w> <w>filiis</w>, <w>et</w> <w>omnibus</w> <w>veri</w> <w>Dei</w> <w>cultoribus</w> <w>percognitum</w>, <w>quod</w> <w>miles</w> <w>quidam</w> <w>de</w> <w>calvo</w> <w>monte</w> <w>nomine</w> <w>Guazo</w> <w>venit</w> <w>in</w> <w>capitulum</w> <w>sancti</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>accepta</w> <w>loci</w> <w>beneficio</w> <w>dedit</w> <w>fratribus</w>, <w>cum</w> <w>uxore</w> <w>sua</w> <w>nomine</w> <w>Alpacia</w> <w>duasquartas</w> <w>optime</w> <w>terrae</w> <w>iuxta</w> <w>bordam</w>, <w>annuentibus</w> <w>filiis</w> <w>eorum</w> <w>Rotberto</w> <w>et</w> <w>Isembardo</w>. <w>Una</w> <w>autem</w> <w>quarta</w> <w>empta</w> <w>est</w> <w>ab</w> <w>eis</w>, <w>et</w> <w>soluit</w> <w>quotannis</w> <w>X</w> <w>et</w> <w>VIII</w> <w>denarios</w> <w>de</w> <w>censu</w>. <w>Altera</w> <w>vero</w> <w>est</w> <w>de</w> <w>feuo</w> <w>Gauffredi</w> <w>de</w> <w>Calmonte</w>, <w>fecitque</w> <w>supradictus</w> <w>miles</w> <w>ut</w> <w>hoc</w> <w>ipse</w> <w>Gauffredus</w> <w>annueret</w>. <w>Post</w> <w>decessum</w> <w>tamen</w> <w>suum</w> <w>dederunt</w> <w>ipsas</w> <w>quartas</w>, <w>ita</w> <w>ut</w> <w>cum</w> <w>omnibus</w> <w>que</w> <w>in</w> <w>terra</w> <w>exitus</w> <w>sui</w> <w>hora</w> <w>reperta</w> <w>fuerint</w>, <w>cum</w> <w>frugibus</w> <w>et</w> <w>bobus</w>, <w>et</w> <w>ceteris</w> <w>omnibus</w> <w>in</w> <w lemmaRef="dominium">dominium</w> <w>sancti</w> <w>Martini</w> <w>condonentur</w>. <w>Et</w> <w>ad</w> <w>presens</w> <w>in</w> <w>reuestitura</w> <w>dederunt</w> <w>unum</w> <w>agripennum</w>, <w>et</w> <w>unum</w> <w>campum</w>. <w>Horum</w> <w>omnium</w> <w>testes</w> <w>qui</w> <w>viderunt</w> <w>et</w> <w>audierunt</w> <w>cartule</w> <w>huic</w> <w>subnotauimus</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Vmbaldus</w> <w lemmaRef="homo">homo</w> <w>ipsius</w> <w>Guazonis</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Guarinus</w> <w lemmaRef="clericus">clericus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Gausmerus</w> <w lemmaRef="clericus">clericus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Otbertus</w> <w>cellararius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Hildegarius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Guarinus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rainaldus</w> <w lemmaRef="maior">maior</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Ricardus</w> <w lemmaRef="maior">maior</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rotbertus</w> <w lemmaRef="maior">maior</w>.</cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

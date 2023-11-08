@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 2</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">3-4</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0002">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Donation en précaire au diacre Rainaud de certains biens de la mense des religieux de Marmoutier situés à Chouzy.</p>
+         </div>
+         <dateline>980<date notBefore="0980-01-01" notAfter="0980-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0002.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>TERRA</w> <w>DE</w> <w>CANSIACO</w></head>
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w> <w>Summi</w> <w>Saluatoris</w>. <w>Nos</w> <w>quidem</w> <w>fratres</w> <w>gregis</w> <w>incliti</w> <w>confessoris</w> <w>Xristi</w> <w>beati</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w>, <w>videlicet</w>: <w>Huddo</w> <w>decanus</w>, <w>Arduinus</w> <w>thesaurarius</w> <w>idemque</w> <w>archiepiscopus</w>, <w>Ascelinus</w> <w>prepositus</w> <w>ceterique</w> <w>alii</w>, <w>notum</w> <w>immo</w> <w>et</w> <w>percognitum</w> <w>fore</w> <w>volumus</w> <w>cunctis</w> <w>sancte</w> <w>Dei</w> <w>ecclesie</w> <w>fidelibus</w>, <w>quoniam</w> <w>deprecatus</w> <w>est</w> <w>nos</w> <w>quidam</w> <w lemmaRef="diaconus">diaconus</w> <w>nostrae</w> <w>congregationis</w> <w lemmaRef="canonicus">canonicus</w>, <w>nomine</w> <w>Rainaldus</w>, <w>uti</w> <w>ex</w> <w>rebus</w> <w>mensae</w> <w>fratrum</w> <w>pertinentibus</w>, <w>scilicet</w> <w>inter</w> <w>terram</w> <w>et</w> <w>vineam</w> <w>aripennum</w> <w>I</w> <w>et</w> <w>medium</w>, <w>sub</w> <w>institutione</w> <w lemmaRef="census">census</w> <w>annuatim</w> <w>reddendum</w> <w>per</w> <w>huius</w> <w>nostrae</w> <w>auctoritatis</w> <w lemmaRef="testamentum">testamentum</w> <w>concederemus</w>. <w>Cuius</w> <w>deprecationem</w> <w>benigne</w> <w>recipientes</w>, <w>concessimus</w> <w>ei</w> <w>predictam</w> <w>terram</w> <w>sitam</w> <w>in</w> <w>pago</w> <w>turonico</w>, <w>ex</w> <w>potestate</w> <w>sancti</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>Cansiaco</w>. <w>Terminatur</w> <w>ab</w> <w>una</w> <w>parte</w> <w>terra</w> <w>quam</w> <w>tenet</w> <w>Isaac</w> <w>et</w> <w>de</w> <w>aliis</w> <w>duabus</w> <w>partibus</w> <w>terra</w> <w>ex</w> <w>ipsa</w> <w>potestate</w>, <w>quarta</w> <w>vero</w> <w>fronte</w> <w>via</w> <w>publica</w>. <w>Infra</w> <w>istas</w> <w>terminationes</w> <w>totum</w> <w>et</w> <w>ad</w> <w>integrum</w> <w>memorato</w> <w>Rainaldo</w> <w>pleniter</w> <w>concessimus</w>, <w>ut</w> <w>habeat</w> <w>licentiam</w> <w>possidendi</w>, <w>vendendi</w> <w>donandi</w> <w>vel</w> <w>quicquid</w> <w>melius</w> <w>elegerit</w> <w>faciendi</w>. <w>Studeat</w> <w>etiam</w> <w>exinde</w> <w>annis</w> <w>singulis</w> <w>ad</w> <w>missam</w> <w>sancti</w> <w>Martini</w> <w>autumpnalem</w> <w>solvere</w> <w>censum</w> <w>denariorum</w> <w>VI</w>, <w>et</w> <w>ei</w> <w>amplius</w> <w>non</w> <w>requiratur</w>. <w>Et</w> <w>si</w> <w>de</w> <w>eodem</w> <w>censu</w> <w>tardus</w> <w>aut</w> <w>neglegens</w> <w>repertus</w> <w>fuerii</w>, <w>id</w> <w>ipsum</w> <w>ei</w> <w>liceat</w> <w>emendare</w>, <w>et</w> <w>quod</w> <w>tenuerit</w> <w>non</w> <w>ideo</w> <w>cogatur</w> <w>amittere</w>. <w>Ergo</w> <w>ut</w> <w>credatur</w> <w>esse</w> <w>factum</w> <w>et</w> <w>a</w> <w>successoribus</w> <w>nostris</w> <w>inviolabiliter</w> <w>conservetur</w> <w>manibus</w> <w>propriis</w> <w>ipsum</w> <w>tangendo</w> <w>firmavimus</w> <w>adque</w> <w>corroboravimus</w>. <w>Huddo</w> <w>decanus</w> <w>firmavit</w> <w>atque</w> <w>subscripit</w>; <w>Arduinus</w> <w lemmaRef="diaconus">archidiaconus</w> <w>idemque</w> <w>archiepiscopus</w> <w>firmavit</w> <w>atque</w> <w>subscripsit</w>, <w>Ascelinus</w> <w lemmaRef="canonicus">canonicus</w> <w>atque</w> <w>prepositus</w> <w>subscripsit</w>. </p>
+               <p xml:space="preserve"><w>Constantius</w> <w>Rotbertus</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

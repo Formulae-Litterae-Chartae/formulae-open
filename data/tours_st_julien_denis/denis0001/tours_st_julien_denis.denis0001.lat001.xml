@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">1-5</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice de l’échange, fait entre Gauzbert, abbé de Saint-Julien, et Robert de Chateau-Landon, par suite duquel les moines obtiennent la possession de Beaumont-la-Chartre.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Tours</p>
+         </div>
+         <dateline>1002 07<date notBefore="1002-07-01" notAfter="1002-07-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">+ <w>Pro</w> <w>communi</w> <w>compendio</w> <w>ac</w> <w>utrorumque</w> <w>utilitate</w> <w>placuit</w> <w>atque</w> <w>convenit</w> <w>inter</w> <w>venerabilem</w> <w>Sancti</w> <w>Juliani</w> <w>potestatem</w>, <w>videlicet</w> <w>domno</w> <w>Gauzberto</w>, <w>abbati</w>, <w>et</w> <w>ipsius</w> <w>martyris</w> <w>monachis</w>, <w>necnon</w>, <w>ex</w> <w>altera</w> <w>parte</w>, <w>Rotberto</w>, <w>Castro</w> <w>Landonensis</w> <w>vassallo</w>, <w>ut</w> <w>inter</w> <w>se</w> <w>quasdam</w> <w>terras</w> <w>commutare</w> <w>deberent</w>, <w>quod</w> <w>et</w> <w>ita</w> <w>fecerunt</w>. <w>Dedit</w> <w>igitur</w> <w lemmaRef="potestas">potestas</w> <w>Sancti</w> <w>Juliani</w>, <w>idem</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abba</w> <w>Gauzbertus</w> <w>et</w> <w>monachi</w> <w>ejusdem</w> <w>loci</w>, <w>partibus</w> <w>jam</w> <w>dicti</w> <w>Rotberti</w>, <w>quendam</w> <w>alodum</w> <w>nuncupantem</w> <w lemmaRef="villa">Villam</w> <w>Rodulfi</w>, <w>situm</w> <w>in</w> <w>pago</w> <w>Stampensi</w>, <w>cum</w> <w>aecclesia</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Petri</w> <w>desuper</w> <w>constructa</w>, <w>cum</w> <w>terris</w> <w>cultis</w> <w>et</w> <w>incultis</w>, <w>cum</w> <w>vineis</w>, <w>pratis</w>, <w>pascuis</w>, <w>aquis</w>, <w>aquarumve</w> <w>decursibus</w>, <w>mobilibus</w> <w>et</w> <w>inmobilibus</w>, <w>previis</w> <w>et</w> <w>exitibus</w>, <w>et</w> <w>cum</w> <w>mediaetate</w> <w>farinarii</w> <w>super</w> <w>fluvium</w> <w>Essonae</w>, <w>insuper</w> <w>in</w> <w>argento</w> <w>solidos</w> <w>CCLX</w>. <w>Econtra</w> <w>in</w> <w>compensatione</w>, <w>vel</w> <w>vicissitudine</w> <w>jam</w> <w>dicti</w> <w>pretii</w> <w>vel</w> <w>terrae</w>, <w>dedit</w> <w>et</w> <w>tradidit</w> <w>prelibatus</w> <w>Rotbertus</w>, <w>cum</w> <w>consilio</w> <w>fratrum</w> <w>suorum</w>, <w>Pontii</w> <w>scilicet</w> <w>et</w> <w>Erberti</w>, <w>partibus</w> <w>Sancti</w> <w>Juliani</w> <w>et</w> <w>monachorum</w> <w>ipsius</w> <w>loci</w>, <w>alodum</w> <w>quod</w> <w>vocatur</w> <w>Bellomonte</w>, <w>situm</w> <w>in</w> <w>pago</w> <w>Cinomannensi</w>, <w>cum</w> <w>aecclesia</w> <w>in</w> <w>honore</w> <w>Sancti</w> <w>Petri</w>, <w>cum</w> <w>omnibus</w> <w>appendiciis</w> <w>et</w> <w>utilitatibus</w> <w>suis</w>, <w>terris</w> <w>cultis</w> <w>et</w> <w>incultis</w>, <w>vineis</w>, <w>pratis</w>, <w>pascuis</w>, <w>silvis</w>, <w>aquis</w>, <w>aquarumve</w> <w>decursibus</w>, <w>et</w> <w>cum</w> <w>omnibus</w> <w>utilitatibus</w>, <w>quaesitis</w> <w>et</w> <w>inquirendis</w>, <w>mobilibus</w> <w>et</w> <w>inmobilibus</w>, <w>previis</w> <w>et</w> <w>exitibus</w> <w>et</w> <w>farinario</w> <w>I</w> <w>in</w> <w>fluvio</w> <w>Dimediae</w>. <w>Haec</w> <w>vero</w> <w>omnia</w> <w>prelibata</w>, <w>pars</w> <w>parti</w> <w>sibi</w> <w>invicem</w> <w>tradidit</w> <w>atque</w> <w>per</w> <w>loca</w> <w>determinata</w>, <w>consignavit</w> <w>habendi</w>, <w>tenendi</w>, <w>possidendi</w> <w>necnon</w> <w>jure</w> <w>proprietario</w> <w>utendi</w>, <w>faciantque</w> <w>ex</w> <w>eis</w> <w>sicut</w> <w>et</w> <w>de</w> <w>ceteris</w> <w>rebus</w> <w>jure</w> <w>et</w> <w>legaliter</w> <w>adquisistis</w>.<w>Venerabilis</w> <w>etiam</w> <w>Beati</w> <w>Juliani</w> <w>locus</w> <w>res</w> <w>quas</w> <w>a</w> <w>supradicto</w> <w>Rotberto</w> <w>accepit</w> <w>perpetim</w> <w>teneat</w>, <w>possideat</w> <w>et</w> <w>utatur</w>, <w>nemine</w> <w>inquietante</w> <w>ac</w> <w>contradicente</w>. <w>Si</w> <w>autem</w> <w>aliqua</w> <w>intromissa</w> <w>persona</w> <w>commutaciones</w> <w>has</w> <w>quolibet</w> <w>modo</w> <w>infringere</w> <w>vel</w> <w>inquietare</w> <w>praesumpserit</w>, <w>nullatenus</w> <w>illud</w> <w>evendicare</w> <w>valeat</w>, <w>suaque</w> <w>repetio</w> <w>omnimodis</w> <w>effectu</w> <w>careat</w>, <w>insuper</w> <w>contra</w> <w>quem</w> <w>litem</w> <w>intulerit</w> <w>argenti</w> <w>solidos</w> <w>mille</w> <w>multatus</w> <w>componat</w>. <w>Et</w> <w>hae</w> <w>commutaciones</w> <w>uno</w> <w>tenore</w> <w>conscripte</w>, <w>manibus</w> <w>nostris</w> <w>aliorumque</w> <w>bonorum</w> <w>vivorum</w> <w>corroborate</w>, <w>firme</w> <w>et</w> <w>stabiles</w> <w>per</w> <w>succedentia</w> <w>tempora</w> <w>permaneant</w> <w>cum</w> <w>stipulatione</w> <w>subnixe</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; ">+ <w>Signum</w> <w>Archembaldi</w>, <w>archiepiscopi</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>domni</w> <w>Gauzberti</w>, <w>abbatis</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Rainaldi</w>, <w>decani</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Guidoni</w>, <w>monahi</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Gualterii</w>, <w>sacerdotis</w> <w>et</w> <w>monachi</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Adraldi</w>, <w>sacerdotis</w> <w>et</w> <w>monachi</w>.</p><p rend="Normal" style="text-align: left; "><w>Rainaldus</w>, <w lemmaRef="monachus">monachus</w> <w>et</w> <w>sacerdos</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gauzbertus</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gauzuinus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Johannes</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Ervicus</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Giraldus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Auramnus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Constantinus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Girbertus</w>, <w lemmaRef="diaconus">subdiaconus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Hugo</w>, <w lemmaRef="diaconus">subdiaconus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Otgerius</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Bernardus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Bernaldus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Arderadus</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Rainaldus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gauzfredus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Drogo</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Leudo</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Johannes</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Girardus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Durandus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gulferius</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gerricus</w>, <w>levita</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p></cell><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Boso</w>, <w lemmaRef="diaconus">archidiaconus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Guillelmus</w>, <w lemmaRef="clericus">clericus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Burchardus</w>, <w lemmaRef="clericus">clericus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Guarnerius</w>, <w>precentor</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Fredricus</w>, <w lemmaRef="clericus">clericus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Martinus</w>, <w lemmaRef="clericus">clericus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Gualterius</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Hugo</w>, <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Ingelbaldus</w>, <w>sacerdos</w> <w>et</w> <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Rainardus</w>, <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Petrus</w>, <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Eurardus</w>, <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Fulcuinus</w>, <w lemmaRef="monachus">monachus</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Christoforus</w>, <w lemmaRef="puer">puer</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Guido</w>, <w lemmaRef="puer">puer</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Erbertus</w>, <w lemmaRef="puer">puer</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Martinus</w>, <w lemmaRef="puer">puer</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p><p rend="Normal" style="text-align: left; "><w>Ulgerius</w>, <w lemmaRef="puer">puer</w>, <hi rend="italic" style="font-size:7.5pt"><w>subscripsit</w></hi>.</p></cell><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Gualterii</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Beroardi</w>.</p><p rend="Normal" style="text-align: left; "><w>Signum</w> <w>Wicherii</w>. +</p></cell></row></table>
+               <p xml:space="preserve"><w>Data</w> <w>Turonis</w>, <w>ante</w> <w>praesentiam</w> <w>Archembaldi</w>, <w>archiepiscopi</w>, <w>mense</w> <w>julio</w>, <w>anno</w> <w>Incarnationis</w> <w>Dominicae</w> <w>millesimo</w> <w>II</w>, <w>regnante</w> <w>rege</w> <w>Rotberto</w> <w>anno</w> <w>X</w>.</p>
+               <p xml:space="preserve"><w>Gualterius</w>, <w>licet</w> <w>indignus</w> <w>sacerdos</w> <w>ac</w> <w lemmaRef="monachus">monachus</w>, <w>ad</w> <w>vicem</w> <w>Gauzberti</w>, <w>levite</w> <w>et</w> <w>monachi</w> <w>scoleque</w> <w>primi</w>, <w>scripsit</w> <w>et</w> <w>subscripsit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

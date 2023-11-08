@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Mayenne, Nr. 18</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">23-24</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_mayenne_0018">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Accord entre l’abbaye de Marmoutier et Jean, prêtre de Mayenne, réglant les droits des parties dans les profits à provenir de l’église de Notre-Dame de Mayenne et des sépultures dans la chapelle du château.</p>
+         </div>
+         <dateline>1124<date notBefore="1124-01-01" notAfter="1124-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_mayenne_0018.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>[omnibus</w> <w>presentibus</w> <w>et</w> <w>futuris]</w> <w>quod</w> <w>Johannes</w>, <w lemmaRef="presbyter">presbyter</w> <w>quidam</w> <w>Meduanensis</w>, <w>Dei</w> <w>et</w> <w>sancti</w> <w>Martini</w> <w>compunctus</w> <w>amore</w>, <w>Majus</w> <w lemmaRef="monasterium">monasterium</w> <w>cum</w> <w>Gualterio</w>, <w>tunc</w> <w>priore</w> <w>Meduane</w>, <w>expetiit</w> <w>ibique</w>, <w>in</w> <w>presentia</w> <w>domini</w> <w>Guillelmi</w> <w>abbatis</w> <w>ac</w> <w>totius</w> <w>capituli</w>, <w>donum</w> <w>ecclesie</w> <w>Sancte</w> <w>Marie</w> <w>de</w> <w>Meduana</w> <w>quod</w> <w>Robertus</w> <w>Pavo</w>, <w>ejusdem</w> <w>ecclesie</w> <w lemmaRef="dominus">dominus</w>, <w>monachis</w> <w>sancti</w> <w>Martini</w> <w>longe</w> <w>ante</w> <w>fecerat</w>, <w>sicut</w> <w lemmaRef="carta">chartula</w> <w>inde</w> <w>facta</w> <w>testatur</w>, <w>libentissime</w> <w>concessit</w>, <w>promittens</w> <w>illud</w> <w>donum</w> <w>contra</w> <w>omnes</w> <w>adversarios</w> <w>pro</w> <w>posse</w> <w>suo</w> <w>Sancto</w> <w>Martino</w> <w>diratiocinare</w>, <w>defendere</w>, <w>adquietare</w>, <w>presbyteratum</w> <w>quoque</w> <w>ejusdem</w> <w>ecclesie</w>, <w>quod</w> <w>a</w> <w>Roberto</w> <w>Pavone</w> <w>eatenus</w> <w>habuerat</w>, <w>a</w> <w>domino</w> <w>abbate</w> <w>Sancti</w> <w>Martini</w> <w>deinceps</w> <w>habendum</w> <w>atque</w> <w>tenendum</w> <w>recepit</w>, <w>salva</w> <w>omnino</w> <w>fidelitate</w> <w>atque</w> <w lemmaRef="convenientia">convenientia</w> <w>Roberti</w> <w>Pavonis</w>, <w>que</w> <w lemmaRef="convenientia">convenientia</w> <w>talis</w> <w>est</w>: <w>Quamdiu</w> <w>Robertus</w> <w>Pavo</w> <w>prefatam</w> <w>ecclesiam</w> <w>in</w> <w>manu</w> <w>propria</w> <w>tenuerit</w>, <w>omnes</w> <w>ejusdem</w> <w>ecclesie</w> <w>redditus</w> <w>equaliter</w> <w>inter</w> <w>se</w> <w>divident</w> <w>Robertus</w> <w>et</w> <w>Johannes</w>; <w>cum</w> <w>vero</w> <w>Robertus</w> <w>vel</w> <w lemmaRef="monachus">monachus</w> <w>fuerit</w> <w>vel</w> <w>obierit</w> <w>et</w> <w>ecclesia</w> <w>illa</w> <w>in</w> <w>manus</w> <w>monachorum</w> <w>devenerit</w>, <w>tunc</w> <w>Johannes</w> <w>sese</w> <w>ad</w> <w>presbyterii</w> <w>tantum</w> <w>partem</w> <w>restringet</w>, <w>hoc</w> <w>modo</w> <w>videlicet</w> <w>ut</w> <w>monachi</w> <w>duas</w> <w>decime</w> <w>ac</w> <w>primitiarum</w> <w>partes</w> <w>recipiant</w>, <w>Johannes</w> <w>tertiam</w>; <w>[ita</w> <w>et</w> <w>in</w> <w>quinque</w> <w>nominatis</w> <w>festis</w> <w>monachi</w> <w>daus</w> <w>offerture</w> <w>partes</w> <w>habeant</w>, <w>Johannes</w> <w>tertiam]</w>, <w>nam</w> <w>reliquo</w> <w>anni</w> <w>tempore</w> <w>totam</w> <w>offerturam</w>, <w>sicut</w> <w>et</w> <w>ceteris</w> <w>presbyteris</w> <w>moris</w> <w>est</w>, <w>Johannes</w> <w>accipiet</w>. <w>Porro</w> <w lemmaRef="dominus">dominus</w> <w>abba[s]</w> <w>concessit</w> <w>eidem</w> <w>Johanni</w> <w>quod</w> <w>si</w> <w>haberet</w> <w>filium</w> <w>vel</w> <w>nepotem</w> <w>clericum</w> <w>qui</w> <w>post</w> <w>mortem</w> <w>patris</w> <w>presbyterii</w> <w>fungeretur</w> <w>officio</w>, <w>ille</w> <w>per</w> <w lemmaRef="consilium">consilium</w> <w>episcopi</w> <w>et</w> <w>pro</w> <w>amore</w> <w>Johannis</w>, <w>predictam</w> <w>ecclesiam</w> <w>cum</w> <w>terris</w> <w>ac</w> <w>domibus</w> <w>sive</w> <w>ceteris</w> <w>edificiis</w> <w>ad</w> <w>eam</w> <w>pertinentibus</w> <w>de</w> <w>monachis</w> <w>in</w> <w>vita</w> <w>sua</w> <w>tenebit</w>; <w>si</w> <w>vero</w> <w>ille</w> <w lemmaRef="propinquus">propinquus</w> <w>ejus</w> <w>non</w> <w lemmaRef="clericus">clericus</w> <w>sed</w> <w>laicus</w> <w>fuerit</w>, <w>terram</w> <w>tantum</w> <w>de</w> <w>Briviis</w>, <w>que</w> <w>est</w> <w>de</w> <w>jure</w> <w>ecclesie</w>, <w>ha[be]bit</w>; <w>reliqua</w> <w>autem</w> <w>omnia</w>, <w>id</w> <w>est</w> <w>ecclesia</w> <w>cum</w> <w>appenditiis</w> <w>suis</w>, <w>monachorum</w> <w>erunt</w>. <w>De</w> <w>his</w> <w>hactenus</w>. <w>Item</w> <w>de</w> <w>cimiterio</w> <w>capelle</w> <w>Meduanensis</w>, <w>unde</w> <w>aliqua</w> <w>controversia</w> <w>inter</w> <w>monachos</w> <w>Sancti</w> <w>Martini</w> <w>et</w> <w>prefatum</w> <w>Johannem</w> <w>extitit</w>, <w>ad</w> <w>hunc</w> <w>finem</w> <w>pacis</w> <w>et</w> <w>concordie</w> <w>ventum</w> <w>est</w>. <w>Johannes</w> <w>enim</w>, <w>recognoscens</w> <w>se</w> <w>injustam</w> <w>monachis</w> <w>fecisse</w> <w>calumniam</w> <w>de</w> <w>predicto</w> <w>cimiterio</w>, <w>benivole</w> <w>concessit</w> <w>ut</w> <w>tota</w> <w lemmaRef="familia">familia</w> <w>domini</w> <w>Meduanensis</w>, <w>de</w> <w>pane</w> <w>et</w> <w>victu</w> <w>ipsius</w>, <w>tam</w> <w>milites</w> <w>quam</w> <w>servientes</w>, <w>qui</w> <w>tamen</w> <w>[non</w> <w>sunt]</w> <w>residentes</w> <w>in</w> <w>parrochia</w> <w>Sancte</w> <w>Marie</w> <w>ita</w> <w>quod</w> <w>ibi</w> <w>habeant</w> <w>focum</w> <w>et</w> <w>locum</w>, <w>hi</w>, <w>inquam</w>, <w>omnes</w> <w>absque</w> <w>ulla</w> <w>contradictione</w> <w>a</w> <w>capellano</w> <w>monachorum</w> <w>omnem</w> <w>rectitudinem</w> <w>suam</w> <w>confessionis</w> <w>et</w> <w>communionis</w> <w>viventes</w> <w>recipient</w>, <w>mortui</w> <w>autem</w> <w>ad</w> <w>cimiterium</w> <w>capelle</w> <w>sepeliendi</w> <w>deferentur</w>; <w>sed</w> <w>et</w> <w>alii</w> <w>quicumque</w> <w>homines</w> <w>de</w> <w>omnibus</w> <w>que</w> <w>circa</w> <w>sunt</w> <w>parrochiis</w> <w>extra</w> <w>parrochiam</w> <w>Sancte</w> <w>Marie</w> <w>matris</w> <w>ecclesie</w>, <w>ad</w> <w>cimiterium</w> <w>capelle</w> <w>[si</w> <w>voluerint]</w> <w>facient</w> <w>se</w> <w>deferri</w> <w>et</w> <w>absque</w> <w>omni</w> <w>calumnia</w> <w>sepeliri</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>de</w> <w>parrochianis</w> <w>Sancte</w> <w>Marie</w> <w>ad</w> <w>predictum</w> <w>cimiterium</w> <w>venire</w> <w>et</w> <w>sepeliri</w> <w>si</w> <w>ibidem</w> <w>rogaverit</w>, <w>salva</w> <w>rectitudine</w> <w>matris</w> <w>ecclesie</w>, <w>nullo</w> <w>contradicente</w>, <w>votum</w> <w>suum</w> <w>sibi</w> <w>adimpleri</w> <w>licebit</w>. <w>Ego</w> <w>Ildebertus</w>, <w>Cenomannorum</w> <w lemmaRef="episcopus">episcopus</w>, <w>concessi</w> <w>et</w> <w>signavi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

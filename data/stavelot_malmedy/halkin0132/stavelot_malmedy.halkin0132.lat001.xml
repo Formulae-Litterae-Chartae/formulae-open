@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 132</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">270</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0132">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte rapportant que le sous-avoué Thibaud, grâce à l’intervention du comte Henri, avoué de l’abbaye, parvint à obtenir des religieux de Stavelot la dîme de Marche, à la condition de payer quatre livres tous les ans à la Saint-André.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>1102<date notBefore="1102-01-01" notAfter="1102-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0132.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>fidelibus</w> <w>quod</w> <w>Thiebaldus</w> <w>advocatus</w> <w>cum</w> <w>comite</w> <w>Heinrico</w> <w>Stabulaus</w> <w>veniens</w>, <w>summo</w> <w>labore</w> <w>annitente</w> <w>eodem</w> <w>comite</w> <w>Heinrico</w> <w>cum</w> <w>aliis</w> <w>qui</w> <w>aderant</w> <w>nobilibus</w> <w>vel</w> <w>ecclesie</w> <w>hominibus</w>, <w>vix</w> <w>obtinuit</w> <w>ut</w> <w>sibi</w> <w>concederetur</w> <w>a</w> <w>fratribus</w> <w>decima</w> <w>ecclesie</w> <w>que</w> <w>[est]</w> <w>in</w> <w>Marcha</w>, <w>ea</w> <w>scilicet</w> <w>ratione</w> <w>ut</w> <w>fratres</w> <w>singulis</w> <w>annis</w> <w>decimatores</w> <w>constituant</w> <w>et</w> <w>ea</w> <w>que</w> <w>in</w> <w>domo</w> <w>ipsorum</w> <w>juris</w> <w>est</w> <w>reposita</w>, <w>clavem</w> <w>recipiant</w> <w>et</w> <w>eam</w> <w>penes</w> <w>se</w> <w>habeant</w>, <w>donec</w> <w>idem</w> <w>Tiebaldus</w> <w>tercia</w> <w>die</w> <w>post</w> <w>festivitatem</w> <w>sancti</w> <w>Andree</w> <w>IIII</w> <w>libras</w> <w>persolvat</w>: <w>quod</w> <w>si</w> <w>ea</w> <w>die</w>, <w>ut</w> <w>dictum</w> <w>est</w>, <w>non</w> <w>persolverit</w>, <w>fratres</w> <w>exinde</w> <w>ipsam</w> <w>decimam</w> <w>quietam</w> <w>sine</w> <w>alicujus</w> <w>contradictione</w> <w>possideant</w> <w>et</w> <w>in</w> <w>usus</w> <w>suos</w> <w>prout</w> <w>eis</w> <w>visum</w> <w>fuerit</w> <w>convertant</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>anno</w> <w>dominice</w> <w>incarnationis</w> <w>M°</w> <w>C°</w> <w>II°</w>, <w>presente</w> <w>domno</w> <w>Folmaro</w> <w>abbate</w> <w>et</w> <w>totorum</w> <w>fratrum</w> <w>congregatione</w>, <w>sub</w> <w>testimonio</w> <w>ejusdem</w> <w>comitis</w> <w>et</w> <w>advocati</w> <w>Heinrici</w>, <w>Johannis</w> <w>de</w> <w>Braz</w> <w>et</w> <w>Bosonis</w> <w>fratris</w> <w>ejus</w>, <w>et</w> <w>Gisleberti</w> <w>de</w> <w>Giverules</w>, <w>Adelardi</w> <w>de</w> . . . . , <w>Stephani</w>, <w>Roberti</w>, <w>Reineri</w>, <w>Wazonis</w> <w>et</w> <w>aliorum</w> <w>multorum</w> <w>sive</w> <w>nobilium</w> <w>sive</w> <w>ecclesie</w> <w>hominum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

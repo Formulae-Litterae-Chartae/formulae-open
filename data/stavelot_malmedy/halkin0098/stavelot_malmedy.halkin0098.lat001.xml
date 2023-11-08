@@ -1,0 +1,87 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 98</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">207 - 208</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0098">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Un nommé Arnoul, sur le point de partir avec le comte Henri pour l’expédition organisée contre les Hongrois par l’empereur Conrad II, donne au monastère de Stavelot, de concert avec sa femme, un manse situé à Houmart.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>1030 [avant la mi-juillet]<date notBefore="1030-07-01" notAfter="1030-07-15"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0098.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>, <w>Patris</w> <w>et</w> <w>Filii</w> <w>et</w> <w>Spiritus</w> <w>sancti</w>. </p>
+               <p xml:space="preserve"><w>Ego</w> <w>Arnulfus</w> <w>cum</w> <w>conjuge</w> <w>mea</w> <w>pro</w> <w>remedio</w> <w>animarum</w> <w>nostrarum</w> <w>trado</w> <w>ad</w> <w>altare</w> <w>sancti</w> <w>Petri</w> <w>sanctique</w> <w>Remacli</w> <w>in</w> <w>monasterio</w> <w>Stabulaus</w> <w>ad</w> <w>Holmarch</w> <w lemmaRef="mansus">mansum</w> <w>unum</w> <w>fiscalem</w>, <w>quatinus</w> <w>ejus</w> <w>qui</w> <w>in</w> <w>ipsa</w> <w>requiescit</w> <w>ecclesia</w> <w>et</w> <w>omnium</w> <w>quorum</w> <w>reliquie</w> <w>inibi</w> <w>sacro</w> <w>venerantur</w> <w>honore</w>, <w>veniam</w> <w>peccatorum</w> <w>possimus</w> <w>a</w> <w>Domino</w> <w>in</w> <w>futuro</w> <w>examinis</w> <w>die</w> <w>percipere</w> <w>et</w> <w>de</w> <w>imminenti</w> <w>periculo</w> <w>liberare</w>. <w>Et</w> <w>enim</w> <w>jussu</w> <w>Cuonradi</w> <w>imperatoris</w> <w lemmaRef="exercitus">exercitus</w> <w>contra</w> <w>Ungros</w> <w>dirigitur</w>, <w>cum</w> <w>quo</w> <w>ego</w> <w>etiam</w> <w>cum</w> <w>domino</w> <w>meo</w> <w>Heinrico</w> <w>comite</w> <w>proficiscor</w>; <w>quapropter</w> <w>metuens</w> <w>terminum</w> <w>vite</w>, <w>immo</w> <w>magis</w> <w>me</w> <w>ceno</w> <w>criminum</w> <w>nimium</w> <w>involutum</w> <w>esse</w>, <w>id</w> <w>agere</w> <w>delibero</w> <w>et</w> <w>coram</w> <w>testibus</w> <w>idoneis</w> <w>perficere</w> <w>statuo</w> : <w>Adelardo</w> <w>et</w> <w>Albrico</w> <w>filio</w> <w>meo</w>, <w>Arnulfo</w>, <w>Gerulfo</w>, <w>Gozelino</w>, <w>Wolberto</w>, <w>Azelino</w>, <w>Ysenbanno</w>, <w>Popino</w>, <w>Albrico</w>. <w>Qui</w> <w>autem</w> <w>ipsam</w> <w>terram</w> <w>possiderint</w> <w>in</w> <w>festivitatem</w> <w>supra</w> <w>memorati</w> <w>patris</w> <w>X</w> <w>persolvant</w> <w>denarios</w>, <w>et</w> <w>qui</w> <w>in</w> <w>presenti</w> <w>hoc</w> <w>fruuntur</w> <w>Gunscelinus</w> <w>scilicet</w> <w>cum</w> <w>conjuge</w> <w>sua</w> <w>Hezela</w> <w>et</w> <w>filii</w> <w>eorum</w> <w>eadem</w> <w>faciant</w> : <w>quod</w> <w>si</w> <w>non</w> <w>fecerint</w>, <w>bono</w> <w>priventur</w>. <w>Actum</w> <w>in</w> <w>monasterio</w> <w>prefato</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w><seg type="superscript "><w>o</w></seg>. <w>XXX</w><seg type="superscript "><w>o</w></seg>, <w>indictione</w> <w>XIII</w>, <w>domno</w> <w>Cuonrado</w> <w>imperatore</w> <w lemmaRef="regnum">regnum</w> <w>regente</w> <w>anno</w> <w>VII</w>, <w>Rainaro</w> <w>episcopo</w> <w>Leodiensi</w>, <w>Poppone</w> <w>abbatiam</w> <w>tenente</w> <w>anno</w> <w>XI</w>. </p>
+               <p xml:space="preserve"><w>Signum</w> <w>Warneri</w>. <w>S</w>. <w>Godelini</w>. <w>S</w>. <w>Johannis</w>. <w>S</w>. <w>Norberti</w>. <w>S</w>. <w>Cunonis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 184</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">170-171</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0184">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Raignaud, évêque de Chartres, confirme le don fait par Ursion de Fréteval, de sa dime hebdomadaire dans tous ses moulins (excepté toutefois les droits de juindrage), dans ses fours et ses pressoirs à Fréteval.</p>
+         </div>
+         <dateline>1186<date notBefore="1186-01-01" notAfter="1186-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0184.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>DECIMA</w> <w>SEPTIMANA</w> <w>AB</w> <w>URSIONE</w> <w>FRACTE</w> <w>UALLIS</w> <w>DOMINO</w> <w>IN</w> <w>MOLENDINIS</w> <w>SUIS</w> <w>NOBIS</w> <w>CONCESSA—</w> <w>CARNOTENSIS</w> — <w>DE</w> <w>FRACTA</w> <w>UALLE</w>»</head>
+               <p xml:space="preserve"><w>Raginaudus</w>, <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Carnotensis</w> <w>electus</w>, <w>omnibus</w>, <w>ad</w> <w>quos</w> <w>littere</w> <w>iste</w> <w>peruenerint</w>, <w>in</w> <w>Domino</w> <w lemmaRef="in_domino_salutem">salutem</w>. <w>Nouerit</w> <w>uniuersitas</w> <w>uestra</w>, <w>quod</w> <w>uir</w> <w lemmaRef="nobilis">nobilis</w> <w>Vrsio</w> <w>de</w> <w>Fractaualle</w>, <w>monachis</w> <w>maioris</w> <w>monasterii</w> <w>apud</w> <w>Fractamuallem</w> <w>commorantibus</w>, <w>decimam</w> <w>septimanam</w> <w>omnium</w> <w>molendinorum</w> <w>suorum</w>, <w>quam</w> <w>de</w> <w>elemosina</w> <w>antecessorum</w> <w>ipsius</w> <w>quiete</w> <w>et</w> <w>pacifice</w> <w>possidebant</w>, <w>pro</w> <w>remedio</w> <w>anime</w> <w>sue</w>, <w>benigne</w> <w>et</w> <w>liberaliter</w> <w>in</w> <w>presentia</w> <w>nostra</w> <w>concessit</w>, <w>tantumque</w> <w>predictam</w> <w>septimanam</w> <w>eis</w> <w>faciet</w> <w>ualere</w>, <w>quantum</w> <w>vnaqueque</w> <w>septimanarum</w> <w>suarum</w> <w>sibi</w> <w>poterit</w> <w>ualere</w>, <w>datis</w> <w>molendinis</w> <w>ad</w> <w>certam</w> <w>modiationem</w>, <w>saluo</w> <w>tamem</w> <w>jvndfagio</w> <w>suo</w>, <w>quod</w> <w>in</w> <w>molendinis</w> <w>habere</w> <w>dignoscitur</w>. <w>Si</w> <w>uero</w> <w>ipsum</w> <w>in</w> <w>manu</w> <w>sua</w> <w>molendinos</w> <w>tenere</w> <w>contigerit</w>, <w>molendinarii</w> <w>ipsius</w> <w>predictis</w> <w>monachis</w> <w>fide</w> <w>interposita</w> <w>assecurabunt</w>, <w>quod</w> <w>de</w> <w>decima</w> <w>septimana</w>, <w>quam</w> <w>in</w> <w>omnibus</w> <w>molendinis</w> <w>habent</w>, <w>tantum</w> <w>eisdem</w> <w>reddent</w>, <w>quantum</w> <w>memorato</w> <w>Vrsioni</w>, <w>de</w> <w>unaquaque</w> <w>septimanarum</w> <w>suarum</w> <w>reddere</w> <w>tenebuntur</w>. <w>Preterea</w> <w>concessit</w> <w>eis</w> <w>quod</w> <w>in</w> <w>decima</w> <w>septimana</w>, <w>quam</w> <w>habent</w> <w>idem</w> <w>monachi</w> <w>in</w> <w>furnis</w> <w>Fracteuallis</w>, <w>furnos</w> <w>absque</w> <w>aliqua</w> <w>consuetudine</w> <w>a</w> <w>furneriis</w> <w>suis</w>, <w>pro</w> <w>eis</w> <w>tanquam</w> <w>pro</w> <w>se</w>, <w>faciet</w> <w>calefieri</w>. <w>Torcular</w> <w>etiam</w> <w>ad</w> <w>propria</w> <w>monachorum</w> <w>uina</w> <w>premenda</w>, <w>infra</w> <w>ambitum</w> <w>domorum</w> <w>suarum</w>, <w>eis</w> <w>habendum</w> <w>concessit</w>, <w>et</w> <w>absque</w> <w>ulla</w> <w>exactione</w> <w>uel</w> <w>consuetudine</w> <w>perpetuo</w> <w>possidendum</w>, <w>saluo</w> <w>tamen</w> <w>jure</w> <w>cuiusdam</w> <w>seruientis</w> <w>sui</w>, <w>quod</w> <w>in</w> <w>eo</w>, <w>sicut</w> <w>in</w> <w>ceteris</w> <w>ville</w> <w>torcularibus</w>, <w>libere</w> <w>et</w> <w>quiete</w> <w>possidebit</w>. <w>Concessit</w> <w>autem</w> <w>memoratus</w> <w>Vrsio</w> <w>nobis</w> <w>firmiter</w>, <w>quod</w> <w>donum</w> <w>istud</w> <w>ab</w> <w>vxore</w> <w>sua</w>, <w>et</w> <w>filiis</w> <w>et</w> <w>filiabus</w> <w>suis</w>, <w>faciet</w> <w>concedi</w> <w>et</w> <w>inuiolabiliter</w> <w>obseruari</w>, <w>et</w> <w>sigilli</w> <w>sui</w> <w>impressione</w> <w>et</w> <w>scripti</w> <w>munimine</w> <w>confirmari</w>. <w>Nos</w> <w>uero</w> <w>ad</w> <w>peticionem</w> <w>prefati</w> <w>Vrsionis</w>, <w>nec</w> <w>non</w> <w>et</w> <w>monachorum</w> <w>maioris</w> <w>monasterii</w>, <w>presentem</w> <w>paginam</w> <w>fecimus</w> <w>annotari</w>, <w>et</w> <w>sigilli</w> <w>nostri</w> <w>impressione</w> <w>communiri</w>. <w>Actum</w> <w>in</w> <w>presentia</w> <w>nostra</w> <w>Carnoti</w>, <w>anno</w> <w>gratie</w> <w>M</w><seg type="superscript "><w>o</w></seg> <w>C</w><seg type="superscript "><w>o</w></seg> <w>LXXX</w><seg type="superscript "><w>o</w></seg> <w>VI</w><seg type="superscript "><w>o</w></seg>, <w>assistentibus</w> <w>nobiscum</w> <w>quorum</w> <w>nomina</w> <w>scripta</w> <w>sunt</w>: <w>Bartholomeo</w> <w>dunensi</w> <w>archidiacono</w>, <w>Adam</w> <w>de</w> <w>Montemirabili</w>, <w>Crispino</w> <w>droensi</w>, <w>Gauterio</w> <w>de</w> <w>Boeleto</w>, <w>Hugone</w> <w>archidiacono</w>, <w>Girardo</w> <w>clerico</w>, <w>Gauterio</w> <w>priore</w> <w>Fracteuallis</w>, <w>Willelmo</w> <w>preposito</w> <w>sancti</w> <w>Martini</w> <w>de</w> <w>Ualle</w>, <w>Hugone</w> <w>de</w> <w>Pinu</w>, <w>et</w> <w>pluribus</w> <w>aliis</w>. <w>Datum</w> <w>XV</w><seg type="superscript "><w>o</w></seg> <w>kalendas</w> <w>maii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Le livre des serfs de Marmoutier (Ed. Salmon) Nr. 125</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Le livre des serfs de Marmoutier (Ed. Salmon)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Le livre des serfs de Marmoutier</title>
+                  <editor>André Salmon</editor>
+                  <imprint>
+                     <pubPlace>Tours</pubPlace>
+                     <date when="1864" n="originalAusgabe">1864</date>
+                     <biblScope unit="pp">116</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Publications de la Société Archéologique de Touraine</title>
+                  <biblScope unit="volume">16</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Le livre des serfs de Marmoutier, welches 1864 von André Salmon herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_serfs.salmon0125">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p/>
+         </div>
+         <dateline>1081<date notBefore="1081-01-01" notAfter="1081-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_serfs.salmon0125.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemma="de" n="de">DE</w> <w lemma="quidam" n="quidam">QUODAM</w> <w lemma="iuvenis" n="iuvenis">JUVENE</w> <w lemma="personenname" n="personenname">ADAM</w> <w lemma="nomen" n="nomen">NOMINE</w>, <w lemma="servus" n="servus" lemmaRef="servus">SERVO</w> <w lemma="factus" n="factus/facere/facio">FACTO</w>.</head>
+               <p xml:space="preserve"><w lemma="noscere" n="noscere/nosco">Noverint</w> <w lemma="noster" n="noster">nostri</w> <w lemma="praesens" n="praesens">presentes</w> <w lemma="et" n="et">et</w> <w lemma="posterus" n="posterus">posteri</w> <w lemma="iuvenis" n="iuvenis">juvenem</w> <w lemma="quidam" n="quidam">quendam</w>, <w lemma="nomen" n="nomen">nomine</w> <w lemma="personenname" n="personenname">Adam</w>, <w lemma="ars" n="ars">arte</w> <w lemma="carpentarius" n="carpentarius">carpentarium</w>, <w lemma="ex" n="ex">ex</w> <w lemma="liber_urkunden" n="liber" lemmaRef="liber">libero</w> <w lemma="genus" n="genus">genere</w> <w lemma="ortus" n="ortus/oriri/orior">ortum</w>, <w lemma="spons" n="spons">sponte</w> <w lemma="proprius" n="proprius">propria</w> <w lemma="servus" n="servus" lemmaRef="servus">servum</w> <w lemma="esse" n="esse/sum">esse</w> <w lemma="factus" n="factus/facere/facio">factum</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancti</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martini</w> <w lemma="et" n="et">et</w> <w lemma="noster" n="noster">nostrum</w>, <w lemma="positus" n="positus/ponere/pono">positisque</w> <w lemma="ex" n="ex">ex</w> <w lemma="mos" n="mos" lemmaRef="mos">more</w> <w lemma="4" n="4/iv+quattuor+quartus/zahl">IIIIor</w> <w lemma="denarius" n="denarius" lemmaRef="denarius">denariis</w> <w lemma="super" n="super">super</w> <w lemma="caput" n="caput">capud</w> <w lemma="suus" n="suus">suum</w>, <w lemma="per" n="per">per</w> <w lemma="is" n="is">eos</w> <w lemma="se" n="se">se</w> <w lemma="cum" n="cum">cum</w> <w lemma="totus" n="totus">tota</w> <w lemma="si" n="si">si</w> <w lemma="qua" n="qua/qui">qua</w> <w lemma="esse" n="esse/sum">fuerit</w> <w lemma="stirps" n="stirps">stirpe</w> <w lemma="suus" n="suus">sua</w>, <w lemma="tradere" n="tradere/trado">tradidisse</w> <w lemma="servire" n="servire/servio">serviturum</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancto</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martino</w> <w lemma="et" n="et">et</w> <w lemma="nos" n="nos">nobis</w> <w lemma="suus" n="suus">suis</w> <w lemma="ortsname" n="ortsname">Majoris</w> <w lemma="ortsname" n="ortsname">Monasterii</w> <w lemma="monachus" n="monachus" lemmaRef="monachus">monachis</w>, <w lemma="tam" n="tam">tam</w> <w lemma="praesens" n="praesens">presentibus</w> <w lemma="quam" n="quam/qui">quam</w> <w lemma="futurus" n="futurus/esse/sum">futuris</w>, <w lemma="per" n="per">per</w> <w lemma="manus" n="manus">manum</w> <w lemma="domnus" n="domnus/dominus" lemmaRef="dominus">domni</w> <w lemma="abbas" n="abbas/abba" lemmaRef="abbas">abbatis</w> <w lemma="noster" n="noster">nostri</w> <w lemma="is" n="is">id</w> <w lemma="tempus" n="tempus">tempus</w> <w lemma="personenname" n="personenname">Bartholomei</w>, <w lemma="annus" n="annus">anno</w> <w lemma="a" n="a/ab">ab</w> <w lemma="incarnatio" n="incarnatio">incarnatione</w> <w lemma="dominus" n="dominus" lemmaRef="dominus">Domini</w> <w lemma="1000" n="1000/m/zahl">Mo</w> <w lemma="80" n="80/lxxx/zahl">LXXXo</w> <w lemma="1" n="1/i+unus+primus/zahl">Io</w>. <w lemma="testis" n="testis">Testibus</w> <w lemma="iste" n="iste">istis</w>: <w lemma="personenname" n="personenname">Odone</w> <w lemma="cellarium" n="cellarium">cellario</w>, <w lemma="personenname_ortsname" n="personenname+ortsname">Martino</w> <w lemma="cellarium" n="cellarium">cellario</w>, <w lemma="personenname" n="personenname">Ledaldo</w> <w lemma="camerlengus" n="camerlengus" lemmaRef="camerarius">camerlenco</w>, <w lemma="personenname" n="personenname">Algiso</w> <w lemma="coquus" n="coquus">coquo</w>, <w lemma="personenname" n="personenname">Bernardo</w> <w lemma="coquus" n="coquus">coco</w>, <w lemma="personenname" n="personenname">Durando</w> <w lemma="coquus" n="coquus">coco</w>, <w lemma="personenname" n="personenname">Abrammio</w> <w lemma="ostiarius" n="ostiarius">ostiario</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

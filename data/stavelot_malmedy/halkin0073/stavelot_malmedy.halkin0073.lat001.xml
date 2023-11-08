@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 73</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">167 - 169</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0073">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le roi Otton I, à la demande de l'abbé Odilon, accorde aux religieux de Stavelot et de Malmedy la libre élection de leur abbé commun.</p>
+         </div>
+         <dateline>[937-954]<date notBefore="0937-01-01" notAfter="0954-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0073.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>Trinitatis</w>. <w>Otto</w> <w>divina</w> <w>praeveniente</w> <w lemmaRef="clementia">clementia</w> <w>rex</w>. <w>Si</w> <w>regalis</w> <w>majestas</w> <w>abbatum</w> <w>ac</w> <w>monachorum</w> <w>Deo</w> <w>servientium</w> <w>utilitatibus</w> <w>benegnitatis</w> <w>suae</w> <w>munere</w> <w>excreverit</w>, <w>eorumque</w> <w>necessitatibus</w> <w>pie</w> <w>consulere</w> <w>studuerit</w>, <w>id</w> <w>omnimodis</w> <w>ad</w> <w>emolumentum</w> <w>animae</w> <w>suae</w> <w>proficere</w> <w>non</w> <w>ambigat</w>. <w>Idcirco</w> <w>comperiat</w> <w>omnium</w> <w>fidelium</w> <w>sanctae</w> <w>Dei</w> <w>aecclesiae</w> <w>nostrorumque</w> <w>praesentium</w> <w>scilicet</w> <w>et</w> <w>futurorum</w> <w>industria</w>, <w>qualiter</w> <w>quidam</w> <w lemmaRef="abbas">abbas</w> <w>nomine</w> <w>Odilo</w> <w>ex</w> <w>monasteriis</w> <w>Stabelau</w> <w>videlicet</w> <w>et</w> <w>Malmundaria</w> <w>quae</w> <w>sunt</w> <w>constructa</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Petri</w> <w>apostolorum</w> <w>principis</w>, <w>in</w> <w>quo</w> <w>superiore</w> <w lemmaRef="sanctus">sanctus</w> <w>requiescit</w> <w>Remaclus</w> <w>confessor</w> <w>et</w> <w lemmaRef="episcopus">episcopus</w>, <w>adiens</w> <w>celsitudinem</w> <w>mansuetudinis</w> <w>nostrae</w> <w>postulavit</w> <w>nobis</w> <w>quatinus</w> <w>concederemus</w> <w>suis</w> <w>monachis</w> <w>inibi</w> <w>Deo</w> <w>militantibus</w> <w>electionem</w> <w>regularem</w> <w>ac</w> <w>confirmaremus</w> <w>nostrae</w> <w>praeceptionis</w> <w>auctoritate</w>. <w>Cujus</w> <w>peticioni</w> <w>justae</w> <w>rectaeque</w> <w>pie</w> <w>annuentes</w> <w>libenti</w> <w>animo</w> <w>assensum</w> <w>praebuimus</w>, <w>et</w> <w>ut</w> <w>ista</w> <w>concessio</w> <w>et</w> <w>justa</w> <w lemmaRef="confirmatio">confirmatio</w> <w>perhennem</w> <w>optinere</w> <w>valeat</w> <w>in</w> <w>Domino</w> <w>firmitatem</w>, <w>hoc</w> <w>nostrae</w> <w>mansuetudinis</w> <w>edictum</w> <w>fieri</w> <w>censuimus</w>, <w>per</w> <w>quod</w> <w>statuentes</w> <w>decernimus</w> <w>modisque</w> <w>omnibus</w> <w>sanccimus</w>, <w>ut</w> <w>monachi</w> <w>qui</w> <w>in</w> <w>praedictis</w> <w>coenobiis</w> <w>nunc</w> <w>et</w> <w>deinceps</w> <w>divinis</w> <w>famulaverint</w> <w>officiis</w>, <w>habeant</w> <w>ex</w> <w>semet</w> <w>ipsis</w> <w>secundum</w> <w>sancti</w> <w>Benedicti</w> <w>institutionem</w> <w>abbatis</w> <w>electionem</w> <w>qui</w> <w>secundum</w> <w>sanctae</w> <w>religionis</w> <w>formam</w> <w>ambobus</w> <w>praesit</w> <w>monasteriis</w>, <w>quia</w> <w>olim</w>, <w>antequam</w> <w>praefatus</w> <w lemmaRef="abbas">abba</w> <w>ibi</w> <w>ordinatus</w> <w>fuisset</w>, <w>audivimus</w> <w>ea</w> <w>per</w> <w>pecuniae</w> <w>amorem</w> <w>sub</w> <w>cura</w> <w>praepositorum</w> <w>ab</w> <w>invicem</w> <w>fuisse</w> <w>separata</w>, <w>quod</w> <w>nostro</w> <w>prorsus</w> <w>imperio</w> <w>fieri</w> <w>prohibemus</w>, <w>ut</w> <w>nullus</w> <w>per</w> <w>pecuniae</w> <w>falsitatem</w> <w>aliquam</w> <w>introducere</w> <w>in</w> <w>eisdem</w> <w>audeat</w> <w>personam</w>, <w>sed</w> <w>juxta</w> <w>antiquorum</w> <w>patrum</w> <w>instituta</w> <w>regulariter</w> <w>eligant</w> <w>sibi</w> <w>abbatem</w>, <w>quatinus</w> <w>in</w> <w>divinis</w> <w>cultibus</w> <w>indesinenter</w> <w>permanentes</w> <w>pro</w> <w>salute</w> <w>regni</w> <w>nostri</w> <w>misericordiam</w> <w>Dei</w> <w>attentius</w> <w>implorare</w> <w>valeant</w>. <w>Et</w> <w>ut</w> <w>haec</w> <w>praeceptio</w> <w>maneat</w> <w>inviolata</w> <w>et</w> <w>in</w> <w>perpetuum</w> <w>corroborata</w>, <w>manus</w> <w>nostrae</w> <w>descriptione</w> <w>subter</w> <w>eam</w> <w>signavimus</w>. (<w>L</w>. <w>M</w>.)</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

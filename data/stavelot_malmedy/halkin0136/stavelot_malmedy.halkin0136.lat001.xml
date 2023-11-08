@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 136</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">277 - 279</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0136">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Gérulfe et sa femme Berlende, tous les deux de condition libre, laissent au monastère de Stavelot leurs biens de Mormont, de Bassenge et de Hollogne, pour le salut de leurs fils Winand et Héribert, qui avaient été tués le même jour et avaient reçu leur sépulture au monastère, et aussi pour avoir leur sépulture à coté de leurs susdits enfants.</p>
+         </div>
+         <dateline>1105<date notBefore="1105-01-01" notAfter="1105-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0136.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>tam</w> <w>presentis</w> <w>quam</w> <w>futuri</w> <w>temporis</w> <w>fidelibus</w>, <w>quod</w> <w>ego</w> <w>Gerulfus</w> <w>ex</w> <w>ingenuis</w> <w>ortus</w> <w>parentibus</w> <w>cum</w> <w>uxore</w> <w>mea</w> <w>Berlenda</w> <w>similiter</w> <w>nobile</w>, <w lemmaRef="allodium">allodium</w> <w>nostrum</w> <w>quod</w> <w>habebamus</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>nostra</w> <w>Mormont</w> <w>dicta</w> <w>et</w> <w>V</w> . ., . . . <w>lions</w> <w>sancto</w> <w>Petro</w> <w>sanctoque</w> <w>Remaclo</w> <w>in</w> <w>loco</w> <w>qui</w> <w>Stabulaus</w> <w>dicitur</w> <w>tradidimus</w> <w>una</w> <w>cum</w> <w>appenditiis</w> <w>suis</w>, <w>videlicet</w> <w>molendino</w>, <w>pratis</w>, <w>silvis</w>, <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>pro</w> <w>salute</w> <w>et</w> <w>requie</w> <w>filiorum</w> <w>nostrorum</w> <w>Winandi</w> <w>et</w> <w>Heriberti</w> <w>una</w> <w>die</w> <w>interfectorum</w> <w>ibidem</w> <w>quiescentium</w>. <w>Addidimus</w> <w>etiam</w> <w>familiam</w> <w>ejusdem</w> <w>allodii</w> <w>promiscui</w> <w>sexus</w> <w>numero</w> <w>XXXIIII</w>, <w>quorum</w> <w>nomina</w> <w>hec</w> <w>sunt</w>: <w>Ermengardis</w> <w>videlicet</w> <w>uxor</w> <w>Heriberti</w>, <w>uxores</w> <w>due</w> <w>Thiredis</w> <w>et</w> <w>Berta</w> <w>cum</w> <w>filiis</w> <w>et</w> <w>filiabus</w> <w>VII</w>, <w>Emmelinus</w> <w>cum</w> <w>uxore</w> <w>sua</w> <w>Berta</w> <w>et</w> <w>duabus</w> <w>filiabus</w>, <w>Stemburgis</w> <w>uxor</w> <w>Tiethfridi</w> <w>cum</w> <w>filiis</w> <w>duobus</w>, <w>Petrus</w> <w>cum</w> <w>sorore</w> <w>sua</w> <w>Eiburge</w> <w>et</w> <w>filio</w> <w>I</w>, <w>Holduins</w> <w>et</w> <w>Reinmudis</w>, <w>Imilini</w> <w lemmaRef="soror">soror</w> <w>et</w> <w>neptis</w>. <w>Quicquid</w> <w>etiam</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>super</w> <w>Jairam</w> <w>sita</w> <w>Bacenges</w> <w>habere</w> <w>videbamur</w>, <w>hoc</w> <w>et</w> <w lemmaRef="allodium">allodium</w> <w>XV</w> <w>sol</w>. <w>solvens</w> <w>cum</w> <w>suis</w> <w>justiciis</w>, <w>pro</w> <w>animabus</w> <w>carorum</w> <w>filiorum</w> <w>nostrorum</w> <w>ad</w> <w>idem</w> <w lemmaRef="monasterium">monasterium</w> <w>tradidimus</w>, <w>ut</w> <w>quia</w> <w>deerant</w> <w>nobis</w> <w>heredes</w> <w>temporales</w> <w>eternum</w> <w>Christum</w> <w>nostrum</w> <w>faceremus</w> <w>heredem</w>. <w>Pro</w> <w>nostrarum</w> <w>autem</w> <w>animarum</w> <w>remedio</w> <w>et</w> <w>ut</w> <w>locum</w> <w>sepulture</w> <w>juxta</w> <w>filios</w> <w>nostros</w> <w>habere</w> <w>mereremur</w>, <w>qui</w> <w>sepulti</w> <w>sunt</w> <w>inter</w> <w>portam</w> <w>monasterii</w> <w>dextrorsum</w> <w>in</w> <w>parte</w> <w>aquilonari</w>, <w lemmaRef="allodium">allodium</w> <w>nostrum</w> <w>Holonge</w> <w>cum</w> <w>ecclesia</w>, <w>domibus</w>, <w>silva</w> <w>bona</w>, <w>molendino</w>, <w>dominicatura</w>, <w>terris</w> <w>beneficiatis</w>, <w>et</w> <w>quicquid</w> <w>in</w> <w>eadem</w> <w lemmaRef="villa">villa</w> <w>nostri</w> <w>juris</w> <w>erat</w>, <w>tam</w> <w>prompte</w> <w>quam</w> <w>devote</w> <w>sancto</w> <w>Petro</w> <w>sanctoque</w> <w>Remaclo</w> <w>in</w> <w>monasterio</w> <w>Stabulaus</w> <w>et</w> <w>fratribus</w> <w>ibidem</w> <w>Deo</w> <w>servientibus</w> <w>eterno</w> <w>jure</w> <w>possidenda</w> <w>tradidimus</w>, <w>ut</w> <w>ad</w> <w>hereditatem</w> <w>vite</w> <w>eterne</w> <w>in</w> <w>qua</w> <w>est</w> <w lemmaRef="pax">pax</w> <w>et</w> <w>sine</w> <w>fine</w> <w>jocunditas</w> <w>cum</w> <w>filiis</w> <w>Winando</w> <w>et</w> <w>Heriberto</w> <w>extremum</w> <w>saltem</w> <w>electorum</w> <w>agmen</w> <w>sequentes</w> <w>pertingere</w> <w>mereamur</w>. <w>Hec</w> <w lemmaRef="traditio">traditio</w> <w>facta</w> <w>est</w> <w>legitime</w> <w>anno</w> <w>dominice</w> <w>incarnationis</w> <w>M°</w>. <w>C°</w>. <w>V°</w>, <w>presente</w> <w>ejusdem</w> <w>loci</w> <w>abbate</w> <w>Folmaro</w>, <w>adstantibus</w> <w>quoque</w> <w>advocatis</w> <w>Heinrico</w> <w>et</w> <w>Thiebaldo</w>. <w>Testes</w> <w>vero</w> <w>hii</w> <w>sunt</w> : <w>Arnulfus</w> <w lemmaRef="frater">frater</w> <w>Tyeboldi</w>, <w>Thiedericus</w> <w>et</w> <w>Boso</w> <w>de</w> <w>Braz</w>, <w>Heribertus</w> <w>et</w> <w>Cuono</w> <w>de</w> <w>Mulanz</w>, <w>Helfridus</w> <w>et</w> <w>Arnulfus</w>; <w>homines</w> <w>ecclesie</w>: <w>Robertus</w> <w>et</w> <w>Cuono</w> <w>de</w> <w>Longia</w> <w>castello</w>, <w>Francho</w> <w>et</w> <w>Alardus</w> <w>de</w> <w>Monfort</w>, <w>Albricus</w> <w>villicus</w> <w>et</w> <w>filii</w> <w>ejus</w> <w>Albricus</w> <w>et</w> <w>Ebroinus</w>, <w>aliique</w> <w>quamplures</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>Heinrico</w> <w>IIII</w> <w>imperatore</w> <w>regnante</w>, <w>Otberto</w> <w>Leodiensis</w> <w>sedis</w> <w>antistite</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

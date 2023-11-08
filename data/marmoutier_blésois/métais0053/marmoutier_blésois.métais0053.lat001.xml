@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 53</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">64</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0053">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Sulpice de Chaumont confirme le don de Maurice Eschirpellus, d'une partie du bois de Chaumont.</p>
+         </div>
+         <dateline>1081<date notBefore="1081-01-01" notAfter="1081-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0053.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>DONATIONE</w> <w>BOSCI</w> <w>DE</w> <w>CALVOMONTE</w></head>
+               <p xml:space="preserve"><w>Nouerint</w> <w>omnes</w> <w>quod</w> <w>Sulpicius</w> <w>de</w> <w>Calvomonte</w> <w>donaverit</w> <w>S</w>. <w>Martino</w> <w>et</w> <w>nobis</w> <w>majoris</w> <w>monasterii</w> <w>monachis</w> <w>partem</w> <w>bosci</w> <w>sui</w> <w>Caluomonti</w> <w>proximi</w>, <w>quam</w> <w>de</w> <w>illo</w> <w>tenuerat</w> <w>miles</w> <w>quidam</w> <w>nomine</w> <w>Mauricius</w> <w>cognomento</w> <w>Eschirpellus</w>. <w>Hoc</w> <w>ipsum</w> <w>Sulpicius</w> <w>donavit</w>, <w>anno</w> <w>1081</w>, <w>presidente</w> <w>nobis</w> <w>domno</w> <w>abbate</w> <w>Bartholomeo</w>. <w>Testes</w> <w>Gausbertus</w> <w>prepositus</w>, <w>Gaufredus</w> <w>filiaster</w> <w>Guarini</w> <w>de</w> <w>fontaniliis</w>, <w>Hugo</w> <w>de</w> <w>Firmitate</w>. <w>De</w> <w>donatione</w> <w>Mauritij</w> <w>Eschirpelli</w>, <w>quam</w> <w>etiam</w> <w>Mauritius</w> <w>filius</w> <w>ejus</w> <w>auctorizavit</w> : <w>Fulcradus</w> <w>de</w> <w>Ruilliaco</w>. <w>Gaufridus</w> <w>Ludouici</w> <w>de</w> <w>Rupibus</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

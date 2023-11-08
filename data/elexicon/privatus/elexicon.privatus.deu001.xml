@@ -1,0 +1,42 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Privatus</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023-08-15">2023-08-15</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.privatus.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title"><w>Privatus</w></seg>: <seg type="lex-keyword"><w>Privat</w></seg>, <seg type="lex-keyword"><w>Privatmann</w></seg>.</p>
+               <p xml:space="preserve"><w>In</w> <w>römischer</w> <w>Zeit</w> <w>bildete</w> <w type="latin-word" lemmaRef="privatus">privatus</w> <w>den</w> <w>Gegenbegriff</w> <w>zu</w> <w type="latin-word" lemmaRef="publicus">publicus</w>, <w>dem</w> <w>politisch</w> <w>Gemeinsamen</w>, <w>dem</w> <w>Staatswesen</w>. <w type="latin-word" lemmaRef="privatus">Privatus</w> <w>bezeichnete</w> <w>mithin</w> <w>die</w> <w>alleine</w> <w>lebende</w> <w>oder</w> <w>im</w> <w>eigenen</w> <w>Namen</w> <w>sprechende</w> <w>Person</w>. <w>Die</w> <w>Scheidung</w> <w>nach</w> <w>öffentlich</w> <w>und</w> <w>privat</w> <w>war</w> <w>dabei</w> <w>eine</w> <w>Frage</w> <w>der</w> <w>Perspektive</w>: <w>So</w> <w>war</w> <w>etwa</w> <w>das</w> <w>Imperium</w>, <w>verkörpert</w> <w>durch</w> <w>den</w> <w>Kaiser</w>, <w>öffentlich</w>, <w>und</w> <w>alle</w> <w>ihm</w> <w>zugehörigen</w> <w>Untereinheiten</w> <w>wie</w> <w>Provinzen</w> <w>oder</w> <w type="latin-word">civitates</w> <w>privat</w>. <w>Aus</w> <w>Perspektive</w> <w>der</w> <w type="latin-word" lemmaRef="civitas">civitas</w> <w>wiederum</w> <w>war</w> <w>diese</w> <w>für</w> <w>ihre</w> <w>Bürger</w> <w>öffentlich</w>, <w>die</w> <w>Bürger</w> <w>selbst</w> <w>aber</w> <w>Privatpersonen</w>. <w>Auf</w> <w>Personen</w> <w>bezogen</w> <w>wiederum</w> <w>war</w> <w>das</w> <w>Innehaben</w> <w>eines</w> <w>Amtes</w> <w>die</w> <w>Trennscheide</w> <w>zwischen</w> <w>dem</w> <w>Öffentlichen</w> <w>und</w> <w>Privaten</w>, <w>eine</w> <w>Einschätzung</w>, <w>die</w> <w>sich</w> <w>auch</w> <w>noch</w> <w>bei</w> <w>Isidor</w> († <w>636</w>) <w>findet</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;von Moos&lt;/span&gt;, Peter: 'Öffentlich' und 'privat' im Mittelalter: zu einem Problem historischer Begriffsbildung, Heidelberg 2004 (Schriften der Philosophisch-Historischen Klasse der Heidelberger Akademie der Wissenschaften 33).">P. v. Moos, Öffentlich und privat</bibl>, S. 15-17; <bibl n="&lt;span class=&quot;surname&quot;&gt;Lindsay&lt;/span&gt;, Wallace Martin: Isidori Hispalensis episcopi: Etymologiarum sive originum: Libri XX, Oxford 1911 (Scriptorum Classicorum Bibliotheca Oxoniensis).">Isidor, Etymologiae</bibl> IX,4,30: <seg type="italic">Privati sunt extranei ab officiis publicis.</seg> Vgl. auch Ulpian, <bibl n="&lt;span class=&quot;surname&quot;&gt;Mommsen&lt;/span&gt;, Theodor und Paul &lt;span class=&quot;surname&quot;&gt;Krüger&lt;/span&gt;: Corpus iuris civilis: Vol. 1: Institutiones. Digesta, 22. Aufl., Dublin and Zürich 1973.">Digesten</bibl> I,1,1,2: <seg type="italic">Ius publicum est quod ad statum rei Romanae spectat, privatum quod ad singulorum utilitatem</seg>.</p></note>. <w>Damit</w> <w>einhergehend</w> <w>besaß</w> <w type="latin-word" lemmaRef="privatus">privatus</w> <w>auch</w> <w>eine</w> <w>soziale</w> <w>Konnotation</w>, <w>die</w> <w>den</w> <w>so</w> <w>Bezeichneten</w> <w>als</w> <w>gewöhnlichen</w>, <w>nur</w> <w>einen</w> <w>niedrigen</w> <w>Status</w> <w>innehabenden</w> <w>Menschen</w> <w>kennzeichnete</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;von Moos&lt;/span&gt;, Peter: 'Öffentlich' und 'privat' im Mittelalter: zu einem Problem historischer Begriffsbildung, Heidelberg 2004 (Schriften der Philosophisch-Historischen Klasse der Heidelberger Akademie der Wissenschaften 33).">P. v. Moos, Öffentlich und privat</bibl>, S. 21-23; <bibl n="&lt;span class=&quot;surname&quot;&gt;Köhn&lt;/span&gt;, Rolf: Dimensionen und Funktionen des Öffentlichen und Privaten in der mittelalterlichen Korrespondenz, in: Gert &lt;span class=&quot;surname&quot;&gt;Melville&lt;/span&gt; und Peter &lt;span class=&quot;surname&quot;&gt;von Moos&lt;/span&gt; (Hgg.), Das Öffentliche und Private, Köln 1998, S. 309–358.">R. Köhn, Dimensionen und Funktionen</bibl>, S. 345.</p></note>. <w>Diese</w> <w>Bedeutungen</w> <w>von</w> <w type="latin-word" lemmaRef="privatus">privatus</w> <w>wirkten</w> <w>auch</w> <w>im</w> <w>frühen</w> <w>Mittelalter</w> <w>fort</w>. <w>Als</w> <w type="latin-word" lemmaRef="privatus">privatus</w> <w>galt</w> <w>der</w> <w>Mensch</w>, <w>der</w> <w>kein</w> <w>Amt</w> <w>innehatte</w>, <w>sich</w> <w>nicht</w> <w>im</w> <w>Namen</w> <w>der</w> <w>Allgemeinheit</w> <w>äußerte</w> <w>und</w> <w>nicht</w> <w>an</w> <w>öffentlichen</w> <w>Angelegenheiten</w> <w>beteiligt</w> <w>war</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;von Moos&lt;/span&gt;, Peter: 'Öffentlich' und 'privat' im Mittelalter: zu einem Problem historischer Begriffsbildung, Heidelberg 2004 (Schriften der Philosophisch-Historischen Klasse der Heidelberger Akademie der Wissenschaften 33).">P. v. Moos, Öffentlich und privat</bibl>, S. 21-23; <bibl n="&lt;span class=&quot;surname&quot;&gt;Innes&lt;/span&gt;, Matthew J.: State and society in the early Middle Ages. The middle Rhine valley, 400 - 1000, Cambridge 2000 (Cambridge studies in medieval life and thought 4, 47).">M. Innes, State and Society</bibl>, S. 257.</p></note>. <w>Diese</w> <w>Trennung</w> <w>blieb</w> <w>jedoch</w> <w>abhängig</w> <w>von</w> <w>der</w> <w>Perspektive</w>, <w>wenn</w> <w>etwa</w> <w>Notker</w> <w>der</w> <w>Stammler</w> († <w>912</w>) <w>alle</w> <w>Personen</w>, <w>die</w> <w>nicht</w> <w>Könige</w> <w>waren</w>, <w>zu</w> <w>Privatpersonen</w> <w>erklärte</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Haefele&lt;/span&gt;, Hans F.: Notker der Stammler. Taten Kaiser Karls des Grossen, Berlin 1959 (MGH SS. rer. Germ. N. S. 12).">Notker der Stammler, Gesta Karoli Magni</bibl> II,10.</p></note>.</p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

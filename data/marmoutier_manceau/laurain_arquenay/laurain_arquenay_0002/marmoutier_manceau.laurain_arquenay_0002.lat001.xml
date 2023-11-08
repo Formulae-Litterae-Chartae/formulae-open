@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Arquenay, Nr. 2</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">30-32</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_arquenay_0002">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Donation par Foucoi, avent son entrée Marmoutier, de terres sises à Nabel et à Beauvais, mouvant en arrière-fief de Guy de Laval.</p>
+         </div>
+         <dateline>1055<date notBefore="1055-01-01" notAfter="1055-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_arquenay_0002.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>[sancte</w> <w>ecclesie</w> <w>tam</w> <w>presentibus</w> <w>quam</w> <w>futuris</w> <w>fidelibus</w> <w>maximeque</w> <w>nostris</w> <w>successoribus]</w> <w>quod</w> <w>quidam</w> <w>secularis</w> <w>nomine</w> <w>Fulcodius</w>, <w>dum</w> <w>militari</w> <w>sub</w> <w>habitu</w> <w>degeret</w>, <w>[divina</w> <w>miseratione</w> <w>respectus]</w>, <w>in</w> <w>hoc</w> <w>loco</w> <w>qui</w> <w>Maius</w> <w lemmaRef="monasterium">monasterium</w> <w>dicitur</w> <w>volens</w> <w>fieri</w> <w lemmaRef="monachus">monachus</w>, <w>quasdam</w> <w>terras</w> <w>dedit</w> <w>nobis</w> <w>[cum</w> <w>pratis</w> <w>et</w> <w>vineis]</w> <w>in</w> <w>Cenomannico</w> <w>pago</w>, <w lemmaRef="villa">villa</w> <w>que</w> <w>dicitur</w> <w>Nabel</w> <w>et</w> <w>Belveer</w> <w>sitas</w>. <w>Has</w> <w>autem</w> <w>terras</w> <w>Vivianus</w> <w>nobis</w> <w>concessit</w>, <w lemmaRef="frater">frater</w> <w>eius</w>, <w>cum</w> <w>uxore</w> <w>sua</w> <w>Lisoia</w> <w>et</w> <w>eorum</w> <w>filiis</w> <w>Augerio</w> <w>et</w> <w>Drogone</w>, <w>[sibi</w> <w>retinente</w> <w>duos</w> <w>solidos</w> <w>in</w> <w>sancti</w> <w>Ioannis</w> <w>festivitate</w>. <w>Factum</w> <w>est</w> <w>enim</w> <w>hoc</w> <w>voluntate</w> <w>et]</w> <w>assensu</w> <w>Morini</w> <w>de</w> <w>Masuncellis</w> <w>et</w> <w>Hugonis</w> <w>Manselli</w> <w>necnon</w> <w>et</w> <w>Guidonis</w> <w>de</w> <w>Valle</w> <w>filiorumque</w> <w>suorum</w> <w>Ioannis</w> <w>et</w> <w>Hamonis</w>. <w>Isti</w> <w>[vero</w> <w>supradicti]</w> <w>eleemosynam</w> <w>istam</w> <w>monachis</w> <w>de</w> <w>Erkeneio</w> <w>concesserunt</w> <w>ita</w> <w>solutam</w> <w>et</w> <w>quietam</w> <w>sine</w> <w>consuetudi[ne</w> <w>et]</w> <w>redhibitione</w> <w>ut</w> <w>ab</w> <w>omni</w> <w>servitio</w> <w>quasi</w> <w>eleemosyna</w> <w>permaneret</w> <w>libera</w>. <w>Vivianus</w> <w>eam</w> <w>de</w> <w>Morino</w> <w>tenebat</w>, <w>q[ui</w> <w>Morinus]</w> <w>de</w> <w>Hugone</w>; <w>Hugo</w> <w>autem</w> <w>de</w> <w>Guidone</w>. <w>Qua</w> <w>de</w> <w lemmaRef="causa">causa</w> <w>Hugo</w> <w>societatem</w> <w>nostram</w> <w>requisivit</w> <w>et</w> <w>accepit</w>. <w>Morinus</w>... <w>solidos</w> <w>habuit</w>. <w>Ut</w> <w>tamen</w>... <w>studere</w> <w>magis</w> <w>paci</w> <w>quam</w> <w>liti</w>, <w>quidam</w> <w>noster</w> <w lemmaRef="monachus">monachus</w> <w>nomine</w>... <w>domnum</w> <w>Guidonem</w> <w>quasi</w> <w>nostrum</w> <w>benefactorem</w> <w>humiliter</w> <w>requisivit</w> <w>ut</w> <w>eleemosynas</w> <w>de</w> <w>sua</w> <w>terra</w> <w>ecclesie</w> <w>de</w> <w>Erkeneio</w> <w>datas</w> <w>ab</w> <w>omni</w> <w>exactione</w> <w>et</w> <w>consuetudine</w> <w>liberas</w> <w>concederet</w>; <w>pietatis</w> <w>amore</w> <w>compunctus</w> <w>libenter</w> <w>annuit</w>. <w>Donavit</w> <w>autem</w> <w>ipse</w> <w>Guido</w> <w>ut</w> <w>in</w> <w>tota</w> <w>terra</w> <w>sua</w> <w>per</w> <w>nullum</w> <w>suum</w> <w>proprium</w> <w>vicarium</w> <w>vel</w> <w>quemlibet</w> <w>alium</w> <w>suum</w> <w>ministrum</w> <w>nostri</w> <w>homines</w> <w>iusticientur</w>, <w>sed</w> <w>tantummode</w> <w>per</w> <w>monachum</w> <w>nostrum</w>, <w>nisi</w> <w>forte</w>, <w>quod</w> <w>absit</w>, <w lemmaRef="monachus">monachus</w> <w>rectum</w> <w>facere</w> <w>diffugiet</w>. <w>Quod</w> <w>si</w> <w>tale</w> <w>fuerit</w> <w>forisfactum</w> <w>de</w> <w>quo</w> <w>oporteat</w> <w>prendere</w> <w>districtum</w>, <w>nostra</w> <w>erit</w> <w>districtio</w> <w>sive</w> <w>grandis</w> <w>sive</w> <w>parva</w>. <w>Dedit</w> <w>etiam</w> <w>nostris</w> <w>monachis</w> <w>suisque</w> <w>hominibus</w> <w>de</w> <w>bosco</w> <w>suo</w> <w>de</w> <w>Boeria</w> <w>viridi</w> <w>et</w> <w>sicco</w> <w>ad</w> <w>edificandum</w>, <w>ad</w> <w>coquendum</w>, <w>ad</w> <w>calefaciendum</w>, <w>postremo</w> <w>ad</w> <w>omnia</w> <w>necessaria</w> <w>sufficienter</w>. <w>Preterea</w> <w>omnes</w> <w>terras</w> <w>quas</w> <w>iam</w> <w>in</w> <w>suo</w> <w>honore</w> <w>habebamus</w>, <w>idem</w> <w>Guido</w> <w>nobis</w> <w>concessit</w> <w>et</w> <w>omnes</w> <w>consuetudines</w> <w>quas</w> <w>in</w> <w>illis</w> <w>habebat</w> <w>nobis</w> <w>donavit</w>. <w>Similiter</w> <w>quecumque</w> <w>res</w> <w>in</w> <w>tota</w> <w>terra</w> <w>sua</w> <w>aut</w> <w>darentur</w> <w>nobis</w> <w>aut</w> <w>emerentur</w> <w>a</w> <w>nobis</w> <w>et</w> <w>res</w> <w>ipsas</w> <w>nobis</w> <w>concessit</w> <w>et</w> <w>omnes</w> <w>consuetudines</w> <w>quas</w> <w>ipse</w> <w>vel</w> <w>suus</w> <w lemmaRef="heres">heres</w> <w>in</w> <w>die</w> <w>qua</w> <w>darentur</w> <w>vel</w> <w>emerentur</w>, <w>in</w> <w>illis</w> <w>rebus</w> <w>habuerit</w>, <w>nobis</w> <w>donavit</w> <w>tali</w> <w>tamen</w> <w>pacto</w> <w>quod</w> <w>in</w> <w>die</w> <w>mercati</w> <w>in</w> <w>nostro</w> <w>burgo</w> <w>tam</w> <w>de</w> <w>nostris</w> <w>hominibus</w> <w>quam</w> <w>de</w> <w>suis</w> <w lemmaRef="teloneum">teloneum</w> <w>et</w> <w>etiam</w> <w>de</w> <w>extraneis</w> <w>sibi</w> <w>detinuit</w>, <w>his</w> <w>videntibus</w> <w>[et</w> <w>audientibus</w> <w>qui</w> <w>ita</w> <w>sunt</w> <w>appellati]</w> <w>Guido</w> <w>de</w> <w>Valle</w>, <w>Iohannes</w> <w>et</w> <w>hamo</w>, <w>Constantius</w> <w>de</w> <w>Gesto</w>, <w>[Iohannes</w> <w>filii</w> <w>eius]</w>, <w>Lisiardus</w> <w>de</w> <w>Erkeneio</w> <w>Adversarius</w>, <w>Garinus</w> <w>de</w> <w>Intraneio</w>, <w>Hugo</w> <w>Mansesllus</w> <w>de</w> <w>Nus</w>, <w>Morinus</w> <w>Bonel</w>, <w>Odo</w> <w>filius</w> <w>Cripta</w>, <w>Fulco</w> <w>de</w> <w>Boeria</w>, <w>[Ivo</w>, <w>Fulcherius</w> <w>presbyter]</w>, <w>Morinus</w> <w>de</w> <w>Masuncellis</w>, <w>Drogo</w> <w>de</w> <w>Sancto</w> <w>Dyonisio</w>, <w>Goscelinus</w> <w>senescaulus</w>, <w>Ascellinus</w> <w>capellanus</w>, <w>Ascho</w> <w>Ermi</w>, <w>Normandus</w> <w>Trespillos</w>, <w>Rager</w> <w>Hamonis</w>, <w>Guido</w> <w lemmaRef="frater">frater</w> <w>eius</w>, <w>Herius</w> <w>de</w> <w>Castellonio</w>, <w>Fulco</w> <w>Iohannes</w> <w>Salsa</w>, <w>Robertus</w> <w>filius</w>, <w>Ragacho</w> <w>de</w> <w>Chivilleio</w>, <w>Garinus</w> <w>Narii</w>, <w>Hubertus</w> <w>Bertofus</w>, <w>[Roporcarius</w>, <w>Hamelinus</w> <w>filius]</w>, <w>Ivobertus</w> <w>de</w> <w>Montepinçonis</w>, <w>Vitalis</w> <w>grossinus</w>, <w>[Hudo</w> <w lemmaRef="vicarius">vicarius</w>, <w>Fulcherius</w> <w>Deasbertus</w> <w>iuvenis</w>, <w>Adelelmus</w> <w>filius</w> <w>Neriis</w>, <w>Guido</w> <w>filius</w> <w>Salomonis</w> <w>Hugonis</w>, <w>Rainerius</w> <w>de</w> <w>Sab</w>...], <w>Gauterius</w> <w>de</w> <w>Malomonte</w>, <w>Dodonis</w> <w>campo</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

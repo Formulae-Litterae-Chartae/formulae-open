@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 121</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">219</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0121">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>L'abbé de Gorze acense à un nommé Albricus une terre à Alincourt.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Metz</p>
+         </div>
+         <dateline>995<date notBefore="0995-01-01" notAfter="0995-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0121.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>SCRIPTUM</w> <w>YMMONIS</w> <w>ABBATIS</w>.</head>
+               <p xml:space="preserve"><w>Omnis</w> <w>rei</w> <w>diffinitio</w> <w>et</w> <w>corrogata</w>, <w>ut</w> <w>remur</w>, <w>propriis</w> <w>gaudet</w> <w>fulciri</w> <w>titulis</w>, <w>quatinus</w> <w>cuncta</w> <w>exempta</w> <w>redargutionis</w> <w>molimina</w> <w>recto</w> <w>in</w> <w>reliquum</w> <w>dirigatur</w> <w>tramite</w>. <w>Idcirco</w> <w>ego</w> <w>lmmo</w>, <w lemmaRef="abbas">abbas</w> <w>humillimus</w>, <w>licet</w> <w>indignus</w>, <w>cunctis</w> <w>fidelibus</w> <w>sancte</w> <w>Dei</w> <w>ecclesie</w> <w>notum</w> <w>manere</w> <w>cupio</w>, <w>presentibus</w> <w>scilicet</w> <w>et</w> <w>futuris</w>, <w>quoniam</w> <w>claustro</w> <w>residentes</w> <w>et</w> <w>de</w> <w>communi</w> <w>utilitate</w> <w>narrantes</w> <w>comperimus</w> <w>quod</w> <w>in</w> <w>Alicurtim</w> <w>dicto</w> <w>loco</w> <w>esset</w> <w>quedam</w> <w>terra</w> <w>de</w> <w>ratione</w> <w>Sancti</w> <w>Felicis</w> <w>indominicata</w>, <w>absa</w> <w>nobisque</w> <w>omnino</w> <w>inutilis</w>. <w>Nobis</w> <w>vero</w> <w>quod</w> <w>exinde</w> <w>facere</w> <w>deberemus</w> <w>ignorantibus</w>, <w>occurrit</w> <w>quidam</w> <w lemmaRef="homo">homo</w> <w>nomine</w> <w>Albricus</w>, <w>petens</w>, <w>quod</w> <w>sibi</w> <w>commoda</w> <w>erat</w>, <w>ut</w> <w>ei</w> <w>eam</w> <w>ad</w> <w>censum</w> <w>concederemus</w>. <w>Nos</w> <w>autem</w> <w>ne</w> <w>videremur</w> <w>esse</w> <w>contemptores</w> <w>divini</w> <w>precepti</w>: <w>«Omnipotenti</w> <w>te</w> <w>tribue</w>,» <w>et</w> <w>illius</w> <w>Salomonis</w> <w>dicti</w>: <w>«Quodcunque</w> <w>potest</w> <w>manus</w> <w>tua</w> <w>facere</w>, <w>instanter</w> <w>operare</w>,» <w>per</w> <w>consultum</w> <w>fidelium</w> <w>fratrumque</w> <w>nostrorum</w> <w>concessimus</w> <w>ei</w> <w>tantum</w> <w>quod</w> <w>petebat</w>, <w>ac</w> <w>fecimus</w> <w lemmaRef="mansus">mansum</w> <w>dimidium</w> <w>et</w> <w>iornales</w> <w>V</w>. <w>Statuimus</w> <w>etiam</w> <w>ut</w> <w>proinde</w> <w>annis</w> <w>singulis</w> <w>denarios</w> <w>XXV</w> <w>in</w> <w>censum</w> <w>persolvat</w>; <w>unde</w> <w>si</w> <w>tardus</w> <w>aut</w> <w>negligens</w> <w>extiterit</w>, <w>cum</w> <w>lege</w> <w>componat</w>, <w>sed</w> <w>adeptam</w> <w>terram</w> <w>minime</w> <w>perdat</w>; <w>medietatem</w> <w>vero</w> <w>predictorum</w> <w>denariorum</w> <w>persolvat</w> <w>mediante</w> <w>mense</w> <w>maii</w>, <w>et</w> <w>reliquos</w> <w>ad</w> <w>annale</w> <w>mercatum</w>. <w>Et</w> <w>ut</w> <w>ipse</w>, <w>et</w> <w>uxor</w> <w>eius</w> <w>Oda</w>, <w>ac</w> <w>posteri</w> <w>illorum</w>, <w>predictam</w> <w>terram</w> <w>securius</w> <w>et</w> <w>absque</w> <w>dolo</w> <w>et</w> <w>invidia</w> <w>machinantium</w> <w>hereditare</w> <w>et</w> <w>exercere</w> <w>valeant</w>, <w>hoc</w> <w>memorie</w> <w>scriptum</w> <w>eis</w> <w>fecimus</w>, <w>et</w> <w>factum</w> <w>manu</w> <w>propria</w> <w>roboratum</w> <w>dedimus</w>, <w>successorum</w> <w>nostrorum</w> <w>pie</w> <w>promulgantes</w> <w>industriam</w> <w>ut</w> <w>quemadmodum</w> <w>sua</w> <w>voluerint</w> <w>facta</w> <w>manere</w> <w>firma</w> <w>consentiant</w> <w>et</w> <w>nostra</w>. <w>Actum</w> <w>Mettis</w>, <w>publice</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>DCCCCXCV</w>, <w>indictione</w> <w>VIII</w>, <w>epacta</w> <w>VIII</w>, <w>concurrente</w> <w>I</w>, <w>anno</w> <w>XII</w> <w>regni</w> <w>Ottonis</w> <w>III</w>. <w>Signum</w> <w>domni</w> <w>lmmonis</w> <w>abbatis</w>; † <w>Natanni</w>; <w>Odelrici</w>; † <w>Errici</w>; <w>†Gonteri</w>; <w>Lantfridi</w>; † <w>Leodonis</w>; † <w>Hezelini</w>, <w>prepositi</w>; † <w>Hatali</w>; † <w>Lazari</w>; † <w>Gisleberti</w>. <w>Ego</w> <w>Hagano</w> <w>ad</w> <w>vicem</w> <w>Adelardi</w> <w>cancellarii</w> <w>scripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

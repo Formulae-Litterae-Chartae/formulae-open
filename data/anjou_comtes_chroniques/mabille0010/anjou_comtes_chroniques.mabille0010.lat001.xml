@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Introduction aux chroniques des comtes d’Anjou (Ed. Mabille) Nr. 10</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Introduction aux chroniques des comtes d’Anjou (Ed. Mabille)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Introduction aux chroniques des comtes d’Anjou</title>
+                  <editor>E. Mabille</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1856" n="originalAusgabe">1856</date>
+                     <biblScope unit="pp">cix-cx</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Introduction
+            aux chroniques des comtes d’Anjou, welches 1856 von E. Mabille herausgegeben worden ist.
+            Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne
+            XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der
+            CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="anjou_comtes_chroniques.mabille0010">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Thibaut le Vieux, comte de Tours, se désiste en faveur des chanoines de
+                        Saint-Martin de Tours els droits qu’il avait sur un serf nommé Letbran a
+                        condition que ce serf et sa postérité demeureront attachés a la terre de
+                        Suevres.</p>
+         </div>
+         <dateline>957<date notBefore="0957-01-01" notAfter="0957-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:anjou_comtes_chroniques.mabille0010.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w lemmaRef="notitia">Notitia</w> <w>qualiter</w> <w>et</w> <w>quemadmodum</w> <w>venit</w> <w lemmaRef="dominus">domnus</w> <w>Tetbaldus</w> <w lemmaRef="comes">comes</w> <w>Turonis</w>, <w>castello</w> <w>scilicet</w> <w>Sancti</w> <w>Martini</w>, <w>ante</w> <w>sacrosanctum</w> <w>ipsius</w> <w>sepulchrum</w>, <w>die</w> <w>martis</w>, <w>pridie</w> <w>videlicet</w> <w>kal</w>. <w>Aprilis</w>, <w>et</w> <w>ibi</w> <w>devota</w> <w>mente</w>, <w>pro</w> <w>amore</w> <w>dei</w> <w>ac</w> <w>sancti</w> <w>Martini</w>, <w>vel</w> <w>etiam</w> <w>pro</w> <w>remissione</w> <w>suorum</w> <w>criminum</w> <w>atque</w> <w>precatu</w> <w>fratrum</w>, <w>quendam</w> <w>hominem</w> <w>sui</w> <w>juris</w> <w>Letbrannum</w> <w>nomine</w>, <w>filium</w> <w>scilicet</w> <w>Erluini</w> <w lemmaRef="curtis">curtis</w> <w>nostrae</w> <w>Pseudoforensis</w> <w>majoris</w>, <w>et</w> <w>ex</w> <w>marterna</w> <w>parte</w> <w>pertinentem</w> <w>ex</w> <w>potestate</w> <w>Sancti</w> <w>Stephani</w> <w>Autisiodorensis</w>, <w>quam</w> <w>in</w> <w lemmaRef="beneficium">beneficium</w> <w>tenere</w> <w>videbatur</w>, <w>praefato</w> <w>Christi</w> <w>confessori</w> <w>Martino</w> <w>et</w> <w>fratribus</w> <w>ejusdem</w> <w>congregationis</w> <w>perpetualiter</w> <w>habendum</w> <w>vel</w> <w>dominandum</w>, <w>voluntarie</w> <w>condonavit</w>, <w>atque</w> <w>guerpivit</w>, <w>eo</w> <w>quin</w> <w>etiam</w> <w>rationis</w> <w>ordine</w> <w>et</w> <w>tenore</w>, <w>ut</w> <w>quamdiu</w> <w>ipse</w> <w>advixerit</w> <w>Letbrannus</w>, <w>tam</w> <w>ipse</w> <w>quam</w> <w>post</w> <w>ipsum</w> <w>omnis</w> <w>illius</w> <w>successura</w> <w>soboles</w>, <w>hereditario</w> <w>jure</w> <w>in</w> <w>jam</w> <w>dicta</w> <w>Pseudoforensi</w> <w>maneat</w> <w>potestate</w> <w>et</w> <w>ibidem</w> <w>colonili</w> <w>more</w> <w>propriam</w> <w>deserviat</w> <w>hereditatem</w>, <w>tanquam</w> <w>unus</w> <w>saepefatae</w> <w lemmaRef="curtis">curtis</w> <w lemmaRef="colonus">colonus</w> <w>hereditarius</w>, <w>nulli</w> <w>unquam</w> <w>aliquod</w> <w>reddens</w> <w lemmaRef="servitium">servitium</w> <w>nisi</w> <w>beato</w> <w>Martino</w> <w>et</w> <w>ipsius</w> <w>loci</w> <w>canonicis</w>. <w>Si</w> <w>vero</w>, <w>quod</w> <w>absit</w>, <w>vel</w> <w>quod</w> <w>nunquam</w> <w>evenire</w> <w>credo</w>, <w>fuerit</w> <w>aliquis</w>, <w>filius</w> <w>scilicet</w> <w>meus</w>, <w>vel</w> <w>aliqua</w> <w>intromissa</w> <w>persona</w>, <w>quae</w> <w>hujus</w> <w>meae</w> <w>donationis</w> <w>auctoritatem</w> <w>malivolo</w> <w>animo</w> <w>infringere</w> <w>voluerit</w>, <w>inprimis</w> <w>iram</w> <w>et</w> <w>maledictionem</w> <w>omnipotentis</w> <w>dei</w> <w>et</w> <w>piissimi</w> <w>confessoris</w> <w>ejus</w> <w>Martini</w> <w>incurrat</w> <w>et</w> <w>ipsos</w> <w>se</w> <w>offensos</w> <w>sentiat</w>, <w>nisi</w> <w>citissime</w> <w>se</w> <w>ex</w> <w>tam</w> <w>pessima</w> <w>voluntate</w> <w>correxerit</w>, <w>et</w> <w>insuper</w> <w>per</w> <w>districtum</w> <w>Sancti</w> <w>Martini</w> <w>abbatis</w> <w>quicunque</w> <w>extiterit</w> <w>auri</w> <w>libras</w> <w>V</w> <w>coactus</w> <w>exolvat</w>, <w>et</w> <w>sua</w> <w>repetitio</w> <w>nullum</w> <w>effectum</w> <w>habeat</w>, <w>sed</w> <w>haec</w> <w>mea</w> <w>promptissima</w> <w lemmaRef="donatio">donatio</w> <w>meis</w> <w>filiique</w> <w>mei</w>, <w>aliorumque</w> <w>nobilium</w> <w>virorum</w> <w>fidelium</w> <w>scilicet</w> <w>meorum</w>, <w>vel</w> <w>etiam</w> <w>quorundam</w> <w>episcopom</w> <w>manibus</w> <w>roborata</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>semper</w> <w>et</w> <w>ubique</w> <w>valeat</w> <w>permanere</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>sanctae</w> <w>crucis</w> <w>domni</w> <w>Tetbaldi</w> <w>comitis</w>, <w>qui</w> <w>hanc</w> <w>donationem</w> <w>libenti</w> <w>animo</w> <w>fieri</w> <w>rogavit</w> <w>et</w> <w>corroboravit</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Tetbaldi</w> <w>filii</w> <w>ipsius</w>. <w>Joseph</w> <w>Turonorum</w> <w>achiepiscopus</w> <w>subscripsit</w>. <w>Ermenteus</w> <w>Aurelianensum</w> <w lemmaRef="episcopus">episcopus</w> <w>subscripsit</w>. <w>Richardus</w> <w>Bituricensium</w> <w lemmaRef="episcopus">episcopus</w> <w>subscripsit</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Alberici</w> <w>Aurelianensium</w> <w>vicecomitis</w>. <w>Signum</w> <w>Odulfi</w>. <w>Signum</w> <w>Landrici</w>. <w>Signum</w> <w>Adalardi</w>. <w>Signum</w> <w>Guanilonis</w> <w>vicarii</w>. <w>Signum</w> <w>Ascelini</w>. <w>Signum</w> <w>Bernerii</w>. <w>Signum</w> <w>Arberti</w>.</p>
+               <p xml:space="preserve"><w>Data</w> <w>est</w> <w>ergo</w> <w>hujus</w> <w>notitiae</w> <w lemmaRef="auctoritas">auctoritas</w> <w>VII</w> <w>kal</w>. <w>aprilisTuronis</w>, <w>Castello</w> <w>scilicet</w> <w>Sancti</w> <w>Martini</w>, <w>ante</w> <w>sanctum</w> <w>ipsius</w> <w>sepulchrum</w>, <w>anno</w> <w>adhuc</w> <w>tertio</w> <w>regni</w> <w>Hlotharii</w> <w>regis</w>. </p>
+               <p xml:space="preserve"><w>Ego</w> <w>Adalmarus</w> <w>gregis</w> <w>beati</w> <w>Martini</w> <w>levita</w> <w>et</w> <w>ejusdem</w> <w lemmaRef="cancellarius">cancellarius</w> <w>rogatus</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

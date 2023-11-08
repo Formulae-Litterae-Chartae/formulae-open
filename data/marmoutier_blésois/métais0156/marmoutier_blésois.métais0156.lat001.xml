@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 156</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">147-149</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0156">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Maingot, fils de Garnier Maingot, se désiste de toutes réclamations sur la terre de Maves donnée par son père à Marmoutier. Cette paix fut signée d’abord à Montsoreau, à la prière de Gautier de Montsoreau son beau-père, et de Thibaud comte de Blois, du consentement de sa femme et de ses enfants, puis à Marmoutier par le dépôt d’un bâton sur l´autel. Maingot reçut 15 livres, Peregrina sa femme une coupe d’argent, et son fils deux sols.</p>
+         </div>
+         <dateline>1134<date notBefore="1134-01-01" notAfter="1134-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0156.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DIMISSIO</w> <w>CALUMNIE</w> <w>MAINGOTI</w> <w>DE</w> <w>TERRA</w> <w>DE</w> <w>MAZIUA</w>, <w>QUAM</w> <w>GARNERIUS</w> <w>MAINGOTUS</w> <w lemmaRef="pater">PATER</w> <w>EIUS</w>, <w>ET</w> <w>GOFFERIUS</w> <w>PATRUUS</w> <w>IPSIUS</w> <w>NOBIS</w> <w>DEDERANT</w> — <w>BLESIS</w>.»</head>
+               <p xml:space="preserve"><w>Cum</w> <w>Garnerius</w> <w>maingotus</w> <w>et</w> <w>Gofferius</w> <w lemmaRef="frater">frater</w> <w>eius</w> <w>terram</w> <w>illam</w> <w>quam</w> <w>in</w> <w>parrochia</w> <w>Maziue</w> <w>possidebant</w>, <w>in</w> <w>elemosina</w> <w>maiori</w> <w>monasterio</w> <w>dedissent</w>, <w>ita</w> <w>liberam</w> <w>et</w> <w>quietam</w> <w>ab</w> <w>omni</w> <w>exactione</w> <w>et</w> <w>consuetudine</w>, <w>sicut</w> <w>eam</w> <w>libere</w> <w>et</w> <w>quiete</w> <w>a</w> <w>comite</w> <w>blesensi</w> <w>tenebant</w>,<w>et</w> <w>etiam</w> <w>in</w> <w>ipso</w> <w>dono</w> <w>promisissent</w>, <w>quod</w> <w>quandiu</w> <w>uiuerent</w> <w>ab</w> <w>omni</w> <w>calumnia</w> <w>ipsam</w> <w>terram</w> <w>maiori</w> <w>monasterio</w> <w>adquietarent</w>, <w>quod</w> <w>et</w> <w>fecerunt</w> <w>quamdiu</w> <w>uixerunt</w>. <w>Longo</w> <w>post</w> <w>elapso</w> <w>tempore</w>, <w>post</w> <w>mortem</w> <w>scilicet</w> <w>prefatorum</w> <w>huius</w> <w>elemosine</w> <w>auctorum</w>, <w>surrexit</w> <w>quidam</w> <w>Maingotus</w> <w>nomine</w> <w>filius</w> <w>predicti</w> <w>Garnerii</w> <w>maingoti</w>, <w>et</w> <w>cepit</w> <w>nobis</w> <w>elemosinam</w> <w>parentum</w> <w>suorum</w> <w>calumniari</w>, <w>cum</w> <w>nonnulli</w> <w>legitimi</w> <w>uiri</w> <w>tempus</w> <w>date</w> <w>elemosine</w> <w>et</w> <w>mensuram</w> <w>etatis</w> <w>simul</w> <w>eius</w> <w>computantes</w> <w>pro</w> <w>certo</w> <w>affirmarent</w>, <w>quia</w> <w>nondum</w> <w>natus</w> <w>erat</w> <w>quando</w> <w>hec</w> <w>elemosina</w> <w>nobis</w> <w>facta</w> <w>fuit</w>. <w>Cum</w> <w>igitur</w> <w>hac</w> <w>sua</w> <w>calumnia</w> <w>diu</w> <w>multumque</w> <w>uexasset</w>, <w>et</w> <w>etiam</w> <w>in</w> <w>curiam</w> <w>comitis</w> <w>Teobaldi</w> <w>nos</w> <w>ex</w> <w>hoc</w> <w>placitaturos</w> <w>uenire</w> <w>coegisset</w>, <w>tandem</w> <w>post</w> <w>diuturnam</w> <w>suam</w> <w>calumniam</w>, <w>rogatu</w> <w>domini</w> <w>Gualterii</w> <w>de</w> <w>Monte-sorello</w>, <w>cuius</w> <w>filiam</w> <w>coniugem</w> <w>habebat</w>, <w>rogantibus</w> <w>etiam</w> <w>aliis</w> <w>amicis</w> <w>suis</w> <w>et</w> <w>nostris</w>, <w>et</w> <w>precipue</w> <w>iubente</w> <w>domino</w> <w>nostro</w> <w>comite</w> <w>Teobaldo</w>, <w>de</w> <w>cuius</w> <w>principaliter</w> <w>feuo</w> <w>et</w> <w>dominio</w> <w>eadem</w> <w>terra</w> <w>erat</w>, <w>eo</w> <w>tenore</w> <w>quo</w> <w>a</w> <w>prefatis</w> <w>parentibus</w> <w>suis</w> <w>nobis</w> <w>data</w> <w>fuerat</w>, <w>eam</w> <w>nobis</w> <w>concessit</w>, <w>et</w> <w>si</w> <w>calumnia</w> <w>in</w> <w>ea</w> <w>nobis</w> <w>surrexerat</w>, <w>ipse</w> <w>quamdiu</w> <w>uixerit</w>, <w>et</w> <w>heredes</w> <w>sui</w> <w>post</w> <w>ipsum</w>, <w>illam</w> <w>nobis</w> <w>adquietabunt</w>. <w>Hec</w> <w>concessio</w> <w>primum</w> <w>apud</w> <w>Montem</w> <w>sorellum</w> <w>ante</w> <w>Gualterium</w> <w>ipsius</w> <w>castri</w> <w>dominum</w>, <w>iussu</w> <w>domni</w> <w>comitis</w> <w>Teobaldi</w> <w>facta</w> <w>est</w>, <w>presentibus</w> <w>testibus</w> <w>istis</w>: <w>Guillelmo</w> <w>filio</w> <w>ipsius</w> <w>Gualterii</w>, <w>Guillelmo</w> <w>de</w> <w>Tuillo</w>, <w>Haimerico</w> <w>de</w> <w>Barra</w>, <w>Gastinello</w> <w>de</w> <w>Tuillo</w>, <w>Audeberto</w> <w>de</w> <w>Suilliaco</w>, <w>et</w> <w>duobus</w> <w>filiis</w> <w>eius</w>, <w>Pagano</w> <w>mairello</w> <w>famulo</w> <w>panetarii</w>, <w>Isemberto</w> <w>de</w> <w>Borda</w>, <w>Radulfo</w> <w>barba</w>, <w>ipso</w> <w>etiam</w> <w>Maingoto</w>, <w>et</w> <w>Peregrina</w> <w>uxore</w> <w>eius</w>, <w>filio</w> <w>quoque</w> <w>eius</w> <w>Maingotulo</w>, <w>Haimerico</w> <w>de</w> <w>Ruia</w>, <w>Goffrido</w> <w>gifardo</w>, <w>Gualterio</w> <w>bonello</w>, <w>Herchembaudo</w> <w>bergerolo</w>, <w>Gaufrido</w> <w>de</w> <w>Azaio</w>, <w>Bertranno</w> <w>de</w> <w>Conueto</w>. <w>Non</w> <w>multis</w> <w>exinde</w> <w>transactis</w> <w>diebus</w>, <w>prefatus</w> <w>Maingotus</w> <w>cum</w> <w>multis</w> <w>in</w> <w>capitulum</w> <w>maioris</w> <w>monasterii</w> <w>uenit</w>, <w>et</w> <w>in</w> <w>audientia</w> <w>uniuersi</w> <w>capituli</w> <w>atque</w> <w>testium</w> <w>qui</w> <w>cum</w> <w>eo</w> <w>uenerant</w>, <w>calumniam</w> <w>prefate</w> <w>terre</w> <w>penitus</w> <w>dimisit</w>, <w>et</w> <w>per</w> <w>baculum</w> <w>quemdam</w> <w>quo</w> <w>apud</w> <w>Montem-sorellum</w> <w>paulo</w> <w>ante</w> <w>terram</w> <w>ipsam</w> <w>Guillelmo</w> <w>abbati</w> <w>Suilliaci</w> <w>monacho</w> <w>nostro</w>, <w>Gaufredo</w> <w>lepori</w> <w>panetario</w>, <w>Hugoni</w> <w>cellarario</w> <w>et</w> <w>Odoni</w> <w>de</w> <w>Sancto</w> <w>Serenico</w> <w>concesserat</w>, <w>tam</w> <w>ipse</w> <w>Maingotus</w>, <w>quam</w> <w>prefata</w> <w>uxor</w> <w>ipsius</w> <w>et</w> <w>filius</w> <w>Maingotulus</w>, <w>eodem</w>, <w>inquam</w>, <w>baculo</w>, <w>sepedictam</w> <w>terram</w> <w>pro</w> <w>se</w> <w>et</w> <w>uxore</w> <w>ac</w> <w>filio</w> <w>suo</w> <w>nobis</w> <w>concessit</w>, <w>et</w> <w>quod</w> <w>filiam</w> <w>suam</w> <w>adhuc</w> <w>in</w> <w>incunabulis</w> <w>positam</w>, <w>quando</w> <w>loqui</w> <w>posset</w>, <w>concedere</w> <w>facere</w>, <w>promisit</w> ; <w>baculum</w> <w>quoque</w> <w>ipsum</w> <w>posuit</w> <w>in</w> <w>manu</w> <w>domni</w> <w>Odonis</w> <w>abbatis</w> <w>nostri</w>, <w>ac</w> <w>deinde</w> <w>super</w> <w>altare</w> <w>beati</w> <w>Martini</w> <w>portauit</w>, <w>uidentibus</w> <w>testibus</w> <w>istis</w>: <w>Joscelino</w> <w>de</w> <w>Monte-basonis</w> <w>et</w> <w>Radulfo</w> <w>fratre</w> <w>eius</w>; <w>de</w> <w>famulis</w> <w>nostris</w>: <w>Pagano</w> <w>camiliaci</w>, <w>Petro</w> <w>burdone</w>, <w>Girardo</w> <w>de</w> <w>Loratorio</w>, <w>Gualterio</w> <w>cellarario</w> <w>elemosine</w>, <w>Isemberto</w> <w>cellarario</w>, <w>Pagano</w> <w>loquet</w>, <w>Goherio</w> <w>de</w> <w>Sartrino</w>, <w>Pagano</w> <w>mairello</w>, <w>Hubeloto</w> <w>de</w> <w>Sartrino</w>, <w>Roberto</w> <w>de</w> <w>Gahardo</w> <w>et</w> <w>Radulfo</w> <w>de</w> <w>Cambone</w>. <w>Hac</w> <w>ipsa</w> <w>die</w> <w>dedimus</w> <w>prefato</w> <w>Maingoto</w> <w>de</w> <w>caritate</w> <w>XII</w> <w>libras</w> <w>andegauensium</w>, <w>quas</w> <w>ei</w> <w>numerauit</w> <w>et</w> <w>traditit</w> <w>Galterius</w> <w>baronus</w> <w>sub</w> <w>hospitalarius</w>, <w>Burchardus</w> <w>uero</w> <w>de</w> <w>Chainone</w> <w>et</w> <w>filius</w> <w>eius</w> <w>ipsos</w> <w>pro</w> <w>Maingoto</w> <w>receperunt</w>. <w>Dedimus</w> <w>etiam</w> <w>illi</w> <w>sciphum</w> <w>argenteum</w> <w>de</w> <w>marcha</w> <w>ad</w> <w>opus</w> <w>uxoris</w> <w>eius</w>. <w>Hoc</w> <w>uiderunt</w> <w>Petrus</w> <w>burdo</w>, <w>Girardus</w> <w>de</w> <w>Loratorio</w> <w>et</w> <w lemmaRef="pagus">Paganus</w> <w>mairellus</w>. <w>Filio</w> <w>quoque</w> <w>ipsius</w> <w>Maingoti</w>, <w>Maingotulo</w>, <w>Gaufredus</w> <w>lepus</w> <w>panetarius</w> <w>duos</w> <w>solidos</w> <w>apud</w> <w>Montem-sorellum</w> <w>in</w> <w>prima</w> <w>concessione</w> <w>dederat</w>. <w>Actum</w> <w>anno</w> <w>incarnationis</w> <w>dominice</w> <w>M</w>. <w>C</w><seg type="superscript "><w>o</w></seg> <w>XXX</w><seg type="superscript "><w>o</w></seg>. <w>IIII</w><seg type="superscript "><w>o</w></seg>, <w>sub</w> <w>domno</w> <w>Odone</w> <w>abbate</w> <w>nostro</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 276</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">518 - 519</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0276">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte relatant la consécration et la dotation de la chapelle des lépreux à Malmedy.</p>
+         </div>
+         <dateline>1188 08 08<date when="1188-08-08"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0276.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>ANNO</w> <w>INCARNATIONIS</w> <w>DOMINI</w> <w>M°</w> <w>C°</w> <w>LXXXVIII</w>, <w>INDICTIONE</w> <w>VI</w>, <w lemmaRef="dominus">DOMNUS</w> <w>BERNO</w> <w>MAGNOPOLITANE</w> <w>URBIS</w> <w lemmaRef="episcopus">EPISCOPUS</w> <w>CONSECRAVIT</w> <w>capellam</w> <w>infirmorum</w> <w>Malmundariensium</w> <w>V</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>augusti</w> <w>in</w> <w>honore</w> <w>beate</w> <w>Marie</w> <w>Magdalene</w>. <w>Quoniam</w> <w>generatio</w> <w>preterit</w> <w>et</w> <w>generatio</w> <w>advenit</w>, <w>terra</w> <w>vero</w> <w>stat</w> <w>in</w> <w>eternum</w>, <w>ideo</w> <w>scripti</w> <w>memorie</w> <w>commendari</w> <w>necesse</w> <w>est</w> <w>quicquid</w> <w>pie</w> <w>pro</w> <w>Christo</w> <w>in</w> <w>tempore</w> <w>gestum</w> <w>esse</w> <w>contingit</w>. <w>Noverint</w> <w>universi</w> <w>presentis</w> <w>kartule</w> <w>inspectores</w> <w>vel</w> <w lemmaRef="auditores">auditores</w> <w>tam</w> <w>posteri</w> <w>quam</w> <w>presentes</w>, <w>quod</w> <w>in</w> <w>hac</w> <w>pagina</w> <w>continentur</w> <w>elemosine</w> <w>quibus</w> <w>Christi</w> <w>fideles</w> <w>domum</w> <w>et</w> <w>ecclesiam</w> <w>leprosorum</w> <w>Malmundariensium</w> <w>propter</w> <w>Deum</w> <w>pro</w> <w>animarum</w> <w>suarum</w> <w>remedio</w> <w>in</w> <w>elemosinam</w> <w>perpetuam</w> <w>dotaverunt</w>.</p>
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>atque</w> <w>individue</w> <w>Trinitatis</w>, <w>Amen</w>. <w lemmaRef="dominus">Domnus</w> <w lemmaRef="abbas">abbas</w> <w>Erlebaldus</w> <w>communi</w> <w>assensu</w> <w>fratrum</w> <w>dotavit</w> <w>hanc</w> <w>capellam</w> <w>de</w> <w>terra</w> <w>que</w> <w>subjacet</w> <w>ipsi</w> <w>capelle</w> <w>cum</w> <w>decima</w>. <w lemmaRef="dominus">Domnus</w>. . . <w lemmaRef="abbas">abbas</w> <w>felicis</w> <w>memorie</w> <w>dedit</w> <w>unum</w> <w>jornale</w> <w>in</w> <w>Grandi</w> <w>Prato</w> <w>ante</w> <w>ipsorum</w> <w>mansiunculas</w> <w>ad</w> <w>olera</w> <w>excolenda</w>. <w>Johannes</w> <w lemmaRef="abbas">abbas</w> <w>pratum</w> <w>quod</w> <w>juxta</w> <w>pratum</w> <w>Remacli</w> <w>est</w> <w>in</w> <w>Tyebulfang</w>. <w>Philippus</w> <w>de</w> <w>Gudumont</w> <w>jornale</w> <w>terre</w> <w>ultra</w> <w>pontem</w> <w>in</w> <w>Chetheis</w>. <w>Andreas</w> <w>et</w> <w>Godescaz</w> <w>duo</w> <w>jornalia</w> <w>supra</w> <w>montem</w> <w>in</w> <w>via</w> <w>de</w> <w>Sancto</w> <w>Vito</w>. <w>Macharius</w> <w>in</w> <w>Chefosse</w> <w>unum</w> <w>jornale</w> <w>et</w> <w>unum</w> <w>obolum</w> <w lemmaRef="census">census</w> <w>super</w> <w>ortum</w> <w>unum</w> <w>ibidem</w>. <w>Ibidem</w> <w>Philippus</w> <w>de</w> <w>Falisia</w> <w>unum</w>. <w>Lambertus</w> <w>de</w> <w>Arimont</w> <w>I</w> <w>in</w> <w>Wenebolriev</w>. <w>Ebruinus</w> <w>de</w> <w>Ponte</w> <w>I</w> <w>justa</w> <w>montem</w> <w>leporum</w> <w>Eltraoir</w> <w>In</w> <w>Berneriester</w>, <w>Ebruinus</w> <w>I</w>, <w>Gerardus</w> <w>I</w>, <w>Petrus</w> <w>I</w>, <w>Theodericus</w> <w>et</w> <w>Valinus</w> <w>fratres</w> <w>decimam</w> <w>de</w> <w>duobus</w> <w>jornalibus</w> <w>que</w> <w>sunt</w> <w>supra</w> <w>pomerium</w> <w>dominorum</w>. <w>Godinus</w> <w>vilicus</w> <w>VIII°</w> <w>d</w>. <w>ad</w> <w>molendinum</w> <w>de</w> <w>Scofreit</w> <w>et</w> <w>ad</w> <w>terram</w> <w>de</w> <w>Chaveheis</w> <w>et</w> <w>ibidem</w> <w>Ava</w> <w>IIII</w> <w>d</w>. <w>Lambertus</w> <w>miles</w> <w>de</w> <w>Waimes</w> <w>VI</w> <w>d</w>. <w>ad</w> <w>molendinum</w> <w>de</w> <w>Bosieres</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Albini</w>. <w>Galduinus</w> <w>IIII</w> <w>d</w>. <w>ad</w> <w>molendinum</w> <w>in</w> <w>Lengenuevile</w> <w>in</w> <w>Purificatione</w> <w>sancte</w> <w>Marie</w>. <w>Henricus</w> <w>de</w> <w>Biez</w> <w>in</w> <w>eodem</w> <w>molendino</w> <w>VI</w> <w>d</w>. <w>in</w> <w>tercio</w> <w>anno</w>. <w>Renerus</w> <w>in</w> <w>Walceres</w> <w>III</w> <w>d</w>. <w>censuales</w> <w>Prothi</w> <w>et</w> <w>Iacinti</w>. <w>Marsilius</w> <w>de</w> <w>Folhires</w> <w>eadem</w> <w>die</w> <w>III</w> <w>d</w>. <w>et</w> <w>obolum</w>. <w>Renerus</w> <w>de</w> <w>Gohimont</w> <w>III</w> <w>d</w>. <w>Petri</w> <w>et</w> <w>Pauli</w>. <w>Dominica</w> <w>de</w> <w>Vivario</w> <w>ortum</w> <w>justa</w> <w>pontem</w> <w>Potion</w>. <w>in</w> <w>Cheniueual</w>. <w>Werinus</w> <w>Vadium</w> <w>XII</w> <w>d</w>. <w>de</w> <w>quo</w> <w>redditur</w> <w>d</w>. <w>annuatim</w>. <w>Alardus</w> <w>de</w> <w>Beleval</w> <w>dimidium</w> <w>octininum</w>. <w>Gerardus</w> <w>dimidium</w> <w>in</w> <w>Berfrecees</w>. <w>Johannes</w> <w>dimidium</w> <w>in</w> <w>Tirimont</w>. <w>Wiricus</w> <w>dimidium</w> <w>in</w> <w>Berbrece</w>. <w>Theodericus</w> <w lemmaRef="abbas">abbas</w> <w>et</w> <w>Joannes</w> <w>dimidium</w>. <w>Theodericus</w> <w>et</w> <w>Remigius</w> <w>dimidium</w>. <w>Ebruinus</w> <w>cuppam</w> <w>Helinus</w> <w lemmaRef="frater">frater</w> <w>Remigii</w> <w>cuppam</w> <w>en</w> <w>Ia</w> <w>Herchuevile</w>. <w>Valinus</w> <w>dimidium</w> <w>in</w> <w>Arimont</w>. <w>Albertus</w> <w>cuppam</w>. <w>Henricus</w> <w>miles</w> <w>I</w> <w>jornale</w> <w>ad</w> <w>malos</w> <w>in</w> <w>Campo</w>. <w>Johannes</w> <w>Perichos</w> <w>leprosus</w> <w>et</w> <w>uxor</w> <w>sua</w> <w>Rascendis</w> <w>ortum</w> <w>justa</w> <w>Warchinnam</w>. <w>Stacius</w> <w>de</w> <w>Arimont</w> <w>in</w> <w>medio</w> <w>maio</w> <w>IIII</w> <w>d</w>. <w>super</w> <w>ortum</w> <w>in</w> <w>Arimont</w> <w>apud</w> <w>domum</w> <w>Obini</w> <w>et</w> <w>filius</w> <w>ejusdem</w> <w>Statii</w>, <w>et</w> <w>vocatur</w> <w>ortus</w> <w>Ortus</w> <w>Aselini</w>, <w>Emmeline</w> <w>de</w> <w>La</w> <w>Fosse</w> <w>in</w> <w>Lengenuevile</w> <w>VI</w> <w>d</w>. <w>in</w> <w>tercio</w> <w>anno</w> <w>super</w> <w>molendinum</w> <w lemmaRef="dominus">Dominus</w> <w>Balduinus</w> <w>de</w> <w>Waimes</w> <w>II</w> <w>octinos</w> <w>farine</w> <w>super</w> <w>molendinum</w> <w>Alefalewele</w>, <w>Wademis</w> <w>contulit</w> <w>in</w> <w>perpetuum</w>. <w lemmaRef="dominus">Dominus</w> <w>Heve</w> <w>de</w> <w>Ambleve</w> <w>contulit</w> <w>in</w> <w>perpetuum</w> <w>II</w> <w>octinos</w> <w>farine</w> <w>a</w> <w>le</w> <w>Ribievile</w>. <w>Galduinus</w> <w>filius</w> <w>Theoderici</w> <w>contulit</w> <w>nobis</w> <w>in</w> <w>perpetuum</w> <w>I</w> <w>d</w>. <w>in</w> <w>die</w> <w>Marie</w> <w>Magdalene</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Urkunden Pippins, Karlmanns und Karls des Großen (Ed. Mühlbacher) Nr. 189</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Die Urkunden Pippins, Karlmanns und Karls des Großen (Ed. Mühlbacher)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">https://d-nb.info/366893556</idno>
+                  <title>Die Urkunden Pippins, Karlmanns und Karls des Großen</title>
+                  <editor>Engelbert Mühlbacher</editor>
+                  <imprint>
+                     <pubPlace>Hannover</pubPlace>
+                     <date when="1906" n="originalAusgabe">1906</date>
+                     <biblScope unit="pp">253-254</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Monumenta Germaniae historica</title>
+                  <biblScope unit="volume">MGH DD Karol. I</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Die Urkunden Pippins, Karlmanns und Karls des Großen, welches 1906 von Engelbert Mühlbacher herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="karl_der_grosse.muehlbacher0189">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Karl der Grosse bestätigt dem neugegründeten Kloster Lagrasse den Besitz.</p>
+         </div>
+         <dateline>[799] 06<date notBefore="0799-06-01" notAfter="0799-06-30"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:karl_der_grosse.muehlbacher0189.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">(<w>C</w>.) <w>Carolus</w> <w lemmaRef="gratia">gratia</w> <w>dei</w> <w>rex</w> <w>Francorum</w> <w>et</w> <w>Langobardorum</w> <w>ac</w> <w lemmaRef="patricius">patricius</w> <w>Romanorum</w>. <w>Omnibus</w> <w>episcopis</w> <w>abbatibus</w> <w>ducibus</w> <w>comitibus</w> <w>vicariis</w> <w>centenariis</w> <w>seu</w> <w>cunctis</w> <w>fidelibus</w> <w>sanctae</w> <w>dei</w> <w>ecclesiae</w> <w>et</w> <w>nostris</w> <w>praesentibus</w> <w>et</w> <w>futuris</w> <w>notum</w> <w>sit</w>, <w>qualiter</w> <w>vir</w> <w>venerabilis</w> <w>Nimfridius</w> <w lemmaRef="abbas">abba</w> <w>serenitati</w> <w>nostrae</w> <w>suggessit</w>, <w>eo</w> <w>quod</w> <w>ipse</w> <w>una</w> <w>cum</w> <w>monachis</w> <w>suis</w> <w>infra</w> <w>aeremum</w> <w>in</w> <w>territorio</w> <w>Narbonense</w> <w>super</w> <w>fluvium</w> <w>Orobionem</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Novalitio</w> <w lemmaRef="monasterium">monasterium</w> <w>in</w> <w>honore</w> <w>sanctae</w> <w>dei</w> <w>genetricis</w> <w>semperque</w> <w>virginis</w> <w>Mariae</w> <w>novo</w> <w>opere</w> <w>construxisset</w> <w>ibique</w> <w>domus</w> <w>eclesiae</w> <w>et</w> <w>reliquas</w> <w>habitationes</w> <w>aedificasset</w> <w>et</w> <w>vineas</w> <w>plantasset</w> <w>et</w> <w>campos</w> <w>ad</w> <w>laborandum</w> <w>vel</w> <w>prata</w> <w>de</w> <w lemmaRef="causa">causa</w> <w>nostra</w> <w>fiscalium</w> <w>et</w> <w>absentorum</w> <w>hominum</w> <w>accepisset</w>, <w>quod</w> <w>usque</w> <w>nunc</w>, <w>sicut</w> <w>adserit</w>, <w>cum</w> <w>aequitatis</w> <w>ordine</w> <w>absque</w> <w>ullius</w> <w>contrarietate</w> <w>se</w> <w>habere</w> <w>et</w> <w>possidere</w> <w>profitetur</w>. <w>Ideoque</w> <w>petiit</w> <w>caelsitudini</w> <w>nostrae</w>, <w>ut</w> <w>nos</w> <w>ei</w> <w>et</w> <w>monachis</w> <w>suis</w> <w>supradictum</w> <w>locum</w> <w>cum</w> <w>omni</w> <w>adiacentia</w> <w>ad</w> <w>se</w> <w>pertinentia</w>, <w>undecumque</w> <w>ipse</w> <w>et</w> <w>monachi</w> <w>sui</w> <w>ad</w> <w>praesens</w> <w>iuste</w> <w>et</w> <w>rationabiliter</w> <w>vestiti</w> <w>esse</w> <w>noscuntur</w>, <w>deinceps</w> <w>ex</w> <w>nostra</w> <w>indulgentia</w> <w>in</w> <w>aelimosina</w> <w>nostra</w> <w>cedere</w> <w>et</w> <w lemmaRef="confirmatio">confirmare</w> <w>deberemus</w>; <w>cuius</w> <w>petitionem</w> <w>denegare</w> <w>noluimus</w>, <w>sed</w> <w>pro</w> <w>mercedis</w> <w>nostrae</w> <w>augmentum</w> <w>ita</w> <w>concessisse</w> <w>et</w> <w>in</w> <w>omnibus</w> <w>confirmasse</w> <w>cognoscite</w>. <w>Praecipientes</w> <w>ergo</w> <w>iubemus</w>, <w>ut</w> <w>neque</w> <w>vos</w> <w>neque</w> <w>iuniores</w> <w>seu</w> <w>successoresque</w> <w>vestri</w> <w>memorato</w> <w>viro</w> <w>venerabili</w> <w>Nimfridio</w> <w>abbati</w> <w>aut</w> <w>successoribus</w> <w>suis</w> <w>de</w> <w>supradicto</w> <w>loco</w>, <w>unde</w> <w>ad</w> <w>praesens</w> <w>ipse</w> <w>et</w> <w>monachi</w> <w>sui</w> <w>cum</w> <w>aequitatis</w> <w>ordine</w> <w>ac</w> <w>iuste</w> <w>et</w> <w>rationabiliter</w> <w>vestiti</w> <w>esse</w> <w>noscuntur</w>, <w>inquietare</w>, <w>calomniam</w> <w>generare</w> <w>nec</w> <w>aliquid</w> <w>exinde</w> <w>contra</w> <w>iustitiam</w> <w>abstrahere</w> <w>aut</w> <w>minuare</w> <w>quoque</w> <w>tempore</w> <w>praesumatis</w>, <w>sed</w> <w>per</w> <w>hanc</w> <w>nostram</w> <w>auctoritatem</w> <w>atque</w> <w>confirmationem</w> <w>habeant</w> <w>in</w> <w>aelimosina</w> <w>nostra</w> <w>omnique</w> <w>in</w> <w>tempore</w> <w>concessum</w>, <w>ita</w> <w>ut</w> <w>eis</w> <w>melius</w> <w>delectet</w> <w>pro</w> <w>nobis</w> <w>et</w> <w>filiis</w> <w>ac</w> <w>filiabus</w> <w>nostris</w> <w>seu</w> <w>cuncta</w> <w lemmaRef="familia">familia</w> <w>domus</w> <w>nostrae</w> <w>et</w> <w>[omni</w> <w>populo</w> <w>gentis</w> <w>nostrae]</w> <w>adtentius</w> <w>domini</w> <w>misericordiam</w> <w>exorare</w>. <w>[Et</w> <w>ut</w> <w>haec</w> <w>nostrae</w> <w>confirmationis]</w> <w lemmaRef="auctoritas">auctoritas</w> <w>firmior</w> <w>habeatur</w> <w>et</w> <w>diuturnis</w> <w>temporibus</w> <w>melius</w> <w>conservetur</w>, <w>manus</w> <w>nostrae</w> <w>signaculis</w> <w>subter</w> <w>eam</w> <w>roborare</w> <w>decrevimus</w> <w>et</w> <w>de</w> <w>anulo</w> <w>nostro</w> <w>sigillare</w> <w>iussimus</w>. </p>
+               <p xml:space="preserve"><w>Signum</w> (<w>MF</w>.) <w>Caroli</w> <w>[gloriosissimi</w> <w>regis]</w>. </p>
+               <p xml:space="preserve">(<w>C</w>.) <w>Amalbertus</w> <w>advicem</w> <w>Ercanbaldi</w> (<w>SR</w>. <w>NT</w>.: <w>Amalbertus</w> <w>advicem</w> <w>Ercanbaldi</w>). (<w>SI</w>. <w>D</w>.) </p>
+               <p xml:space="preserve"><w>Data</w> <w>in</w> <w>mense</w> <w>iunio</w> ..........; <w>[in</w> <w>dei]</w> <w>nomine</w> <w>feliciter</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

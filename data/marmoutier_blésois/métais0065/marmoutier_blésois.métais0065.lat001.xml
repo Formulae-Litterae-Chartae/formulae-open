@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 65</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">73-74</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0065">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Donation aux religieux de Marmoutier, par Renauld Poitevin, de tous ses biens, tant meubles qu'immeubles, à condition qu'il vivroit dans le prieuré de Mesland, le reste de sa vie, et sur ce que ses parents s'étoient opposés à lad. donation, le prieur de Mesland leur remit lesd. choses, à la réserve de deux arpents de pré scitués proche led. prieuré, en échange de deux arpents de pré de son domaine.»</p>
+         </div>
+         <dateline>1093<date notBefore="1093-01-01" notAfter="1093-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0065.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DONUM</w> <w>RAINALDI</w> <w>PICTAUENSIS</w> <w>DE</w> <w>DUOBUS</w> <w>ARPENNIS</w> <w>PRATI</w> <w>SITIS</w> <w>APUD</w> <w>FONTEM</w> <w>MERLANDI</w> <w>ET</w> <w>COCONCORDIA</w> <w>CUM</w> <w>GENERIBUS</w> <w>ET</w> <w>FILIABUS</w> <w>SUIS</w>. <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Noverint</w> <w>omnes</w> <w>nostri</w> <w>quod</w> <w>quidam</w> <w>rusticus</w> <w>de</w> <w>fonte</w> <w>Merlandi</w>, <w>nomine</w> <w>Rainaldus</w> <w>pictauensis</w>, <w>dederit</w> <w>beato</w> <w>Martino</w> <w>et</w> <w>nobis</w> <w>monachis</w> <w>eius</w>, <w>omnia</w> <w>sua</w> <w>tam</w> <w>mobilia</w> <w>quam</w> <w>edificia</w>, <w>tali</w> <w>pacto</w> <w>ut</w> <w>in</w> <w>domo</w> <w>monachorum</w> <w>apud</w> <w>fontem</w> <w>Merlandi</w>, <w>quamdiu</w> <w>viveret</w>, <w>pasceretur</w>. <w>Quod</w> <w>cum</w> <w>audissent</w> <w>generi</w> <w>et</w> <w>filie</w> <w>eius</w>, <w>Ernaldus</w> <w>scilicet</w> <w>et</w> <w>uxor</w> <w>eius</w> <w>Seimburgis</w>, <w>Iterius</w> <w>et</w> <w>uxor</w> <w>sua</w> <w>Ermengardis</w>, <w>calumniam</w> <w>de</w> <w>rebus</w> <w>illis</w> <w>fecerunt</w> <w>domno</w> <w>Garnerio</w> <w>monacho</w>, <w>qui</w> <w>prior</w> <w>erat</w> <w>fontis</w> <w>Merlandi</w>. <w>Dixerunt</w> <w>enim</w> <w>quod</w> <w>ille</w> <w>Rainaldus</w> <w>iam</w> <w>fecerat</w> <w>ipsis</w> <w>donum</w> <w>de</w> <w>omnibus</w> <w>rebus</w> <w>suis</w> <w>post</w> <w>mortem</w> <w>suam</w> <w>habituris</w>. <w>Et</w> <w>ideo</w> <w>dicebant</w> <w>quod</w> <w>ille</w> <w>non</w> <w>poterat</w> <w>illas</w> <w>nobis</w> <w>tueri</w> <w>nisi</w> <w>tantum</w> <w>in</w> <w>vita</w> <w>sua</w>. <w>Hoc</w> <w>audiens</w> <w>predictus</w> <w>Guarnerius</w> <w>talem</w> <w>cum</w> <w>illis</w> <w>omnibus</w> <w>concordiam</w> <w>fecit</w>. <w>Retinuit</w> <w>scilicet</w> <w>duos</w> <w>optimos</w> <w>arpennos</w> <w>prati</w>, <w>quos</w> <w>ille</w> <w>Rainaldus</w> <w>nobis</w> <w>dederat</w>, <w>prope</w> <w>domum</w> <w>monachorum</w> <w>sitos</w>, <w>et</w> <w>omnia</w> <w>alia</w> <w>reddidit</w> <w>illis</w>. <w>Et</w> <w>ut</w> <w>illos</w> <w>duos</w> <w>gratanter</w> <w>et</w> <w>libenter</w> <w>nobis</w> <w>concederent</w>, <w>dedit</w> <w>illis</w> <w>alios</w> <w>duos</w> <w>arpennos</w> <w>de</w> <w>nostris</w> <w>pratis</w>, <w>Ernaldo</w> <w>scilicet</w> <w>et</w> <w>uxori</w> <w>sue</w> <w>unum</w>, <w>et</w> <w>Iterio</w> <w>et</w> <w>sue</w> <w>uxori</w> <w>alterum</w>. <w>Et</w> <w>ita</w> <w>guerpiuerunt</w> <w>pariter</w> <w>omnem</w> <w>calumniam</w> <w>illam</w> <w>perpetuum</w>. <w>Testibus</w> <w>istis</w>: <w>Stephano</w> <w>de</w> <w>Castello</w>, <w>Stephano</w> <w>forestario</w>, <w>Hugone</w> <w>filio</w> <w>Ernaldi</w>, <w>Harduino</w>, <w>Radulfo</w> <w>de</w> <w>mala</w> <w>noa</w>, <w>Gualterio</w> <w>filio</w> <w>Stephani</w>, <w>Bodino</w> <w>fabro</w>, <w>Fredeberto</w>, <w>Simone</w> <w>filio</w> <w>Alberti</w>, <w>Benedicto</w> <w>de</w> <w>Ferraria</w>, <w>Gualterio</w> <w>mulnerio</w>, <w>Bartholomeo</w> <w>filio</w> <w>Gumberti</w> <w>presbiteri</w> <w>et</w> <w>Odone</w> <w>fratre</w> <w>eius</w>, <w>Ansaldo</w> <w>mulnerio</w>, <w>Amalberto</w> <w>buoario</w>, <w>Iohanne</w> <w>de</w> <w>Sachiniaco</w>, <w>Andrea</w> <w>filio</w> <w>Bartholomei</w>, <w>Iohanne</w> <w>de</w> <w>Guastineto</w>, <w>Rotberto</w> <w>forestario</w>, <w>Sulpicio</w> <w>filio</w> <w>Balduini</w>. <w>De</w> <w>monachis</w>: <w>domno</w> <w>Guarnerio</w> <w>qui</w> <w>jpsius</w> <w>donum</w> <w>recepit</w> <w>domno</w> <w>Rotgerio</w> <w>monacho</w> <w>sagiensi</w> <w>scriptore</w>, <w>qui</w> <w>nomina</w> <w>testium</w> <w>descripsit</w>. <w>Actum</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w>.<w>XCIII</w>, <w>agentibus</w> <w>nobis</w> <w>sub</w> <w>domno</w> <w>abbate</w> <w>Bernardo</w>, <w>tempore</w> <w>Philippi</w> <w>regis</w>, <w>et</w> <w>Stephani</w> <w>comitis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

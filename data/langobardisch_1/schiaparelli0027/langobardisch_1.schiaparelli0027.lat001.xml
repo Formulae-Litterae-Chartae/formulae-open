@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Codice Diplomatico Longobardo I (Ed. Schiaparelli) Nr. 27</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Codice Diplomatico Longobardo I (Ed. Schiaparelli)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen Studentische Hilfskraft, Universität Hamburg</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Codice Diplomatico Longobardo I</title>
+                  <editor>Luigi Schiaparelli</editor>
+                  <imprint>
+                     <pubPlace>Rom</pubPlace>
+                     <date when="1929" n="originalAusgabe">1929</date>
+                     <biblScope unit="pp">99–100</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Fonti per la storia d’Italia</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Codice Diplomatico Longobardo I, welches 1929 von Luigi Schiaparelli herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="langobardisch_1.schiaparelli0027">
+      <front xml:lang="ita">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Aunefrido chierico promette di servire la chiesa dei Ss. Lorenzo e Valentino a Vaccoli con tutti i suoi averi, e ricorda in particolare una casa sull’Arno in Mugnano; si riserva l’usufrutto, il quale alla sua morte passerà a Rotperga e a Perticunda monache e alle sorelle o nepoti che entreranno nel monastero.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>S. Lorenzo a Vaccoli (Lucca)</p>
+         </div>
+         <dateline>720 (?) 03 <date notBefore="0720-03-01" notAfter="0720-03-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:langobardisch_1.schiaparelli0027.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domni</w> <w>Dei</w> <w>saluaturi</w> <w>nostri</w> <w>Iesum</w> <w>Christi</w> <w>regnante</w> <w>domno</w> <w>nostro</w> <w>Liutprand</w> <w>uiro</w> <w>extelentissimo</w> <w>rege</w>, <w>anno</w> <w>regni</w> <w>eius</w> <w>octauo</w>, <w>per</w> <w>indictione</w> <w>septima</w>; <w>feliciter</w>. <w>Ideo</w> <w>Deo</w> <w>auturem</w> <w>cunstat</w> <w>me</w> <w>Aunefrid</w> <w>uir</w> <w>uenerabilis</w> <w>clirico</w> <w>ac</w> <w>die</w> <w>repromisse</w> <w>et</w> <w>repromisi</w> <w>me</w> <w>seruire</w> <w>ad</w> <w>beato</w> <w>sancto</w> <w>Laurentio</w> <w>et</w> <w>sancti</w> <w>Ualentini</w> <w>amturi</w> <w>meo</w> <w>cum</w> <w>homnia</w> <w>ris</w> <w>mea</w> <w>quod</w> <w>mihi</w> <w>etuineret</w>, <w>casa</w>, <w>uinca</w>, <w>seruus</w> <w>uel</w> <w lemmaRef="ancilla">ancilla</w>, <w>cultum</w>, <w>desertum</w>, <w>mouile</w> <w>uel</w> <w>inmouile</w> <w>sesseque</w> <w>mouentiuus</w>; <w>casa</w> <w>quod</w> <w>in</w> <w>Arno</w> <w>auire</w> <w>uisi</w> <w>sumus</w> <w>in</w> <w>loco</w> <w>qui</w> <w>dicitor</w> <w>Muniana</w>, <w>sorte</w> <w>mea</w> <w>uuicumque</w> <w>fueret</w>, <w>ad</w> <w>beato</w> <w>sancto</w> <w>Laurentio</w> <w>et</w> <w>sancti</w> <w>Ualentini</w> <w>sit</w> <w>quantum</w> <w>da</w> <w>germanis</w> <w>mei</w> <w>euineret</w>. <w>sic</w> <w>tamen</w>, <w>ut</w>, <w>dum</w> <w>die</w> <w>uite</w> <w>me</w> <w>fueret</w>, <w>in</w> <w>mea</w> <w>sit</w> <w>potestatem</w> <w>usumfructu</w>, <w>et</w> <w>pos</w> <w>uiro</w> <w>ouitum</w> <w>meum</w> <w>de</w> <w>ipsa</w> <w>sorticellula</w> <w>mea</w> <w>aucas</w> <w lemmaRef="potestas">potestas</w> <w>uiuendum</w> <w>Rotperga</w> <w>et</w> <w>Perticunda</w> <w>ancille</w> <w>Dei</w>. <w>et</w> <w>si</w> <w>forsitans</w> <w>aliquis</w> <w>de</w> <w>sororis</w> <w>aut</w> <w>nepotis</w> <w lemmaRef="dominus">Dominus</w> <w>aduocare</w> <w>ad</w> <w>uelamen</w> <w>ad</w> <w>ipso</w> <w>sancto</w> <w>loco</w>, <w>ut</w> <w>aueas</w> <w>licentia</w> <w>ad</w> <w>uiuendum</w> <w>de</w> <w>ipsa</w> <w>sorticella</w> <w>quod</w> <w>ipsi</w> <w>Aunifrid</w> <w>clirico</w> <w>fice</w> <w>ad</w> <w>ipso</w> <w>sancto</w> <w>1oco</w>. <w>tamen</w> <w>sic</w> <w>aueamus</w> <w>licentia</w>, <w>si</w> <w>forsitans</w> <w>alequa</w> <w lemmaRef="causa">causa</w> <w>opus</w> <w>fueret</w> <w>pro</w> <w lemmaRef="causa">causa</w> <w>sancti</w> <w>Laurenti</w> <w>aut</w> <w>sancti</w> <w>Ualentini</w>, <w>ut</w> <w>licentia</w> <w>aueas</w> <w>pro</w> <w>ipso</w> <w>sancto</w> <w>loco</w> <w>uindere</w>; <w>nam</w> <w>non</w> <w>pro</w> <w>alia</w> <w lemmaRef="causa">causa</w>. <w>Actum</w> <w>in</w> <w>Uaccule</w> <w>prope</w> <w>eclesia</w> <w>Sancti</w> <w>Laurenti</w> <w>et</w> <w>Sancti</w> <w>Ualentini</w>, <w>per</w> <w>mense</w> <w>martio</w>, <w>indictione</w> <w>et</w> <w lemmaRef="regnum">regnum</w> <w>suprascriptum</w>; <w>feliciter</w>. <w>Signum</w> + <w>manus</w> <w>Aunifrid</w> <w>uir</w> <w>uenerabilis</w> <w>clirico</w> <w>anc</w> <w lemmaRef="carta">cartula</w> <w>fieri</w> <w>rogaui</w>. <w>Signum</w> + <w>manus</w> <w>Paldoin</w> <w>uir</w> <w>uenerabilis</w> <w>presuiter</w> <w>cumsentientem</w> <w>Aunefrid</w> <w>aduocandum</w>. <w>Signum</w> + <w>manus</w> <w>Gudualdi</w> <w>testis</w>. <w>Signum</w> + <w>manus</w> <w>Tachipert</w> <w>filii</w> <w>quondam</w> <w>Tappuli</w>. <w>Signum</w> + <w>manus</w> <w>Magnuald</w> <w>uiri</w> <w>deuoti</w> <w>testis</w>. <w>Signum</w> + <w>manus</w> <w>Firmiciani</w> <w>uiri</w> <w>deuoti</w> <w>testis</w>. <w>Ego</w> <w>Teutpert</w> <w>clirico</w> <w>rogatus</w> <w>et</w> <w>petitus</w> <w>ad</w> <w>Aunefrid</w> <w>uiro</w> <w>uenerabili</w> <w>clirico</w> <w>iscriuere</w> <w lemmaRef="carta">cartula</w> <w>cunfermationis</w>: <w>et</w> <w>est</w> <w>auitator</w> <w>in</w> <w>Guamo</w>. <w>Ego</w> <w>Petrus</w> <w>scripsi</w> <w>in</w> <w>hanc</w> <w>pagina</w> <w>renouationis</w> <w>quantum</w> <w>in</w> <w>autentico</w> <w>inuenire</w> <w>potui</w>, <w>nec</w> <w>[a]mplius</w> <w>iuncxi</w>, <w>nec</w> <w>menime</w> <w>feci</w>, <w>sine</w> <w>dolo</w> <w>uel</w> <w>fraude</w> <w>excemplaui</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

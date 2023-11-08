@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 282</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">526</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0282">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Revenus de l’abbaye de Stavelot-Malmedy à Doma, Lommersdorf et Wesepen.</p>
+         </div>
+         <dateline>[XII siècle]<date notBefore="1101-01-01" notAfter="1200-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0282.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Reditus</w> <w lemmaRef="villa">villarum</w> <w>nostrarum</w>, <w>Doma</w> <w>scilicet</w>, <w>Lomestor</w>, <w>Wesepen</w>. <w>Doma</w> <w>sunt</w> <w>ni</w> <w lemmaRef="mansus">mansus</w> <w>preter</w> <w>dominicaturam</w>, <w>et</w> <w>VIII</w> <w>jornalia</w> <w>terrae</w>. <w>Lommestor</w> <w>II</w> <w lemmaRef="mansus">mansus</w> <w>preter</w> <w>dominicaturam</w>. <w>Wesepen</w> <w>I</w> <w lemmaRef="mansus">mansum</w> <w>preter</w> <w>dominicaturam</w>. <w>Hii</w> <w>mansi</w> <w>solvunt</w> <w>in</w> <w>maio</w> <w>VI</w> <w>solidos</w> <w>Coloniensis</w> <w>monetae</w>; <w>in</w> <w>festo</w> <w>sancti</w> <w>Remigii</w> <w>VI</w> <w>sol</w>. <w>Coloniensis</w> <w>monetae</w>; <w>in</w> <w>festo</w> <w>sancti</w> <w>Martini</w> <w>XII</w> <w>sol</w>. <w>Coloniensis</w> <w>monetae</w>; <w>in</w> <w>festo</w> <w>s</w>. <w>Andreae</w> <w>VI</w> <w>denarios</w> <w>Colonienses</w> <w>pro</w> <w>respectu</w> <w>decime</w> <w>nostrae</w> <w>de</w> <w>dominicatura</w> <w>nostra</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Andreae</w> <w>solvit</w> <w>nobis</w> <w>Doma</w> <w>X</w> <w>modios</w> <w>siliginis</w> <w>et</w> <w>XX</w> <w>modios</w> <w>avenae</w>; <w>Fulbertus</w> <w>et</w> <w>Rogerus</w> <w>I</w> <w>modium</w> <w>Coloniensem</w> <w>praeter</w> <w>pullos</w> <w>et</w> <w>ova</w> <w>et</w> <w>fenum</w> <w>et</w> <w>mortuammanum</w> <w>et</w> <w>investituras</w>. <w>Lommestor</w> <w>in</w> <w>ipsa</w> <w>die</w> <w>V</w> <w>modios</w> <w>frumenti</w> <w>et</w> <w>vi</w> <w>avenae</w> <w>praeter</w> <w>investituras</w> <w>et</w> <w>mortuammanum</w> <w>et</w> <w>pullos</w> <w>et</w> <w>ova</w>. <w>Wesepen</w> <w>in</w> <w>ipsa</w> <w>die</w> <w>VIII</w> <w>sobrinos</w> <w>frumenti</w> <w>Coloniensis</w> <w>mensure</w> <w>et</w> <w>IIII</w> <w>modios</w> <w>avenae</w> <w>ejusdem</w> <w>mensurae</w> <w>preter</w> <w>mortuammanum</w> <w>et</w> <w>pullos</w> <w>et</w> <w>ova</w> <w>et</w> <w>nuntium</w> <w>unum</w> <w>qui</w> <w>cum</w> <w>plaustris</w> <w>singulis</w> <w>annis</w> <w>iturus</w> <w>est</w> <w>Mosellam</w>, <w>et</w> <w>per</w> <w>circulum</w> <w>anni</w> <w>unusquisque</w> <w>feodus</w> <w>iturus</w> <w>est</w> <w>quocumque</w> <w>indiguerit</w> <w>prepositus</w> <w>aut</w> <w>Stabulaus</w> <w>aut</w> <w>Rimagam</w> <w>aut</w> <w>Mosellam</w>, <w>et</w> <w>preter</w> <w>nuntium</w> <w>unum</w> <w>qui</w> <w>presens</w> <w>esse</w> <w>qui</w> <w>Budulo</w> <w>vocatur</w>, <w>qui</w> <w>habet</w> <w lemmaRef="beneficium">beneficium</w>. <w>—</w> <w>Summa</w> <w>autem</w> <w>denariorum</w> <w>sunt</w> <w>XXIIII</w> <w lemmaRef="solidus">solidi</w> <w>et</w> <w>VI</w> <w>denarii</w>. <w>—</w> <w>Summa</w> <w>cujuscumque</w> <w>segetis</w> <w>quinquaginta</w> <w>IIII</w> <w>modii</w> <w>parvae</w> <w>mensurae</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

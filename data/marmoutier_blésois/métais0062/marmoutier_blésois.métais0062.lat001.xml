@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 62</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">71-72</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0062">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Jozon, chevalier, affranchit Mainard, berger des moines d’Orcheze, sa femme et ses enfants, en faveur de S. Martin, 1092. Herzende, femme de Jozon, et ses enfants consentirent à cet abandon, moyennant dix sols, 1095.</p>
+         </div>
+         <dateline>1092 et 1095
+            <date notBefore="1092-01-01" notAfter="1092-12-31"/>
+            <date notBefore="1095-01-01" notAfter="1095-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0062.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>MAINARDO</w> <w>ET</w> <w>UXORE</w> <w>SUA</w> <w>SERVIS</w> <w>FACTIS</w> <w>SANCTI</w> <w>MARTINI</w>, <w>ET</w> <w>QUITTATIONE</w> <w>EORUM</w>.</head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>nostri</w> <w>successores</w> <w>maioris</w> <w>monasterii</w> <w>monachi</w> <w>quod</w> <w>quidam</w> <w>miles</w> <w>Jozo</w> <w>nomine</w> <w>habebat</w> <w>quosdam</w> <w>servos</w> <w>Mainardum</w> <w>videlicet</w> <w>bergerium</w> <w>monachorum</w> <w>nostrorum</w> <w>de</w> <w>Orcasa</w>, <w>et</w> <w>uxorem</w> <w>jllius</w> <w>nomine</w> <w>Hersendem</w> <w>cum</w> <w>fructu</w> <w>eorumdem</w>. <w>Anno</w> <w>ab</w> <w>jncarnatione</w> <w>domini</w> <w>M</w>.<w>XCII</w>, <w>venientes</w> <w>maius</w> <w lemmaRef="monasterium">monasterium</w> <w>jpse</w> <w>Jozo</w> <w>et</w> <w>filii</w> <w>sui</w> <w>Hubertus</w> <w>et</w> <w>Petrus</w>, <w>accepta</w> <w>pecunia</w> <w>ab</w> <w>jllo</w> <w>Mainardo</w>, <w>fecerunt</w> <w>illos</w> <w>liberos</w>, <w>et</w> <w>concesserunt</w> <w>beato</w> <w>Martino</w> <w>et</w> <w>suis</w> <w>monachis</w> <w>jllos</w> <w>perpetuo</w> <w>jure</w> <w>habendos</w>. <w>Quo</w> <w>facto</w> <w>jn</w> <w>eodem</w> <w>capitulo</w> <w>devenit</w> <w>jlle</w> <w>Mainardus</w> <w lemmaRef="servus">servus</w> <w>beati</w> <w>Martini</w> <w>et</w> <w>suorum</w> <w>monachorum</w> <w>pro</w> <w>IIII</w> <w>denariis</w>, <w>sicut</w> <w>moris</w> <w>est</w>. <w>Jozo</w> <w>autem</w> <w>et</w> <w>filii</w> <w>sui</w> <w>promiserunt</w> <w>nobis</w> <w>quod</w> <w>si</w> <w>aliquis</w> <w>jllos</w> <w>calumniaretur</w> <w>nobis</w>, <w>ipsi</w> <w>adquietarunt</w> <w>eos</w> <w>quandiu</w> <w>viverent</w>. <w>Actum</w> <w>jn</w> <w>praesentia</w> <w>domni</w> <w>Bernardi</w> <w>abbatis</w>, <w>regnante</w> <w>Philippo</w> <w>rege</w> <w>jn</w> <w lemmaRef="franci">Francia</w>. <w>Testes</w> <w>qui</w> <w>adferunt</w> <w>scilicet</w> <w>hii</w>: <w>de</w> <w>sua</w> <w>parte</w>: <w>Sulpitius</w> <w>Vuaipus</w>, <w>Joannes</w> <w>bellus</w> <w>de</w> <w>Ambazia</w>; <w>de</w> <w>nostris</w>: <w>Hubertus</w> <w>celerarius</w>, <w>Lealdus</w> <w>bodinus</w>, <w>Robertus</w> <w>de</w> <w>Beriaco</w>, <w>Hubertus</w> <w>Guimundellus</w>, <w>Gaufridus</w> <w>abietanus</w>, <w>Herbertus</w> <w>malus</w> <w>ratus</w>, <w>Gofridus</w> <w>de</w> <w>Orcasa</w>, <w>Landricus</w> <w>bibesarpa</w>, <w>Landricus</w> <w>petulus</w>, <w>Albertus</w> <w>pestor</w>. <w>Tertio</w> <w>post</w> <w>anno</w> <w>uxor</w> <w>praedicti</w> <w>Jozonis</w> <w>concessit</w> <w>esse</w> <w>liberos</w> <w>predictum</w> <w>Mainardum</w> <w>bergerium</w> <w>et</w> <w>uxorem</w> <w>eius</w> <w>ac</w> <w>filios</w>, <w>quos</w> <w>calumniabatur</w>, <w>quod</w> <w>tres</w> <w>filiae</w> <w>eius</w>, <w>jd</w> <w>est</w> <w>Adenordis</w> <w>et</w> <w>Emma</w> <w>cognomento</w> <w>Galina</w>, <w>et</w> <w>Berta</w> <w>concesserunt</w>, <w>et</w> <w>pro</w> <w>jpsa</w> <w>concessione</w> <w>decem</w> <w>solidos</w> <w>blesenses</w> <w>a</w> <w>monachis</w> <w>Auricasae</w>, <w>jpse</w> <w>et</w> <w>mater</w> <w>sua</w> <w>receperunt</w>. <w>Huius</w> <w>rei</w> <w>testes</w> <w>sunt</w> <w>ex</w> <w>parte</w> <w>earum</w>: <w>Hubertus</w> <w>filius</w> <w>eiusdem</w> <w>Beatricis</w>, <w>et</w> <w lemmaRef="frater">frater</w> <w>jllarum</w> <w>Beringerius</w> <w>de</w> <w>Botho</w>, <w>Isembertus</w> <w>de</w> <w>Banolio</w>. <w>Ex</w> <w>parte</w> <w>vero</w> <w>monachorum</w>: <w>Robertus</w> <w>sacerdos</w>, <w>Haimo</w> <w>de</w> <w>Auricasa</w>, <w>Gausbertus</w> <w>trabes</w>, <w>Raimbertus</w> <w>benignus</w>, <w>Arnulphus</w> <w>daudigomarius</w>, <w>Rainaldus</w> <w>filius</w> <w>Dauid</w>, <w>Garinus</w> <w>filius</w> <w>Guidonis</w>, <w>Garinus</w> <w>filius</w> <w>Hildegarii</w>. </p>
+               <p xml:space="preserve"><w>Collatio</w>, <w>etc</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

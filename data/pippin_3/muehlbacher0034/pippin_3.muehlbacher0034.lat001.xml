@@ -1,0 +1,97 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Urkunden Pippins (Ed. Mühlbacher) Nr. 34 †</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Die Urkunden Pippins (Ed. Mühlbacher)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Jennifer Nielsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Alexander Kahnt (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">https://d-nb.info/976526034</idno>
+                  <idno type="ISBN">3-921575-54-0</idno>
+                  <title>Die Urkunden Pippins, Karlmanns und Karl des Grossen</title>
+                  <editor>Engelbert Mühlbacher</editor>
+                  <imprint>
+                     <pubPlace>München</pubPlace>
+                     <date when="1906" n="originalAusgabe">1906</date>
+                     <biblScope unit="pp">48-49</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Monumenta Germaniae historica</title>
+                  <biblScope unit="volume">MGH Pippin III</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Die Urkunden Pippins, Karlmanns und Karl des Grossen, welches 1906 von Engelbert Mühlbacher herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="pippin_3.muehlbacher0034">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pippin übergibt dem Kloster Figeac das Kloster des h. Quintinus als Priorat und schenkt 22 Kirchen.</p>
+         </div>
+         <dateline>
+            <date/>
+         </dateline>
+         <note type="echtheit" n="forgery">unecht</note>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:pippin_3.muehlbacher0034.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Pippinus</w> <w>Francorum</w> <w>princeps</w> <w lemmaRef="gratia">gratia</w> <w>autem</w> <w>dei</w> <w>iam</w> <w>rex</w> <w>omnibus</w> <w>Christi</w> <w>fidelibus</w></p>
+               <p xml:space="preserve"><w>aeternam</w> <w lemmaRef="in_domino_salutem">salutem</w>. <w>[Notum</w> <w>esse</w> <w>volumus]</w> <w>cunctis</w> <w>fidelibus</w>, <w>precipue</w> <w>tamen</w> <w>Rutenensium</w> <w>tam</w> <w>civibus</w> <w>quam</w> <w>pagensibus</w>, <w>quia</w> <w>infra</w> <w>eorum</w> <w>suburbana</w> <w>construximus</w> <w lemmaRef="monasterium">monasterium</w> <w>in</w> <w>honore</w> <w>patriotae</w> <w>nostri</w> <w>domni</w> <w>Quintini</w> <w>preciosissimi</w> <w>martiris</w> <w>Christi</w>. <w>Quia</w> <w>enim</w> <w>deo</w> <w>annuente</w> <w>quae</w> <w>in</w> <w>territorio</w> <w>Caturcensi</w> <w>corrigenda</w> <w>erant</w> <w>correximus</w>, <w>scilicet</w> <w>locum</w> <w>de</w> <w>convalle</w> <w>Jonantis</w> <w>in</w> <w>silva</w> <w>proxima</w> <w>viliori</w> <w>in</w> <w>loco</w>, <w>cui</w> <w>Fiacum</w> <w>nomen</w> <w>imposuimus</w>, <w>mutantes</w> <w>construximus</w>, <w>quem</w> <w>presente</w> <w>Stephano</w> <w lemmaRef="papa">papa</w> <w>a</w> <w>deo</w> <w>mirabiliter</w> <w>consecratum</w> <w>perspeximus</w>, <w>ratum</w> <w>esse</w> <w>iudicavimus</w>, <w>ut</w> <w>locus</w>, <w>qui</w> <w>ita</w> <w>a</w> <w>deo</w> <w>placuit</w> <w>honorari</w>, <w>a</w> <w>nobis</w> <w>pro</w> <w>posse</w> <w>debeat</w> <w>sublimari</w>. <w>Erectis</w> <w>itaque</w> <w>heremitis</w> <w>Conchensibus</w> <w>in</w> <w>priorali</w> <w>dignitate</w> <w>et</w> <w>coniunctos</w> <w>Fiacensibus</w> <w>ac</w> <w>commendatos</w> <w>abbati</w>, <w>ut</w> <w>subpleat</w> <w>ex</w> <w>sua</w> <w>habundantia</w> <w>illorum</w> <w>inopiae</w> <w>necessitatem</w>, <w>aliud</w> <w>quoque</w> <w lemmaRef="monasterium">monasterium</w>, <w>quod</w> <w>supradiximus</w> <w>in</w> <w>honore</w> <w>Christi</w> <w>martiris</w> <w>Quintini</w> <w>constructum</w>, <w>sub</w> <w>priorali</w> <w>dignitate</w> <w>eidem</w> <w>abbati</w> <w>commendamus</w> <w>volentes</w>, <w>ut</w> <w>semper</w> <w>hibi</w> <w>maneant</w> <w>monachi</w> <w>duo</w> <w>et</w> <w>viginti</w>. <w>Nam</w> <w>quia</w> <w>idem</w> <w>gloriosus</w> <w>martir</w> <w>viginti</w> <w>duobus</w> <w>clavibus</w> <w>[</w>........<w>]</w> <w>ne</w> <w>fuit</w> <w>affixus</w>, <w>recte</w>, <w>ut</w> <w>nobis</w> <w>videtur</w>, <w>eius</w> <w>servitio</w> <w>totidem</w> <w>monachos</w> <w>deputamus</w>, <w>quotquot</w> <w>in</w> <w>illis</w> <w>die</w>…………………… <w>habeat</w> <w>oblectamenta</w>. <w>Quod</w> <w>ut</w> <w>facere</w> <w>queant</w>, <w>tam</w> <w>ex</w> <w>nostro</w> <w>fisco</w> <w>quam</w> <w>ex</w> <w>bonorum</w> <w>hominum</w> <w>honoribus</w>………………………. <w>[ut]</w> <w>victum</w> <w>et</w> <w>vestitum</w> <w>habeant</w> <w>et</w> <w>pauperibus</w> <w>advenientibus</w> <w>subvenire</w> <w>possint</w>, <w>quatenus</w> <w>sine</w> <w>turpi</w> <w>inopia</w>………………….. <w>martiri</w> <w>preciosissimo</w> <w>Quintino</w> <w>deservire</w> <w>valeant</w>. <w>Inprimis</w> <w>in</w> <w>ipso</w> <w>loco</w> <w>aecclesiam</w> <w>sancti</w> <w>Martini</w> <w>cum</w> <w>tota</w> <w>[curte]</w>……………….. <w>sexaginta</w> <w>mansis</w> <w>de</w> <w>nostro</w> <w>fisco</w> <w>ei</w> <w>damus</w>. <w>Deinde</w> <w>aecclesiam</w> <w>de</w> <w>Gaurelis</w> <w>cum</w> <w>curte</w> <w>quae</w> <w>Benis</w> <w>appellatur</w>…………………… <w>deinde</w> <w>VII</w> <w>fontes</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Aliam</w> <w>quoque</w> <w>de</w> <w>Cassanucio</w> <w>cum</w> <w>XII</w> <w>mansis</w> <w>et</w> <w>casa</w> <w>dominica</w>………………………….. <w>bus</w> <w>mansis</w> <w>et</w> <w>aliam</w> <w>aecclesiam</w> <w>de</w> <w>Seraniaco</w> <w>cum</w> <w>tribus</w> <w>mansis</w>. <w>Illam</w> <w>quoque</w> <w>de</w> <w>Lupiaco</w> <w>cum</w>………………………….. <w>ani</w> <w>de</w> <w>Agent</w> <w>cum</w> <w>XII</w> <w>mansis</w> <w>et</w> <w>iuxta</w> <w>illam</w> <w>aecclesiam</w> <w>de</w> <w>Solotenaco</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Aecclesiam</w> <w>quoque</w>………….. <w>cum</w> <w>VII</w> <w>mansis</w> <w>et</w> <w>aliam</w> <w>aecclesiam</w> <w>de</w> <w>Tauriniaco</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Illam</w> <w>quoque</w> <w>de</w> <w>Nauciaco</w> <w>cum</w> <w>VI</w> <w>mansis</w> <w>et</w> <w>aliam</w> <w>aecclesiam</w> <w>sancti</w> <w>Juliani</w> <w>de</w> <w>Fonte</w> <w>cum</w> <w>XV</w> <w>mansis</w> <w>et</w> <w>aliam</w> <w>aecclesiam</w> <w>de</w> <w>sancto</w> <w>Lupo</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Et</w> <w>[illam</w> <w>ecclesiam</w> <w>de</w>...<w>]niaco</w> <w>cum</w> <w>VII</w> <w>mansis</w> <w>et</w> <w>silva</w>. <w>Aliam</w> <w>quoque</w> <w>de</w> <w>Salcis</w> <w>cum</w> <w>tribus</w> <w>mansis</w> <w>et</w> <w>aliam</w> <w>ecclesiam</w> <w>de</w> <w>Galga</w>………… <w>mansis</w>. <w>Illam</w> <w>quoque</w> <w>de</w> <w>Uerneto</w> <w>cum</w> <w>VI</w> <w>mansis</w> <w>et</w> <w>illam</w> <w>de</w> <w>Bulliaco</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Illam</w> <w>etiam</w> <w>de</w> <w>Liuiniaco</w> <w>[cum]</w> <w>tota</w> <w>curte</w>. <w>Aliam</w> <w>quoque</w> <w>de</w> <w>Flautniaco</w> <w>cum</w> <w>VII</w> <w>mansis</w> <w>et</w> <w>aecclesiam</w> <w>de</w> <w>Firminio</w> <w>cum</w> <w>tota</w> <w>curte</w>. <w>Illam</w> <w>etiam</w>…………………… <w>curte</w>. <w>Has</w> <w>igitur</w> <w>XXII</w> <w>aecclesias</w> <w>cum</w> <w>alio</w> <w>honore</w> <w>suprascripto</w> <w>huic</w> <w>loco</w> <w>condonamus</w>, <w>qualiter</w>……………………… <w>possint</w> <w>et</w> <w>de</w> <w>eo</w> <w>quod</w> <w>superfuerit</w> <w>censum</w> <w>pro</w> <w>posse</w> <w>abbatiae</w> <w>a</w> <w>deo</w> <w>sublimiter</w> <w>per</w> <w>semetipsum</w>………………………….. <w>sepulturam</w> <w>circumadiacentium</w> <w>proborum</w> <w>hominum</w> <w>regali</w> <w>potestate</w> <w>hic</w> <w>constituimus</w> <w>et</w> <w>apostoli</w>………………………… <w>sepeliendos</w> <w>absolvi</w> <w>fecimus</w>. <w>Si</w> <w>quis</w> <w>ergo</w> <w>hunc</w> <w>locum</w> <w>inquietare</w> <w>voluerit</w> <w>et</w> <w>hono</w>………………….. <w>animabus</w> <w>nostris</w> <w>et</w> <w>parentum</w> <w>nostrorum</w> <w>dedimus</w> <w>vel</w> <w>quae</w> <w>a</w> <w>fidelibus</w> <w>danda</w> <w>sunt</w>, <w>abstulerit</w> <w>re</w>……………………. <w>sciat</w> <w>et</w> <w>apostolica</w> <w>auctoritate</w> <w>anatematizatum</w> <w>et</w> <w>insuper</w> <w>vindictam</w> <w>Christi</w> <w>martiris</w> <w>Quintini</w> <w>in</w> <w>pre</w>……………………. <w>t</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

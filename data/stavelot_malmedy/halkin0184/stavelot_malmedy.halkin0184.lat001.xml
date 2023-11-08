@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 184</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">383</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0184">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Conrad III, roi des Romains, mande au doyen Robert, aux moines, aux officiers et aux vassaux de Stavelot qu’il a confié l’administration du monastère de Corbie à leur abbé Wibald.</p>
+         </div>
+         <dateline>1146 après 12 11<date notBefore="1146-12-11" notAfter="1146-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0184.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Counradus</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Romanorum</w> <w>rex</w> <w>Ruperto</w> <w>Stabulensi</w> <w>decano</w> <w>et</w> <w>ceteris</w> <w>fratribus</w>, <w>ministerialibus</w> <w>quoque</w> <w>ac</w> <w>toti</w> <w>familiae</w> <w>ejusdem</w> <w>ecclesiae</w> <w>gratiam</w> <w>suam</w> <w>et</w> <w>omne</w> <w>bonum</w>.</p>
+               <p xml:space="preserve"><w>Sicut</w> <w>divina</w> <w>ordinavit</w> <w>providentia</w>, <w>juxta</w> <w>fidelium</w> <w>nostrorum</w> <w lemmaRef="consilium">consilium</w>, <w>ad</w> <w>petitionem</w> <w>Corbeiensis</w> <w>ecclesiae</w> <w>fidelem</w> <w>nostrum</w> <w>Wibaldum</w> <w>abbatem</w> <w>vestrum</w>, <w>retenta</w> <w>vestra</w> <w>provisione</w> <w>et</w> <w>cura</w>, <w>quam</w> <w>prius</w> <w>habuerat</w>, <w>monasterio</w> <w>Corbeiensi</w> <w>praefecimus</w>. <w>Et</w> <w>quia</w> <w>ex</w> <w>hoc</w>, <w>ut</w> <w>speramus</w> <w>et</w> <w>volumus</w>, <w>maxima</w> <w>ecclesiae</w> <w>utilitas</w> <w>provenire</w> <w>potest</w>, <w>universitatem</w> <w>vestram</w> <w>per</w> <w>praesentia</w> <w>scripta</w> <w>attente</w> <w>monendo</w> <w>rogamus</w>, <w>quatenus</w> <w>absentiam</w> <w>ejus</w>, <w>regno</w> <w>quidem</w> <w>necessariam</w> <w>et</w> <w>nobis</w> <w>non</w> <w>inutilem</w>, <w>patienter</w> <w>supportetis</w> <w>et</w> <w>in</w> <w>ecclesiae</w> <w>vestrae</w> <w>oportunitatibus</w>, <w>si</w> <w>qua</w> <w>graviora</w> <w>emerserint</w>, <w>piae</w> <w>sollicitudinis</w> <w>operam</w> <w>studiose</w> <w>impendatis</w>. <w>Quod</w> <w>si</w> <w>in</w> <w>aliquibus</w> <w>nostrum</w> <w>adjutorium</w> <w>vobis</w> <w>fuerit</w> <w>necessarium</w>, <w>sicut</w> <w>hactenus</w> <w>semper</w> <w>vobis</w> <w>fuimus</w> <w>propitii</w>, <w>ita</w> <w>nunc</w> <w>maxime</w> <w>nos</w> <w>semper</w> <w>clementes</w> <w>habebitis</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

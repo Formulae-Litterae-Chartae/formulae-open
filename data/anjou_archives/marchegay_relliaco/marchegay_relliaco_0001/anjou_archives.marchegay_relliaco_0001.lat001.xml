@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay) Cartae de Relliaco, Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette
+                     province publié sous les auspices du Conseil général de Maine et Loire</title>
+                  <editor>Paul Marchegay</editor>
+                  <imprint>
+                     <pubPlace>Angers</pubPlace>
+                     <date when="1853" n="originalAusgabe">1853</date>
+                     <biblScope unit="pp">28-31</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives d’Anjou</title>
+                  <biblScope unit="volume">2</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Archives
+            d’Anjou. Recueil de documents et mémoires inédits sur cette province publié sous les
+            auspices du Conseil général de Maine et Loire , welches 1853 von Paul Marchegay
+            herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben
+            in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der
+            CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="anjou_archives.marchegay_relliaco_0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>De rebus quas Gausfredus Papa Bovem Majori Monasterii apud
+                  Ruiliacum dedit, cum assensu Gausfredi comitis Andegavensis et aliorum.</p>
+         </div>
+         <dateline>
+            <date/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:anjou_archives.marchegay_relliaco_0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Nosse</w> <w>debitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w>, <w>Majoris</w> <w>scilicet</w> <w>habitatores</w> <w>Monasterii</w> <w>sancti</w> <w>Martini</w>, <w>Gausfredum</w>, <w lemmaRef="papa">Papa</w> <w>Bovem</w> <w>cognomine</w>, <w>et</w> <w>Marcam</w> <w>uxorem</w> <w>ejus</w>, <w>Airardi</w> <w>quondam</w> <w>praeposit</w> <w>filiam</w>, <w>donationem</w> <w>hujus</w> <w>modi</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>nobis</w>, <w>pro</w> <w>animabus</w> <w>suis</w>, <w>fecisse</w>. <w>Est</w> <w>in</w> <w>Andecavo</w> <w lemmaRef="castellum">castellum</w> <w>quoddam</w> <w>Ruiliacus</w> <w>nomine</w> <w>quod</w>, <w>cum</w> <w>ad</w> <w>ipsum</w> <w>circum</w> <w>circa</w> <w>pertinentibus</w> <w>casamentis</w>, <w>ex</w> <w>paterno</w> <w>jure</w> <w>ejusdem</w> <w>Marcae</w> <w>conjugis</w> <w>suae</w>, <w>in</w> <w>Gausfredi</w> <w>devenerat</w> <w>possesionem</w>; <w>de</w> <w>quibus</w> <w>casamentis</w>, <w>cum</w> <w>quae</w> <w>vellet</w> <w>agendi</w> <w>Gausfredus</w> <w>liberam</w> <w>haberet</w> <w>facultatem</w>, <w>placuit</w> <w>ei</w> <w>et</w> <w>aliquid</w> <w>inde</w>, <w>pro</w> <w>futurae</w> <w>spe</w> <w>salutis</w>, <w>Deo</w> <w>maluit</w> <w>offerre</w>. <w>Donavit</w> <w>itaque</w> <w>nobis</w>, <w>sub</w> <w>ea</w> <w>qua</w> <w>tenuerat</w> <w>libertate</w> <w>perpetuo</w> <w>possidendam</w>, <w>quandam</w> <w>terrae</w> <w>partem</w> <w>ante</w> <w>meoratum</w>, <w>ab</w> <w>aquilone</w>, <w>sitam</w> <w lemmaRef="castellum">castellum</w>, <w>ad</w> <w>aedificandum</w> <w>in</w> <w>ea</w> <w>ecclesiam</w> <w>et</w> <w>burgum</w>; <w>cui</w> <w>etiam</w> <w>ex</w> <w>altare</w> <w>unam</w> <w>terrae</w> <w>mansuram</w>, <w>quam</w> <w>in</w> <w>propria</w> <w>dominicatura</w> <w>habebat</w>, <w>cum</w> <w>pratis</w> <w>ad</w> <w>ipsam</w> <w>pertinentibus</w> <w>subjunxit</w>: <w>donans</w> <w>cum</w> <w>ea</w> <w>pariter</w> <w>boves</w> <w>et</w> <w>parcum</w> <w>cum</w> <w>ovibus</w> <w>nec</w> <w>non</w> <w>et</w> <w>bladum</w> <w>terrae</w> <w>ipsius</w>; <w>promittens</w> <w>insuper</w> <w>ut</w> <w>cum</w> <w>altare</w> <w>ecclesiae</w> <w>de</w> <w>Chadenaco</w>, <w>post</w> <w>obitum</w> <w>uxoris</w> <w>Odonis</w> <w>Rufi</w>, <w>ad</w> <w>ipsum</w> <w>redierit</w>, <w>decima</w> <w>quae</w> <w>ex</w> <w>eadem</w> <w>mansura</w> <w>illi</w> <w>debetur</w> <w>ecclesiae</w> <w>nobis</w> <w>ab</w> <w>ipso</w> <w>condonetur</w>. <w>Donavit</w> <w>praeterea</w> <w>oblationem</w> <w>et</w> <w>sepulturam</w> <w>de</w> <w>hominibus</w> <w>qui</w> <w>in</w> <w>ea</w> <w>amplificatione</w> <w>castelli</w> <w>que</w> <w>a</w> <w>parte</w> <w>Chadenaci</w>, <w>a</w> <w>stagno</w> <w>usque</w> <w>ad</w> <w>praedictam</w> <w>mansuram</w>, <w>porrigitur</w>, <w>inhabitant</w>; <w>ut</w> <w>videlicet</w> <w>omnes</w> <w>in</w> <w>hac</w>, <w>quam</w> <w>vulgo</w> <w>porprisam</w> <w>vocitant</w>, <w>amplificatione</w> <w>commanentes</w> <w>non</w> <w>alii</w> <w>quam</w> <w>ecclesiae</w> <w>nostrae</w> <w>illic</w> <w>consistenti</w> <w>ecclesiasticos</w> <w>reditus</w> <w>debeant</w> <w>persolvere</w>. <w>Donavit</w> <w>et</w> <w>duas</w> <w>terrae</w> <w>mansuras</w> <w>solidas</w> <w>et</w> <w>quietas</w> <w>in</w> <w>alodio</w> <w>de</w> <w>Puteolis</w> <w>sitas</w>: <w>ea</w> <w>scilicet</w> <w>ratione</w> <w>ut</w> <w>si</w> <w>qua</w> <w>unquam</w> <w>in</w> <w>his</w> <w>calumnia</w> <w>surrexerit</w> <w>a</w> <w>qua</w> <w>nobis</w> <w>illos</w> <w>acquitare</w> <w>non</w> <w>possit</w>, <w>excambium</w> <w>eorum</w> <w>reddat</w> <w>nobis</w> <w>in</w> <w>terra</w> <w>de</w> <w>Gurguenaldo</w>; <w>quod</w> <w>se</w> <w>spopondit</w> <w>facturum</w> <w>esse</w> <w>si</w> <w>vixerit</w> <w>aut</w> <w>uxorem</w> <w>suam</w>, <w>annuente</w> <w>ad</w> <w>hoc</w> <w>ipsa</w>, <w>si</w> <w>eo</w> <w>defuncto</w> <w>et</w> <w>ipsa</w> <w>superstite</w> <w>calumnia</w> <w>surrexerit</w>. <w>His</w> <w>etiam</w> <w>adhuc</w> <w>addendo</w>, <w>septem</w> <w>pariter</w> <w>terrae</w> <w>mansuras</w> <w>solitas</w> <w>et</w> <w>quietas</w>, <w>sitas</w> <w>versus</w> <w>Peregrinam</w> <w>in</w> <w>corte</w> <w>praefati</w> <w>castelli</w> <w>sui</w>, <w>devotus</w> <w>contulit</w>; <w>eadem</w> <w>similiter</w> <w>devotione</w> <w>licentiam</w> <w>piscandi</w> <w>tribus</w> <w>in</w> <w>ebdomada</w> <w>diebus</w> <w>monacho</w> <w>nostro</w> <w>attribuens</w> <w>qui</w> <w>illic</w>, <w>ad</w> <w>ea</w> <w>quae</w> <w>dedit</w> <w>excolenda</w>, <w>fuerit</w> <w>immoratus</w>. <w>At</w> <w>quotiens</w> <w lemmaRef="abbas">abbas</w> <w>noster</w> <w>ibi</w> <w>aderit</w>, <w>non</w> <w>triduana</w> <w>sed</w> <w>continua</w> <w>fiet</w> <w>piscatio</w> <w>quotquot</w> <w>in</w> <w>eodem</w> <w>loco</w> <w>demoratus</w> <w>fuerit</w> <w>diebus</w>; <w>verum</w> <w>piscationes</w> <w>hujusmodi</w> <w>in</w> <w>proprio</w> <w>stagno</w> <w>fieri</w> <w>promisit</w>. <w>Donavit</w> <w>etiam</w>, <w>in</w> <w>aqua</w> <w>de</w> <w>eodem</w> <w>stagno</w> <w>subtus</w> <w lemmaRef="castellum">castellum</w>, <w>duas</w> <w>areas</w> <w>molendinorum</w>: <w>tali</w> <w>ratione</w> <w>ut</w> <w>quisquis</w> <w>hominum</w> <w>vel</w> <w>ipsius</w> <w>Gausfredi</w> <w>vel</w> <w>aliorum</w>, <w>sive</w> <w>burgensis</w> <w>sive</w> <w>rusticus</w>, <w>ad</w> <w>molendinos</w> <w>illos</w> <w>molitum</w> <w>ire</w> <w>voluerit</w>, <w>non</w> <w>debeat</w> <w>prohiberi</w>. <w>De</w> <w>terris</w> <w>quoque</w> <w>censivis</w> <w>et</w> <w>casamentis</w> <w>totius</w> <w>suae</w> <w>ditionis</w> <w>si</w> <w>quis</w> <w>nobis</w> <w>aliquid</w> <w>dare</w> <w>vel</w> <w>vendere</w> <w>voluerit</w>, <w>favorabili</w> <w>liberalitate</w> <w>concessit</w>. <w>Haec</w> <w>autem</w> <w>omnia</w>, <w>ut</w> <w>de</w> <w>quorum</w> <w>sunt</w> <w>casamento</w> <w>distincte</w> <w>possit</w> <w>agnosci</w>, <w>mansura</w> <w>et</w> <w>pars</w> <w>terrae</w> <w>ad</w> <w>aedificandum</w> <w>data</w> <w>et</w> <w>illae</w> <w>duae</w> <w>molendinorum</w> <w>areae</w> <w>juris</w> <w>existunt</w> <w>comitis</w> <w>Gausfredi</w>; <w>mansurae</w> <w>vero</w> <w>septem</w> <w>ad</w> <w>casamentum</w> <w>Gausfredi</w> <w>de</w> <w>Pruiliaco</w> <w>pertinent</w>, <w>sed</w> <w>Guarinus</w> <w>de</w> <w>Fontanis</w> <w>ex</w> <w>beneficio</w> <w>eas</w> <w>tenebat</w> <w>ipsius</w>. <w>Hi</w> <w>igitur</w> <w>omnes</w>, <w>tam</w> <w lemmaRef="comes">comes</w> <w>quam</w> <w>et</w> <w>Gausfredus</w> <w>atque</w> <w>Guarinus</w>, <w>propria</w> <w>quisque</w> <w>auctorizatione</w>, <w>donationes</w> <w>has</w> <w>Gausfredi</w> <w>uxorisque</w> <w>ejus</w> <w>gratis</w> <w>confirmavere</w>. <w>Nam</w> <w lemmaRef="comes">comes</w> <w>postulatus</w>, <w>cum</w> <w>placitaret</w> <w>quadam</w> <w>vice</w> <w>cum</w> <w>suo</w> <w>fratre</w> <w>Fulcone</w> <w>apud</w> <w>Condatensem</w>, <w>relecta</w> <w>coram</w> <w>ipso</w> <w lemmaRef="carta">carta</w> <w>ista</w> <w>ab</w> <w>Eusebio</w> <w>Andecavensi</w> <w>pontifice</w>, <w>pro</w> <w>sua</w> <w>erga</w> <w>nos</w> <w>sedula</w> <w>benignitate</w>, <w>mox</w> <w>eam</w> <w>auctoritatis</w> <w>propriae</w>, <w>ut</w> <w>est</w> <w>infra</w> <w>cernere</w>, <w>sacrae</w> <w>crucis</w> <w>corroboravit</w> <w>caractere</w>; <w>caeteri</w> <w>duo</w> <w>idem</w> <w>facere</w> <w>Gausfredi</w> <w>ipsius</w> <w>precario</w>. <w>Porro</w> <w>autem</w> <w>idem</w> <w>ipse</w> <w>Gausfredus</w>, <w>pro</w> <w>his</w> <w>omnibus</w> <w>quae</w> <w>nobis</w> <w>donavit</w>, <w>mille</w> <w>tamen</w> <w>a</w> <w>nobis</w> <w>solidos</w>, <w>partim</w> <w>in</w> <w>denariis</w> <w>partim</w> <w>in</w> <w>aliis</w> <w>rebus</w>, <w>accepit</w>. <w>Fecit</w> <w>autem</w> <w>donationem</w> <w>omnium</w> <w>supramemoratorum</w> <w>cum</w> <w>supra</w> <w>nominata</w> <w>sua</w> <w>conjuge</w> <w>praesens</w> <w>in</w> <w>capitulo</w> <w>nostro</w>, <w>anno</w> <w>videlicet</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>MLXIIIo</w>, <w>praesidente</w> <w>nobis</w> <w>domno</w> <w>abbate</w> <w>Alberto</w>, <w>testibus</w> <w>istis</w>: <w>Odone</w> <w>preposito</w> <w>de</w> <w>Barolia</w>, <w>Gauscelino</w> <w>filio</w> <w>Rimandi</w>, <w>Guarino</w> <w>fratre</w> <w>ejus</w>, <w>Otgerio</w> <w>Mischino</w>, <w>Ascelino</w> <w>cognato</w> <w>ejus</w>, <w>Aimerico</w> <w>de</w> <w>Mallaio</w> <w>cognato</w> <w>ipsius</w> <w>Gausfredi</w>, <w>Herberto</w> <w>nepote</w> <w>ipsius</w>, <w>Rotberto</w> <w>Abelino</w>, <w>Roberto</w> <w>Bodardo</w>; <w>de</w> <w>nostris</w>: <w>Hugone</w> <w>Rigoto</w>, <w>Arnulfo</w> <w>cementario</w>, <w>Gausfredo</w> <w>campione</w>, <w>Petro</w> <w>coquo</w>, <w>Nihardo</w> <w>coquo</w>, <w>Rotberto</w> <w>hospitalario</w>, <w>Galcherio</w> <w>forestario</w>, <w>Hildemaro</w> <w>de</w> <w>Rupiculis</w>, <w>Arnulfo</w> <w>nepote</w> <w>Hildeberti</w>, <w>Frodone</w> <w>medico</w>, <w>Tetbaldo</w> <w>majore</w>, <w>Bernardo</w> <w>fratre</w> <w>ejus</w>, <w>Ingelbaldo</w> <w>de</w> <w>Ponte</w>, <w>Guarnerio</w> <w>de</w> <w>Elemosyna</w>. <w>Signum</w> <w>Gausfredi</w> <w>comitis</w>. <w>Testes</w> <w>de</w> <w>auctoramento</w> <w>Gausfredi</w> <w>comitis</w>: <w>Eusebius</w> <w lemmaRef="episcopus">episcopus</w>, <w>Gausfredus</w> <w>de</w> <w>Pruiliaco</w>, <w>Guido</w> <w>de</w> <w>Pruiliaco</w>, <w>Gausfredus</w> <w>Catus</w>, <w>Aimericus</w> <w>de</w> <w>Trevis</w>, <w>Gausfredus</w> <w>Sanctonensis</w>, <w>Machel</w> <w lemmaRef="frater">frater</w> <w>ejus</w>, <w>Robertus</w> <w>de</w> <w>Monte</w> <w>Contorio</w>, <w>Giraldus</w> <w>de</w> <w>Monsteriolo</w>, <w>Hugo</w> <w>Manduca</w> <w>Britonem</w>, <w>Riulo</w>, <w>Aimericus</w> <w lemmaRef="praepositus">praepositus</w> <w>Balgiacensis</w>, <w>Gausfredus</w>; <w>de</w> <w>hominibus</w> <w>sancti</w> <w>Martini</w>: <w>Guarnerius</w> <w>major</w>, <w>Tetbaldus</w> <w>major</w>, <w>Bernardus</w> <w lemmaRef="frater">frater</w> <w>ejus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 150</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">142</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0150">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Foulques, comte d’Anjou, fonde le prieuré de N-D.-des-Marchais, à Trôo.</p>
+         </div>
+         <dateline>1124<date notBefore="1124-01-01" notAfter="1124-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0150.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>FUNDATIONE</w> <w>PRIORATUS</w> <w>DE</w> <w>TROO</w></head>
+               <p xml:space="preserve">«<w>Prioratus</w> <w>de</w> <w>Foro</w>, <w>alias</w> <w>de</w> <w>Marchais</w> <w>apud</w> <w>Troo</w>, <w>in</w> <w>diocesi</w> <w>Cenomanensi</w>, <w>anno</w> <w>1124</w>, <w>pro</w> <w>XII</w> <w>monachis</w> <w>fundatus</w> <w>a</w> <w>Fulcone</w> <w>Andegauensi</w> <w>comite</w>, <w>filio</w> <w>Fulconis</w> <w>Rechin</w>, <w>quae</w> <w>hic</w> <w>referenda</w> <w>est</w>. <w>Vide</w> <w>inter</w> <w>meas</w> <w>fundationes</w>, <w>est</w> <w>enim</w> <w>valde</w> <w>notabilis</w>, <w>et</w> <w>praeter</w> <w>eam</w> <w>nihil</w> <w>memoria</w> <w>dignum</w> <w>in</w> <w>capsa</w> <w>cartarum</w> <w>hujus</w> <w>prioratus</w>, <w>nisi</w> <w>quod</w> <w>in</w> <w>ecclesia</w> <w>canonicorum</w> <w>S</w>. <w>Martini</w> <w>de</w> <w>Troo</w>, <w>quae</w> <w>est</w> <w>etiam</w> <w lemmaRef="parochia">parochialis</w> <w>ecclesia</w>, <w>ubi</w> <w>habet</w> <w>prior</w> <w>decimas</w>, <w>confert</w> <w>etiam</w> <w>capellanias</w>. <w>Multa</w> <w>sunt</w> <w>preter</w> <w>ea</w> <w>lituum</w> <w>instrumenta</w> <w>de</w> <w>decimis</w> <w>in</w> <w>dicta</w> <w>ecclesia</w> <w>et</w> <w>S</w>. <w>Quintini</w> <w>et</w> <w>aliis</w> <w>contra</w> <w>canonicos</w> <w>et</w> <w>rectores</w> <w>dictarum</w> <w>ecclesiarum</w>; <w>quae</w> <w>omnia</w> <w>nihil</w> <w>faciunt</w> <w>ad</w> <w>illustrationem</w> <w>rerum</w> <w>preteritarum</w>.»</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

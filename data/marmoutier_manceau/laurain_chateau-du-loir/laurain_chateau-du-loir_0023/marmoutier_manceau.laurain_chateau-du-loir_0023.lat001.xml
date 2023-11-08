@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Chateau-du-Loir, Nr. 23</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">143</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_chateau-du-loir_0023">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Accord entre Marsile de Fay, chevalier, et les religieux de Marmoutier, attribuant à ces derniers le droit de patronage et le tiers des oblations de l’église de Mansigné.</p>
+         </div>
+         <dateline>1191<date notBefore="1191-01-01" notAfter="1191-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_chateau-du-loir_0023.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Fratres</w> <w>capituli</w> <w>Maioris</w> <w>monasterii</w> <w>et</w> <w lemmaRef="frater">frater</w> <w>Gaufredus</w>, <w>eorum</w> <w>humilis</w> <w>minister</w>, <w>universis</w>...... <w lemmaRef="in_domino_salutem">salutem</w>...... <w>Inter</w> <w>nos</w> <w>et</w> <w>Marsilium</w> <w>de</w> <w>Fail</w>, <w>militem</w>, <w>super</w> <w>ecclesia</w> <w>de</w> <w>Manciniaco</w>...... <w>amicabilis</w> <w lemmaRef="compositio">compositio</w> <w>intercessit</w>...... <w>Nobis</w> <w>reliquit</w> <w>scilicet</w> <w lemmaRef="ius">ius</w> <w>patronatus</w> <w>et</w> <w>tertiam</w> <w>partem</w> <w>oblationum</w>...... <w>Hec</w> <w lemmaRef="compositio">compositio</w> <w>facta</w> <w>est</w> <w>coram</w> <w>nobili</w> <w>viro</w> <w>Gaufredo</w> <w>Ostorio</w>, <w>Cenomanensi</w> <w>senescallo</w>, <w>et</w> <w>ab</w> <w>eodem</w> <w>approbata</w> <w>et</w> <w>confirmata</w>. <w>Hanc</w> <w>pacem</w>...... <w>tuendam</w> <w>erga</w> <w>Robertum</w> <w>de</w> <w>Belin</w> <w>ipse</w> <w>Marsilius</w> <w>fide</w> <w>firmavit</w> <w>et</w> <w>fratres</w> <w>eius</w> <w>Harduinus</w> <w>et</w> <w>Herbertus</w>...... <w>Testes</w> <w>ex</w> <w>parte</w> <w>militis</w> <w>Gaudinus</w> <w>Apechel</w>, <w>Hugo</w> <w>de</w> <w>Belin</w>, <w>Hugo</w> <w>Espinart</w>, <w>Guillelmus</w> <w>Quarrel</w>, <w>Hubertus</w> <w>Potart</w>, <w>Harduinus</w> <w>de</w> <w>Landevi</w>, <w>Hubertus</w> <w>Vindocinensis</w>, <w>Matheus</w> <w>Hasart</w>, <w>Robertus</w> <w>de</w> <w>Cheveineio</w>, <w>Hugo</w> <w>de</w> <w>Montecucu</w>, <w>Guillelmus</w> <w>Henrici</w>, <w>Lucas</w> <w>de</w> <w>Nucariis</w>, <w>Gaufredus</w> <w>de</w> <w>Maiet</w>, <w>Hubertus</w> <w>de</w> <w>Claromonte</w>, <w>Iohannes</w> <w lemmaRef="clericus">clericus</w> <w>et</w> <w>plures</w> <w>alii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

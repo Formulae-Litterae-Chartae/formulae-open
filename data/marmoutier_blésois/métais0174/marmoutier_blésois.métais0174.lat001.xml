@@ -1,0 +1,90 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 174</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">162</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0174">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Hugues de Châteaudun donne à Marmoutier sa forêt de Vendôme, entre Chauvigny et Romilly.</p>
+         </div>
+         <dateline>1175-1184<date notBefore="1175-01-01" notAfter="1184-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0174.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>CIROGRAPHUM</w> <w>DE</w> <w>QUADAM</w> <w>TERRA</w> <w>QUAM</w> <w>HUGO</w> <w>VICECOMES</w> <w>CASTRIDUNI</w> <w>NOBIS</w> <w>DEDERAT</w>».</head>
+               <head xml:space="preserve"><w>ABCDEFGHIJKLMNO</w></head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>praesentibus</w>, <w>quod</w> <w>ego</w> <w>Hugo</w> <w>Castriduni</w> <w>uicecomes</w>, <w>in</w> <w>perpetuum</w> <w>dedi</w> <w>et</w> <w>concessi</w> <w>Deo</w> <w>et</w> <w>ecclesie</w> <w>beati</w> <w>Martini</w> <w>de</w> <w>maiore</w> <w>monasterio</w>, <w>terram</w> <w>nemoris</w> <w>Uindocinensis</w>, <w>quod</w> <w>uenditum</w> <w>est</w> <w>inter</w> <w>Romilliacum</w> <w>et</w> <w>Calumniacum</w>, <w>sicut</w> <w>illa</w> <w>diuiditur</w> <w>a</w> <w>terris</w> <w>sanctimonialium</w> <w>templarum</w> <w>et</w> <w>leprosorum</w>, <w>ad</w> <w>costumas</w> <w>et</w> <w>redibitiones</w>, <w>quas</w> <w lemmaRef="dominus">dominus</w> <w>Montisdoblii</w>, <w>et</w> <w lemmaRef="dominus">dominus</w> <w>Boscheti</w>, <w>et</w> <w>predicti</w> <w>nemoris</w> <w>participes</w> <w>capiunt</w> <w>in</w> <w>eadem</w> <w>terra</w> <w>de</w> <w>Calumniaco</w>. <w>Hoc</w> <w>donum</w> <w>fieri</w> <w>concesserunt</w>: <w>Iohannes</w> <w>et</w> <w>Goffridus</w> <w>de</w> <w>Lauardin</w>, <w>Hugo</w> <w>de</w> <w>Sancto</w> <w>Agilo</w>, <w>Gausfredus</w> <w>de</w> <w>Vogrin</w>, <w>Vrsio</w> <w>de</w> <w>Fractaualle</w>, <w>et</w> <w>eorum</w> <w>uxores</w> <w>et</w> <w>liberi</w>, <w>et</w> <w>pertinaces</w> <w>eorum</w>, <w>et</w> <w>forestarii</w>. <w>Quorum</w> <w>rogatu</w> <w>hoc</w> <w>ego</w> <w>in</w> <w>manu</w> <w>cepi</w>. <w>Hij</w> <w>sunt</w> <w>testes</w>: <w>Hugo</w> <w>de</w> <w>Sancto</w> <w>Agilo</w>, <w>Geruasius</w> <w>de</w> <w>Plesseiz</w>, <w>Gosbertus</w> <w>de</w> <w>Boschat</w> <w>Henricus</w> <w>de</w> <w>Puisat</w>, <w>Vngerius</w> <w>tunc</w> <w>prior</w> <w>de</w> <w>Calumniaco</w>, <w>et</w> <w>Minardus</w> <w>eius</w> <w>socius</w>, <w>et</w> <w>Odo</w> <w>Chauel</w>. <w>Quod</w> <w>ut</w> <w>inuiolatum</w> <w>permaneat</w>, <w>sigilli</w> <w>mei</w> <w>muniui</w> <w>testimonio</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

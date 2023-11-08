@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 5</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">10</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0005">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">La reine Berthe remet à Marmoutier le tribu de tonlieu qu'elle percevait sur chaque bateau dans le port de Blois.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Grèneterie</p>
+         </div>
+         <dateline>Après 995<date notBefore="0995-01-01" notAfter="1019-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0005.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>PORTU</w> <w>BLESENSI</w></head>
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>Trinitatis</w>, <w>ego</w> <w>Berta</w> <w>nutu</w> <w>omnipotentis</w> <w>Dei</w> <w>regina</w>, <w>cum</w> <w>filiis</w> <w>meis</w> <w>Tetbaldo</w> <w lemmaRef="gratia">gratia</w> <w>Dei</w> <w>episcopo</w>, <w>nec</w> <w>non</w> <w>Odoni</w> <w>comitis</w>, <w>concedimus</w> <w>ad</w> <w>locum</w> <w>maioris</w> <w>coenobii</w>, <w>pro</w> <w>remedio</w> <w>animarum</w> <w>nostrarum</w> <w>et</w> <w>absolucionem</w> <w>piissimi</w> <w>Odonis</w> <w>comitis</w> <w lemmaRef="teloneum">teloneum</w> <w>que</w> <w>erat</w> <w>solita</w> <w>una</w> <w>naui</w> <w>reddere</w> <w>ad</w> <w>portum</w> <w>blesensium</w> <w>castro</w>, <w>ita</w> <w>sane</w> <w>ut</w> <w>omni</w> <w>tempore</w> <w>psallant</w> <w>monachi</w> <w>psalmum</w> <w>in</w> <w>suo</w> <w>capitulo</w>, <w>pro</w> <w>spe</w> <w>et</w> <w>incolumitatis</w> <w>nostrae</w> <w>et</w> <w>requiem</w> <w>spiritus</w> <w>et</w> <w>anime</w> <w>Odonis</w> <w>comitis</w>. <w>Si</w> <w>quis</w> <w>hanc</w> <w>noticiam</w> <w>calumniare</w> <w>presumserit</w>, <w>iram</w> <w>incurrat</w> <w>omnipotentis</w>, <w>et</w> <w>post</w> <w>demum</w> <w>sancita</w> <w>stabilisque</w> <w>permanent</w>, <w>et</w> <w>ipse</w> <w>violator</w> <w>confusus</w> <w>abscedat</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Archembaldus</w> <w>archiepiscopus</w>. </p><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Racbodus</w> <w>archiepiscopus</w>.</p><p rend="Normal" style="text-align: left; "> <w>S</w>. <w>Arnulfus</w> <w lemmaRef="episcopus">episcopus</w>. </p><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Raynaldus</w> <w lemmaRef="episcopus">episcopus</w>.</p><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Enodus</w> <w lemmaRef="episcopus">episcopus</w>.</p></cell><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Frobertus</w>. </p><p rend="Normal" style="text-align: left; "><w>S</w>. <w>Auoerius</w>.</p><p rend="Normal" style="text-align: left; "> <w>S</w>. <w>Balduinus</w>.</p><p rend="Normal" style="text-align: left; "> <w>S</w>. <w>Balderanus</w>.</p></cell></row><row><cell style="text-align: left;" cols="2" rend="Normal"><p rend="Normal" style="text-align: left; ">                                              <w>S</w>. <w>Rainaldus</w>.</p><p rend="Normal" style="text-align: left; ">                                              <w>S</w>. <w>Rodulfus</w>.</p><p rend="Normal" style="text-align: left; ">                                              <w>S</w>. <w>Eruinus</w>.</p><p rend="Normal" style="text-align: left; ">                                              <w>S</w> …</p></cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

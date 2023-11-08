@@ -1,0 +1,106 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed. Grandmaison) Nr. 21</title>
+         </titleStmt>
+         <editionStmt>
+                <edition>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed. Grandmaison)</edition>
+                <respStmt>
+                    <resp>Projektleiter</resp>
+                    <resp xml:lang="eng">Principal investigator</resp>
+                    <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Korrektur</resp>
+                    <resp xml:lang="eng">Proofreading</resp>
+                    <persName>Franziska Quaas (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Dokument- und Urkundenbearbeitung</resp>
+                    <resp xml:lang="eng">Initial charter processing</resp>
+                    <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität
+                        Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Hauptentwickler</resp>
+                    <resp xml:lang="eng">Lead developer</resp>
+                    <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Umwandlung in XML/TEI</resp>
+                    <resp xml:lang="eng">Conversion into XML</resp>
+                    <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des
+                        Chartes, Paris, Frankreich)</persName>
+                </respStmt>
+            </editionStmt>
+         <publicationStmt>
+                <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date when="2020"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution
+                        4.0 International License. </licence>
+                </availability>
+            </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                            Recueillis sur les Registres d’État-Civil d’Indre-et-Loire</title>
+                  <editor>M. Ch. de Grandmaison</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1886" n="originalAusgabe">1886</date>
+                     <biblScope unit="pp">57</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+            <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Fragments
+                de Chartes du Xe Siècle Provenant de Saint-Julien de Tours Recueillis sur les
+                Registres d’État-Civil d’Indre-et-Loire, welches 1886 von M. Ch. de Grandmaison
+                herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß
+                TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und
+                unter Einhaltung der CapiTainS-Vorgaben wurde die
+                Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_fragments.grandmaison0021">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Donation a Saint-Julien par Girard d’un aleu nommé Taiseis, situé sur la
+                        dême, dans le pagus du Mans.</p>
+         </div>
+         <dateline>967 03<date notBefore="0967-03-01" notAfter="0967-03-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_fragments.grandmaison0021.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>XP</w>. <w>Dum</w> <w>unusquisque</w> <w>mortalium</w> <w>vivit</w> <w>atque</w> <w>libera</w> <w>potest</w> <w>uti</w> <w>potestate</w>, <w>cogitare</w> <w>debet</w> <w>quemadmodum</w> <w>de</w> <w>terrenis</w> <w>atque</w> <w>caducis</w> <w>adquirat</w> <w>celestia</w>, <w>quapropter</w>, <w>in</w> <w>Dei</w> <w>omnipotentis</w> <w>amore</w>, <w>ego</w> <w>Girardus</w>, <w>Sancti</w> <w>Martini</w> <w lemmaRef="canonicus">canonicus</w> <w>et</w> <w>sacerdos</w>, <w>cogitans</w> <w>de</w> <w>Dei</w> <w>timore</w> <w>ac</w> <w>aeterna</w> <w>retributione</w>, <w>pro</w> <w>remedio</w> <w>animae</w> <w>meae</w> <w>et</w> <w>parentum</w> <w>meorum</w>; <w>videlicet</w> <w>Archembaldi</w>, <w>patris</w> <w>mei</w> <w>ac</w> <w>genetricis</w> <w>meae</w> <w>Ingelradae</w>, <w>seu</w> <w>etiam</w> <w>Rotberti</w> <w>fratris</w> <w>mei</w>, <w>et</w> <w>ceterorum</w> <w>parentum</w> <w>meorum</w>, <w>dono</w> <w>donatumque</w> <w>in</w> <w>perpetuum</w> <w>esse</w> <w>volo</w>, <w>ecclesiae</w> <w>Santi</w> <w>Juliani</w>, <w>ad</w> <w>monachos</w> <w>scilicet</w> <w>ibidem</w> <w>domino</w> <w>deservientes</w>, <w>in</w> <w>victualibus</w>, <w>stipendiis</w> <w>et</w> <w>luminaribus</w> <w>ecclesiae</w>, <w>ceterisque</w> <w>utilitatibus</w>, <w>perpetualiter</w> <w>ad</w> <w>habendum</w>, <w>partem</w> <w>rerum</w> <w>mearum</w>, <w>hoc</w> <w>est</w> <w>alodum</w> <w>meum</w>, <w>nuncupantem</w> <w>Taiseis</w>, <w>quem</w> <w>datis</w> <w>pretiis</w>, <w>comparavi</w> <w>de</w> <w>Bernuino</w> <w>clerico</w>, <w>situm</w> <w>in</w> <w>pago</w> <w>Cinomannico</w>, <w>super</w> <w>fluvium</w> <w>Dimediae</w>, <w>cum</w> <w>terris</w> <w>cultis</w> <w>atque</w> <w>incultis</w>, <w>et</w> <w>silva</w> <w>ad</w> <w>saginandos</w> <w>porcos</w> <w>CCCC</w>; <w>et</w> <w>prata</w>, <w>tam</w> <w>culta</w> <w>quam</w> <w>inculta</w>, <w>et</w> <w>cum</w> <w>area</w> <w>ad</w> <w>molendinum</w> <w>faciendum</w> <w>in</w> <w>supradicto</w> <w>fluviolo</w>; <w>cum</w> <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>mobilibus</w> <w>et</w> <w>inmobilibus</w>, <w>perviis</w> <w>et</w> <w>exitibus</w>, <w>et</w> <w>cum</w> <w>aliis</w> <w>adjacentiis</w> <w>et</w> <w>utilitatibus</w> <w>ad</w> <w>ipsum</w> <w>pertinentibus</w>; <w>atque</w> <w>de</w> <w>jure</w> <w>meo</w> <w>et</w> <w>potestate</w> <w>in</w> <w>partes</w> <w>Sancti</w> <w>Juliani</w> <w>et</w> <w>monachorum</w> <w>ibidem</w> <w>domino</w> <w>deservientium</w> <w>totum</w> <w>penitus</w> <w>trado</w> <w>atque</w> <w>transfundo</w>; <w>ita</w> <w>ut</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>et</w> <w>deinceps</w>, <w>faciant</w> <w>ex</w> <w>supradicto</w> <w>alodo</w> <w>quicquid</w> <w>voluerint</w> <w>jure</w> <w>proprietario</w>. <w>Quod</w> <w>si</w> <w>aliquis</w> <w>de</w> <w>heredibus</w> <w>meis</w>, <w>vel</w> <w>aliquis</w> <w>intromissa</w> <w>persona</w>, <w>post</w> <w>decessum</w> <w>meum</w> <w>extiterit</w>, <w>qui</w> <w>calumpniam</w> <w>ex</w> <w>ista</w> <w>donatione</w> <w>Sancto</w> <w>Juliano</w> <w>et</w> <w>monachis</w> <w>ibidem</w> <w>Deo</w> <w>deservientibus</w> <w>inferre</w> <w>voluerit</w>, <w>cum</w> <w>diabolo</w> <w>et</w> <w>sotiis</w> <w>ejus</w> <w>in</w> <w>inferno</w> <w>deveniat</w> <w>dampnandus</w>, <w>neque</w> <w>quod</w> <w>repetierat</w> <w>assequatur</w>; <w>sed</w> <w>insuper</w> <w>XV</w> <w>libras</w> <w>auri</w>, <w>pro</w> <w>illata</w> <w>calumpnia</w> <w>componat</w>. <w>Hanc</w> <w>autem</w> <w>donationem</w> <w>a</w> <w>nobis</w> <w>factam</w> <w>manu</w> <w>propria</w> <w>firmavi</w>, <w>et</w> <w>ceterorum</w> <w>bonorum</w> <w>virorum</w> <w>manibus</w> <w>consignari</w> <w>jussi</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>sancte</w> <w>crucis</w> <w>domni</w> <w>Hugonis</w> <w>Francorum</w> <w>ducis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Girardi</w> <w>canonici</w> <w>Sancti</w> <w>Martini</w> <w>presulis</w>, <w>qui</w> <w>hanc</w> <w>donationem</w> <w>Sancto</w> <w>Juliano</w> <w>dedit</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Hugonis</w>, <w>Cinomannorum</w> <w>comitis</w>. <w>Signum</w> <w>Hugonis</w>, <w>filii</w> <w>ejus</w>. <w>Signum</w> <w>Fulcuini</w>, <w>filii</w> <w>e[jus</w> <w>similit]er</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Tetbaldi</w> <w>comitis</w>. <w>Signum</w> <w>Odonis</w>, <w>filii</w> <w>ejus</w>. <w>Signum</w> <w>Gualterii</w> <w>comitis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Burchardi</w> <w>comitis</w>. <w>Signum</w> <w>Walaramni</w> <w>comitis</w>. <w>Signum</w> <w>Hilduini</w> <w>comitis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Gauzfredi</w> <w>comitis</w>. <w>Signum</w> <w>Adelelmi</w> <w>vasalli</w>. <w>Signum</w> <w>Rodulfi</w> <w>vicecomitis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Arduini</w> <w>episcopi</w>. <w>Signum</w> <w>Corbonis</w>, <w>fratris</w> <w>ejus</w>. <w>Signum</w> <w>Plastulfi</w>. <w>Signum</w> <w>Gauzfredi</w> <w>vicecomitis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Gisloen</w> <w>Brittanorum</w> <w>episcopi</w>. <w>Bernuinus</w> <w lemmaRef="clericus">clericus</w> <w>Beati</w> <w>Martini</w> <w>subscripsit</w>, <w>qui</w> <w>ipsum</w> <w>alodum</w> <w>Girardo</w> <w>vendidit</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Gauzcelmi</w> <w>fratris</w> <w>ejus</w>. <w>Signum</w> <w>Hugonis</w>, <w>filii</w> <w>ejus</w>.</p>
+               <p xml:space="preserve"><w>Data</w> <w>mense</w> <w>martio</w>, <w>apud</w> <w>Sanctum</w> <w>Dionisium</w>, <w>anno</w> <w>XIII</w> <w>Hlotharii</w> <w>regis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Adae</w>, <w>sororis</w> <w>Bernuini</w>. <w>Signum</w> <w>Gauzfredi</w>. <w>Signum</w> <w>Ailberti</w>. <w>Signum</w> <w>Aymerici</w>, <w>filiorum</w> <w>ejus</w>.</p>
+               <p xml:space="preserve"><w>Ego</w> <w lemmaRef="frater">frater</w> <w>Alfredus</w>, <w lemmaRef="monachus">monachus</w> <w>Sancti</w> <w>Juliani</w>, <w>scripsi</w> <w>et</w> <w>subscripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

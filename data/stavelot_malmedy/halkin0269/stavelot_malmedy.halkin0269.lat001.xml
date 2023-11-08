@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 269</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">508 - 509</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0269">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Hugues, prévôt, et Gérard, doyen de l’église de Notre-Dame-aux-Degrés, à Cologne, font savoir que l’union de fraternité est renouvelée entre leur église et celle de Malmedy.</p>
+         </div>
+         <dateline>1179<date notBefore="1179-01-01" notAfter="1179-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0269.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sanctae</w> <w>et</w> <w>individuae</w> <w>Trinitatis</w>. <w>Hugo</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w lemmaRef="praepositus">praepositus</w> <w>ecclesiae</w> <w>beatae</w> <w>Alariae</w> <w>quae</w> <w>est</w> <w>Coloniae</w> <w>in</w> <w>Gradibus</w>, <w>Gerardus</w> <w>decanus</w> <w>successoribus</w> <w>suis</w> <w>in</w> <w>perpetuum</w>. <w>Notum</w> <w>sit</w> <w>tam</w> <w>praesentibus</w> <w>quam</w> <w>futuris</w> <w>nos</w> <w>justae</w> <w>petitioni</w> <w>Malmundariensium</w> <w>fratrum</w> <w>acquievisse</w> <w>et</w> <w>fraternitatis</w> <w>unionem</w> <w>inter</w> <w>ecclesiam</w> <w>nostram</w> <w>et</w> <w>suam</w> <w>prius</w> <w>habitam</w>, <w>sed</w> <w>diuturnitate</w> <w>temporum</w> <w>antiquatam</w> <w>et</w> <w>negligentiae</w> <w>incuriositate</w> <w>sepultam</w>, <w>propter</w> <w>beatum</w> <w>martyrem</w> <w>Agilolphum</w> <w>nostrae</w> <w>et</w> <w>suae</w> <w>communem</w> <w>et</w> <w>gloriosum</w> <w>patronum</w> <w>reformasse</w>, <w>et</w> <w>eos</w> <w>in</w> <w>orationum</w> <w>ecclesiae</w> <w>nostrae</w> <w>suffragio</w> <w>et</w> <w>eleemosynarum</w> <w>nostrarum</w> <w>beneficio</w>, <w>officio</w> <w>et</w> <w>auxilio</w> <w>nunc</w> <w>et</w> <w>perenniter</w> <w>suscepisse</w> <w>et</w> <w>nos</w> <w>viceversa</w> <w>suis</w> <w>orationibus</w>, <w>beneficiis</w> <w>et</w> <w>eleemosynis</w> <w>tam</w> <w>vivos</w> <w>quam</w> <w>defunctos</w> <w>fideliter</w> <w>communisse</w>, <w>sed</w> <w>cum</w> <w>fragilitatis</w> <w>humanae</w> <w>memoriae</w> <w>rerum</w> <w>temporalium</w> <w>diversitate</w> <w>occupata</w> <w>et</w> <w>frequentium</w> <w>circumstantiis</w> <w>cogitationum</w> <w>onerata</w>, <w>nisi</w> <w>scripti</w> <w>testimonio</w> <w>roboretur</w>, <w>labilis</w> <w>sit</w> <w>et</w> <w>caduca</w>, <w>ad</w> <w>perpetuam</w> <w>succedentium</w> <w>memoriam</w> <w>hanc</w> <w>societatem</w> <w>imagine</w> <w>presentis</w> <w>scripti</w> <w>renovamus</w> <w>et</w> <w>mentis</w> <w>sinceritate</w> <w>et</w> <w>omnimoda</w> <w>devotione</w> <w>confirmamus</w>; <w>et</w> <w>ut</w> <w>hoc</w> <w>testimonium</w> <w>diligenter</w> <w>in</w> <w>utraque</w> <w>ecclesia</w>, <w>sicut</w> <w>res</w> <w>memoria</w> <w>digna</w> <w>conservetur</w>, <w>sancimus</w> <w>appositis</w> <w>in</w> <w>monumentum</w> <w>utriusque</w> <w>ecclesiae</w> <w>sigillis</w>, <w>quatenus</w> <w>qui</w> <w>in</w> <w>utraque</w> <w>oramus</w> <w>pro</w> <w>invicem</w> <w>ut</w> <w>salvemur</w>, <w>praefati</w> <w>patroni</w> <w>nostri</w> <w>fulti</w> <w>patrocinio</w> <w>ad</w> <w>consequendam</w> <w lemmaRef="in_domino_salutem">salutem</w> <w>quam</w> <w>quaerimus</w> <w>adjuvemur</w>. <w>Actum</w> <w>est</w> <w>hoc</w> <w>anno</w> <w>Dominicae</w> <w>incarnationis</w> <w>M</w>. <w>C</w>. <w>LXX</w>. <w>IX</w>., <w>regnante</w> <w>Friderico</w> <w>Romanorum</w> <w>imperatore</w> <w>augusto</w>, <w>Philippo</w> <w>Coloniensi</w> <w>archiepiscopo</w>, <w>abbate</w> <w>Erleboldo</w> <w>Malmundariensi</w> <w>et</w> <w>Stabulensi</w> <w>praesidente</w> <w>loco</w> <w>hujus</w> <w>renovatae</w> <w>societatis</w>. <w>De</w> <w>fratribus</w> <w>nostris</w> <w>testes</w> <w>hi</w> <w>sunt</w> : <w>Gerardus</w> <w>decanus</w>, <w>Wolframius</w>, <w>Joannes</w> <w>custos</w>, <w>Arnoldus</w> <w lemmaRef="camerarius">camerarius</w>, <w>Tyricus</w> <w>de</w> <w>Reutesberck</w>; <w>et</w> <w>de</w> <w>Malmundariensibus</w> : <w>Albertus</w> <w>decanus</w>, <w>Heribrandus</w>, <w>Mauritius</w>, <w>Henricus</w>, <w>Joannes</w>, <w>Cuno</w>, <w>Bovo</w>; <w>et</w> <w>multi</w> <w>utriusque</w> <w>ecclesiae</w> <w>filii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

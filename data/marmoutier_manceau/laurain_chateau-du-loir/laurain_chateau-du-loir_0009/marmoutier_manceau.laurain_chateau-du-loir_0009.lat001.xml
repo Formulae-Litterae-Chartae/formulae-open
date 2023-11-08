@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Chateau-du-Loir, Nr. 9</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">125-126</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_chateau-du-loir_0009">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Accord entre Hubert de Mansigné et Marmoutier au suiet d’une pièce de vigne plantée par la mère du dit Hubert.</p>
+         </div>
+         <dateline>11. Jhd.<date notBefore="0999-12-31" notAfter="1099-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_chateau-du-loir_0009.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Concordiam</w>, <w>inter</w> <w>nos</w> <w>monachos</w> <w>Maioris</w> <w>monasterii</w> <w>et</w> <w>Hubertum</w> <w>de</w> <w>Manciniaco</w> <w>factam</w>, <w>notam</w> <w>esse</w> <w>volumus</w> <w>omnibus</w> <w>scire</w> <w>cupientibus</w> <w>presentibus</w> <w>et</w> <w>futuris</w>. <w>Et</w> <w>ideo</w> <w>has</w> <w>litteras</w> <w>illis</w> <w>pretendere</w> <w>curamus</w> <w>ut</w>, <w>ipsis</w> <w>visis</w>, <w>memoriae</w> <w>legentium</w> <w>et</w> <w>audientium</w> <w>intimetur</w> <w>qualiter</w> <w>et</w> <w>quo</w> <w>ordine</w> <w>inter</w> <w>nos</w> <w>et</w> <w>predictum</w> <w>Hubertum</w> <w>actum</w> <w>est</w>. <w lemmaRef="pater">Pater</w> <w>suus</w> <w>et</w> <w>sua</w> <w>mater</w>, <w>accepto</w> <w>benefacto</w> <w>nostrae</w> <w>societatis</w>, <w>concesserant</w> <w>monachis</w> <w>nostris</w> <w>beato</w> <w>Wingualoeo</w> <w>apud</w> <w lemmaRef="castrum">Castrum</w> <w>Ledi</w> <w>deservientibus</w>, <w>partem</w> <w>suam</w> <w>de</w> <w>omni</w> <w>re</w> <w>quancumque</w> <w>in</w> <w>die</w> <w>suae</w> <w>mortis</w> <w>habebant</w>, <w>exceptis</w> <w>quibusdam</w> <w>aedificiis</w> <w>quae</w> <w>filio</w> <w>suo</w> <w>iam</w> <w>dicto</w> <w>Huberto</w> <w>dimiserant</w>. <w>Contigit</w> <w>autem</w>, <w>post</w> <w>mortem</w> <w>utrorumque</w>, <w>nos</w> <w>adversus</w> <w>Hubertum</w> <w>et</w> <w>ipsum</w> <w>adversus</w> <w>non</w> <w>calumpniari</w> <w>quandam</w> <w>vineam</w> <w>quam</w> <w>mater</w> <w>sua</w> <w>aedificaverat</w> <w>de</w> <w>sua</w> <w>re</w> <w>mobili</w> <w>de</w> <w>qua</w> <w>donum</w> <w>nobis</w> <w>prius</w> <w>fecerat</w>. <w>Finis</w> <w>autem</w> <w>utriusque</w> <w>calumpniae</w> <w>hic</w> <w>est</w>.<w>Concessimus</w> <w>ei</w> <w>predictam</w> <w>vineam</w> <w>tali</w> <w>pacto</w> <w>habere</w> <w>in</w> <w>vita</w> <w>sua</w> <w>ut</w> <w>eo</w> <w>mortuo</w> <w>eam</w> <w>habeamus</w> <w>in</w> <w lemmaRef="dominium">dominium</w> <w>nostrum</w>, <w>et</w> <w>tantum</w> <w>terrae</w> <w>quantum</w> <w>in</w> <w>vinea</w> <w>illa</w> <w>erat</w> <w>dedimus</w> <w>ei</w> <w>et</w> <w>suo</w> <w>heredi</w> <w>ad</w> <w>aedificandum</w> <w>vel</w> <w>faciendum</w> <w>quodcunque</w> <w>voluerit</w>, <w>excepto</w> <w>duntaxat</w> <w>quod</w> <w>eam</w> <w lemmaRef="servus">servus</w> <w>vel</w> <w>colibertus</w> <w>nullus</w> <w>habebit</w>. <w>Fecimus</w> <w>etiam</w> <w>illum</w> <w>prepositum</w> <w>nostrum</w>, <w>quandiu</w> <w>ad</w> <w>honorem</w> <w>et</w> <w>proficuum</w> <w>nostrum</w> <w>fuerit</w>. <w>Quod</w> <w>si</w> <w>aliquod</w> <w>forisfactum</w> <w>nobis</w> <w>fecerit</w>, <w>quod</w> <w>possit</w> <w>et</w> <w>velit</w> <w>emendare</w>, <w>non</w> <w>ideo</w> <w>perdet</w> <w>preposituram</w>; <w>sin</w> <w>autem</w>, <w>perdet</w> <w>eam</w>. <w>Proficuum</w> <w>quod</w> <w>ipse</w> <w>de</w> <w>prepositura</w> <w>habebit</w>, <w>tale</w> <w>est</w>: <w>pasnagium</w> <w>videlicet</w> <w>de</w> <w>procis</w> <w>suis</w>, <w>tres</w> <w>sextariatae</w> <w>terrae</w> <w>cum</w> <w>omni</w> <w>consuetudine</w> <w>excepta</w> <w>demina</w>, <w>unus</w> <w>panis</w>, <w>una</w> <w>candela</w>, <w>unus</w> <w lemmaRef="denarius">denarius</w> <w>de</w> <w>offerenda</w> <w>in</w> <w>festivitatibus</w>. <w>Et</w> <w>si</w> <w>alicui</w> <w>decimam</w> <w>nostram</w> <w>ad</w> <w>trahendum</w> <w>voluerimus</w> <w>dare</w>, <w>prius</w> <w>dicemus</w> <w>illi</w> <w>Huberto</w> <w>proficuum</w> <w>vel</w> <w>honorem</w> <w>seu</w> <w>servicium</w> <w>quod</w> <w>alius</w> <w>nobis</w> <w>voluerit</w> <w>facere</w>; <w>et</w> <w>si</w> <w>tantum</w> <w>nobis</w> <w>voluerit</w> <w>facere</w> <w>quantum</w> <w>alter</w>, <w>trahet</w> <w>eam</w>; <w>sin</w> <w>autem</w>, <w>faciemus</w> <w>de</w> <w>ea</w> <w>quod</w> <w>nobis</w> <w>melius</w> <w>visum</w> <w>fuerit</w>. <w>Aream</w> <w>in</w> <w>cimiterio</w>, <w>si</w> <w>domum</w> <w>facere</w> <w>voluerit</w>, <w>dabimus</w> <w>ei</w>. <w>Preterea</w> <w>dedimus</w> <w>ei</w> <w>benefactum</w> <w>nostrae</w> <w>societatis</w>. <w>Ipse</w> <w>autem</w>, <w>mutua</w> <w>vicissitudine</w>, <w>concessit</w> <w>nobis</w> <w>post</w> <w>mortem</w> <w>suam</w> <w>iam</w> <w>dictam</w> <w>vineam</w> <w>solutam</w> <w>et</w> <w>quietam</w> <w>et</w> <w>suam</w> <w>partem</w> <w>de</w> <w>omni</w> <w>mobili</w> <w>suo</w>, <w>videlicet</w> <w>de</w> <w>tota</w> <w>re</w> <w>sua</w> <w>preter</w> <w>aedificia</w>. <w>Sed</w> <w>et</w> <w>terram</w> <w>quam</w> <w>ipse</w> <w>et</w> <w>Haimo</w> <w>prius</w> <w>excolebant</w> <w>et</w> <w>illam</w> <w>quam</w> <w>ipse</w> <w>sibi</w> <w>soli</w> <w>ante</w> <w>habuerat</w>, <w>amodo</w> <w>inter</w> <w>nos</w> <w>et</w> <w>ipsum</w> <w>ad</w> <w>terciam</w> <w>partem</w> <w>habebit</w>. <w>Quod</w> <w>si</w> <w>eam</w> <w>ita</w> <w>habere</w> <w>noluerit</w>, <w>faciemus</w> <w>de</w> <w>utraque</w> <w>terra</w> <w>illa</w> <w>quicquid</w> <w>nobis</w> <w>placuerit</w>. <w>Haec</w> <w>concordia</w> <w>ita</w> <w>concordata</w> <w>primum</w> <w>fuerat</w> <w>apud</w> <w>Manciniacum</w>, <w>in</w> <w>presentia</w> <w>domni</w> <w>Gauffredi</w> <w>de</w> <w>Baiocis</w>, <w>qui</w> <w>tunc</w> <w>prior</w> <w>erat</w> <w>Castri</w> <w>Ledi</w>, <w>videntibus</w> <w>testibus</w> <w>istis</w>: <w>Normanno</w> <w>monacho</w>, <w>Hildegario</w> <w>preposito</w>, <w>Viventio</w> <w>milite</w> <w>domni</w> <w>Adam</w>, <w>Rainaldo</w> <w>fratre</w> <w>Haimonis</w>, <w>Bodino</w> <w>filio</w> <w>Aremburgis</w>, <w>Girardo</w> <w>filio</w> <w>Lamberti</w>, <w>Rotdulfo</w> <w>fratre</w> <w>Hainrici</w> <w>presbiteri</w>. <w>Postea</w> <w>a</w> <w>nobis</w> <w>et</w> <w>ab</w> <w>ipso</w> <w>ita</w> <w>concessa</w> <w>est</w> <w>in</w> <w>capitulo</w> <w>nostro</w> <w>in</w> <w>die</w> <w>inventionis</w> <w>Sanctae</w> <w>Crucis</w>, <w>quando</w> <w>recepimus</w> <w>eum</w> <w>in</w> <w>benefacto</w> <w>nostro</w>. <w>Quod</w> <w>viderunt</w> <w>et</w> <w>audierunt</w> <w>testes</w> <w>subter</w> <w>scripti</w>: <w>de</w> <w>monachis</w>, <w>Gauffredus</w> <w>prior</w>, <w>Hugo</w> <w>Bocellus</w>, <w>Rotbertus</w> <w>scriba</w>, <w>Haimo</w> <w>cellararius</w>, <w>Normannus</w> <w>de</w> <w>Amaniaco</w>, <w>Bernardus</w> <w>nepos</w> <w>domni</w> <w>Archinaldi</w>, <w>Ludovicus</w>, <w>Garinus</w> <w>luscus</w>, <w>Bernardus</w> <w>longus</w>, <w>Gualterius</w>; <w>de</w> <w>laicis</w>, <w>Hildegarius</w> <w>prepositus</w>, <w>Herveus</w> <w>famulus</w>, <w>Albaldus</w> <w>cementarius</w>, <w>Rodulfus</w> <w>carpentarius</w>, <w>Urso</w> <w>coquus</w>, <w>Almandus</w> <w>flobotomator</w>, <w>Herbertus</w> <w>sutor</w>: <w>hi</w> <w>de</w> <w>nostra</w> <w>parte</w>; <w>de</w> <w>sua</w>, <w>Airardus</w> <w>de</w> <w>Bona</w>, <w>Stephanus</w> <w>Piellus</w>, <w>Rainaldus</w> <w>filius</w> <w>Iohannis</w> <w>Torti</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

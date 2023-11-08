@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 270</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">509 – 510 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0270">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pierre, abbé de Saint-Remi, s’excuse auprès d’Erlebald, abbé de Stavelot, de la négligence que ses moines de Meerssen apportent à payer le cens dû à l’abbaye de Stavelot.</p>
+         </div>
+         <dateline>[1162-1180]<date notBefore="1162-01-01" notAfter="1180-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0270.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Amantissimo</w> <w>et</w> <w>reverentissimo</w> <w>domino</w> <w>et</w> <w>patri</w> <w>Erlebaldo</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Stabulensis</w> <w>ecclesie</w> <w>abbati</w> <w>dignissimo</w> <w lemmaRef="frater">frater</w> <w>Petrus</w> <w>sancti</w> <w>Remigii</w> <w lemmaRef="abbas">abbas</w> <w>vocatus</w> <w lemmaRef="in_domino_salutem">salutem</w> <w>et</w> <w>felices</w> <w>successus</w>. <w>Nulla</w> <w>negligentia</w> <w>bona</w> <w>est</w>, <w>non</w> <w>tamen</w> <w>omnis</w> <w>aequaliter</w> <w>culpabilis</w>. <w>Cumulat</w> <w>namque</w> <w>aut</w> <w>minuit</w> <w>meritum</w> <w>negligentiae</w> <w>amputanda</w> <w>dissimulatio</w> <w>faciendorum</w> <w>aut</w> <w>inconsiderata</w> <w>festinatio</w> <w>non</w> <w>faciendorum</w>. <w>Ea</w> <w>nichilominus</w> <w>quae</w> <w>a</w> <w>nobis</w> <w>remota</w> <w>sunt</w> <w>et</w> <w>per</w> <w>procuratores</w> <w>fiunt</w> <w>non</w> <w>simili</w> <w>a</w> <w>nobis</w> <w>pena</w> <w>exiguntur</w>, <w>si</w> <w>male</w> <w>administrentur</w>, <w>sicut</w> <w>illa</w> <w>que</w> <w>manu</w> <w>propria</w> <w>et</w> <w>proprio</w> <w>studio</w> <w>peragi</w> <w>solent</w>. <w>Inde</w> <w>est</w>, <w>domine</w> <w lemmaRef="abbas">abba</w> <w>et</w> <w>amice</w> <w>karissime</w>, <w>quod</w> <w>aliquantam</w> <w>opponunt</w> <w>pro</w> <w>nobis</w> <w>excusationem</w> <w>si</w> <w>fratres</w> <w>nostri</w> <w>de</w> <w>Marna</w> <w>non</w> <w>solvendo</w> <w>pecuniam</w> <w>quam</w> <w>debent</w> <w>molestiam</w> <w>vobis</w> <w>fecerunt</w>, <w>cum</w> <w>factum</w> <w>ab</w> <w>anno</w> <w>preterito</w> <w>estimaremus</w> <w>quod</w> <w>adhuc</w> <w>faciendum</w> <w>modo</w> <w>cognoscimus</w>. <w>Ignoscite</w> <w>itaque</w> <w>culpam</w> <w>quam</w> <w>nec</w> <w>superbia</w> <w>genuit</w> <w>nec</w> <w>coutumacia</w> <w>defendit</w>. <w>Dignus</w> <w>namque</w> <w>venia</w> <w>est</w> <w>qui</w> <w>corrigit</w> <w>delictum</w> <w>vel</w> <w>qui</w> <w>pro</w> <w>posse</w> <w>reddit</w> <w>debitum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

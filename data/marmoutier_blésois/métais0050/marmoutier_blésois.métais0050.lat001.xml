@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 50</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">61</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0050">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Adèle, épouse du comte Thibaud, confirme le privilège de la reine Berthe, et affranchit les bateaux des religieux du droit de péage dans le port de Blois.</p>
+         </div>
+         <dateline>1072-1086<date notBefore="1072-01-01" notAfter="1086-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0050.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>THELONEO</w> <w>PORTUS</w> <w>BLESENSIS</w></head>
+               <p xml:space="preserve"><w>Eodem</w> <w>die</w> <w>fecerunt</w> <w>clamorem</w> <w>monachi</w> <w>nostri</w> <w>ad</w> <w>comitissam</w> <w>Adelaidem</w> <w>uxorem</w> <w>comitis</w> <w>Thebaldi</w> <w>de</w> <w>certo</w> <w>theloneario</w> <w>suo</w>, <w>qui</w> <w>capiebat</w> <w>theloneum</w> <w>de</w> <w>navigio</w> <w>nostro</w>, <w>quociens</w> <w>oportebat</w> <w>illud</w> <w>transire</w> <w>per</w> <w>portum</w> <w>blesensem</w>, <w>quod</w> <w>antea</w> <w>nulli</w> <w>reddere</w> <w>soliti</w> <w>eramus</w>. <w>Jure</w> <w>enim</w> <w>perpetuo</w> <w>Bertha</w> <w>regina</w>, <w>ad</w> <w>quam</w> <w>olim</w> <w>maxime</w> <w>pertinebat</w> <w>portus</w> <w>blesensis</w>, <w>perdonavit</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>nobis</w> <w>omne</w> <w>theloneum</w> <w>omnium</w> <w>rerum</w> <w>quecumque</w> <w>in</w> <w>nostros</w> <w>usus</w> <w>per</w> <w>aquam</w> <w>aduceremus</w>, <w>sicut</w> <w>testantur</w> <w>littere</w> <w>nostre</w>, <w>quas</w> <w>de</w> <w>hoc</w> <w>habemus</w>, <w>quas</w> <w>ipsa</w> <w>manu</w> <w>propria</w> <w>firmavit</w> <w>signo</w> <w>sancte</w> <w>crucis</w>, <w>et</w> <w>ad</w> <w>confirmandum</w> <w>eas</w> <w>tradidit</w> <w>seniori</w> <w>suo</w> <w>comiti</w> <w>Odoni</w> <w>seni</w>,<w>et</w> <w>duobus</w> <w>filiis</w> <w>suis</w> <w>comiti</w> <w>Thetbaldo</w> <w>et</w> <w>comiti</w> <w>Odoni</w> <w>juveni</w>. <w>Quod</w> <w>postquam</w> <w>audiuit</w> <w>comitissa</w> <w>contristata</w> <w>est</w> <w>valde</w> <w>pro</w> <w>ministeriali</w> <w>suo</w>, <w>qui</w> <w>iniuste</w>, <w>ipsa</w> <w>ecciam</w> <w>nesciente</w>, <w>acceperat</w> <w>theloneum</w> <w>a</w> <w>nobis</w>. <w>Unde</w> <w>precepit</w> <w>ei</w> <w>illico</w> <w>ut</w> <w>scilicet</w> <w>quod</w> <w>jam</w> <w>inde</w> <w>habuerat</w> <w>totum</w> <w>ex</w> <w>integro</w> <w>redderet</w> <w>et</w> <w>ulterius</w> <w>aufferre</w> <w>aliquid</w> <w>de</w> <w>navigio</w> <w>nostro</w> <w>non</w> <w>presumeret</w>. <w>Hoc</w> <w>viderunt</w> <w>et</w> <w>audierunt</w> </p>
+               <p xml:space="preserve"><w>Hugo</w> <w>prepositus</w> </p>
+               <p xml:space="preserve"><w>Ascelinus</w> </p>
+               <p xml:space="preserve"><w>Giraldus</w> <w>famulus</w> <w>noster</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

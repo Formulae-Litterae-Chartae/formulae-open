@@ -1,0 +1,90 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 95</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">104-1051</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0095">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Foulques de Vendôme, dit le Riche, donne à MM. l’aleu de Spinoches, distant de quatre milles du château de Vendôme, et en plus vingt arpents de terre, et reçoit en retour un cens annuel de 20 deniers.</p>
+         </div>
+         <dateline>Vers 1066<date notBefore="1056-01-01" notAfter="1076-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0095.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>FVLCHERII</w> <w>RICHI</w> <w>DE</w> <w>ALODO</w> <w>SPINOCHIAS</w> — <w>VENDOCINO</w> — <w>DE</w> <w>LAUARDINO</w>.»</head>
+               <p xml:space="preserve"><w>NOTUM</w> <w>SIT</w> <w>SUCCESSORIBUS</w> <w>NOSTRIS</w>. <w>QUOD</w> <w>FULCHERIUS</w> <w>DE</w> <w>UINDOCINO</w> <w>COGNOMENTO</w> <w>RICHIS</w>. <w>DIUINITATIS</w> <w>AMORE</w> <w>compunctus</w>, <w>pro</w> <w>animae</w> <w>suae</w> <w>remedio</w> <w>dedit</w> <w>sancto</w> <w>Martino</w> <w>maioris</w> <w>monasterii</w>, <w>ad</w> <w>usum</w> <w>scilicet</w> <w>fratrum</w> <w>ibidem</w> <w>omnipotenti</w> <w>Deo</w> <w>seruientium</w>, <w>quendam</w> <w>in</w> <w>pago</w> <w>uindocinensi</w> <w>quatuor</w> <w>fere</w> <w>milibus</w> <w>ab</w> <w>ipso</w> <w>castro</w> <w>a</w> <w>parte</w> <w>australi</w> <w>procul</w> <w>situm</w> <w>alodum</w>, <w>qui</w> <w>Spinochias</w> (<w>appellatur</w>), <w>ab</w> <w>omni</w> <w>calumnia</w> <w>omnique</w> <w>consuetudine</w> <w>seu</w> <w>alicuius</w> <w>redditus</w> <w>exactione</w> <w>liberum</w> <w>atque</w> <w>absolutum</w>, <w>sicut</w> <w>ipse</w> <w>eatenus</w> <w>tenuerat</w>. <w>Donauit</w> <w>etiam</w> <w>eidem</w> <w>sancto</w> <w>de</w> <w>terra</w>, <w>quam</w> <w>iusta</w> <w>eumdem</w> <w>alodum</w> <w>in</w> <w lemmaRef="dominium">dominium</w> <w>habebat</w>, <w>arpennos</w> <w>circiter</w> <w>XX</w><seg type="superscript "><w>ti</w></seg>, <w>ea</w> <w>uidelicet</w> <w>ratione</w> <w>ut</w> <w>monachi</w> <w>sancti</w> <w>Martini</w> <w>libere</w> <w>et</w> <w>quiete</w> <w>eos</w> <w>sicut</w> <w>ipsum</w> <w>alodum</w> <w>eterna</w> <w>possideant</w> <w>hereditate</w>, <w>nichil</w> <w>pro</w> <w>ipsis</w> <w>seruitii</w> <w>aut</w> <w>consuetudinis</w> <w>persoluentes</w>. <w>nisi</w> <w>tantum</w> <w>denariorum</w> <w>XX</w><seg type="superscript "><w>ti</w></seg> <w>censum</w>, <w>quem</w> <w>ipsi</w> <w>pro</w> <w>recognitione</w> <w>quo</w> <w>res</w> <w>firmior</w> <w>foret</w>, <w>Fulcherio</w> <w>inuito</w>, <w>sua</w> <w>sponte</w> <w>immisere</w>. <w>Qui</w> <w lemmaRef="census">census</w> <w>annis</w> <w>singulis</w> <w>ad</w> <w>festiuitatem</w> <w>sanctae</w> <w>Mariae</w> <w>VIII</w> <w>Kalendas</w> <w>Aprilis</w> <w>a</w> <w>monachis</w> <w>persoluetur</w>. <w>Et</w> <w>si</w> <w>quicquam</w> <w>de</w> <w>eodem</w> <w>censu</w> <w>reddendo</w> <w>tardi</w> <w>aut</w> <w>negligentes</w> <w>extiterint</w>, <w>salua</w> <w>supradictorum</w> <w>arpennorum</w> <w>donatione</w>, <w>id</w> <w>ipsum</w> <w>eis</w> <w>legaliter</w> <w>liceat</w> <w>emendare</w>. <w>Vt</w> <w>uero</w> <w>donationis</w> <w>eiusdem</w> <w>hec</w> <w lemmaRef="carta">cartula</w> <w>certiorem</w> <w>uideatur</w> <w>habere</w> <w>firmitatem</w>, <w>ipsorum</w> <w>testium</w> <w>qui</w> <w>ad</w> <w>hoc</w> <w>uidendum</w> <w>fuerunt</w> <w>producti</w> <w>nomina</w> <w>inferius</w> <w>annotata</w> <w>continentur</w> <w>per</w> <w>ordinem</w>.</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Giraldus</w> <w lemmaRef="maior">maior</w> <w>de</w> <w>Giliaco</w>.</p><p rend="Normal" style="text-align: left; "><w>Rainaldus</w> <w>presbiter</w> <w>de</w> <w>sancto</w> <w>Leobino</w>.</p><p rend="Normal" style="text-align: left; "><w>Morandus</w> <w>de</w> <w>Vindocino</w>.</p></cell><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Durandus</w> <w>presbiter</w> <w>de</w> <w>sancto</w> <w>Martino</w>.</p><p rend="Normal" style="text-align: left; "><w>Rotbertus</w> <w>timonus</w> <w>seruus</w> <w>Fulcherii</w>.</p><p rend="Normal" style="text-align: left; "><w>Fulchradus</w> <w>bastardus</w>.</p></cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

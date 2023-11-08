@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 38</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">49-50</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0038">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Geoffroy de Conam donne à MM. huit arpents de terre à Bergerioux (commune de la Chapelle-Vendômoise, Loir-et-Cher).</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Grèneterie</p>
+         </div>
+         <dateline>1060-1090<date notBefore="1060-01-01" notAfter="1090-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0038.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>VIII</w> <w>ARPENNIS</w> <w>TERRE</w> <w>QUOS</w> <w>DEDIT</w> <w>GAUFREDUS</w> <w>DE</w> <w>CONEMO</w> <w>APUD</w> <w lemmaRef="villa">VILLAM</w> <w>BERGEROLAM</w> <w>SANCTO</w> <w>MARTINO</w>. - <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>fratribus</w> <w>nostris</w> <w>maioris</w> <w>scilicet</w> <w>monasterii</w> <w>monachis</w>, <w>quod</w> <w>Gauffredus</w> <w>de</w> <w>conemo</w> <w>dedit</w> <w>nobis</w> <w>apud</w> <w lemmaRef="villa">villam</w> <w>Bergerolam</w> <w>VIII</w> <w>arpennos</w> <w>terrae</w> <w>de</w> <w>qua</w> <w>censum</w> <w>damus</w> <w>ipsi</w> <w>denarios</w> <w>scilicet</w> <w>VIII</w>. <w>Uxor</w> <w>eius</w> <w>Aremburgis</w> <w>de</w> <w>cuius</w> <w>parte</w> <w>habebat</w> <w>illam</w> <w>terram</w>, <w>accepit</w> <w>a</w> <w>nobis</w> <w>XII</w> <w>denarios</w>, <w>et</w> <w>auctorizavit</w> <w>cum</w> <w>sorore</w> <w>sua</w> <w>Otgarde</w>, <w>que</w> <w>habuit</w> <w>inde</w> <w>IIII</w> <w>denarios</w>. <w>Testes</w> <w>donationis</w> <w>Gauffredi</w></p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Ansaldus</w> <w>presbiter</w> <w>de</w> <w>conemo</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Concessionis</w> <w>feminarum</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Stephanus</w> <w>nepos</w> <w>eius</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Ansaldus</w> <w>presbiter</w> <w>de</w> <w>conemo</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Lambertus</w> <w>de</w> <w>rosdum</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Warnaldus</w> <w>filius</w> <w>Aiberti</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Xristoforus</w> <w>de</w> <w>conemo</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Ermenardus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Haimardus</w> <w>de</w> <w>conemo</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Haimardus</w> <w>de</w> <w>conemo</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Ernaldus</w> <w lemmaRef="monachus">monachus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Rotbertus</w> <w>armiger</w> <w>Gauffredi</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Isembertus</w> <w lemmaRef="monachus">monachus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Rotbertus</w> <w>bouerius</w> <w>eius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Richardus</w> <w lemmaRef="clericus">clericus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Hildebertus</w> <w>famulus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Richardus</w> <w>coqus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Rotgerius</w> <w>famulus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Arnulfus</w> <w lemmaRef="frater">frater</w> <w>eius</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Ernaldus</w> <w lemmaRef="monachus">monachus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Ernaldus</w> <w>famulus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Ricardus</w> <w lemmaRef="clericus">clericus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"/><cell style="text-align: left;" rend="Normal"><w>Arnulfus</w> <w lemmaRef="frater">frater</w> <w>eius</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"/><cell style="text-align: left;" rend="Normal"><w>Isembertus</w> <w lemmaRef="monachus">monachus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"/><cell style="text-align: left;" rend="Normal"><w>Ricardus</w> <w>coquus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"/><cell style="text-align: left;" rend="Normal"><w>Ernaldus</w> <w>famulus</w>.</cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

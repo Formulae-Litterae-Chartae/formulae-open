@@ -1,0 +1,123 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 154</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">309 - 314</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0154">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Relevé des églises et des terres qui payent des redevances à l’église de Stavelot, ainsi que des dépenses que supporte ladite église pour le service des custodes aux différentes fêtes.</p>
+         </div>
+         <dateline>[Vers 1131]<date notBefore="1121-01-01" notAfter="1141-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0154.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>hac</w> <w>sedula</w> <w>annotatae</w> <w>sunt</w> <w>ecclesiae</w> <w>que</w> <w>respectum</w> <w>ad</w> <w>luminare</w> <w>debent</w> <w>huic</w> <w>nostrae</w> <w>ecclesiae</w> <w>Stabulensi</w> <w>et</w> <w>jus</w> <w>presbyterorum</w> <w>cum</w> <w>representant</w> <w>scriptum</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Erclai</w> <w>solvit</w> <w>XIII</w> <w>denarios</w>, <w>presbiter</w> <w>II</w> <w>accipit</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Doroit</w> <w>XII</w> <w>denarios</w>, <w>presbiter</w> <w>II</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Oseis</w> <w>ceram</w> <w>solvit</w>, <w>presbiter</w> <w>VIII</w> <w>d</w>. <w>Ecclesia</w> <w>de</w> <w>Louineis</w> <w>debet</w> <w>caseos</w>, <w>presbiter</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Grasdes</w> <w>ceram</w>, <w>presbiter</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Olfait</w> <w>ceram</w>, <w>presbiter</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Wellin</w> <w>ceram</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Marcha</w> <w>den</w>. <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Jupilia</w> <w>caseos</w> <w>et</w> <w>panes</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Karanco</w> <w>optimum</w> <w>cereum</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>II</w> <w>sol</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Ledernaco</w> <w>III</w> <w>solvit</w> <w>den</w>. <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XII</w> <w>den</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Wirices</w> <w>den</w>., <w>presbiter</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Summae</w> <w>den</w>., <w>presbiter</w> <w>IIII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Heis</w> <w>den</w>., <w>presbiter</w> <w>IIII</w> <w>d</w>. <w>Ecclesie</w> <w>de</w> <w>Keuruns</w>, <w>Raheries</w>, <w>Baldou</w>, <w>caseos</w> <w>debent</w>, <w>presbiter</w> <w>jus</w> <w>suum</w> <w>accipit</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Osnes</w> <w>caseos</w> <w>et</w> <w>XVIII</w> <w>d</w>. <w>Fosses</w> <w>itidem</w>, <w>presbiter</w> <w>earum</w> <w>VIIII</w> <w>d</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Rona</w> <w>el</w> <w>alterius</w> <w>Ronae</w> <w>caseos</w> <w>et</w> <w>III</w> <w>sol</w>., <w>presbiter</w> <w>earum</w> <w>VIIII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Fonteneles</w> <w>XXX</w> <w>d</w>. <w>cerae</w> <w>solvit</w>, <w>nuntius</w> <w>II</w> <w>d</w> <w>accipit</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Salmes</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>VI</w> <w>d</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Tectis</w> <w>et</w> <w>de</w> <w>Veruiers</w> <w>et</w> <w>de</w> <w>Sarto</w> <w>et</w> <w>de</w> <w>Ialehai</w> <w>infra</w> <w>Pentecosten</w> <w>ex</w> <w lemmaRef="gratia">gratia</w> <w>panes</w> <w>et</w> <w>caseos</w> <w>representant</w>, <w>et</w> <w>presbiteri</w> <w>singulos</w> <w>sol</w>. <w>accipiunt</w>. <w>In</w> <w>vesto</w> <w>sancti</w> <w>Remacli</w> <w>antiquo</w> <w>jure</w> <w>de</w> <w>his</w> <w>tribus</w> <w>parrochiis</w> <w>unaqueque</w> <w>domus</w> <w>panem</w> <w>unum</w> <w>vel</w> <w>caseum</w> <w>debet</w> <w>et</w> <w>obulum</w>, <w>presbiteri</w> <w>vero</w> <w>singulos</w> <w>sol</w>. <w>accipiunt</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Amblavia</w> <w>in</w> <w>commemoratione</w> <w>sancti</w> <w>Remacli</w> <w>cereum</w> <w>dabit</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. <w>accipit</w>; <w>iterum</w> <w>infra</w> <w>octavam</w> <w>Pentecosten</w> <w>caseos</w> <w>et</w> <w>panes</w> <w>et</w> <w>cereum</w> <w>representat</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. <w>habet</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Waimes</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>IIII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Bolenges</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>VIII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Buetenbach</w> <w>cereum</w> <w>unum</w> <w>et</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>VI</w> <w>d</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Sancto</w> <w>Vito</w> <w>panes</w> <w>et</w> <w>caseos</w> <w>et</w> <w>cereum</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Bellen</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Johannis</w> <w>cereum</w>, <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. <w>Ecclesia</w> <w>de</w> <w>Astellebrunna</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Monte</w> <w>Sancti</w> <w>Martini</w> <w>ceram</w> <w>et</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Tumbes</w> <w>cereum</w>, <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>XIII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Holdrehenge</w> <w>panes</w> <w>et</w> <w>caseos</w>, <w>presbiter</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Wanenbais</w> <w>VI</w> <w>d</w> <w>accipit</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Achisvilla</w> <w>VI</w> <w>d</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Durlenges</w> <w>III</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Benerehun</w> <w>III</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Hondilenge</w> <w>ceram</w> <w>debet</w>, <w>presbiter</w> <w>IIII</w> <w>d</w>. <w>accipit</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Holdenge</w> <w>ceram</w> <w>debet</w>, <w>presbiter</w> <w>IIII</w> <w>d</w>. <w>accipit</w>. </p>
+               <p xml:space="preserve"><w>Parrochi</w> <w>de</w> <w>Longliers</w> <w>qui</w> <w>aliquando</w> <w>ex</w> <w lemmaRef="gratia">gratia</w> <w>cereum</w> <w>representant</w> <w>XII</w> <w>d</w>. <w>accipiunt</w>.</p>
+               <p xml:space="preserve"><w>Ecclesia</w> <w>de</w> <w>Braz</w> <w>caseos</w> <w>debet</w> <w>et</w> <w>cereum</w> <w>vel</w> <w>III</w> <w>sol</w>. <w>pro</w> <w>redemptione</w>, <w>presbiter</w> <w>VII</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>Presbiter</w> <w>de</w> <w>Belluois</w> <w>XII</w> <w>d</w>. <w>accipit</w>. </p>
+               <p xml:space="preserve"><w>De</w> <w>terris</w> <w>quae</w> <w>ad</w> <w>altare</w> <w>beati</w> <w>Remacli</w> <w>respectum</w> <w>debent</w>. </p>
+               <p xml:space="preserve"><w>Ad</w> <w>Tilaz</w> <w>juxta</w> <w>Sanctum</w> <w>Severinum</w> <w>VI</w> <w>bonuarii</w> <w>terrae</w> <w>quorum</w> <w>unusquisque</w> <w>singulis</w> <w>annis</w> <w>I</w> <w>d</w>. <w>solvit</w>. <w>De</w> <w>Horto</w> <w>I</w> <w>d</w>. <w>Ad</w> <w>Romunt</w> <w>I</w> <w>d</w>. <w>De</w> <w>allodio</w> <w>Arnoldi</w> <w>de</w> <w>Vilengal</w> <w>II</w> <w>d</w>. <w>De</w> <w>terra</w> <w>Wannin</w> <w>III</w> <w>d</w>. <w>De</w> <w>terra</w> <w>que</w> <w>jacet</w> <w>ad</w> <w>Huz</w> <w>II</w> <w>d</w>. <w>De</w> <w>terra</w> <w>ad</w> <w>Vilenz</w> <w>II</w> <w>sol</w>. <w>De</w> <w>terra</w> <w>Wilelmi</w> <w>de</w> <w>Amarnen</w> <w>IIII</w> <w>den</w>. <w>De</w> <w>terra</w> <w>Heinrici</w> <w>de</w> <w>Heis</w> <w>III</w> <w>d</w>. <w>De</w> <w>terra</w> <w>ad</w> <w>Comblineaz</w> <w>VIII</w> <w>d</w>. <w>et</w> <w>de</w> <w>decima</w> <w>ejusdem</w> <w>allodii</w> <w>V</w> <w>d</w>. <w>De</w> <w>Homart</w> <w>X</w> <w>d</w>. <w>De</w> <w>allodio</w> <w>Reinboldi</w> <w>de</w> <w>Longia</w> <w>IIII</w> <w>d</w>. <w>De</w> <w>Olpane</w> <w>juxta</w> <w>Werices</w> <w>VI</w> <w>d</w>. <w>De</w> <w>Harenzeis</w> <w>XII</w> <w>d</w>. <w>De</w> <w>respectu</w> <w>terre</w> <w>Rolandi</w> <w>de</w> <w>Doroit</w> <w>VI</w> <w>d</w>. <w>De</w> <w>Lambretmunt</w> <w>juxta</w> <w>Richen</w> <w>II</w> <w>d</w>. <w>De</w> <w>Flobrezeis</w> <w>XXX</w> <w>d</w>. <w>De</w> <w>terra</w> <w>Mannil</w> <w>XXX</w> <w>d</w>. <w>et</w> <w>de</w> <w>prato</w> <w>uno</w> <w>in</w> <w>eodem</w> <w>loco</w> <w>II</w> <w>d</w>. <w>De</w> <w>Lihereis</w> <w>V</w> <w>d</w>. <w>De</w> <w>terra</w> <w>Petri</w> <w>et</w> <w>Bertrade</w> <w>ad</w> <w>Floreis</w> <w>II</w> <w>d</w>. <w>De</w> <w>Vileir</w> <w>VI</w> <w>d</w>. <w>De</w> <w>terra</w> <w>apud</w> <w>Hoffel</w> <w>Grantster</w> <w>XIIII</w> <w>d</w>., <w>et</w> <w>censor</w> <w>ejusdem</w> <w lemmaRef="villa">villae</w> <w>de</w> <w>censu</w> <w>capitum</w> <w>V</w> <w>sol</w>. <w>debet</w>. <w>De</w> <w>Heriar</w> . . <w>IIII</w> <w>sol</w>. <w>Inter</w> <w>Bruskeroit</w> <w>et</w> <w>Condreumunt</w> <w>III</w> <w>sol</w>. <w>In</w> <w lemmaRef="villa">villa</w> <w>Oldovr</w> <w>que</w> <w>inter</w> <w>Leodium</w> <w>et</w> <w>Tungris</w> <w lemmaRef="mansus">mansus</w> <w>unus</w> <w>terrae</w> <w>solvit</w> <w>XXX</w> <w>d</w>. <w>in</w> <w>festo</w> <w>Symonis</w> <w>et</w> <w>Judae</w> <w>Leodii</w>, <w>et</w> <w>minister</w> <w>ejusdem</w> <w>terrae</w> <w>censori</w> <w>de</w> <w>Louineis</w> <w>III</w> <w>sol</w>. <w>ad</w> <w>prebendam</w> <w>fratrum</w> <w>pertinentes</w> <w>de</w> <w>censu</w> <w>hominum</w> <w>supradictae</w> <w lemmaRef="curtis">curtis</w> <w>solvit</w>. <w>De</w> <w>terra</w> <w>que</w> <w>jacet</w> <w>apud</w> <w lemmaRef="villa">villam</w> <w>Ortou</w> <w>XII</w> <w>d</w>. <w>De</w> <w>Albofonte</w> <w>IIII</w> <w>d</w>. <w>Ad</w> <w>Rubum</w> <w>juxta</w> <w>Visaiam</w> <w>ad</w> <w>sanctum</w> <w>Remigium</w> <w>terra</w> <w>II</w> <w>d</w>. <w>solvit</w>. <w>Ad</w> <w>Meslen</w> <w>terra</w> <w>I</w> <w>d</w> . <w>solvit</w>. <w>De</w> <w>Condestorp</w> <w>VI</w> <w>d</w>. <w>De</w> <w>indominicatura</w> <w>de</w> <w>Wanenge</w> <w>debet</w> <w>Cuno</w> <w>de</w> <w>Wellin</w> <w>XII</w> <w>d</w>. <w>De</w> <w>molendino</w> <w>apud</w> <w lemmaRef="villa">villam</w> <w>Emborines</w> <w>exeunt</w> <w>IIII</w> <w>sol</w>. <w>ad</w> <w>Visatium</w> <w>et</w> <w>IIII</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Lamberti</w>, <w>et</w> <w>tamen</w> <w>idem</w> <w>molendinum</w> <w>antiquitus</w> <w>XXIIII</w> <w>sol</w>. <w>solvebat</w>. <w>In</w> <w lemmaRef="villa">villa</w> <w>Longia</w> <w>tenet</w> <w>filius</w> <w>Udonis</w> <w>Godefridus</w> <w>terram</w> <w>de</w> <w>qua</w> <w>solvit</w> <w>II</w> <w>d</w>. <w>In</w> <w lemmaRef="villa">villa</w> <w>Amaz</w> <w>juxta</w> <w>Okeries</w> <w>tenet</w> <w>Folchredus</w> <w>terram</w> <w>de</w> <w>qua</w> <w>solvit</w> <w>VI</w> <w>d</w>. <w>Ante</w> <w lemmaRef="castrum">castrum</w> <w>et</w> <w lemmaRef="villa">villam</w> <w>Longiam</w> <w>jacet</w> <w>terra</w> <w>que</w> <w>solvit</w> <w>XII</w> <w>d</w>. <w>in</w> <w>festo</w> <w>sancti</w> <w>Remacli</w>; <w>in</w> <w>Dornella</w> <w>juxta</w> <w>Spontin</w> <w>terra</w> <w>quae</w> <w>solvit</w> <w>IIII</w> <w>d</w>. <w>Item</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>Ortou</w> <w>est</w> <w>terra</w> <w>que</w> <w>solvit</w> <w>VI</w> <w>d</w>. </p>
+               <p xml:space="preserve"><w>De</w> <w>sumptu</w> <w>aecclesiae</w> <w>a</w> <w>Natale</w> <w>Domini</w> <w>usque</w> <w>ad</w> <w>aliud</w> <w>Natale</w>. </p>
+               <p xml:space="preserve"><w>In</w> <w>vigilia</w> <w>Natalis</w> <w>Domini</w> <w>custodibus</w> <w>aecclesiae</w> <w>VI</w> <w>d</w>. <w>In</w> <w>die</w> <w>XVI</w>; <w>reliquis</w> <w>tribus</w> <w>diebus</w> <w>II</w> <w>sol</w>. <w>inter</w> <w>diem</w> <w>et</w> <w>noctem</w>. <w>In</w> <w>Circumcisione</w> <w>III</w> <w>d</w>. <w>In</w> <w>vigilia</w> <w>Epiphanie</w> <w>in</w> <w>vespera</w> <w>IIII</w> <w>d</w>., <w>in</w> <w>die</w> <w>autem</w> <w>VIIII</w>. <w>In</w> <w>Conversione</w> <w>sancti</w> <w>Pauli</w> <w>III</w> <w>d</w>. <w>In</w> <w>Purificatione</w> <w>sanctae</w> <w>Mariae</w> <w>VI</w> <w>d</w>. <w>Intrante</w> <w>quadragesima</w> <w>VIII</w> <w>d</w>. <w>custodibus</w>, <w>pistori</w> <w>et</w> <w>fabro</w> <w>pro</w> <w>proportionibus</w> <w>XX</w> <w>d</w>. <w>Ad</w> <w>cortinas</w> <w>ponendas</w> <w>III</w> <w>d</w>. <w>In</w> <w>Palmis</w> <w>quando</w> <w>purgant</w> <w>aecclesiam</w> <w>III</w> <w>d</w>.; <w>in</w> <w>die</w> <w>III</w> <w>d</w>. <w>In</w> <w>cena</w> <w>Domini</w> <w>panem</w> <w>et</w> <w>vinum</w> <w>custodibus</w> <w>et</w> <w>pistori</w> <w>et</w> <w>fabro</w> <w>et</w> <w>unicuique</w> <w>eorum</w> <w>denarium</w> <w>unum</w>. <w>In</w> <w>Parasceven</w> <w>quando</w> <w>cereum</w> <w>faciunt</w> <w>VI</w> <w>den</w>. <w>Sabbato</w> <w>sancto</w> <w>VI</w> <w>d</w>. <w>In</w> <w>die</w> <w>sancto</w> <w>Pasche</w> <w>XVI</w> <w>d</w>.; <w>reliquis</w> <w>diebus</w> <w>et</w> <w>in</w> <w>octab</w>. <w>XII</w>. <w>In</w> <w>Ascensione</w> <w>III</w>. <w>In</w> <w>Commemoratione</w> <w>sancti</w> <w>Remacli</w> <w>in</w> <w>vespera</w> <w>III</w> <w>d</w>.; <w>in</w> <w>die</w> <w>vero</w> <w>VI</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Servatii</w> <w>III</w>. <w>In</w> <w>vigilia</w> <w>Pentecosten</w> <w>VI</w> <w>d</w>.; <w>tunc</w> <w>etiam</w> <w>IIII</w> <w>carpentarii</w> <w>et</w> <w>lautor</w> <w>et</w> <w>edituus</w> <w>unusquisque</w> <w>II</w> <w>d</w>. <w>pro</w> <w>caltiamentis</w>; <w>fenestrarius</w> <w>vero</w> <w>ad</w> <w>censum</w> <w>quorundam</w> <w>sibi</w> <w>deputatum</w> <w>accipit</w> <w>in</w> <w>die</w> <w>sancto</w> <w>Pentecostes</w> <w>XVI</w> <w>d</w> ; <w>reliquis</w> <w>diebus</w> <w>in</w> <w>quibus</w> <w>a</w> <w>mane</w> <w>usque</w> <w>ad</w> <w>vesperam</w> <w>ecclesiam</w> <w>custodiunt</w> <w>XVIII</w> <w>d</w>. <w>In</w> <w>octab</w>. <w>Pentecostes</w> <w>III</w> <w>d</w>. <w>In</w> <w>Dedicatione</w> <w>ad</w> <w>vesperam</w> <w>IIII</w> <w>den</w>. <w>In</w> <w>die</w> <w>Dedicationis</w> <w>XVI</w> <w>d</w>. <w>Ante</w> <w>festum</w> <w>sancti</w> <w>Johannis</w> <w>panem</w> <w>et</w> <w>caseum</w> <w>de</w> <w>altari</w> <w>et</w> <w>potum</w> <w>accipiunt</w>; <w>tunc</w> <w>etiam</w> <w>accipiunt</w> <w>duas</w> <w>pensas</w> <w>lanae</w> <w>quas</w> <w>dividunt</w> <w>in</w> <w>tres</w> <w>illi</w> <w>de</w> <w>Leuois</w> <w>et</w> <w>illi</w> <w>de</w> <w>Hildricimonte</w>. <w>In</w> <w>die</w> <w>festo</w> <w>sancti</w> <w>Johannis</w> <w>Baptiste</w> <w>XVI</w> <w>d</w>.; <w>in</w> <w>vespera</w> <w>IIII</w> <w>denar</w>. <w>In</w> <w>Translatione</w> <w>sancti</w> <w>Remacli</w> <w>XII</w> <w>panes</w> <w>et</w> <w>unum</w> <w>sextus</w> <w>vini</w> <w>et</w> <w>III</w> <w>sext</w>. <w>cervisae</w> <w>et</w> <w>arietem</w> <w>unum</w>; <w>tunc</w> <w>etiam</w> <w>a</w> <w>custode</w> <w>calceamenta</w> <w>qui</w> <w>superius</w> <w>accipiunt</w>. <w>In</w> <w>Ad</w> <w>vincula</w> <w>sancti</w> <w>Petri</w> <w>III</w> <w>d</w>. <w>In</w> <w>die</w> <w>sancti</w> <w>Laurentii</w> <w>III</w> <w>d</w>. <w>In</w> <w>Assumptione</w> <w>sanctae</w> <w>Marie</w> <w>III</w> <w>d</w>. <w>Ante</w> <w>festum</w> <w>sancti</w> <w>Remacli</w> <w>quando</w> <w>purgant</w> <w>aecclesiam</w>, <w>victum</w> <w>sufficienter</w>; <w>in</w> <w>vespera</w> <w>VI</w> <w>d</w>.; <w>in</w> <w>die</w> <w>XVI</w> <w>d</w>. <w>et</w> <w>calciamenta</w> <w>sicut</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Johannis</w>. <w>In</w> <w>Dedicatione</w> <w>turris</w> <w>III</w> <w>d</w>. <w>In</w> <w>octab</w>. <w>sancti</w> <w>Remacli</w> <w>III</w> <w>den</w>. <w>In</w> <w>Nativitate</w> <w>sancte</w> <w>Mariae</w> <w>III</w> <w>d</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Mathei</w> <w>III</w> <w>d</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Michahelis</w> <w>archangeli</w> <w>III</w> <w>den</w>. <w>In</w> <w>die</w> <w>Omnium</w> <w>sanctorum</w> <w>VI</w> <w>d</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Martini</w> <w>III</w> <w>denarios</w>. <w>In</w> <w>festo</w> <w>sancti</w> <w>Andreae</w> <w>III</w> <w>d</w>. <w>Summa</w> : <w>XXVIIII</w> <w>sol</w>. <w>et</w> <w>VI</w> <w>den</w>. </p>
+               <p xml:space="preserve"><w>Quandocumque</w> <w>etiam</w> <w>operantur</w> <w>aliquid</w> <w>circa</w> <w>aecclesiam</w> <w>vel</w> <w>in</w> <w>silva</w> <w>pro</w> <w>aecclesia</w> <w>a</w> <w>custode</w> <w>pascuntur</w>. <w>Edituum</w> <w>omnino</w> <w>pascere</w> <w>et</w> <w>vestire</w> <w>debet</w> <w>custos</w>. <w>Custodibus</w> <w>Malmund</w>. <w>XVI</w> <w>panes</w> <w>et</w> <w>XII</w> <w>caseos</w> <w>et</w> <w>XXXII</w> <w>ova</w> <w>et</w> <w>II</w> <w>sext</w>. <w>vini</w> <w>et</w> <w>III</w> <w>cervisae</w>, <w>mercennariis</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Johannis</w> <w>Baptiste</w>, <w>cum</w> <w>cereum</w>, <w>ficum</w> <w>et</w> <w>libram</w> <w>piperis</w> <w>offerunt</w>, <w>dabit</w> <w>IIII</w> <w>panes</w> <w>et</w> <w>IIII</w> <w>caseos</w>, <w>pro</w> <w>vino</w> <w>III</w> <w>denarios</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

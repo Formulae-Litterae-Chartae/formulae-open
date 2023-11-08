@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 188</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">388 – 389 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0188">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Liste des religieux de Stavelot et de Malmedy, vivant à l’époque où un traité de confraternité fut conclu entre l’abbaye de Stavelot-Malmedy et celle de Corbie.</p>
+         </div>
+         <dateline>1147<date notBefore="1147-01-01" notAfter="1147-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0188.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Nomina</w> <w>fratrum</w> <w>nostrorum</w> <w>Stabulensium</w>, <w>quorum</w> <w>tempore</w> <w>Stabulensis</w> <w>et</w> <w>nova</w> <w>Corbeiensis</w> <w>aecclesia</w> <w>in</w> <w>plena</w> <w>fraternitate</w> <w>et</w> <w>una</w> <w>eademque</w> <w>societate</w> <w>magno</w> <w>utrimque</w> <w>studio</w> <w>et</w> <w>pari</w> <w>voluntate</w> <w>convenerunt</w>, <w>eo</w> <w>videlicet</w> <w>tenore</w>, <w>ut</w> <w>in</w> <w>utralibet</w> <w>aecclesia</w> <w>omnia</w> <w>debita</w> <w>orationum</w> <w>quae</w> <w>propriis</w> <w>fratribus</w> <w>utriusque</w> <w>congregationis</w> <w>debentur</w> <w>tam</w> <w>vivis</w> <w>quam</w> <w>defunctis</w> <w>fratribus</w> <w>vicissim</w> <w>ab</w> <w>utraque</w> <w>aecclesia</w> <w>persolvantur</w>. <w>Haec</w> <w>autem</w> <w>fraternitas</w> <w>instituta</w> <w>est</w> <w>mediante</w> <w>venerabili</w> <w>abbate</w> <w>et</w> <w>domino</w> <w>utriusque</w> <w>aecclesiae</w> <w>Wibaldo</w>, <w>anno</w> <w>dominicae</w> <w>incarnationis</w> <w>M</w>. <w>C</w>. <w>XLVII</w>, <w>indictione</w> <w>X</w>, <w>a</w> <w>constitutione</w> <w>novae</w> <w>Corbeiae</w> <w>anno</w> <w>CCC</w> <w>XX</w> <w>IIII</w>, <w>suae</w> <w>autem</w> <w>prelature</w> <w>apud</w> <w>Stabulaus</w> <w>XVI</w>, <w>apud</w> <w>Corbeiam</w> <w>I</w>. <w>–</w> <w>O</w>. <w lemmaRef="dominus">Domnus</w> <w>Wicboldus</w> <w lemmaRef="abbas">abbas</w>, <w>Robertus</w>, <w>Warnerus</w>, <w>Ratherus</w>, <w>Robertus</w>, <w>Cuono</w>, <w>Engo</w>, <w>Ruodulfus</w>, <w>Anselmus</w>, <w>Emmo</w>, <w>Arnulfus</w>, <w>Heribrandus</w>, <w>Warnerus</w>, <w>Gislebertus</w>, <w>Heinricus</w>, <w>Stephanus</w>, <w>Gerardus</w>, <w>Roberlinus</w>, <w>Heinricus</w>, <w>Robertus</w>, <w>Erleboldus</w>, <w>Gregorius</w>, <w>Symon</w>, <w>Francho</w>, <w>Johannes</w>, <w>Adelardus</w>, <w>Theodericus</w>, <w>Waltherus</w>, <w>Hillinus</w>, <w>Lambertus</w>, <w>Reinerus</w>, <w>Arnulfus</w>, <w>Bruno</w>, <w>Heremannus</w>, <w>Balduwinus</w>, <w>Widricus</w>, <w>Razo</w>, <w>Warnerus</w>, <w>Bonefacius</w>, <w>Garsilius</w>, <w>Arnulfus</w>, <w>Julianus</w>, <w>Heinricus</w>, <w>Heinricus</w>. <w>Malmundarienses </w>: <w>Anselmus</w>, <w>Albertus</w>, <w>Albricus</w>, <w lemmaRef="libertus">Libertus</w>, <w>Godefridus</w>, <w>Bovo</w>, <w>Poppo</w>, <w>Godefridus</w>, <w>Frithericus</w>, <w>Albertus</w>, <w>Johannes</w>, <w>Walcherus</w>, <w>Waltherus</w>, <w>Cuono</w>, <w>Gerardus</w>, <w>Balduwinus</w>, <w>Heribrandus</w>, <w>Albertus</w>, <w>Harpero</w>, <w>Adelardus</w>, <w>Warnerus</w>, <w>Heribrandus</w>, <w>Heinricus</w>, <w>Mauricius</w>, <w>Erleboldus</w>, <w>Lambertus</w>, <w>Thidericus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 59</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">83</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0059">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte par laquelle Rainaud, abbé de Saint-Julien, en échange d’une dime qu’avaient donnée a son abbaye les ancêtres de Gondoin, chevalier, seigneur de Manneville, reçoit de celui-ci la propriété de la terre qu’il tenait a Roncheville.</p>
+         </div>
+         <dateline>Vers 1111<date/>
+            <date notBefore="1101-01-01" notAfter="1121-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0059.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Omnibus</w> <w>ad</w> <w>quos</w> <w>presens</w> <w>scriptum</w> <w>pervenerit</w>, <w>Rainaudus</w>, <w lemmaRef="abbas">abbas</w> <w>Sancti</w> <w>Juliani</w> <w>Turonensis</w>, <w>et</w> <w>totus</w> <w>ecclesie</w> <w>ejusdem</w> <w>conventus</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Domino</w>. <w>Noverit</w> <w>universitas</w> <w>vestra</w> <w>quod</w>, <w>cum</w> <w>antecessores</w> <w>Gundoini</w>, <w>militis</w> <w>de</w> <w>Mannevilla</w>, <w>contulissent</w> <w>nobis</w> <w>et</w> <w>ecclesie</w> <w>nostre</w> <w>duas</w> <w>garbas</w> <w>decime</w> <w>de</w> <w>feodo</w> <w>suo</w> <w>de</w> <w>Breituil</w>, <w>apud</w> <w>Mannevillam</w>, <w>quia</w> <w>decimam</w> <w>illam</w> <w>nos</w> <w>non</w> <w>poteramus</w> <w>habere</w> <w>sine</w> <w>maximis</w> <w>laboribus</w> <w>et</w> <w>expensis</w>, <w>dictus</w> <w>Gundoinus</w>, <w>ad</w> <w>peticionem</w> <w>nostram</w>, <w>pro</w> <w>decima</w> <w>illa</w> <w>dedit</w> <w>nobis</w>, <w>in</w> <w>puram</w> <w>et</w> <w>perpetuam</w> <w>elemosinam</w>, <w>totum</w> <w>tenementum</w> <w>quod</w> <w>de</w> <w>nobis</w> <w>sepedictus</w> <w>Gundoinus</w> <w>apud</w> <w>Runcevillam</w> <w>tenebat</w>, <w>quiete</w> <w>et</w> <w>pacifice</w>, <w>sine</w> <w>aliqua</w> <w>reclamatione</w> <w>ipsius</w> <w>et</w> <w>successorum</w> <w>suorum</w>, <w>habendum</w> <w>et</w> <w>possidendum</w>. <w>Et</w> <w>nos</w> <w>dictam</w> <w>decimam</w> <w>eidem</w> <w>Gundoino</w> <w>quittavimus</w> <w>et</w> <w>omnino</w> <w>dereliquimus</w>, <w>ut</w> <w>ipsi</w> <w>et</w> <w>heredibus</w> <w>suis</w> <w>de</w> <w>predicta</w> <w>decima</w> <w>liceat</w> <w>facere</w> <w>quicquid</w> <w>voluerint</w>, <w>ita</w> <w>quod</w> <w>nichil</w> <w>in</w> <w>ea</w> <w>de</w> <w>cetero</w> <w>possimus</w> <w>reclamare</w>. <w>Et</w> <w>ut</w> <w>hoc</w> <w>futuris</w> <w>temporibus</w> <w>ratum</w> <w>habeatur</w>, <w>sigillorum</w> <w>nostrorum</w> <w>munimine</w> <w>presens</w> <w>scriptum</w> <w>fecimus</w> <w>roborari</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

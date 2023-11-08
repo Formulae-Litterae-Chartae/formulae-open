@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 57</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">66-67</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0057">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Haimery de Poitiers donne à MM. la terre des sept puits à Rhodon.</p>
+         </div>
+         <dateline>1084-1100<date notBefore="1084-01-01" notAfter="1100-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0057.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="donatio">DONATIO</w> <w>TERRAE</w> <w>DE</w> <w>SEPTEM</w> <w>PUTEIS</w> <w>APUD</w> <w>ROSDONIUM</w>.</head>
+               <p xml:space="preserve"><w>Haymericus</w> <w>pictavensis</w>, <w>de</w> <w>consensu</w> <w>domini</w> <w>sui</w> <w>Thomae</w> <w>Castri</w> <w>Rainaldi</w> <w>domini</w>, <w>Bernardo</w> <w>maioris</w> <w>monasterii</w> <w>abbati</w> <w>dedit</w>, <w>per</w> <w>traditionem</w> <w>baculi</w> <w>in</w> <w>manu</w> <w>abbatis</w>, <w>in</w> <w>loquutorio</w> <w>secretariorum</w>, <w>quem</w> <w>deinde</w> <w>super</w> <w>altare</w> <w>dominicum</w> <w>s</w>. <w>Martini</w> <w>tulit</w>, <w>terram</w> <w>de</w> <w>septem</w> <w>puteis</w> <w>apud</w> <w>Rosdonium</w>. <w lemmaRef="pagus">Paganus</w> <w>filius</w> <w>praefati</w> <w>Thomae</w> <w>confirmavit</w>. <w>Nominantur</w> <w>testes</w>: <w>Guicherius</w> <w>et</w> <w>filius</w> <w>eius</w> <w>Rainaldus</w> <w>de</w> <w>castello-Rainaldi</w> (<w>sed</w> <w>etiam</w> <w>alibi</w> <w>notati</w> <w>sunt</w> <w>sub</w> <w>hac</w> <w>appellatione</w>, <w>etsi</w> <w>ea</w> <w>cognomina</w> <w>a</w> <w>loco</w> <w>habitationis</w> <w>verear</w> <w>desumpta</w>, <w>potiusquam</w> <w>a</w> <w>sanguine</w> <w>dominorum</w> <w>castri</w> <w>de</w> <w>cuius</w> <w>forte</w> <w>prosapia</w> <w>non</w> <w>erant</w>).</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

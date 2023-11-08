@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Codice Diplomatico Longobardo I (Ed. Schiaparelli) Nr. 114</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Codice Diplomatico Longobardo I (Ed. Schiaparelli)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen Studentische Hilfskraft, Universität Hamburg</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Codice Diplomatico Longobardo I</title>
+                  <editor>Luigi Schiaparelli</editor>
+                  <imprint>
+                     <pubPlace>Rom</pubPlace>
+                     <date when="1929" n="originalAusgabe">1929</date>
+                     <biblScope unit="pp">333–336</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Fonti per la storia d’Italia</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Codice Diplomatico Longobardo I, welches 1929 von Luigi Schiaparelli herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="langobardisch_1.schiaparelli0114">
+      <front xml:lang="ita">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Il vescovo Vualprando di Lucca, prima di partire per la guerra, dispone con testamento di tutte le sue sostanze. Lascia alla chiesa di S. Martino due parti, a condizione che una di queste debba servire per il senodochio construtto dal vescovo Talesperiano fuori le mura della città; una terza parte avrà la chiesa di S. Frediano; una quarta parte toccherà alla chiesa di S. Reparata; vuole che i suoi servi e le sue ancelle siano resi liberi; lascia ai fratelli Perprando e Pertifunso quanto possiede in Corsica. L’atto non avrà alcun valore qualore egli ritorni sano dalla guerra.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Lucca</p>
+         </div>
+         <dateline>754 07 (2–3?)<date notBefore="0754-07-02" notAfter="0754-07-03"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:langobardisch_1.schiaparelli0114.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">+ <w>In</w> <w>Dei</w> <w>nomine</w>. <w>regnante</w> <w>domno</w> <w>nostro</w> <w>Aistulfo</w> <w>rege</w>, <w>anno</w> <w>regni</w> <w>eius</w> <w>quinto</w>, <w>mense</w> <w>iulio</w>, <w>per</w> <w>indictione</w> <w>septima</w>; <w>feliciter</w>. <w>Certus</w> <w>sum</w> <w>ego</w> <w>Uualprand</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w lemmaRef="episcopus">episcopus</w>, <w>quia</w> <w>ex</w> <w>iussione</w> <w>domni</w> <w>nostri</w> <w>Aistulfi</w> <w>regis</w> <w>directus</w> <w>sum</w> <w>in</w> <w>exercito</w> <w>ambulandum</w> <w>cum</w> <w>ipso</w>; <w>unde</w> <w>sic</w> <w>despensare</w> <w>preuidi</w> <w>de</w> <w>omnibus</w> <w>rebus</w> <w>meis</w>, <w>ut</w>, <w>dum</w> <w>aduiuere</w> <w>muero</w>, <w>omnia</w> <w>in</w> <w>mea</w> <w>sit</w> <w>potestate</w> <w>uindendi</w>, <w>donandi</w>, <w>quid</w> <w>facere</w> <w>uel</w> <w>iudicare</w> <w>adhuc</w> <w>uoluero</w>. <w>et</w> <w>si</w> <w>mihi</w> <w>occasio</w> <w>mortis</w> <w>obuenerit</w>, <w>uolo</w> <w>ut</w> <w>omnes</w> <w>res</w> <w>meas</w> <w>que</w> <w>iniudicata</w> <w>uel</w> <w>non</w> <w>uinduta</w> <w>aut</w> <w>non</w> <w>donate</w> <w>remanserit</w>, <w>duas</w> <w>partes</w> <w>habeat</w> <w>eclesia</w> <w>Sancti</w> <w>Martini</w>, <w>ubi</w> <w>nunc</w> <w>presenti</w> <w>ego</w> <w>pontifex</w> <w>esse</w> <w>uideor</w>; <w>et</w> <w>taliter</w> <w>uolo</w>, <w>ut</w> <w>una</w> <w>pars</w> <w>de</w> <w>ipse</w> <w>duo</w> <w>portionis</w>, <w>quas</w> <w>in</w> <w>eclesia</w> <w>Sancti</w> <w>Martini</w> <w>feci</w>, <w>debeat</w> <w>esse</w> <w>in</w> <w>senodocio</w> <w>qui</w> <w>a</w> <w>domno</w> <w>Talesperiano</w> <w>episcopo</w> <w>hic</w> <w>fore</w> <w>muro</w> <w>ciuitatis</w> <w>constructum</w> <w>[est]</w>; <w>et</w> <w>tertiam</w> <w>partem</w> <w>habeat</w> <w>eclesia</w> <w>Sancti</w> <w>Fridiani</w>, <w>ubi</w> <w>ipse</w> <w lemmaRef="sanctus">sanctus</w> <w>corpus</w> <w>requiescit</w>; <w>et</w> <w>quarta</w> <w>parte</w> <w>habeat</w> <w>eclesia</w> <w>Sancte</w> <w>Reparate</w>, <w>ubi</w> <w>Garimundus</w> <w lemmaRef="clericus">clericus</w> <w>custor</w> <w>esse</w> <w>uidetur</w>, <w>ut</w> <w>sacerdotes</w>, <w>qui</w> <w>in</w> <w>ipsas</w> <w>eclesias</w> <w>ordinati</w> <w>fuerent</w>, <w>pro</w> <w>facinoribus</w> <w>meis</w> <w>Dominum</w> <w>deprecare</w> <w>debeant</w>. <w>seruos</w> <w>autem</w> <w>meos</w> <w>uel</w> <w>ancillas</w> <w>uolo</w> <w>ut</w> <w>liueri</w> <w>omnes</w> <w>esse</w> <w>debeant</w> <w>et</w> <w>a</w> <w lemmaRef="ius">ius</w> <w>patronati</w> <w>absoluti</w>, <w>sicut</w> <w>illi</w> <w>homines</w> <w>qui</w> <w>ex</w> <w>nubile</w> <w>genere</w> <w>procreati</w> <w>et</w> <w>nati</w> <w>esse</w> <w>uidentur</w>. <w>et</w> <w>si</w> <w>quis</w> <w>de</w> <w>successoribus</w> <w>meis</w> <w>post</w> <w>meo</w> <w>decesso</w> <w>uel</w> <w>sacerdotes</w>, <w>qui</w> <w>in</w> <w>suprascriptas</w> <w>eclesias</w> <w>ordinati</w> <w>fuerent</w>, <w>neglectum</w> <w>posuerent</w> <w>pro</w> <w>anima</w> <w>mea</w> <w>Dominum</w> <w>deprecando</w> <w>aut</w> <w>elemosina</w> <w>faciendo</w>, <w>dum</w> <w>cunctis</w> <w>inluxerit</w> <w>dies</w> <w>ille</w> <w>tremendus</w>, <w>iudicium</w> <w>mecum</w> <w>habeant</w> <w>ante</w> <w>omnium</w> <w>Creatorem</w>. <w>et</w> <w>uos</w> <w>fratres</w> <w>meos</w> <w>Perprand</w> <w>et</w> <w>Pertifuns</w>, <w>uolo</w> <w>ut</w> <w>habeatis</w> <w>parte</w> <w>mea</w> <w>de</w> <w>pecunia</w> <w>nostra</w> <w>in</w> <w>Corsica</w> <w>in</w> <w>integrum</w>; <w>et</w> <w>in</w> <w>hoc</w> <w>sitis</w> <w>contempti</w>. <w>et</w> <w>hec</w>, <w>qualiter</w> <w>supra</w> <w>legitur</w>, <w>inuiolabiliter</w> <w>debeat</w> <w>permanere</w>; <w>et</w> <w>qualiter</w> <w>iudicaui</w>, <w>post</w> <w>meo</w> <w>decesso</w> <w>nullus</w> <w>aliquando</w> <w>posse</w> <w>disrumpi</w>. <w>et</w> <w>si</w> <w>Domino</w> <w lemmaRef="placitum">placitum</w> <w>fuerit</w>, <w>et</w> <w>hic</w> <w>sanus</w> <w>reuersus</w> <w>fuero</w>, <w>hec</w> <w>decritionis</w> <w lemmaRef="carta">cartula</w> <w>ad</w> <w>me</w> <w>reuertatur</w>, <w>et</w> <w>nullum</w> <w>rouorem</w> <w>habeat</w>. <w>Et</w> <w>Osprando</w> <w>subdiacono</w> <w>nostro</w> <w>scriuere</w> <w>precepimus</w>. <w>Actum</w> <w>in</w> <w>Luca</w>, <w>in</w> <w>domo</w> <w>sancte</w> <w>eclesie</w>. <w>Et</w>, <w>quod</w> <w>menime</w> <w>recordatus</w> <w>sum</w>, <w>quidquid</w> <w>indiuisum</w> <w>de</w> <w>rebus</w> <w>meis</w> <w>remanserit</w>, <w>aut</w> <w>quod</w> <w>per</w> <w>quocumque</w> <w>ingenio</w> <w>mihi</w> <w>legibus</w> <w>pertenet</w>, <w>mobile</w> <w>uel</w> <w>inmobile</w>, <w>uolo</w> <w>ut</w>, <w>sicut</w> <w>supra</w> <w>legitur</w>, <w>in</w> <w>suprascriptas</w> <w>eclesias</w> <w>debeat</w> <w>esse</w> <w>potestate</w>. <w>sic</w> <w>tamen</w>, <w>ut</w> <w>supra</w> <w>dixi</w>, <w>post</w> <w>decesso</w> <w>meo</w> <w>in</w> <w>eo</w> <w>ordine</w> <w>permaneat</w>. + <w>Ego</w> <w>Uualprand</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w lemmaRef="episcopus">episcopus</w> <w>in</w> <w>hanc</w> <w>iudicati</w> <w>pagina</w> <w>a</w> <w>me</w> <w>facta</w>, <w>sicut</w> <w>superius</w> <w>legitur</w>, <w>proprias</w> <w>manus</w> <w>meas</w> <w>subscripsi</w>, <w>et</w> <w>testiuus</w> <w>tradedi</w> <w>subscriuenda</w>. + <w>Ego</w> <w>Ospert</w> <w>exiguus</w> <w lemmaRef="diaconus">diaconus</w> <w>iussus</w> <w>a</w> <w>domno</w> <w>Uualprand</w> <w>episcopo</w> <w>in</w> <w>hanc</w> <w>pagina</w> <w>iudicati</w> <w>proprias</w> <w>manus</w> <w>meas</w> <w>testis</w> <w>subscripsi</w>. + <w>Ego</w> <w>Buccio</w> <w>presbitero</w> <w>rogatus</w> <w>a</w> <w>domno</w> <w>Uualprand</w> <w>episcopo</w> <w>in</w> <w>hanc</w> <w>pagina</w> <w>iudicati</w> <w>proprias</w> <w>manus</w> <w>meas</w> <w>testis</w> <w>subscripsi</w>. + <w>Ego</w> <w>Gauspertus</w> <w>exiguus</w> <w lemmaRef="clericus">clericus</w> <w>et</w> <w>rector</w> <w>eclesie</w> <w>Sancti</w> <w>Fridiani</w> <w>rogatus</w> <w>a</w> <w>domno</w> <w>Uualprand</w> <w>episcopo</w> <w>in</w> <w>hanc</w> <w>pagina</w> <w>iudicati</w> <w>proprias</w> <w>manus</w> <w>meas</w> <w>testis</w> <w>subscripsi</w>. <w>Signum</w> + <w>manus</w> <w>Garimund</w> <w>uiri</w> <w>deuoti</w> <w>testis</w>. <w>Signum</w> + <w>manus</w> <w>Gairipert</w> <w>uiri</w> <w>deuoti</w> <w>testis</w>. <w>Ego</w> <w>ipse</w> <w>Osprand</w> <w lemmaRef="diaconus">subdiaconus</w> <w>supradictus</w> <w>scriptor</w> <w>quantum</w> <w>in</w> <w>autenticum</w> <w>inueni</w>, <w>nec</w> <w>plus</w> <w>addedi</w>, <w>nec</w> <w>menime</w> <w>scribsi</w>; <w>et</w> <w>presens</w> <w>exempla</w> <w>data</w> <w>est</w> <w>Mauri</w>, <w>qui</w> <w>fuit</w> <w>supradicti</w> <w>bone</w> <w>memorie</w> <w>quondam</w> <w>Uualprand</w> <w>episcopi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

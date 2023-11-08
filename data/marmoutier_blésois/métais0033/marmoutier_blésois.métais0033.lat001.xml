@@ -1,0 +1,94 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 33</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">41-43</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0033">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">A la prière des religieux, le comte Thibault échange la ville de Muiniacum, située dans le territoire de Troyes, donnée à MM. par ses ancêtres, pour une partie du territoire de Blémars, et leur abandonne plusieurs autres privilèges du consentement de son fils Etienne, et avec l'approbation royale.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mesland</p>
+         </div>
+         <dateline>1059 et 1064
+            <date notBefore="1059-01-01" notAfter="1059-12-31"/>
+            <date notBefore="1064-01-01" notAfter="1064-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0033.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>CAMBIONE</w> <w>INTER</w> <w>NOS</w> <w>ET</w> <w>COMITEM</w> <w>TETBALDUM</w> <w>DE</w> <w>TERRA</w> <w>DE</w> <w>MUINIACO</w> <w>CUM</w> <w>TERRIS</w> <w>IN</w> <w>BOSCO</w> <w>BLIMARCIO</w>.</head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>etc</w>. <w>quod</w> <w>Thetbaldus</w> <w lemmaRef="comes">comes</w> <w>Odonis</w> <w>comitis</w> <w>quondam</w> <w>filius</w>, <w>illius</w> <w>scilicet</w> <w>nobilissimi</w>, <w>qui</w> <w>cognominatus</w> <w>est</w> <w>Campanicus</w>, <w>inter</w> <w>alias</w> <w>largitiones</w> <w>innumeras</w> <w>et</w> <w>ingencia</w> <w>dona</w> <w>que</w> <w>nobis</w> <w>genuina</w> <w>sibi</w> <w>quodam</w> <w>modo</w> <w>circa</w> <w>locum</w> <w>nostrum</w>, <w>atque</w> <w>a</w> <w>maioribus</w> <w>ducta</w> <w>liberalitate</w> <w>concessit</w>, <w lemmaRef="villa">villam</w> <w>nobis</w> <w>donaverat</w> <w>quamdam</w>, <w>in</w> <w>trecassino</w> <w>territorio</w> <w>sitam</w>, <w>quam</w> <w>Muiniacum</w> <w>appellant</w>, <w>cum</w> <w>suis</w> <w>videlicet</w> <w>redditibus</w>, <w>cum</w> <w>silva</w> <w>et</w> <w>pratis</w> <w>ad</w> <w>se</w> <w>pertinentibus</w>. <w>Donaverant</w> <w>autem</w> <w>post</w> <w>requiem</w> <w>scilicet</w> <w>in</w> <w>Xristo</w> <w>patris</w>, <w>sed</w> <w>cum</w> <w>eo</w> <w>Stephanus</w> <w lemmaRef="comes">comes</w> <w lemmaRef="germanus">germanus</w> <w>suus</w> <w>et</w> <w>utriusque</w> <w>mater</w> <w>Hermandis</w> <w>illa</w> <w>cuius</w> <w>memoria</w> <w>in</w> <w>benedictione</w> <w>est</w>, <w>que</w> <w>bonorum</w> <w>operum</w> <w>memoria</w> <w>etiam</w> <w>in</w> <w>seculo</w> <w>sub</w> <w>seculi</w> <w>perpetuitate</w> <w>victura</w>, <w>quamdiu</w> <w>rebus</w> <w>humanis</w> <w>interfuit</w>, <w>incredibilem</w> <w>erga</w> <w>hunc</w> <w>locum</w> <w>begniuolenciam</w> <w>ac</w> <w>munificentiam</w> <w>coniugis</w> <w>ac</w> <w>filiarum</w> <w>suarum</w>, <w>si</w> <w>non</w> <w>supperauit</w> <w>equiparavit</w>. <w>Verum</w> <w>predicta</w> <w>illa</w> <w>donata</w>, <w>cum</w> <w>a</w> <w>nobis</w> <w>cominus</w> <w>excolli</w> <w>possent</w> <w>quo</w> <w>longinquiora</w> <w>consisterant</w>, <w>et</w> <w>quo</w> <w>minus</w> <w>exculta</w>, <w>minus</w> <w>essent</w> <w>utique</w> <w>fructuosa</w>, <w>annis</w> <w>aliquot</w> <w>elapsis</w>, <w>postea</w> <w>quum</w>, <w>fratre</w> <w>matreque</w> <w>decedantibus</w>, <w>paternus</w> <w>honor</w> <w>ex</w> <w>integro</w> <w>Thetbaldi</w> <w>devenisset</w> <w>in</w> <w>manus</w>, <w>suggerenda</w> <w>ipsi</w> <w>hec</w> <w>eadam</w> <w>putavimus</w>, <w>atque</w> <w>fiducia</w> <w>percognite</w> <w>nobis</w> <w>sue</w> <w>circa</w> <w>nos</w> <w>benignitatis</w>, <w>longinquiora</w> <w>illa</w> <w>donata</w> <w>donato</w> <w>petivimus</w> <w>proximiore</w> <w>mutanda</w>. <w>Nec</w> <w>falsa</w> <w>est</w> <w>act</w> <w>fefellit</w> <w>nos</w> <w>de</w> <w>ingenti</w> <w>illa</w> <w>begnignitate</w> <w>presumptio</w>. <w>Facilis</w> <w>quidem</w> <w>fuit</w> <w>et</w> <w>prompta</w> <w>suggestio</w>, <w>sed</w> <w>pene</w> <w>facilius</w> <w>impetrata</w> <w>peticio</w>. <w>Itaque</w> <w>pro</w> <w>magnis</w> <w>quidem</w> <w>grandia</w>, <w>sed</w> <w>pro</w> <w>parum</w> <w>fructuosis</w> <w>multimoda</w> <w>fructuositate</w> <w>donat</w> <w>uberrima</w>. <w>Ea</w> <w>prima</w> <w>sunt</w>. <w>In</w> <w>quadam</w> <w>silva</w> <w>in</w> <w>blesensis</w> <w>castri</w> <w>territorio</w> <w>sita</w>, <w>quem</w> <w>blimarcium</w> <w>boscum</w> <w>nuncupat</w> <w>vulgus</w>, <w>leuge</w> <w>spacia</w> <w>unius</w> <w>replicata</w> <w>per</w> <w>quadrum</w> <w>integra</w> <w>quaquaversum</w>; <w>ita</w> <w>dumtaxat</w> <w>ut</w> <w>quod</w> <w>minus</w> <w>in</w> <w>quamcumque</w> <w>partem</w> <w>locus</w> <w>quilibet</w> <w>prestat</w>, <w>hoc</w> <w>illud</w> <w>instauret</w>, <w>quod</w> <w>amplius</w> <w>ubilibet</w> <w>ex</w> <w>ipsa</w> <w>vel</w> <w>alia</w> <w>parte</w> <w>quacumque</w> <w>redundat</w>, <w>atque</w> <w>ita</w> <w>intra</w> <w>id</w> <w>quod</w> <w>donatum</w> <w>est</w> <w>nobis</w> <w>anguli</w> <w>omnes</w> <w>et</w> <w>anfractus</w> <w>universi</w> <w>totaque</w> <w>prorsus</w> <w>silve</w> <w>illius</w> <w>extremitas</w> <w>orientalis</w> <w>concluditur</w>, <w>meridiana</w> <w>proinde</w> <w>et</w> <w>aquillonaris</w>, <w>quousque</w> <w>veniatur</w> <w>ad</w> <w>signa</w> <w>que</w> <w>vulgaris</w> <w lemmaRef="consuetudo">consuetudo</w> <w>ladios</w> <w>vocat</w>; <w>quibus</w> <w>sese</w> <w>per</w> <w>latum</w> <w>silve</w>, <w>silva</w> <w>comitis</w> <w>nostraque</w> <w>determinat</w>. <w>Porro</w> <w>autem</w> <w>huius</w> <w>ipsius</w> <w>silve</w> ….., <w>vixdum</w> <w>exacto</w> ….., <w>ipsam</w> <w>illa</w> <w>nobis</w> <w>munificentissima</w> <w>Thetbaldi</w> <w>comitis</w> <w>liberalitas</w> <w>ante</w> <w>concesserat</w>, <w>at</w> <w>ea</w> <w>pars</w> <w>ab</w> <w>occidentalis</w> <w>silve</w> <w>fine</w> <w>consistit</w>, <w>hec</w> <w>que</w> <w>nunc</w> <w>versatur</w> <w>in</w> <w>manibus</w> <w>ab</w> <w>orientali</w>. <w>De</w> <w>illa</w> <w>litteris</w> <w>aliis</w> <w>noticie</w> <w>prouisum</w> <w>est</w> <w>futurorum</w>. <w>De</w> <w>ista</w> <w>prosequamur</w> <w>inceptum</w>. <w>Quam</w> <w>videlicet</w> <w>ea</w> <w>tota</w> <w>integritate</w> <w>donavit</w>, <w>ut</w> <w>universarum</w> <w>consuetudinem</w> <w>nulla</w> <w>esset</w> <w>redibicio</w>, <w>non</w> <w lemmaRef="vicarius">vicaria</w>, <w>non</w> <w>bannaria</w>, <w>non</w> <w>alia</w> <w>quacumque</w> <w>seu</w> <w>magna</w> <w>seu</w> <w>parua</w>, <w>aut</w> <w>quodquam</w> <w>omnino</w> <w>jure</w> <w>ullo</w> <w>aut</w> <w>ulla</w> <w>racione</w> <w>sibimet</w> <w>ex</w> <w>illa</w> <w>eatenus</w> <w>potuerat</w> <w>provenire</w>, <w>feras</w> <w>denique</w> <w>omnes</w> <w>cuiuslibet</w> <w>generis</w>, <w>adusque</w> <w>minimam</w> <w>a</w> <w>maxima</w>, <w>procursumque</w> <w>ferarum</w>; <w>hoc</w> <w>est</w> <w>ut</w> <w>si</w> <w>emota</w> <w>ad</w> <w>capiendum</w>, <w>qucuis</w> <w>quacumque</w> <w>ex</w> <w>parte</w> <w>partis</w> <w>silve</w> <w>donate</w> <w>nobi</w>, <w>fines</w> <w>forte</w> <w>fugiens</w>, <w>excesserit</w>, <w>quantum</w> <w>vix</w> <w>extra</w> <w>procurat</w> <w>ubilibet</w> <w>indagantibus</w> <w>ipsius</w> <w>tandem</w> <w>captura</w> <w>proveniat</w>, <w>sicut</w> <w>in</w> <w>comitis</w> <w>antea</w> <w>partem</w>, <w>ita</w> <w>dehinc</w> <w>reclamente</w> <w>nullo</w> <w>cedat</w> <w>in</w> <w>nostram</w>. <w>Jam</w> <w>vero</w> <w>silvam</w> <w>ipsam</w> <w>quantum</w> <w>ad</w> <w>donatam</w> <w>nobis</w> <w>actinet</w> <w>portionem</w>, <w>aut</w> <w>ita</w> <w>manere</w> <w>aut</w> <w>extirpare</w> <w>velimus</w> <w>et</w> <w>excollere</w> <w>terram</w> <w>que</w> <w>nobis</w> <w>erit</w> <w>voluntas</w> <w>eadem</w> <w>et</w> <w lemmaRef="potestas">potestas</w>. <w>Hiis</w> <w>addidit</w> <w>tantus</w> <w>ille</w> <w>donator</w> <w>aquam</w> <w>ab</w> <w>utraque</w> <w>ripa</w> <w>fluvuioli</w> <w>nuncupatione</w> <w>Sicii</w> <w>preterfluentem</w> <w>silve</w> <w>sepedicte</w>, <w>a</w> <w>plaga</w> <w>orientali</w> <w>videlicet</w> <w>totam</w>, <w>quantumcumque</w> <w>ibidem</w> <w>deorsum</w>, <w>versus</w> <w>a</w> <w>molendino</w>, <w>ut</w> <w>vulgo</w> <w>dicitur</w>, <w>de</w> <w>vassedello</w> <w>suo</w> <w>noscebatur</w> <w>dominio</w>. <w>Sed</w> <w>et</w> <w>hanc</w> <w>uti</w> <w>et</w> <w>boscum</w> <w>ilium</w> <w>cum</w> <w>suis</w> <w>omnibus</w> <w>cuiuscumque</w> <w>generis</w> <w>redibicionibus</w> <w>consuetudinariis</w>, <w>ut</w> <w>nichil</w> <w>umquam</w> <w>ex</w> <w>illa</w> <w>ad</w> <w>ipsum</w> <w>quoquomodo</w> <w>ante</w> <w>pertinuerat</w>, <w>quod</w> <w>non</w> <w>ad</w> <w>nos</w> <w>deinceps</w> <w>protempturum</w>, <w>sub</w> <w>eadem</w> <w>donacione</w> <w>contulerit</w>. <w>Post</w> <w>hec</w> <w>filium</w> <w>ipsum</w>, <w>nomine</w> <w>Henricum</w>, <w>suorum</w> <w>fecit</w> <w>annuere</w> <w>liberalitati</w> <w>donorum</w>. <w>Ipse</w> <w>quoque</w>, <w lemmaRef="carta">carta</w> <w>in</w> <w>ista</w>, <w>ad</w> <w>supplementum</w> <w>roboracionis</w> <w>crucis</w> <w>sacratissime</w> <w>vexillum</w> <w>propriis</w> <w>manibus</w> <w>effigiauit</w>. <w>Et</w> <w>sibi</w> <w>quidem</w> <w>sufficit</w> <w>ille</w> <w>qui</w> <w>benefacti</w> <w>sui</w> <w>testis</w> <w>est</w> <w>conscius</w> <w>in</w> <w>excelsis</w> <w>Porro</w> <w>nos</w> <w>contra</w> <w>calumpniosos</w> <w>omnes</w>, <w>si</w> <w>qui</w> <w>adversus</w> <w>hoc</w> <w>emerserint</w>, <w>legitimis</w> <w>nitemur</w> <w>istis</w>: <w>Hugone</w> <w>episcopo</w> <w>trecassino</w>, <w>Gauffrido</w> <w>de</w> <w>Caluo</w> <w>monte</w>, <w>Sesganlone</w> <w>procuratore</w> <w>domus</w> <w>comitis</w>, <w>dompno</w> <w>abbate</w> <w>Alberto</w>, <w>Bucardo</w> <w>monacho</w>, <w>Oberto</w> <w>decano</w> <w>sancti</w> <w>Sollempnis</w>. <w lemmaRef="carta">Carta</w> <w>quoque</w> <w>per</w> <w>scripta</w>, <w>quum</w> <w>ab</w> <w>eodem</w> <w>comite</w> <w>Thetbaldo</w> <w>manu</w> <w>propria</w> <w>firmata</w> <w>est</w>, <w>atque</w> <w>signata</w>, <w>hoc</w> <w>idem</w> <w>testificaturi</w> <w>affuerunt</w>: <w>Odo</w> <w lemmaRef="camerarius">camerarius</w>, <w>Yuo</w> <w lemmaRef="frater">frater</w> <w>eius</w>, <w>Fulcherius</w> <w>filius</w> <w>Girardi</w> <w>primicii</w> <w>sancte</w> <w>Marie</w>. <w>Quando</w> <w>ab</w> <w>Henrico</w> <w>filio</w> <w>cius</w> <w>isti</w>: <w>Vrsus</w> <w>filius</w> <w>Sesganlonis</w>, <w>Hugo</w> <w>tallost</w>; <w>Guillermus</w> <w>marescallus</w> <w>et</w> <w>alii</w> <w>plures</w>. <w>Hec</w> <w>omnia</w> <w>ut</w> <w>firmius</w> <w>roborarantur</w> <w>suo</w> <w>postea</w> <w>auctoramento</w> <w>Francorum</w> <w>rex</w> <w>Henricus</w> <w>firmavit</w>, <w>eo</w> <w>videlicet</w> <w>anno</w> <w>quo</w> <w>filium</w> <w>suum</w> <w>regem</w> <w>fecit</w> <w>ordinari</w> <w>Philippum</w>, <w>paucis</w> <w>ante</w> <w>illam</w> <w>ordinationem</w> <w>diebus</w>. <w>Tunc</w> <w>scilicet</w> <w>quum</w> <w>obsidebat</w> <w lemmaRef="castrum">castrum</w> <w>Theodemerense</w> <w>nuncupatum</w>, <w>in</w> <w>pago</w> <w>Carnoteno</w> <w>noviter</w> <w>a</w> <w>quodam</w> <w>Galzone</w> <w>constructum</w>; <w>cartamque</w> <w>istam</w> <w>proprio</w> <w>ut</w> <w>cernitur</w> <w>sigillo</w> <w>munivit</w> <w>Testibus</w> <w>si</w> <w>et</w> <w>hinc</w> <w>adhibendi</w> <w>sunt</w> <w>istis</w>, <w>quorum</w> <w>hec</w> <w>sunt</w> <w>nomina</w>: <w>Tetbaldus</w> <w lemmaRef="comes">comes</w> <w>Yuo</w> <w>de</w> <w>curbavilla</w>. <w>Sirogus</w> <w>filius</w> <w>ejus</w>, <w>et</w> <w>plures</w> <w>alii</w>. <w>Anno</w> <w>ab</w> <w>incarnatione</w> <w>domini</w> <w>millesimo</w> <w>sexagesimo</w> <w>quarto</w>, <w>mense</w> <w>januario</w>, <w>VII</w><seg type="superscript "><w>o</w></seg> <w>kalendas</w> <w>februarii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

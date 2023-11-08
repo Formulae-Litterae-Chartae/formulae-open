@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 208</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">413 – 414 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0208">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte rapportant comment l’abbé Wibald consentit que Winand de Limbourg, dit de Latour, mort subitement après avoir encouru l’excommunication, reçût la sépulture chrétienne dans le cimetière de Baelen.</p>
+         </div>
+         <dateline>1148 [avant le 14 août ?]<date notBefore="1148-01-01" notAfter="1148-08-14"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0208.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Anno</w> <w>dominice</w> <w>incarnationis</w> <w>MC</w> <w>XL</w> <w>VIII</w>. <w>Winandus</w> <w>de</w> <w>Lemburch</w> <w>qui</w> <w>dicebatur</w> <w>de</w> <w>Turri</w> <w>cum</w> <w>suis</w> <w>complicibus</w> <w>Stabulensem</w> <w>ecclesiam</w> <w>multis</w> <w>rapinis</w> <w>et</w> <w>predis</w> <w>molestaverat</w>, <w>super</w> <w>quo</w> <w>a</w> <w>domno</w> <w>Wibaldo</w> <w>abbate</w> <w>post</w> <w>canonicam</w> <w>ad</w> <w>satisfaciendum</w> <w>evocationem</w> <w>anathematis</w> <w>vinculo</w> <w>innodatus</w> <w>erat</w>. <w>Ordinante</w> <w>interim</w> <w>divina</w> <w lemmaRef="clementia">clementia</w> <w>et</w> <w>multiplices</w> <w>casus</w> <w>Stabulensis</w> <w>ecclesie</w> <w>miserante</w>, <w>subito</w> <w>idem</w> <w>Winandus</w> <w>decessit</w>, <w>nec</w> <w>usquam</w> <w>in</w> <w>omni</w> <w>Leodiensi</w> <w>episcopatu</w>, <w>metu</w> <w>ejusdem</w> <w>domni</w> <w>abbatis</w> <w>et</w> <w>excommunicationis</w>, <w>Christiano</w> <w>more</w> <w>sepeliri</w> <w>potuit</w>, <w>sed</w> <w>ad</w> <w>omnium</w> <w>infidelium</w> <w>superstitum</w> <w>terrorem</w> <w>et</w> <w>ad</w> <w>domni</w> <w>abbatis</w> <w>cujus</w> <w>industria</w> <w>hoc</w> <w>effecerat</w> <w>vel</w> <w>ecclesie</w> <w>perpetuum</w> <w>munimentum</w> <w>et</w> <w>honorem</w>, <w>Bailus</w> <w>que</w> <w>juxta</w> <w>Lemburch</w> <w>est</w> <w>extra</w> <w>muros</w> <w>cimiterii</w> <w>sepultus</w> <w>est</w>. <w>Cum</w> <w>tamen</w> <w>idem</w> <w>Winandus</w> <w>consanguineus</w> <w>domni</w> <w>Heinrici</w> <w>tunc</w> <w>Leodiensis</w> <w>pontificis</w> <w>esset</w>, <w>vel</w> <w>quia</w> <w>magnus</w> <w>erat</w>, <w>sui</w> <w>sic</w> <w>eum</w> <w>decessisse</w> <w>non</w> <w>mediocriter</w> <w>dolentes</w>, <w>cum</w> <w>magna</w> <w>humilitatis</w> <w>instantia</w>, <w>assumtis</w> <w>secum</w> <w>duobus</w> <w>nobilibus</w> <w>dominis</w> <w>suis</w>, <w>Heinrico</w> <w>de</w> <w>Rupe</w> <w>et</w> <w>Heinrico</w> <w>de</w> <w>Lemburch</w>, <w>quorum</w> <w>alter</w>, <w>id</w> <w>est</w> <w>de</w> <w>Rupe</w>, <w>advocatus</w> <w>ecclesie</w> <w>nostre</w> <w>erat</w> <w>et</w> <w>alterius</w> <w>Heinrici</w> <w>amite</w> <w>filius</w>, <w>domnum</w> <w>abbatem</w> <w>et</w> <w>ecclesiam</w> <w>adeunt</w> <w>et</w> <w>ut</w>, <w>recepta</w> <w>compositione</w> <w>damnorum</w>, <w>mortuum</w> <w>suum</w> <w>christiana</w> <w>sepultura</w> <w>non</w> <w>privarent</w>, <w>suppliciter</w> <w>exorabant</w>. <w>Post</w> <w>multimodas</w> <w>igitur</w> <w>supplicationes</w>, <w>summa</w> <w>oblatorum</w> <w>ad</w> <w>c</w> <w>marchas</w> <w>supputata</w> <w>est</w>, <w>quam</w> <w>summam</w> <w>duo</w> <w>predicti</w> <w>nobiles</w> <w>domno</w> <w>abbati</w> <w>cum</w> <w>suis</w> <w>quos</w> <w>postea</w> <w>notabimus</w> <w>se</w> <w>daturos</w> <w>vel</w> <w>deservituros</w> <w>promiserunt</w>. <w>Juraverunt</w> <w>preterea</w> <w>duo</w> <w>dicti</w> <w>nobiles</w>, <w>quod</w> <w>numquam</w> <w>deinceps</w> <w>per</w> <w>se</w> <w>vel</w> <w>per</w> <w>summissam</w> <w>personam</w> <w>in</w> <w>fundis</w> <w>vel</w> <w>possessionibus</w> <w>vel</w> <w>libertate</w> <w>sua</w> <w>Stabulensem</w> <w>ecclesiam</w> <w>molestarent</w> <w>vel</w> <w>inquietarent</w>. <w>Juraverunt</w> <w>idem</w> <w>quidam</w> <w>de</w> <w lemmaRef="familia">familia</w> <w>utrorumque</w>, <w>et</w> <w>preterea</w> <w>hommagium</w> <w>domno</w> <w>abbati</w> <w>Wibaldo</w> <w>fecerunt</w>, <w>et</w> <w>fidelitatem</w> <w>domno</w> <w>abbati</w> <w>et</w> <w>ecclesie</w> <w>juraverunt</w>, <w>quod</w> <w>deinceps</w> <w>in</w> <w>fundis</w> <w>vel</w> <w>possessionibus</w> <w>ejusdem</w> <w>ecclesie</w> <w>et</w> <w>familiam</w> <w>ubicumque</w> <w>locorum</w> <w>liberam</w> <w>et</w> <w>intactam</w> <w>ab</w> <w>omni</w> <w>injusta</w> <w>et</w> <w>indebita</w> <w>venatione</w> <w>conservarent</w>; <w>quod</w> <w>si</w> <w>qui</w> <w>eorum</w> <w>hanc</w> <w>sponsionem</w> <w>temerarie</w> <w>violarent</w>, <w>juraverunt</w> <w>sepedicti</w> <w>duo</w> <w>nobiles</w> <w>Heinricus</w> <w>de</w> <w>Lemburch</w> <w>et</w> <w>Heinricus</w> <w>de</w> <w>Rupe</w> <w>a</w> <w>castellis</w> <w>et</w> <w>possessionibus</w> <w>suis</w> <w lemmaRef="alienare">alienare</w> <w>et</w> <w>exturbare</w>, <w>donec</w> <w>ablata</w> <w>es</w> <w>integro</w> <w>restituerent</w> <w>et</w> <w>de</w> <w>injuria</w> <w>domno</w> <w>abbati</w> <w>et</w> <w>ecclesie</w> <w>congrue</w> <w>satisfacerent</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

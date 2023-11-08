@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de Marmoutier pour le Vendômois. Appendix (Ed. de Trémault), Lancé Nr. 70</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de Marmoutier pour le Vendômois (Ed. de Trémault)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de Marmoutier pour le Vendômois</title>
+                  <editor>M. de Trémault</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1893" n="originalAusgabe">1893</date>
+                     <biblScope unit="pp">389-390</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de Marmoutier pour le Vendômois, welches 1893 von M. de Trémault herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_vendomois_appendix.trémault0070">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Geoffroi de Vendôme fait savoir que Jacquelin de Chasset, après avoir mèchamment saisi une terre sise aux Bordes, que ses prèdècesseurs avaient donnèe aux religieux de Marmoutier, l’a partagèe avec eux.</p>
+         </div>
+         <dateline>Um 1200<date notBefore="1170-01-01" notAfter="1240-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_vendomois_appendix.trémault0070.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><seg type="foreign-text">PARTAGE DE LA TERRE DES BORDES</seg></head>
+               <p xml:space="preserve"><w lemma="ego" n="ego">Ego</w> <w lemma="personenname" n="personenname">Gaufredus</w> <w lemma="ortsname" n="ortsname">vindocinenis</w> <w lemma="notus" n="notus/noscere/nosco">notum</w> <w lemma="facere" n="facere/facio">facio</w> ..... <w lemma="quod" n="quod/qui">quod</w> <w lemma="antiquus" n="antiquus">antiqui</w> <w lemma="praedecessor" n="praedecessor">predecessores</w> <w lemma="personenname" n="personenname">Jacquelini</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Chassett</w> <w lemma="dare" n="dare/do">dederunt</w> <w lemma="beatus" n="beatus">Beato</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martino</w> <w lemma="medietas" n="medietas">medietatem</w> <w lemma="terra" n="terra">terre</w> <w lemma="circa" n="circa">circa</w> <w lemma="ortsname" n="ortsname">Bordas</w> <w lemma="situs" n="situs/sinere/sino">sitam</w> ..... <w lemma="personenname" n="personenname">Jacquelinus</w> <w lemma="pravus" n="pravus">pravo</w> <w lemma="consilium" n="consilium" lemmaRef="consilium">consilio</w> <w lemma="saisire" n="saisire/saisio">saisivit</w>, <w lemma="tandem" n="tandem">tamdem</w> <w lemma="partitus" n="partitus/partiri/partior">partita</w> <w lemma="esse" n="esse/sum">est</w> ...... <w lemma="sigillum" n="sigillum">sigillo</w> <w lemma="meus" n="meus">meo</w> .... <w lemma="testis" n="testis">Testes</w>: <w lemma="personenname" n="personenname">Hugo</w> <w lemma="prior" n="prior">prior</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Lanceio</w> – <w lemma="personenname" n="personenname" lemmaRef="pagus">Paganus</w> <w lemma="prior" n="prior">prior</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Pereio</w> ... <w lemma="de" n="de">De</w> <w lemma="laicus" n="laicus">laicis</w>: <w lemma="personenname" n="personenname">Rainaldus</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Insula</w> – <w lemma="personenname" n="personenname">Gaufredus</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Pereio</w> – <w lemma="personenname" n="personenname">Odo</w> <w lemma="frater" n="frater" lemmaRef="frater">frater</w> <w lemma="is" n="is">eius</w> – <w lemma="personenname" n="personenname">Philippus</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Quarterio</w> .... <w lemma="et" n="et">et</w> <w lemma="alius" n="alius">alii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

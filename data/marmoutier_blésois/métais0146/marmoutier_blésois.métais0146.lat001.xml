@@ -1,0 +1,94 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 146</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">138-139</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0146">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Adèle, religieuse à Marcigny, écrit à l´évêque de Chartres, et à son fils Thibaud, comte de Blois, pour les prier de conserver aux moines de MM. la dîme de Francheville, qu’elle leur avait donnée, contre les chanoines de Saint-Calais</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Morée</p>
+         </div>
+         <dateline>1122-1137<date notBefore="1122-01-01" notAfter="1137-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0146.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>DECIMA</w> <w>QUAM</w> <w>CANONICI</w> <w>SANCTI</w> <w>KARILELFI</w> <w>CALOMPNIABANTUR</w> <w>APUD</w> <w>FRANCAM</w> <w>UILLAM</w> — <w>MOREIAS</w> — <w>CARNOTENSIS</w>»</head>
+               <p xml:space="preserve"><w>Reuerendissimo</w> <w>domino</w> <w>et</w> <w>patri</w> <w>G</w>. <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Carnotensi</w> <w>episcopo</w> <w>ac</w> <w>Sancte</w> <w>R</w>. <w>Ecclesie</w> <w>legato</w>, <w>A</w>. <w>marciniacensis</w> <w>monacha</w> <w>comitis</w> <w>Teobaldi</w> <w>mater</w>, <w>fideliam</w> <w>munus</w> <w>orationis</w>. <w>Peruenit</w> <w>ad</w> <w>nos</w> <w>quod</w> <w>canonici</w> <w>sancti</w> <w>Karilelfi</w> <w>decimam</w> <w>de</w> <w>dono</w> <w>elemosine</w> <w>de</w> <w>Franca</w> <w>uilla</w>, <w>quam</w> <w>uenerabilis</w> <w>Stephanus</w>, <w lemmaRef="comes">comes</w> <w>socius</w> <w>noster</w> <w>et</w> <w>ego</w> <w>maioris</w> <w>monasterii</w> <w>monachis</w> <w>dedimus</w> <w>calumpniauerant</w>, <w>et</w> <w>ideo</w> <w>nouerit</w> <w>uestra</w> <w>paternitas</w> <w>hanc</w> <w>calumpniam</w> <w>in</w> <w>presentia</w> <w>nostra</w>, <w>cum</w> <w>adhuc</w> <w>in</w> <w>seculo</w> <w>agerem</w>, <w>sic</w> <w>uentilatam</w> <w>et</w> <w>omnino</w> <w>definitam</w> <w>esse</w>, <w>ut</w> <w>nullatenus</w> <w>super</w> <w>hoc</w> <w>prefati</w> <w>monachi</w> <w>inquietari</w> <w>debeant</w>. <w>Quapropter</w> <w>[quippe</w> <w>quia]</w> <w>canonici</w> <w>illi</w> <w>nobis</w>, <w>coram</w> <w>positis</w> <w>pluribus</w> <w>legitimis</w> <w>testibus</w>, <w>hanc</w> <w>querelam</w> <w>monachis</w> <w>prorsus</w> <w>quiete</w> <w>dimiserunt</w>. <w>Quocirca</w> <w>uestre</w> <w>sanctitatis</w> <w>paternitatem</w> <w>exoro</w> <w>ne</w> <w>super</w> <w>hoc</w> <w>iam</w> <w>dictos</w> <w>maioris</w> <w>monasterii</w> <w>momachos</w> <w>ulterius</w> <w>ullo</w> <w>modo</w> <w>fatigari</w> <w>permittatis</w>. <w>Vale</w>. </p>
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Karissimo</w> <w>filio</w> <w>suo</w> <w>Tetbaldo</w> <w>blesensi</w> <w>comiti</w> <w>A</w>. <w>marciniacensis</w> <w>monacha</w> <w>materne</w> <w>dilectionis</w> <w>affectum</w>. <w>Memor</w> <w>sum</w> <w>quidem</w>, <w>fili</w> <w>karissime</w>, <w>quod</w> <w>cum</w> <w>adhuc</w> <w>in</w> <w>seculari</w> <w>habitu</w> <w>degerem</w> <w>canonicos</w> <w>sancti</w> <w>Karilelfi</w>, <w>de</w> <w>decima</w> <w>super</w> <w>dono</w> <w>elemosine</w> <w>de</w> <w>Franca</w> <w>uilla</w>, <w>quam</w> <w>socius</w> <w>noster</w> <w lemmaRef="comes">comes</w> <w>Stephanus</w> <w lemmaRef="pater">pater</w> <w>tuus</w> <w>et</w> <w>ego</w> <w>maioris</w> <w>monasterii</w> <w>monachis</w> <w>dedimus</w>, <w>conquestos</w> <w>fuisse</w>. <w>Super</w> <w>quo</w> <w>nouerit</w> <w>dilectio</w> <w>tua</w> <w>quod</w> <w>idem</w> <w>canonici</w> <w>hanc</w> <w>querelam</w> <w>in</w> <w>presentia</w> <w>nostra</w> <w>jam</w> <w>dictis</w> <w>monachis</w> <w>ita</w> <w>prius</w> <w>annuerant</w>, <w>[dimiserunt]</w>, <w>ut</w> <w>eadem</w> <w>querimonia</w> <w>deinceps</w> <w>sine</w> <w>reclamatione</w> <w>perpetuo</w> <w>sopiretur</w>. <w>Quapropter</w> <w>[eapropter]</w> <w>te</w>, <w>dilectissime</w> <w>fili</w>, <w>exoro</w> <w>ut</w> <w>elemosinam</w> <w>nostram</w> <w>quam</w> <w>libere</w> <w>monachis</w> <w>dedimus</w>, <w>sic</w> <w>illis</w> <w>libere</w> <w>custodias</w>, <w>ne</w> <w>ulterius</w> <w>aliqua</w> <w>controuersia</w> <w>super</w> <w>hoc</w> <w>ecclesia</w> <w>maioris</w> <w>monasterii</w> <w>fatigetur</w>. <w>Vale</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

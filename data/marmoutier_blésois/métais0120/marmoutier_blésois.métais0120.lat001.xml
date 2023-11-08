@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 120</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">119</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0120">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pierre Barbe, de Chaumont, abandonne le droit de Vullage qu’il réclamait sur nos barques.</p>
+         </div>
+         <dateline>1104-1124<date notBefore="1104-01-01" notAfter="1124-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0120.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>VULLAGIO</w> <w>NAVIUM</w> <w>DATO</w> <w>A</w> <w>PETRO</w> <w>BARBA</w> <w>DE</w> <w>CALVOMONTE</w></head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> — <w>quod</w> <w>Petrus</w> <w>Barba</w> <w>de</w> <w>Calvomonte</w>, <w>qui</w> <w>multociens</w> <w>nos</w> <w>monachos</w> <w>majoris</w> <w>monasterii</w> <w>inquietabat</w>, <w>propter</w> <w>vullagium</w> <w>navium</w> <w>nostrarum</w>, <w>perdonavit</w>, <w>et</w> <w>quietum</w> <w>nobis</w> <w>et</w> <w>absolutum</w> <w>in</w> <w>perpetuum</w> <w>concessit</w> <w>illud</w> <w>vullagium</w> <w>de</w> <w>navigiis</w>, <w>et</w> <w>omnibus</w> <w>rebus</w> <w>nostris</w>, <w>que</w> <w>ad</w> <w>majus</w> <w lemmaRef="monasterium">monasterium</w> <w>apportarentur</w>, <w>cujuscumque</w> <w>ministeriales</w> <w>essent</w>. <w>Ad</w> <w>quod</w> <w>confirmandum</w> <w>venit</w> <w>in</w> <w>capitulum</w> <w>nostrum</w> <w>majoris</w> <w>monasterii</w>, <w>una</w> <w>cum</w> <w>frate</w> <w>sua</w> <w>Ernaldo</w>, <w>et</w> <w>filio</w> <w>suo</w> <w>Petro</w> <w>Pagano</w>, <w>qui</w> <w>pro</w> <w>ejusdem</w> <w>doni</w> <w>concessione</w> <w>habuit</w> <w>15</w> <w>libras</w>, <w>X</w> <w>denarios</w>, <w>ibique</w> <w>donum</w> <w>dedit</w> <w>in</w> <w>manu</w> <w>domni</w> <w>Willelmi</w> <w>abbatis</w>. <w>Concessum</w> <w>est</w> <w>etiam</w> <w>ipsi</w> <w>Petro</w>, <w>ut</w> <w>quando</w> <w>peteret</w> <w>a</w> <w>nobis</w> <w>monachatum</w>, <w>reciperemus</w> <w>eum</w>. <w>Testes</w>: <w>Herbertus</w> <w>et</w> <w>Hamelinus</w> <w>cellararius</w>, <w>Odo</w> <w>de</w> <w>Rochetis</w>, <w>Radulfus</w> <w>miles</w> <w>et</w> <w>nepos</w> <w>ejus</w> <w>Gauterius</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

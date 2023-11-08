@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 101</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">105-106</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0101">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Haimeric Gaimard, jeune seigneur de Lavardin affranchit son familier Bertrand, pour le salut de l´âme de son père Salomon, et dépose l’acte de liberté sur son tombeau.</p>
+         </div>
+         <dateline>1101<date notBefore="1101-01-01" notAfter="1101-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0101.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Quisquis</w> <w>sibi</w> <w>a</w> <w>domino</w> <w>nexum</w> <w>peccaminum</w> <w>remitti</w> <w>desiderat</w>, <w>consequens</w> <w>est</w> <w>ut</w> <w>subditorum</w> <w>sibi</w> <w>debite</w> <w>uincula</w> <w>seruitutis</w> <w>absoluat</w>. <w>Quocirca</w> <w>in</w> <w>amore</w> <w>omnipotentis</w> <w>Dei</w>, <w>ego</w> <w>Haimmericus</w>, <w>cognomine</w> <w>Gaimardus</w>, <w>de</w> <w>Lauardino</w> <w>iuuenilis</w> <w lemmaRef="dominus">dominus</w>, <w>assentiente</w> <w>sorore</w> <w>mea</w> <w>Beatrice</w> <w>pro</w> <w>anima</w> <w>patris</w> <w>mei</w> <w>Salomonis</w>, <w>huic</w> <w>famulo</w> <w>meo</w> <w>Bertranno</w> <w>libertatem</w> <w>concedo</w>. <w>Quapropter</w> <w>ubicumque</w> <w>in</w> <w>quatuor</w> <w>mundi</w> <w>partibus</w> <w>uoluerit</w>, <w>ueluti</w> <w>liber</w> <w>et</w> <w>quietus</w> <w>abeat</w>. <w>Si</w> <w>quis</w> <w>autem</w> <w>hanc</w> <w>libertatem</w> <w>quassare</w> <w>uoluerit</w>, <w>iram</w> <w>Dei</w> <w>omnipotentis</w> <w>et</w> <w>beate</w> <w>Marie</w> <w>uirginis</w> <w>omniumque</w> <w>sanctorum</w> <w>incurrat</w>, <w>auri</w> <w>centum</w> <w>libras</w> <w>examinati</w> <w>persoluat</w>, <w>et</w> <w>nullum</w> <w>obtineat</w> <w>effectum</w>. <w>Data</w> <w>est</w> <w>autem</w> <w>hec</w> <w>libertas</w> <w>apud</w> <w>Lauardinum</w>, <w>super</w> <w>defuncti</w> <w>Salomonis</w> <w>tumulum</w>, <w>uiuente</w> <w>Philippo</w> <w>rege</w> <w>francorum</w>, <w>et</w> <w>Gaufrido</w> <w>comite</w> <w>uindocinensi</w> <w>ad</w> <w>Ierusalem</w> <w>abeunte</w>. <w>His</w> <w>uidentibus</w> <w>et</w> <w>audientibus</w>: <w>Salomone</w> <w>de</w> <w>Fractaualle</w>, <w>Paulino</w>, <w>Hugone</w> <w>de</w> <w>Pontiaco</w>, <w>Euurardo</w> <w>et</w> <w>filio</w> <w>eius</w> <w>Giraudo</w>, <w>Ragenaudo</w> <w>Seseptimo</w>. <w>Golando</w> <w>et</w> <w>fratre</w> <w>eius</w> <w>Gaufrido</w>, <w>Pagano</w> <w>de</w> <w>Bessiaco</w>, <w>Petro</w> <w>de</w> <w>Uotluea</w>, <w>Gaufrido</w> <w>de</w> <w>Marriaco</w>, <w>Guillelmo</w> <w>de</w> <w>Buziaco</w>, <w>Gilduino</w>, <w>Hugone</w> <w>nigra</w> <w>boella</w>, <w>Gaufrido</w> <w>de</w> <w>Turniaco</w>, <w>Hainrico</w> <w>de</w> <w>Cergis</w> <w>et</w> <w>fratre</w> <w>eius</w> <w>Hildeberto</w>, <w>Fulcodio</w> <w>et</w> <w>fratre</w> <w>eius</w> <w>Huberto</w>, <w>Caroo</w>, <w>Gaufrido</w> <w>Richerio</w>, <w>Vlgerio</w> <w>sacerdote</w> <w>qui</w> <w>habuit</w> <w>inde</w> <w>quinque</w> <w>solidos</w> <w>de</w> <w>Bertranno</w> <w>propter</w> <w>triginta</w> <w>missas</w> <w>ad</w> <w>anime</w> <w>requiem</w> <w>defuncti</w> <w>Salomonis</w>, <w>Guillelmo</w> <w>sacerdote</w> <w>capellano</w>. <w>Huius</w> <w>uero</w> <w>cartule</w> <w>Arraudo</w> <w>sacerdote</w> <w>scriptore</w>. <w>Adhuc</w> <w>Gibuinus</w>, <w>Gauterius</w>. </p>
+               <p xml:space="preserve">                                                           +       + </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

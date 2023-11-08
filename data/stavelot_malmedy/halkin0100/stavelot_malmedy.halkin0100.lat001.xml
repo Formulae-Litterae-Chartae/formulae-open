@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 100</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">210 – 211 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0100">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Poppon, abbé de Stavelot-Malmedy, obtient de l’abbaye de Saint-Maximin de Trêves, en échange d’Asselborn, les villages de Corswarem et de Winningen, ainsi que des biens à Remagen et ailleurs.</p>
+         </div>
+         <dateline>[1034-1035]<date notBefore="1034-01-01" notAfter="1035-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0100.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>_</w> <w>_</w> <w>_</w> <w>Abbate</w> <w>Johanne</w> <w>abbatiam</w> <w>sancti</w> <w>Maximini</w> <w>regente</w>, <w>quoniam</w> <w>hoc</w> <w>bonum</w> (<w>Coruuarommo</w>) <w>longe</w> <w>a</w> <w>loco</w> <w>aberat</w>, <w>bonum</w> <w>sibi</w> <w>visum</w> <w>est</w> <w>alias</w> <w>commutare</w>, <w>petiitque</w> <w>domnum</w> <w>Popponem</w> <w>tunc</w> <w>temporis</w> <w>monasteriorum</w> <w>Stabulaus</w> <w>et</w> <w>Malmundarii</w> <w>abbatem</w>, <w>ut</w> <w>hoc</w> <w>bonum</w> <w>_</w> <w>_</w> <w>_</w> <w>sibi</w> <w>acciperet</w> <w>et</w> <w lemmaRef="villa">villam</w> <w>Astenebrunno</w> <w>_</w> <w>_</w> <w>_</w> <w>pro</w> <w>hoc</w> <w>bono</w> <w>traderet</w>. <w>_</w> <w>_</w> <w>_</w> <w>Igitur</w> <w>convenientibus</w> <w>ipsis</w> <w>in</w> <w>unum</w>, <w>simul</w> <w>etiam</w> <w>advocato</w> <w>ipsorum</w> <w>locorum</w> <w>comite</w> <w>Heinrico</w> <w>de</w> <w>bono</w> <w>sancti</w> <w>Maximini</w>, <w>Friderico</w> <w>fratre</w> <w>ejus</w> <w>de</w> <w>abbatia</w> <w>sancti</w> <w>Remagli</w>, <w>tradita</w> <w>est</w> <w>predicta</w> <w>Astenebrunno</w> <w>ab</w> <w>advocato</w> <w>Friderico</w>, <w>precepto</w> <w>domni</w> <w>imperatoris</w> <w>atque</w> <w>consensu</w> <w>abbatis</w> <w>Popponis</w>, <w>comiti</w> <w>Heinrico</w> <w>in</w> <w lemmaRef="servitium">servitium</w> <w>sancti</w> <w>Maximini</w> <w>_</w> <w>_</w> <w>_</w> ; <w>itemque</w> <w>traditum</w> <w>est</w> <w>comiti</w> <w>Frederico</w> <w>ab</w> <w>advocato</w> <w>Heinrico</w> <w>in</w> <w lemmaRef="servitium">servitium</w> <w>sancti</w> <w>Petri</w> <w>ad</w> <w>altare</w> <w>Malmundarii</w> <w>quicquid</w> <w>datum</w> <w>fuerat</w> <w>a</w> <w>supradicto</w> <w>imperatore</w> <w>sancto</w> <w>Maximino</w> <w>apud</w> <w>Coruuorommo</w> <w>_</w> <w>_</w> <w>_</w> <w>quod</w> <w>habebat</w> <w>Wendenges</w> <w>_</w> <w>_</w> <w>_</w>, <w>et</w> <w>apud</w> <w>Riumago</w> <w>_</w> <w>_</w> <w>_</w>, <w>quinque</w> <w>partes</w> <w>vinee</w> <w>supra</w> <w>Mosam</w>, <w>_</w> <w>_</w> <w>_</w> <w>familiam</w> <w>quoque</w> <w>ultra</w> <w>Mosam</w>. <w>Facta</w> <w>est</w> <w>itaque</w> <w>hec</w> <w lemmaRef="commutatio">commutatio</w> <w>jussu</w> <w>predicti</w> <w>imperatoris</w> <w>et</w> <w>confirmata</w> <w>legali</w> <w>advocatorum</w> <w>banno</w> <w>et</w> <w>recta</w> <w>traditione</w>, <w>_</w> <w>_</w> <w>_</w> <w>regnante</w> <w>imperatore</w> <w>Cuonrado</w>, <w>ducatum</w> <w>Lothariensis</w> <w>regni</w> <w>duce</w> <w>Gozilone</w> <w>tenente</w>, <w>advocatis</w> <w>locorum</w> <w>predictis</w> <w>comitibus</w> <w>Heinrico</w> <w>sive</w> <w>Friderico</w>, <w>archiepiscopatum</w> <w>Trevirensem</w> <w>gubernante</w> <w>Poppone</w>, <w>Piligrino</w> <w>Coloniensem</w>, <w>Theodorico</w> <w>Metensem</w>, <w>Rainardo</w> <w>Leodicensem</w>. <w>Testes</w> <w>fuerunt</w> : <w lemmaRef="comes">comes</w> <w>Gisilbertus</w> <w>de</w> <w>Salmo</w>, <w>Bouo</w> <w>de</w> <w>Lotauso</w>, <w>Stephanus</w> <w>de</w> <w>Malampreit</w>, <w>Hermannus</w> <w>de</w> <w>Gruosles</w>, <w>Gunzelinus</w>, <w>Arnulfus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

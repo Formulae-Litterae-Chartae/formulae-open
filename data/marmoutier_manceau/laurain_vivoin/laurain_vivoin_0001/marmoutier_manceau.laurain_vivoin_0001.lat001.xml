@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Vivoin, Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">353-354</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_vivoin_0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Transaction sur procès entre Abelin, clerc, et Alard, abbé de la Couture, aux termes de laquelle celui-ci céde au premier des vignes en Saint-Pavin-des-Champs et une maison à Sablé en retour de 50 muids de sel mis en dépôt à la Couture.</p>
+         </div>
+         <dateline>1051-1060<date notBefore="1051-01-01" notAfter="1060-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_vivoin_0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w>Abelinus</w>, <w lemmaRef="clericus">clericus</w>, <w>tempore</w> <w>Adalardi</w> <w>abbatis</w> <w>amicitiam</w> <w>et</w> <w>quamdam</w> <w>fraternitatem</w> <w>cum</w> <w>monachis</w> <w>Sancti</w> <w>Petri</w> <w>de</w> <w>Cultura</w> <w>habens</w>, <w>commisi</w> <w>eis</w> <w>L</w> <w>modios</w> <w>salis</w>, <w>quorum</w> <w>videlicet</w> <w>modiorum</w> <w>singuli</w> <w>tunc</w> <w>temporis</w> <w>decem</w> <w>et</w> <w>octo</w> <w>solidis</w> <w>appreciabantur</w>. <w>Hoc</w> <w>itaque</w> <w>sal</w> <w>dum</w> <w>adhuc</w> <w>penes</w> <w>ipsos</w> <w>esset</w>, <w>propter</w> <w>forsfactum</w> <w>quoddam</w> <w>quod</w> <w>fecerunt</w> <w>contra</w> <w>Gausfredum</w>, <w>filium</w> <w>Alberici</w>, <w>ob</w> <w>terram</w> <w>Suliniaci</w>, <w>perdidi</w> <w>illud</w>. <w>Cum</w> <w>igitur</w> <w>abbati</w> <w>Adalardo</w> <w>et</w> <w>monachis</w> <w>ejus</w> <w>meum</w> <w>sal</w> <w>requisissem</w> <w>illique</w> <w>mihi</w> <w>justitiam</w> <w>denegassent</w>, <w>clamore</w> <w>facto</w> <w>apud</w> <w>comitem</w> <w>Gausfridum</w>, <w>tandem</w> <w>ad</w> <w>concordiam</w> <w>et</w> <w>ad</w> <w>emendationem</w> <w>erga</w> <w>me</w> <w>venerunt</w>. <w>Ergo</w> <w>propter</w> <w>Dei</w> <w>amorem</w> <w>et</w> <w>propter</w> <w>remedium</w> <w>anime</w> <w>patris</w> <w>mei</w>, <w>qui</w> <w>apud</w> <w>ipsos</w> <w>sub</w> <w>monastico</w> <w>ordine</w> <w>a</w> <w>seculo</w> <w>migraverat</w>, <w>accepi</w> <w>ab</w> <w>eis</w> <w>quinque</w> <w>agripennos</w> <w>vinearum</w> <w>et</w> <w>tres</w> <w>quartarios</w> <w>vinearum</w> <w>in</w> <w>terra</w> <w>Isahac</w>, <w>clerici</w>, <w>in</w> <w>monte</w> <w>videlicet</w> <w>Balgiaco</w>, <w>que</w> <w>fuerunt</w> <w>Gualterii</w>, <w>presbyteri</w> <w>de</w> <w>Sancto</w> <w>Germano</w>, <w>quiete</w> <w>ab</w> <w>omni</w> <w>consuetudine</w> <w>preter</w> <w>censum</w> <w>et</w> <w>decimam</w>. <w>Preterea</w> <w>accepi</w> <w>ab</w> <w>eis</w> <w>unam</w> <w>domum</w> <w>in</w> <w>Sablolio</w> <w>castello</w> <w>et</w> <w>quinque</w> <w>modios</w> <w>salis</w> <w>super</w> <w>centum</w> <w>solidos</w>, <w>domum</w> <w>super</w> <w>L</w> <w>atque</w> <w>quinque</w> <w>modios</w> <w>salis</w> <w>super</w> <w>alios</w> <w>quinquaginta</w>. <w>Hoc</w> <w>donum</w> <w>accepi</w> <w>Cinomannis</w> <w>in</w> <w>capitulo</w> <w>Sancti</w> <w>Petri</w> <w>de</w> <w>Cultura</w>, <w>communi</w> <w>consilio</w> <w>Adalardi</w> <w>abbatis</w> <w>omniumque</w> <w>monachorum</w> <w>ejusdem</w> <w>loci</w> <w>mihi</w> <w>meisque</w> <w>heredibus</w> <w>in</w> <w>perpetuum</w>. <w>Donum</w> <w>predicte</w> <w>domus</w> <w>et</w> <w>Cenomannis</w> <w>in</w> <w>capitulo</w> <w>Sancti</w> <w>Petri</w> <w>Culture</w> <w>et</w> <w>postea</w> <w>in</w> <w>capitulo</w> <w>de</w> <w>Solemniis</w> <w>mihi</w> <w>factum</w> <w>fuit</w> <w>atque</w> <w>firmatum</w>, <w>id</w> <w>facientibus</w> <w>atque</w> <w>annuentibus</w> <w>Adalardo</w> <w>abbate</w> <w>et</w> <w>suis</w> <w>monachis</w>, <w>quorum</w> <w>hic</w> <w>subscripta</w> <w>sunt</w> <w>nomina</w>: <w>Ascelinus</w> <w>prior</w>, <w>Petrus</w>, <w>Herlaudus</w>, <w>Girardus</w>, <w>Herveus</w>, <w>Frotgerius</w>, <w>Frotgerius</w> <w lemmaRef="presbyter">presbyter</w>, <w>Balduinus</w>, <w>Johannes</w>, <w>Ivo</w>, <w>Odo</w>, <w>Fredericus</w>, <w>Stephanus</w>, <w>Alricus</w>, <w>Milo</w> <w>conversus</w>, <w>Gislebertus</w>, <w>Richardus</w>, <w>Harduinus</w>, <w>Albericus</w> <w lemmaRef="canonicus">canonicus</w>. <w>Post</w> <w>aliquot</w> <w>tempus</w> <w>ego</w> <w>ipse</w> <w>Abelinus</w> <w>dedi</w> <w>hanc</w> <w>cartam</w> <w>Sancto</w> <w>Martino</w> <w>Majoris</w> <w>monasterii</w> <w>pro</w> <w>anima</w> <w>mea</w> <w>et</w> <w>parentum</w> <w>meorum</w> <w>Gauscelini</w> <w>et</w> <w>Tetberge</w>, <w>fratrisque</w> <w>mei</w> <w>Ebroini</w>, <w>ac</w> <w>filii</w> <w>Ansegisi</w>, <w>ejusdem</w> <w>loci</w> <w>monachi</w>, <w>et</w> <w>posui</w> <w>manu</w> <w>propria</w> <w>super</w> <w>altare</w> <w>ipsius</w>, <w>donum</w> <w>faciens</w> <w>ex</w> <w>omnibus</w> <w>que</w> <w>in</w> <w>ea</w> <w>continentur</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

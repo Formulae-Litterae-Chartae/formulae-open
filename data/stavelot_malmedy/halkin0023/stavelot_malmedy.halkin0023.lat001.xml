@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 23</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">59 – 60 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0023">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">L’abbé Albricus donne au monastère de Stavelot le Wandelaicus mansus en Ardenne, qu’il avait reçu du roi Pépin.</p>
+         </div>
+         <dateline>770 - 779<date notBefore="0770-01-01" notAfter="0779-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0023.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ab</w> <w>antiquis</w> <w>inclitis</w> <w>patribus</w> <w>atque</w> <w>senioribus</w> <w>scimus</w> <w>esse</w> <w>datam</w> <w>licentiam</w> <w>ut</w> <w>unusquisque</w> <w>de</w> <w>rebus</w> <w>quas</w> <w>possidet</w> <w>in</w> <w>hoc</w> <w>seculo</w>, <w>quod</w> <w>vult</w> <w>facere</w>, <w>in</w> <w>suo</w> <w>constat</w> <w>arbitrio</w> <w>faciendi</w> <w>proprio</w>. <w>Igitur</w> <w>ego</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w>Albricus</w> <w>indignus</w> <w lemmaRef="clericus">clericus</w> <w>et</w> <w lemmaRef="abbas">abba</w> <w>trado</w> <w>ad</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Remacli</w> <w>limina</w> <w>in</w> <w>Stabulaus</w> <w lemmaRef="mansus">mansum</w> <w>I</w> <w>qui</w> <w>vocatur</w> <w>Uuandelaicus</w> <w lemmaRef="mansus">mansus</w> <w>quod</w> <w>dedit</w> <w>mihi</w> <w>senior</w> <w>meus</w> <w>Pipinus</w> <w>atque</w> <w>rex</w> <w>in</w> <w>pago</w> <w>Ardenna</w>, <w>interjacens</w> <w>de</w> <w>uno</w> <w>latere</w> <w>fisci</w> <w>ipsius</w> <w>qui</w> <w>vocatur</w> <w>Palatiolus</w> <w>atque</w> <w>Beueris</w> <w>unde</w> <w>est</w> <w>abstractus</w>, <w>et</w> <w>de</w> <w>altero</w> <w>latere</w> <w>Aldemega</w>, <w>muldionibus</w> <w>meis</w> <w>ex</w> <w lemmaRef="villa">villa</w> <w>Graida</w> <w>sub</w> <w>tribulo</w> <w>annuali</w> <w>nullo</w> <w>alio</w> <w>servitio</w> <w>nisi</w> <w>ex</w> <w>denariis</w> <w>X</w> <w>sol</w>. <w>pro</w> <w>remedio</w> <w>anime</w> <w>domini</w> <w>mei</w> <w>supradicti</w> <w>regis</w> <w>atque</w> <w>unaquaque</w> <w>Dominice</w> <w>nativitatis</w>; <w>et</w> <w>si</w> <w>quis</w> <w>in</w> <w>posterum</w> <w>tributum</w> <w>ipsum</w> <w>augeri</w> <w>et</w> <w>aggravare</w> <w>aut</w> <w>aliud</w> <w lemmaRef="servitium">servitium</w> <w>adjungere</w> <w>presumpserit</w>, <w>iram</w> <w>omnipotentis</w> <w>Dei</w> <w>incurrat</w> <w>et</w> <w>a</w> <w>liminibus</w> <w>sanctorum</w> <w>omniumque</w> <w>Dei</w> <w>fidelium</w> <w>extorris</w> <w>habeatur</w>. <w>Hii</w> <w>sunt</w> <w>termini</w> <w>atque</w> <w>confines</w> <w>ipsius</w> <w>mansi</w>: <w>Bezfontana</w>, <w>inde</w> <w>venit</w> <w>ad</w> <w>summum</w> <w>Medolum</w>, <w>inde</w> <w>Rotundum</w> <w>Ilasi</w>, <w>inde</w> <w>ad</w> <w>summum</w> <w>illud</w> <w>Bethushardau</w>, <w>Bulgerceias</w> <w>duas</w> <w>sorores</w>, <w>inde</w> <w>ad</w> <w>illam</w> <w>crucem</w> <w>ad</w> <w>summum</w> <w>Timonem</w>, <w>Frusciaco</w>, <w>Caberliaco</w>, <w>Anseriellas</w>, <w>Hulserolas</w>, <w>Provisiacas</w> <w>usque</w> <w>in</w> <w>Cransinam</w>; <w>inde</w> <w>venit</w> <w>ad</w> <w>fontanam</w> <w>Cancaronis</w> <w>et</w> <w>per</w> <w>ipsam</w> <w>usque</w> <w>in</w> <w>Liceam</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 28</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">72 – 73 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0028">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Martin et Gammon donnent au monastère de Stavelot les trois manses qu‘ils possèdent à Awagne, à la condition de jouir, eux et leurs deux enfants, moyennant un cens annuel, des trois autres manses que leur oncle Oduin a cédés audit monastère.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>825 09 03 <date when="0825-09-03"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0028.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Non</w> <w>solum</w> <w>bonum</w>, <w>sed</w> <w>etiam</w> <w>laudabile</w> <w>videtur</w> <w>esse</w> <w>negotium</w>, <w>quid</w> <w>de</w> <w>transitoria</w> <w>mereatur</w> <w>eterna</w>. <w>Ideoque</w> <w>ego</w> <w>Martinus</w> <w>et</w> <w>Gammo</w> <w>pariter</w>, <w>cogitans</w> <w>de</w> <w>Dei</w> <w lemmaRef="misericordia">misericordia</w>, <w>delegavimus</w> <w>portionem</w> <w>nostram</w> <w>de</w> <w>nostris</w> <w>propriis</w> <w>rebus</w> <w>que</w> <w>nobis</w> <w>paterno</w> <w>jure</w> <w>venerunt</w>, <w>tradere</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>Stabulaus</w>, <w>ubi</w> <w>agyus</w> <w>Remaclus</w> <w>corpore</w> <w>quiescit</w> <w>et</w> <w>Audo</w> <w lemmaRef="abbas">abba</w> <w>preesse</w> <w>videtur</w>, <w>in</w> <w lemmaRef="villa">villa</w> <w>Wauania</w> <w lemmaRef="mansus">mansa</w> <w>III</w>; <w>ea</w> <w>ratione</w>, <w>ut</w> <w>in</w> <w>predicta</w> <w lemmaRef="villa">villa</w> <w>concedatis</w> <w>nobis</w> <w>alia</w> <w>III</w> <w lemmaRef="mansus">mansa</w> <w>que</w> <w>avunculus</w> <w>noster</w> <w>Oduinus</w> <w>dedit</w> <w>ad</w> <w>prefatum</w> <w lemmaRef="monasterium">monasterium</w> <w>tempore</w> <w>vite</w> <w>nostre</w> <w>et</w> <w>infantibus</w> <w>nostris</w> <w>hiis</w> <w>nominibus</w> <w>Gammoni</w> <w>et</w> <w>Athilloni</w>, <w>tantum</w> <w>ut</w> <w>annis</w> <w>singulis</w> <w>in</w> <w>festivitate</w> <w>sancti</w> <w>Remacli</w> <w>solidos</w> <w>VIIII</w> <w>persolvere</w> <w>studeamus</w> <w>ipsasque</w> <w>res</w> <w>licentiam</w> <w>non</w> <w>habeamus</w> <w>in</w> <w>ullo</w> <w>naufragio</w> <w>ponere</w>, <w>sed</w> <w>post</w> <w>nostrum</w> <w>omnium</w> <w>decessum</w> <w>utreque</w> <w>res</w> <w>cum</w> <w>omni</w> <w>melioratione</w> <w>ad</w> <w>proprium</w> <w>revertantur</w> <w>dominum</w>. <w>Quod</w> <w>si</w> <w>de</w> <w>ipso</w> <w>censu</w> <w>negligentes</w> <w>apparuerimus</w>, <w>legibus</w> <w>emendare</w> <w>studebimus</w>. <w>Acta</w> <w>in</w> <w>monasterio</w> <w>Stabulaus</w> <w>publice</w> <w>sub</w> <w>die</w> <w>III</w> <w>non</w>. <w>septemb</w>., <w>anno</w> <w>XII</w> <w>regnante</w> <w>domno</w> <w>Ludouuico</w> <w>imperatore</w>. <w>Sigillum</w> <w>Audonis</w> <w>abbatis</w> <w>qui</w> <w>hanc</w> <w>precariam</w> <w>fieri</w> <w>jussit</w> <w>et</w> <w>manu</w> <w>propria</w> <w>firmavit</w>. <w>Signum</w> <w>Euerardi</w> <w>S</w>. <w>Hilperici</w>. <w>S</w>. <w>Angligeri</w>. <w>S</w>. <w>Bernerici</w>. <w>S</w>. <w>Alberti</w>. <w>Ego</w> <w>Olfridridus</w> <w lemmaRef="notarius">notarius</w> <w>ad</w> <w>vicem</w> <w>domni</w> <w>Audonis</w> <w>abbatis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

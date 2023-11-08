@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 191</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">391 - 392</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0191">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le prévôt Bovon informe l’abbé Wibald qu’il désire d’autant plus son arrivée qu’il est opprimé tant à l’intérieur qu'à l’extérieur.</p>
+         </div>
+         <dateline>[1147, après 8 septembre]<date notBefore="1147-09-08" notAfter="1147-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0191.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Domino</w> <w>suo</w> <w>Wibaldo</w> <w>venerabili</w> <w>Stabulensi</w> <w>abbati</w> <w lemmaRef="frater">frater</w> <w>Bovo</w> <w>quicquid</w> <w>patri</w> <w>filius</w>.</p>
+               <p xml:space="preserve"><w>In</w> <w>magna</w> <w>angustia</w> <w>et</w> <w>inportabili</w> <w>damno</w> <w>post</w> <w>discessum</w> <w>vestrum</w> <w>positi</w>, <w>desiderabiliter</w> <w>vestrum</w> <w>expectamus</w> <w>adventum</w>, <w>quia</w> <w>non</w> <w>solum</w> <w>ab</w> <w>extraneis</w> <w>affligimur</w>, <w>set</w> <w>etiam</w> <w>a</w> <w>nostris</w> <w>inmisericorditer</w> <w>intus</w> <w>et</w> <w>extra</w> <w>opprimimur</w>. <w>In</w> <w>rebus</w> <w>vestris</w> <w>quae</w> <w>circa</w> <w>nos</w> <w>sunt</w>, <w>quantum</w> <w>fideliu</w> <w>spossum</w> <w>elaboro</w>. <w>In</w> <w>prepositura</w> <w>autem</w>, <w>de</w> <w>qua</w> <w>vices</w> <w>vestras</w> <w>ago</w> <w>nichil</w> <w>fructus</w> <w>me</w> <w>agere</w> <w>posse</w> <w>sciatis</w>, <w>quia</w> <w>non</w> <w>solum</w> <w>a</w> <w>Radulfo</w> <w>et</w> <w>Machario</w> <w>in</w> <w>Condustrio</w>, <w>set</w> <w>et</w> <w>a</w> <w>comite</w> <w>Namucensi</w> <w>et</w> <w>suis</w> <w>adversariis</w> <w>in</w> <w>Haspannia</w> <w>preda</w> <w>et</w> <w>incendio</w> <w>vastamur</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

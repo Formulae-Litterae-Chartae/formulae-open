@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 7</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">12-13</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0007">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice dans laquelle les moines de Marmoutier relatent comment ils avaient cessé de recevoir un cens que leur devaient les moines de Saint-Julien, pour terrain sur lequel ceux-ci avaient édifié le chapitre de leur abbaye.</p>
+         </div>
+         <dateline>Vers 1010<date/>
+            <date notBefore="1000-01-01" notAfter="1020-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0007.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>Sanctae</w> <w>Ecclesiae</w> <w>fidelibus</w>, <w>quod</w> <w>[ex]</w> <w>abbatia</w> <w>Sancti</w> <w>Audoeni</w>, <w>quam</w> <w>Burchardus</w>, <w lemmaRef="comes">comes</w>, <w>dedit</w> <w>Sancto</w> <w>Martino</w>, <w>tenebat</w> <w>quidam</w> <w>suus</w> <w>vassalus</w>, <w>Odo</w> <w>nomine</w>, <w>unum</w> <w>arpennum</w> <w>et</w> <w>dimidium</w> <w>de</w> <w>terra</w>, <w>super</w> <w>quem</w> <w>fondamentum</w> <w>est</w> <w>capisterium</w> <w>monasterii</w> <w>Sancti</w> <w>Juliani</w>. <w>Pro</w> <w>qua</w> <w>redebant</w> <w>monachi</w> <w>Sancti</w> <w>Juliani</w> <w>sex</w> <w>denarios</w> <w>de</w> <w>censu</w>, <w>de</w> <w>quo</w> <w>postea</w> <w>censu</w> <w>perdonavit</w> <w>eis</w> <w>ipse</w> <w>Odo</w> <w>pro</w> <w>amore</w> <w>et</w> <w>humili</w> <w>eorum</w> <w>servitio</w>, <w>denarios</w> <w>quatuor</w>, <w>duos</w> <w>vero</w> <w>reliquos</w> <w>pro</w> <w>recognitione</w>, <w>in</w> <w>sua</w> <w>manu</w> <w>retinuit</w>. <w>Post</w> <w>obitum</w> <w>autem</w> <w>illius</w> <w>sine</w> <w>herede</w> <w>defuncti</w>, <w>reversus</w> <w>est</w> <w lemmaRef="census">census</w>, <w>sicut</w> <w>et</w> <w>caetera</w> <w>omnia</w> <w>quae</w> <w>de</w> <w>abbatia</w> <w>tenebat</w>, <w>in</w> <w lemmaRef="dominium">dominium</w> <w>Sancti</w> <w>Martini</w>; <w>quem</w> <w>censum</w> <w>Bernardus</w>, <w>capellanus</w> <w>monachorum</w> <w>Sancti</w> <w>Juliani</w>, <w>reddidit</w> <w>unoquoque</w> <w>anno</w> <w>Herbaldo</w>, <w>majori</w> <w>Sancti</w> <w>Martini</w>. <w>Hoc</w> <w>autem</w> <w>tamdiu</w> <w>factum</w> <w>est</w> <w>donec</w> <w lemmaRef="dominus">domnus</w> <w>Gausbertus</w>, <w lemmaRef="abbas">abbas</w> <w>Sancti</w> <w>Juliani</w>, <w>Majori</w> <w>quoque</w> <w>Monasterio</w> <w>praeesse</w> <w>coepit</w>. <w>Is</w> <w>enim</w> <w>cum</w> <w>utrumque</w> <w>regeret</w> <w lemmaRef="monasterium">monasterium</w>, <w>et</w> <w>hunc</w> <w>censum</w> <w>per</w> <w>singulos</w> <w>videret</w> <w>annos</w> <w>persolvi</w>, <w>Majoris</w> <w>Monasterii</w> <w>fratres</w> <w>multis</w> <w>precibus</w> <w>exoravit</w> <w>ut</w> <w>singulis</w> <w>annis</w> <w>in</w> <w>festo</w> <w>Sancti</w> <w>Juliani</w>, <w>pleno</w> <w>cangio</w> <w>pigmenti</w> <w>et</w> <w>plena</w> <w>corbe</w> <w>canistellorum</w> <w>et</w> <w>oblatarum</w> <w>et</w> <w>nebularum</w> <w>redditis</w>, <w>praedicti</w> <w lemmaRef="census">census</w> <w>cessaret</w> <w>exactio</w>. <w>Et</w> <w>haec</w> <w>quidem</w> <w>redhibitio</w>, <w>sicut</w> <w>ille</w> <w>ordinavit</w>, <w>ita</w> <w>est</w> <w>eo</w> <w>vivente</w> <w>absque</w> <w>contradictione</w> <w>persoluta</w>. <w>Ab</w> <w>illius</w> <w>vero</w> <w>decessu</w>, <w>et</w> <w>consuetudinem</w>, <w>utriusque</w> <w>monasterii</w> <w>ordinatam</w> <w>consensu</w>, <w>et</w> <w>priorem</w> <w>perdidimus</w> <w>censum</w>; <w>et</w> <w>hoc</w> <w>proclamamus</w>. <w>Testium</w> <w>vero</w> <w>nomina</w>, <w>quibus</w> <w>suprascriptus</w> <w>Herbaldus</w>, <w>Sancti</w> <w>Martini</w> <w>major</w>, <w>dum</w> <w>adhuc</w> <w>viveret</w>, <w>suam</w> <w>advocariam</w> <w>dedit</w> <w>ad</w> <w>causam</w> <w>legitime</w> <w>prosequendam</w>, <w>inferius</w> <w>habentur</w> <w>adnotata</w>: <w>Rainaldus</w>, <w>major</w>; <w>Hildebertus</w>, <w>coquus</w>; <w>Robertus</w>, <w>coquus</w>; <w>Andraldus</w>; <w>Christianus</w> <w>de</w> <w>Calva</w> <w>Sorice</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

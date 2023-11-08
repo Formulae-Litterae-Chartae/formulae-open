@@ -1,0 +1,96 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 69</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">92-93</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0069">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice qui relate comment, a la suite d´un jugement de Dieu, le prévot du comte de Montrazon et Archambauld, fils d´Ulger, seigneur en partie de Montbazon, furent déboutés du droit qu´ils prétendaient avoir de s´approprier les essaims d´abeilles dans le lois de Chédon appartenant aux moines de Saint-Julien.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p> Montbazon</p>
+         </div>
+         <dateline>Après 1120<date/>
+            <date notBefore="1120-01-01" notAfter="1130-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0069.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w lemmaRef="pagus">Paganus</w> <w>Burduth</w>, <w lemmaRef="praepositus">praepositus</w> <w>comitis</w> <w>de</w> <w>Montebasone</w>, <w>et</w> <w>Archambaldus</w>, <w>filius</w> <w>Ulgerii</w>, <w lemmaRef="dominus">dominus</w> <w>medietatis</w> <w>ipsius</w> <w>castri</w>, <w>et</w> <w>malorum</w> <w>hominum</w> <w>persuasione</w> <w>et</w>, <w>propria</w> <w>incitati</w> <w>cupiditate</w>, <w>caeperunt</w> <w>calumniam</w> <w>mittere</w> <w>in</w> <w>apes</w> <w>quae</w> <w>inveniri</w> <w>solebant</w> <w>in</w> <w>bosco</w> <w>Sancti</w> <w>Juliani</w> <w>de</w> <w>Chettone</w>. <w>Cum</w> <w>autem</w> <w>et</w> <w>contra</w> <w>justitiam</w> <w>calumniarentur</w> <w>ipsamque</w> <w>calumnian</w> <w>per</w> <w>vim</w> <w>obtinere</w> <w>niterentur</w>, <w>compulsi</w> <w>necessitate</w>, <w>monachi</w> <w>comitem</w> <w>Fulconem</w> <w>Turonus</w> <w>super</w> <w>hoc</w> <w>conveniunt</w>, <w>et</w> <w>ut</w> <w>causam</w> <w>Sancti</w> <w>Juliani</w> <w>legitime</w> <w>diffiniri</w> <w>praeciperet</w> <w>deprecantur</w> <w>et</w> <w>expetunt</w>. <w>Qui</w> <w>ilico</w> <w>praeposito</w> <w>Montisbasonis</w> <w>praecepit</w> <w>Pagano</w>, <w>ut</w>, <w>relicta</w> <w>vi</w> <w>et</w> <w>injustitia</w>, <w>competenti</w> <w>tempore</w> <w>et</w> <w>loco</w>, <w lemmaRef="causa">causa</w> <w>Sancti</w> <w>Juliani</w> <w>legitimo</w> <w>terminaretur</w> <w>judicio</w>. <w>Data</w> <w>igitur</w> <w>die</w>, <w>in</w> <w lemmaRef="curia">curia</w> <w>comitis</w> <w>apud</w> <w>Montembasonem</w>, <w>judicatum</w> <w>est</w> <w>monachis</w> <w>ut</w> <w lemmaRef="homo">homo</w> <w>Sancti</w> <w>Juliani</w> <w>per</w> <w lemmaRef="sacramentum">sacramentum</w>, <w>et</w> <w>per</w> <w>ignitum</w> <w>probaret</w> <w>judicium</w> <w>quod</w> <w>apes</w> <w>illas</w> <w>quas</w> <w lemmaRef="praepositus">praepositus</w> <w>comitis</w> <w>et</w> <w>Archambaldus</w> <w>Ulgerii</w> <w>et</w> <w>Pagani</w> <w>de</w> <w>Mirebel</w> <w>quite</w> <w>habuerant</w>. <w>Ut</w> <w>autem</w> <w>judicii</w> <w>dies</w> <w>venit</w>, <w lemmaRef="homo">homo</w> <w>Sancti</w> <w>Juliani</w>, <w>Gaufridus</w> <w>Tensus</w>, <w lemmaRef="sacramentum">sacramentum</w> <w>juravit</w> <w>et</w> <w>judicium</w> <w>salvus</w> <w>portavit</w>, <w>de</w> <w>quo</w> <w>ut</w> <w>salvus</w> <w>exivit</w> <w>et</w> <w>calumnia</w> <w>ex</w> <w>toto</w> <w>evanuit</w> <w>et</w> <w>rectum</w> <w>Sancti</w> <w>Sancto</w> <w>remansit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

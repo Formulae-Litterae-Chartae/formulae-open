@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">1</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Chrodegang, évêque de Metz, donne à l'abbaye de Gorze, récemment fondée par lui, divers biens à Gorze, Nonsart, Scy, Jouy-aux-Arches, Buxières-lez-Chambley, Cuvry, etc.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Andernach</p>
+         </div>
+         <dateline>745 05 20<date when="0745-05-20"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>SCRIPTUM</w> <w>DONNI</w> <w>GRODEGANGI</w> <w>DE</w> <w>SIEGIO</w> <w>ET</w> <w>DE</w> <w>MULTIS</w> <w>ALIIS</w> <w>LOCIS</w>.</head>
+               <p xml:space="preserve"><w>ln</w> <w>nomine</w> <w>Patris</w>, <w>et</w> <w>Filii</w>, <w>et</w> <w>Spiritus</w> <w>sancti</w>, <w>amen</w>. <w>Ego</w> <w>Chrodegangus</w>, <w>ac</w> <w>si</w> <w>indignus</w> <w>si</w> <w>non</w> <w>opere</w> <w>vel</w> <w>nomine</w>, <w lemmaRef="gratia">gratia</w> <w>Dei</w> <w lemmaRef="episcopus">episcopus</w>, <w>una</w> <w>cum</w> <w>commeatu</w> <w>et</w> <w>voluntate</w> <w>illustris</w> <w>viri</w> <w>Pippini</w>, <w>maioris</w> <w>domus</w>, <w>senioris</w> <w>nostri</w>, <w>et</w> <w>cum</w> <w>consensu</w> <w>omnium</w> <w>parium</w> <w>nostrorum</w>, <w>abbatum</w>, <w>presbiterorum</w>, <w>diaconorum</w>, <w>subdiaconorum</w>, <w>seu</w> <w>hominum</w> <w>Sancti</w> <w>Stephani</w> <w>ecclesie</w> <w>Metensis</w>, <w>vel</w> <w>illorum</w> <w>laicorum</w> <w>bonorum</w> <w>qui</w> <w>ibidem</w> <w>in</w> <w>servitio</w> <w>Sancti</w> <w>Stephani</w> <w>esse</w> <w>videntur</w>, <w>cogitavi</w>, <w>casu</w> <w>humane</w> <w>fragilitatis</w>, <w>qualiter</w> <w>peccata</w> <w>nostra</w>, <w>donante</w> <w>Domino</w>, <w>possimus</w> <w>abluere</w> <w>et</w> <w>ad</w> <w>eterna</w> <w>gaudia</w> <w>pervenire</w>. <w>Idcirco</w> <w>donamus</w> <w>de</w> <w>rebus</w> <w>Sancti</w> <w>Stephani</w> <w>ad</w> <w>illam</w> <w>basilicam</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Stephani</w>, <w>vel</w> <w>ceterorum</w> <w>sanctorum</w>, <w>quam</w> <w>a</w> <w>novo</w> <w>edificavimus</w> <w>in</w> <w>fine</w> <w>Haldiniaca</w>, <w>in</w> <w>pago</w> <w>Scarponinse</w>, <w>ubi</w> <w>Gorzia</w> <w>consurgit</w>, <w>et</w> <w>ad</w> <w>ipsam</w> <w>cellam</w> <w>quam</w> <w>ibidem</w> <w>construximus</w>, <w>et</w> <w>ad</w> <w>opus</w> <w>servorum</w> <w>Dei</w> <w>habitantium</w> <w>ibidem</w>, <w>per</w> <w>hoc</w> <w lemmaRef="testamentum">testamentum</w>, <w>unde</w> <w>illi</w> <w>monachi</w> <w>vel</w> <w>pauperes</w> <w>ibidem</w> <w>victum</w> <w>et</w> <w>vestitum</w>, <w>vel</w> <w>aliam</w> <w>consolationem</w> <w>possiot</w> <w>habere</w>, <w>hoc</w> <w>est</w> <w>quicquid</w> <w>in</w> <w>fine</w> <w>Haldiniaca</w>, <w>ubi</w> <w>ipsam</w> <w>basilicam</w> <w>sancti</w> <w>Petri</w> <w>edificavimus</w>, <w>quicquid</w> <w>comparavimus</w> <w>aut</w> <w>ad</w> <w>nos</w> <w>per</w> <w>venditionem</w>, <w>donationem</w>, <w>commutationem</w> <w>advenit</w>, <w>et</w> <w>quicquid</w> <w>de</w> <w>ipsa</w> <w>fine</w> <w>Haldiniaca</w> <w>in</w> <w>unaquaque</w> <w>parte</w> <w>levas</w> <w>duas</w> <w>comparavimus</w>, <w>aut</w> <w>nobis</w> <w>traditum</w> <w>vel</w> <w>commutatum</w> <w>fuit</w>, <w>vel</w> <w>in</w> <w>antea</w> <w>ibidem</w> <w>comparatum</w>, <w>aut</w> <w>de</w> <w>quolibet</w> <w>iogenio</w> <w>legibus</w> <w>ad</w> <w>nos</w> <w>pervenit</w>, <w>hoc</w> <w>ad</w> <w>ipsam</w> <w>cellam</w> <w>iamdictam</w>, <w>per</w> <w>hoc</w> <w lemmaRef="testamentum">testamentum</w>, <w>pro</w> <w>mercedis</w> <w>nostri</w> <w>augmento</w>, <w>et</w> <w>quicquid</w> <w>in</w> <w>ipso</w> <w>fine</w> <w>Haldiniaco</w> <w>casa</w> <w>Sancti</w> <w>Stephani</w> <w>ibidem</w> <w>habuit</w>, <w>ad</w> <w>ipsam</w> <w>basilicam</w> <w>vel</w> <w>ad</w> <w>illam</w> <w>cellam</w> <w>sancti</w> <w>Petri</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>. <w>Donamus</w> <w>etiam</w> <w>in</w> <w>ipso</w> <w>pago</w> <w>Scarponinse</w>, <w>in</w> <w>loco</w> <w>nuncupato</w> <w>Siurone</w>, <w>quicquid</w> <w>Rigoaldus</w> <w>ad</w> <w>partem</w> <w>Sancti</w> <w>Stephani</w> <w>per</w> <w>suarum</w> <w>strumentum</w> <w>cartarum</w> <w>delegavit</w>, <w>cum</w> <w>illa</w> <w lemmaRef="basilica">basilica</w> <w>que</w> <w>est</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Pauli</w> <w>cnostructa</w>, <w>vel</w> <w>quicquid</w> <w>ad</w> <w>hoc</w> <w>aspicit</w> <w>in</w> <w>Godolino</w> <w lemmaRef="villa">villa</w> <w>et</w> <w>Bodelo</w> <w>curte</w>, <w>vel</w> <w>in</w> <w>fine</w> <w>Haldiniaca</w>, <w>et</w> <w>in</w> <w>fine</w> <w>Baudiciaca</w>, <w>vel</w> <w>in</w> <w>fine</w> <w>Aconiaca</w>, <w>vel</w> <w>quicquid</w> <w>in</w> <w>ipsas</w> <w>fines</w> <w>Rigoaldus</w> <w>et</w> <w lemmaRef="germanus">germanus</w> <w>suus</w> <w>Gontrannus</w> <w>ad</w> <w>partem</w> <w>Sancti</w> <w>Stephani</w> <w>per</w> <w>illorum</w> <w>strumenta</w> <w>delegaverunt</w>, <w>et</w> <w>quicquid</w> <w>Bavo</w> <w>in</w> <w>Tantalino</w> <w lemmaRef="villa">villa</w> <w>per</w> <w>suum</w> <w>strumentum</w> <w>ad</w> <w>casam</w> <w>Sancti</w> <w>Stephani</w> <w>delegavit</w>. <w>Donamus</w> <w>etiam</w>, <w>in</w> <w>pago</w> <w>Scarponinse</w>, <w>in</w> <w lemmaRef="villa">villa</w> <w>Bucsarias</w>, <w>quod</w> <w>casa</w> <w>Sancti</w> <w>Stephani</w> <w>legibus</w> <w>ibidem</w> <w>habere</w> <w>videtur</w>, <w>vel</w> <w>in</w> <w>illas</w> <w>fines</w>, <w>sicut</w> <w>iam</w> <w>dictum</w> <w>est</w>, <w>quod</w> <w>boni</w> <w>homines</w>, <w>per</w> <w>illorum</w> <w>strumenta</w>, <w>ad</w> <w>casam</w> <w>Sancti</w> <w>Stephani</w> <w>delegaverunt</w>. <w>Donamus</w> <w>etiam</w>, <w>in</w> <w>ipso</w> <w>pago</w> <w>Scarponinse</w>, <w lemmaRef="villa">villam</w> <w>Sancti</w> <w>Stephani</w> <w>cuius</w> <w>vocabulum</w> <w>est</w> <w>Pinna</w>, <w>cum</w> <w>mansis</w>, <w>curtilis</w>, <w>ortilis</w>, <w>domibus</w>, <w>edificiis</w>, <w>terris</w>, <w>campis</w>, <w>pratis</w>, <w>vineis</w>, <w>silvis</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>aquis</w> <w>aquarumve</w> <w>discursibus</w>, <w>mancipiis</w>, <w>litis</w>, <w>acolabus</w> <w>vel</w> <w>epistolariis</w>, <w>peculiis</w> <w>utriusque</w> <w>generis</w> <w>sexus</w>, <w>mobilibus</w> <w>vel</w> <w>immobilibus</w>, <w>vel</w> <w>quicquid</w> <w>ibidem</w> <w>per</w> <w>venditionem</w>, <w>donationem</w>, <w>commutationem</w>, <w>pervenit</w> <w>ad</w> <w>ipsam</w> <w>casam</w> <w>sancti</w> <w>Petri</w> <w>vel</w> <w>ad</w> <w>ipsam</w> <w>cellam</w>, <w>cum</w> <w>Dei</w> <w>adiutorio</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>. <w>Donamus</w> <w>ad</w> <w>Novum</w> <w>sartum</w> <w>medietatem</w> <w>de</w> <w>illa</w> <w>silva</w>, <w>ubi</w> <w>illi</w> <w>fratres</w> <w>vel</w> <w>illorum</w> <w>homines</w> <w>ad</w> <w>ipsam</w> <w>casam</w> <w>sancti</w> <w>Petri</w> <w>madramen</w> <w>possint</w> <w>facere</w>. <w>Donamus</w> <w>etiam</w> <w>illas</w> <w>res</w> <w>Sancti</w> <w>Remigii</w>, <w>cum</w> <w>ipsa</w> <w lemmaRef="basilica">basilica</w> <w>in</w> <w>Sigeio</w> <w>constructa</w>, <w>vel</w> <w>quicquid</w> <w>ad</w> <w>hoc</w> <w>aspicit</w>, <w>vel</w> <w>quod</w> <w>usque</w> <w>nunc</w> <w>Adventius</w> <w>per</w> <w lemmaRef="beneficium">beneficium</w> <w>tenuit</w> <w>Sancti</w> <w>Stephani</w>. <w>Donamus</w> <w>etiam</w> <w>in</w> <w>ipso</w> <w>Sigeio</w> <w>vineas</w> <w>quatuor</w> <w>cum</w> <w>vinitoribus</w>, <w>et</w> <w>illorum</w> <w>mulieres</w>, <w>et</w> <w>illorum</w> <w>mansos</w>, <w>et</w> <w>illorum</w> <w>sortes</w>. <w>Hec</w> <w>sunt</w> <w>nomina</w> <w>eorum</w>: <w>Harduinus</w>, <w>vinitor</w>; <w>uxor</w> <w>sua</w> <w>epistolaria</w>; <w>Erlofridus</w>, <w>vinitor</w>; <w>uxor</w> <w>sua</w> <w>Raganlindis</w>; <w>Erlulfus</w>, <w>vinitor</w>; <w>uxor</w> <w>epistolaria</w>; <w>Wandelbertus</w>, <w>vinitor</w>; <w>uxor</w> <w>sua</w> <w>epistolaria</w>. <w>ln</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>donamus</w> <w>ancillas</w> <w>his</w> <w>nominibus</w>: <w>Amelbergane</w> <w lemmaRef="ancilla">ancilla</w>, <w>Rigobertane</w> <w lemmaRef="ancilla">ancilla</w>, <w>Eminane</w> <w lemmaRef="ancilla">ancilla</w>, <w>et</w> <w>illam</w> <w>decimam</w> <w>de</w> <w>illis</w> <w>vineis</w> <w>dominicatis</w>, <w>taro</w> <w>de</w> <w>vino</w> <w>quam</w> <w>de</w> <w>annona</w>, <w>aut</w> <w>aliunde</w>. <w>Donamus</w> <w>etiam</w> <w>ad</w> <w lemmaRef="castellum">Castellum</w> <w>vineas</w> <w>tres</w> <w>euro</w> <w>vinitoribus</w>, <w>et</w> <w>illorum</w> <w>uxores</w>, <w>et</w> <w>illorum</w> <w>mansos</w> <w>vel</w> <w>illorum</w> <w>sortes</w>. <w>Hec</w> <w>sunt</w> <w>nomina</w> <w>eorum</w> : <w>Adelfridus</w>, <w>vinitor</w>; <w>uxor</w> <w>sua</w> <w lemmaRef="ancilla">ancilla</w>, <w>nomine</w> <w>Gaucia</w>; <w>Anglifridus</w>, <w>vinitor</w>, <w>euro</w> <w>uxore</w> <w>sua</w>; <w>item</w> <w>Adelfridus</w> <w>cum</w> <w>uxore</w> <w>sua</w>, <w>Wandelbergane</w> <w lemmaRef="ancilla">ancilla</w>, <w>et</w> <w lemmaRef="germana">germana</w> <w lemmaRef="ancilla">ancilla</w>. <w>Donamus</w> <w>etiam</w> <w>ad</w> <w>Gaudiacum</w> <w>illud</w> <w>oratorium</w> <w>quod</w> <w>est</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Andree</w> <w>constructum</w>, <w>vel</w> <w>quicquid</w> <w>ad</w> <w>hoc</w> <w>pertinet</w>, <w>vel</w> <w>quod</w> <w>Teudoinus</w> <w>per</w> <w lemmaRef="beneficium">beneficium</w> <w>Sancti</w> <w>Stephani</w> <w>ibidem</w> <w>tenuit</w>. <w>Donamus</w> <w>etiam</w> <w>ad</w> <w>Cuberacum</w> <w>illam</w> <w>basilicam</w> <w>que</w> <w>est</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Martini</w> <w>constructa</w>, <w>quod</w> <w>Candidianus</w> <w lemmaRef="cancellarius">cancellarius</w> <w>per</w> <w lemmaRef="beneficium">beneficium</w> <w>tenuit</w>, <w>vel</w> <w>quicquid</w> <w>ad</w> <w>ipsam</w> <w>basilicam</w> <w>aspicit</w>, <w>ad</w> <w>ipsam</w> <w>casam</w> <w>sancti</w> <w>Petri</w>, <w>et</w> <w>ad</w> <w>illos</w> <w>fratres</w> <w>vel</w> <w>monachos</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>; <w>et</w> <w>illa</w> <w>decima</w> <w>de</w> <w>prunido</w>, <w>de</w> <w>annona</w>, <w>de</w> <w>feno</w>, <w>de</w> <w>vaccis</w>, <w>de</w> <w>porcis</w>, <w>de</w> <w>vervecibus</w>, <w>vel</w> <w>de</w> <w>iumentis</w>, <w>vel</w> <w>aliunde</w>, <w>ad</w> <w>ipsam</w> <w>casam</w> <w>iamdictam</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>. <w>Donamus</w> <w>etiam</w> <w>illam</w> <w>decimam</w> <w>de</w> <w>Miliriaco</w>, <w>de</w> <w>illo</w> <w>vino</w> <w>quod</w> <w>ibidem</w> <w>annis</w> <w>singulis</w> <w>collectum</w> <w>erit</w>. <w>Donamus</w> <w>etiam</w> <w>supra</w> <w>Musellam</w> <w lemmaRef="villa">villam</w> <w>Cluserado</w> <w>cum</w> <w>illo</w> <w>villacerlo</w> <w>qui</w> <w>dicitur</w> <w>Riviniacus</w>, <w>cum</w> <w>mansis</w>, <w>curtilis</w>, <w>ortilis</w>, <w>domibus</w>, <w>edificiis</w>, <w>terris</w>, <w>campis</w>, <w>pratis</w>, <w>vineis</w>, <w>silvis</w>, <w>cultis</w> <w>et</w> <w>incultis</w>, <w>aquis</w> <w>aquarumve</w> <w>discursibus</w>, <w>mancipiis</w>, <w>litis</w>, <w>accolabus</w>, <w>epistolariis</w>, <w>peculiis</w> <w>utriusque</w> <w>generis</w> <w>sexus</w>, <w>mobilibus</w> <w>et</w> <w>immobilibus</w>; <w>vel</w> <w>quicquid</w> <w>in</w> <w>ipsa</w> <w>fine</w> <w>casa</w> <w>Sancti</w> <w>Stephani</w> <w>habere</w> <w>videtur</w>, <w>ad</w> <w>ipsam</w> <w>casam</w> <w>sancti</w> <w>Petri</w>, <w>vel</w> <w>ad</w> <w>ipsam</w> <w>cellam</w>, <w>sicut</w> <w>superius</w> <w>dictum</w> <w>est</w>, <w>ad</w> <w>ipsos</w> <w>monachos</w> <w>vel</w> <w>ad</w> <w>ipsos</w> <w>fratres</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>. <w>Donamus</w> <w>etiam</w> <w>illam</w> <w>decimam</w> <w>de</w> <w>illo</w> <w>vino</w> <w>de</w> <w>Bredraculo</w>, <w>totam</w>, <w>annis</w> <w>singulis</w>. <w>Hec</w> <w>omnia</w> <w>superius</w> <w>intimata</w> <w>ad</w> <w>ipsam</w> <w>Gorziam</w>, <w>vel</w> <w>ad</w> <w>illos</w> <w>monacos</w> <w>et</w> <w>pauperes</w> <w>ibidem</w> <w>elemosinam</w> <w>sperantes</w>, <w>omni</w> <w>tempore</w> <w>proficiat</w> <w>in</w> <w>augmentum</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>ex</w> <w>successoribus</w> <w>vel</w> <w>fratribus</w> <w>meis</w> <w>predicti</w> <w>cleri</w> <w>Metensis</w>, <w>seu</w> <w>quelibet</w> <w>persona</w>, <w>contra</w> <w>huius</w> <w>testamenti</w> <w>mei</w> <w>paginolam</w> <w>venire</w> <w>temptaverit</w>, <w>aut</w> <w>aliquid</w> <w>exinde</w> <w>facere</w> <w>voluerit</w>, <w>absque</w> <w>mea</w> <w>voluntate</w> <w>minuere</w> <w>conatus</w> <w>fuerit</w>, <w>aut</w> <w>devotionem</w> <w>meam</w> <w>in</w> <w>omnibus</w> <w>adimplere</w> <w>noluerit</w>, <w>vel</w> <w>sacramenta</w> <w>supra</w> <w>intimata</w> <w>observare</w> <w>contempserit</w>, <w>dum</w> <w>maledicere</w> <w>quemquam</w> <w>nolo</w>, <w>nichilominus</w> <w>noverit</w> <w>se</w> <w>in</w> <w>tremendum</w> <w>diem</w> <w>iuditii</w>, <w>ante</w> <w>tribunal</w> <w>Christi</w>, <w>mecum</w> <w>ex</w> <w>hoc</w> <w>causaturum</w>; <w>et</w> <w>ut</w> <w>omni</w> <w>tempore</w> <w>hec</w> <w>paginola</w> <w>testamenti</w> <w>nostri</w> <w>maneat</w> <w>inconvulsa</w>, <w>manu</w> <w>propria</w> <w>eam</w> <w>roboravi</w>, <w>et</w> <w>fratribus</w> <w>nostris</w>, <w>vel</w> <w>reliquis</w> <w>bonis</w> <w>hominibus</w> <w>qui</w> <w>consentientes</w> <w>fuerunt</w>, <w>affirmandum</w> <w>rogavi</w>. </p>
+               <p xml:space="preserve"><w>Actum</w> <w>apud</w> <w>Andernacum</w>, <w>in</w> <w>palatio</w>, <w>publice</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>DCC°</w> <w>XLV°</w>, <w>indictione</w> <w>XIII2</w>, <w>epacta</w> <w>XIIII2</w>, <w>concurrente</w> <w>IIII°</w>, <w>anno</w> <w>VI°</w> <w>Childerici</w> <w>regis</w>, <w>XX°</w> <w>die</w> <w>mensis</w> <w>maii</w>. </p>
+               <p xml:space="preserve"><w>Sigillum</w> <w>illustris</w> <w>viri</w> <w>Pipini</w>, <w>maioris</w> <w>domus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

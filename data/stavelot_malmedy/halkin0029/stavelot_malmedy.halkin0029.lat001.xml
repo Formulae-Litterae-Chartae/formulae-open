@@ -1,0 +1,87 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 29</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">73 – 75 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0029">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Les empereurs Louis et Lothaire terminent le différend qui s’est élevé entre Albéric, receveur du fisc de Theux, et l’abbé Audon, au sujet des droits d‘usage, de pacage et de pêche dans le bois de « Astanetum ».</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Theux</p>
+         </div>
+         <dateline>827 05 25<date when="0827-05-25"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0029.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>domini</w> <w>Dei</w> <w>et</w> <w>salvatoris</w> <w>nostri</w> <w>Jhesu</w> <w>Christi</w>, <w>Ludouuicus</w> <w>et</w> <w>Lotharius</w> <w>divina</w> <w>ordinante</w> <w>providentia</w> <w>imperatores</w> <w>augusti</w>. <w>Notum</w> <w>esse</w> <w>volumus</w> <w>omnium</w> <w>fidelium</w> <w>nostrorum</w> <w>presentium</w> <w>scilicet</w> <w>et</w> <w>futurorum</w> <w>sagacitati</w>, <w>quia</w> <w>Audo</w>, <w lemmaRef="abbas">abba</w> <w>monasterii</w> <w>cujus</w> <w>vocabulum</w> <w>est</w> <w>Stabulaus</w> <w>et</w> <w>Malmundarium</w>, <w>accedens</w> <w>ad</w> <w>aures</w> <w>clementie</w> <w>nostre</w> <w>expetiit</w> <w>nobis</w> <w>dicens</w> <w>quandam</w> <w>contentionem</w> <w>inter</w> <w>se</w> <w>et</w> <w>Albricum</w> <w>actorem</w> <w>fisci</w> <w>nostri</w> <w>qui</w> <w>Tectis</w> <w>nuncupatur</w> <w>exortam</w> <w>esse</w>, <w>de</w> <w>quadam</w> <w>scilicet</w> <w>silva</w> <w>que</w> <w>in</w> <w>loco</w> <w>nuncupante</w> <w>Astanetum</w> <w>inter</w> <w>duos</w> <w>rivulos</w> <w>Tailernion</w> <w>et</w> <w>Dulnosum</w> <w>esse</w> <w>videtur</w>. <w>Nos</w> <w>quoque</w> <w>hujus</w> <w>contentionis</w> <w>et</w> <w>seditionis</w> <w>qualitatem</w> <w>cognoscere</w> <w>volentes</w>, <w>misimus</w> <w>duos</w> <w>ex</w> <w>fidelibus</w> <w>nostris</w> <w>lastonem</w> <w>videlicet</w> <w>comitem</w> <w>palatii</w> <w>nostri</w> <w>et</w> <w>Wirnitum</w> <w>magistrum</w> <w>parvulorum</w> <w>nostrorum</w>, <w>ut</w> <w>eum</w> <w>locum</w> <w>de</w> <w>qua</w> <w>hujus</w> <w>contentionis</w> <w>intentio</w> <w>agebatur</w> <w>inspicerent</w> <w>et</w> <w>per</w> <w>circummanentes</w> <w>utriusque</w> <w>partis</w> <w>rei</w> <w>veritatem</w> <w>inquirerent</w>; <w>qui</w> <w>reversi</w> <w>renuntiaverunt</w> <w>nobis</w>, <w>quod</w> <w>cummemoratus</w> <w>Audo</w> <w lemmaRef="abbas">abba</w> <w>per</w> <w>priscorum</w> <w>regum</w> <w>Franchorum</w> <w>donationis</w> <w>precepta</w> <w>necnon</w> <w>et</w> <w lemmaRef="familia">familia</w> <w>memorati</w> <w>fisci</w> <w>nostri</w> <w>ac</w> <w>actores</w> <w>ejusdem</w> <w>propter</w> <w>antiquam</w> <w>consuetudinem</w> <w>suas</w> <w>oportunitates</w> <w>et</w> <w>commoditates</w> <w>in</w> <w>eadem</w> <w>silva</w> <w>communiter</w> <w>habere</w> <w>debeant</w>. <w>Has</w> <w>autem</w> <w>oportunitates</w> <w>et</w> <w>commoditates</w>, <w>propter</w> <w>contentiones</w> <w>et</w> <w>discordias</w> <w>ne</w> <w>abhinc</w> <w>in</w> <w>futurum</w> <w>fiant</w>, <w>placuit</w> <w>nobis</w> <w>in</w> <w>hunc</w> <w>modum</w> <w>determinare</w>: <w>id</w> <w>est</w>, <w>ut</w> <w>cum</w> <w>precepta</w> <w>regalia</w> <w>que</w> <w>de</w> <w>memorata</w> <w>silva</w> <w>circa</w> <w>prescriptum</w> <w lemmaRef="monasterium">monasterium</w> <w>a</w> <w>priscis</w> <w>Franchorum</w> <w>regibus</w> <w>facta</w> <w>fuerunt</w>, <w>inviolabilia</w> <w>permaneant</w>, <w>cum</w> <w>utraque</w> <w>pars</w> <w>monasterii</w> <w>videlicet</w> <w>et</w> <w>fisci</w> <w>nostri</w> <w>eandem</w> <w>silvam</w>, <w>in</w> <w>pascuis</w> <w>animalium</w> <w>et</w> <w>porcorum</w> <w>utendis</w> <w>cum</w> <w>in</w> <w>materiaminibus</w> <w>faciendis</w> <w>et</w> <w>piscationibus</w> <w>exercendis</w>, <w>[sine]</w> <w>aliquolibet</w> <w>alterius</w> <w>partis</w> <w>impedimento</w>, <w>dimissa</w> <w>sibi</w> <w>invicem</w> <w>pastionatici</w> <w>solutione</w>, <w>equaliter</w> <w>et</w> <w>communiter</w> <w>habeant</w>, <w>et</w> <w>neutra</w> <w>pars</w> <w>nullatenus</w> <w>memoratam</w> <w>silvam</w> <w>ultra</w> <w>extirpare</w> <w>aut</w> <w>mansioniles</w> <w>in</w> <w>ea</w> <w>facere</w> <w>presumat</w>. <w>Et</w> <w>ut</w> <w>hoc</w> <w>nostre</w> <w>auctoritatis</w> <w>conscriptum</w> <w>verum</w> <w>credatur</w> <w>ac</w> <w>diligentius</w> <w>conservetur</w>, <w>anuli</w> <w>nostri</w> <w>impressione</w> <w>subter</w> <w>eum</w> <w>signari</w> <w>jussimus</w>. </p>
+               <p xml:space="preserve"><w>Ego</w> <w>Hirminmarius</w> <w lemmaRef="notarius">notarius</w> <w>advicem</w> <w>Fridugis</w> <w>recognovi</w>. </p>
+               <p xml:space="preserve"><w>Data</w> <w>VIII</w> <w>kal</w>. <w>junii</w> <w>Christo</w> <w>propitio</w>, <w>anno</w> <w>XIIII°</w> <w>imperii</w> <w>domni</w> <w>Ludouuici</w> <w>et</w> <w>domni</w> <w>Lotharii</w> <w>V</w> <w>piissimi</w> <w>augusti</w>, <w>indictione</w> <w>v</w>. <w>Actum</w> <w>Tectis</w> <w>palatio</w> <w>regio</w>, <w>in</w> <w>Dei</w> <w>nomine</w> <w>feliciter</w>. <w>Amen</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

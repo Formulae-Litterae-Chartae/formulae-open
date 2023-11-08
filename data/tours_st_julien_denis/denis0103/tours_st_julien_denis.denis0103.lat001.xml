@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 103</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">130</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0103">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Lettre par laquelle Henri II, roi d’Angleterre, en sa qualité de sénéchal de France, revendique la garde de l’abbaye de Saint-Julien. </p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Orléans </p>
+         </div>
+         <dateline>1158<date notBefore="1158-01-01" notAfter="1158-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0103.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Henricus</w>, <w>rex</w> <w>Angliae</w> <w>et</w> <w lemmaRef="dux">dux</w> <w>Normanniae</w> <w>et</w> <w>Aquitaniae</w> <w>et</w> <w lemmaRef="comes">comes</w> <w>Andegavensis</w>, <w>omnibus</w> <w>fidelibus</w> <w>suis</w>, <w lemmaRef="in_domino_salutem">salutem</w>. <w>Sciatis</w> <w>quod</w> <w>rex</w> <w>Franciae</w>, <w>in</w> <w>communi</w> <w>audientia</w>, <w>recognovit</w> <w>quod</w> <w>custodia</w> <w>abbatiae</w> <w>Sancti</w> <w>Juliani</w> <w>Turonensis</w> <w>ad</w> <w>me</w> <w>pertinet</w>, <w>ex</w> <w>dignitate</w> <w>dapiferatus</w> <w>mei</w>, <w>unde</w> <w>servire</w> <w>debeo</w> <w>regi</w> <w>Franciae</w>, <w>sicut</w> <w lemmaRef="comes">comes</w> <w>Andegavensis</w>, <w>ita</w> <w>quod</w> <w>archiepiscopus</w> <w>Turonensis</w> <w>nullam</w> <w>habet</w> <w>in</w> <w>ea</w> <w>potestatem</w>, <w>praeter</w> <w>episcopalia</w> <w>sicut</w> <w>in</w> <w>ceteris</w>. <w>His</w> <w>audientibus</w>: <w>Joscio</w>, <w>scilicet</w> <w>tunc</w> <w>Turonensi</w> <w>archiepiscopo</w>; <w>abbate</w> <w>Sancti</w> <w>Evurcii</w>; <w>abbate</w> <w>Sancti</w> <w>Benedicti</w> <w>super</w> <w>Ligerim</w>; <w>Gaufrido</w> <w>et</w> <w>Stephano</w>, <w>capellanis</w>; <w>Richardo</w>, <w>thesaurario</w>; <w>Johanne</w>, <w>camerario</w> <w>Vendocinense</w>; <w>B</w>., <w>fratre</w> <w>regis</w> <w>Franciae</w>; <w>Willelmo</w> <w>Sil</w>.; <w>Ham</w>.; <w>Roberto</w> <w>de</w> <w>Novoburgo</w>; <w>Hugone</w> <w>de</w> <w>Cleeriis</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

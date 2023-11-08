@@ -1,0 +1,42 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>(E)vacuaturia</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021-12-09">2021-12-09</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.evacuaturia.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title">(<w>E</w>)<w>vacuaturia</w></seg>: <seg type="lex-keyword"><w>Ungültigkeitserklärung</w></seg><note><p xml:space="preserve"> <bibl n="Mittellateinisches Wörterbuch bis zum ausgehenden 13. Jahrhundert, 2. verb. und erw. Aufl., München 1959-.">MLW</bibl> III, „evacuaria“, Sp. 1411</p></note>.</p>
+               <p xml:space="preserve"><w>Die</w> (<w type="latin-word">e</w>)<w type="latin-word" lemmaRef="vacuaturia">vacuaturia</w> <w>ist</w> <w>lediglich</w> <w>in</w> <w>Formelsammlungen</w> <w>des</w> <w>frühen</w> <w>Mittelalters</w> <w>belegt</w>. <w>Bei</w> <w>dieser</w> <w>handelt</w> <w>es</w> <w>sich</w> <w>um</w> <w>ein</w> <w>Rechtsdokument</w>, <w>das</w> <w>bei</w> <w>Verlust</w> <w>eines</w> <w>anderen</w> <w>Rechtsdokumentes</w> (<w>zumeist</w> <w type="latin-word">cautiones</w>, <w>Schuldscheine</w>) <w>ausgestellt</w> <w>wurde</w>. <w>Es</w> <w>besaß</w> <w>eine</w> <w>doppelte</w> <w>Rechtswirkung</w>: <w>Zum</w> <w>einen</w> <w>machte</w> <w>es</w> <w>das</w> <w>verlorene</w> <w>Rechtsdokument</w> <w>ungültig</w> (<w>für</w> <w>den</w> <w>Fall</w>, <w>dass</w> <w>es</w> <w>wieder</w> <w>aufgefunden</w> <w>wurde</w>), <w>zum</w> <w>anderen</w> <w>bestätigte</w> <w>es</w> <w>den</w> <w>in</w> <w>demselben</w> <w>festgehaltenen</w> <w>Rechtsverhalt</w><note><p xml:space="preserve"> Vgl. dazu <bibl n="&lt;span class=&quot;surname&quot;&gt;Brunner&lt;/span&gt;, Heinrich: Die fränkisch-romanische Urkunde als Wertpapier (1877), in: Karl &lt;span class=&quot;surname&quot;&gt;Rauch&lt;/span&gt; (Hg.), Abhandlungen zur Rechtsgeschichte: gesammelte Aufsätze, Weimar 1931, S. 524–630.">H. Brunner, Die fränkisch-romanische Urkunde</bibl>, S. 537-541; <bibl n="&lt;span class=&quot;surname&quot;&gt;Siems&lt;/span&gt;, Harald: Handel und Wucher im Spiegel frühmittelalterlicher Rechtsquellen, München 1992 (MGH Schriften 35).">H. Siems, Handel und Wucher</bibl>, S. 646f.</p></note>.</p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

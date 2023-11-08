@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 22</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">58 – 59 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0022">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Angelramne donne au monastère de Stavelot et à l’abbé Albricus tout ce qu’il possède à Lignières en Condroz.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>770 – 779 04 16 <date notBefore="0770-01-01" notAfter="0779-04-16"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0022.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>Trinitatis</w>. <w>Ego</w> <w>Angelramnus</w> <w>pro</w> <w>mole</w> <w>peccaminum</w> <w>meorum</w> <w>parva</w> <w>pro</w> <w>magnis</w>, <w>caduca</w> <w>pro</w> <w>celestibus</w>, <w>omnipotenti</w> <w>Deo</w> <w>offero</w>, <w>ut</w> <w>ab</w> <w>ipso</w> <w>sublevari</w> <w>merear</w>. <w>Iccirco</w> <w>dono</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>Stabulao</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Petri</w>, <w>sancti</w> <w>Pauli</w>, <w>sancti</w> <w>Martini</w> <w>vel</w> <w>ceterorum</w> <w>martirum</w> <w>quorum</w> <w>pignora</w> <w>ibidem</w> <w>venerantur</w>, <w>ubi</w> <w>Albricus</w> <w lemmaRef="abbas">abba</w> <w>Christo</w> <w>auspice</w> <w>preesse</w> <w>videtur</w>, <w>hoc</w> <w>quod</w> <w>habere</w> <w>visus</w> <w>sum</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>que</w> <w>vocatur</w> <w>Lineras</w> <w>sitam</w> <w>in</w> <w>pago</w> <w>Condustrense</w> <w>super</w> <w>fluvium</w> <w>Chandregia</w>, <w>inter</w> <w>confines</w> <w>sancti</w> <w>Mauricii</w> <w>et</w> <w>de</w> <w>alia</w> <w>parte</w> <w>Adechelmi</w> <w>et</w> <w>de</w> <w>tercia</w> <w>parte</w> <w>Wiredi</w> <w>et</w> <w>de</w> <w>quarta</w> <w>parte</w> <w>Anglini</w>, <w>ut</w> <w>servi</w> <w>Dei</w> <w>ipsius</w> <w>monasterii</w> <w>habeant</w>, <w>teneant</w> <w>atque</w> <w>possideant</w>, <w>vel</w> <w>quicquid</w> <w>exinde</w> <w>facere</w> <w>voluerint</w> <w>liberam</w> <w>atque</w> <w>firmissimam</w> <w>habeant</w> <w>potestatem</w> <w>faciendi</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>hoc</w> <w>immutare</w> <w>voluerit</w>, <w>primitus</w> <w>iram</w> <w>Dei</w> <w>incurrat</w> <w>et</w> <w>a</w> <w>liminibus</w> <w>sancte</w> <w>Dei</w> <w>ecclesie</w> <w>excommunicetur</w> <w>et</w> <w>extraneus</w> <w>artetur</w>, <w>insuper</w> <w>maledictio</w> <w>que</w> <w>in</w> <w>centesimo</w> <w>VIII</w> <w>psalmo</w> <w>continetur</w> <w>superveniat</w>, <w>et</w> <w>insuper</w> <w>conferat</w> <w>fisco</w> <w>auri</w> <w>libras</w> <w>II</w> <w>et</w> <w>argenti</w> <w>pondo</w> <w>quinque</w> <w>multo</w> <w>vel</w> <w>coactus</w> <w>exsolvat</w>; <w>et</w> <w>presens</w> <w lemmaRef="donatio">donatio</w> <w>ista</w> <w>a</w> <w>me</w> <w>facta</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>permaneat</w> <w>cum</w> <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>in</w> <w>monasterio</w> <w>Stabulao</w> <w>publice</w> <w>sub</w> <w>die</w> <w>quod</w> <w>fecit</w> <w>mensis</w> <w>aprilis</w> <w>dies</w> <w>XVI</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Angelramni</w> <w>qui</w> <w>hanc</w> <w>donationem</w> <w>fieri</w> <w>rogavit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

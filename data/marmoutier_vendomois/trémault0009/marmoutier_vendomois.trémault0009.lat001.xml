@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault) Nr. 9</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de Marmoutier pour le Vendômois</title>
+                  <editor>M. de Trémault</editor>
+                  <imprint>
+                     <pubPlace>Paris, Alphonse Picard et fils, éditeurs, 82, Rue BonaparteVendome, Librairie Clovis Ripé, 15-17, Rue Poterie</pubPlace>
+                     <date when="1893" n="originalAusgabe">1893</date>
+                     <biblScope unit="pp">13-15</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de Marmoutier pour le Vendômois, welches 1893 von M. de Trémault herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_vendomois.trémault0009">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Les moines, résolus d’en finir par le duel avec les revendications de Thibaud au sujet des alleux de Leschère, d’une dîme de l’église de Naveil et de la vicarairie de son porche, terminent pacifiquement le differend et obtiennent, pour quarante sols, l’abandon de ses prétentions sur tous leurs biens dans le Vendômois.</p>
+         </div>
+         <dateline>11. Jahrhundert<date notBefore="0999-12-31" notAfter="1099-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_vendomois.trémault0009.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemma="notitia" n="notitia" lemmaRef="notitia">NOTICIA</w> <w lemma="de" n="de">DE</w> <w lemma="concordia" n="concordia">CONCORDIA</w> <w lemma="cum" n="cum">CUM</w> <w lemma="personenname" n="personenname">TETBALDO</w> <w lemma="filius" n="filius">FILIO</w> <w lemma="personenname" n="personenname">LETERII</w> <w lemma="ortsname" n="ortsname">VINDOCINENSIS</w></head>
+               <p xml:space="preserve"><w lemma="noscere" n="noscere/nosco">Nosse</w> <w lemma="debere" n="debere/debeo">debetis</w>, <w lemma="si" n="si">si</w> <w lemma="qui" n="qui">qui</w> <w lemma="esse" n="esse/sum">eritis</w> <w lemma="posterus" n="posterus">posteri</w> <w lemma="noster" n="noster">nostri</w>, <w lemma="ortsname" n="ortsname">Maioris</w> <w lemma="scilicet" n="scilicet">scilicet</w> <w lemma="hic" n="hic">huius</w> <w lemma="habitator" n="habitator">habitatores</w> <w lemma="ortsname" n="ortsname">Monasterii</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancti</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martini</w>, <w lemma="miles" n="miles">militem</w> <w lemma="quidam" n="quidam">quemdam</w> <w lemma="ortsname" n="ortsname">vindocinensem</w> <w lemma="personenname" n="personenname">Tetbaldum</w> <w lemma="nomen" n="nomen">nomine</w> <w lemma="filius" n="filius">filium</w> <w lemma="personenname" n="personenname">Leterii</w> <w lemma="cognominatus" n="cognominatus/cognominare/cognomino">cognominatum</w>, <w lemma="in" n="in">in</w> <w lemma="quidam" n="quidam">quibusdam</w> <w lemma="res" n="res">rebus</w> <w lemma="noster" n="noster">nostris</w> <w lemma="calumnia" n="calumnia">caluminam</w> <w lemma="emovere" n="emovere/emoveo">emovisse</w>, <w lemma="is" n="is">id</w> <w lemma="esse" n="esse/sum">est</w> <w lemma="in" n="in">in</w> <w lemma="allodis" n="allodis/alodis/allodium" lemmaRef="allodium">alodiis</w> <w lemma="ortsname" n="ortsname">Lescherici</w>, <w lemma="qui" n="qui">que</w> <w lemma="situs" n="situs/sinere/sino">sita</w> <w lemma="esse" n="esse/sum">sunt</w> <w lemma="in" n="in">in</w> <w lemma="ortsname" n="ortsname">vindocinensi</w> <w lemma="territorium" n="territorium">territorio</w> <w lemma="et" n="et">et</w> <w lemma="in" n="in">in</w> <w lemma="ille" n="ille">illa</w> <w lemma="pars" n="pars">parte</w> <w lemma="decimus" n="decimus/10/x/zahl">decime</w> <w lemma="ecclesia" n="ecclesia">ecclesie</w> <w lemma="ortsname" n="ortsname">Navolii</w>, <w lemma="quam" n="quam/qui">quam</w> <w lemma="per" n="per">per</w> <w lemma="ille" n="ille">illum</w> <w lemma="reclamare" n="reclamare/reclamo">reclamabat</w> <w lemma="se" n="se">sibi</w> <w lemma="personenname" n="personenname">Aurannus</w> <w lemma="de" n="de">de</w> <w lemma="idem" n="idem">eodem</w> <w lemma="ortsname" n="ortsname">Navolii</w> <w lemma="vicus" n="vicus" lemmaRef="vicus">vico</w>, <w lemma="et" n="et">et</w> <w lemma="in" n="in">in</w> <w lemma="vicarius" n="vicarius" lemmaRef="vicarius">vicaria</w> <w lemma="idem" n="idem">eiusdem</w> <w lemma="ecclesia" n="ecclesia">ecclesie</w> <w lemma="atrium" n="atrium">atrii</w>. <w lemma="pro" n="pro">Pro</w> <w lemma="hic" n="hic">his</w> <w lemma="res" n="res">rebus</w> <w lemma="acquietare" n="acquietare/acquieto">acquietandis</w> <w lemma="arramire" n="arramire/arramio/adchramire/adchramio">arramivimus</w> <w lemma="bellum" n="bellum">bellum</w> <w lemma="in" n="in">in</w> <w lemma="curia" n="curia" lemmaRef="curia">curia</w> <w lemma="ortsname" n="ortsname">vindocinensi</w>, <w lemma="causa" n="causa" lemmaRef="causa">cause</w> <w lemma="noster" n="noster">nostre</w> <w lemma="fidere" n="fidere/fido">fidentes</w> <w lemma="et" n="et">et</w> <w lemma="ad" n="ad">ad</w> <w lemma="hic" n="hic">hoc</w> <w lemma="provocatus" n="provocatus/provocare/provoco">provocati</w>. <w lemma="verum" n="verum/verus">Verum</w> <w lemma="cum" n="cum">cum</w> <w lemma="inire" n="inire/ineo">ineunde</w> <w lemma="pugna" n="pugna">pugne</w> <w lemma="dies" n="dies">dies</w> <w lemma="statutus" n="statutus/statuere/statuo">statutus</w> <w lemma="adesse" n="adesse/adsum">adesset</w>, <w lemma="a" n="a/ab">ab</w> <w lemma="amicus" n="amicus" lemmaRef="amicitia">amicis</w> <w lemma="noster" n="noster">nostris</w>, <w lemma="qui" n="qui">qui</w> <w lemma="tunc" n="tunc">tunc</w> <w lemma="adesse" n="adesse/adsum">aderant</w>, <w lemma="submonitus" n="submonitus/submonere/submoneo">summoniti</w> <w lemma="esse" n="esse/sum">sumus</w> <w lemma="ut" n="ut">ut</w> <w lemma="pax" n="pax" lemmaRef="pax">pace</w> <w lemma="potis" n="potis">potius</w> <w lemma="tantus" n="tantus">tante</w> <w lemma="discordia" n="discordia">discordie</w> <w lemma="finis" n="finis">finem</w> <w lemma="imponere" n="imponere/impono">imponeremus</w>. <w lemma="hic" n="hic">Horum</w> <w lemma="igitur" n="igitur">igitur</w> <w lemma="consilium" n="consilium" lemmaRef="consilium">consilio</w> <w lemma="acquiescere" n="acquiescere/acquiesco">acquiescentes</w>, <w lemma="ad" n="ad">ad</w> <w lemma="hic" n="hic">hunc</w> <w lemma="concordia" n="concordia">concordie</w> <w lemma="finis" n="finis">finem</w> <w lemma="res" n="res">rem</w> <w lemma="deducere" n="deducere/deduco">deduximus</w>, <w lemma="ut" n="ut">ut</w> <w lemma="calumniosus" n="calumniosus">calumniosus</w> <w lemma="ille" n="ille">ille</w>, <w lemma="datus" n="datus/dare/do">datis</w> <w lemma="se" n="se">sibi</w> <w lemma="per" n="per">per</w> <w lemma="manus" n="manus">manum</w> <w lemma="domnus" n="domnus/dominus" lemmaRef="dominus">domni</w> <w lemma="personenname" n="personenname">Odonis</w> <w lemma="tunc" n="tunc">tunc</w> <w lemma="prior" n="prior">prioris</w> <w lemma="solidus" n="solidus" lemmaRef="solidus">solidis</w> <w lemma="denarius" n="denarius" lemmaRef="denarius">denariorum</w> <w lemma="40" n="40/xl/zahl">XL</w>, <w lemma="non" n="non">non</w> <w lemma="tantum" n="tantum/tantus">tantum</w> <w lemma="iste" n="iste">istam</w> <w lemma="a" n="a/ab">a</w> <w lemma="supradictus" n="supradictus/supradicere/supradico=supra+dictus/dicere/dico">supradictis</w> <w lemma="res" n="res">rebus</w> <w lemma="calumnia" n="calumnia">calumniam</w> <w lemma="perpetuus" n="perpetuus">perpetuo</w> <w lemma="dimittere" n="dimittere/dimitto">dimitteret</w>, <w lemma="verum" n="verum/verus">verum</w> <w lemma="etiam" n="etiam">etiam</w> <w lemma="quicumque" n="quicumque">quecumque</w> <w lemma="tunc" n="tunc">tunc</w> <w lemma="tempus" n="tempus">temporis</w> <w lemma="in" n="in">in</w> <w lemma="pagus" n="pagus" lemmaRef="pagus">pago</w> <w lemma="ortsname" n="ortsname">vindocinensi</w> <w lemma="possidere" n="possidere/possideo">possidere</w> <w lemma="videre" n="videre/video">videbamur</w>, <w lemma="quietus" n="quietus">quieta</w> <w lemma="nos" n="nos">nobis</w> <w lemma="in" n="in">in</w> <w lemma="perpetuus" n="perpetuus">perpetuum</w> <w lemma="clamare" n="clamare/clamo">clamaret</w>, <w lemma="quod" n="quod/qui">quod</w> <w lemma="et" n="et">et</w> <w lemma="facere" n="facere/facio">fecit</w>, <w lemma="testis" n="testis">testibus</w> <w lemma="iste" n="iste">istis</w>:</p>
+               <p xml:space="preserve"><w lemma="personenname" n="personenname">Ingelbaldo</w> <w lemma="personenname" n="personenname">Brittone</w> – <w lemma="personenname" n="personenname">Wlgrino</w> <w lemma="filius" n="filius">filio</w> <w lemma="is" n="is">eius</w> – <w lemma="personenname" n="personenname">Fulcherio</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Turre</w> – <w lemma="personenname" n="personenname">Salomone</w> <w lemma="filius" n="filius">filio</w> <w lemma="personenname" n="personenname">Yvonis</w> – <w lemma="personenname" n="personenname">Ascelino</w> <w lemma="personenname" n="personenname">Chotardo</w> – <w lemma="personenname" n="personenname">Guismando</w> <w lemma="de" n="de">de</w> <w lemma="super" n="super">super</w> <w lemma="personenname" n="personenname">Bolon</w> – <w lemma="personenname" n="personenname">Rotberto</w> <w lemma="personenname" n="personenname">Bracheto</w> – <w lemma="personenname" n="personenname">Fulberto</w> <w lemma="personenname" n="personenname">Trossello</w> – <w lemma="personenname" n="personenname">Hamelino</w> <w lemma="personenname" n="personenname">Bibe</w> <w lemma="vinum" n="vinum">vinum</w> – <w lemma="personenname" n="personenname">Achardo</w> – <w lemma="personenname" n="personenname">Gaufrido</w> – <w lemma="personenname" n="personenname">Bertino</w> <w lemma="et" n="et">et</w> <w lemma="personenname" n="personenname">Guidone</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

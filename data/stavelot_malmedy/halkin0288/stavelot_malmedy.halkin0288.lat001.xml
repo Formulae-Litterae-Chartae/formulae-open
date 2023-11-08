@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 288</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">534 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0288">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte de confraternité entre le monastère de Stavelot et celui de Saint-Maur-des-Fossés.</p>
+         </div>
+         <dateline>1134<date notBefore="1134-01-01" notAfter="1134-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0288.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>De</w> <w>sancto</w> <w>Remaclo</w>. </p>
+               <p xml:space="preserve"><w>Anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M°</w> <w>C°</w> <w>XXX°</w> <w>IIII°</w> <w>statuta</w> <w>est</w> <w>hec</w> <w>fraternitas</w> <w>inter</w> <w>Stabulense</w> <w>et</w> <w>Fossalense</w> <w>coenobium</w> <w>sub</w> <w>abbatibus</w> <w>Guibaldo</w> <w>et</w> <w>Ascelino</w> : <w>pro</w> <w>defunctis</w> <w>abbatibus</w> <w>utriusque</w> <w>loci</w> <w>plenum</w> <w>fiet</w> <w>tricenarium</w>; <w>interpositis</w> <w>autem</w> <w>magnis</w> <w>terrarum</w> <w>spaciis</w>, <w>quia</w> <w>obitus</w> <w>defunctorum</w> <w>fratrum</w> <w>unius</w> <w>monasterii</w> <w>non</w> <w>potest</w> <w>venire</w> <w>ad</w> <w>noticiam</w> <w>alterius</w>, <w>singulis</w> <w>annis</w> <w>in</w> <w>mense</w> <w>novembri</w> <w>utraque</w> <w>ecclesia</w> <w>pro</w> <w>defunctis</w> <w>utrinque</w> <w>fratribus</w> <w>tria</w> <w>officia</w> <w>celebrabit</w> <w>plenaria</w> <w>in</w> <w>capitulo</w> <w>[post]</w> <w>recitatam</w> <w>commemorationem</w> <w>fratrum</w> <w>nostrorum</w> <w>Stabulensis</w> <w>coenobii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

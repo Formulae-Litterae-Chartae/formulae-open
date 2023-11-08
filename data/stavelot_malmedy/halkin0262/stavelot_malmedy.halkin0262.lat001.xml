@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 262</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">496 - 497</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0262">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte notifiant qu’à la demande de l'abbé Erlebald, la confraternité est renouvelée entre l'abbaye de Stavelot et celle de Saint-Michelen-Thiérache.</p>
+         </div>
+         <dateline>1169<date notBefore="1169-01-01" notAfter="1169-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0262.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Anno</w> <w>Domini</w> <w>M°</w> <w>C°</w> <w>LX°</w> <w>VIIII°</w> <w>renovata</w> <w>est</w> <w>societas</w> <w>inter</w> <w>ecclesiam</w> <w>Stabulensem</w> <w>et</w> <w>ecclesiam</w> <w>beati</w> <w>Michaelis</w> <w>de</w> <w>Teratia</w>, <w>assensu</w> <w>fratrum</w>, <w>sub</w> <w>domino</w> <w>Erlebaldo</w> <w>Stabulensi</w> <w>abbate</w>, <w>petitione</w> <w>domni</w> <w>Willelmi</w> <w>abbatis</w>, <w>in</w> <w>capitulo</w> <w>Stabulensi</w>; <w>que</w>, <w>licet</w> <w>quondam</w> <w>statuta</w> <w>fuerit</w>, <w>cum</w> <w>personarum</w> <w>decessione</w> <w>cum</w> <w>temporum</w> <w>varietate</w> <w>pene</w> <w>oblivioni</w> <w>tradita</w> <w>fuerat</w>, <w>talis</w> <w>videlicet</w> <w>ut</w> <w>utriusque</w> <w>ecclesie</w> <w>abbates</w> <w>ab</w> <w>hac</w> <w>vita</w> <w>decedentes</w> <w>in</w> <w>utrisque</w> <w>ecclesiis</w> <w>trecenarium</w> <w>habeant</w>, <w>fratres</w> <w>vero</w> <w>in</w> <w>commune</w> <w>septenarium</w>. <w>Statutum</w> <w>est</w> <w>etiam</w> <w>ut</w> <w>singulis</w> <w>annis</w> <w>proxima</w> <w>die</w> <w>post</w> <w>octavas</w> <w>apostolorum</w> <w>pro</w> <w>utriusque</w> <w>loci</w> <w>defunctis</w> <w>in</w> <w>utraque</w> <w>ecclesia</w>, <w>tam</w> <w>in</w> <w>vigiliis</w> <w>quam</w> <w>in</w> <w>missa</w> <w>pulsantibus</w> <w>signis</w>, <w>memoria</w> <w>defunctorum</w> <w>utriusque</w> <w>loci</w> <w>solempniter</w> <w>agatur</w>. <w>Cum</w> <w>hac</w> <w>autem</w> <w>speciali</w> <w>societate</w> <w>concessa</w> <w>sunt</w> <w>eidem</w> <w>abbati</w> <w>Willelmo</w> <w>ab</w> <w>ecclesia</w> <w>Stabulensi</w>, <w>cooperante</w> <w>domno</w> <w>Erlebaldo</w> <w>abbate</w>, <w>capitagia</w> <w>hominum</w> <w>ad</w> <w>altare</w> <w>beati</w> <w>Remacli</w> <w>pertinentium</w>, <w>eorum</w> <w>videlicet</w> <w>qui</w> <w>inter</w> <w lemmaRef="castrum">castrum</w> <w>de</w> <w>Guisiam</w> <w>et</w> <w>Rumegniacum</w> <w>habitant</w>, <w>hoc</w> <w>videlicet</w> <w>conditionis</w> <w>pacto</w>, <w>ut</w> <w>jam</w> <w>dicti</w> <w>homines</w> <w>familie</w> <w>beati</w> <w>Remacli</w> <w>eidem</w> <w>abbati</w> <w>vel</w> <w>ecclesie</w> <w>sancti</w> <w>Michaelis</w> <w>censum</w> <w>capitis</w> <w>sui</w> <w>annualim</w> <w>solvant</w>, <w>pro</w> <w>quorum</w> <w>respectu</w> <w>ecclesia</w> <w>sancti</w> <w>Michaelis</w> <w>vel</w> <w>per</w> <w>se</w> <w>vel</w> <w>per</w> <w>certum</w> <w>nuntium</w> <w>ad</w> <w>altare</w> <w>beati</w> <w>Remacli</w> <w>singulis</w> <w>annis</w> <w>in</w> <w>festo</w> <w>beati</w> <w>Johannis</w> <w>Baptiste</w> <w>duos</w> <w>solidos</w> <w>Catalaunensis</w> <w>monete</w> <w>persolvat</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

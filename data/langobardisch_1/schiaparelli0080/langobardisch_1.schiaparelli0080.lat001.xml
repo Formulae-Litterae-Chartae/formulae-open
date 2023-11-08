@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Codice Diplomatico Longobardo I (Ed. Schiaparelli) Nr. 80</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Codice Diplomatico Longobardo I (Ed. Schiaparelli)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen Studentische Hilfskraft, Universität Hamburg</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Codice Diplomatico Longobardo I</title>
+                  <editor>Luigi Schiaparelli</editor>
+                  <imprint>
+                     <pubPlace>Rom</pubPlace>
+                     <date when="1929" n="originalAusgabe">1929</date>
+                     <biblScope unit="pp">233–235</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Fonti per la storia d’Italia</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Codice Diplomatico Longobardo I, welches 1929 von Luigi Schiaparelli herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="langobardisch_1.schiaparelli0080">
+      <front xml:lang="ita">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Mauro traspandano, abitante in Pistoia, vende al negoziante Crispinulo (Crispino) la sua parte (la quarta) di un prato e di una vigna in Pescia, che gli pervenne in dono da Sturnulo, nonché un servo di nome Dulculo, per trentacinque soldi d’oro.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Lucca</p>
+         </div>
+         <dateline>742 10<date notBefore="0742-10-01" notAfter="0742-10-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:langobardisch_1.schiaparelli0080.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">+ <w>In</w> <w>Dei</w> <w>nomine</w>. <w>regnante</w> <w>domni</w> <w>nostri</w> <w>Liutprand</w> <w>et</w> <w>Helprand</w> <w>regibus</w>, <w>anno</w> <w>regni</w> <w>eorum</w> <w>trigensimo</w> <w>primo</w> <w>et</w> <w>hoctauo</w>, <w>in</w> <w>mense</w> <w>hoctubrio</w>, <w>[per</w> <w>indictione]</w> <w>undecima</w>; <w>feliciter</w>. <w>Cunstat</w> <w>me</w> <w>Mauro</w> <w>Transpadanus</w>, <w>auitator</w> <w>in</w> <w>ciuitatem</w> <w>Pistoriense</w>, <w>genero</w> <w>Filicissimi</w> <w>de</w> <w>Piscia</w>, <w>hac</w> <w>die</w> <w>uendedisset</w> <w>et</w> <w>uendedi</w> <w>tibi</w> <w>Crispinuli</w> <w>negudianti</w> <w>parte</w> <w>mea</w> <w>de</w> <w>terra</w> <w>et</w> <w>uineam</w> <w>quem</w> <w>auire</w> <w>uisum</w> <w>sum</w> <w>in</w> <w>Piscia</w>, <w>parte</w> <w>qui</w> <w>mihi</w> <w>etuinet</w> <w>per</w> <w>donationem</w> <w>da</w> <w>Sturnulo</w>; <w>qui</w> <w>est</w> <w>posita</w> <w>ad</w> <w>latum</w> <w>de</w> <w>terra</w> <w>tua</w> <w>ipsius</w> <w>Crispine</w>, <w>et</w> <w>uineas</w> <w>est</w> <w>posita</w> <w>similiter</w> <w>ad</w> <w>latum</w> <w>de</w> <w>uineas</w> <w>tua</w> <w>ipsius</w> <w>ad</w> <w>Sorbulo</w>; <w>quod</w> <w>est</w> <w>parte</w> <w>mea</w> <w>de</w> <w>prato</w>, <w>hoc</w> <w>est</w> <w>quarta</w> <w>parte</w> <w>in</w> <w>integro</w>, <w>similiter</w> <w>et</w> <w>de</w> <w>uinea</w>, <w>qui</w> <w>mihi</w> <w>cuntigent</w>, <w>quarta</w> <w>parte</w> <w>de</w> <w>integra</w> <w>sorte</w> <w>mea</w> <w>tibi</w> <w>sepe</w> <w>nominati</w> <w>Crispini</w> <w>do</w> <w>et</w> <w>trado</w>; <w>et</w> <w>uno</w> <w>[serbo]</w> <w>nomine</w> <w>Dulculo</w>; <w>tibi</w> <w>omnia</w> <w>trado</w>. <w>et</w> <w>haccipi</w> <w>ego</w> <w>qui</w> <w>supra</w> <w>Mauro</w> <w>ad</w> <w>te</w> <w>Crispine</w> <w>pro</w> <w>suprascriptas</w> <w>uineas</w> <w>et</w> <w>terra</w> <w>et</w> <w>serbus</w> <w>pretium</w> <w lemmaRef="placitum">placitum</w> <w>in</w> <w>definito</w> <w>et</w> <w>liuerato</w> <w>capitulo</w> <w>auri</w> <w>soledos</w> <w>bonos</w> <w>expendiuile</w> <w>nomero</w> <w>trigenta</w> <w>et</w> <w>quinque</w> <w>tantum</w>; <w>modo</w> <w>uiro</w> <w>posteaquam</w> <w>ipsum</w> <w>pretium</w> <w>suscepit</w>, <w>ut</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>de</w> <w>meo</w> <w>qui</w> <w>supra</w> <w>Mauri</w> <w>exiuet</w> <w>dominio</w>, <w>et</w> <w>in</w> <w>tua</w> <w>Crispini</w> <w>trado</w> <w>esse</w> <w>potestatem</w> <w>possedendum</w>, <w>iudicandum</w>, <w>quidquid</w> <w>ex</w> <w>ea</w> <w>terra</w> <w>et</w> <w>uinea</w> <w>et</w> <w>serbus</w> <w>faceret</w> <w>et</w> <w>iudicare</w> <w>uolueris</w>, <w>in</w> <w>tua</w> <w>Crispini</w> <w>uel</w> <w>de</w> <w>posterus</w> <w>tuo</w> <w>sit</w> <w>potestatem</w> <w>donandi</w>, <w>faciendi</w> <w>quod</w> <w>uollueris</w>. <w>e</w> <w>spundeo</w> <w>ego</w> <w>Mauro</w> <w>unam</w> <w>cum</w> <w>meus</w> <w>heridis</w> <w>tibi</w> <w>Crispine</w> <w>uel</w> <w>ad</w> <w>tuos</w> <w>heridis</w>, <w>si</w> <w>quandoque</w> <w>tempore</w> <w>cuntra</w> <w>hanc</w> <w lemmaRef="carta">cartula</w> <w>uenditionis</w> <w>me</w> <w>ire</w> <w>temtare</w> <w>presumserimus</w>, <w>et</w> <w>in</w> <w>alico</w> <w>molestari</w> <w>presumserimus</w>, <w>et</w> <w>defensari</w> <w>non</w> <w>potuerimus</w> <w>da</w> <w>qualiuet</w> <w>homini</w> <w>e</w> <w>per</w> <w>qualiuet</w> <w>argumenti</w> <w>ingenii</w> <w>q</w> <w>ui</w> <w>tibi</w> <w>ipsa</w> <w>res</w> <w>intentum</w> <w>ficeret</w>, <w>cunpuna</w> <w>ego</w> <w>Mauro</w> <w>unam</w> <w>cum</w> <w>meus</w> <w>heridis</w> <w>tibi</w> <w>Crispine</w> <w>uel</w> <w>ad</w> <w>tuos</w> <w>heridis</w>, <w>de</w> <w>quod</w> <w>superius</w> <w>legitor</w>, <w>in</w> <w>dupla</w>, <w>bona</w> <w>condicionem</w> <w>in</w> <w>melioratam</w> <w>terra</w> <w>et</w> <w>uineam</w> <w>et</w> <w>serbus</w> <w>unde</w> <w>hic</w> <w>agitor</w>, <w>sum</w> <w>stimationem</w> <w>quales</w> <w>tunc</w> <w>fueret</w>; <w>et</w> <w>hanc</w> <w>mea</w> <w>uenditio</w> <w>in</w> <w>suo</w> <w>permaneat</w> <w>rouore</w>. <w>Et</w> <w>pro</w> <w>cunfermationem</w> <w>Teutpert</w> <w>uirum</w> <w>deuotum</w> <w>scriuere</w> <w>rogaui</w>. <w>Actum</w> <w>Luca</w>, <w>die</w>, <w lemmaRef="regnum">regnum</w>, <w>indictione</w> <w>et</w> <w>mense</w> <w>suprascripta</w>; <w>feliciter</w>. <w>Signum</w> + <w>manus</w> <w>Mauri</w> <w>uiri</w> <w>honesti</w> <w>uendituri</w> <w>et</w> <w>cunserbatari</w>. <w>[Signum]</w> + <w>manus</w> <w>Petti</w> <w>uiri</w> <w>deuoti</w> <w>filio</w> <w>Authelmi</w> <w>testis</w>. <w>[Signum]</w> + <w>manus</w> <w>Tachipert</w> <w>uiri</w> <w>deuoti</w> <w>germano</w> <w>Amolongo</w> <w>testis</w>. <w>[Signum</w> +<w>]</w> <w>manus</w> <w>Bonichis</w> <w>uiri</w> <w>deuoti</w> <w>caldorario</w> <w>da</w> <w>porta</w> <w>Sancto</w> <w>Donati</w> <w>testis</w>. <w>Et</w> <w>pos</w> <w>tradita</w> <w>ego</w> <w>Teutpert</w> <w>cunpliui</w> <w>et</w> <w>dedi</w>. + <w>Ego</w> <w>Altipert</w> <w>uir</w> <w>deuotus</w> <w>in</w> <w>anc</w> <w lemmaRef="carta">cartula</w> <w>suscripsi</w>.                </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

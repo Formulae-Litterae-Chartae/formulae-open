@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 112</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">141-142</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0112">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice de l’accord établi ENTRE Geoffroy Isoré et les moines de Saint-Julien au sujet de la possession de l´Orme-Saint-Sulpice.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Cormery</p>
+         </div>
+         <dateline>1165<date notBefore="1165-01-01" notAfter="1165-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0112.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Anno</w> <w>Dominicae</w> <w>Incarnationis</w> <w>MCLXV</w>, <w>facta</w> <w>est</w> <w>haec</w> <w>pacis</w> <w>concordia</w> <w>inter</w> <w>Gaufredum</w>, <w>abbatem</w> <w>Sancti</w> <w>Juliani</w>, <w>et</w> <w>Joffridum</w> <w>Isore</w>. <w>Idem</w> <w>enim</w> <w>Joffridus</w> <w>calumniabatur</w> <w>abbati</w> <w>et</w> <w>monachis</w> <w>terram</w> <w>de</w> <w>Ulmo</w> <w>Sancti</w> <w>Sulpicii</w>, <w>quam</w> <w>terram</w> <w>Goffredus</w> <w>de</w> <w>Azeio</w> <w>diu</w> <w>injuste</w> <w>possessam</w>, <w>pro</w> <w>monachatu</w> <w>Schalonis</w>, <w>fratris</w> <w>sui</w>, <w>eis</w> <w>reddiderat</w>, <w>et</w> <w>tres</w> <w>solidos</w> <w lemmaRef="census">census</w> <w>et</w> <w>tres</w> <w>denarios</w> <w>dederat</w>, <w>quos</w> <w>similiter</w> <w>calumniabatur</w>, <w>asserens</w> <w>et</w> <w>terram</w> <w>et</w> <w>censum</w> <w>de</w> <w>fevo</w> <w>suo</w> <w>esse</w>; <w>quod</w> <w>nec</w> <w>verum</w> <w>erat</w> <w>nec</w> <w>verisimile</w>. <w>Diu</w> <w>itaque</w> <w>super</w> <w>hac</w> <w>re</w> <w>altercatum</w> <w>est</w>. <w>Tandem</w>, <w>stabilito</w> <w>die</w>, <w>in</w> <w lemmaRef="curia">curia</w> <w>constituti</w>, <w lemmaRef="abbas">abbas</w> <w>testes</w> <w>suos</w> <w>exhibuit</w> <w>homines</w> <w>de</w> <w>terra</w> <w>illa</w>, <w>qui</w> <w>parati</w> <w>fuerunt</w> <w>sub</w> <w>sacramento</w> <w>astruere</w> <w>praenominatam</w> <w>terram</w> <w>nec</w> <w>ad</w> <w>Joffridum</w> <w>Isore</w> <w>nec</w> <w>ad</w> <w>alium</w> <w>Goffredum</w>, <w>qui</w> <w>eam</w> <w>reddiderat</w>, <w>pertinere</w>, <w>sed</w> <w>semper</w> <w>Sancti</w> <w>Juliani</w> <w>fuisse</w> <w>sicut</w> <w>aliam</w> <w>terram</w> <w>de</w> <w>Miseriis</w>. <w>Videns</w> <w>autem</w> <w>Joffridus</w> <w>quod</w> <w>in</w> <w>his</w> <w>per</w> <w>rectum</w> <w>nichil</w> <w>posset</w> <w>adquirere</w>, <w>perdonatis</w> <w>sacramentis</w>, <w>pace</w> <w>facta</w> <w>cum</w> <w>abbate</w>, <w>totam</w> <w>calumniam</w> <w>de</w> <w>censu</w> <w>et</w> <w>de</w> <w>terra</w> <w>dimisit</w> <w>et</w> <w>insuper</w> <w>quicquid</w> <w>monachi</w> <w>de</w> <w>fevo</w> <w>suo</w> <w>in</w> <w>die</w> <w>illa</w> <w>tenere</w> <w>videbantur</w> <w>eis</w> <w>in</w> <w>perpetuum</w> <w>concessit</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>Cormaricense</w>, <w>in</w> <w>praesentia</w> <w>Hervei</w>, <w>prepositi</w> <w>de</w> <w>Lochis</w>. <w>Testes</w> <w>hujus</w> <w>rei</w>: <w>Sulto</w>, <w>prior</w> <w>de</w> <w>Monte</w> <w>Basonis</w>; <w>Marcus</w> <w>de</w> <w>Ciconiaco</w>; <w>Rainaldus</w> <w>Major</w>; <w>Petrus</w> <w>Buissum</w>; <w>Robertus</w>, <w lemmaRef="clericus">clericus</w> <w>de</w>........; <w>Garinus</w> <w>de</w> <w>Miseriis</w>; <w>Anglicus</w>, <w>famulus</w> <w>abbatis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

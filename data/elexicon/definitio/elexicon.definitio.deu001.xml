@@ -1,0 +1,42 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Definitio</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023-01-31">2023-01-31</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.definitio.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title"><w>Definitio</w></seg>: <seg type="lex-keyword"><w>Schiedsspruch</w></seg>.</p>
+               <p xml:space="preserve"><w>Bei</w> <w>der</w> <w type="latin-word" lemmaRef="definitio">definitio</w> <w>handelte</w> <w>es</w> <w>sich</w> <w>nach</w> <w>römischem</w> <w>Recht</w> <w>um</w> <w>einen</w> <w>Schiedsspruch</w>, <w>der</w> <w>ähnlich</w> <w>dem</w> <w type="latin-word" lemmaRef="pactum">pactum</w> <w>ein</w> <w>Vertragsverhältnis</w> <w>begründen</w> <w>konnte</w>. <w>Der</w> <w>Schiedsspruch</w> <w>erfolgte</w> <w>durch</w> <w>einen</w> <w>von</w> <w>den</w> <w>Streitparteien</w> <w>angerufenen</w> <w>Schiedsrichter</w>. <w>Die</w> <w>Parteien</w> <w>sicherten</w> <w>sich</w> <w>entweder</w> <w>vor</w> <w>Ergehen</w> <w>des</w> <w>Schiedsspruches</w> <w>durch</w> <w>ein</w> <w type="latin-word">compromissum</w> <w>gegenseitig</w> <w>die</w> <w>Einhaltung</w> <w>des</w> <w>Schiedsspruches</w> <w>zu</w>, <w>unterwarfen</w> <w>sich</w> <w>diesem</w> <w>nachträglich</w> <w>schriftlich</w> <w>oder</w> <w>erkannten</w> <w>ihn</w> <w>durch</w> <w>Nichtanfechtung</w> <w>innerhalb</w> <w>einer</w> <w>Frist</w> <w>von</w> <w>zehn</w> <w>Tagen</w> <w>an</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Kaser&lt;/span&gt;, Max: Das römische Privatrecht: Zweiter Abschnitt, 2. neubearb. Aufl. mit Nachtr. zum 1. Abschn, München 1975 (Rechtsgeschichte des Altertums 3,3).">M. Kaser, Das römische Privatrecht II</bibl>, S. 384f.; <bibl n="&lt;span class=&quot;surname&quot;&gt;Berger&lt;/span&gt;, Adolf: Encyclopedic Dictionary of Roman Law, Philadelphia 1991.">A. Berger, Encyclopedic dictionary</bibl>, S. 429.</p></note>.</p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

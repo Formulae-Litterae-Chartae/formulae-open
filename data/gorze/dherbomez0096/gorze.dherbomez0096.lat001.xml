@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 96</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">177</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0096">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Adelbero, évêque de Metz, restitue à l'abbaye de Gorze le domaine de Moivron.</p>
+         </div>
+         <dateline>936<date notBefore="0936-01-01" notAfter="0936-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0096.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>MONTE</w> <w>VIRONIS</w>.</head>
+               <p xml:space="preserve"><w>In</w> <w>omni</w> <w>negotio</w> <w>equitatis</w> <w>norma</w> <w>semper</w> <w>sectanda</w> <w>est</w>, <w>verum</w> <w>et</w> <w>cuiusque</w> <w>rei</w> <w>proclamatio</w>, <w>iustis</w> <w>ventilata</w> <w>querimoniis</w>, <w>quo</w> <w>fine</w> <w>claudatur</w> <w>dignum</w> <w>ducimus</w> <w>memorabilibus</w> <w>assignari</w> <w>scriptis</w>. <w>Idcirco</w> <w>ego</w>, <w>ac</w> <w>si</w> <w>indignus</w>, <w>Adelbero</w>, <w>sancte</w> <w>ecclesie</w> <w>Mettensium</w> <w lemmaRef="episcopus">episcopus</w>, <w>notum</w> <w>manere</w> <w>volo</w> <w>qualiter</w> <w>proclamationibus</w> <w>Agenoldi</w>, <w>venerandi</w> <w>abbatis</w>, <w>simulque</w> <w>totius</w> <w>memorande</w> <w>ipsius</w> <w>congregationis</w> <w>cenobio</w> <w>sancti</w> <w>Petri</w> <w>digne</w> <w>Deo</w> <w>famulantibus</w> <w>commonitus</w> <w>sum</w>, <w>scilicet</w> <w>pro</w> <w>nonnullis</w> <w>suorum</w> <w>rebus</w> <w>ad</w> <w>ipsum</w> <w>dictum</w> <w>cenobium</w> <w>pertinentibus</w>, <w>precipueque</w> <w>propter</w> <w lemmaRef="villa">villam</w> <w>Montem</w> <w>Vironis</w> <w>dictam</w>, <w>quam</w> <w>legitima</w> <w>donatione</w> <w>necne</w> <w>verenda</w> <w>obtestatione</w> <w>sub</w> <w>testamento</w> <w>conscriptionis</w> <w>a</w> <w>predecessore</w> <w>nostro</w>, <w>videlicet</w> <w>beate</w> <w>memorie</w> <w>Rodgingo</w>, <w>ostendebant</w> <w>prefato</w> <w>loco</w> <w>traditam</w>, <w>atque</w> <w>veridico</w> <w>testimonio</w> <w>affirmabant</w> <w>tenuisse</w> <w>ipsam</w> <w>in</w> <w>proprios</w> <w>usus</w> <w>usque</w> <w>tempore</w> <w>predecessoris</w> <w>nostri</w> <w>Wigirici</w> <w>episcopi</w>, <w>qui</w> <w>illam</w> <w>ordine</w> <w>precario</w> <w>a</w> <w>comunione</w> <w>fratrum</w> <w>semovit</w>, <w>quam</w> <w>videlicet</w>, <w>quia</w> <w>noster</w> <w>fidelis</w> <w>Folmarus</w> <w>in</w> <w>beneficio</w> <w>habebat</w> <w>acsi</w> <w>aliter</w> <w>quam</w> <w>rectitudo</w> <w>mandat</w>, <w>totiens</w> <w>dissimilando</w> <w>distuli</w> ; <w>verum</w> <w>proprio</w> <w>libitu</w> <w>sola</w> <w>difficultas</w> <w>resistebat</w>. <w>Nunc</w> <w>vero</w>, <w>favente</w> <w>Deo</w>, <w>eam</w> <w>que</w> <w>fuerat</w> <w>abiecta</w> <w>impossibilitate</w>, <w>et</w> <w>quia</w> <w>locum</w> <w>implendi</w> <w>adeptus</w> <w>sum</w>, <w>cum</w> <w>consensu</w> <w>predicti</w> <w>fidelis</w> <w>nostri</w> <w>Folmari</w>, <w>cui</w> <w>et</w> <w>comcammium</w> <w>reddidi</w>, <w>parique</w> <w>nostri</w> <w>advocati</w> <w>comitisque</w> <w>palatii</w> <w>condictu</w>, <w>reliquorumque</w> <w>fidelium</w> <w>nostrorum</w> <w>consultu</w>, <w>memorate</w> <w>proclamationi</w> <w>venerabilis</w> <w>abbatis</w> <w>satisfeci</w>, <w>non</w> <w>modo</w> <w>quasi</w> <w>spontaneum</w> <w>donum</w> <w>donando</w>, <w>verum</w> <w>alterius</w> <w>scilicet</w> <w>beati</w> <w>Rogingi</w> <w>proprium</w> <w>utque</w> <w>dictum</w> <w>in</w> <w>perpetuum</w> <w>donativum</w> <w>reddendo</w>, <w>utinam</w> <w>et</w> <w>per</w> <w>hoc</w> <w>nostrum</w> <w>proveniat</w> <w>premium</w>, <w>quo</w> <w>semper</w> <w>habeant</w> <w>secundum</w> <w>legitimam</w> <w>predecessoris</w> <w>nostri</w> <w>donationem</w>, <w>humili</w> <w>deposcens</w> <w>prece</w> <w>omnes</w> <w>successores</w> <w>nostros</w>, <w>presentes</w> <w>ac</w> <w>futuros</w> <w>ecclesie</w> <w>fideles</w>, <w>ut</w> <w>pro</w> <w>tanti</w> <w>viri</w> <w>memoria</w> <w>simulque</w> <w>veneratione</w>, <w>et</w> <w>pro</w> <w>nostre</w> <w>pravitatis</w> <w>condonatione</w>, <w>inconvulsum</w> <w>manere</w> <w>sinant</w>, <w>utque</w> <w>potiori</w> <w>teneantur</w> <w>examine</w> <w>eandem</w> <w>quam</w> <w>et</w> <w>noster</w> <w>predecessor</w> <w>subnectimus</w> <w>obtestationem</w>, <w>scilicet</w> <w>monentes</w>, <w>per</w> <w>trine</w> <w>majestatis</w> <w>venerationem</w>, <w>ut</w> <w>quemadmodum</w> <w>volunt</w> <w>sua</w>, <w>ita</w> <w>nostra</w> <w>confirment</w>, <w>et</w> <w>corroborent</w> <w>iusta</w> <w>diffinitione</w> <w>promulgata</w>. <w>Quo</w> <w>autem</w> <w>et</w> <w>super</w> <w>hoc</w> <w>prefatus</w> <w lemmaRef="abbas">abbas</w> <w>reliquusque</w> <w>ipsius</w> <w>cenobii</w> <w>ordo</w> <w>certus</w> <w>securusque</w> <w>permaneat</w>, <w>hoc</w> <w lemmaRef="testamentum">testamentum</w> <w>redonative</w> <w>rei</w> <w>iussimus</w> <w>fieri</w>, <w>manu</w> <w>nostra</w> <w>propria</w> <w>simulque</w> <w>fidelium</w> <w>nostrorum</w> <w>utriusque</w> <w>ordinis</w> <w>roboratum</w>. <w>Adelbero</w>, <w>sancte</w> <w>Mettensis</w> <w>ecclesie</w> <w>humilis</w> <w lemmaRef="episcopus">episcopus</w>, <w>subscripsit</w> †. † <w>Signum</w> <w>Everini</w> <w>primicerii</w>; <w>S</w>. <w>Folcradi</w> † <w>archidiaconi</w>; † <w>Sigiboddonis</w> <w>custodis</w>; <w>Waldradi</w> <w>cantoris</w>; † <w>Teuthardi</w> <w>presbiteri</w>; † <w>Riwaldi</w> <w>presbiteri</w>; † <w>Rainulfi</w> <w>presbiteri</w>; † <w>Dagerici</w> <w>presbiteri</w> ; † <w>Wolfridi</w> <w>presbiteri</w> ; <w>Tanchradi</w> <w>presbiteri</w> ; <w>Rampodi</w> <w>presbiteri</w> ; † <w>Lamperti</w> <w>presbiteri</w> ; † <w>Erchenulfi</w> <w>presbiteri</w>; † <w>Dodonis</w> <w>presbiteri</w>; † <w>Enalui</w> <w>presbiteri</w>; † <w>Ursonis</w> <w>diaconi</w>; <w>Wigirici</w> <w>diaconi</w>; <w>Adelardi</w> <w>diaconi</w>; <w>†item</w> <w>Adelardi</w> <w>diaconi</w>; † <w>Betonis</w> <w>diaconi</w> ; † <w>Girardi</w> <w>diaconi</w> ; † <w>Hardowini</w> <w>subdiaconi</w>; † <w>Girbaldi</w> <w>subdiaconi</w> ; <w>Volfridi</w> <w>subdiaconi</w> ; † <w>Rodingi</w> <w>subdiaconi</w> ; † <w>Wigirici</w> <w>acoliti</w> ; † <w>Conradi</w> <w>acoliti</w> ; † <w>Gonteri</w> <w>acoliti</w> ; † <w>Hamedei</w>, <w>comitis</w> <w>palatii</w> <w>et</w> <w>advocati</w>; † <w>Odacari</w> <w>comitis</w>; † <w>Teutberti</w>; † <w>Roberti</w>; † <w>Lamberti</w>; † <w>Reinrici</w>; † <w>Folcradi</w>; † <w>Lodowini</w>. <w>Ego</w> <w>Adelardus</w> <w lemmaRef="cancellarius">cancellarius</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>. </p>
+               <p xml:space="preserve"><w>Actum</w> <w>anno</w> <w>quo</w> <w>supra</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

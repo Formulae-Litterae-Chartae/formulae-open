@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault) Nr. 6</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de Marmoutier pour le Vendômois</title>
+                  <editor>M. de Trémault</editor>
+                  <imprint>
+                     <pubPlace>Paris, Alphonse Picard et fils, éditeurs, 82, Rue BonaparteVendome, Librairie Clovis Ripé, 15-17, Rue Poterie</pubPlace>
+                     <date when="1893" n="originalAusgabe">1893</date>
+                     <biblScope unit="pp">9-10</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de Marmoutier pour le Vendômois, welches 1893 von M. de Trémault herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_vendomois.trémault0006">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Hilgod, qui avait vendu l’église de Naveil aux moines de Marmoutier, la leur enlève violemment ensuite, et les contraint à la lui racheter pour quarante sols, s’engageant à les défendre contre toute revendication ultérieure.</p>
+         </div>
+         <dateline>11.Jahrhundert<date notBefore="0999-12-31" notAfter="1099-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_vendomois.trémault0006.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemma="notitia" n="notitia" lemmaRef="notitia">NOTICIA</w> <w lemma="de" n="de">DE</w> <w lemma="ecclesia" n="ecclesia">ECCLESIA</w> <w lemma="ortsname" n="ortsname">NAVOIL</w></head>
+               <p xml:space="preserve"><w lemma="certus" n="certus">Certum</w> <w lemma="esse" n="esse/sum">esse</w> <w lemma="velle" n="velle/volo">volumus</w> <w lemma="atque" n="atque">atque</w> <w lemma="omnis" n="omnis">omnibus</w> <w lemma="tam" n="tam">tam</w> <w lemma="praesens" n="praesens">presentibus</w> <w lemma="quam" n="quam/qui">quam</w> <w lemma="futurus" n="futurus/esse/sum">futuris</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">sancte</w> <w lemma="deus" n="deus">Dei</w> <w lemma="ecclesia" n="ecclesia">ecclesie</w> <w lemma="fidelis_urkunden" n="fidelis" lemmaRef="fidelis">fidelibus</w>, <w lemma="notificare" n="notificare/notifico">notificamus</w> <w lemma="quod" n="quod/qui">quod</w> <w lemma="personenname" n="personenname">Hilgodius</w>, <w lemma="personenname" n="personenname">Gisleberti</w> <w lemma="filius" n="filius">filius</w>, <w lemma="ecclesia" n="ecclesia">ecclesiam</w> <w lemma="de" n="de">de</w> <w lemma="ortsname" n="ortsname">Navolio</w>, <w lemma="quam" n="quam/qui">quam</w> <w lemma="de" n="de">de</w> <w lemma="suus" n="suus">suo</w> <w lemma="beneficium" n="beneficium" lemmaRef="beneficium">beneficio</w> <w lemma="ipse" n="ipse">ipsius</w> <w lemma="testificatio" n="testificatio">testificatione</w> <w lemma="et" n="et">et</w> <w lemma="liberare" n="liberare/libero">libero</w> <w lemma="concessus" n="concessus/concedere/concedo">concessu</w> <w lemma="quietus" n="quietus/quiescere/quiesco">quietam</w> <w lemma="et" n="et">et</w> <w lemma="solidus" n="solidus" lemmaRef="solidus">solidam</w> <w lemma="emere" n="emere/emo">emeramus</w>, <w lemma="vis" n="vis">vi</w> <w lemma="perversus" n="perversus/pervertere/perverto">perversa</w> <w lemma="et" n="et">et</w> <w lemma="apertus" n="apertus">aperto</w> <w lemma="tortus" n="tortus/torquere/torqueo">torto</w> <w lemma="nos" n="nos">nobis</w> <w lemma="postea" n="postea">postea</w> <w lemma="auferre" n="auferre/aufero">abstulit</w>, <w lemma="et" n="et">et</w> <w lemma="40" n="40/xl/zahl">XLta</w> <w lemma="solidus" n="solidus" lemmaRef="solidus">solidis</w> <w lemma="is" n="is">eam</w> <w lemma="nos" n="nos">nos</w> <w lemma="redimere" n="redimere/redimo">redimere</w> <w lemma="facere" n="facere/facio">fecit</w>, <w lemma="is" n="is">ea</w> <w lemma="promissio" n="promissio">promisione</w> <w lemma="et" n="et">et</w> <w lemma="is" n="is">ea</w> <w lemma="fides" n="fides" lemmaRef="fides">fide</w>, <w lemma="ut" n="ut">ut</w> <w lemma="abhinc" n="abhinc">abhinc</w> <w lemma="contra" n="contra">contra</w> <w lemma="omnis" n="omnis">omnes</w> <w lemma="mortalis" n="mortalis">mortales</w> <w lemma="ille" n="ille">illam</w> <w lemma="nos" n="nos">nobis</w> <w lemma="quietus" n="quietus/quiescere/quiesco">quietam</w> <w lemma="facere" n="facere/facio">faciat</w> <w lemma="et" n="et">et</w> <w lemma="a" n="a/ab">a</w> <w lemma="calumnia" n="calumnia">calumnia</w> <w lemma="pervadere" n="pervadere/pervado">pervasorum</w> <w lemma="nos" n="nos">nobis</w> <w lemma="is" n="is">eam</w> <w lemma="tueri" n="tueri/tueor">tueatur</w> <w lemma="ac" n="ac/atque">ac</w> <w lemma="defendere" n="defendere/defendo">defendat</w>. <w lemma="qui" n="qui">Cuius</w> <w lemma="res" n="res">rei</w> <w lemma="iste" n="iste">isti</w> <w lemma="esse" n="esse/sum">sunt</w> <w lemma="testis" n="testis">testes</w>:</p>
+               <p xml:space="preserve"><w lemma="personenname" n="personenname">Hugo</w> <w lemma="archidiaconus" n="archidiaconus" lemmaRef="diaconus">archidiaconus</w> – <w lemma="personenname" n="personenname">Hilgodius</w> <w lemma="nepos" n="nepos">nepos</w> <w lemma="is" n="is">eius</w> – <w lemma="personenname" n="personenname">Burchardus</w> – <w lemma="personenname" n="personenname">Vivianus</w> – <w lemma="personenname" n="personenname">Walterius</w> – <w lemma="personenname" n="personenname">Gaufredus</w> – <w lemma="personenname" n="personenname">Adraldus</w> – <w lemma="personenname" n="personenname">Ascelinus</w> – <w lemma="personenname" n="personenname">Richardus</w> – <w lemma="personenname" n="personenname">Joscelinus</w> – <w lemma="personenname" n="personenname">Seinfridus</w> – <w lemma="personenname" n="personenname">Amalricus</w> – <w lemma="personenname" n="personenname">Hamelinus</w> – <w lemma="personenname" n="personenname">Galterius</w> <w lemma="personenname" n="personenname">Ingelgerius</w> – <w lemma="personenname" n="personenname">Bernardus</w> – <w lemma="personenname" n="personenname">Galbertus</w> – <w lemma="personenname" n="personenname">Herlandus</w> – <w lemma="personenname" n="personenname">Johannes</w> – <w lemma="personenname" n="personenname">Lancelinus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

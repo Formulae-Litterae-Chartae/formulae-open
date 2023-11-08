@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 125</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">255 - 257</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0125">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte rapportant comment le monastère de Stavelot, sous l’abbé Poppon, acquit Corswarem et Winningen en échange d'Asselborn et échangea ensuite Winningen contre Losange.</p>
+         </div>
+         <dateline>[Vers 1089]<date notBefore="1079-01-01" notAfter="1099-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0125.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Discretio</w> <w>concambii</w> <w>de</w> <w>Astelbrunna</w> <w>et</w> <w>Coruuoronno</w> <w>et</w> <w>Wendenges</w>. <w>Quondam</w> <w>habuerat</w> <w lemmaRef="sanctus">sanctus</w> <w>Maximinus</w> <w lemmaRef="villa">villam</w> <w>nomine</w> <w>Hanuillam</w>, <w>quam</w> <w>concupiscens</w> <w>imperator</w> <w>Cunradus</w> <w>ad</w> <w>opus</w> <w>unius</w> <w>cunicularii</w> <w>sui</w> <w>nomine</w> <w>Luidulfi</w> <w>a</w> <w>domno</w> <w>abbate</w> <w>Poppone</w> <w>extorsit</w>, <w>ea</w> <w>conditione</w> <w>ut</w> <w>si</w> <w>aliquit</w> <w>bonum</w> <w>propter</w> <w>jus</w> <w>imperii</w> <w>sui</w> <w>in</w> <w>proprio</w> <w>suo</w> <w>eveniret</w>, <w>absque</w> <w>ulla</w> <w>contradictione</w> <w>sancto</w> <w>Maximino</w> <w>redderet</w>. <w>Quod</w> <w>et</w> <w>contigit</w> <w>non</w> <w>post</w> <w>multum</w> <w>tempus</w>. <w>Nam</w> <w>quidam</w> <w lemmaRef="comes">comes</w> <w>nomine</w> <w>Gislebertus</w> <w>in</w> <w>partibus</w> <w>Hasbannie</w>, <w>quodam</w> <w>milite</w> <w>nomine</w> <w>Wikero</w> <w>interfecto</w>, <w>nullo</w> <w>modo</w> <w>potuit</w> <w>pacari</w> <w>imperatori</w> <w>quousque</w> <w>quoddam</w> <w>prediuin</w> <w>Coruuoronno</w> <w>nomine</w> <w>sibi</w> <w>traderet</w> <w>pro</w> <w>acquirendo</w> <w>ejus</w> <w>amore</w>; <w>quod</w> <w>statim</w>, <w>domno</w> <w>abbate</w> <w>Poppone</w> <w>placitante</w>, <w>redditum</w> <w>est</w> <w>sancto</w> <w>Maximino</w> <w>pro</w> <w>restauratione</w>. <w>Tunc</w> <w>fratres</w> <w>et</w> <w>ministri</w> <w>monasterii</w> <w>sancti</w> <w>Maximini</w> <w>illud</w> <w>bonum</w> <w>parvipendentes</w>, <w>eo</w> <w>quod</w> <w>nimium</w> <w>ab</w> <w>eis</w> <w>longe</w> <w>distaret</w>, <w>petierunt</w> <w>ut</w> <w>vicino</w> <w>loco</w> <w>aliquod</w> <w>concambium</w> <w>acciperent</w>. <w>Quod</w> <w>et</w> <w>factum</w> <w>est</w>. <w>Nam</w> <w lemmaRef="abbas">abbas</w> <w>Poppo</w> <w>et</w> <w>advocatus</w> <w>sancti</w> <w>Maximi</w> <w>Henricus</w> <w lemmaRef="dux">dux</w> <w>Bauarie</w>, <w>instigante</w> <w lemmaRef="familia">familia</w> <w>ejusdem</w> <w>sancti</w> <w>Maximini</w>, <w lemmaRef="consilium">consilium</w> <w>inierunt</w> <w>ut</w> <w>quamdam</w> <w>curtim</w> <w>nomine</w> <w>Astelebruna</w> <w>ex</w> <w>abbatia</w> <w>sancti</w> <w>Remacli</w> <w>pro</w> <w>predicto</w> <w>bono</w> <w>commutarent</w>, <w>sed</w> <w>numerato</w> <w>censu</w> <w>de</w> <w>Astelebruna</w> <w>prope</w> <w>dupliciter</w> <w>preponderabat</w>. <w>Ad</w> <w>hec</w> <w>predictus</w> <w>advocatus</w> <w>quemdam</w> <w>loculum</w> <w>nomine</w> <w>Wendenges</w> <w>de</w> <w>bono</w> <w>sancti</w> <w>Maximini</w> <w>in</w> <w>augmentum</w>, <w>faventibus</w> <w>abbate</w> <w>Johanne</w> <w>et</w> <w>fratribus</w> <w>sancti</w> <w>Maximini</w>, <w>concessit</w>. <w>Et</w> <w>factum</w> <w>est</w> <w>ut</w> <w>hec</w> <w>duo</w> <w>loca</w>, <w>id</w> <w>est</w> <w>Coruuoroimo</w> <w>et</w> <w>Wendenges</w>, <w>pro</w> <w>sola</w> <w>Asteleburna</w> <w>abbati</w> <w>et</w> <w>advocato</w> <w>Fritherico</w> <w>Stabulensi</w> <w>tradita</w> <w>essent</w>. <w>Post</w> <w>hec</w> <w>in</w> <w>Pascha</w> <w>Domini</w> <w>apud</w> <w>Engelheim</w> <w>coram</w> <w>imperatore</w> <w>Cuonrado</w> <w>recitata</w> <w>est</w> <w>hec</w> <w lemmaRef="commutatio">commutatio</w>. <w>Insuper</w> <w>imperiali</w> <w>coram</w> <w>totius</w> <w>regni</w> <w>optimatibus</w> <w>confirmata</w> <w>est</w> <w>cyrographo</w> <w>et</w> <w>ab</w> <w>utraque</w> <w lemmaRef="familia">familia</w>, <w>scilicet</w> <w>sancti</w> <w>Maximini</w> <w>et</w> <w>sancti</w> <w>Remacli</w>, <w>et</w> <w>ab</w> <w>utrisque</w> <w>abbatibus</w> <w>et</w> <w>advocatis</w> <w>juste</w> <w>et</w> <w>equo</w> <w>acclamatur</w> <w>esse</w> <w>facta</w> <w>concambio</w>. <w>Preterea</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abbas</w> <w>Poppo</w> <w>zelo</w> <w>bono</w> <w>et</w> <w>spirituali</w> <w>fervens</w> <w>desiderio</w> <w>ut</w> <w>locum</w> <w>suum</w> <w>Stabulaus</w> <w>scilicet</w> <w>aliquo</w> <w>posset</w> <w>fructifiare</w> <w>incremento</w>, <w>prediolum</w> <w>quoddam</w> <w>Lukesenges</w> <w>nomine</w> <w>quod</w> <w>pertinebat</w> <w>ad</w> <w>episcopum</w> <w>Bavenbergensem</w> <w>nobis</w> <w>satis</w> <w>vicinum</w> <w>et</w> <w>utile</w> <w>invenit</w> <w>et</w> <w>illis</w> <w>quorum</w> <w>erat</w> <w>propter</w> <w>difficultatem</w> <w>itineris</w> <w>inutile</w> <w>intellexit</w>. <w>Quid</w> <w>plura</w>? <w>Nuncios</w> <w>suos</w> <w>ad</w> <w>episcopum</w> <w>nomine</w> <w>Sugerum</w> <w>et</w> <w>ad</w> <w>prepositum</w> <w>suum</w> <w>nomine</w> <w>Livpoldum</w> <w>misit</w>, <w>ut</w> <w>sibi</w> <w>jam</w> <w>prefatum</w> <w>prediolum</w>, <w>id</w> <w>est</w> <w>Lukesenges</w> <w>quod</w> <w>ab</w> <w>eo</w> <w>multum</w> <w>distabat</w> <w>daret</w> <w>monuit</w>, <w>et</w> <w>e</w> <w>contra</w> <w>predium</w> <w>nostrum</w> <w>Wendenges</w> <w>quod</w> <w>de</w> <w>bono</w> <w>sancti</w> <w>Maximini</w> <w>jam</w> <w>tenebamus</w> <w>pro</w> <w>supplemento</w> <w>de</w> <w>Asteleburna</w> <w>sibi</w> <w>in</w> <w>commutatione</w> <w>acciperet</w>, <w>eo</w> <w>quod</w> <w>super</w> <w>Mosellam</w> <w>situm</w> <w>erat</w> <w>et</w> <w>vinum</w> <w>quod</w> <w>ibi</w> <w>acciperet</w> <w>levius</w> <w>per</w> <w>alveum</w> <w>transjectum</w> <w>ad</w> <w>civitatem</w> <w>suam</w> <w>conducere</w> <w>posset</w>. <w>Quod</w> <w>audiens</w> <w lemmaRef="episcopus">episcopus</w> <w>libenter</w> <w>peticioni</w> <w>domni</w> <w>abbatis</w> <w>annuit</w> <w>et</w> <w>absque</w> <w>ulla</w> <w>dilatione</w> <w>commutationem</w> <w>fieri</w> <w>jussit</w>. <w>Sed</w> <w>prepositus</w> <w>jam</w> <w>memoratus</w> <w>callidus</w> <w>et</w> <w>mullum</w> <w>carus</w> <w>in</w> <w>omni</w> <w>negotio</w>, <w>cum</w> <w>se</w> <w>parum</w> <w>accepisse</w> <w>quereretur</w> <w>pro</w> <w>suo</w> <w>predio</w>, <w>addidit</w> <w>eis</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abbas</w> <w>nonam</w> <w>de</w> <w>Buobardo</w> <w>et</w> <w>II</w> <w lemmaRef="mansus">mansus</w> <w>apud</w> <w>Adernacum</w>, <w>quod</w> <w>ita</w> <w>usque</w> <w>in</w> <w>hodiernum</w> <w>diem</w> <w>permanet</w> <w>inconvulsum</w>. <w>Defuncto</w> <w>igitur</w> <w>domno</w> <w>Poppone</w> <w>abbate</w>, <w lemmaRef="dominus">domnus</w> <w>Theodericus</w> <w>prepositus</w> <w>monasterii</w> <w>sancti</w> <w>Maximini</w> <w>et</w> <w lemmaRef="monachus">monachus</w> <w>sancti</w> <w>Remacli</w> <w>in</w> <w>utrisque</w> <w>abbatiis</w> <w>successit</w>. <w>Qui</w> <w>partibus</w> <w>favens</w> <w>Trevirensium</w> <w>propter</w> <w>benedictionem</w> <w>quam</w> <w>inde</w> <w>acceperat</w> <w>plus</w> <w>quam</w> <w>Stabulensium</w> <w>sepissime</w> <w>querelam</w> <w>et</w> <w>controversiam</w> <w>referebat</w> <w>invidentium</w>, <w>dicens</w> <w>rectius</w> <w>pertinere</w> <w>Lukesenges</w> <w>ad</w> <w>sanctum</w> <w>Maximinum</w> <w>quam</w> <w>ad</w> <w>sanctum</w> <w>Remaclum</w>, <w>eo</w> <w>quod</w> <w>de</w> <w>bono</w> <w>ipsius</w> <w>sepe</w> <w>nominato</w> <w>Wendenges</w> <w>commutatum</w> <w>esset</w>, <w>quod</w> <w>jamdiu</w> <w>tenebamus</w> <w>pro</w> <w>augmento</w> <w>de</w> <w>Aslelebrunna</w>. <w>Nos</w> <w>autem</w> <w>sanum</w> <w lemmaRef="consilium">consilium</w> <w>exequentes</w> <w>et</w> <w>in</w> <w>posterum</w> <w>inquietudinem</w> <w>illorum</w> <w>previdentes</w>, <w>addimus</w> <w>eis</w> <w>predium</w> <w>nostrum</w> <w>VII</w> <w>mansuum</w> <w>Gozilesdorp</w> <w>cum</w> <w>ecclesia</w> <w>et</w> <w>tota</w> <w lemmaRef="familia">familia</w>; <w>quod</w>, <w>ita</w> <w>pace</w> <w>composita</w> <w>permanet</w> <w>in</w> <w>die</w> <w>hodierna</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

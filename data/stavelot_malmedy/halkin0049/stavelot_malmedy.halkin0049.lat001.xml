@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 49</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">119 - 120</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0049">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Un noble nommé Hérefrid, à la réclamation du comte Regnier, abbé, et d’Éverard, avoué de Stavelot, consent à restituer au monastère les biens de Rouvreux, Féchereux, Noidré et Lillé, en en conservant l’usufruit pour lui et pour son neveu Gislebert, moyennant une redevance annuelle.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>905 07 21<date when="0905-07-21"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0049.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Omnibus</w> <w>Deo</w> <w>pie</w> <w>fideliterque</w> <w>militantibus</w> <w>notum</w> <w>esse</w> <w>cupimus</w> <w>Gislebertum</w> <w>venerabilem</w> <w>ducem</w> <w>necnon</w> <w>gloriosum</w> <w>abbatem</w> <w>Stabulensis</w> <w>monasterii</w> <w>Raginerum</w> <w>et</w> <w>Euerardum</w> <w>advocatum</w> <w>interpellasse</w> <w>quendam</w> <w>nobilem</w> <w>virum</w> <w>nomine</w> <w>Herefridum</w> <w>de</w> <w>rebus</w> <w>conjacentibus</w> <w>in</w> <w>pago</w> <w>et</w> <w>comitatu</w> <w>[Liuuensi]</w> <w>videlicet</w> <w>his</w> <w>nominibus</w>: <w>Rouoreiz</w>, <w>Felcherolas</w>, <w>Nordereit</w>, <w>Leleias</w>, <w>et</w> <w>omnia</w> <w>ibidem</w> <w>aspitientia</w> <w>que</w> <w>supradictus</w> <w>vir</w> <w lemmaRef="nobilis">nobilis</w> <w>prefato</w> <w>ammonente</w> <w>abbate</w> <w>et</w> <w>advocato</w> <w>noluit</w> <w>longe</w> <w>facere</w> <w>a</w> <w>nostra</w> <w>memorati</w> <w>monasterii</w> <w>ditione</w>, <w>subtractis</w> <w>scilicet</w> <w>illis</w> <w>rebus</w> <w>nefarie</w> <w>quondam</w> <w>ab</w> <w>ejusdem</w> <w>monasterii</w> <w>jure</w>. <w>Quapropter</w> <w>isdem</w> <w lemmaRef="nobilis">nobilis</w> <w>Herefridus</w>, <w>pro</w> <w>anime</w> <w>sue</w> <w>parentumque</w> <w>suorum</w> <w>remedio</w> <w>recordans</w> <w>et</w> <w>in</w> <w>veniam</w> <w>olim</w> <w>nequam</w> <w>facti</w>, <w>de</w> <w>hisdem</w> <w>rebus</w> <w>tradidit</w>, <w>atque</w> <w>easdem</w> <w>reddidit</w> <w>res</w> <w>pignoribus</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Remacli</w> <w>confessoris</w> <w>Stabulensis</w> <w>loci</w>, <w>Raginero</w> <w>comite</w> <w>et</w> <w>abbate</w> <w>presentialiter</w> <w>existente</w>; <w>tali</w> <w>videlicet</w> <w>tenore</w>, <w>quod</w> <w>idem</w> <w>ipse</w> <w>et</w> <w>nepos</w> <w>ejus</w> <w>Gislebertus</w> <w>eas</w> <w>haberent</w> <w>tempore</w> <w>vite</w> <w>sue</w>, <w>et</w> <w>annis</w> <w>persolverent</w> <w>singulis</w> <w>unius</w> <w>mansi</w> <w>xenium</w> <w>videlicet</w> <w>III</w> <w>porcos</w> <w>et</w> <w>LX</w> <w>fusas</w> <w>lini</w> <w>ad</w> <w>jam</w> <w>sepe</w> <w>dictum</w> <w lemmaRef="monasterium">monasterium</w>, <w>post</w> <w>finito</w> <w>tempore</w> <w>sue</w> <w>et</w> <w>nepotis</w> <w>vite</w>, <w>illius</w> <w>monasterii</w> <w>finetenus</w> <w>solide</w> <w>et</w> <w>quiete</w> <w>possidendi</w> <w>redderentur</w> <w>juribus</w>. <w>Signum</w> <w>Ragineri</w> <w>ducis</w> <w>qui</w> <w>hanc</w> <w>cartam</w> <w>facere</w> <w>jussit</w>. <w>S</w>. <w>Herefridi</w> <w>traditoris</w>. <w>S</w>. <w>Euerardi</w>. <w>S</w>. <w>Gisleberti</w>. <w>S</w>. <w>Ermengisi</w>. <w>S</w>. <w>Saremanni</w>. <w>S</w>. <w>Rotaudi</w> <w>prepositi</w>. <w>S</w>. <w>Walonis</w> <w>custodis</w> <w>ecclesie</w>. <w>S</w>. <w>Fulradi</w>. <w>is</w> <w>S</w>. <w>Asceri</w>. <w>S</w>. <w>Remigii</w>. <w>Hugo</w> <w lemmaRef="notarius">notarius</w> <w>jussu</w> <w>Ragineri</w> <w>ducis</w> <w>recognovi</w>, <w>anno</w> <w>VI</w> <w>regnante</w> <w>Ludouuico</w> <w>invictissimo</w> <w>rege</w>. <w>Acta</w> <w>Stabulaus</w> <w>publice</w> <w>XII</w> <w>kal</w> <w>augusti</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

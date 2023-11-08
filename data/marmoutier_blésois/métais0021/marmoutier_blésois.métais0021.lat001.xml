@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 21</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">25-26</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0021">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Ernald, fermier de Marmoutier, à Mesland, ayant offert un guerrier pour défendre par les armes son droit, contre Otbert, officier du comte Thibault, qui lui réclamait la commendise, Otbert incertain du fait refusa de combattre et fut condamné à rendre l'argent qu'il avait reçu, par Guarin, prévot de Blois, siégeant sous l'ormeau dans la cour du Comte.</p>
+         </div>
+         <dateline>1037-1089<date/><date notBefore="1037-01-01" notAfter="1089-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0021.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>ERNALDO</w> <w>RUSTICO</w> <w>VILLANO</w></head>
+               <p xml:space="preserve"><w>Otbertus</w> <w>serviens</w> <w>comitis</w> <w>Tetbaldi</w> <w>calumniatus</w> <w>est</w> <w>Ernaldum</w> <w>rusticum</w>, <w>habitantem</w> <w>apud</w> <w>fontem</w> <w>merlandi</w>, <w>quod</w> <w>fuisset</w> <w>de</w> <w>villanis</w> <w>qui</w> <w>pertinebant</w> <w>ad</w> <w>curtem</w> <w>de</w> <w>medumna</w>, <w>qui</w> <w>solebant</w> <w>reddere</w> <w>commandisiam</w> <w>comiti</w> <w>Tetbaldo</w>; <w>de</w> <w>qua</w> <w>re</w> <w>tenuit</w> <w lemmaRef="placitum">placitum</w> <w>Guarinus</w> <w>prepositus</w> <w>blesensis</w>, <w>in</w> <w>quo</w> <w>arrannuit</w> <w>Ernaldus</w> <w>contra</w> <w>Otbertum</w> <w>jurare</w> <w>et</w> <w>deffendere</w> <w>se</w> <w>non</w> <w>pertinere</w> <w>ad</w> <w>curtam</w> <w>illam</w> <w>de</w> <w>Medumna</w>, <w>nec</w> <w>unquam</w> <w>dedisse</w> <w>alicui</w> <w>commendisiam</w> <w>nisi</w> <w>monachiis</w> <w>sancti</w> <w>Martini</w>. <w>Quando</w> <w>venit</w> <w>terminus</w> <w>pugne</w> <w>habuit</w> <w>filium</w> <w>suum</w> <w>Rainardum</w> <w>preparatum</w> <w>ad</w> <w>pugnam</w>, <w>quos</w> <w>duxerunt</w> <w lemmaRef="dominus">domnus</w> <w>Fulbertus</w> <w>et</w> <w lemmaRef="dominus">domnus</w> <w>Rotbertus</w>, <w>monachi</w> <w>nostri</w>, <w>ante</w> <w>prepositum</w>, <w>et</w> <w>obtulerunt</w> <w>juuenam</w> <w>ad</w> <w>pugnam</w> <w>tenentem</w> <w>in</w> <w>manibus</w> <w>scutum</w> <w>suum</w> <w>et</w> <w>baculum</w>. <w>Cumque</w> <w>moueret</w> <w>prepositus</w> <w>Otbertum</w> <w>de</w> <w>pugna</w>, <w>recusavit</w> <w>dicens</w> <w>se</w> <w>nolle</w> <w>pugnare</w> <w>de</w> <w>re</w> <w>quam</w> <w>certe</w> <w>non</w> <w>sciret</w>. <w>Hoc</w> <w>audiens</w> <w>prepositus</w> <w>clamauit</w> <w>monachiis</w> <w>nostris</w> <w>villanum</w> <w>nostrum</w> <w>solutum</w> <w>et</w> <w>quietum</w>, <w>cum</w> <w>omni</w> <w>prole</w> <w>sua</w> <w>in</w> <w>perpetuum</w>. <w>Et</w> <w>precepit</w> <w>Otberto</w> <w>ut</w> <w>redderet</w> <w>illi</w> <w>peccuniam</w> <w>quam</w> <w>per</w> <w>istam</w> <w>occasionnem</w> <w>ei</w> <w>abstulerat</w>. <w>Hoc</w> <w>factum</w> <w>est</w> <w>apud</w> <w>blesim</w> <w>sub</w> <w>ulmo</w> <w>ante</w> <w>aulam</w> <w>comitis</w>. <w>Testibus</w> <w>istis</w> <w>Guicherio</w>, <w>Asthone</w> <w>borrello</w>, <w>Rotberto</w> <w>expiardo</w> <w>nepote</w> <w>eius</w>, <w>Guillelmo</w>, <w>Ascelino</w> <w>nepote</w> <w>Jotberti</w> <w>de</w> <w>Calmonte</w>, <w>Ascelino</w> <w>et</w> <w>Belino</w>, <w>Haimerico</w> <w>maiore</w> <w>de</w> <w>medumna</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 82</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">104-105</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0082">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice relatant le don de la forêt de Chedon, fait aux moines de Saint-Julien par Eremburge, épouse de Foulques V, et la confirmation de ce don par Geoffroy Plantagenet. </p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Château-du-Loir</p>
+         </div>
+         <dateline>1142<date notBefore="1142-01-01" notAfter="1142-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0082.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Noverint</w> <w>presentes</w> <w>et</w> <w>secuturi</w>, <w>quod</w> <w>Aremburgis</w>, <w>comitissa</w>, <w>uxor</w> <w>Fulconis</w>, <w>comitis</w> <w>Andegevorum</w>, <w>et</w> <w>postea</w> <w>Jerosolimorum</w> <w>regis</w>, <w>cum</w> <w>filio</w> <w>suo</w>, <w>Gaufredo</w>, <w>et</w> <w>Archembaudo</w> <w>filio</w> <w>Ulgerii</w>, <w>donavit</w> <w>Deo</w> <w>et</w> <w>beato</w> <w>Juliano</w>, <w>martiri</w>, <w>et</w> <w>conventui</w> <w>monachorum</w>, <w>in</w> <w>ecclesia</w> <w>nomini</w> <w>ejusdem</w> <w>martiris</w> <w>dedicata</w> <w>apud</w> <w>Turonum</w> <w>Domino</w> <w>famulanti</w>, <w>boscum</w> <w>sive</w> <w>forestam</w> <w>de</w> <w>Chedonio</w>, <w>a</w> <w>foresta</w> <w>Militum</w> <w>usque</w> <w>ad</w> <w>domum</w> <w>monachorum</w>, <w>qui</w> <w>ibi</w> <w>consistunt</w>, <w>ad</w> <w>extirpandum</w>, <w>sive</w> <w>excolendum</w>, <w>seu</w> <w>hospitandum</w> <w>aut</w> <w>prout</w> <w>conspectui</w> <w>eorum</w> <w lemmaRef="placitum">placitum</w>, <w>vel</w> <w>visum</w> <w>foret</w> <w>utilius</w>, <w>tractandum</w> <w>ac</w> <w>disponendum</w>. <w>Fecerunt</w> <w>siquidem</w> <w>donum</w> <w>istud</w> <w>in</w> <w>capitulo</w> <w>Sancti</w> <w>Juliani</w> <w>Turonensis</w>, <w>eo</w> <w>ipse</w> <w>tempore</w> <w>et</w> <w>eisdem</w> <w>diebus</w>, <w>quo</w> … <w>Fulco</w>, <w lemmaRef="comes">comes</w>, <w>Jerusalem</w> <w>prima</w> <w>vice</w> <w>perrexerat</w>, <w>libere</w> <w>et</w> <w>quiete</w>, <w>et</w> <w>tam</w> <w>comitis</w> <w>Andegavensis</w>, <w>quam</w> <w>officialium</w> <w>ac</w> <w>ministrorum</w> <w>ipsius</w>, <w>a</w> <w>bosco</w> <w>eodem</w>, <w>vel</w> <w>terra</w> <w>seu</w> <w>hominibus</w> <w>qui</w> <w>in</w> <w>ea</w> <w>hospitandi</w> <w>essent</w>, <w>omni</w> <w>exclusa</w> <w>in</w> <w>posterum</w> <w lemmaRef="vicarius">vicaria</w>, <w>districtione</w>, <w>violentia</w>, <w>exactione</w> <w>et</w> <w>omni</w> <w>prorsus</w> <w>consuetudine</w>. <w>Longo</w> <w>postea</w> <w>tempore</w>, <w>supramemorato</w> <w>Fulcone</w> <w>regni</w> <w>Jerosolimitani</w> <w>adepto</w> <w>gubernacula</w>, <w>ac</w> <w>filio</w> <w>ejus</w>, <w>Gaufredo</w>, <w>qui</w> <w>donum</w> <w>fecerat</w>, <w>Andegavensis</w> <w>comitatus</w> <w>administrationem</w> <w>atque</w> <w>moderamina</w> <w>disponente</w>, <w>tam</w> <w>de</w> <w>quantitate</w> <w>elemosinae</w> <w>praelibatae</w> <w>quam</w> <w>de</w> <w>consuetudinibus</w>, <w>oborta</w> <w>est</w> <w>contentio</w> <w>inter</w> <w>abbatem</w> <w>Sancti</w> <w>Juliani</w> <w>tunc</w> <w>temporis</w> <w>Hamericum</w> <w>et</w> <w>praepositum</w> <w>de</w> <w>Monte</w> <w>Basonis</w>, <w>nomine</w> <w>Isoredum</w>, <w>quae</w> <w>controversia</w> <w>ipsius</w> <w>serenissimi</w> <w>comitis</w> <w>Gaufredi</w> <w>tali</w> <w>dictione</w> <w>terminata</w> <w>est</w>: <w>praecepit</w> <w>sane</w> <w>ut</w> <w>idem</w> <w>Ysoredus</w> <w>et</w> <w>Archenbaudus</w> <w>filius</w> <w>Ulgerii</w>, <w>cum</w> <w>pluribus</w> <w>aliis</w> <w>ad</w> <w>visionem</w> <w>procederent</w> … <w>Nomina</w> <w>eorum</w> <w>qui</w> <w>juraverunt</w> <w>haec</w> <w>sunt</w>: <w lemmaRef="pagus">Paganus</w> <w>de</w> <w>Chedone</w>; <w>Girardus</w>, <w>nepos</w> <w>ejus</w>; <w>Harduinus</w> <w>de</w> <w>Bosco</w>. <w>Testes</w> <w>ex</w> <w>parte</w> <w>monachorum</w>: <w>ipse</w> <w>Haimericus</w>, <w lemmaRef="abbas">abbas</w>; <w>Radulfus</w> <w>de</w> <w>Bauno</w>; <w>Guido</w> <w>Bajulus</w>, <w>major</w> <w>de</w> <w>Coniaco</w>, <w>et</w> <w>filius</w> <w>ejus</w>, <w>Engelardus</w>; <w>Gossardus</w>; <w>Gaufredus</w>, <w>famulus</w> <w>abbatis</w>. <w>Ex</w> <w>parte</w> <w>Ysoredi</w>: <w>Barba</w> <w>de</w> <w>Monte</w> <w>Basone</w>; <w>Goscerrannus</w> <w>et</w> <w>Petrus</w>, <w>nepos</w> <w>Ysoredi</w>. <w>Facta</w> <w>sunt</w> <w>haec</w> <w>anno</w> <w>M</w>.<w>C</w>.<w>XL</w>.<w>II</w> <w>Verbi</w> <w>Incarnati</w>. <w>Data</w> <w>Castro</w> <w>Ledi</w>, <w>per</w> <w>manum</w> <w>Thomae</w>, <w>capellani</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

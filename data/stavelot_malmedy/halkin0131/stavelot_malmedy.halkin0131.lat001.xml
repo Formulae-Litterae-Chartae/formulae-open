@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 131</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">268 - 269</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0131">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte rapportant comment Wideric de Paire, voulant mourir avec l’habit religieux, donna au monastère de Stavelot, pour y avoir sa sépulture, son alleu, que son fils Herman de Heis reprit à cens, et comment, après la mort d’Herman, Renier, son neveu, donna à l’abbaye un manse à Rapport.</p>
+         </div>
+         <dateline>[Vers 1100]<date notBefore="1090-01-01" notAfter="1110-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0131.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>sancte</w> <w>et</w> <w>individue</w> <w>Trinitatis</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>futuris</w> <w>et</w> <w>presentibus</w>, <w>quod</w> <w>Widericus</w> <w>de</w> <w>Pares</w>, <w>ad</w> <w>extrema</w> <w>veniens</w>, <w>infirmitate</w> <w>tactus</w> <w>voluit</w> <w>seculo</w> <w>abrenuntiare</w> <w>et</w> <w lemmaRef="monachus">monachus</w> <w>fieri</w> <w>in</w> <w>monasterio</w> <w>Stabulaus</w>. <w>Quo</w> <w>dum</w> <w>consensu</w> <w>et</w> <w>voluntate</w> <w>filiorum</w> <w>suorum</w> <w>parentumque</w> <w>se</w> <w>ferri</w> <w>faceret</w>, <w>ad</w> <w>Payres</w> <w>veniens</w> <w lemmaRef="allodium">allodium</w> <w>suum</w> <w>ubi</w> <w>in</w> <w>voluntate</w> <w>monachi</w> <w>mortuus</w> <w>est</w>, <w>tradens</w> <w>his</w> <w>ipsum</w> <w lemmaRef="allodium">allodium</w> <w>per</w> <w>manus</w> <w>filii</w> <w>sui</w> <w>Herimanni</w> <w>de</w> <w>Heis</w> <w>sub</w> <w>testimonio</w> <w>sanctoque</w> <w>Remaclo</w> <w>pro</w> <w>salute</w> <w>anime</w> <w>sue</w> <w>et</w> <w>loco</w> <w>sepulture</w>. <w>Quod</w> <w>et</w> <w>factum</w> <w>est</w>. <w>Recepitque</w> <w>idem</w> <w>Herimannus</w> <w>de</w> <w>Heis</w> <w>ipsum</w> <w lemmaRef="allodium">allodium</w> <w>ab</w> <w>altari</w> <w>et</w> <w>fratribus</w>, <w>ea</w> <w>conditione</w> <w>ut</w> <w>singulis</w> <w>annis</w> <w>V</w> <w>sol</w>. <w lemmaRef="census">census</w> <w>in</w> <w>anniversario</w> <w>defuncti</w> <w>solveret</w> <w>et</w> <w>eo</w> <w>decedente</w> <w>posteri</w> <w>sui</w> <w>investituram</w> <w>ab</w> <w>altari</w> <w>acciperent</w> <w>solumque</w> <w>XXX</w> <w>den</w>. <w>pro</w> <w>investitura</w> <w>solverent</w>. <w>Mortuo</w> <w>autem</w> <w>Herimanno</w> <w>et</w> <w>juxta</w> <w>patrem</w> <w>sepulto</w>, <w>Reinnerus</w> <w>filius</w> <w>fratris</w> <w>et</w> <w lemmaRef="servus">servus</w> <w>ejus</w>, <w>accepta</w> <w>uxore</w> <w>Bezela</w> <w>nomine</w> <w>nobili</w> <w>femina</w>, <w>ut</w> <w>ipse</w> <w>et</w> <w>uxor</w> <w>ejus</w> <w>cum</w> <w>posteris</w> <w>suis</w> <w>daretur</w> <w>ecclesie</w>, <w>dedit</w> <w lemmaRef="mansus">mansum</w> <w>unum</w> <w>in</w> <w>Rapau</w> <w>venientem</w> <w>ex</w> <w>parte</w> <w>ipsius</w> <w>Bezele</w> <w>pro</w> <w>respectu</w> <w>XXX</w> <w>den</w>. <w>singulis</w> <w>annis</w>. <w>Hujus</w> <w>rei</w> <w>testes</w> <w>sunt</w>: <w>Adelardus</w> <w>advocatus</w> <w>de</w> <w>Lyesen</w>, <w>Franco</w> <w>de</w> <w>Braz</w> <w>et</w> <w>filii</w> <w>ejus</w> <w>Boso</w> <w>et</w> <w>Johannes</w>, <w>Elgerus</w> <w>de</w> <w>Melnoit</w> <w>et</w> <w>Rogerus</w> <w>filius</w> <w>ejus</w>, <w>Godefridus</w> <w>de</w> <w>Melnoit</w>, <w>Cuono</w>, <w>Robertus</w> <w>et</w> <w>Reinnerus</w> <w>de</w> <w>Longia</w>, <w>aliique</w> <w>plures</w> <w>ecclesie</w> <w>filii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

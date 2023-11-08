@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 163</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">155</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0163">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Les pêcheries de la Cisse, à Chambon, sont reconnues propriété de Marmoutier.</p>
+         </div>
+         <dateline>1146<date notBefore="1146-01-01" notAfter="1146-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0163.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>FLUMINE</w> <w>SITHIAE</w> <w>ET</w> <w>PISCATIONE</w> <w>APUD</w> <w>CAMBONEM</w></head>
+               <p xml:space="preserve"><w>Litigatum</w> <w>bis</w> <w>coram</w> <w>Theobaldo</w>, <w>comite</w> <w>blesensi</w>, <w>contra</w> <w>monachos</w>, <w>apud</w> <w>Cambonam</w> <w lemmaRef="villa">villam</w>, <w>quam</w> <w>per</w> <w>innumera</w> <w>pene</w> <w>annorum</w> <w>curricula</w>, <w>monachi</w> <w>maioris</w> <w>monasterii</w> <w>iam</w> <w>antea</w> <w>tenuisse</w> <w>dicuntur</w> <w>in</w> <w>ea</w> <w lemmaRef="carta">carta</w>, <w>pro</w> <w>flumine</w> <w>Sithiae</w> <w>et</w> <w>piscatione</w>, <w>quam</w> <w>duo</w> <w>successive</w> <w>milites</w> <w>ad</w> <w>se</w> <w>pertinere</w> (<w>dicebant</w>), <w>coram</w> <w>comite</w>, <w>et</w> <w>Andrea</w> <w>de</w> <w>Baldamento</w>, <w>eius</w> <w>dapifero</w>, <w>qui</w> <w>sententiam</w> <w>protulit</w>. <w>Testibus</w> <w>Hugone</w> <w>de</w> <w>Castro</w> <w>Theoderici</w>, <w>Goherio</w> <w>de</w> <w>Almeto</w>, <w>Hugone</w> <w>de</w> <w>Caluomonte</w>. <w>Actum</w> <w>anno</w> <w>incarnationis</w> <w>1146</w>, <w>regnante</w> <w>Ludouico</w> <w>filio</w> <w>Ludouici</w> <w>rege</w> <w>francorum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

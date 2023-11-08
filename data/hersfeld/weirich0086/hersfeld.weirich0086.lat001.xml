@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader xml:lang="deu">
@@ -73,9 +72,7 @@
       <encodingDesc>
          <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Urkundenbuch der Reichsabtei Hersfeld. Erster Band, welches 1936 von Hans Weirich herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
          <refsDecl n="CTS">
-            <cRefPattern matchPattern="(.+)"
-                         n="charta"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
    </teiHeader>
@@ -87,11 +84,9 @@
          <dateline>[1017-1018?]<date notBefore="1017-01-01"/></dateline>
       </front>
       <body>
-         <div type="edition"
-              xml:lang="lat"
-              n="urn:cts:formulae:hersfeld.weirich0086.lat001">
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:hersfeld.weirich0086.lat001">
             <div type="textpart" subtype="charta" n="1">
-               <p xml:space="preserve"><w>…</w> <w>IIII</w> <w>quoque</w> <w>mansos</w> <w>in</w> <w>Karelesbach</w> <w>et</w> <w>Karestat</w> <w>sitos</w> <w>dedi</w> <w>cenobitis</w> <w>in</w> <w>Heroldesvelt</w> <w>pro</w> <w>decima</w> <w>cuiusdam</w> <w>ville</w> <w>Varlinge</w> <w>dicte</w>, <w>in</w> <w>parochia</w> <w>Halverstadensi</w> <w>site</w>, <w>ut</w> <w>die</w> <w>ipsa</w> <w>decima</w> <w>que</w> <w>vetustas</w> <w>in</w> <w>lignorum</w> <w>instrumentis</w> <w>consumpserit</w> <w>reparentur</w>.</p>
+               <p xml:space="preserve">… <w>IIII</w> <w>quoque</w> <w>mansos</w> <w>in</w> <w>Karelesbach</w> <w>et</w> <w>Karestat</w> <w>sitos</w> <w>dedi</w> <w>cenobitis</w> <w>in</w> <w>Heroldesvelt</w> <w>pro</w> <w>decima</w> <w>cuiusdam</w> <w>ville</w> <w>Varlinge</w> <w>dicte</w>, <w>in</w> <w lemmaRef="parochia">parochia</w> <w>Halverstadensi</w> <w>site</w>, <w>ut</w> <w>die</w> <w>ipsa</w> <w>decima</w> <w>que</w> <w>vetustas</w> <w>in</w> <w>lignorum</w> <w>instrumentis</w> <w>consumpserit</w> <w>reparentur</w>.</p>
             </div>
          </div>
       </body>

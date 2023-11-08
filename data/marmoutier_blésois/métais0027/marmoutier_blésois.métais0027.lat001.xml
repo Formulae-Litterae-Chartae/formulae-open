@@ -1,0 +1,90 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 27</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">33-34</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0027">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Salomon, fils de Odon le Roux de Lavardin, reconnaît légitimes les possessions de Marmoutier.</p>
+         </div>
+         <dateline>Vers 1050<date notBefore="1040-01-01" notAfter="1060-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0027.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>NOTICIA</w> <w>DE</w> <w>AUCTORAMENTO</w> <w>SALOMONIS</w> <w>FILII</w> <w>ODONIS</w> <w>RUFI</w>, <w>VINDOCINUM</w>.»</head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w> <w>maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>sancti</w> <w>Martini</w>, <w>quod</w> <w>Salomon</w> <w>filius</w> <w>Odonis</w> <w>Rufi</w> <w>de</w> <w>Lauarzino</w>, <w>cuius</w> <w>nomine</w> <w>venditionem</w> <w>seu</w> <w>donationem</w> <w>auctoram</w> .... <w>terrarum</w> <w>quas</w> ..... <w lemmaRef="pater">pater</w> <w>eius</w> <w>siue</w> <w>homines</w> <w>patris</w> <w>sui</w> <w>a</w> <w>suo</w> <w>ad</w> <w>nostrum</w> <w lemmaRef="dominium">dominium</w> <w>scilicet</w> <w>adduxerant</w>, <w>calumniam</w> <w>commovisset</w>, <w>et</w> <w>quid</w> <w>ageret</w> <w>sepe</w> <w>admonitus</w> <w>pertinaciter</w> <w>restitisset</w>, <w>tandem</w> <w>finem</w> <w>imposuerit</w> <w>ab</w> <w>inquietantium</w> ..... <w>usus</w> <w>consilio</w> <w>iam</w> <w>saniori</w> <w>desierit</w>. <w>Eius</w> <w>calumnie</w> <w>dimissionis</w> <w lemmaRef="carta">carta</w> <w>exstitit</w>, <w>pecunia</w> <w>autem</w> <w>ei</w> <w>collata</w> <w>rei</w> <w>utriuslibet</w> <w>aut</w> <w>unius</w> <w>scilicet</w> <w>auri</w> <w>uncie</w>, <w>aut</w> <w>XXV</w> <w>solidorum</w> <w>a</w> <w>priore</w> <w>sibi</w> <w>oblata</w>. <w>Actum</w> <w>est</w> <w>hoc</w> <w>apud</w> <w lemmaRef="villa">villam</w> <w>que</w> <w>dicitur</w> <w>Nauolium</w>, <w>presente</w> <w>domno</w> <w>abbate</w> <w>Alberto</w>, <w>et</w> <w>adhibitis</w> <w>testibus</w> <w>istis</w>:</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Tetbaldo</w> <w>filio</w> <w>Leterii</w></cell><cell style="text-align: left;" rend="Normal"><w>Eudone</w> <w>rufo</w></cell></row><row><cell style="text-align: left;" rend="Normal"><w>Andrea</w></cell><cell style="text-align: left;" rend="Normal"><w>Frotgerio</w> <w>mariscalco</w></cell></row><row><cell style="text-align: left;" rend="Normal"><w>Alcherio</w> <w>filio</w> <w>Gaiscelini</w> <w>venatoris</w></cell><cell style="text-align: left;" rend="Normal"><w>Raimundo</w> <w>pictauensi</w></cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rotberto</w> <w>filio</w> <w>Litgerii</w> <w>presbiteri</w>.</cell><cell style="text-align: left;" rend="Normal"/></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

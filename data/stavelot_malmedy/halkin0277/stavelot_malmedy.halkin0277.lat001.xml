@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 277</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">520</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0277">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Henri de Mollesberg renonce en faveur des moines de Malmedy à son avouerie sur les biens de Sainte-Geneviève d’Andernach. </p>
+         </div>
+         <dateline>1190<date notBefore="1190-01-01" notAfter="1190-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0277.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>quod</w> <w>ego</w> <w>Heinricus</w> <w>de</w> <w>Mollesberg</w> <w>advocatiam</w> <w>super</w> <w>bonis</w> <w>sanctae</w> <w>Genovefae</w> <w>Andernaci</w>, <w>quam</w> <w>Heinricus</w> <w>filius</w> <w>Juttae</w>, <w>a</w> <w>me</w> <w>in</w> <w lemmaRef="beneficium">beneficium</w> <w>diu</w> <w>possederat</w>, <w>qui</w> <w>mihi</w> <w>eandem</w> <w>ad</w> <w>opus</w> <w>ecclesiae</w> <w>voluntarie</w> <w>resignavit</w>, <w>pro</w> <w>remedio</w> <w>anime</w> <w>patris</w> <w>mei</w> <w>et</w> <w>matris</w> <w>omniumque</w> <w>parentum</w> <w>meorum</w> <w>sine</w> <w>ullo</w> <w>dolo</w> <w>et</w> <w>omni</w> <w>simulatione</w> <w>irrecuperabiliter</w> <w>proprio</w> <w>arbitrio</w> <w>fratribus</w> <w>Malmundariensis</w> <w>aecclesiae</w>, <w>a</w> <w>quorum</w> <w>abbate</w> <w>predictam</w> <w>advocatiam</w> <w>tenuisse</w> <w>debueram</w>, <w>presentibus</w> <w>militibus</w>, <w>presentibus</w> <w>scabinis</w> <w>Coloniensis</w> <w>archiepiscopi</w> <w>et</w> <w>omnibus</w> <w>civibus</w> <w>Andernaci</w> <w>resignavi</w>, <w>ea</w> <w>tamen</w> <w>conditionaria</w> <w>racione</w> <w>et</w> <w>nulla</w> <w>alia</w> <w>obvolvente</w> <w>fallacia</w>, <w>si</w> <w>aliquis</w> <w>heredum</w> <w>meorum</w> <w>predictum</w> <w>officium</w> <w>advocatie</w> <w>ab</w> <w>abbate</w> <w>et</w> <w>fratribus</w> <w>Malmundariensis</w> <w>ecclesiae</w> <w>absolvere</w> <w>temptaverit</w>, <w>XXX</w> <w>M</w> <w>coloniensis</w> <w>monetae</w> <w>ecclesiae</w> <w>persolvat</w>, <w>deinde</w> <w>abbati</w> <w>hominium</w> <w>faciat</w>, <w>et</w> <w>sic</w> <w lemmaRef="beneficium">beneficium</w> <w>recipiet</w>. <w>Hujus</w> <w>facti</w> <w>testes</w> <w>fuerunt</w> : <w>Teodericus</w> <w lemmaRef="comes">comes</w> <w>de</w> <w>Wide</w> <w>et</w> <w>advocatus</w> <w>Andernaci</w>, <w>Reimboldus</w> <w>de</w> <w>Isemburg</w>, <w>Philippus</w> <w lemmaRef="scabinus">scabinus</w>, <w>Heinricus</w>, <w>Burchardus</w>, <w>Arnoldus</w> <w>villicus</w> <w>regis</w>, <w>Wigandus</w>, <w>Johannes</w>, <w>Philippus</w>. <w>Acta</w> <w>sunt</w> <w>hec</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M°</w> <w>C°</w> <w>LXXXX°</w>, <w>indictione</w> <w>VIII</w>, <w>regnante</w> <w>Friderico</w> <w>Romanorum</w> <w>imperatore</w> <w>et</w> <w>Heinrico</w> <w>rege</w> <w>filio</w> <w>ejusdem</w>, <w>tempore</w> <w>Philippi</w> <w>Coloniensis</w> <w>archiepiscopi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

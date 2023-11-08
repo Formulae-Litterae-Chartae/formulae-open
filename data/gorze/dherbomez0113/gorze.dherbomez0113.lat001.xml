@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 113</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">206</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0113">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Jean, abbé de Gorze, concède à Giserannus le moulin de l'abbaye à Epinonville.</p>
+         </div>
+         <dateline>974<date notBefore="0974-01-01" notAfter="0974-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0113.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>DE</w> <w>EPLONIS</w> <w lemmaRef="villa">VILLA</w>.</head>
+               <p xml:space="preserve"><w>Ego</w> <w>Johannes</w>, <w>annuente</w> <w>superne</w> <w>dispositionis</w> <w lemmaRef="gratia">gratia</w>, <w>Gorziensis</w> <w>cenobii</w> <w lemmaRef="abbas">abbas</w>, <w>congaudens</w> <w>omnium</w> <w>profectu</w> <w>christianorum</w>, <w>maxime</w> <w>nostre</w> <w>potestati</w> <w>subiectorum</w>, <w>vicemque</w> <w>beneficiis</w> <w>nobis</w> <w>fideliter</w> <w>servientibus</w> <w>rependere</w> <w>volens</w>, <w>concessi</w> <w>huic</w> <w>Giseranno</w> <w>molendinum</w> <w>quoddam</w> <w>nostrum</w> <w>Epplonis</w> <w lemmaRef="villa">villa</w> <w>situm</w>, <w>vetustate</w> <w>et</w> <w>incuria</w> <w>undique</w> <w>collapsum</w>, <w>sua</w> <w>opera</w> <w>et</w> <w>studio</w> <w>reparatum</w>, <w>cum</w> <w>con</w> <w>silio</w> <w>ac</w> <w>favore</w> <w>seniorum</w> <w>fratrum</w> <w>loci</w> <w>nostri</w>, <w>Teutheri</w> <w>videlicet</w> <w>prepositi</w>, <w>Winemanni</w> <w lemmaRef="ministerialis">ministerialis</w>, <w>reliquorumque</w>, <w>hac</w> <w>tenoris</w> <w lemmaRef="causa">causa</w> <w>interposita</w> <w>ut</w>, <w>unoquoque</w> <w>labentis</w> <w>temporis</w> <w>anno</w>, <w>XX</w> <w>duos</w> <w>modios</w> <w>parati</w> <w>et</w> <w>unum</w> <w>porcum</w> <w>ex</w> <w>eodem</w> <w>ad</w> <w>usus</w> <w>nostros</w> <w>persolvat</w> <w>molendino</w>. <w>Si</w> <w>vero</w> <w>ex</w> <w>memorato</w> <w>negligens</w> <w>extiterit</w> <w>servitio</w>, <w>emendato</w> <w>legaliter</w> <w>neglecto</w>, <w>liceat</w> <w>ei</w> <w>frui</w> <w>a</w> <w>nobis</w> <w>concesso</w>. <w>Anno</w> <w>quo</w> <w>supra</w> <w>factum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

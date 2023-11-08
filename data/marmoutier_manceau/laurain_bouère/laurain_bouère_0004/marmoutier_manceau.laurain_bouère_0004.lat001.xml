@@ -1,0 +1,86 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Bouère, Nr. 4</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">52-53</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_bouère_0004">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Accord entre l’abbaye de Marmoutier et Foulque de Bouère réglant les relations des bourgeois du prieuré avec les bourgeois du seigneur.</p>
+         </div>
+         <dateline>1065<date notBefore="1065-01-01" notAfter="1065-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_bouère_0004.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w>, <w>Maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>sancti</w> <w>Martini</w>, <w>hoc</w> <w>convenisse</w> <w>inter</w> <w>nos</w> <w>et</w> <w>Fulconem</w> <w>de</w> <w>Boeria</w> <w>de</w> <w>burgo</w> <w>quem</w> <w>feceramus</w> <w>apud</w> <w>Boeriam</w> <w>in</w> <w>terra</w> <w>ab</w> <w>ipso</w> <w>nobis</w> <w>donata</w>, <w>ut</w> <w lemmaRef="monachus">monachus</w> <w>qui</w> <w>rebus</w> <w>nostris</w> <w>in</w> <w>eo</w> <w>loco</w> <w>prefuerit</w>, <w>non</w> <w>recipiat</w> <w>in</w> <w>eumdem</w> <w>nostrum</w> <w>burgum</w> <w>burgenses</w> <w>Fulconis</w> <w>ipsius</w> <w>ad</w> <w>habitandum</w> <w>preter</w> <w>illius</w> <w>voluntatem</w> <w>assensumque</w> <w>gratuitum</w>, <w>et</w> <w>ut</w> <w>nostri</w> <w>burgenses</w> <w>a</w> <w>burgensibus</w> <w>illius</w> <w>neque</w> <w>panem</w> <w>neque</w> <w>vinum</w> <w>aut</w> <w>carnem</w> <w>vel</w> <w>aliud</w> <w>quicquam</w>, <w>sed</w> <w>ex</w> <w>toto</w> <w>nihil</w> <w>accipiant</w>, <w>ita</w> <w>sibi</w> <w>commendatum</w> <w>ut</w> <w>per</w> <w>eos</w> <w>vel</w> <w>penes</w> <w>ipos</w> <w>sic</w> <w>hoc</w> <w>vendant</w> <w>illi</w> <w>ut</w> <w>perdat</w> <w>inde</w> <w>Fulco</w> <w>consuetudinarias</w> <w>redhibitiones</w>, <w>quas</w> <w>accipere</w> <w>solet</w> <w>de</w> <w>rebus</w> <w>quas</w> <w>in</w> <w>burgo</w> <w>suo</w> <w>vendunt</w> <w>sui</w>, <w>et</w> <w>ut</w> <w>item</w> <w>preter</w> <w>predictos</w> <w>burgenses</w> <w>alios</w> <w>etiam</w> <w>quoslibet</w> <w>homines</w> <w>in</w> <w>ipsius</w> <w>Fulconis</w> <w>terra</w> <w>manentes</w> <w>ibique</w> <w>locum</w> <w>et</w> <w>focum</w> <w>habentes</w> <w>non</w> <w>recipiat</w> <w lemmaRef="monachus">monachus</w> <w>in</w> <w>burgum</w> <w>nostrum</w>, <w>ut</w> <w>ibi</w> <w>seu</w> <w>magnam</w> <w>seu</w> <w>parvam</w> <w>habeat</w> <w>domum</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>terram</w> <w>illius</w> <w>ex</w> <w>toto</w> <w>reliquerit</w> <w>et</w> <w>in</w> <w>nostro</w> <w>habitare</w> <w>burgo</w> <w>voluerit</w>, <w>recipiat</w> <w>illum</w> <w lemmaRef="monachus">monachus</w> <w>absque</w> <w>ulla</w> <w>lesione</w> <w>vel</w> <w>offensione</w> <w>amicitie</w> <w>Fulconis</w>. <w>Si</w> <w>quis</w> <w>etiam</w> <w>ex</w> <w>burgensibus</w> <w>nostris</w> <w>exercere</w> <w>voluerit</w> <w>aliquid</w> <w>terre</w> <w>Fulconis</w>, <w>non</w> <w>fiet</w> <w>propter</w> <w>hoc</w> <w>in</w> <w>ceteris</w> <w>consuetudinarius</w> <w>eius</w>, <w>sola</w> <w>scilicet</w> <w>reddita</w> <w>consuetudine</w> <w>terre</w> <w>illius</w>. <w>Porro</w> <w>autem</w> <w>quicumque</w> <w>extraneus</w> <w>de</w> <w>quocumque</w> <w>veniens</w> <w>loco</w> <w>habitare</w> <w>voluerit</w> <w>in</w> <w>eodem</w> <w>burgo</w> <w>nostro</w> <w>sive</w> <w>de</w> <w lemmaRef="villa">villa</w> <w>sit</w> <w>ille</w>, <w>sive</w> <w>de</w> <w>civitate</w>, <w>sive</w> <w>de</w> <w>castello</w>, <w>sine</w> <w>ulla</w> <w>calumnia</w> <w>vel</w> <w>contradictione</w> <w>Fulconis</w> <w>recipiatur</w> <w>a</w> <w>monacho</w>. <w>Testes</w> <w>totius</w> <w>conventionis</w> <w>istius</w> <w>primo</w> <w>IIIIor</w> <w>filii</w> <w>Fulconis</w> <w>ipsius</w>, <w>id</w> <w>est</w>, <w>Simon</w>, <w>Rotbertus</w>, <w>Tetbaldus</w> <w>et</w> <w>Ivo</w>, <w>qui</w> <w>etiam</w> <w>tunc</w> <w>omnia</w> <w>nobis</w> <w>auctorizaverunt</w> <w>quecumque</w> <w>donaverat</w> <w lemmaRef="pater">pater</w> <w>illorum</w>. <w>Testes</w> <w>reliqui</w> <w>Guidulfus</w> <w>et</w> <w>Martinus</w>, <w>filii</w> <w>Ausberti</w>, <w>Lambertus</w> <w>Borellus</w>, <w>Algerius</w> <w>de</w> <w>Sancto</w> <w>Dionysio</w>, <w>Fulcodius</w> <w>Bonellus</w>, <w>Rotbertus</w> <w>de</w> <w>Sancto</w> <w>Iohanne</w>, <w>Rainaldus</w> <w>Choines</w>, <w>Constantius</w> <w lemmaRef="presbyter">presbyter</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain), Bouère, Nr. 8</title>
+         </titleStmt>
+         <editionStmt>
+            <edition xml:lang="fre">Cartulaire manceau de Marmoutier (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:lang="fre">
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <date notBefore="1911" notAfter="1945" n="originalAusgabe">1911-1945</date>
+                     <biblScope unit="pp">56-57</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <biblScope unit="volume">1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, welches 1911-1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_bouère_0008">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Confirmation par Simon de Bouère de toutes les acquisitions faites dans son domaine depuis l’entrée de son père à Marmoutier.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Bouère</p>
+         </div>
+         <dateline>1085 12 30<date when="1085-12-30"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_bouère_0008.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>tam</w> <w>presentibus</w> <w>quam</w> <w>futuris</w> <w>quod</w> <w>Symon</w>, <w>filius</w> <w>Fulconis</w> <w>de</w> <w>Boeria</w>, <w>quondam</w> <w>auctorizavit</w> <w>beato</w> <w>Martino</w> <w>Maioris</w> <w>monasterii</w> <w>et</w> <w>monachis</w> <w>suis</w> <w>in</w> <w>capitulo</w> <w>eorumdem</w> <w>quicquid</w> <w>Fulco</w>, <w lemmaRef="pater">pater</w> <w>eius</w>, <w>donaverat</w> <w>aut</w> <w>auctorizaverat</w> <w>eis</w> <w>vel</w> <w>quicquid</w> <w>ipsi</w> <w>precio</w> <w>vel</w> <w>dono</w> <w>adquisierant</w>. <w>Post</w> <w>aliquantulum</w> <w>vero</w> <w>temporis</w>, <w>supradictus</w> <w>Symon</w> <w>cepit</w> <w>occasiones</w> <w>opponere</w> <w>monachis</w> <w>dicens</w> <w>se</w> <w>auctorizasse</w> <w>sicut</w> <w>supradiximus</w> <w>monachis</w>, <w>sed</w> <w>postquam</w> <w lemmaRef="pater">pater</w> <w>suus</w> <w lemmaRef="monachus">monachus</w> <w>effectus</w> <w>est</w> <w>et</w> <w>terra</w> <w>devenit</w> <w>in</w> <w>sua</w> <w>potestate</w>, <w>consuetudines</w> <w>sue</w> <w>terre</w> <w>et</w> <w>hoc</w> <w>quod</w> <w>dono</w> <w>vel</w> <w>pretio</w> <w>postea</w> <w>adquisierant</w> <w>monachi</w>, <w>non</w> <w>auctorizavit</w>. <w>Unde</w> <w>convenit</w> <w>eum</w> <w>Bernardus</w> <w>prior</w> <w>et</w> <w>alii</w> <w>fratres</w> <w>qui</w> <w>venerant</w> <w>cum</w> <w>eo</w> <w>apud</w> <w>Boeriam</w> <w>et</w> <w>hanc</w> <w>concordiam</w> <w>fecerunt</w> <w>cum</w> <w>eo</w> <w>donando</w> <w>XX</w> <w>solidos</w> <w>quod</w> <w>quidquid</w> <w>tempore</w> <w>patris</w> <w>sui</w>, <w>vel</w> <w>quidquid</w> <w>tempore</w> <w>suo</w>, <w>id</w> <w>est</w> <w>postquam</w> <w>terra</w> <w>devenit</w> <w>in</w> <w>sua</w> <w>potestate</w>, <w>monachi</w> <w>pretio</w> <w>vel</w> <w>dono</w> <w>adquisierant</w>, <w>omnes</w> <w>quoque</w> <w>consuetudines</w>, <w>et</w> <w>ut</w> <w>in</w> <w>brevi</w> <w>totum</w> <w>concludam</w>, <w>ex</w> <w>integro</w> <w>auctorizavit</w> <w>eis</w> <w>omnia</w> <w>sicut</w> <w>tenuerant</w> <w>usque</w> <w>ad</w> <w>illam</w> <w>diem</w> <w>qua</w> <w>facta</w> <w>est</w> <w>concordia</w>. <w>De</w> <w>reliquo</w> <w>dixit</w> <w>quia</w> <w>si</w> <w>monachi</w> <w>aliquid</w> <w>dono</w> <w>vel</w> <w>pretio</w> <w>in</w> <w>terra</w> <w>sua</w> <w>adquirerent</w>, <w>consuetudines</w> <w>suas</w> <w>a</w> <w>modo</w> <w>non</w> <w>concedebat</w>, <w>nisi</w> <w>ab</w> <w>illo</w> <w>possent</w> <w>impetrare</w>. <w>Et</w> <w>ut</w> <w>illa</w> <w>dies</w> <w>in</w> <w>qua</w> <w>concordia</w> <w>facta</w> <w>est</w> <w>notificetur</w>, <w>sciatis</w> <w>quia</w> <w>hoc</w> <w>actum</w> <w>est</w> <w>apud</w> <w>Boeriam</w> <w>infra</w> <w>octabas</w> <w>Nativitatis</w> <w>Domini</w>, <w>III</w> <w>kalendas</w> <w>decembris</w>, <w>in</w> <w>festivitate</w> <w>beati</w> <w>Perpetui</w> <w>episcopi</w>, <w>hoc</w> <w>signo</w> <w>quod</w> <w>in</w> <w>illa</w> <w>eadem</w> <w>die</w> <w>iacebat</w> <w>mortuus</w> <w>in</w> <w>ecclesia</w> <w>Boerie</w> <w>Adalardus</w>, <w>cocus</w> <w>eiusdem</w> <w>Symonis</w>. <w>Hoc</w> <w>autem</w> <w>viderunt</w> <w>testes</w> <w>isti</w> <w>Guillelmus</w> <w>filius</w> <w>Guidonis</w>, <w>Salomon</w> <w>de</w> <w>Sancto</w> <w>Briccio</w>, <w>Fulco</w> <w>Bonellus</w>, <w>Suhardus</w> <w>filius</w> <w>Theoderici</w>, <w>Vivianus</w>, <w>Geraudus</w> <w>de</w> <w>Montearbodio</w>, <w>etc</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

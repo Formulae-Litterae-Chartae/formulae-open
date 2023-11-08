@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 122</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">120-121</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0122">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Malgré le bon droit de leur cause, les religieux de MM. empêchent le duel qui allait s’engager dans la cour de Blois, au sujet du moulin de Gièvre, entre leur champion, et celui du chevallier Garnier Biseuil. Voulant éviter l´effusion du sang humain, ils préférèrent acheter la paix à prix d’argent.</p>
+         </div>
+         <dateline>1106<date notBefore="1106-01-01" notAfter="1106-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0122.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>CONCORDIA</w> <w>QUAM</w> <w>FECIMUS</w> <w>CUM</w> <w>GUARNERIO</w> <w>BISOLIO</w>, <w>DE</w> <w>MOLENDINO</w> <w>DE</w> <w>GEURIA</w> — <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>quod</w> <w>quidam</w> <w>miles</w> <w>blesensis</w>, <w>Guarnerius</w> <w>nomine</w>, <w>cognomento</w> <w>uero</w> <w>bisolius</w>, <w>accepta</w> <w>in</w> <w>coniugem</w> <w>Sibilla</w> <w>filia</w> <w>Harduini</w> <w>ruilli</w>, <w>de</w> <w>quo</w> <w>Hardino</w> <w>nos</w> <w>habebamus</w> <w>molendinum</w> <w>de</w> <w>Geuria</w>, <w>sicut</w> <w>in</w> <w>alia</w> <w>cartha</w> <w>plenius</w> <w>inuenitur</w>, <w>ille</w> <w>Gaurnerius</w> <w>calumniatus</w> <w>est</w> <w>nobis</w> <w>monachis</w> <w>maioris</w> <w>monasterii</w> <w>illum</w> <w>molendinum</w>, <w>ex</w> <w>parte</w> <w>uxoris</w> <w>sue</w> <w>Sibille</w>, <w>dicens</w> <w>eam</w> <w>nunquam</w> <w>concessisse</w>. <w>Nos</w> <w>autem</w> <w>litteras</w> <w>nostras</w> <w>de</w> <w>eadem</w> <w>re</w> <w>factas</w> <w>protulimus</w>, <w>et</w> <w>testes</w> <w>idoneos</w>, <w>qui</w> <w>eam</w> <w>concessisse</w> <w>audierant</w>, <w>annotatos</w> <w>in</w> <w>eadem</w> <w lemmaRef="carta">cartula</w>, <w>produximus</w>. <w>Sed</w> <w>cum</w> <w>ille</w> <w>nec</w> <w>litteris</w> <w>nec</w> <w>testibus</w> <w>adquiescere</w> <w>uoluisset</w>, <w>nec</w> <w>a</w> <w>calumnia</w> <w>cessasset</w>, <w>tandem</w> <w>statutum</w> <w>est</w>, <w>quod</w> <w>nos</w> <w>dirationaremus</w> <w>per</w> <w>duellum</w>. <w>Ad</w> <w>quod</w> <w>cum</w> <w>paratus</w> <w>esset</w> <w lemmaRef="homo">homo</w> <w>noster</w> <w>et</w> <w>suus</w>, <w>coram</w> <w>preposito</w> <w>et</w> <w>multis</w> <w>baronibus</w> <w>in</w> <w>aula</w> <w>blesensi</w>, <w>quamuis</w> <w>confideremus</w> <w>in</w> <w lemmaRef="iustitia">iustitia</w> <w>nostra</w>, <w>tamen</w> <w>dando</w> <w>pecuniam</w>, <w>magis</w> <w>uolentes</w> <w>tempus</w> <w>redimere</w> <w>quam</w> <w>litigio</w> <w>uacare</w>, <w>et</w> <w>ne</w> <w>propter</w> <w>nos</w> <w>funderetur</w> <w>humanus</w> <w>sanguis</w>, <w>iuste</w> <w>uel</w> <w>iniuste</w>, <w>ad</w> <w>huiusmodi</w> <w>concordiam</w> <w>uentum</w> <w>est</w>, <w>quod</w> <w>nos</w> <w>dedimus</w> <w>ei</w> <w>quadraginta</w> <w>solidos</w> <w>blesensium</w>, <w>et</w> <w>uxori</w> <w>illius</w> <w>quinque</w>, <w>et</w> <w>ipsi</w> <w>calumniam</w> <w>dimiserunt</w>, <w>et</w> <w>molendinum</w> <w>nobis</w> <w>in</w> <w>perpetuum</w> <w>amicabiliter</w> <w>concesserunt</w>. <w>Anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w>. <w>C</w>. <w>VI</w>., <w>ordinationis</w> <w>domni</w> <w>abbatis</w> <w>Willelmi</w> <w>secundo</w>, <w>facta</w> <w>est</w> <w>hec</w> <w>concordia</w> <w>in</w> <w>aula</w> <w>blesensi</w>, <w>firmata</w> <w>autem</w> <w>in</w> <w>domo</w> <w>ipsius</w> <w>Gaurnerii</w>, <w>presente</w> <w>et</w> <w>concedente</w> <w>uxore</w> <w>illius</w>. <w>Huius</w> <w>rei</w> <w>testes</w> <w>sunt</w>: <w>Ex</w> <w>parte</w> <w>illorum</w>, <w>Hainricus</w> <w>sinicalcus</w>, <w>Martinus</w> <w>de</w> <w>Murceio</w>, <w>Rainaldus</w> <w>rufus</w>, <w>Blanchardus</w>, <w>Ebruinus</w> <w>de</w> <w>Fagis</w>. <w>Ex</w> <w>parte</w> <w>nostra</w>, <w>de</w> <w>monachis</w>: <w>Willelmus</w> <w>prior</w> <w>maioris</w> <w>monasterii</w>, <w>Gausbertus</w> <w>cellararius</w>, <w>Cingomarus</w>, <w>Petrus</w> <w>laidez</w>, <w>Hubertus</w> <w>piellus</w>. <w>De</w> <w>laicis</w>: <w>Gilduinus</w> <w>de</w> <w>Magduno</w>, <w>Petrus</w> <w>de</w> <w>Rolleiz</w>, <w>Gilduinus</w> <w>rufus</w>, <w>Burdinus</w>, <w>Fulco</w> <w>de</w> <w>Galeri</w>, <w lemmaRef="pagus">Paganus</w> <w>de</w> <w>Turonis</w>, <w>Rotbertus</w> <w>forestarius</w>, <w>Raimbaldus</w> <w>Espechel</w>, <w>Xristophorus</w>, <w>Gaufredus</w> <w>ferganz</w>, <w lemmaRef="pagus">Paganus</w> <w>de</w> <w>Uillabelfodii</w>, <w>Guinemarus</w> <w>carpentarius</w>, <w>Rainaldus</w> <w>nepos</w> <w>Ingelbaldi</w>, <w>Harpinus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

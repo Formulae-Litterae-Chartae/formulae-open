@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 278</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">521 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0278">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">A l’ancienne confraternité existant entre l’abbaye de Cornelimuster et celle de Stavelot les abbés Florentius et Erlebald ajoutent une disposition relative aux religieux transfuges de l’une ou l’autre commuauté.</p>
+         </div>
+         <dateline>[1174-1192]<date notBefore="1174-01-01" notAfter="1192-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0278.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>cunctis</w> <w>presentibus</w> <w>et</w> <w>futuris</w> <w>nos</w> <w>Indenses</w> <w>cum</w> <w>Stabulensibus</w> <w>atque</w> <w>Malmundariensibus</w> <w>antiquam</w> <w>habere</w> <w>confraternitatem</w> <w>et</w> <w>societatem</w> <w>plenam</w> <w>dilectione</w> <w>et</w> <w>officiis</w>, <w>nam</w> <w>triginta</w> <w>officia</w> <w>ipsis</w> <w>persolvimus</w> <w>in</w> <w>decessu</w> <w>eorum</w> <w>et</w> <w>vicissim</w> <w>ipsi</w> <w>nobis</w> <w>ex</w> <w>antiquo</w>. </p>
+               <p xml:space="preserve"><w>Verum</w> <w>recenti</w> <w>consilio</w> <w>abbatum</w> <w>utriusque</w> <w>ecclesie</w>, <w>scilicet</w> <w>domni</w> <w>Florentii</w> <w>Indensis</w> <w>et</w> <w>domni</w> <w>Erleboidi</w> <w>Stabulensis</w>, <w>utriusque</w> <w>capituli</w> <w lemmaRef="convenientia">convenientia</w> <w>consonante</w>, <w>id</w> <w>actum</w> <w>est</w>, <w>ut</w> <w>si</w>, <w>quod</w> <w>absit</w> <w>et</w> <w>nonnunquam</w> <w>accidere</w> <w>solet</w>, <w lemmaRef="frater">frater</w> <w>ab</w> <w>altero</w> <w>locorum</w> <w>istorum</w> <w>pro</w> <w>re</w> <w>qualibet</w> <w>remotus</w> <w>fuerit</w>, <w>ad</w> <w>alterum</w> <w>in</w> <w>tali</w> <w>casu</w> <w>transmigrare</w> <w>possit</w> <w>ac</w> <w>januam</w> <w>patentem</w>, <w>locum</w>, <w>praebendam</w> <w>et</w> <w>omnem</w> <w>humanitatem</w> <w>fraternitatis</w> <w>in</w> <w>vinculo</w> <w>pacis</w> <w>paratum</w> <w>inveniat</w>, <w>remoto</w> <w>omni</w> <w>scrupulo</w> <w>contradictionis</w> : <w>quod</w> <w>si</w> <w>dilectionis</w> <w>et</w> <w>societatis</w> <w lemmaRef="causa">causa</w> <w>illuc</w> <w>morari</w> <w>in</w> <w>loco</w> <w>venerit</w> <w>et</w> <w>rogaverit</w>, <w>non</w> <w>negabitur</w> <w>ipsi</w>, <w>per</w> <w>quantum</w> <w>tempus</w> <w>voluerit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

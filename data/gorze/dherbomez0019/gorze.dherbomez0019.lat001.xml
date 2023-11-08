@@ -1,0 +1,91 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 19</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">43</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0019">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Le comte Boson donne à l'abbaye de Gorze la villa de Quincy avec toutes ses dépendances.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Quincy</p>
+         </div>
+         <dateline>770<date notBefore="0770-01-01" notAfter="0770-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0019.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>DE</w> <w>QUINTIACO</w> <w lemmaRef="villa">VILLA</w>.</head>
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w>, <w>et</w> <w>Salvatoris</w> <w>nostri</w> <w>Jesu</w> <w>Christi</w>, <w>Boso</w>, <w lemmaRef="misericordia">misericordia</w> <w>omnipotentis</w> <w>Dei</w> <w>cornes</w>. <w>Notum</w> <w>sit</w> <w>igitur</w> <w>omnibus</w> <w>fidelibus</w> <w>sancte</w> <w>Dei</w> <w>ecclesie</w>, <w>quod</w> <w>ego</w> <w>dedi</w> <w>ad</w> <w>sanctum</w> <w>Gorgonium</w> <w lemmaRef="villa">villam</w> <w>unam</w> <w>nomine</w> <w>Quinciaco</w>, <w>in</w> <w>finem</w> <w>Wavrense</w>, <w>super</w> <w>fluvium</w> <w>Azenna</w>, <w>propter</w> <w>precariam</w> <w>de</w> <w>Warengisi</w> <w lemmaRef="villa">villa</w> <w>et</w> <w>Wasatico</w>. <w>Sunt</w> <w>quedam</w> <w>ad</w> <w>istam</w> <w>prefatam</w> <w>aspicientia</w> <w lemmaRef="villa">villam</w> <w>Quinciaco</w> : <w lemmaRef="mansus">mansus</w> <w>unus</w> <w>indominicatus</w>, <w>cum</w> <w>omnibus</w> <w>edificiis</w>, <w>pratis</w>, <w>silvis</w>, <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>et</w> <w>ecclesiam</w> <w>unam</w> <w>que</w> <w>est</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Martini</w>, <w>que</w> <w>in</w> <w>unoquoque</w> <w>anno</w> <w>solvit</w> <w>solidos</w> <w>X</w>; <w>et</w> <w>de</w> <w>vineis</w> <w>indominicatis</w> <w>ad</w> <w>vinum</w> <w>colligendum</w> <w>modios</w> <w>XL</w>; <w>aliam</w> <w>terram</w> <w>indominicatam</w> <w>ad</w> <w>unam</w> <w>sationem</w> <w>seminandi</w> <w>modios</w> <w>CCL</w>; <w>ad</w> <w>aliam</w> <w>vero</w> <w>simili</w> <w>ter</w> <w>cambas</w> <w>duas</w> <w>que</w> <w>solvunt</w> <w>de</w> <w>annona</w> <w>modios</w> <w>CC</w>; <w>farinarios</w> <w>duos</w>; <w>unus</w> <w>solvit</w> <w>modios</w> <w>XLII</w> <w>de</w> <w>farina</w> <w>et</w> <w>decem</w> <w>de</w> <w>brasio</w>, <w>alios</w> <w>vero</w> <w>modios</w> <w>XX</w> <w>de</w> <w>farina</w> <w>et</w> <w>decem</w> <w>de</w> <w>brasio</w>; <w>ad</w> <w>unumquemque</w> <w>farinarium</w> <w>porcum</w> <w>unum</w> <w>insaginatum</w>. <w>ln</w> <w>tercio</w> <w>loco</w> <w>est</w> <w>farinarius</w> <w>unus</w>, <w>qui</w> <w>duas</w> <w>partes</w> <w>reddit</w> <w>seniori</w> <w>et</w> <w>unam</w> <w>secum</w> <w>retinet</w>, <w>de</w> <w>silva</w> <w>ubi</w> <w>possunt</w> <w>saginari</w> <w>porci</w> <w>cccc</w> <w>cccc</w> <w>sic</w>. <w>Mansi</w> <w>ingenuiles</w> <w>sunt</w> <w>XXXIII</w>; <w>unusquisque</w> <w>in</w> <w>maio</w> <w>mense</w> <w>solvit</w> <w>denarios</w> <w>X</w> <w>de</w> <w>victuris</w>. <w>Similiter</w> <w>et</w> <w>unaqueque</w> <w>mulier</w> <w>solvit</w> <w>ad</w> <w>missam</w> <w>sancti</w> <w>Martini</w> <w>denarios</w> <w>m</w>, <w>et</w> <w>de</w> <w>unoquoque</w> <w>manso</w> <w>de</w> <w>linofuseis</w> <w>xxx</w>. <w>Et</w> <w>unusquisque</w> <w lemmaRef="mansus">mansus</w> <w>de</w> <w>lignis</w> <w>solvit</w> <w>carratas</w> <w>IIII</w>, <w>et</w> <w>ad</w> <w>Natale</w> <w>Domini</w> <w>unusquisque</w> <w lemmaRef="mansus">mansus</w> <w>solvit</w> <w>porcum</w> <w>unum</w>, <w>et</w> <w>pullos</w> <w>III</w>, <w>et</w> <w>ova</w> <w>XV</w>, <w>et</w> <w>unusquisque</w> <w lemmaRef="mansus">mansus</w> <w>ad</w> <w>clausuram</w> <w>faciendam</w> <w>perticatas</w> <w>X</w>, <w>et</w> <w>in</w> <w>maio</w> <w>mense</w> <w>unusquisque</w> <w lemmaRef="mansus">mansus</w> <w>solvit</w> <w>scindulas</w> <w>C</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>quod</w> <w>futurum</w> <w>esse</w> <w>non</w> <w>credo</w>, <w>si</w> <w>fuerit</w> <w>in</w> <w>postmodum</w>, <w>ego</w> <w>ipse</w> <w>aut</w> <w>ullus</w> <w>de</w> <w>meis</w> <w>heredibus</w>, <w>contra</w> <w>hanc</w> <w>cartulam</w> <w>aliquid</w> <w>dicere</w> <w>voluerit</w>, <w>aut</w> <w>eam</w> <w>infringere</w> <w>vel</w> <w>emittare</w> <w>presumpserit</w>, <w>inferat</w> <w>de</w> <w>auro</w> <w>libras</w> <w>CCCC</w>, <w>de</w> <w>argento</w> <w>pondua</w> <w>mille</w>, <w>et</w> <w>quod</w> <w>repetit</w> <w>evendicare</w> <w>non</w> <w>valeat</w> <w>cum</w> <w>stipulatione</w> <w>subnixa</w>.<w>Signum</w> <w>Bosonis</w> <w>comitis</w>, <w>qui</w> <w>banc</w> <w>cartulam</w> <w>fieri</w> <w>jussit</w> <w>et</w> <w>firmavit</w>; <w>Signum</w> <w>Eilberti</w> <w>comitis</w>; <w>S</w>. <w>Hisewardi</w> <w>comitis</w>; <w>S</w>. <w>Bonibrant</w>; <w>S</w>. <w>Rodboldi</w>; <w>S</w>. <w>Girolfi</w>; <w>S</w>. <w>Dodonis</w>; <w>S</w>. <w>Dudonis</w>; <w>S</w>. <w>Heriberti</w>; <w>S</w>. <w>Berheri</w>; <w>S</w>. <w>Lantberti</w>; <w>S</w>. <w>Tietdri</w>; <w>S</w>. <w>Hevorini</w>; <w>S</w>. <w>Hugonis</w>; <w>S</w>. <w>Baltranni</w>; <w>S</w>. <w>Baldigcii</w>. <w>Actum</w> <w>Quinciaco</w> <w lemmaRef="villa">villa</w> <w>publica</w>, <w>in</w> <w>atrio</w> <w>Sancti</w> <w>Martini</w>, <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>DCCLXX</w>, <w>indictione</w> <w>VIII</w>, <w>epacta</w> <w>XX</w>, <w>concurrente</w> <w>VIII</w>, <w>anno</w> <w>III</w> <w>regni</w> <w>Karoli</w> <w>regis</w>.<w>Rainardus</w> <w lemmaRef="cancellarius">cancellarius</w> <w>scripsit</w> <w>et</w> <w>subscripsit</w>, <w>in</w> <w>Dei</w> <w>nomine</w> <w>feliciter</w>. <w>Amen</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

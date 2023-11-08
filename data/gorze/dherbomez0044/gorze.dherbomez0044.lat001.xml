@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 44</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">79</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0044">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Uncrinus et sa femme lmmildis déclarent tenir en précaire de l'abbaye de Gorze les biens qu'ils lui ont donnés à Tilly, Landaville, La Bouloie, Suriauville, etc.</p>
+         </div>
+         <dateline>811 04 19<date when="0811-04-19"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0044.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w lemmaRef="precarium">PRECARIA</w> <w>QUAM</w> <w>FECERUNT</w> <w>UNCRINUS</w> <w>ET</w> <w lemmaRef="coniugium">CONIUNX</w> <w>SUA</w> <w>IMMILDIS</w> <w>DE</w> <w>ECCLESIIS</w> <w>ET</w> <w>ALIIS</w> <w>REBUS</w> <w>IN</w> <w>SOLACINSE</w>.</head>
+               <p xml:space="preserve"><w>Domino</w> <w>sancto</w> <w>et</w> <w>in</w> <w>Christo</w> <w>venerabili</w> <w>patri</w> <w>Magulfo</w>, <w lemmaRef="gratia">gratia</w> <w>Dei</w> <w>episcopo</w> <w>atque</w> <w>abbati</w>, <w>una</w> <w>cum</w> <w>illis</w> <w>fratribus</w> <w>qui</w> <w>in</w> <w>Gonie</w> <w>monasterio</w> <w>consistere</w> <w>videntur</w>, <w>Uncrinus</w> <w>et</w> <w lemmaRef="coniugium">coniunx</w> <w>mea</w> <w>lmmildis</w> <w>pariter</w> <w>precatores</w>. <w>Cognoscatis</w>, <w>dum</w> <w>et</w> <w>pluribus</w> <w>non</w> <w>habetur</w> <w>incognitum</w>, <w>qualiter</w> <w>nos</w> <w>donavimus</w> <w>res</w> <w>nostras</w> <w>vel</w> <w>mancipia</w> <w>in</w> <w>pago</w> <w>Virdunense</w>, <w>in</w> <w>fine</w> <w>Tilgentense</w>, <w>vel</w> <w>in</w> <w>ipsas</w> <w>fines</w>, <w>seu</w> <w>et</w> <w>in</w> <w>Bagrulfo</w> <w lemmaRef="villa">villa</w>; <w>id</w> <w>est</w> <w>mansis</w>, <w>casis</w>, <w>casulis</w>, <w>cum</w> <w>omnibus</w> <w>edificiis</w> <w>desuper</w> <w>positis</w>, <w>campis</w>, <w>pratis</w>, <w>silvis</w>, <w>vineis</w>, <w>pomiferis</w> <w>et</w> <w>terris</w> <w>aratoriis</w>, <w>totum</w> <w>in</w> <w>integrum</w>, <w>seu</w> <w>et</w> <w>mancipia</w> <w>XV</w> : <w>Gislaldo</w>, <w>Iliomo</w>, <w>Godebrando</w>, <w>Woningo</w>, <w>Hoelerio</w>, <w>Ursiono</w>, <w>Dotlinde</w>, <w>Papiane</w>, <w>Altilde</w>, <w>lmmenilde</w>, <w>Varagde</w>, <w>Ermenagde</w>, <w>Aldelinde</w>, <w>Agitiane</w>, <w>Minagde</w>, <w>cum</w> <w>omnibus</w> <w>peculiaribus</w> <w>eorum</w>, <w>totum</w> <w>in</w> <w>integrum</w>, <w>ad</w> <w>partem</w> <w>sancti</w> <w>Petri</w> <w>vel</w> <w>sancti</w> <w>Gorgonii</w>, <w>seu</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>ad</w> <w>Goniam</w> <w>vel</w> <w>vobis</w> <w>condonavimus</w> <w>vel</w> <w>affirmavimus</w>. <w>Postea</w> <w>nostra</w> <w>fuit</w> <w>peticio</w>, <w>ad</w> <w>partem</w> <w>nostram</w> <w>et</w> <w>ad</w> <w>partem</w> <w>filii</w> <w>nostri</w> <w>Tangelradi</w>, <w>ut</w> <w>ipsas</w> <w>res</w> <w>quas</w> <w>nos</w> <w>ipsi</w> <w>dedimus</w> <w>in</w> <w>pago</w> <w>Virdunense</w>, <w>in</w> <w>fine</w> <w>Tilecinse</w>, <w>vel</w> <w>in</w> <w>ipsa</w> <w lemmaRef="villa">villa</w>, <w>et</w> <w>pratum</w> <w>unum</w> <w>in</w> <w>Bagrulfo</w> <w lemmaRef="villa">villa</w>, <w>exceptis</w> <w>illis</w> <w>aliis</w> <w>rebus</w> <w>in</w> <w>ipsa</w> <w>Bagrulfo</w> <w lemmaRef="villa">villa</w>, <w>et</w> <w>illis</w> <w>rebus</w> <w>in</w> <w>pago</w> <w>Scarponinse</w>, <w>in</w> <w>Sumtuno</w> <w lemmaRef="villa">villa</w>, <w>vel</w> <w>in</w> <w>ipsas</w> <w>fines</w>, <w>quicquid</w> <w>ad</w> <w>hoc</w> <w>pertinet</w> <w>quod</w> <w>nos</w> <w>ad</w> <w>presentem</w> <w>diem</w> <w>dedimus</w>, <w>ut</w> <w>alias</w> <w>illas</w> <w>res</w> <w>nobis</w> <w>beneficiare</w> <w>deberetis</w>; <w>quod</w> <w>ita</w> <w>et</w> <w>fecistis</w>. <w>Similiter</w> <w>beneficiastis</w> <w>nobis</w> <w>vel</w> <w>filio</w> <w>nostro</w> <w>Tangilrado</w> <w>alias</w> <w>res</w> <w>sancti</w> <w>Petri</w> <w>vel</w> <w>sancti</w> <w>Gorgonii</w>, <w>seu</w> <w>vestras</w>, <w>pro</w> <w>usu</w> <w>merito</w> <w>quod</w> <w>nos</w> <w>dedimus</w>; <w>id</w> <w>est</w> <w>illas</w> <w>res</w> <w>in</w> <w>pago</w> <w>Solacinse</w>, <w>in</w> <w>Landini</w> <w lemmaRef="villa">villa</w>, <w>et</w> <w>in</w> <w>Bettun</w> <w>curte</w>, <w>et</w> <w>in</w> <w>Bidolido</w>, <w>et</w> <w>in</w> <w>Senorio</w> <w lemmaRef="villa">villa</w>; <w>id</w> <w>est</w> <w>mansis</w>, <w>casis</w> <w>cum</w> <w>ecclesiis</w> <w>vel</w> <w>omnibus</w> <w>edificiis</w> <w>seu</w> <w>et</w> <w>mancipiis</w>, <w>vel</w> <w>quicquid</w> <w>Rotfridus</w>, <w>seu</w> <w>uxor</w> <w>sua</w> <w>Bertrada</w>, <w>pariter</w> <w>ad</w> <w>ipsum</w> <w lemmaRef="monasterium">monasterium</w> <w>per</w> <w>suarum</w> <w>instrumenta</w> <w>cartarum</w> <w>condonaverunt</w>, <w>nobis</w> <w>vel</w> <w>filio</w> <w>nostro</w> <w>beneficiare</w> <w>deberetis</w>, <w>quod</w> <w>ita</w> <w>et</w> <w>fecistis</w>; <w>in</w> <w>ea</w> <w>vero</w> <w>ratione</w> <w>ut</w>, <w>quandiu</w> <w>advivimus</w>, <w>ipsas</w> <w>res</w> <w>vel</w> <w>ipsa</w> <w>mancipia</w> <w>per</w> <w>vestrum</w> <w lemmaRef="beneficium">beneficium</w> <w>seu</w> <w>successorum</w> <w>vestrorum</w> <w>diebus</w> <w>vite</w> <w>nostre</w> <w>valeamus</w> <w>excolere</w>. <w>Post</w> <w>nostrum</w> <w>disscessum</w>, <w>filius</w> <w>noster</w> <w>Tangelradus</w>, <w>si</w> <w>nobis</w> <w>supervixerit</w>, <w>similiter</w> <w>per</w> <w>vestrum</w> <w lemmaRef="beneficium">beneficium</w> <w>teneat</w>, <w>et</w> <w>nichil</w> <w>exinde</w> <w>in</w> <w>quibuslibet</w> <w>rebus</w> <w>vel</w> <w>corporibus</w> <w>nullum</w> <w>pontificium</w> <w>habeamus</w> <w>aliquid</w> <w>minuendi</w>, <w>nisi</w> <w>quicquid</w> <w>ibidem</w> <w>addere</w> <w>aut</w> <w>immeliorare</w> <w>vel</w> <w>comparare</w> <w>potuerimus</w>. <w>Post</w> <w>nostrum</w> <w>quoque</w> <w>discessum</w>, <w>quando</w> <w>quidem</w> <w>Deus</w> <w>voluerit</w>, <w>ipse</w> <w>res</w> <w>seu</w> <w>ipse</w> <w>ecclesie</w> <w>vel</w> <w>mancipia</w> <w>cum</w> <w>omni</w> <w>superposito</w> <w>ad</w> <w>ipsum</w> <w lemmaRef="monasterium">monasterium</w> <w>revertantur</w>. <w>Et</w> <w>convenit</w> <w>in</w> <w>censum</w> <w>annis</w> <w>singulis</w>, <w>ad</w> <w>festivitatem</w> <w>sancti</w> <w>Gorgonii</w>, <w>quod</w> <w>est</w> <w>V</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>septembris</w>, <w>dum</w> <w>nos</w> <w>advivimus</w>, <w>dimidiam</w> <w>libram</w> <w>de</w> <w>argento</w> <w>dare</w> <w>faciamus</w>. <w>Post</w> <w>nostrum</w> <w>discessum</w>, <w>filius</w> <w>noster</w> <w>Tangelradus</w>, <w>si</w> <w>nobis</w> <w>supervixerit</w>, <w>similiter</w> <w>faciat</w>. <w>Et</w> <w>si</w> <w>de</w> <w>ipso</w> <w>censu</w> <w>tardi</w> <w>aut</w> <w>negligentes</w> <w>apparuerimus</w>, <w>fidem</w> <w>exinde</w> <w>faciamus</w>, <w>et</w> <w>ipsas</w> <w>res</w> <w>vel</w> <w>ecclesias</w> <w>seu</w> <w>mancipia</w> <w>diebus</w> <w>vite</w> <w>nostre</w> <w>valeamus</w> <w>excolere</w> <w>vel</w> <w>habere</w>. <w>Facta</w> <w lemmaRef="precarium">precaria</w> <w>sub</w> <w>die</w> <w>XIII</w> <w>kalendas</w> <w>maii</w>, <w>anno</w> <w>XLIII</w> <w>regnante</w> <w>domino</w> <w>nostro</w> <w>Karolo</w> <w>rege</w>, <w>anno</w> <w>vero</w> <w>imperii</w> <w>eius</w> <w>elevati</w> <w>XII</w>, <w>et</w> <w>anno</w> <w>ah</w> <w>incamatione</w> <w>Domini</w> <w>DCCCXI</w>, <w>indictione</w> <w>IIII</w>, <w>epacta</w> <w>XXIII</w> <w>concurrente</w> <w>II</w>. <w>Signum</w> <w>Uncrini</w>, <w>et</w> <w>coniugis</w> <w>sue</w> <w>lmmilde</w>, <w>qui</w> <w>hanc</w> <w>precariam</w> <w>fieri</w> <w>et</w> <w>firmare</w> <w>rogaverunt</w>. <w>Nomina</w> <w>testium</w> : <w>Blitcherius</w> †. <w>Agredus</w> †. <w>Item</w> <w>Uncrinus</w> †. <w>Agnardus</w> †. <w>Boso</w> †. <w>Amalbertus</w> †. <w>Balduinus</w> †. <w>Hidulfus</w> †. <w>Giorius</w> †. <w>Bando</w> †. <w>Item</w> <w>Agredus</w> †. <w>Odelbertus</w> †. <w>Ibertus</w> †. <w>Winiaudus</w> †. <w>Teudardus</w>. <w>Ofterius</w>. <w lemmaRef="germanus">Germanus</w> †. <w>Tancarius</w> †. <w>Amgimbertus</w> †. <w>Teoderius</w> †.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

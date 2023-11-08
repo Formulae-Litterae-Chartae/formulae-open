@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 120</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">245 – 246 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0120">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Rodolphe, abbé de Stavelot, déclare que le village d’Eben ne dépend pas de celui de Fehun.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Stavelot</p>
+         </div>
+         <dateline>1088 09 29<date when="1088-09-29"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0120.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w lemmaRef="frater">frater</w> <w>Rodulfus</w>, <w>licet</w> <w>indignus</w> <w>tamen</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>in</w> <w>Stabulaus</w> <w lemmaRef="abbas">abba</w> <w>constitutus</w>, <w>circuivi</w> <w>curtes</w> <w>totius</w> <w>abbatie</w> <w>et</w> <w>requisivi</w> <w>de</w> <w>statu</w> <w>uniuscujusque</w>, <w>et</w> <w>cum</w> <w>pervenissem</w> <w>ad</w> <w lemmaRef="villa">villam</w> <w>Embonnes</w> <w>nomine</w> <w>et</w> <w>interrogassem</w> <w>si</w> <w>per</w> <w>se</w> <w>staret</w> <w>vel</w> <w>alias</w> <w>apprehenderet</w>, <w>audivi</w> <w>a</w> <w>quibusdam</w> <w>eam</w> <w>respicere</w> <w>ad</w> <w lemmaRef="villa">villam</w> <w>que</w> <w>Fehun</w> <w>vocatur</w>; <w>de</w> <w>qua</w> <w>re</w> <w>Henrico</w> <w>et</w> <w>Franco</w> <w>ceterique</w> <w>qui</w> <w>illo</w> <w>erant</w> <w>tempore</w> <w>stupefacti</w> <w>clementiam</w> <w>nostram</w> <w>imploraverunt</w>, <w>ne</w> <w>vellem</w> <w>eos</w> <w>infringere</w>, <w>sed</w> <w>cum</w> <w>judicio</w> <w>et</w> <w>consilio</w> <w>fidelium</w> <w>nostrorum</w> <w>paterer</w> <w>eos</w> <w>rectitudinem</w> <w lemmaRef="curtis">curtis</w> <w>diracinare</w>. <w>Quorum</w> <w>precibus</w> <w>assensi</w>, <w>causam</w> <w>eorum</w> <w>in</w> <w>judicibus</w> <w>et</w> <w>seabinis</w> <w>posui</w>, <w lemmaRef="placitum">placitum</w> <w>ville</w> <w>id</w> <w>est</w> <w>Embounes</w> <w>cum</w> <w>servitio</w> <w>et</w> <w>corveia</w> <w>et</w> <w>omnibus</w> <w>appendiciis</w> <w>suis</w> <w>per</w> <w>se</w> <w>stare</w>, <w>non</w> <w>ad</w> <w lemmaRef="villa">villam</w> <w>Fehun</w> <w>vel</w> <w>alias</w> <w>pertinere</w> <w>veraciter</w> <w>cognovi</w>. <w>Ad</w> <w>quam</w> <w>rem</w> <w>corroborandam</w> <w>et</w> <w>deinceps</w> <w>inviolatam</w> <w>conservandam</w>, <w>et</w> <w>cartam</w> <w>fieri</w> <w>jussi</w> <w>et</w> <w>venture</w> <w>posteritati</w> <w>reliqui</w>. <w lemmaRef="frater">Frater</w> <w>Emino</w> <w>tunc</w> <w>custos</w> <w>et</w> <w>prepositus</w> <w>erat</w> <w>ecclesie</w>, <w>Heinricus</w> <w>catedre</w> <w>episcopali</w> <w>presidebat</w>, <w>Albertus</w> <w lemmaRef="comes">comes</w> <w>Namucensis</w> <w>advocationem</w> <w>administrabat</w>, <w>subadvocatus</w> <w>Thiebaldus</w> <w>erat</w>. <w>Juratores</w> <w>hii</w> <w>sunt</w> : <w>Godefridus</w>, <w>Adelaus</w>, <w>Lambertus</w>, <w>Albricus</w>, <w>Algunz</w>, <w>Franco</w>, <w>Herico</w>. <w>Hujus</w> <w>rei</w> <w>tot</w> <w>testes</w> <w>quot</w> <w>fuerent</w> <w>presentes</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

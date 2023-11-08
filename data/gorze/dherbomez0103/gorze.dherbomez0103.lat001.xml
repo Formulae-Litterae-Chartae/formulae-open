@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 103</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">189</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0103">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Hamedeus vend à l'abbaye de Gorze une pièce de terre à Waville.</p>
+         </div>
+         <dateline>946<date notBefore="0946-01-01" notAfter="0946-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0103.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w>DE</w> <w>VINEA</w> <w>QUAM</w> <w>VENDIDIT</w> <w>HAMEDEUS</w>.</head>
+               <p xml:space="preserve"><w>Amabili</w> <w>in</w> <w>Christo</w> <w>Aginaldo</w>, <w>abbati</w>, <w>et</w> <w>preposito</w> <w>ipsius</w> <w>Odolberto</w>, <w>ego</w> <w>itaque</w> <w>Hamedeus</w> <w>veoditor</w>. <w>Constat</w> <w>me</w> <w>vobis</w> <w>vendidisse</w> <w>petiam</w> <w>unam</w> <w>de</w> <w>terra</w> <w>in</w> <w>Enwaldi</w> <w lemmaRef="villa">villa</w>, <w>de</w> <w>meo</w> <w>proprio</w>, <w>que</w> <w>habet</w> <w>VII</w> <w>perticas</w> <w>de</w> <w>lato</w> <w>et</w> <w>XX</w> <w>de</w> <w>longo</w>; <w>que</w> <w>pertica</w> <w>habet</w> <w>pedes</w> <w>XIX</w> <w>et</w> <w>dimidium</w> ; <w>ex</w> <w>uno</w> <w>latere</w> <w>tenet</w> <w>Tietfridus</w>, <w>et</w> <w>ex</w> <w>una</w> <w>fronte</w> <w lemmaRef="sanctus">Sanctus</w> <w>Gorgonius</w>, <w>ex</w> <w>alio</w> <w>latere</w> <w>strata</w> <w>publica</w>. <w>Et</w> <w>accepi</w> <w>a</w> <w>vobis</w> <w>preciom</w>, <w>sicut</w> <w>inter</w> <w>nos</w> <w>placuit</w> <w>atque</w> <w>convenit</w>. <w>Et</w> <w>ita</w> <w>vendidi</w> <w>ut</w> <w>post</w> <w>hunc</w> <w>diem</w> <w>habeatis</w> <w lemmaRef="ius">ius</w> <w>tenendi</w>, <w>vendendi</w>, <w>commutandi</w>, <w>vel</w> <w>quicquid</w> <w>exinde</w> <w>elegeritis</w> <w>faciendi</w> <w>liberam</w> <w>et</w> <w>firmissimam</w> <w>in</w> <w>omnibus</w> <w>babeatis</w> <w>potestatem</w>. <w>Si</w> <w>quis</w> <w>vero</w> <w>de</w> <w>parentibus</w> <w>meis</w> <w>vel</w> <w>heredibus</w> <w>hanc</w> <w>venditionem</w> <w>infringere</w> <w>temptaverit</w>, <w>iram</w> <w>proinde</w> <w>Omnipotentis</w> <w>incurrat</w>. <w>Et</w> <w>ut</w> <w>hec</w> <w lemmaRef="carta">carta</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>permaneat</w>, <w>manu</w> <w>propria</w> <w>subterminavi</w>, <w>et</w> <w>bonis</w> <w>hominibus</w> <w>firmare</w> <w>precepi</w>, <w>cum</w> <w>stipulatione</w> <w>subnixa</w>. <w>Actum</w> <w>anno</w> <w>quo</w> <w>supra</w>. <w>Signum</w> <w>Hamedei</w>, <w>qui</w> <w>hanc</w> <w>cartam</w> <w>fieri</w> <w>et</w> <w>firmari</w> <w>rogavit</w>; <w>Rimioldi</w> <w>prepositi</w> ; † <w>Bergerinni</w> ; † <w>Harmodi</w>; † <w>Herpaldi</w>; † <w>Signum</w> <w>domni</w> <w>abbatis</w> <w>Aginaldi</w>; † <w>Odoboldi</w> <w>prepositi</w>; † <w>Randinci</w> <w>decani</w>; † <w>Floberti</w>; † <w>Everberti</w>; <w>Rodaldi</w>; <w>Teutheri</w>; † <w>Winemanni</w>; <w>Signum</w> <w>Rainelmi</w>, <w>qui</w> <w>hanc</w> <w>cartulam</w> <w>scripsit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,103 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 39</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">50-51</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0039">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Robert de Villeneuil donne à MM. toute sa terre de Bergerioux (commune de la Chapelle-Vendômoise), du consentement de tous les ayants-droit et du comte Thibault. Haimo se désiste de ses prétentions moyennant la somme de dix sols. </p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Grèneterie</p>
+         </div>
+         <dateline>1060-1090<date notBefore="1060-01-01" notAfter="1090-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0039.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>TERRA</w> <w lemmaRef="villa">VILLAE</w> <w>BERGERULFI</w>, <w>QUAM</w> <w>DONAVIT</w> <w>ROTBERTUS</w> <w>DE</w> <w lemmaRef="villa">VILLA</w> <w>IN</w> <w>OCULO</w>. - <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Noverit</w> <w>posteritas</w> <w>nostra</w> <w>Rotbertum</w> <w>de</w> <w lemmaRef="villa">villa</w> <w>in</w> <w>oculo</w>, <w>pro</w> <w>redemptione</w> <w>sue</w> <w>suique</w> <w>patris</w> <w>ac</w> <w>matris</w> <w>anime</w>, <w>in</w> <w>territorio</w> <w>Blesis</w>, <w>apud</w> <w lemmaRef="villa">villam</w> <w>quae</w> <w>vocatur</w> <w>Bergerulfi</w>, <w>sancto</w> <w>Martino</w> <w>maioris</w> <w>monasterii</w> <w>terram</w> <w>omnem</w> <w>dedisse</w>, <w>quam</w> <w>ad</w> <w>vicecomitatum</w> <w>Blesis</w> <w>pertinentem</w> <w>hereditario</w> <w lemmaRef="pater">pater</w> <w>suus</w> <w>possederat</w> <w>jure</w>. <w>Huic</w> <w>donationi</w> <w>Rotbertus</w> <w>filius</w> <w>suus</w> <w>voluntatis</w> <w>assensum</w> <w>praebuit</w>, <w>Hugo</w> <w>quoque</w> <w>et</w> <w>Hamo</w>, <w>qui</w> <w>de</w> <w>eo</w> <w>illam</w> <w>terram</w> <w>tenere</w> <w>videbantur</w>, <w>cum</w> <w>Berta</w> <w>sorore</w> <w>eorum</w>, <w>et</w> <w>marito</w> <w>ejus</w> <w>Rotberto</w> <w>filio</w> <w>Rorguelini</w>. <w>Sed</w> <w>licet</w>, <w>ut</w> <w>praediximus</w>, <w>in</w> <w>hac</w> <w>donatione</w> <w>animae</w> <w>tantum</w> <w>salus</w> <w>ab</w> <w>illis</w> <w>quaereretur</w>; <w>tamen</w> <w>ut</w> <w>promptioribus</w> <w>animis</w> <w>res</w> <w>acta</w> <w>esset</w> <w>et</w> <w>in</w> <w>posterum</w> <w>firmius</w> <w>consisteret</w>, <w>aliquid</w> <w>eis</w> <w>dare</w> <w>visum</w> <w>fuit</w> <w>domno</w> <w>abbati</w> <w>et</w> <w>fratribus</w> <w>Rotberto</w> <w>videlicet</w> <w>guarnimentum</w> <w>quoddam</w> <w>sexaginta</w> <w>solidorum</w>; <w>reliquis</w> <w>vero</w> <w>Hugoni</w> <w>et</w> <w>Hamoni</w>, <w>Berte</w> <w>quoque</w> <w>sorori</w> <w>eorum</w> <w>et</w> <w>marito</w> <w>ejus</w> <w>quinquaginta</w> <w>solidos</w> <w>nummorum</w>. <w>Dedit</w> <w>vero</w> <w>supradictus</w> <w>Rotbertus</w> <w>terram</w> <w>illam</w> <w>cum</w> <w>aquis</w> <w>et</w> <w>pratis</w>, <w>et</w> <w>omnibus</w> <w>ad</w> <w>eam</w> <w>pertinentibus</w> <w>liberam</w> <w>et</w> <w>quietam</w> <w>ab</w> <w>omnibus</w> <w>omnino</w> <w>consuetudinibus</w>, <w>sicut</w> <w lemmaRef="pater">pater</w> <w>suus</w> <w>prius</w> <w>et</w> <w>ipse</w> <w>postea</w> <w>possederat</w>. <w>Hoc</w> <w>donum</w> <w>Tetbaldus</w> <w>quoque</w> <w lemmaRef="comes">comes</w>, <w>principalis</w> <w>huius</w> <w>terrae</w> <w lemmaRef="dominus">dominus</w>, <w>auctoritate</w> <w>sua</w> <w>firmavit</w>, <w>de</w> <w>cujus</w> <w>fevo</w> <w>illam</w> <w>terram</w> <w>tenere</w> <w>videbatur</w>. <w>Hujus</w> <w>rei</w> <w>testes</w> <w>hii</w>:</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><w>Lisiardus</w> <w>filius</w> <w>Landrici</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Beroardus</w> <w>de</w> <w>calvomonte</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Gausfredus</w> <w lemmaRef="praepositus">praepositus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Hildebertus</w> <w>famulus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Guillelmus</w> <w>biturigensis</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Acfredus</w> <w>famulus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rainaldus</w> <w>filius</w> <w>Hardradi</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Ernaldus</w> <w lemmaRef="monachus">monachus</w>.</cell></row><row><cell style="text-align: left;" rend="Normal"><w>Rainaldus</w> <w lemmaRef="mansus">mansellus</w>.</cell><cell style="text-align: left;" rend="Normal"><w>Gausfredus</w> <w lemmaRef="monachus">monachus</w>.</cell></row></table>
+               <p xml:space="preserve"><w>Postea</w> <w>calumpniatus</w> <w>est</w> <w>nobis</w> <w>idem</w> <w>Haimo</w> <w>istam</w> <w>donationem</w> <w>et</w> <w>cum</w> <w>ab</w> <w>eo</w> <w>diu</w> <w>vexaremur</w> <w>tandem</w> <w>ad</w> <w>istum</w> <w>concordie</w> <w>venimus</w> <w>finem</w>. <w>Dedimus</w> <w>ei</w> <w>decem</w> <w>solidos</w> <w>per</w> <w>manum</w> <w>Isenberti</w> <w>monachi</w> <w>et</w> <w>benefactum</w> <w>loci</w> <w>nostri</w>, <w>et</w> <w>auctorizavit</w> <w>nobis</w> <w>pro</w> <w>anima</w> <w>patris</w> <w>sui</w> <w>Hugonis</w> <w>et</w> <w>matris</w> <w>Hildeardis</w>, <w>videntibus</w> <w>istis</w></p>
+               <p xml:space="preserve"><w>Milo</w> <w lemmaRef="frater">frater</w> <w>Girardi</w>.</p>
+               <p xml:space="preserve"><w>Guarinus</w> <w>de</w> <w>lenda</w>. </p>
+               <p xml:space="preserve"><w>Rainerius</w> <w>vicario</w>. </p>
+               <p xml:space="preserve"><w>Simon</w> <w>de</w> <w>sancto</w> <w>Victori</w>. </p>
+               <p xml:space="preserve"><w>Hubertus</w> <w>presbiter</w>. </p>
+               <p xml:space="preserve"><w>Rotgerius</w> <w>serviens</w> <w>sancti</w> <w>Launomari</w>. </p>
+               <p xml:space="preserve"><w>Ricardus</w> <w>famulus</w> <w>noster</w>. </p>
+               <p xml:space="preserve"><w>Hubertus</w> <w>infirmarius</w>. </p>
+               <p xml:space="preserve"><w>Facta</w> <w>sunt</w> <w>hec</w> <w>apud</w> <w>montem</w> <w>Foleti</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

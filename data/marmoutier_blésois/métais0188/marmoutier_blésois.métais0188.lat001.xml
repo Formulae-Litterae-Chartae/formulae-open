@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 188</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">173-174</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0188">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Nivelon, seigneur de Meslai, Fréteval et Faye, permet aux religieux de MM. de bátir un moulin à foulons, auprés de leurs moulins de Villeprovert, et le prend sous sa protection, et de ses successeurs.</p>
+         </div>
+         <dateline>1191<date notBefore="1191-01-01" notAfter="1191-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0188.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="carta">CARTA</w> <w>NIUELONIS</w> <w>DE</w> <w>FRACTA</w> <w>UALLE</w> <w>DE</w> <w>MOLENDINO</w> <w>FULLONUM</w>, <w>QUOD</w> <w>HABEMUS</w> <w>APUD</w> <w>MOREIAS</w>»</head>
+               <p xml:space="preserve"><w>Ego</w> <w>Niuelo</w> <w lemmaRef="dominus">dominus</w> <w>Merleii</w>, <w>Fracteuallis</w> <w>et</w> <w>Faie</w>, <w>notum</w> <w>fieri</w> <w>uolo</w> <w>tam</w> <w>presentibus</w> <w>quam</w> <w>futuris</w>, <w>me</w> <w>concessisse</w> <w>domino</w> <w>Gaufredo</w>, <w>venerabili</w> <w>abbati</w>, <w>et</w> <w>monachis</w> <w>maioris</w> <w>monasterii</w>, <w>ut</w> <w>facerent</w> <w>molendinum</w> <w>fullonum</w>, <w>iuxta</w> <w>alia</w> <w>molendina</w> <w>sua</w>, <w>que</w> <w>habent</w> <w>apud</w> <w>Uillam</w> <w>presbiteri</w>, <w>uel</w> <w>alibi</w>, <w>in</w> <w>aqua</w> <w>sua</w>, <w>ubicumque</w> <w>illud</w> <w>facere</w> <w>potuerint</w>, <w>absque</w> <w>eleuatione</w> <w>calciate</w> <w>uel</w> <w>excluse</w>, <w>quas</w> <w>ultra</w> <w>mensuram</w> <w>consultam</w> <w>absque</w> <w>meo</w> <w>non</w> <w>poterunt</w> <w>eleuare</w> <w>consensu</w>. <w>Concessi</w> <w>etiam</w> <w>eis</w> <w>quod</w> <w>nec</w> <w>michi</w>, <w>nec</w> <w>alii</w> <w>in</w> <w>feodo</w> <w>uel</w> <w>dominio</w> <w>meo</w>, <w>in</w> <w>tota</w> <w>aqua</w> <w>Lidi</w>, <w>licebit</w> <w>edificare</w> <w>molendinum</w> <w>fullonum</w> <w>aut</w> <w>habere</w>. <w>Concesserunt</w> <w>hoc</w> <w>Aaliz</w>, <w>uxor</w> <w>mea</w>, <w>et</w> <w>filii</w> <w>mei</w>, <w>et</w> <w>filie</w>, <w>et</w> <w>Matheus</w> <w lemmaRef="frater">frater</w> <w>meus</w>. <w>Promisi</w> <w>autem</w> <w>et</w> <w>teneor</w> <w>ex</w> <w>pacto</w>, <w>quod</w> <w>si</w> <w>alii</w> <w>fratres</w> <w>mei</w>, <w>Fulcherius</w> <w>uidelicet</w> <w>et</w> <w>Philippus</w>, <w>de</w> <w>Jerosolimitana</w>, <w>quam</w> <w>agressi</w> <w>sunt</w>, <w>peregrinatione</w>, <w>redierint</w>, <w>faciam</w> <w>hoc</w> <w>ab</w> <w>eis</w> <w>sine</w> <w>ulla</w> <w>difficultate</w> <w>concedi</w>. <w>Promisi</w> <w>etiam</w> <w>fide</w> <w>corporaliter</w> <w>interposita</w>, <w>quod</w> <w>ego</w> <w>molendinum</w> <w>illud</w> <w>tenebor</w>, <w>pro</w> <w>posse</w> <w>meo</w>, <w>contra</w> <w>omnes</w> <w>defendere</w> <w>et</w> <w>garantire</w> <w>mortales</w>. <w>Nec</w> <w>patiemur</w> <w>ego</w>, <w>uel</w> <w>successores</w> <w>mei</w>, <w>ab</w> <w>ullo</w> <w>mortalium</w> <w lemmaRef="pactum">pactum</w> <w>istud</w> <w>infringi</w>. <w>Vt</w> <w>autem</w> <w>hoc</w> <w>facerem</w>, <w>dedit</w> <w>mihi</w> <w lemmaRef="dominus">dominus</w> <w>G</w>., <w>venerabilis</w> <w lemmaRef="abbas">abbas</w> <w>maioris</w> <w>monasterii</w>, <w>quinquaginta</w> <w>libras</w> <w>andegauenses</w>, <w>et</w> <w>C</w>. <w>solidos</w> <w>pro</w> <w>palefrido</w> <w>uno</w>. <w>Pacta</w> <w>itaque</w> <w>ista</w> <w>me</w> <w>bona</w> <w>fide</w> <w>seruaturum</w> <w>pro</w> <w>me</w>, <w>et</w> <w>pro</w> <w>successoribus</w> <w>meis</w>, <w>fidei</w> <w>interpositione</w>, <w>firmaui</w>, <w>et</w> <w>ut</w> <w>debitam</w> <w>obtineant</w> <w>firmitatem</w>, <w>ea</w> <w>presenti</w> <w>pagine</w> <w>fideliter</w> <w>commendata</w>, <w>sigilli</w> <w>nostri</w> <w>feci</w> <w>munimine</w> <w>roborari</w>. <w>Actum</w> <w>fuit</w> <w>hoc</w> <w>apud</w> <w>Moreias</w> <w>anno</w> <w>incarnationis</w> <w>dominice</w> <w>M</w><seg type="superscript "><w>o</w></seg>. <w>C</w><seg type="superscript "><w>o</w></seg>. <w>XC</w><seg type="superscript "><w>o</w></seg><w>I</w><seg type="superscript "><w>o</w></seg>, <w>uidentibus</w> <w>hiis</w>: <w>ex</w> <w>parte</w> <w>mea</w>: <w>Burgundione</w> <w>de</w> <w>Chaunaio</w>, <w>Fulcodio</w> <w>de</w> <w>Boscheto</w>, <w>Girardo</w> <w>moysam</w>, <w>Thion</w> <w>molendinaris</w>, <w>Theobaldo</w> <w>de</w> <w>Merlaio</w>. <w>Ex</w> <w>parte</w> <w>monachorum</w>: <w>Gaufredo</w> <w>priore</w> <w>cellebriensi</w>, <w>Johanne</w> <w>priore</w> <w>Petre</w> <w>fontis</w>, <w>Antelmo</w> <w>priore</w> <w>Fracte</w> <w>uallis</w>, <w>Lamberto</w> <w>priore</w> <w>Moreiarum</w>, <w>Haimone</w> <w>procuratore</w> <w>panetarie</w>. <w>De</w> <w>seruientibus</w>: <w>Radulfo</w> <w>preposito</w> <w>Moreiarum</w>, <w>Robino</w> <w>de</w> <w>bono</w> <w>puteo</w>, <w>Garino</w> <w>maiore</w> <w>Oratorii</w>, <w>Gauterio</w> <w>cubiculario</w> <w>abbatis</w>, <w>et</w> <w>multis</w> <w>aliis</w> <w>tam</w> <w>monachis</w> <w>quam</w> <w>laicis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

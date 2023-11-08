@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 45</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">112 - 113</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0045">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Wéséric donne à l’un de ses vassaux nommé Berting, quelques biens situés à Hamoir dans le Condroz.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Huy</p>
+         </div>
+         <dateline>895 04 11<date when="0895-04-11"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0045.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Quod</w> <w>quisque</w> <w>de</w> <w>jure</w> <w>suo</w> <w>in</w> <w>alterius</w> <w>ditioni</w> <w>tradere</w> <w>disponit</w>, <w>necesse</w> <w>est</w> <w>ut</w> <w>per</w> <w>scripturam</w> <w>cartarum</w> <w>testificatione</w> <w>roboretur</w>. <w>Quapropter</w> <w>ego</w> <w>in</w> <w>nomine</w> <w>Dei</w> <w>Wesericus</w> <w>traditor</w> <w>trado</w> <w>de</w> <w>jure</w> <w>meo</w> <w>in</w> <w>jure</w> <w>et</w> <w>dominatione</w> <w>Berlingo</w> <w>fideli</w> <w>nostro</w> <w>ex</w> <w>rebus</w> <w>meis</w> <w>propriis</w> <w>que</w> <w>sunt</w> <w>site</w> <w>in</w> <w>pago</w> <w>Condustrinse</w> <w>in</w> <w lemmaRef="villa">villa</w> <w>nuncupante</w> <w>Hamor</w> : <w lemmaRef="mansus">mansum</w> <w>unum</w> <w>cum</w> <w>bonuariis</w> <w>VIIII</w> <w>et</w> <w>duobus</w> <w>saticis</w> <w>atque</w> <w>terris</w> <w>campis</w>, <w>p</w> <w>ratis</w>, <w>silvis</w> , <w>aquis</w> <w>aquarumve</w> <w>decursibus</w>, <w>cum</w> <w>watriscampis</w> <w>et</w> <w>perviis</w> <w>legitimis</w>, <w>cum</w> <w>egressu</w> <w>et</w> <w>regressu</w>, <w>totum</w> <w>et</w> <w>ad</w> <w>integrum</w> <w>cum</w> <w>terminis</w> <w>definitis</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Remacli</w> <w>et</w> <w>terram</w> <w>fiscalem</w> <w>sive</w> <w>stratas</w> <w>publicas</w> <w>atque</w> <w>perveniunt</w> <w>in</w> <w>fluvium</w> <w>Orte</w>; <w>et</w> <w>duos</w> <w>campos</w> <w>conjacentes</w> <w>inter</w> <w>Fielon</w> <w>et</w> <w>Hamor</w>, <w>cum</w> <w>silva</w> <w>optima</w>; <w>ita</w> <w>tamen</w> <w>ut</w> <w>predictam</w> <w>terram</w> <w>de</w> <w>presente</w> <w>recipias</w>, <w>teneas</w>, <w>habeas</w> <w>atque</w> <w>possideas</w> <w>tuisque</w> <w>posteris</w> <w>ad</w> <w>possidendum</w> <w>derelinquas</w>, <w>vel</w> <w>quicquid</w> <w>exinde</w> <w>facere</w> <w>volueris</w> <w>in</w> <w>omnibus</w> <w>in</w> <w>Dei</w> <w>nomine</w> <w>habeas</w> <w>potestatem</w> <w>faciendi</w>. <w>Si</w> <w>quis</w> <w>vero</w>, <w>quod</w> <w>fieri</w> <w>minime</w> <w>credo</w>, <w>ego</w> <w>ipse</w>, <w>quod</w> <w>absit</w>, <w>aut</w> <w>ullus</w> <w>de</w> <w>heredibus</w> <w>vel</w> <w>proheredibus</w> <w>meis</w> <w>qui</w> <w>contra</w> <w>hanc</w> <w>cartam</w> <w>traditionem</w> <w>antefactam</w> <w>venire</w> <w>temptaverit</w> <w>aut</w> <w>eam</w> <w>infringere</w> <w>voluerit</w>, <w>non</w> <w>ad</w> <w>effectum</w> <w>perducere</w> <w>possit</w>, <w>sed</w> <w>presens</w> <w lemmaRef="traditio">traditio</w> <w>ista</w> <w>omni</w> <w>tempore</w> <w>firma</w> <w>et</w> <w>stabilis</w> <w>permaneat</w>, <w>cum</w> <w>stipulatione</w> <w>subnixa</w>. <w>Acta</w> <w>in</w> <w>castro</w> <w>Hoyo</w> <w>publice</w>, <w>sub</w> <w>die</w> <w>III</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>aprilis</w>, <w>anno</w> <w>VIII°</w> <w>regnante</w> <w>Arnulfo</w> <w>rege</w> <w>Francorum</w> <w>post</w> <w>excessum</w> <w>Karoli</w> <w>imperatoris</w>. <w>Signum</w> <w>Weserici</w> <w>qui</w> <w>hanc</w> <w>cartam</w> <w>fieri</w> <w>rogavit</w> <w>et</w> <w>manu</w> <w>propria</w> <w>firmavit</w>. <w>S</w>. <w>Hatulfi</w> <w>fidejussoris</w>. <w>S</w>. <w>Stephani</w>. <w>S</w>. <w>Heilgaudi</w>. <w>S</w>. <w>item</w> <w>Weserici</w>. <w>S</w>. <w>Immonis</w>. <w>S</w>. <w>Walefridi</w>. <w>S</w>. <w>Fulberti</w>. <w>S</w>. <w>Ramboldi</w>. <w>S</w>. <w>Trutgeri</w>. <w>S</w>. <w>Rotmundi</w>. <w>S</w>. <w>Guntberti</w>. <w>S</w>. <w>Rolboldi</w>. <w>S</w>. <w>Raduini</w>. <w>S</w>. <w>Erchenberti</w>. <w>S</w>. <w>Rasendi</w>. <w>S</w>. <w>Eilgeri</w>. <w>S</w>. <w>Rainelini</w>. <w>Ego</w> <w>Wilulfus</w> <w>villissimus</w> <w lemmaRef="cancellarius">cancellarius</w> <w>adinvicem</w> <w>Guntmari</w> <w>abbatis</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

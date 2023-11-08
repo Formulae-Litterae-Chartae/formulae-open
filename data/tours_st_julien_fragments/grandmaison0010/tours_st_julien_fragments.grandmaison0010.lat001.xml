@@ -1,0 +1,111 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed. Grandmaison) Nr. 10</title>
+         </titleStmt>
+         <editionStmt>
+                <edition>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed. Grandmaison)</edition>
+                <respStmt>
+                    <resp>Projektleiter</resp>
+                    <resp xml:lang="eng">Principal investigator</resp>
+                    <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Korrektur</resp>
+                    <resp xml:lang="eng">Proofreading</resp>
+                    <persName>Franziska Quaas (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Dokument- und Urkundenbearbeitung</resp>
+                    <resp xml:lang="eng">Initial charter processing</resp>
+                    <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität
+                        Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Hauptentwickler</resp>
+                    <resp xml:lang="eng">Lead developer</resp>
+                    <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Umwandlung in XML/TEI</resp>
+                    <resp xml:lang="eng">Conversion into XML</resp>
+                    <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des
+                        Chartes, Paris, Frankreich)</persName>
+                </respStmt>
+            </editionStmt>
+         <publicationStmt>
+                <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date when="2020"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution
+                        4.0 International License. </licence>
+                </availability>
+            </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                            Recueillis sur les Registres d’État-Civil d’Indre-et-Loire</title>
+                  <editor>M. Ch. de Grandmaison</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1886" n="originalAusgabe">1886</date>
+                     <biblScope unit="pp">40-42</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+            <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Fragments
+                de Chartes du Xe Siècle Provenant de Saint-Julien de Tours Recueillis sur les
+                Registres d’État-Civil d’Indre-et-Loire, welches 1886 von M. Ch. de Grandmaison
+                herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß
+                TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und
+                unter Einhaltung der CapiTainS-Vorgaben wurde die
+                Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_fragments.grandmaison0010">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Donation a Saint-Julien, par Gelduin, d’un serf nommé Fulcutio.</p>
+         </div>
+         <dateline>946 – 957<date notBefore="0946-01-01" notAfter="0957-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_fragments.grandmaison0010.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>XP</w>......<w>decrevit</w> <w>nec</w> <w>non</w> <w>et</w> <w lemmaRef="lex">lex</w> <w>roma[na]</w>.... <w>igitur</w> <w>ut</w>.... <w>mancipia</w></p>
+               <p xml:space="preserve"><w>ad</w> <w>ecclesiam</w> <w>Dei</w> <w>transferre</w> <w>pro</w> <w>remedio</w> <w>ani[me]</w>.... <w>condon[are]</w>.... ....<w>ram</w> <w>habeat</w></p>
+               <p xml:space="preserve"><w>potestatem</w> <w>faciendi</w> <w>quicquid</w> <w>voluerit</w>. <w>P[roinde]</w> <w>ego</w> <w>Geldu[inus]</w> <w>[cu]pio</w> <w>omnibus</w></p>
+               <p xml:space="preserve"><w>sanctae</w> <w>Dei</w> <w>ecclesiae</w> <w>fidelibus</w> <w>et</w> <w>precipue</w> <w>nostris</w> <w>success[oribus</w> <w>qu]aliter</w> <w>pro</w> <w>rem[edio]</w>.... <w>trado</w>, <w>cedo</w></p>
+               <p xml:space="preserve"><w>servum</w> <w>juris</w> <w>mei</w> <w>nomine</w> <w>Fulcutionem</w> <w>ad</w> <w>[monaster]ium</w> <w>Sancti</w> <w>Juli[ani]</w>.... <w>monachorum</w></p>
+               <p xml:space="preserve"><w>ut</w> <w>ibidem</w> <w>diebus</w> <w>vitae</w> <w>suae</w> <w>eis</w> <w>deserviat</w>, <w>et</w>......<w>procreatio</w> <w>s[ua]</w> <w>ex</w> <w>eo</w> <w>orta</w></p>
+               <p xml:space="preserve"><w>simili</w> <w>ratione</w> <w>in</w> <w>eodem</w> <w>loco</w> <w>deserviat</w>. <w>Si</w> <w>a[utem]</w>.... <w>ab</w> <w>hac</w> <w>d[ie]</w> <w>ac</w> <w>pro</w> <w>heredibus</w></p>
+               <p xml:space="preserve"><w>[q]ui</w> <w>hanc</w> <w>donationem</w> <w>a</w> <w>me</w> <w>factam</w> <w>contraire</w>.... <w>et</w> <w>modo</w> <w>in</w>.... <w>quod</w> <w>repetit</w></p>
+               <p xml:space="preserve"><w>[non</w> <w>vi]ndicet</w> <w>et</w> <w>insuper</w> <w>contra</w> <w>quem</w> <w>litem</w> <w>intu[lerit]</w>.... <w>ecclaesiasticam</w>.... <w>est</w> <w>sexentorum</w></p>
+               <p xml:space="preserve">...<w>auri</w> <w>ad</w> <w>purum</w> <w>scocti</w>, <w>necnon</w> <w>et</w> <w>mancipia</w>.... <w>solvere</w> <w>coga[tur]</w>; <w>petitio</w> <w>nullum</w></p>
+               <p xml:space="preserve"><w>[effec]tum</w> <w>obtineat</w>. <w>Set</w> <w>insuper</w> <w>haec</w> <w lemmaRef="donatio">donatio</w> <w>meis</w>.... <w>que</w> <w>bonorum</w> <w>[ma]nibus</w></p>
+               <p xml:space="preserve"><w>rata</w> <w>atque</w> <w>firmata</w> <w>omni</w> <w>tempore</w>.... <w>et</w> <w>inviola[ta</w> <w>perm]ancat</w>. ....<w>[J]oseph</w>, <w>sanctae</w> <w>Turonicae</w> <w>s[edis]</w> <w>archi[episcopus]</w>....</p>
+               <p xml:space="preserve"><w>[Signum]</w> <w>Corbonis</w>. <w>XP</w>. <w>Ardui[nus</w> <w>fra]ter</w> <w>ejus</w> <w>subscripsit</w>.</p>
+               <p xml:space="preserve"><w>[Signum]</w> <w>Guarinon</w>. <w>[Signum]</w> <w>Fredrici</w>.</p>
+               <p xml:space="preserve"><w>Ego</w> <w>Gelduinus</w> <w>hanc</w> <w>[donati]onem</w> <w>a</w> <w>me</w> <w>[factam</w> <w>signo]</w> <w>sanctae</w> <w>crucis</w> <w>propria</w> <w>manu</w> <w>fi[rmavi]</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Adalardi</w>. <w>Signum</w> <w>A</w>..... <w>Signum</w>.... <w>Signum</w> <w>Grimaldi</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Guanilonis</w> <w>vicarii</w>. <w>Signum</w> <w>H</w>.... <w>Signum</w> <w>Sol[ionis]</w>. <w>[Signum</w> <w>Fr]ancionis</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Adalberti</w>. <w>Signum</w> <w>Ervici</w>. <w>Signum</w> <w>[Fre]drici</w>.....<w>rii</w>.</p>
+               <p xml:space="preserve"><w>Data</w> <w>[mense]</w> <w>aprili</w>,.... <w>anno</w>.....<w>Hludovico</w>.......</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

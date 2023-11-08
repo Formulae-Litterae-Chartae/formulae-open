@@ -1,0 +1,97 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 30</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">44-45</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0030">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte par laquelle Thibaud des Roches, a la prière d’Hardouin, son frère, avec l’assentiment du comte Geoffroy et de Geoffroy de Preuilly, son seigneur, ratifie le don du franc alleu de Nouzilly fait par ses ancêtres a l’abbaye de Saint-Julien.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Tours</p>
+         </div>
+         <dateline>1064<date notBefore="1064-01-01" notAfter="1064-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0030.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Christi</w>, <w>ego</w> <w>Theobaldus</w> <w>de</w> <w>Rupibus</w>, <w>cogitans</w> <w>de</w> <w>Dei</w> <w>retributione</w>, <w>pro</w> <w>salute</w> <w>animae</w> <w>meae</w> <w>parentumque</w> <w>meorum</w>, <w>allodum</w> <w>de</w> <w>Nozilliaco</w>, <w>quem</w> <w>primogenitores</w> <w>mei</w> <w>olim</w> <w>Sancto</w> <w>Juliano</w> <w>dederunt</w>, <w>immunem</w> <w>et</w> <w>quietum</w> <w>facimus</w> <w>ab</w> <w>his</w> <w>consuetudinibus</w> <w>quas</w> <w>in</w> <w>meum</w> <w lemmaRef="dominium">dominium</w> <w>habeo</w>, <w>et</w> <w>[</w>….<w>]</w> <w>Deo</w>, <w>do</w> <w>igitur</w> <w>Sancto</w> <w>Juliano</w> <w>et</w> <w>monachis</w> <w>ejus</w>, <w>per</w> <w>voluntatem</w> <w>fratris</w> <w>mei</w>, <w>Harduini</w>, <w>clerici</w>, <w>atque</w> <w>per</w> <w>assensum</w> <w>comitis</w> <w>Goffridi</w>, <w>dominique</w> <w>mei</w> <w>Gaulfridi</w> <w>Pruliacensis</w>, <w>de</w> <w>quo</w> <w>hec</w> <w>tenere</w> <w>videor</w>, <w>omnem</w> <w>justitiam</w> <w>hujus</w> <w>allodi</w>, <w>sive</w> <w>plani</w> <w>seu</w> <w>silvae</w> <w>ubicumque</w> <w>eam</w> <w>habeo</w>, <w>et</w> <w>omnem</w> <w>commendadititiam</w> <w>terrae</w> <w>et</w> <w>forragium</w> <w>et</w> <w>quicquid</w> <w>ego</w> <w>in</w> <w lemmaRef="dominium">dominium</w> <w>in</w> <w>eo</w> <w>habeo</w>, <w>exceptis</w> <w>castaneis</w>, <w>quas</w> <w>villani</w> <w>reddere</w> <w>solent</w>; <w>has</w> <w>mihi</w> <w>retineo</w> <w>per</w> <w>donum</w> <w>abbatis</w> <w>et</w> <w>monachorum</w> <w>in</w> <w>charitate</w>, <w>dum</w> <w>vixero</w>. <w>Post</w> <w>obitum</w> <w>meum</w>, <w>Sancto</w> <w>Juliano</w> <w>sint</w>, <w>[et]</w> <w>aliae</w> <w>castaneae</w> <w>quas</w> <w>habere</w> <w>solebamus</w> <w lemmaRef="pater">pater</w> <w>meus</w> <w>et</w> <w>ego</w>, <w lemmaRef="frater">frater</w> <w>quoque</w> <w>meus</w>, <w>Sancto</w> <w>Juliano</w> <w>olim</w> <w>dedimus</w>. <w>Vicariam</w> <w>terrae</w> <w>hujus</w> <w>in</w> <w>meum</w> <w lemmaRef="dominium">dominium</w> <w>non</w> <w>habeo</w>, <w>sed</w> <w>si</w> <w>monachi</w> <w>de</w> <w>his</w> <w>qui</w> <w>eam</w> <w>de</w> <w>me</w> <w>tenent</w> <w>acquirere</w> <w>potuerint</w>, <w>libenter</w> <w>eam</w> <w>Sancto</w> <w>Juliano</w> <w>concedo</w>. <w>Hec</w> <w>terra</w> <w>ita</w> <w>quieta</w> <w>sit</w> <w>ut</w> <w>meus</w> <w lemmaRef="homo">homo</w> <w>nunquam</w> <w>in</w> <w>eam</w> <w>amplius</w> <w>in</w> <w>aeternum</w> <w>ingrediatur</w> <w>neque</w> <w>propter</w> <w>hominem</w> <w>distringendum</w> <w>neque</w> <w>propter</w> <w>aliquid</w> <w>accipiendum</w>, <w>neque</w> <w>propter</w> <w>aliquam</w> <w>vim</w> <w>faciendam</w>. <w>Si</w> <w>quis</w> <w>hoc</w> <w>annuerit</w>, <w>annuat</w> <w>ei</w> <w>Deus</w> <w lemmaRef="regnum">regnum</w> <w>suum</w>, <w>quicumque</w> <w>contradixerit</w>, <w>contrarius</w> <w>ei</w> <w>Deus</w> <w>Omnipotens</w> <w>sit</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> <w>Gaulfredi</w> <w>de</w> <w>Prulliaco</w>, <w>thesaurarius</w> <w>Sancti</w> <w>Martini</w>.</p>
+               <p xml:space="preserve"><w>Acta</w> <w>sunt</w> <w>hec</w> <w>in</w> <w>capitulum</w> <w>Sancti</w> <w>Juliani</w>, <w>presente</w> <w>Roberto</w>, <w>abbate</w>, <w>anno</w> <w>MLXIIII</w>, <w>regnante</w> <w>Philippo</w>, <w>rege</w>, <w>anno</w> <w>IIII</w>. <w>Rotgerius</w> <w>scripsit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 179</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">166</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0179">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Thibaud, comte de Blois et sénéchal de France, donne aux religieux de MM. 10 livres de rente sur les moulins foulons de Blois.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Greneterie</p>
+         </div>
+         <dateline>1182<date notBefore="1182-01-01" notAfter="1182-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0179.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DONUM</w> <w>X</w> <w>LIBRARUM</w> <w>REDDITUS</w> <w>IN</w> <w>MOLENDINIS</w> <w>FULLATORIIS</w> — <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Ego</w> <w>Theobaldus</w> <w>blesensium</w> <w lemmaRef="comes">comes</w>, <w>et</w> <w>Francie</w> <w>senescallus</w>, <w>notum</w> <w>facio</w> <w>vniuersis</w> <w>quod</w> <w>pro</w> <w>remedio</w> <w>anime</w> <w>mee</w>, <w>et</w> <w>animarum</w> <w>patris</w> <w>et</w> <w>matris</w> <w>mee</w>, <w>et</w> <w>pro</w> <w>anniuersario</w> <w>meo</w> <w>in</w> <w>perpetuum</w> <w>faciendo</w>, <w>Adelicia</w> <w>comitissa</w> <w>uxore</w> <w>mea</w>, <w>filiis</w> <w>quoque</w> <w>et</w> <w>filiabus</w> <w>nostris</w>, <w>Theobaudo</w>, <w>et</w> <w>Ludouico</w>, <w>atque</w> <w>Henrico</w>, <w>Margareta</w> <w>et</w> <w>Ysabella</w> <w>laudantibus</w> <w>et</w> <w>concedentibus</w>, <w>dedi</w> <w>ecclesie</w> <w>beati</w> <w>Martini</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>monachis</w> <w>ibidem</w> <w>Deo</w> <w>seruientibus</w>, <w>decem</w> <w>libras</w> <w>annui</w> <w>redditus</w> <w>in</w> <w>molendinis</w> <w>meis</w> <w>fullatoriis</w> <w>Blesis</w> <w>reddendas</w> <w>singulis</w> <w>annis</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Remigii</w>. <w>Quod</w> <w>ut</w> <w>ratum</w> <w>maneat</w> <w>semper</w> <w>et</w> <w>firmum</w> <w>litteris</w> <w>commendaui</w>, <w>et</w> <w>sigilli</w> <w>mei</w> <w>impressione</w> <w>confirmaui</w>. <w>Testes</w> <w>inde</w> <w>fuerunt</w>, <w>Hugo</w> <w>de</w> <w>Ambaziaco</w>, <w>magister</w> <w>Raymundus</w> <w>cappellanus</w>, <w>Lambertus</w> <w>saccus</w>, <w>Raginaudus</w> <w>de</w> <w>Roboreto</w>, <w>Robertus</w> <w>de</w> <w>Mesio</w>, <w>Johannes</w> <w>Crassus</w>, <w>Gaufredus</w> <w>presbiter</w>, <w>Anianus</w> <w lemmaRef="clericus">clericus</w>, <w>Hebertus</w> <w>marescallus</w>, <w>Herueus</w> <w>de</w> <w>Cuyna</w> <w lemmaRef="villa">villa</w>, <w>Fulco</w> <w lemmaRef="camerarius">camerarius</w>. <w>Actum</w> <w>Blesis</w> <w>anno</w> <w>Verbi</w> <w>incarnati</w> <w>M</w><seg type="superscript "><w>o</w> </seg><w>C</w><seg type="superscript "><w>o</w></seg> <w>LXXXII</w><seg type="superscript "><w>o</w></seg> <w>datum</w> <w>per</w> <w>manum</w> <w>Hildrici</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

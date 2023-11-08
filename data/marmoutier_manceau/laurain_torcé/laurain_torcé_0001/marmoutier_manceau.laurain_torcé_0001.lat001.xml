@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Torcé, Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">161-162</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_torcé_0001">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Donation par Bouchard de Crapon de l’église de Torcé avec ses revenus, de deux manses de terre et de trois arpents de pré.</p>
+         </div>
+         <dateline>1080<date notBefore="1080-01-01" notAfter="1080-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_torcé_0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>fratribus</w> <w>hujus</w> <w>Majoris</w> <w>monasterii</w> <w>habitatoribus</w> <w>quod</w> <w>Burchardus</w>, <w>filius</w> <w>Fulcherii</w> <w>de</w> <w>Craponnio</w>, <w>dedit</w> <w>nobis</w>, <w>pro</w> <w>anima</w> <w>patris</w> <w>sui</w> <w>et</w> <w>matris</w> <w>sue</w> <w>et</w> <w>pro</w> <w>animabus</w> <w>fratrum</w> <w>suorum</w> <w>et</w> <w>pro</w> <w>ipsius</w> <w>anima</w>, <w>ecclesiam</w> <w>de</w> <w>Torciaco</w>; <w>decimam</w> <w>quoque</w> <w>ipsius</w> <w>ecclesie</w> <w>et</w> <w>sepulturam</w> <w>et</w> <w>panem</w> <w>et</w> <w>candelam</w> <w>et</w> <w>alias</w> <w>consuetudines</w> <w>que</w> <w>pertinent</w> <w>ad</w> <w>illam</w> <w>ecclesiam</w> <w>donavit</w> <w>nobis</w>, <w>sicut</w> <w>ipse</w> <w>eas</w> <w>tenuerat</w>, <w>cum</w> <w>duabus</w> <w>mansuris</w> <w>terre</w> <w>et</w> <w>duobus</w> <w>arpennis</w> <w>prati</w>. <w>Hanc</w> <w>eleemosynam</w> <w>Burchardi</w> <w>auctorizavit</w> <w>Hamelinus</w>, <w lemmaRef="frater">frater</w> <w>ejus</w>, <w>in</w> <w>curte</w> <w>Huberti</w>, <w>vicecomitis</w>, <w>apud</w> <w>Bellum</w> <w>Montem</w> <w>ubi</w> <w>etiam</w> <w>affuerunt</w> <w>Gaufredus</w> <w>de</w> <w>Meduana</w>, <w>et</w> <w>Galterius</w>, <w>filius</w> <w>ejus</w>, <w>de</w> <w>cujus</w> <w>fevo</w> <w>erat</w> <w>jam</w> <w>dicta</w> <w>ecclesia</w>, <w>qui</w> <w>pariter</w> <w>pro</w> <w>animabus</w> <w>suis</w> <w>concesserunt</w> <w>Deo</w> <w>et</w> <w>sancto</w> <w>Martino</w> <w>donum</w> <w>quod</w> <w>fecerat</w> <w>nobis</w> <w>Burchardus</w>, <w>audientibus</w> <w>et</w> <w>videntibus</w> <w>istis</w>: <w>Gaufredo</w> <w>vicecomite</w>, <w>Guillelmo</w> <w>de</w> <w>Doscela</w> <w>et</w> <w>Rotberto</w>, <w>fratre</w> <w>ejus</w>, <w>Isemberto</w> <w>Bardolo</w>, <w>Hugone</w> <w>de</w> <w>Mota</w>, <w>Pichardo</w> <w>de</w> <w lemmaRef="carta">Carta</w>, <w>Galterio</w> <w>de</w> <w>Aluia</w>, <w>Gaufredo</w> <w>de</w> <w>Raun</w>, <w>Gausfredo</w> <w>de</w> <w>Vesoth</w>, <w>Rotberto</w> <w>Rufo</w>, <w>Lamberto</w>, <w>Rainardo</w> <w>Guireto</w>, <w>Gauscelino</w> <w>Panceth</w>, <w>Hamelino</w>, <w>filio</w> <w>Richerii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

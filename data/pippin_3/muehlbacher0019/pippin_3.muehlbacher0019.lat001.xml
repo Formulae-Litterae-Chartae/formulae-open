@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Urkunden Pippins (Ed. Mühlbacher) Nr. 19</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Die Urkunden Pippins (Ed. Mühlbacher)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Jennifer Nielsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Alexander Kahnt (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">https://d-nb.info/976526034</idno>
+                  <idno type="ISBN">3-921575-54-0</idno>
+                  <title>Die Urkunden Pippins, Karlmanns und Karl des Grossen</title>
+                  <editor>Engelbert Mühlbacher</editor>
+                  <imprint>
+                     <pubPlace>München</pubPlace>
+                     <date when="1906" n="originalAusgabe">1906</date>
+                     <biblScope unit="pp">27-28</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Monumenta Germaniae historica</title>
+                  <biblScope unit="volume">MGH Pippin III</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Die Urkunden Pippins, Karlmanns und Karl des Grossen, welches 1906 von Engelbert Mühlbacher herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="pippin_3.muehlbacher0019">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pippin befiehlt die dem Kloster Prüm verliehene Zollfreiheit zu wahren.</p>
+         </div>
+         <dateline>
+            <date/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:pippin_3.muehlbacher0019.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">(<w>C</w>.) <w>Pippinus</w> <w>rex</w> <w>Francorum</w> <w>vir</w> <w>inluster</w> <w>omnibus</w> <w>episcopis</w> <w>abbatibus</w> <w>ducibus</w> <w>comitibus</w> <w>domesticis</w> <w>vicariis</w> <w>centenariis</w> <w>vel</w> <w>omnes</w> <w>missos</w> <w>nostros</w> <w>discurrentes</w>. <w>Solerti</w> <w>[cura]</w> <w>nobis</w> <w>perpendendum</w> <w>est</w>, <w>ut</w> <w>dum</w> <w>ea</w>, <w>quae</w> <w>pro</w> <w>dei</w> <w>intuitu</w> <w>atque</w> <w>sanctorum</w> <w>reverentia</w> <w>exercemus</w>, <w>ita</w> <w>nostris</w> <w>oraculis</w> <w>in</w> <w>dei</w> <w>nomine</w> <w>deliberemus</w> <w lemmaRef="confirmatio">confirmare</w>, <w>ut</w> <w>in</w> <w>perpetuo</w> <w>debeant</w> <w>inconvulsa</w> <w>permanere</w>. <w>Igitur</w> <w>cognoscat</w> <w>magnitudo</w> <w>seu</w> <w>utilitas</w> <w>vestra</w>, <w>qualiter</w> <w>nos</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>qui</w> <w>dicitur</w> <w>Prumia</w>, <w>quem</w> <w>nos</w> <w>in</w> <w>honorem</w> <w>sancti</w> <w>Salvatoris</w> <w>a</w> <w>novo</w> <w>construximus</w> <w>opere</w>, <w>talem</w> <w lemmaRef="beneficium">beneficium</w> <w>ibidem</w> <w>visi</w> <w>fuimus</w> <w>concedere</w>, <w>ut</w> <w>ubicumque</w> <w>infra</w> <w>regna</w> <w>nostra</w> <w>homines</w> <w>ipsius</w> <w>monasterii</w> <w>pro</w> <w>utilitate</w> <w>vel</w> <w>stipendia</w> <w>monachorum</w> <w>in</w> <w>quacumque</w> <w>civitate</w> <w>vel</w> <w>porto</w> <w>negotiandi</w> <w>perrexerint</w>, <w>nullo</w> <w>telloneo</w> <w>vel</w> <w>barganatico</w> <w>neque</w> <w>ex</w> <w>navali</w> <w>remigio</w> <w>neque</w> <w>saumariis</w> <w>vel</w> <w>de</w> <w>carrali</w> <w>evectione</w> <w>solvere</w> <w>nec</w> <w>reddere</w> <w>debeant</w>. <w>Propterea</w> <w>per</w> <w>hunc</w> <w lemmaRef="praeceptum">praeceptum</w> <w>decernimus</w> <w>atque</w> <w>omnino</w> <w>iubemus</w>, <w>ut</w> <w>neque</w> <w>vos</w> <w>neque</w> <w>iuniores</w> <w>aut</w> <w>successoresque</w> <w>vestri</w> <w>nec</w> <w>ulla</w> <w>iudiciaria</w> <w lemmaRef="potestas">potestas</w> <w>ipsis</w> <w>hominibus</w> <w>suprascripti</w> <w>monasterii</w>, <w>qui</w> <w>pro</w> <w>necessitate</w> <w>eorundem</w> <w>monachorum</w> <w>discurrere</w> <w>videntur</w>, <w>nullo</w> <w>teloneo</w> <w>nec</w> <w>rotatico</w> <w>neque</w> <w>pontatico</w> <w>vel</w> <w>pulveratico</w> <w>seu</w> <w>salutatico</w> <w>nec</w> <w>et</w> <w>cispetatico</w> <w>vel</w> <w>quicquid</w> <w lemmaRef="fiscus">fiscus</w> <w>noster</w> <w>exinde</w> <w>potuerat</w> <w>sperare</w>, <w>eis</w> <w>non</w> <w>requiratis</w>, <w>sed</w>, <w>ut</w> <w>supra</w> <w>diximus</w>, <w>abbati</w> <w>ipsius</w> <w>monasterii</w> <w>nomine</w> <w>Asuario</w> <w>eiusque</w> <w>successoribus</w> <w>ipse</w> <w>teloneus</w> <w>in</w> <w>luminaribus</w> <w>ipsis</w> <w>sancti</w> <w>loci</w> <w>nostris</w> <w>et</w> <w>futuris</w> <w>temporibus</w> <w>proficiat</w> <w>in</w> <w>augmentis</w>. <w>Et</w> <w>ut</w> <w>haec</w>. <w lemmaRef="auctoritas">auctoritas</w> <w>firmior</w> <w>habeatur</w> <w>vel</w> <w>per</w> <w>tempora</w> <w>melius</w> <w>conservetur</w>, <w>de</w> <w>anulo</w> <w>nostro</w> <w>subter</w> <w>sigillavimus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

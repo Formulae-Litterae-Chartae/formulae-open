@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 120</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">147-148</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0120">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte par laquelle Barthélemy, archevêche de Tours, donne a Mainier, abbé de Saint-Florent de Saumur, le droit de patronage et de présentation sur l´église de Saint-Sulplice de Chateau-Neuf a Tours.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Saint-Loup-lès-Tours</p>
+         </div>
+         <dateline>1184<date notBefore="1184-01-01" notAfter="1184-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0120.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w>Bartholomeus</w>, <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Turonensis</w> <w>archiepiscopus</w>, <w>omnibus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>notum</w> <w>vobis</w> <w>facio</w> <w>quod</w>, <w>constitutis</w> <w>in</w> <w>nostra</w> <w>presentia</w> <w>Guillelmo</w>, <w>cantore</w> <w>Beati</w> <w>Martini</w> <w>Turonensis</w>, <w>qui</w> <w>jus</w> <w>patronatus</w> <w>habebat</w> <w>in</w> <w>ecclesia</w> <w>Sancti</w> <w>Sulpicii</w> <w>de</w> <w>Castro</w> <w>Novo</w>, <w>et</w> <w>Philippo</w>, <w>ejusdem</w> <w>ecclesie</w> <w>decano</w>, <w>et</w> <w>Haemelino</w>, <w>fratre</w> <w>ejus</w>, <w>magistro</w> <w>scolarum</w>, <w>ad</w> <w>quos</w> <w>patronatus</w> <w>ejusdem</w> <w>ecclesie</w> <w>debebat</w> <w>post</w> <w>decessum</w> <w>prefati</w> <w>cantoris</w> <w>hereditario</w> <w>jure</w> <w>devolvi</w>, <w>ipsi</w> <w>tres</w> <w>jus</w> <w>illud</w> <w>eligendi</w> <w>presbiterum</w> <w>in</w> <w>eadem</w> <w>ecclesia</w> <w>resignaverunt</w> <w>spontanei</w> <w>in</w> <w>manu</w> <w>nostra</w>. <w>Et</w> <w>nos</w> <w>idem</w> <w>jus</w> <w>electionis</w> <w>et</w> <w>presentationis</w> <w>ad</w> <w>precem</w> <w>et</w> <w>petitionem</w> <w>predictorum</w> <w>patronorum</w>, <w>venerabili</w> <w>abbati</w> <w>Mainerio</w> <w>et</w> <w>monasterio</w> <w>Sancti</w> <w>Florentii</w> <w>Salmuriensis</w> <w>in</w> <w>perpetuum</w> <w>dedimus</w> <w>et</w> <w>concessimus</w>, <w>cum</w> <w>assensu</w> <w>ecclesie</w> <w>dilectorum</w> <w>filiorum</w> <w>Gaufridi</w>, <w>archidiaconi</w> <w>Turonensis</w>, <w>et</w> <w>Johannis</w>, <w>archipresbiteri</w>, <w>salvo</w> <w>in</w> <w>omnibus</w> <w>jure</w> <w>ecclesie</w> <w>Turonensis</w> <w>et</w> <w>jure</w> <w>presbiteri</w> <w>ejusdem</w> <w>ecclesie</w>. <w>Quod</w> <w>ut</w> <w>ratum</w> <w>futuris</w> <w>temporibus</w> <w>illibatumque</w> <w>permaneat</w>, <w>hoc</w> <w>ita</w> <w>factum</w> <w>auctoritate</w> <w>nostra</w> <w>et</w> <w>sigilli</w> <w>nostri</w> <w>impressione</w> <w>fecimus</w> <w>communiri</w>. <w>Astantibus</w> <w>et</w> <w>audientibus</w>: <w>Johanne</w>, <w>tresaurario</w> <w>ecclesie</w> <w>nostre</w>; <w>Petro</w>, <w>cancellario</w>; <w>Raginaldo</w>, <w>capellano</w> <w>nostro</w>; <w>Petro</w> <w>Andegavensi</w>; <w>Johanne</w> <w>Aurelianensi</w>; <w>Roberto</w>, <w>matriculario</w>; <w>Johanne</w>, <w>priore</w> <w>Cunaldi</w>, <w>fratre</w> <w>predicti</w> <w>abbatis</w>; <w>Petro</w>, <w>sacrista</w> <w>Sancti</w> <w>Florenti</w>; <w>Theobaldo</w> <w>Manerii</w>, <w>canonico</w> <w>Condatensi</w>; <w>Isembardo</w>, <w>presbitero</w> <w>Sancte</w> <w>Crucis</w>; <w>Raginaudo</w> <w>Meschini</w>; <w>Pagano</w> <w>Castinelli</w>; <w>Bartholomeo</w> <w>de</w> <w>Montibus</w>; <w>Johanne</w> <w>Ermenardi</w>; <w>Pagano</w> <w>Ermerardi</w>; <w>Radulpho</w> <w>de</w> <w>Fulquis</w>; <w>Fuberto</w> <w>de</w> <w>Fulquis</w>; <w>Nicholao</w> <w>Egelardi</w>; <w>Gaufrido</w> <w>de</w> <w>Cormarico</w>; <w>Petro</w> <w>Pegris</w>; <w>Petro</w> <w>Aimari</w>; <w>Petro</w> <w>Vaslini</w>; <w>Raginaudo</w>, <w>capellano</w> <w>de</w> <w>Sancto</w> <w>Loantio</w>, <w>et</w> <w>aliis</w> <w>multis</w>. <w>Actum</w> <w>hoc</w> <w>anno</w> <w>ab</w> <w>Incarnatioue</w> <w>Domini</w> <w>M</w><seg type="superscript "><w>o</w></seg><w>C</w><seg type="superscript "><w>o</w></seg><w>LXXX</w><seg type="superscript "><w>o</w></seg><w>IV</w><seg type="superscript "><w>o</w></seg>, <w>in</w> <w>ecclesia</w> <w>Sancti</w> <w>Lupi</w> <w>extra</w> <w>civitatem</w>. <w>Data</w> <w>per</w> <w>manum</w> <w>Petri</w>, <w>cancellarii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

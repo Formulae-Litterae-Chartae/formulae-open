@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 199</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">401</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0199">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le pape Eugène III ordonne à Henri II, évêque de Liège, de contraindre Eustache à restituer Tourinnes à l’abbaye de Stavelot, et Macaire de Sougné avec ses complices à cesser leurs brigandages.</p>
+         </div>
+         <dateline>[1148, janvier-février]<date notBefore="1148-01-01" notAfter="1148-02-29"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0199.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Eugenius</w> <w lemmaRef="episcopus">episcopus</w> <w lemmaRef="servus">servus</w> <w>servorum</w> <w>Dei</w> <w>venerabili</w> <w>fratri</w> <w>Henrico</w> <w>Leodiensi</w> <w>episcopo</w> <w lemmaRef="in_domino_salutem">salutem</w> <w>et</w> <w>apostolicam</w> <w>benedictionem</w>. </p>
+               <p xml:space="preserve"><w>Ecclesiasticorum</w> <w>bonorum</w> <w>pervasores</w> <w>quanta</w> <w>sint</w> <w>animadversione</w> <w>plectendi</w>, <w>tuam</w> <w>prudentiam</w> <w>non</w> <w>credimus</w> <w>ignorare</w>. <w>Stabulensis</w> <w>autem</w> <w>ecclesiae</w> <w>fratrum</w> <w>ad</w> <w>nos</w> <w>querela</w> <w>pervenit</w>, <w>quod</w> <w>Eustachius</w> <w>parrochianus</w> <w>tuus</w> <w>eorum</w> <w>bona</w> <w>in</w> <w>predio</w> <w>Turnines</w> <w>violenter</w> <w>abstulerit</w>, <w>et</w> <w>ab</w> <w>eorum</w> <w>infestatione</w> <w>nullatenus</w> <w>conquiescit</w>. <w>Macharius</w> <w>quoque</w> <w>de</w> <w>Suingeis</w> <w>et</w> <w>quidam</w> <w>alii</w> <w>incendiarii</w> <w>et</w> <w>raptores</w>, <w>coadjutores</w> <w>ipsius</w>, <w>eandem</w> <w>aecclesiam</w> <w>prediis</w> <w>et</w> <w>aliis</w> <w>modis</w> <w>vexare</w> <w>non</w> <w>pertimescunt</w>. <w>Quia</w> <w>vero</w> <w>precipiti</w> <w>audaciae</w> <w>raptorum</w> <w>spirituali</w> <w>gladio</w> <w>est</w> <w>fortius</w> <w>resistendum</w>, <w>presentium</w> <w>tibi</w> <w>auctoritate</w> <w>mandamus</w>, <w>quatinus</w> <w>tam</w> <w>prefatum</w> <w>Eustachium</w> <w>quam</w> <w>alios</w> <w>raptores</w> <w>ablata</w> <w>reddere</w>, <w>et</w> <w>de</w> <w>cetero</w> <w>ab</w> <w>eorum</w> <w>infestatione</w> <w>desistere</w> <w>districte</w> <w>coherceas</w>. <w>Quod</w> <w>si</w> <w>contemptores</w> <w>extiterint</w>, <w>infra</w> <w>XI</w> <w>dies</w>, <w>postquam</w> <w>presentia</w> <w>scripta</w> <w>susceperis</w>, <w>frustratoria</w> <w>dilatione</w> <w>remota</w>, <w>canonicam</w> <w>de</w> <w>ipsis</w> <w>justiciam</w> <w>facias</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

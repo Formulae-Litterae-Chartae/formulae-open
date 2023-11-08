@@ -1,0 +1,85 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 77</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">87-88</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0077">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Hugues et Payen se désistent de leurs prétentions sur le moulin de Gièvre, moyennant 30 s. et I d.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mesland</p>
+         </div>
+         <dateline>1100<date notBefore="1100-01-01" notAfter="1100-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0077.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>CONCORDIA</w> <w>CVM</w> <w>HVGONE</w> <w>RVILLO</w>, <w>ET</w> <w>PAGANO</w> <w>FRATRE</w> <w>EIVS</w> <w>DE</w> <w>MOLENDINO</w> <w>DE</w> <w>GEVRIA</w>. – <w>BLESIS</w>»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>omnibus</w> <w>quod</w> <w>anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w>. <w>centesimo</w>, <w>Hugo</w> <w>et</w> <w lemmaRef="pagus">Paganus</w> <w>filii</w> <w>Harduini</w> <w>cognomento</w> <w>rubilli</w> <w>intulerunt</w> <w>nobis</w> <w>monachis</w> <w>maioris</w> <w>monasterii</w> <w>calumniam</w> <w>in</w> <w>molendino</w> <w>de</w> <w>Geuria</w> <w>quem</w> <w>nobis</w>, <w>sicut</w> <w>in</w> <w>alia</w> <w lemmaRef="carta">carta</w> <w>uideri</w> <w>potest</w>, <w lemmaRef="pater">pater</w> <w>eorum</w> <w>antea</w> <w>coram</w> <w>mulcis</w> <w>concesserat</w>, <w>quod</w> <w>illi</w> <w>non</w> <w>recognoscere</w> <w>se</w> <w>dicebant</w>. <w>Per</w> <w>manum</w> <w>igitur</w> <w>fratris</w> <w>nostri</w> <w>Gauffredi</w> <w>parisiensis</w>, <w>eo</w> <w>tempore</w> <w>fontis</w> <w>Merlandi</w> <w>prepositi</w>, <w>uenimus</w> <w>ad</w> <w>huiusmodi</w> <w>cum</w> <w>eis</w> <w>super</w> <w>hac</w> <w>re</w> <w>concordiam</w> <w>Dedit</w> <w>ergo</w> <w lemmaRef="frater">frater</w> <w>XXX</w><seg type="superscript "><w>ta</w></seg> <w>solidos</w> <w>blesenses</w>, <w>et</w> <w>unum</w> <w>denarium</w> <w>apud</w> <w>Blesim</w>, <w>et</w> <w>gratanter</w> <w>omnem</w> <w>illam</w> <w>calumniam</w> <w>dimittentes</w>, <w>Deo</w> <w>atque</w> <w>sancto</w> <w>Martino</w> <w>et</w> <w>nobis</w> <w>eius</w> <w>monachis</w> <w>quicquid</w> <w>iuris</w> <w>in</w> <w>prefato</w> <w>molendino</w> <w>reclamabant</w>, <w>dederunt</w> <w>et</w> <w>concesserunt</w>, <w>una</w> <w>cum</w> <w>matre</w> <w>sua</w> <w>Hylaria</w>, <w>et</w> <w>ceteris</w> <w>fratribus</w> <w>suis</w>, <w>quorum</w> <w>hic</w> <w>nomina</w> <w>placuit</w> <w>annotari</w>, <w>Harduinum</w>, <w>Iruisum</w>, <w>Heliam</w> <w>rubellum</w>, <w>Sibillam</w>, <w>Elisendem</w>. <w>Cui</w> <w>rei</w> <w>interfuerunt</w> <w>testes</w> <w>isti</w>. <w>Ex</w> <w>parte</w> <w>eorum</w>: <w>Gosbertus</w> <w>beuronius</w>, <w>Martinus</w>, <w>Rainaldus</w>, <w>Mauricius</w>, <w>Grardus</w>, <w>Robertus</w> <w>de</w> <w>Candato</w>, <w>Bertelinus</w> <w>miles</w>. <w>Ex</w> <w>parte</w> <w>uero</w> <w>nostia</w> <w>isti</w>: <w>Durandus</w> <w>presbiter</w>, <w>Herueus</w> <w>belonius</w>, <w>Bernardus</w> <w>prepositus</w>, <w>Amalricus</w>, <w>Robertus</w> <w>forestarius</w>, <w>Andreas</w>, <w>Guinemarus</w>, <w>Ingelbaldus</w> <w>seruiens</w> <w>noster</w>, <w>Johannes</w> <w>de</w> <w>Guastina</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

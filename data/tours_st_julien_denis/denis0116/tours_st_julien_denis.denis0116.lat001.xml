@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 116</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">144-145</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0116">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice de l’accord établi entre Barthélemy de Saint-Mars et les moines de Saint-Julien au sujet des dimes de la Varenne.</p>
+         </div>
+         <dateline>1171<date notBefore="1171-01-01" notAfter="1171-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0116.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Anno</w> <w>Dominicae</w> <w>Incarnationis</w> <w>millesimo</w> <w>centesimo</w> <w>septuagesimo</w> <w>primo</w>, <w>orta</w> <w>est</w> <w>contentio</w> <w>inter</w> <w>monachos</w> <w>Sancti</w> <w>Juliani</w> <w>et</w> <w>Bartholomeum</w>, <w>dominum</w> <w>Sancti</w> <w>Medardi</w>, <w>de</w> <w>decima</w> <w>Varenae</w>, <w>quam</w> <w>Harduinus</w>, <w>avus</w> <w>suus</w>, <w>Sancto</w> <w>Juliano</w> <w>dederat</w> <w>ad</w> <w>victum</w> <w>monachorum</w> <w>servientium</w> <w>ibidem</w>, <w>et</w> <w>de</w> <w>decima</w> <w>molendinorum</w> <w>et</w> <w>portus</w>, <w>quas</w>, <w>tempore</w> <w>patris</w> <w>sui</w> <w>Andreae</w>, <w>monachi</w> <w>quiete</w> <w>et</w> <w>libere</w> <w>tenuerant</w>. <w>Ipse</w> <w>vero</w>, <w>consilio</w> <w>depravatus</w>, <w>decimam</w> <w>illam</w> <w>Varenae</w> <w>calumniatus</w> <w>est</w>, <w>asserens</w> <w>eam</w> <w>non</w> <w>ab</w> <w>avo</w> <w>suo</w> <w>sic</w> <w>fuisse</w> <w>datam</w>, <w>sed</w> <w>de</w> <w>agris</w> <w>tantummodo</w> <w>qui</w> <w>tunc</w> <w>culti</w> <w>erant</w>, <w>[et]</w> <w>de</w> <w>incultis</w> <w>et</w> <w>insulis</w> <w>sibi</w> <w>retinuisse</w>; <w>quod</w> <w>omnino</w> <w>falsum</w> <w>erat</w>. <w>Decimam</w> <w>autem</w> <w>molendinorum</w> <w>et</w> <w>portus</w> <w>[</w>...<w>]</w> <w>emendarum</w> <w>et</w> <w>molendinorum</w> <w>reficiendorum</w> <w>auferebat</w>, <w>quod</w> <w>Barsilius</w>, <w>illius</w> <w>obedientiae</w> <w>prepositus</w>, <w>non</w> <w>ferens</w>, <w>diu</w> <w>cum</w> <w>eo</w> <w>super</w> <w>hec</w> <w>placitavit</w>. <w>Tandem</w>, <w>per</w> <w>Dei</w> <w>voluntatem</w>, <w>prenominato</w> <w>Bartholomeo</w> <w>mediante</w>, <w>in</w> <w>se</w> <w>reversus</w>, <w>culpam</w> <w>suam</w> <w>recognoscens</w>, <w>cum</w> <w>ipso</w> <w>priori</w> <w>in</w> <w>capitulum</w> <w>venit</w>, <w>ibique</w>, <w>pro</w> <w>animae</w> <w>suae</w> <w>parentorumque</w> <w>suorum</w> <w>salute</w>, <w>omnem</w> <w>decimarum</w> <w>calumniam</w> <w>in</w> <w>manu</w> <w>venerabilis</w> <w>abbatis</w> <w>guerpivit</w>, <w>non</w> <w>solum</w> <w>de</w> <w>Varena</w>, <w>sed</w> <w>etiam</w> <w>de</w> <w>insulis</w> <w>adjacentibus</w>, <w>et</w>, <w>ut</w> <w>brevius</w> <w>dicam</w>, <w>de</w> <w>tota</w> <w>terra</w> <w>sua</w> <w>Sancti</w> <w>Medardi</w>, <w>de</w> <w>culta</w> <w>et</w> <w>inculta</w>, <w>decima</w> <w>vero</w> <w>molendinorum</w> <w>et</w> <w>portus</w> <w>ita</w> <w>eis</w> <w>plane</w> <w>concessa</w>, <w>ut</w> <w>monachi</w> <w>in</w> <w>molis</w> <w>emendis</w> <w>vel</w> <w>molendinis</w> <w>reficiendis</w> <w>nec</w> <w>in</w> <w>eis</w> <w>quae</w> <w>portui</w> <w>sunt</w> <w>necessariis</w> <w>emendis</w> <w>nihil</w> <w>omnino</w> <w>amittant</w>, <w>sed</w> <w>sine</w> <w>aliqua</w> <w>contradictione</w> <w>decimam</w> <w>partem</w> <w>semper</w> <w>accipiant</w>. <w>Pro</w> <w>hac</w> <w>concessione</w> <w>dedit</w> <w>eciam</w> <w>prefatus</w> <w>Bartholomeus</w> <w>octo</w> <w>libras</w> <w>de</w> <w>habere</w> <w>Sancti</w>, <w>et</w> <w>sic</w> <w>illa</w> <w>contentio</w> <w>finita</w> <w>est</w>. <w>Ad</w> <w>hanc</w> <w>pacis</w> <w>concordiam</w> <w>fuerunt</w>: <w>[Ex</w> <w>parte]</w> <w>ejus</w>: <w>Petrus</w> <w>de</w> <w>Magniaco</w>; <w>[</w>...<w>]</w> <w>prepositus</w>; <w>Johannes</w> <w>Paletus</w>; <w>Gervasius</w> <w>Cordicus</w>; <w>B</w>. <w>Picaut</w>. <w>Ex</w> <w>parte</w> <w>monachorum</w>: <w>Petrus</w> <w>Gaufridus</w>, <w>elemosinarius</w>; <w>Philippus</w> <w>de</w> <w>Cartis</w>, <w>cantor</w>; <w>Stephanus</w> <w>Gollenus</w>, <w lemmaRef="praepositus">praepositus</w>; <w>Tebaudus</w> <w lemmaRef="abbas">Abbas</w>; <w>Tugles</w>; <w>Rainaldus</w> <w>de</w> <w>Milecia</w> <w>et</w> <w>multi</w> <w>alii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

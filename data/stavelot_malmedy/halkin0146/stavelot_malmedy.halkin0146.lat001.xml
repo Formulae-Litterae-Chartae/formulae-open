@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 146</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">295 - 296</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0146">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Acte établissant que le curé de Sprimont jouit d’un tiers de la dîme et d’un manse libre.</p>
+         </div>
+         <dateline>1127<date notBefore="1127-01-01" notAfter="1127-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0146.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w>. <w>Notum</w> <w>sit</w> <w>omnibus</w> <w>et</w> <w>posteris</w> <w>et</w> <w>presentibus</w> <w>quod</w> <w>Johannes</w> <w>de</w> <w>Awalie</w> <w>sacerdos</w> <w>ecclesiam</w> <w>de</w> <w>Sprimont</w> <w>a</w> <w>domno</w> <w>abbate</w> <w>Rodulfo</w> <w>accepit</w>, <w>ita</w> <w>videlicet</w> <w>ut</w> <w>in</w> <w>omni</w> <w>decimatione</w> <w>tam</w> <w>magna</w> <w>quam</w> <w>parva</w> <w>tertiam</w> <w>partem</w> <w>acciperet</w>, <w>et</w> <w>de</w> <w>septem</w> <w>mansis</w> <w>et</w> <w>dimidio</w> <w>qui</w> <w>ad</w> <w>dotem</w> <w>ejusdem</w> <w>ecclesie</w> <w>pertinent</w> <w>unum</w> <w>liberum</w> <w lemmaRef="mansus">mansum</w> <w>id</w> <w>est</w> <w>sine</w> <w>ullo</w> <w>servitii</w> <w>genere</w> <w>haberet</w>. <w>Cum</w> <w>autem</w> <w>ei</w> <w>eadem</w> <w>prebenda</w> <w>non</w> <w>sufficeret</w>, <w>optinuit</w> <w>a</w> <w>supradicto</w> <w>abbate</w> <w>et</w> <w>domno</w> <w>Lietberto</w> <w>et</w> <w>Eminone</w> <w>preposito</w>, <w>ut</w> <w>omnem</w> <w>dotem</w> <w>ejusdem</w> <w>ecclesie</w> <w>possidens</w> <w>in</w> <w>omni</w> <w>decimatione</w> <w>tam</w> <w>magna</w> <w>quam</w> <w>parva</w> <w>mediam</w> <w>partem</w> <w>acciperet</w>, <w>pro</w> <w>quo</w> <w>augmento</w> <w>fratribus</w> <w>XX</w> <w>solid</w>. <w>singulis</w> <w>annis</w> <w>persolveret</w>, <w>quinque</w> <w>videlicet</w> <w>beati</w> <w>Michaelis</w> <w>et</w> <w>XV</w> <w>in</w> <w>festo</w> <w>sancti</w> <w>Martini</w>. <w>Anselmus</w> <w>vero</w> <w>qui</w> <w>eandem</w> <w>ecclesiam</w> <w>cum</w> <w>prefatis</w> <w>conditionibus</w> <w>habuit</w> <w>anno</w> <w>dominice</w> <w>incarnationis</w> <w>M°</w> <w>C°</w> <w>XX°</w> <w>VI</w>, <w>cum</w> <w>supradictum</w> <w>censum</w> <w>solvere</w> <w>non</w> <w>posset</w> <w>et</w> <w>nutricio</w> <w>suo</w> <w>Widoni</w> <w>prebendam</w> <w>illam</w> <w>a</w> <w>fratribus</w> <w>obtinere</w> <w>vellet</w>, <w>omnes</w> <w>commo</w>. . . . <w>in</w> <w>pristinum</w> <w>statum</w> <w>reformavit</w> <w>et</w> <w>sic</w> <w>Widoni</w> <w>tenenda</w> <w>reddidit</w>, <w>sicut</w> <w>Johannes</w> <w>primo</w> <w>acceperat</w>, <w>ita</w> <w>scilicet</w> <w>ut</w> <w>sacerdos</w> <w>in</w> <w>omni</w> <w>decimatione</w> <w>tertiam</w> <w>partem</w> <w>habeat</w> <w>et</w> <w>unum</w> <w>liberum</w> <w lemmaRef="mansus">mansum</w> <w lemmaRef="dos">dotis</w> <w>ecclesie</w>, <w>cellerarius</w> <w>autem</w> <w>fratrum</w> <w>duas</w> <w>partes</w> <w>decimationis</w> <w>et</w> <w>sex</w> <w>et</w> <w>dimidium</w> <w lemmaRef="mansus">mansum</w> <w lemmaRef="dos">dotis</w>. <w>Dabit</w> <w>autem</w> <w>idem</w> <w>cellerarius</w> <w>in</w> <w>bissextili</w> <w>anno</w> <w>X</w> <w>sol</w>. <w>obsonii</w> <w>archydiacono</w>, <w>sacerdos</w> <w>vero</w> <w>XXX</w> <w>den</w>. <w>circationis</w> <w>in</w> <w>eo</w> <w>anno</w> <w>qui</w> <w>bissextilem</w> <w>precedit</w>. <w>Hoc</w> <w>autem</w> <w>scriptum</w> <w>idcirco</w> <w>fieri</w> <w>placuit</w>, <w>ne</w> <w>ulla</w> <w>contentio</w> <w>apud</w> <w>posteros</w> <w>de</w> <w>rerum</w> <w>varietate</w> <w>oriatur</w>. <w>Actum</w> <w>est</w> <w>indictione</w> <w>V</w>, <w>regnante</w> <w>domno</w> <w>Lothario</w> <w>rege</w> <w>anno</w> <w>II°</w>, <w>domno</w> <w>Alberone</w> <w>episcopo</w> <w>in</w> <w>Leodio</w>, <w>domno</w> <w>Cuonone</w> <w>abbate</w>. <w>Testes</w> <w>sunt</w> <w>de</w> <w>fratribus</w>: <w>Hugo</w> <w>decanus</w>, <w>Godefridus</w> <w>cellerarius</w>, <w>Rodulfus</w> <w>custos</w>, <w>Warnerus</w> <w>prepositus</w>; <w>ex</w> <w>sacerdotali</w> <w>vero</w> <w>ordine</w> : <w>Thietbaldus</w>, <w>Reinboldus</w>, <w>Godefridus</w>, <w>Godescalcus</w>; <w>ex</w> <w>laicis</w> <w>autem</w> : <w>Balduinus</w> <w>de</w> <w>Banneuz</w> <w>et</w> <w>Gozuinus</w> <w lemmaRef="frater">frater</w> <w>ejus</w>, <w>Arnulfus</w> <w>et</w> <w>Werizo</w> <w>de</w> <w>Hotricant</w>, <w>Gislenus</w> <w>de</w> <w>Luncinz</w>.  </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

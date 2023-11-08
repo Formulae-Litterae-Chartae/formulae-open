@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Urkunden Pippins (Ed. Mühlbacher) Nr. 1</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Die Urkunden Pippins (Ed. Mühlbacher)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Jennifer Nielsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Alexander Kahnt (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">https://d-nb.info/976526034</idno>
+                  <idno type="ISBN">3-921575-54-0</idno>
+                  <title>Die Urkunden Pippins, Karlmanns und Karl des Grossen</title>
+                  <editor>Engelbert Mühlbacher</editor>
+                  <imprint>
+                     <pubPlace>München</pubPlace>
+                     <date when="1906" n="originalAusgabe">1906</date>
+                     <biblScope unit="pp">3-4</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Monumenta Germaniae historica</title>
+                  <biblScope unit="volume">MGH Pippin III</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Die Urkunden Pippins, Karlmanns und Karl des Grossen, welches 1906 von Engelbert Mühlbacher herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="pippin_3.muehlbacher0001">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pippin beurkundet, dass Abt Fulrad von St. Denis wider Gislemar die Villa Avezé und anderen Besitz vor ihm gerichtlich erstritten habe.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Verberie</p>
+         </div>
+         <dateline>752 03 01<date when="0752-03-01"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:pippin_3.muehlbacher0001.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Pippinus</w> <w>rex</w> <w>Francorum</w> <w>vir</w> <w>illuster</w>. <w>Cum</w> <w>nos</w> <w>in</w> <w>dei</w> <w>nomine</w> <w>Vermeria</w> <w>in</w> <w>palatio</w> <w>nostro</w> <w>una</w> <w>cum</w> <w>proceribus</w> <w>nostris</w> <w>vel</w> <w>fidelibus</w> <w>ad</w> <w>universorum</w> <w>causas</w> <w>audiendas</w> <w>vel</w> <w>recta</w> <w>iudicia</w> <w>terminanda</w> <w>resideremus</w>, <w>ibi</w> <w>veniens</w> <w>venerabilis</w> <w>vir</w> <w>Fulradus</w> <w lemmaRef="abbas">abba</w> <w>de</w> <w lemmaRef="basilica">basilica</w> <w>peculiaris</w> <w>patroni</w> <w>nostri</w> <w>domni</w> <w>Dyonisii</w>, <w>ubi</w> <w>ipse</w> <w>preciosus</w> <w lemmaRef="dominus">domnus</w> <w>in</w> <w>corpore</w> <w>requiescit</w>, <w>hominem</w> <w>aliquem</w> <w>nomine</w> <w>Gislemarum</w> <w>interpellabat</w> <w>repetens</w> <w>ab</w> <w>eo</w>, <w>eo</w> <w>quod</w> <w lemmaRef="villa">villam</w> <w>sancti</w> <w>Dyonisii</w> <w>que</w> <w>dicitur</w> <w>Abaciacus</w> <w>in</w> <w>pago</w> <w>Cenomannico</w> <w>seu</w> <w>et</w> <w>Oximensi</w> <w>etiam</w> <w>et</w> <w>illam</w> <w>porcionem</w> <w>in</w> <w>Sibriaco</w> <w>in</w> <w>pago</w> <w>Matriacensi</w>, <w>quam</w> <w>femina</w> <w>aliqua</w> <w>nomine</w> <w>Loba</w> <w>genitrix</w> <w>ipsius</w> <w>Gislemari</w> <w>per</w> <w>suum</w> <w lemmaRef="testamentum">testamentum</w> <w>ad</w> <w>casam</w> <w>prefatam</w> <w>sancti</w> <w>Dyonisii</w> <w>condonavit</w> <w>et</w> <w>ante</w> <w>agentes</w> <w>sancti</w> <w>Dyonisii</w> <w>de</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>ante</w> <w>Chilpericum</w> <w>regem</w> <w>auctrix</w> <w>affuerat</w>, <w>ipsas</w> <w>res</w> <w>ipse</w> <w>Gislemarus</w> <w>post</w> <w>hec</w> <w>malo</w> <w>ordine</w> <w>retinebat</w> <w>et</w> <w>iniuste</w>. <w>Ipse</w> <w>vero</w> <w>Gislemarus</w> <w>in</w> <w>presenti</w> <w>astabat</w>, <w>unde</w> <w>nullatenus</w> <w>potuit</w> <w>denegare</w>, <w>sed</w> <w>in</w> <w>presenti</w> <w>recognovit</w>, <w>quod</w> <w>genitrix</w> <w>sua</w> <w>Loba</w> <w>ipsam</w> <w lemmaRef="villa">villam</w> <w>superius</w> <w>nominatam</w> <w>Abaciacum</w> <w>cum</w> <w>omni</w> <w>integritate</w> <w>in</w> <w>pago</w> <w>Cenomannico</w> <w>seu</w> <w>et</w> <w>portionem</w> <w>illam</w> <w>in</w> <w>Sibriaco</w> <w>cum</w> <w>omni</w> <w>integritate</w> <w>in</w> <w>pago</w> <w>Matriacensi</w> <w>ad</w> <w>casam</w> <w>sancti</w> <w>Dyonisii</w> <w>manu</w> <w>potestativa</w> <w>condonasset</w>. <w>Unde</w> <w>et</w> <w>de</w> <w>presente</w> <w>ipsum</w> <w>Fulradum</w> <w>in</w> <w lemmaRef="causa">causa</w> <w>sancti</w> <w>Dyonisii</w> <w>per</w> <w>suum</w> <w>vadium</w> <w>de</w> <w>ipsis</w> <w lemmaRef="villa">villis</w> <w>superius</w> <w>nominatis</w> <w>Abaciaco</w> <w>et</w> <w>Sibriaco</w> <w>visus</w> <w>fuit</w> <w>revestisse</w> <w>de</w> <w>omnibus</w> <w>scilicet</w>, <w>quecumque</w> <w>iam</w> <w>dicta</w> <w>Loba</w> <w>genitrix</w> <w>sua</w> <w>ad</w> <w>casam</w> <w>sancti</w> <w>Dyonsii</w> <w>condonaverat</w> <w>vel</w> <w>in</w> <w>ipsis</w> <w lemmaRef="villa">villis</w> <w>tenuerat</w>; <w>postea</w> <w>per</w> <w>suam</w> <w>festucam</w> <w>se</w> <w>exinde</w> <w>in</w> <w>omnibus</w> <w>contra</w> <w>ipsum</w> <w>abbatem</w> <w>Fulradum</w> <w>in</w> <w lemmaRef="causa">causa</w> <w>sancti</w> <w>Dyonisii</w> <w>dixit</w> <w>esse</w> <w>exitum</w>. <w>Proinde</w> <w>nos</w> <w>una</w> <w>eum</w> <w>proceribus</w> <w>vel</w> <w>fidelibus</w> <w>nostris</w>, <w>id</w> <w>est</w> <w>Milone</w>, <w>Rotgario</w>, <w>Cheimgaudo</w>, <w>Crothardo</w>, <w>Gerichardo</w>, <w>Autgario</w> <w>et</w> <w>Wiberto</w> <w>comite</w> <w>palatii</w> <w>nostri</w> <w>vel</w> <w>reliquis</w> <w>quam</w> <w>pluribus</w> <w>visi</w> <w>fuimus</w> <w>indicasse</w>, <w>ut</w>, <w>quia</w> <w>ipse</w> <w>Gislemarus</w> <w>in</w> <w>presenti</w> <w>astabat</w> <w>et</w> <w>nullam</w> <w>potuit</w> <w>reddere</w> <w>rationem</w>, <w>propterea</w> <w>iubemus</w>, <w>ut</w>, <w>quia</w> <w>hec</w> <w lemmaRef="causa">causa</w> <w>sic</w> <w>acta</w> <w>vel</w> <w>perpetrata</w> <w>fuit</w>, <w>ipse</w> <w>Fulradus</w> <w lemmaRef="abbas">abba</w> <w>vel</w> <w>successores</w> <w>sui</w> <w>ipsas</w> <w lemmaRef="villa">villas</w> <w>superius</w> <w>nominatas</w> <w>Abbatiacum</w> <w>cum</w> <w>omni</w> <w>integritate</w> <w>et</w> <w>cum</w> <w>omnibus</w> <w>adiacentiis</w> <w>suis</w> <w>vel</w> <w>appendiciis</w> <w>totum</w> <w>et</w> <w>ad</w> <w>integrum</w> <w>rem</w> <w>inexquisitam</w> <w>seu</w> <w>et</w> <w>Sibriacum</w> <w>in</w> <w>pago</w> <w>Matriacensi</w>, <w>id</w> <w>est</w> <w>una</w> <w>cum</w> <w>terris</w> <w>domibus</w> <w>superpositis</w> <w>accolabus</w> <w>mancipiis</w> <w>vincis</w> <w>silvis</w> <w>campis</w> <w>pratis</w> <w>pascuis</w> <w>aquis</w> <w>aquarumve</w> <w>decursibus</w> <w>iunctis</w> <w>vel</w> <w>subiunctis</w> <w>farinariis</w> <w>gregibus</w> <w>cum</w> <w>pastoribus</w> <w>utriusque</w> <w>generis</w> <w>et</w> <w>sexus</w> <w>et</w> <w>quecumque</w> <w>Loba</w> <w>per</w> <w>suum</w> <w lemmaRef="testamentum">testamentum</w> <w>ad</w> <w>casam</w> <w>sancti</w> <w>Dyonisii</w> <w>condonavit</w> <w>vel</w> <w>iam</w> <w>ante</w> <w>Chilpericum</w> <w>regem</w> <w>antecessorem</w> <w>nostrum</w> <w>et</w> <w>Hugonem</w> <w>antecessorem</w> <w>ipsius</w> <w>Fulradi</w> <w>abbatis</w> <w>auctrix</w> <w>affuit</w>, <w>inspectis</w> <w>ipsis</w> <w>testamentis</w> <w>contra</w> <w>ipsum</w> <w>Gislemarum</w> <w>habeat</w> <w>evindicatas</w> <w>atque</w> <w>elidigatas</w> <w>et</w> <w>sit</w> <w>inter</w> <w>eos</w> <w>in</w> <w>postmodum</w> <w>ex</w> <w>hac</w> <w>re</w> <w>omni</w> <w>tempore</w> <w>sopita</w> <w>causatio</w>.</p>
+               <p xml:space="preserve"><w>Data</w> <w>kal</w>. <w>marc</w>. <w>anno</w> <w>primo</w> <w>regni</w> <w>nostri</w>, <w>Vermeria</w> ; <w>feliciter</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

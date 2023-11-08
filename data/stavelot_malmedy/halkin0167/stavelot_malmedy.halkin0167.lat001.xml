@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 167</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">343 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0167">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le duc Waleran II de Limbourg et son épouse Judith donnent au monastère de Stavelot la dîme de Henri-Chapelle.</p>
+         </div>
+         <dateline>[1130-1139]<date notBefore="1130-01-01" notAfter="1139-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0167.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>_</w> <w>_</w> <w>_</w> <w>Cum</w> <w>in</w> <w lemmaRef="villa">villam</w> <w>nostram</w> <w>quae</w> <w>Heinrici</w> <w>capella</w> <w>nuncupatur</w> <w>devenissemus</w>, <w>occurrerunt</w> <w>nobis</w> <w>fratres</w> <w>Stabulenses</w>, <w>_</w> <w>_</w> <w>_</w> <w>qui</w> <w>_</w> <w>_</w> <w>_</w> <w>gravem</w> <w>apud</w> <w>nos</w> <w>querimoniam</w> <w>deposuerunt</w> <w>de</w> <w>decima</w> <w>ejusdem</w> <w>parrochiae</w>, <w>quam</w> <w>piae</w> <w>memoriae</w> <w>avus</w> <w>noster</w> <w lemmaRef="dominus">domnus</w> <w>Walramnus</w> <w lemmaRef="dux">dux</w> <w>una</w> <w>cum</w> <w>nobili</w> <w>conjuge</w> <w>sua</w> <w>domina</w> <w>Judith</w> <w>pro</w> <w>salute</w> <w>omnium</w> <w>progenitorum</w> <w>suorum</w> <w>et</w> <w>totius</w> <w>successionis</w> <w>suae</w> <w>Stabulensi</w> <w>aecclesiae</w> <w>ad</w> <w>sustentationem</w> <w>et</w> <w>usus</w> <w>pauperum</w>, <w>quorum</w> <w>ibi</w> <w>maxima</w> <w>confluentia</w> <w>est</w>, <w>cum</w> <w>omni</w> <w>sua</w> <w>integritate</w> <w>contradiderat</w>, <w>ostendentes</w> <w>nobis</w> <w>signa</w> <w>progenitorum</w> <w>nostrorum</w> <w>et</w> <w>certa</w> <w>scriptorum</w> <w>et</w> <w>privilegiorum</w> <w>munimenta</w>. <w>_</w> <w>_</w> <w>_</w> </p>
+               <p xml:space="preserve"><w>17</w>. <w>kal</w>. <w>aug</w>. <w>Memoratio</w> <w>Walrani</w> <w>ducis</w> <w>cum</w> <w>domina</w> <w>Judith</w> <w>conjuge</w> <w>sua</w> <w>qui</w> <w>contulerunt</w> <w>ecclesie</w> <w>decimas</w> <w>in</w> <w>Henrici</w> <w>Capella</w> <w>pro</w> <w>salute</w> <w>animarum</w> <w>suarum</w> <w>et</w> <w>omnium</w> <w>progenitorum</w> <w>eorum</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

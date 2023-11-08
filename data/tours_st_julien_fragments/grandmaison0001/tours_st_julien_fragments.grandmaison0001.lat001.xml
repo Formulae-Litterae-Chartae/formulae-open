@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="deu">
+        <fileDesc>
+            <titleStmt>
+                <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed. Grandmaison) Nr.
+                    1</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                    Recueillis sur les Registres d’État-Civil d’Indre-et-Loire (Ed.
+                    Grandmaison)</edition>
+                <respStmt>
+                    <resp>Projektleiter</resp>
+                    <resp xml:lang="eng">Principal investigator</resp>
+                    <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Korrektur</resp>
+                    <resp xml:lang="eng">Proofreading</resp>
+                    <persName>Franziska Quaas (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Dokument- und Urkundenbearbeitung</resp>
+                    <resp xml:lang="eng">Initial charter processing</resp>
+                    <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität
+                        Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Hauptentwickler</resp>
+                    <resp xml:lang="eng">Lead developer</resp>
+                    <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Umwandlung in XML/TEI</resp>
+                    <resp xml:lang="eng">Conversion into XML</resp>
+                    <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des
+                        Chartes, Paris, Frankreich)</persName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <date when="2020"/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed
+                        under a Creative Commons Attribution 4.0 International License. </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title>Fragments de Chartes du Xe Siècle Provenant de Saint-Julien de Tours
+                            Recueillis sur les Registres d’État-Civil d’Indre-et-Loire</title>
+                        <editor>M. Ch. de Grandmaison</editor>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <date when="1886" n="originalAusgabe">1886</date>
+                            <biblScope unit="pp">9-13</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Fragments
+                de Chartes du Xe Siècle Provenant de Saint-Julien de Tours Recueillis sur les
+                Registres d’État-Civil d’Indre-et-Loire, welches 1886 von M. Ch. de Grandmaison
+                herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß
+                TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und
+                unter Einhaltung der CapiTainS-Vorgaben wurde die
+                Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text type="charta" xml:id="tours_st_julien_fragments.grandmaison0001">
+        <front xml:lang="fre">
+            <div type="section" subtype="regest">
+                <p xml:space="preserve">Charte de l’archevêque de Tours Robert, concédant, a la prière de
+                        Téotolon, deux arpents de terre au diacre Ardouin.</p>
+            </div>
+            <dateline>927 04<date notBefore="0927-04-01" notAfter="0927-04-30"/>
+            </dateline>
+        </front>
+        <body>
+            <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_fragments.grandmaison0001.lat001">
+                <div type="textpart" subtype="charta" n="1">
+                    <p xml:space="preserve"><w>In</w> <w>nomine</w> <w>Domini</w> <w>nostri</w> <w>Jesu</w> <w>Christi</w>. <w>Rotbertus</w> <w>sanctae</w> <w>Turonicae</w> <w>sedis</w> <w>archiepiscopus</w>, <w>notum</w> <w>volumus</w>...... <w>Quoniam</w> <w>deprecatus</w> <w>est</w> <w>nos</w> <w>quidam</w> <w>gregis</w> <w>incliti</w> <w>confessoris</w> <w>Christi</w> <w>beati</w> <w>Martini</w> <w>venerabilis</w> <w lemmaRef="canonicus">canonicus</w> <w>ac</w> <w>decanus</w>, <w>nomine</w> <w>Teotolo</w>, <w>ut</w> <w>aliquid</w> <w>ex</w> <w>potestate</w> <w>nostra</w>, <w>videlicet</w> <w>ex</w> <w>presbiterio</w> <w>cellulae</w> <w>sancti</w> <w>Vincentii</w>, <w>quae</w> <w>sita</w> <w>est</w> <w>in</w> <w>suburbio</w> <w>Turonicae</w> <w>urbis</w>...... <w>cuidam</w> <w>prefati</w> <w>gregis</w> <w>diacono</w>, <w>nomine</w> <w>Arduino</w>, <w>sub</w> <w>institutione</w> <w lemmaRef="census">census</w> <w>annuatim</w> <w>reddendum</w>, <w>per</w> <w>hanc</w> <w>nostrae</w> <w>auctoritatis</w> <w>firmitatem</w> <w>concederemus</w>: <w>cujus</w> <w>deprecationem</w>, <w>ut</w> <w>par</w> <w>erat</w>, <w>benigna</w> <w>recipientes</w> <w>animo</w>, <w>concessimus</w> <w>praelibato</w> <w>Arduino</w> <w>ex</w> <w>potestate</w> <w>sancti</w> <w>Vincentii</w> <w>de</w> <w>terra</w> <w>arabili</w> <w>aripenn</w>. <w>II</w>,.... <w>sitos</w> <w>in</w> <w>suburbio</w> <w>Turonicae</w> <w>urbis</w>, <w>juxta</w> <w>arcus</w> <w>antiquos</w>, <w>non</w> <w>longe</w> <w>a</w> <w>cornu</w> <w>monasterii</w> <w>Sancti</w> <w>Martini</w> <w>terminantur</w> <w>etc</w>......</p>
+                    <p xml:space="preserve"><w>Et</w> <w>ut</w> <w>haec</w> <w>manusfirma</w> <w>certior</w> <w>habeatur</w>..... <w>manu</w> <w>propria</w> <w>eam</w> <w>subscripsimus</w> <w>et</w> <w>ad</w> <w>canonicos</w> <w>nostrae</w> <w>matris</w> <w>ecclesiae</w> <w>firmari</w> <w>fecimus</w>. <w>XP</w>. <w>Rotbertus</w>. <w>Θηωθωλω</w>; <w>etc</w>.</p>
+                    <p xml:space="preserve"><w>Data</w> <w>mense</w> <w>aprili</w>, <w>anno</w> <w>IV</w>, <w>regnante</w> <w>Rodulpho</w> <w>rege</w>.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 249</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">476</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0249">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">L'empereur Frédéric Ier ordonne à Henri, comte de Limbourg, d’honorer l’abbé Wibald et de protéger son monastère de Stavelot.</p>
+         </div>
+         <dateline>[1157, août]<date notBefore="1157-08-01" notAfter="1157-08-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0249.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Fridericus</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Romanorum</w> <w>imperator</w> <w>et</w> <w>semper</w> <w>augustus</w> <w>Heinrico</w> <w>de</w> <w>Lemburg</w> <w>gratiam</w> <w>suam</w> <w>et</w> <w>omne</w> <w>bonum</w>. </p>
+               <p xml:space="preserve"><w>Equum</w> <w>est</w> <w>et</w> <w>valde</w> <w>imperialem</w> <w>magnificentiam</w> <w>decet</w>, <w>ut</w> <w>personae</w> <w>quae</w> <w>imperio</w> <w>nostro</w> <w>promptiori</w> <w>devotione</w> <w>obsequntur</w> <w>et</w> <w>a</w> <w>nobis</w> <w>artius</w> <w>diligantur</w>, <w>et</w> <w>ab</w> <w>omnibus</w> <w>qui</w> <w>imperii</w> <w>nostri</w> <w>honorem</w> <w>diligunt</w>, <w>cum</w> <w>debita</w> <w>reverentia</w> <w>conserventur</w>. <w>Proinde</w> <w>industriam</w> <w>tuam</w> <w>attente</w> <w>monendo</w> <w>rogamus</w>, <w>ut</w> <w>fidelem</w> <w>nostrum</w> <w>Wibaldum</w> <w>Stabulensem</w> <w>abbatem</w>, <w>qui</w> <w>multum</w> <w>et</w> <w>diu</w> <w>in</w> <w>servitio</w> <w>nostro</w> <w>et</w> <w>imperii</w> <w>utilitatibus</w> <w>jam</w> <w>laboravit</w>, <w>honorare</w> <w>et</w> <w>diligere</w> <w>studeas</w> <w>et</w> <w>aecclesiam</w> <w>Stabulensem</w>, <w>cui</w> <w>preest</w>, <w>tueri</w> <w>et</w> <w>conservare</w> <w>non</w> <w>cesses</w>, <w>Interdicimus</w> <w>etiam</w> <w>tibi</w> <w>atque</w> <w>sub</w> <w>optentu</w> <w>gratiae</w> <w>nostrae</w> <w>precipimus</w>, <w>ne</w> <w>possessionibus</w> <w>eidem</w> <w>aecclesiae</w> <w>collatis</w> <w>a</w> <w>tuis</w> <w>antecessoribus</w> <w>aliquam</w> <w>violentiam</w> <w>inferas</w> <w>neque</w> <w>eam</w> <w>aliquo</w> <w>modo</w> <w>vexare</w> <w>attemptes</w>, <w>sciens</w> <w>procul</w> <w>dubio</w> <w>quod</w> <w>eadem</w> <w>aecclesia</w> <w>cum</w> <w>suis</w> <w>omnibus</w> <w>sub</w> <w>tutela</w> <w>et</w> <w>defensione</w> <w>imperii</w> <w>nostri</w> <w>constituta</w> <w>est</w>; <w>unde</w> <w>et</w> <w>quicunque</w> <w>eam</w> <w>leserit</w>, <w>nos</w> <w>offendit</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

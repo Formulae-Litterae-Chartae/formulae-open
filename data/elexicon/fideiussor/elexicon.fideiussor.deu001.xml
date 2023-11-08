@@ -1,0 +1,42 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fideiussor</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021-12-09">2021-12-09</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.fideiussor.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title"><w>Fideiussor</w></seg>: <seg type="lex-keyword"><w>Bürge</w></seg>, <seg type="lex-keyword"><w>Erfüllungsgarant</w></seg>; <w>Person</w>, <w>die</w> <w>für</w> <w>eine</w> <w>andere</w> <w>Person</w> <w>einstehen</w> <w>muss</w>.</p>
+               <p xml:space="preserve"><w>Im</w> <w>spätantiken</w> <w>römischen</w> <w>Recht</w> <w>konnte</w> <w>eine</w> <w>Bürgschaft</w> <w>durch</w> <w>ein</w> <w>schriftliches</w> <w>Schuldversprechen</w> (<w type="latin-word" lemmaRef="stipulatio">stipulatio</w>), <w>einen</w> <w>mündlichen</w> <w>Eid</w> <w>oder</w> <w>ein</w> <w>formfreies</w> <w type="latin-word" lemmaRef="mandatum">mandatum</w> <w>übernommen</w> <w>werden</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Kaser&lt;/span&gt;, Max: Das römische Privatrecht: Zweiter Abschnitt, 2. neubearb. Aufl. mit Nachtr. zum 1. Abschn, München 1975 (Rechtsgeschichte des Altertums 3,3).">M. Kaser, Das römische Privatrecht II</bibl>, S. 458f.</p></note>. <w>Der</w> <w type="latin-word" lemmaRef="fideiussor">fideiussor</w> <w>bürgte</w> <w>für</w> <w>den</w> <w>Schuldner</w> <w>und</w> <w>konnte</w> <w>bei</w> <w>dessen</w> <w>Ausfall</w> <w>bis</w> <w>zur</w> <w>Höhe</w> <w>der</w> <w>vollen</w> <w>Schuld</w> <w>herangezogen</w> <w>werden</w>. <w>Bis</w> <w>Justinian</w> <w>galt</w> <w>die</w> <w>Verpflichtung</w> <w>des</w> <w type="latin-word" lemmaRef="fideiussor">fideiussor</w> <w>nur</w> <w>bei</w> <w>vollständigem</w> <w>Ausfall</w> <w>des</w> <w>Schuldners</w>; <w>im</w> <w>Anschluss</w> <w>an</w> <w>die</w> <w>Reform</w> <w>galt</w> <w>seine</w> <w>Bürgschaft</w> <w>auch</w> <w>bei</w> <w>Teilausfall</w> <w>desselben</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Kaser&lt;/span&gt;, Max: Das römische Privatrecht: Zweiter Abschnitt, 2. neubearb. Aufl. mit Nachtr. zum 1. Abschn, München 1975 (Rechtsgeschichte des Altertums 3,3).">M. Kaser, Das römische Privatrecht II</bibl>, S. 458f. Zur Haftung des <seg type="italic">fideiussor </seg>im römischen Recht vgl. auch <bibl n="&lt;span class=&quot;surname&quot;&gt;Dondorp&lt;/span&gt;, Harry: Die Haftung des fideiussor iudicio sisti bei den Glossatoren, in: Revue internationale des droits de l'antiquité 53 (2006), S. 221–236.">H. Dondorp, Die Haftung</bibl>, S. 222-226.</p></note>. <w>Neben</w> <w>der</w> <w>Verbindlichkeitssicherung</w> <w>konnten</w> <w type="latin-word">fideiussores</w> <w>auch</w> <w>der</w> <w>Gestellungssicherung</w> <w>dienen</w>, <w>bürgten</w> <w>also</w> <w>für</w> <w>das</w> <w>Erscheinen</w> <w>einer</w> <w>Person</w> <w>vor</w> <w>Gericht</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Siems&lt;/span&gt;, Harald: Fideiussores in frühmittelalterlichen Rechtstexten, in: Ulrike &lt;span class=&quot;surname&quot;&gt;Babusiaux&lt;/span&gt;, Peter &lt;span class=&quot;surname&quot;&gt; Nobel&lt;/span&gt; und Johannes &lt;span class=&quot;surname&quot;&gt; Platschek&lt;/span&gt; (Hgg.), Der Bürge einst und jetzt, Zürich 2017, S. 101–134.">H. Siems, Fideiussores</bibl>, S. 103-109.</p></note>. <w>In</w> <w>den</w> <w>fränkischen</w> <w type="latin-word">Leges</w> <w>ist</w> <w>der</w> <w type="latin-word" lemmaRef="fideiussor">fideiussor</w> <w>kaum</w> <w>bekannt</w>, <w>findet</w> <w>sich</w> <w>jedoch</w> <w>in</w> <w>den</w> <w>Kapitularien</w> <w>vor</w> <w>allem</w> <w>als</w> <w>Gestellungsbürge</w>, <w>aber</w> <w>auch</w> <w>in</w> <w>anderen</w> <w>Rollen</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Siems&lt;/span&gt;, Harald: Fideiussores in frühmittelalterlichen Rechtstexten, in: Ulrike &lt;span class=&quot;surname&quot;&gt;Babusiaux&lt;/span&gt;, Peter &lt;span class=&quot;surname&quot;&gt; Nobel&lt;/span&gt; und Johannes &lt;span class=&quot;surname&quot;&gt; Platschek&lt;/span&gt; (Hgg.), Der Bürge einst und jetzt, Zürich 2017, S. 101–134.">H. Siems, Fideiussores</bibl>, S. 110-117. Die Präsenz des <seg type="italic">fideiussor </seg>in den verschiedenen <seg type="italic">Leges </seg>hängt eng mit der Rezeption römischen Rechts durch dieselben zusammen. Zu den vielfältigen Formen, die Bürgschaften im Laufe des Mittelalters annehmen konnten, vgl. <bibl n="&lt;span class=&quot;surname&quot;&gt;Ogris&lt;/span&gt;, Werner: Die persönlichen Sicherheiten im Mittelalter. Versuch eines Überblicks, in: Zeitschrift der Savigny-Stiftung für Rechtsgeschichte: Germanistische Abteilung 82 (1965), S. 140–189.">W. Ogris, Die persönlichen Sicherheiten</bibl>.</p></note>. <w>Gemein</w> <w>ist</w> <w>diesen</w> <w type="latin-word">fideiussores</w> <w>des</w> <w>frühen</w> <w>Mittelalters</w>, <w>dass</w> <w>sie</w> <w>als</w> <w>Erfüllungsgaranten</w> <w>im</w> <w>weitesten</w> <w>Sinne</w> <w>dienten</w>. <w>Ihre</w> <w>Rolle</w> <w>erschöpfte</w> <w>sich</w> <w>dabei</w> <w>nicht</w> <w>im</w> <w>Einspringen</w> <w>bei</w> <w>Ausfall</w> <w>der</w> <w>Person</w>, <w>für</w> <w>die</w> <w>sie</w> <w>sich</w> <w>verbürgten</w>. <w>Vielmehr</w> <w>sollten</w> <w>sie</w> <w>bereits</w> <w>im</w> <w>Vorfeld</w> <w>auf</w> <w>diese</w> <w>einwirken</w>, <w>sie</w> <w>zur</w> <w>Erfüllung</w> <w>bewegen</w> <w>und</w> <w>zwischen</w> <w>den</w> <w>unterschiedlichen</w> <w>Interessen</w> <w>der</w> <w>Parteien</w> <w>moderieren</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Ogris&lt;/span&gt;, Werner: Die persönlichen Sicherheiten im Mittelalter. Versuch eines Überblicks, in: Zeitschrift der Savigny-Stiftung für Rechtsgeschichte: Germanistische Abteilung 82 (1965), S. 140–189.">W. Ogris, Die persönlichen Sicherheiten</bibl>, S. 141f.; <bibl n="&lt;span class=&quot;surname&quot;&gt;Siems&lt;/span&gt;, Harald: Fideiussores in frühmittelalterlichen Rechtstexten, in: Ulrike &lt;span class=&quot;surname&quot;&gt;Babusiaux&lt;/span&gt;, Peter &lt;span class=&quot;surname&quot;&gt; Nobel&lt;/span&gt; und Johannes &lt;span class=&quot;surname&quot;&gt; Platschek&lt;/span&gt; (Hgg.), Der Bürge einst und jetzt, Zürich 2017, S. 101–134.">H. Siems, Fideiussores</bibl>, S. 130.</p></note>.</p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

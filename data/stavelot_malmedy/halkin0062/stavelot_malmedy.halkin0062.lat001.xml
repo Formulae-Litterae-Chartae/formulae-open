@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 62</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">146 - 147</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0062">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Le roi Henri I, à l’intervention du duc Giselbert, confirme au monastère de Stavelot la possession de plusieurs serfs à Jupille.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Près de la Chiers</p>
+         </div>
+         <dateline>935 06 08 <date when="0935-06-08"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0062.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">(<w>C</w>). <w>IN</w> <w>NOMINE</w> <w>OMNIPOTENTIS</w> <w>DIE</w>,<w>HEINRICUS</w> <w>DIVINA</w> <w>INSPIRANTE</w> <w lemmaRef="gratia">GRATIA</w> <w>REX</w>. <w>SCIANT</w> <w>OMNES</w> <w>FIDELES</w> <w>OSTRI</w> <w>PRAESENTES</w> <w>SCILICET</w> <w>ET</w> <w>FUTURI</w>, <w>QUALITER</w> <w>NOS</w>, <w>INTERVENIENTE</w> <w>GISALBERTO</w> <w>FIDELI</w> <w>NOSTRO</w> <w>DUCE</w>, <w>|</w> <w>congregationi</w> <w>Stabolaucensis</w> <w>coenobii</w> <w>in</w> <w>loco</w> <w>lupilla</w> <w>vocato</w> <w>familiam</w> <w>subtus</w> <w>asscriptam</w> <w>nostrae</w> <w>conscriptionis</w> <w>auctoritate</w> <w>corroborari</w> <w>|</w> <w>jussimus</w>. <w>Ea</w> <w>sane</w> <w>ratione</w>, <w>ut</w> <w>legitimum</w> <w>censum</w> <w>quem</w> <w>hactenus</w> <w>solvere</w> <w>visa</w> <w>est</w>, <w>ei</w> <w>qui</w> <w>hucusque</w> <w>eam</w> <w>in</w> <w>benificium</w> <w>possedit</w> <w>|</w> <w>ab</w> <w>hodierna</w> <w>die</w> <w>etiam</w> <w>ac</w> <w>deinceps</w> <w>memoratae</w> <w>congregationi</w>, <w>persolvat</w>. <w>Haec</w> <w>sunt</w> <w>nomina</w> <w>mancipiorum</w> : <w>Vuoframmus</w>, <w>Birico</w>, <w>Landouuarius</w>, <w>Helprada</w>, <w>Serina</w>, <w>item</w> <w>Helprada</w>, <w>Raingarda</w>, <w>Gerdrud</w>, <w>Alenda</w>, <w>Mainuara</w> <w>cum</w> <w>filiis</w> <w>|</w> <w>et</w> <w>filiabus</w> <w>earum</w>, <w>et</w> <w>his</w> <w>scilicet</w> <w>que</w> <w>ex</w> <w>Gerdruda</w> <w>procreati</w> <w>sunt</w>. <w>Inde</w> <w>hanc</w> <w>nostrae</w> <w>auctoritatis</w> <w>conscriptionem</w> <w>|</w> <w>fieri</w> <w>jussimus</w>, <w>per</w> <w>quam</w> <w>firmiter</w> <w>praecipimus</w>, <w>quatenus</w> <w>prefata</w> <w lemmaRef="congregatio">congregatio</w> <w>tali</w> <w>fruatur</w> <w>concessione</w> <w>qualem</w> <w>de</w> <w>praefatis</w> <w>concessimus</w> <w>mancipiis</w>. <w>|</w> <w>Et</w> <w>ut</w> <w>haec</w> <w>nostra</w> <w>corroboratio</w> <w>per</w> <w>succedentia</w> <w>tempora</w> <w>a</w> <w>fidelibus</w> <w>nostris</w> <w>verius</w> <w>credatur</w> <w>ac</w> <w>diligentius</w> <w>observetur</w>, <w>|</w> <w>manu</w> <w>nostra</w> <w>subtus</w> <w>eam</w> <w>firmavimus</w> <w>et</w> <w>anuli</w> <w>nostri</w> <w>impressione</w> <w>sigillari</w> <w>jussimus</w>.</p>
+               <p xml:space="preserve"><w>SIGNUM</w> <w>DOMNI</w> <w>HEINRICI</w> (<w>L</w>. <w>M</w>.) <w>INVICTISSIMI</w> <w>REGIS</w>.</p>
+               <p xml:space="preserve"><w>POPPO</w> <w lemmaRef="cancellarius">CANCELLARIUS</w> <w>ADVICEM</w> <w>RUODBERTI</w> <w>ARCHICAPELLANI</w> <w>subnotavi</w> <w>et</w> (<w>S</w>. <w>R</w>. <w>subscripsi</w>. <w>N</w>. <w>T</w>. : <w>Poppo</w> <w>scripsi</w> <w>et</w> <w>subscripsi</w> <w>II</w>, <w>indict</w>. <w>VIII</w>). (<w>L</w>. <w>S</w>.) </p>
+               <p xml:space="preserve"><w>Data</w> <w>VI</w> <w>id</w>. <w>junii</w>, <w>anno</w> <w>dominicae</w> <w>incarnationis</w> <w>DCCCCXXXV</w>, <w>indictione</w> <w>VIII</w>, <w>anno</w> <w>autem</w> <w>Heinrici</w> <w>regis</w> <w>istius</w> <w>regni</w> <w>XII</w>. <w>Actum</w> <w>juxta</w> <w>flumen</w> <w>Char</w>, <w>in</w> <w>Dei</w> <w>nomine</w>. <w>Amen</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

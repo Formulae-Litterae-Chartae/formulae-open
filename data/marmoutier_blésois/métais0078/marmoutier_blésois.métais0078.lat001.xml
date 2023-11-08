@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 78</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">88</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0078">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">«Acte par lequel Hildearde, Morin, Hugues et Guidon confirment aux religieux de MM. tout ce qu’ils avoient dans le moulin de Gièvre, moyennant 4 livres, 10 sols, monnoie de Blois.»</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mesland</p>
+         </div>
+         <dateline>Vers 1100<date notBefore="1090-01-01" notAfter="1110-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0078.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>AUCTORAMENTUM</w> <w>DE</w> <w>MOLENDINO</w> <w>DE</w> <w>GEVRIA</w>. – <w>DE</w> <w>FONTE</w> <w>MERLANDI</w>».</head>
+               <p xml:space="preserve"><w>Notum</w> <w>sit</w> <w>presentibus</w> <w>et</w> <w>futuris</w> <w>quod</w> <w>Hildeardis</w> <w>et</w> <w>Morinus</w>, <w>et</w> <w>Guido</w> <w>filiaster</w> <w>eius</w> <w>et</w> <w>Hugo</w> <w>filius</w> <w>eiusdem</w> <w>Morini</w> <w>auctorizauerunt</w> <w>beato</w> <w>Martino</w> <w>maioris</w> <w>monasterii</w>, <w>et</w> <w>monachis</w> <w>suis</w> <w>hoc</w> <w>quod</w> <w>habebant</w> <w>in</w> <w>molendino</w> <w>de</w> <w>Geuria</w>, <w>Garnerio</w> <w>preposito</w> <w>de</w> <w>fonte</w> <w>Merlandi</w> <w>donante</w> <w>IIII</w> <w>libras</w> <w>et</w> <w>solidos</w> <w>X</w> <w>de</w> <w>blesensibus</w>. <w>Videntibus</w> <w>testibus</w> <w>istis</w>: <w>Mauricio</w> <w>escherpello</w>, <w>Erchembaldo</w> <w>de</w> <w>Dugneio</w>, <w>Friderico</w> <w>Gifardo</w>, <w>Ademmo</w> <w>de</w> <w>Ultra-novem-maria</w>, <w>Hugone</w> <w>pontenario</w> <w>et</w> <w>Bernardo</w> <w>filio</w> <w>eius</w>, <w>Sulpicio</w> <w>de</w> <w>Montepipet</w>, <w>Ebroino</w>, <w>Rainardo</w> <w>filio</w> <w>Richardi</w>. <w>Ex</w> <w>nostra</w> <w>parte</w>: <w>Robertus</w> <w>forestarius</w>, <w>Rainbaldus</w> <w>molendinarius</w>, <w>Stephanus</w> <w>forestarius</w>, <w>Stephanus</w> <w>de</w> <w>Castello</w>, <w>Johannes</w> <w>de</w> <w>Guastina</w>, <w>Johannes</w> <w>de</w> <w>Sachiniaco</w>, <w>Rotbertus</w> <w>de</w> <w>Guastina</w>, <w>Andrea</w> <w>cellararius</w>, <w>Gausbertus</w> <w>prepositus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,98 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay) Cartae de Relliaco, Nr. 15</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette province
+               publié sous les auspices du Conseil général de Maine et Loire (Ed. Marchegay)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Archives d’Anjou. Recueil de documents et mémoires inédits sur cette
+                     province publié sous les auspices du Conseil général de Maine et Loire</title>
+                  <editor>Paul Marchegay</editor>
+                  <imprint>
+                     <pubPlace>Angers</pubPlace>
+                     <date when="1853" n="originalAusgabe">1853</date>
+                     <biblScope unit="pp">45-47</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives d’Anjou</title>
+                  <biblScope unit="volume">2</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Archives
+            d’Anjou. Recueil de documents et mémoires inédits sur cette province publié sous les
+            auspices du Conseil général de Maine et Loire , welches 1853 von Paul Marchegay
+            herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben
+            in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der
+            CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="anjou_archives.marchegay_relliaco_0015">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Placitum inter monachos et Robertum Pape Bovem, de duobus
+                  hominibus in castro Relliaci commanentibus.</p>
+         </div>
+         <dateline>
+            <date/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:anjou_archives.marchegay_relliaco_0015.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Cum</w> <w>Rotbertus</w> <w>cognomento</w> <w lemmaRef="papa">Papa</w> <w>Bovem</w>, <w lemmaRef="dominus">dominus</w> <w>Relliaci</w> <w>castri</w>, <w>multotiens</w> <w>multas</w> <w>et</w> <w>magnas</w> <w>injurias</w> <w>fecisset</w> <w>monachis</w> <w>Majoris</w> <w>Monasterii</w> <w>Deo</w> <w>servientibus</w> <w>in</w> <w>ecclesia</w> <w>sancti</w> <w>Lupi</w> <w>in</w> <w>eodem</w> <w>castro</w> <w>et</w> <w>hominibus</w> <w>eorum</w>, <w>in</w> <w>tantum</w> <w>ut</w> <w>ipsis</w> <w>fugientibus</w> <w>terra</w> <w>eorum</w> <w>paene</w> <w>in</w> <w>solitudinem</w> <w>verteretur</w>, <w>cumque</w> <w>monachi</w>, <w>vel</w> <w>pro</w> <w>Deo</w> <w>vel</w> <w>pro</w> <w>inopia</w>, <w>injustitiae</w> <w>tanta</w> <w>mala</w> <w>aliquandiu</w> <w>sine</w> <w>extraneo</w> <w>clamore</w> <w>tolerassent</w>, <w>tandem</w> <w>ipse</w> <w>Rotbertus</w>, <w>non</w> <w>fractus</w> <w>patientia</w> <w>monachorum</w> <w>nec</w> <w>Deo</w> <w>nec</w> <w>sancto</w> <w>Lupo</w> <w>reverentiam</w> <w>portans</w>, <w>ipso</w> <w>die</w> <w>festivitatis</w> <w>sancti</w> <w>Lupi</w>, <w>accepit</w> <w>duos</w> <w>homines</w> <w>sancti</w> <w>Martini</w> <w>Majoris</w> <w>Monasterii</w> <w>et</w> <w>monachorum</w> <w>ejus</w>, <w>dicens</w> <w>eos</w> <w>et</w> <w>generationem</w> <w>eorum</w> <w>suam</w> <w>esse</w> <w>debere</w>; <w>nullo</w> <w>tamen</w> <w>clamore</w> <w>inde</w> <w>prius</w> <w>facto</w> <w>ad</w> <w>ipsos</w> <w>monachos</w> <w>vel</w> <w>ad</w> <w>abbatem</w> <w>eorum</w>. <w>Monachi</w> <w>vero</w> <w>tantum</w> <w>dedecus</w> <w>sibi</w> <w>factum</w>, <w>immo</w> <w>Deo</w> <w>et</w> <w>sancto</w> <w>Martino</w> <w>sanctoque</w> <w>Lupo</w> <w>in</w> <w>die</w> <w>festivitatis</w> <w>ejus</w>, <w>patienter</w> <w>tolerare</w> <w>jam</w> <w>ultra</w> <w>nec</w> <w>valentes</w> <w>nec</w> <w>volentes</w>, <w>prius</w> <w>quidem</w> <w>ipsum</w> <w>Rotbertum</w> <w>requisierunt</w> <w>et</w> <w>de</w> <w>ipso</w> <w>apud</w> <w>ipsum</w> <w>conquesti</w> <w>sunt</w>; <w>sed</w> <w>cum</w> <w>nichil</w> <w>juris</w> <w>vel</w> <w>boni</w> <w>responsi</w> <w>ab</w> <w>eo</w> <w>accepissent</w>, <w>hac</w> <w>necessitate</w> <w>coacti</w>, <w>ad</w> <w>comitem</w> <w>Fulconem</w> <w>et</w> <w>comitissam</w> <w>Aremburgim</w> <w>nomine</w>, <w>filiam</w> <w>comitis</w> <w>Helie</w>, <w>suam</w> <w>proclamationem</w> <w>contulerunt</w>. <w>Quod</w> <w>ipsi</w> <w>audientes</w>, <w>qui</w> <w>justitiae</w> <w>amatores</w> <w>valde</w> <w>erant</w>, <w>zelo</w> <w>domus</w> <w>Dei</w> <w>commoti</w> <w>sunt</w> <w>et</w> <w>inter</w> <w>monachos</w> <w>et</w> <w>Rotbertum</w> <w>placitandi</w> <w>in</w> <w>sua</w> <w>praesentia</w> <w>certum</w> <w>locum</w> <w>certumque</w> <w>terminum</w> <w>posuerunt</w>. <w>Quid</w> <w>plura</w>? <w>venit</w> <w>utraque</w> <w>pars</w> <w>ad</w> <w lemmaRef="castellum">castellum</w> <w>comitis</w> <w>Balgiacum</w> <w>et</w> <w>se</w> <w>ibi</w> <w>comiti</w> <w>et</w> <w>comitissae</w> <w>praesentaverunt</w>. <w>Sed</w> <w>quia</w> <w lemmaRef="comes">comes</w> <w>quibusdam</w> <w>suis</w> <w>propriis</w> <w>negotiis</w> <w>tunc</w> <w>occupatus</w> <w>erat</w>, <w>causae</w> <w>illi</w> <w>tractandae</w> <w>non</w> <w>affuit</w>; <w>sed</w> <w>comitissae</w>, <w>vicem</w> <w>suam</w> <w>et</w> <w>locum</w> <w>committens</w>, <w>ut</w> <w>ipsa</w> <w>cum</w> <w>suis</w> <w>baronibus</w> <w>causam</w> <w>juste</w> <w>definiret</w> <w>imperavit</w>. <w>Dixerunt</w> <w>ergo</w> <w>monachi</w> <w>Rotbertum</w> <w>duos</w> <w>supradictos</w> <w>homines</w> <w>sancti</w> <w>Martini</w>, <w>id</w> <w>est</w> <w>Gaufredus</w> <w>atque</w> <w>Frotgerius</w> <w>cognomento</w> <w>Abi</w> <w>Fol</w>, <w>in</w> <w>die</w> <w>festivitatis</w> <w>sancti</w> <w>Lupi</w> <w>sine</w> <w>clamore</w>, <w>sicut</w> <w>supradictum</w> <w>est</w>, <w>accepisse</w>, <w>nec</w> <w>abbatem</w> <w>nec</w> <w>monachos</w> <w>inde</w> <w>ei</w> <w>justitiam</w> <w>denegasse</w>; <w>addentes</w> <w>quod</w> <w>eorum</w> <w>ecclesia</w> <w>eosdem</w> <w>homines</w> <w>et</w> <w>eorum</w> <w>generationem</w> <w>plus</w> <w>quam</w> <w>triginta</w> <w>annis</w>, <w>solute</w> <w>et</w> <w>quiete</w> <w>jure</w> <w>possessionis</w> <w>aecclesiasticae</w>, <w>tenuisset</w>, <w>et</w> <w>Rotbertum</w>, <w>eos</w> <w>ipsos</w> <w>in</w> <w>eodem</w> <w>suo</w> <w>castro</w> <w>commanere</w> <w>diu</w> <w>videns</w>, <w>non</w> <w>clamasset</w>. <w>Quod</w> <w>cum</w> <w>ipse</w> <w>denegare</w> <w>non</w> <w>posset</w>, <w>precepit</w> <w>comitissa</w> <w>baronibus</w> <w>suis</w> <w>ut</w> <w>facerent</w> <w>inde</w> <w>judicium</w>. <w>Quo</w> <w>inter</w> <w>se</w> <w>tractato</w>, <w>dixit</w> <w>Girardus</w> <w lemmaRef="pagus">Paganus</w> <w>pro</w> <w>aliis</w> <w>hoc</w> <w>curiam</w> <w>comitis</w> <w>judicare</w> <w>quod</w>, <w>quia</w> <w>Rotbertus</w> <w>homines</w> <w>supradictos</w> <w>sine</w> <w>clamore</w> <w>acceperat</w> <w>quos</w> <w>per</w> <w>tot</w> <w>annos</w> <w>monachi</w> <w>tenuisse</w> <w>ipso</w> <w>vidente</w> <w>ipse</w> <w>negare</w> <w>non</w> <w>poterat</w>, <w>deberet</w> <w>eosdem</w> <w>monachis</w> <w>reddere</w>; <w>et</w> <w>deinde</w> <w>ad</w> <w>abbatem</w>, <w>ab</w> <w>abbate</w> <w>vero</w> <w>ad</w> <w>comitem</w>, <w>si</w> <w>opus</w> <w>esset</w>, <w>deberet</w> <w>clamorem</w> <w>perferre</w>. <w>Sic</w> <w>enim</w>, <w>et</w> <w>de</w> <w>omnibus</w> <w>aliis</w> <w>elemosinis</w> <w>quae</w> <w>essent</w> <w>in</w> <w>terra</w> <w>comitis</w> <w>et</w> <w>comitissae</w>, <w>esse</w> <w>faciendum</w> <w>asserebant</w>; <w>eo</w> <w>quod</w> <w>ipsi</w> <w>essent</w> <w>domini</w> <w>et</w> <w lemmaRef="principes">principes</w> <w>terrae</w>, <w>et</w> <w>ideo</w> <w>quicumque</w> <w>elemosinas</w> <w>dedissent</w>, <w>datae</w> <w>statim</w> <w>sub</w> <w>eorum</w> <w>defensione</w> <w>devenirent</w>. <w>Igitur</w> <w>tam</w> <w>justo</w> <w>judicio</w> <w>Rotberto</w> <w>non</w> <w>valente</w> <w>contraire</w>, <w>Harduinus</w> <w>de</w> <w>Sancto</w> <w>Medardo</w>, <w>cujus</w> <w>filiam</w> <w>ipse</w> <w>Rotbertus</w> <w>uxorem</w> <w>habebat</w> <w>et</w> <w>qui</w> <w>de</w> <w>judicibus</w> <w>unus</w> <w>erat</w>, <w>et</w> <w>multi</w> <w>alii</w> <w>amici</w> <w>ejus</w>, <w>mediatores</w> <w>inter</w> <w>monachos</w> <w>et</w> <w>eum</w>, <w>pacem</w> <w>fieri</w> <w>quesierunt</w>; <w>quae</w> <w>hoc</w> <w>modo</w> <w>facta</w> <w>est</w>. <w>Equum</w> <w>quendam</w>, <w>quem</w> <w>monachi</w> <w>Rotberto</w> <w>prestiterant</w>, <w>dimiserunt</w> <w>ei</w> <w>in</w> <w>pace</w>; <w>et</w> <w>omnes</w> <w>anteriores</w> <w>querelas</w>, <w>tam</w> <w>Rotbertus</w> <w>monachis</w> <w>quam</w> <w>Rotberto</w> <w>monachi</w>, <w>dimiserunt</w>, <w>excepto</w> <w>quod</w> <w>Rotbertus</w> <w>redderet</w> <w>monachis</w>, <w>usque</w> <w>ad</w> <w>proxime</w> <w>futurum</w> <w>Pascha</w>, <w>capam</w> <w>unam</w> <w>de</w> <w>pallia</w> <w>quam</w> <w>ipse</w>, <w>acceptam</w> <w>de</w> <w>aecclesia</w> <w>sancti</w> <w>Lupi</w>, <w>invadiaverat</w>, <w>quod</w> <w>et</w> <w>ipsa</w> <w>comitissa</w> <w>in</w> <w>manu</w> <w>accepit</w>. <w>Clamavit</w> <w>etiam</w> <w>Rotbertus</w> <w>monachis</w> <w>solutos</w> <w>et</w> <w>quietos</w> <w>in</w> <w>perpetuum</w> <w>homines</w> <w>supradictos</w> <w>et</w> <w>totam</w> <w>cognationem</w> <w>eorum</w>, <w>et</w> <w>quod</w> <w>deinceps</w> <w>nichil</w> <w>acciperet</w> <w>a</w> <w>monachis</w> <w>neque</w> <w>ab</w> <w>ullis</w> <w>hominibus</w> <w>eorum</w> <w>per</w> <w>violentiam</w>: <w>sed</w> <w>si</w> <w>quid</w> <w>haberet</w> <w>contra</w> <w>eos</w>, <w>prius</w> <w>eis</w> <w>ostenderet</w>; <w>et</w> <w>si</w> <w>non</w> <w>emendarent</w> <w>ad</w> <w>abbatem</w> <w>clamaret</w>, <w>deinde</w> <w>ad</w> <w>comitem</w> <w>et</w> <w>ad</w> <w>comitissam</w> <w>si</w> <w lemmaRef="abbas">abbas</w> <w>a</w> <w>justitia</w> <w>deficeret</w>. <w>Hoc</w> <w>ita</w> <w>dijudicatum</w> <w>et</w> <w>concessum</w> <w>et</w> <w>confirmatum</w> <w>audierunt</w> <w>et</w> <w>viderunt</w>, <w>ex</w> <w>parte</w> <w>tam</w> <w>Rotberti</w> <w>quam</w> <w>monachorum</w>, <w>in</w> <w>primis</w> <w>ipsa</w> <w>comitissa</w>, <w>deinde</w> <w>barones</w> <w>ejus</w>: <w>Harduinus</w> <w>de</w> <w>Sancto</w> <w>Medardo</w>, <w>Girardus</w> <w lemmaRef="pagus">Paganus</w>, <w>Gaufredus</w> <w>de</w> <w>Ramo</w> <w>Forti</w>, <w>Rainaldus</w> <w>Framaldi</w>, <w>Girusius</w> <w>de</w> <w>Monte</w> <w>Forti</w>, <w>Erneisus</w> <w>butellarius</w> <w>et</w> <w>multi</w> <w>alii</w>; <w>monachi</w> <w>vero</w>: <w>Rotbertus</w> <w lemmaRef="diaconus">archidiaconus</w>, <w>Briccius</w> <w>de</w> <w>Blesi</w>, <w>Hugo</w> <w>hospitalarius</w>, <w>Fulbertus</w> <w>prior</w> <w>Boceii</w>; <w>et</w> <w>famuli</w> <w>eorum</w>: <w>Gaudinus</w>, <w>Johannes</w> <w lemmaRef="frater">frater</w> <w>Nicholai</w>, <w>Girardus</w> <w>famulus</w> <w>de</w> <w>Relliaco</w> <w>et</w> <w>alii</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

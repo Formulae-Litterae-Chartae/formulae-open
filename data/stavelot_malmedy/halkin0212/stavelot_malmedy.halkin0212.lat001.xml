@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 212</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">419  </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0212">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Odon, abbé de Saint-Remy de Reims, notifie à l’abbé Wibald et aux religieux de Stavelot la mort de frère Étienne, arrivée le 14 octobre.</p>
+         </div>
+         <dateline>[1148, après le 14 octobre]<date notBefore="1148-10-14" notAfter="1148-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0212.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Reverendo</w> <w>patro</w> <w>et</w> <w>amico</w> <w>Wibaldo</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Sancti</w> <w>Remigii</w> <w>venerabili</w> <w>abbati</w> <w>et</w> <w>ejusdem</w> <w>aecclesiae</w> <w>priori</w> <w>omnique</w> <w>conventui</w> <w lemmaRef="frater">frater</w> <w>Odo</w> <w>eadem</w> <w lemmaRef="gratia">gratia</w> <w>Beati</w> <w>Remigii</w> <w>humilis</w> <w>minister</w>, <w>sicut</w> <w>cedrum</w> <w>Libani</w> <w>multiplicari</w> <w>in</w> <w>domo</w> <w>Domini</w>. </p>
+               <p xml:space="preserve"><w>Cum</w> <w>nobis</w> <w>sit</w> <w>insolitum</w>, <w>maxime</w> <w>fratribus</w> <w>et</w> <w>amicis</w> <w>nostris</w>, <w>aliquod</w> <w>sinistrum</w> <w>insinuare</w> <w>vel</w> <w>mandare</w>, <w>tamen</w>, <w>quoniam</w> <w>terminos</w> <w>Domini</w> <w>nullius</w> <w>est</w> <w>terminare</w>, <w>mandamus</w> <w>fratrem</w> <w>Stephanum</w>, <w>nostrum</w> <w>monachum</w> <w>et</w> <w>vestrum</w>, <w>hominem</w> <w>exisse</w>, <w>quatinus</w> <w>ei</w> <w>sicut</w> <w>et</w> <w>nos</w> <w lemmaRef="obsequium">obsequium</w> <w>persolvatis</w>  <w>et</w> <w>domui</w> <w>vestrae</w> <w>que</w> <w>nunc</w> <w>caret</w> <w>provisore</w> <w>de</w> <w>cetero</w> <w>provideatis</w>. <w>Depositum</w> <w>vero</w> <w>illius</w>, <w>quod</w> <w>ipso</w> <w>dictante</w> <w>supra</w> <w>pectus</w> <w>ejus</w> <w>scriptum</w> <w>est</w>, <w>in</w> <w>istis</w> <w>plicatum</w> <w>litteris</w> <w>vobis</w> <w>transmittemus</w>. <w>Valete</w>. <w>Pridie</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>octobris</w> <w>obiit</w> <w>Staphanus</w> <w lemmaRef="monachus">monachus</w> <w>professus</w> <w>Sancti</w> <w>Remigii</w> <w>Francorum</w> <w>apostoli</w>. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

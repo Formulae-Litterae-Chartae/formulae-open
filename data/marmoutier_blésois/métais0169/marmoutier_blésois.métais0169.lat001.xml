@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 169</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">158-159</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0169">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pierre Escot donne à ferme le moulin des Jalays, pour 25 sols par an.</p>
+         </div>
+         <dateline>1160<date notBefore="1160-01-01" notAfter="1160-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0169.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>MOLENDINO</w> <w>JALESII</w>»</head>
+               <p xml:space="preserve"/>
+               <p xml:space="preserve"><w>Sapientum</w> <w>est</w> <w lemmaRef="consuetudo">consuetudo</w>, <w>quociens</w> <w>rem</w> <w>aliquam</w> <w>uolunt</w> <w>posterorum</w> <w>memorie</w> <w lemmaRef="commendatio">commendare</w>, <w>litterarum</w> <w>apicibus</w> <w lemmaRef="commendatio">commendare</w>. <w>Quia</w> <w>igitur</w> <w>sapientum</w> <w>consuetudini</w> <w>aduersari</w> <w>noluimus</w>, <w>rem</w> <w>de</w> <w>qua</w> <w>habendus</w> <w>est</w> <w>sermo</w> <w>scripture</w> <w>mandauimus</w>. <w>Notum</w> <w>sit</w> <w>igitur</w> <w>omnibus</w> <w>tam</w> <w>futuris</w> <w>quam</w> <w>presentibus</w>, <w>Petrum</w> <w>escoti</w> <w>omnes</w> <w>explectationes</w>, <w>et</w> <w>redditus</w>, <w>quos</w> <w>habebat</w> <w>in</w> <w>molendino</w>, <w>quod</w> <w>est</w> <w>Ialesii</w>, <w>et</w> <w>prata</w>, <w>a</w> <w>XVIJ</w> <w>kalendas</w> <w>aprilis</w> <w>in</w> <w>anno</w>, <w>quo</w> <w>rex</w> <w>galliarum</w> <w>sororem</w> <w>comitis</w> <w>Teobaldi</w> <w>duxit</w> <w>uxorem</w> <w>usque</w> <w>ad</w> <w>VI</w> <w>annos</w>, <w>Emobaudo</w> <w>decano</w> <w>VII</w> <w>libras</w> <w>et</w> <w>X</w> <w>solidos</w> <w>uendidisse</w>. <w>Primo</w> <w>autem</w> <w>anno</w> <w>firmam</w> <w>duorum</w> <w>annorum</w>, <w>quinquaginta</w> <w>uidelicet</w> <w>solidos</w>, <w>Petrum</w> <w>a</w> <w>decano</w> <w>constat</w> <w>accepisse</w>. <w>In</w> <w>reliquis</w> <w>uero</w> <w>annis</w>, <w>usque</w> <w>dum</w> <w>totum</w> <w>debitum</w> <w>integre</w> <w>sit</w> <w>solutum</w>, <w>XX</w><seg type="superscript "><w>ti</w></seg> <w>et</w> <w>quinque</w> <w>solidos</w> <w>annuatim</w> <w>debet</w> <w>ei</w> <w>decanus</w> <w>reddere</w> <w>de</w> <w>debito</w>. <w>Si</w> <w>uero</w> <w>aliquid</w> <w>ad</w> <w>emendationem</w> <w>domus</w> <w>molendini</w> <w>uel</w> <w>calciate</w> <w>expendetur</w>, <w>de</w> <w>ipsius</w> <w>molendini</w> <w>firma</w> <w>sumetur</w>. <w>In</w> <w>primo</w> <w>autem</w> <w>anno</w>, <w>quantum</w> <w>molendini</w> <w>ualeant</w> <w>apparamenta</w> <w>uideatur</w>, <w>et</w> <w>si</w> <w>emendata</w> <w>fuerint</w>, <w>quantum</w> <w>ualebit</w> <w>emendatio</w>, <w>ab</w> <w>ipso</w> <w>Petro</w> <w>Emobaudo</w> <w>decano</w> <w>de</w> <w>firma</w> <w>molendini</w> <w>remittetur</w>. <w>Si</w> <w>uero</w> <w>peiorati</w> <w>fuerint</w>, <w>a</w> <w>decano</w> <w>de</w> <w>ipsius</w> <w>proprio</w> <w>emendentur</w>. <w>Huic</w> <w>autem</w> <w>conuentioni</w> <w>attestantur</w> <w>Petrus</w> <w>DD</w>. <w>Guillermus</w> <w>Herberti</w>, <w>Petrus</w> <w>pogut</w>, <w>Gaufridus</w> <w>de</w> <w>Auberis</w>, <w>Gauterius</w> <w>marins</w>, <w>Raginaldus</w> <w>de</w> <w>Cirsiaco</w>, <w>Leddeius</w> <w>beringarius</w>, <w>Stephanus</w> <w>presbiter</w>. <w>Plegii</w> <w>sunt</w>: <w>Leddeius</w> <w>beringarius</w>, <w>Petrus</w> <w>pastor</w>, <w>Gauterus</w> <w>marins</w>, <w lemmaRef="fides">Fides</w> <w>ipsius</w> <w>Petri</w> <w>Escoti</w>. <w>Sic</w> <w>autem</w> <w>est</w> <w>hec</w> <w>statuta</w> <w>conuentio</w>, <w>quod</w> <w>si</w> <w>aut</w> <w>Petrus</w> <w>aut</w> <w>ipse</w> <w>decanus</w> <w>uelit</w> <w>a</w> <w>pacto</w> <w>forte</w> <w>recedere</w>, <w>hec</w> <w>littere</w> <w>legantur</w>, <w>et</w> <w>secundum</w> <w>litterarum</w> <w>sententiam</w> <w>lis</w> <w>terminetur</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

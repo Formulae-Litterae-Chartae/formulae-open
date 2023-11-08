@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Mayenne, Nr. 34</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">38-39</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_mayenne_0034">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Confirmation par Juhel II de Mayenne des possessions de Marmoutier dans son domaine et de la dîme de ses revenus d’Angleterre.</p>
+         </div>
+         <dateline>1190 – 1203<date notBefore="1190-01-01" notAfter="1203-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_mayenne_0034.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Ego</w> <w>Juhellus</w> <w>de</w> <w>Meduana</w> <w>volo</w> <w>et</w> <w>statuo</w> <w>quod</w> <w>monachi</w> <w>Majoris</w> <w>monasterii</w>, <w>apud</w> <w>Meduanam</w> <w>in</w> <w>ecclesia</w> <w>Beati</w> <w>Stephani</w> <w>Deo</w> <w>servientes</w>, <w>habeant</w> <w>bene</w> <w>et</w> <w>in</w> <w>pace</w> <w>et</w> <w>sine</w> <w>ulla</w> <w>contradictione</w> <w>decimam</w> <w>totius</w> <w>redditus</w> <w>mei</w> <w>quem</w> <w>habeo</w> <w>in</w> <w>Anglia</w> <w>ad</w> <w lemmaRef="dominium">dominium</w> <w>Meduane</w> <w>pertinentis</w>, <w>quam</w> <w>decimam</w> <w>Juhellus</w> <w>de</w> <w>Meduana</w>, <w>avus</w> <w>meus</w>, <w>eisdem</w> <w>monachis</w> <w>in</w> <w>eleemosynam</w> <w>dedit</w> <w>et</w> <w lemmaRef="carta">charta</w> <w>sua</w> <w>confirmavit</w>. <w>Hanc</w> <w>igitur</w> <w>decimam</w> <w>et</w> <w>omnes</w> <w>donationes</w> <w>predicti</w> <w>avi</w> <w>mei</w>, <w>sicut</w> <w>in</w> <w lemmaRef="carta">charta</w> <w>ejus</w> <w>continetur</w>, <w>omnesque</w> <w>alias</w> <w>eleemosynas</w> <w>quas</w> <w>ipsi</w> <w>habent</w> <w>per</w> <w>totam</w> <w>terram</w> <w>meam</w> <w>de</w> <w>cujuscumque</w> <w>dono</w> <w>sint</w>, <w>ego</w> <w lemmaRef="confirmatio">confirmo</w> <w>et</w> <w>precipio</w> <w>quod</w> <w>nullus</w> <w>contra</w> <w>chartas</w> <w>et</w> <w>libertates</w> <w>eorum</w> <w>audeat</w> <w>eos</w> <w>in</w> <w>aliquo</w> <w>vexare</w> <w>vel</w> <w>molestare</w>. <w>Quod</w> <w>ut</w> <w>ratum</w> <w>sit</w> <w>et</w> <w>firmius</w> <w>teneatur</w>, <w>presens</w> <w>scriptum</w> <w>sigilli</w> <w>mei</w> <w>munimine</w> <w>roboravi</w>, <w>testibus</w> <w>his</w>: <w>Gaufrido</w> <w>de</w> <w>Tencto</w>, <w>Gaufrido</w> <w>Maleffant</w> <w>et</w> <w>multis</w> <w>aliis</w>. <w>Actum</w> <w>solemniter</w> <w>apud</w> <w>Cenomannos</w> <w>in</w> <w>ecclesia</w> <w>Beati</w> <w>Juliani</w> <w>coram</w> <w>Hamelino</w>, <w>tunc</w> <w>temporis</w> <w>Cenomannensi</w> <w>episcopo</w>, <w>Olivero</w> <w>de</w> <w>Sancta</w> <w>Maura</w>, <w>predicte</w> <w>domus</w> <w>existente</w> <w>priore</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

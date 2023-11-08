@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 64</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">72-73</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0064">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Guicher de Chateaurenault affranchit Marmoutier du droit de rotage, que ses officiers réclamaient pour le transport des douves fabriquées dans la forêt de Blémars, pour la reconstruction de la grande cuve.</p>
+         </div>
+         <dateline>1093<date notBefore="1093-01-01" notAfter="1093-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0064.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w>DE</w> <w>ROTATICO</w> <w>BOSCI</w> <w>BLIMARTII</w>.</head>
+               <p xml:space="preserve"><w>Anno</w> <w>ab</w> <w>incarnatione</w> <w>Domini</w> <w>M</w><seg type="superscript "><w>o</w></seg> <w>XC</w><seg type="superscript "><w>o</w></seg> <w>III</w><seg type="superscript "><w>o</w></seg>, <w>tempore</w> <w>domini</w> <w>abbatis</w> <w>Bernardi</w> <w>placuit</w> <w>senioribus</w> <w>tunnam</w> <w>suam</w> <w>majorem</w> <w>renovare</w>, <w>cumque</w> <w>ad</w> <w>illud</w> <w>opus</w> <w>dovas</w> <w>quae</w> <w>in</w> <w>Blimartio</w>, <w>juxta</w> <w>fontem</w> <w>Merlandi</w> <w>fecerant</w>. <w>inde</w> <w>apportare</w> <w>voluissent</w>, <w>voluerunt</w> <w>inde</w> <w>accipere</w> <w lemmaRef="rotaticum">rotaticum</w> <w>homines</w> <w>Guicherii</w> <w>de</w> <w>castello</w> <w>Rainaldi</w>. <w>Pro</w> <w>qua</w> <w>re</w> <w>misit</w> <w lemmaRef="dominus">domnus</w> <w lemmaRef="abbas">abbas</w> <w>domnum</w> <w>Hamelinum</w> <w>hospitalarium</w> <w>ad</w> <w>Guicherium</w>, <w>qui</w> <w>illum</w> <w>interrogaret</w>, <w>utrum</w> <w>de</w> <w>rebus</w> <w>beati</w> <w>Martini</w> <w lemmaRef="rotaticum">rotaticum</w> <w>acciperet</w>. <w>Cui</w> <w>Guicherius</w> <w>respondit</w> <w>se</w> <w>hoc</w> <w>nunquam</w> <w>facturum</w>, <w>dixitque</w>: <w>Tempore</w> <w>domni</w> <w>abbatis</w> <w>Bartholomei</w>, <w>dedi</w> <w>beato</w> <w>Martino</w> <w>et</w> <w>suis</w> <w>monachis</w> <w>hanc</w> <w>et</w> <w>omnes</w> <w>alias</w> <w>consuetudines</w>, <w>quae</w> <w>ad</w> <w>me</w> <w>pertinebant</w> <w>de</w> <w>suis</w> <w>rebus</w>. <w>Quod</w> <w>si</w> <w>tunc</w> <w>non</w> <w>fecissem</w>, <w>modo</w> <w>certe</w> <w>facerem</w> <w>et</w> <w>facio</w>. <w>Faciant</w> <w>ergo</w> <w>seniores</w> <w>de</w> <w>hoc</w> <w>meo</w> <w>dono</w> <w>litteras</w> <w>facere</w>, <w>ne</w> <w>unquam</w> <w>oblivioni</w> <w>tradatur</w>, <w>et</w> <w>ego</w> <w>cum</w> <w>ad</w> <w>maius</w> <w lemmaRef="monasterium">monasterium</w> <w>perrexero</w>, <w>ponam</w> <w>illud</w> <w>manu</w> <w>mea</w> <w>super</w> <w>altare</w> <w>sancti</w> <w>Martini</w>. <w>Actum</w> <w>apud</w> <w lemmaRef="castellum">castellum</w> <w>Rainaldi</w>, <w>XIII</w><seg type="superscript "><w>o</w></seg> <w>Kalendas</w> <w>Aprilis</w>, <w>dominica</w> <w>secunda</w> <w>de</w> <w>quadragesima</w>, <w>vigilia</w> <w>transitus</w> <w>sancti</w> <w>patris</w> <w>nostri</w> <w>Benedicti</w>, <w>testibus</w> <w>plurimis</w>. <w>Actum</w> <w>tempore</w> <w>Philippi</w> <w>regis</w> <w>et</w> <w>Stephani</w> <w>comitis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

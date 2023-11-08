@@ -1,0 +1,83 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 204</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">407 – 408 </biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0204">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">L'abbé Wibald réprimande les religieux de Corbie de leur insistance à le rappeler auprès d’eux, alors que des causes importantes le retiennent à Stavelot.</p>
+         </div>
+         <dateline>[1148, avant le 14 août]<date notBefore="1148-01-01" notAfter="1148-08-14"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0204.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w lemmaRef="frater">Frater</w> <w>Wibaldus</w> <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Corbeiensis</w> <w lemmaRef="abbas">abbas</w> <w>dilectis</w> <w>in</w> <w>Christo</w> <w>fratribus</w> <w>E</w>. <w>priori</w>, <w>Adelberto</w> <w>preposito</w>, <w>Waltero</w> <w>camerario</w> <w lemmaRef="in_domino_salutem">salutem</w> <w>et</w> <w>benedictionem</w>.</p>
+               <p xml:space="preserve"><w>_</w> <w>_</w> <w>_</w> <w>Videbamus</w> <w>itaque</w> <w>non</w> <w>lupum</w> <w>unum</w> <w>venientem</w>, <w>nisi</w> <w>forte</w> <w>totam</w> <w>demonum</w> <w>phalangem</w> <w>unum</w> <w>lupum</w> <w>inteliigamus</w>, <w>sel</w> <w>multorum</w> <w>luporum</w> <w>innumerabiles</w> <w lemmaRef="exercitus">exercitus</w>, <w>qui</w> <w>ad</w> <w>devorandam</w> <w>Stabulensem</w> <w>aecclesiam</w> <w>et</w> <w>magnam</w> <w>partem</w> <w>Lotharingiae</w> <w>efferata</w> <w>rabie</w> <w>inhiaverant</w>. <w>Set</w> <w>misit</w> <w>Deus</w> <w>Spiritum</w> <w>sanctum</w> <w>de</w> <w>caelo</w> <w>et</w> <w>conclusit</w> <w>ora</w> <w>leonum</w>, <w>atque</w> <w>imperante</w> <w>Jesu</w>, <w>qui</w> <w>propter</w> <w>peccata</w> <w>nostra</w> <w>dormierat</w>, <w>ventis</w> <w>et</w> <w>mari</w> <w>facta</w> <w>est</w> <w lemmaRef="tranquillitas">tranquillitas</w>, <w>suspecta</w> <w>quidem</w> <w>et</w> <w>plena</w> <w>dolis</w> <w>et</w> <w>insidiis</w> <w>et</w> <w>qualem</w> <w>nostra</w> <w>aetas</w> <w>dare</w> <w>consuevit</w>, <w>verumtamem</w> <w>aliqua</w>. <w>_</w> <w>_</w> <w>_</w> <w>Veniemus</w> <w>certe</w> <w>tempore</w> <w>et</w> <w>die</w> <w>prefixo</w> <w>in</w> <w>litteris</w> <w>nostris</w>, <w>quas</w> <w>per</w> <w>Ludowicum</w> <w>puerum</w> <w>nostrum</w> <w>vobis</w> <w>direximus</w> <w>licet</w> <w>Stabulensis</w> <w>aecclesia</w> <w>propter</w> <w>certas</w> <w>et</w> <w>inpendentes</w> <w>ac</w> <w>periculosas</w> <w>rationes</w> <w>nostram</w> <w>egre</w> <w>ferat</w> <w>absentiam</w>. <w>Si</w> <w>Stabulensis</w> <w>aecclesia</w> <w>nos</w> <w>non</w> <w>educasset</w>, <w>si</w> <w>nos</w> <w>de</w> <w>gregibus</w> <w>ovium</w> <w>non</w> <w>sustulisset</w>, <w>si</w> <w>nos</w> <w>de</w> <w>post</w> <w>fetantes</w> <w>non</w> <w>accepisset</w>, <w>ut</w> <w>pasceremus</w> <w>Jacob</w> <w>et</w> <w>Israel</w> <w>hereditatem</w> <w>Dei</w>, <w>si</w> <w>nos</w> <w>egenos</w> <w>de</w> <w>pulvere</w> <w>non</w> <w>suscitasset</w> <w>et</w> <w>de</w> <w>stercore</w> <w>erexisset</w> <w>pauperes</w>, <w>ut</w> <w>sedeamus</w> <w>cum</w> <w>principibus</w>, <w>dignum</w> <w>tamen</w> <w>fraterna</w> <w>caritate</w> <w>fuit</w>, <w>ut</w>, <w>si</w> <w>in</w> <w>Corbeiensi</w> <w>aecclesia</w> <w>medicus</w> <w>foret</w>, <w>in</w> <w>cujus</w> <w>domo</w> <w>vestimentum</w> <w>esset</w>, <w>non</w> <w>negaretis</w> <w>sorori</w> <w>vestrae</w> <w>Stabulensi</w> <w>ecclesiae</w> <w>aliquam</w> <w>vestrae</w> <w>consolationis</w> <w>participationem</w>. <w>_</w> <w>_</w> <w>_</w> </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

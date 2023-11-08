@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 183</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">169-170</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0183">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Confirmation de la charte précédente, par Jean, comte de Vendôme.</p>
+         </div>
+         <dateline>1202<date notBefore="1202-01-01" notAfter="1202-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0183.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemmaRef="confirmatio">CONFIRMATIO</w> <w>EJUSDEM</w> <w>DONATIONIS</w> <w>A</w> <w>JOHANNE</w> <w>COMITE</w> <w>VINDOCINENSI</w></head>
+               <p xml:space="preserve"><w>Nobilium</w> <w>virorum</w> <w>gesta</w> <w>cito</w> <w>corrumpit</w> <w>obliuio</w> <w>nisi</w> <w>legitimorum</w> <w>virorum</w> <w lemmaRef="fides">fides</w> <w>robur</w> <w>adhibeat</w>, <w>aut</w> <w>scriptura</w>. <w>Presenti</w> <w>ergo</w> <w>pagine</w> <w>commendatum</w> <w>nouerint</w> <w>uniuersi</w> <w>quod</w> <w>Burcardus</w> <w lemmaRef="comes">comes</w> <w>Vindocinensis</w>, <w>diuina</w> <w>pietate</w> <w>commotus</w>, <w>et</w> <w>pro</w> <w>redemptione</w> <w>anime</w> <w>sue</w>, <w>necnon</w> <w>et</w> <w>in</w> <w>recompensatione</w> <w>dampnorum</w>, <w>quae</w> <w>preteritis</w> <w>retro</w> <w>temporibus</w>, <w>ecclesie</w> <w>beati</w> <w>Martini</w> <w>de</w> <w>Lauardino</w> <w>meminerat</w> <w>intulisse</w>, <w>dicte</w> <w>ecclesie</w> <w>monachis</w> <w>in</w> <w>terra</w> <w>sua</w>, <w>quam</w> <w>habent</w> <w>apud</w> <w>Vindocinum</w>, <w>quamdam</w> <w>domum</w> <w>et</w> <w>plateam</w> <w>Johannis</w> <w>de</w> <w>Grangia</w> <w>imperpetuum</w> <w>habere</w> <w>concessit</w>, <w>ita</w> <w>quod</w>, <w>etc</w>. ....................<w>fecit</w> <w>munimine</w> <w>communiri</w>. <w>Ego</w> <w>uero</w> <w>Johannes</w> <w>Vindocini</w>, <w>comitatum</w> <w>iure</w> <w>adeptus</w> <w>hereditario</w>, <w>dilecti</w> <w>auunculi</w> <w>et</w> <w>predecessoris</w> <w>nostri</w> <w>dicti</w> <w>B</w>. <w>comitis</w>, <w>elemosinam</w> <w>benigne</w> <w>pro</w> <w>amore</w> <w>Dei</w> <w>fecimus</w> <w>et</w> <w>concessimus</w>, <w>prout</w> <w>est</w> <w>suprascripta</w>, <w>et</w> <w>ut</w> <w>illabata</w> <w>perpetuo</w> <w>permaneret</w>, <w>sigillo</w> <w>nostro</w> <w>fecimus</w> <w>communiri</w>. <w>His</w> <w>testibus</w>: <w>Hamelino</w> <w>de</w> <w>Roorta</w>, <w>Pagano</w> <w>de</w> <w>Pontiaco</w>, <w>Herueo</w> <w>de</w> <w>Chesia</w>, <w>et</w> <w>pluribus</w> <w>aliis</w>. <w>Actum</w> <w>apud</w> <w>Vindocinum</w>, <w>comitatus</w> <w>nostri</w> <w>primo</w> <w>anno</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

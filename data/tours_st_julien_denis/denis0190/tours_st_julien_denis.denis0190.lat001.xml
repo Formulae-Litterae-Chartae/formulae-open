@@ -1,0 +1,93 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 190</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">209-210</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0190">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte de l´abbé Mainard réglant les cens et rentes dus a l'abbaye de Saint-Julien par les habitants des faits près Saunay.</p>
+         </div>
+         <dateline>1225 (v.s.) 04<date/>
+            <date notBefore="1225-04-01" notAfter="1225-04-30"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0190.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w lemmaRef="frater">Frater</w> <w>Mainardus</w>, <w>Beati</w> <w>Juliani</w> <w>Turonensis</w> <w lemmaRef="abbas">abbas</w>, <w>totusque</w> <w>ejusdem</w> <w>loci</w> <w>conventus</w>, <w>omnibus</w> <w>presentes</w> <w>litteras</w> <w>inspecturis</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Domino</w>. <w>Noverit</w> <w>universitas</w> <w>vestra</w> <w>quod</w> <w>homines</w> <w>qui</w> <w>habitabunt</w> <w>in</w> <w>terra</w> <w>que</w> <w>dicitur</w> <w>Lesfait</w> <w>Sancti</w> <w>Juliani</w> <w>tales</w> <w>consuetudines</w> <w>abbatie</w> <w>nostre</w> <w>reddere</w> <w>tenebuntur</w> <w>de</w> <w>eorum</w> <w>tenementis</w>, <w>que</w> <w>talia</w> <w>erunt</w>: <w>Unusquisque</w> <w>ad</w> <w>herbergagium</w> <w>et</w> <w>plesseium</w> <w>faciendum</w>, <w>unum</w> <w>habebit</w> <w>arpentum</w>, <w>et</w> <w>dimidium</w> <w>arpentum</w> <w>terre</w> <w>ad</w> <w>alios</w> <w>usus</w> <w>sibi</w> <w>necessarios</w>, <w>de</w> <w>hoc</w> <w>tenemento</w> <w>reddent</w> <w>singuli</w> <w>duodecim</w> <w>denarios</w> <w>censuales</w> <w>et</w> <w>quinque</w> <w>solidos</w> <w>de</w> <w>talliata</w>, <w>in</w> <w>Nativitate</w> <w>Beate</w> <w>Marie</w> <w>annuatim</w>, <w>fenatorem</w> <w>et</w> <w>vindemiatorem</w>; <w>reddent</w> <w>etiam</w> <w>legittimas</w> <w>decimationes</w> <w>et</w> <w>terragium</w>; <w>et</w>, <w>quando</w> <w lemmaRef="abbas">abbas</w> <w>in</w> <w>ecclesia</w> <w>nostra</w> <w>de</w> <w>novo</w> <w>instituetur</w>, <w>habebit</w> <w>talliatam</w> <w>de</w> <w>dictis</w> <w>hominibus</w>, <w>sicut</w> <w>de</w> <w>hominibus</w> <w>de</w> <w>Somniaco</w>; <w>reddent</w> <w>eciam</w>, <w>ad</w> <w>Nathale</w> <w>Domini</w> <w>singulis</w> <w>annis</w>, <w>de</w> <w>obliagio</w> <w>singuli</w> <w>unam</w> <w>minam</w> <w>avene</w>, <w>unum</w> <w>caponem</w>, <w>unum</w> <w>panem</w> <w>et</w> <w>unum</w> <w>denarium</w>; <w>et</w>, <w>quando</w> <w>homines</w> <w>de</w> <w>Somniaco</w> <w>portabunt</w> <w>terragium</w> <w>ad</w> <w>abbatiam</w> <w>in</w> <w>augusto</w>, <w>unusquisque</w> <w>eorum</w> <w>quatuor</w> <w>sextaria</w> <w>bladi</w> <w>deferet</w>, <w>panem</w> <w>et</w> <w>vinum</w> <w>in</w> <w>abbatia</w> <w>percepturus</w>, <w>sicut</w> <w>homines</w> <w>de</w> <w>Somniaco</w> <w>percipere</w> <w>consueverunt</w> <w>et</w> <w>habere</w>; <w>et</w>, <w>quando</w> <w>prior</w> <w>de</w> <w>Somniaco</w> <w>panagiabit</w> <w>terram</w> <w>de</w> <w>Somniaco</w>, <w>dieta</w> <w>terra</w> <w>des</w> <w>Fait</w> <w>similiter</w> <w>panagiabitur</w>. <w>Si</w> <w>vero</w> <w>dicti</w> <w>homines</w> <w>plesseia</w> <w>sua</w> <w>voluerint</w> <w>excolere</w>, <w>vel</w> <w>vineas</w> <w>in</w> <w>eis</w> <w>plantare</w>, <w>terragium</w> <w>et</w> <w>legittimas</w> <w>decimationes</w>, <w>salvo</w> <w>censu</w> <w>nostro</w>, <w>nobis</w> <w>inde</w> <w>reddere</w> <w>tenebuntur</w>. <w>De</w> <w>forragiis</w> <w>vero</w>, <w>paleis</w>, <w>fimo</w> <w>et</w> <w>ceteris</w> <w>hujusmodi</w>, <w>talis</w> <w>erit</w> <w lemmaRef="consuetudo">consuetudo</w>, <w>quod</w> <w>homines</w> <w>utriusque</w> <w>tenementi</w> <w>des</w> <w>Fait</w> <w>ad</w> <w>Somniacum</w> <w>et</w> <w>de</w> <w>Somniaco</w> <w>ad</w> <w>Fait</w> <w>deferent</w>, <w>et</w> <w>conmutabunt</w>, <w>sicut</w> <w>viderint</w> <w>expedire</w>, <w>priore</w> <w>de</w> <w>Somniaco</w> <w>non</w> <w>ostante</w> <w>vel</w> <w>contradicente</w>. <w>In</w> <w>cujus</w> <w>rei</w> <w>memoriam</w> <w>presentes</w> <w>litteras</w> <w>conscribi</w> <w>et</w> <w>sigillorum</w> <w>nostrorum</w> <w>fecimus</w> <w>munimine</w> <w>roborari</w>. <w>Actum</w> <w>anno</w> <w>gratie</w> <w>millesimo</w> <w>ducentesimo</w> <w>vicesimo</w> <w>quinto</w>, <w>mense</w> <w>aprilis</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

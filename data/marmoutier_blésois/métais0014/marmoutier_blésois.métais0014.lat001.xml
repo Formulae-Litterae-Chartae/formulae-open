@@ -1,0 +1,90 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 14</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">20-21</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0014">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">A la mort du chevalier, Robert, ses enfants le firent enterrer à Marmoutier, à qui ils donnèrent en reconnaissance un colibert, du nom de Fulbert.</p>
+         </div>
+         <dateline>1032-1064<date notBefore="1032-01-01" notAfter="1064-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0014.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w>DE</w> <w>FULBERTO</w> <w>COLIBERTO</w> <w lemmaRef="notitia">NOTITIA</w>, <w>DE</w> <w>LAUARDINO</w>. <w>CENOMANIS</w>.»</head>
+               <p xml:space="preserve"><w>Notum</w> <w>fiat</w> <w>fidelibus</w> <w>universis</w> <w>et</w> <w>maxime</w> <w>successoribus</w> <w>nostris</w>, <w>quod</w> <w>miles</w> <w>quidam</w> <w>de</w> <w>castro</w> <w>Lauarzino</w>, <w>Rotbertus</w> <w>nomine</w>, <w>cum</w> <w>defunctus</w> <w>fuisset</w>, <w>a</w> <w>filiis</w> <w>suis</w> <w>Huberto</w> <w>et</w> <w>Hugone</w> <w>maius</w> <w lemmaRef="monasterium">monasterium</w> <w>sepeliendus</w> <w>apportatus</w> <w>est</w>. <w>Quem</w> <w>cum</w> <w>monachi</w> <w>sancti</w> <w>Martini</w>, <w lemmaRef="gratia">gratia</w> <w>magis</w> <w>familiaritatis</w> <w>antique</w> <w>quam</w> <w>dono</w> <w>alicuius</w> <w>terrene</w> <w>substantiae</w> <w>sepelissent</w>, <w>tamen</w> <w>ne</w> <w>penitus</w> <w>gratis</w> <w>concessa</w> <w>videretur</w> <w>eadem</w> <w>sepultura</w> <w>supradicti</w> <w>defuncti</w> <w>filii</w> <w>quendam</w> <w>sancto</w> <w>Martino</w> <w>colibertum</w> <w>dederunt</w> <w>nomine</w> <w>Fulbertum</w>, <w>et</w> <w>de</w> <w>suo</w> <w>dominio</w> <w>in</w> <w>monachorum</w> <w>transfuderunt</w> <w lemmaRef="servitium">servitium</w>. <w>Quod</w> <w>ceteri</w> <w>quoque</w> <w>Rotberti</w> <w>filii</w>, <w>fratres</w> <w>supradictorum</w> <w>Huberti</w> <w>et</w> <w>Hugonis</w>, <w>videlicet</w> <w>Fulcherius</w> <w>et</w> <w>Rotbertus</w>, <w>libenter</w> <w>annuerunt</w>, <w>et</w> <w>imperpetuum</w> <w>ratum</w> <w>fore</w> <w>sanxerunt</w>. <w>Data</w> <w>est</w> <w>etiam</w> <w>illis</w> <w>omnibus</w> <w>societas</w> <w>beneficii</w> <w>maioris</w> <w>monasterii</w> <w>in</w> <w>retributionem</w> <w>coliberti</w> <w>donati</w>, <w>cuius</w> <w>donationem</w> <w>Bernardus</w> <w>de</w> <w>Sancto</w> <w>Aniano</w>, <w>de</w> <w>quo</w> <w>eum</w> <w>supradicti</w> <w>fratres</w> <w>tenebant</w> <w>auctorizavit</w> <w>et</w> <w>uxor</w> <w>eius</w> <w>nomine</w> <w>Alburgis</w> <w>nec</w> <w>non</w> <w>et</w> <w>filii</w> <w>eorum</w> <w>Gualterius</w> <w>et</w> <w>Bernardus</w>. <w>Horum</w> <w>omnium</w> <w>testes</w> <w>subscripti</w> <w>sunt</w>:</p>
+               <table xml:space="preserve"><row><cell style="text-align: left;" rend="Normal"><p rend="Normal" style="text-align: left; "><w>Ricardus</w> <w lemmaRef="maior">maior</w>. </p><p rend="Normal" style="text-align: left; "><w>Guarnerius</w> <w lemmaRef="maior">maior</w>.</p><p rend="Normal" style="text-align: left; "><w>Bernardus</w> <w>hospitalarius</w>. </p><p rend="Normal" style="text-align: left; "><w>Rainerius</w> <w lemmaRef="homo">homo</w> <w>supradictorum</w> <w>fratrum</w>. </p><p rend="Normal" style="text-align: left; "><w>Guillelmus</w> <w lemmaRef="frater">frater</w> <w>ipsius</w> <w>Fulberti</w>.</p></cell></row></table>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

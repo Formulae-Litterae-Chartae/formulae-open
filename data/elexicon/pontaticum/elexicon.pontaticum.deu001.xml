@@ -1,0 +1,42 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Pontaticum</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021-12-09">2021-12-09</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.pontaticum.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title"><w>Pontaticum</w></seg>: <seg type="lex-keyword"><w>Brückenzoll</w></seg>; <w>abgeleitet</w> <w>von</w> <w type="latin-word">pons</w>.</p>
+               <p xml:space="preserve"><w>Das</w> <w>frühmittelalterliche</w> <w type="latin-word" lemmaRef="pontaticum">pontaticum</w> <w>scheint</w> <w>keinen</w> <w>römischen</w> <w>Vorläufer</w> <w>gehabt</w> <w>zu</w> <w>haben</w>. <w>Bei</w> <w>ihm</w> <w>handelte</w> <w>es</w> <w>sich</w> <w>wohl</w> <w>um</w> <w>ein</w> <w>Brückennutzungsentgelt</w>, <w>das</w> <w>für</w> <w>das</w> <w>Passieren</w> <w>einer</w> <w>Brücke</w> <w>zu</w> <w>entrichten</w> <w>war</w>. <w>Erhoben</w> <w>wurde</w> <w>es</w> <w>für</w> <w>Land-</w> <w>wie</w> <w>auch</w> <w>Schiffsverkehr</w><note><p xml:space="preserve"> <bibl n="&lt;span class=&quot;surname&quot;&gt;Adam&lt;/span&gt;, Hildegard: Das Zollwesen im fränkischen Reich und das spätkarolingische Wirtschaftsleben. Ein Überblick über Zoll, Handel und Verkehr im 9. Jahrhundert, Stuttgart 1996 (Vierteljahrschrift für Sozial- und Wirtschaftsgeschichte. Beihefte 126).">H. Adam, Das Zollwesen</bibl>, S. 57. Im Fall von Schiffsverkehr wurde das <seg type="italic">pontaticum </seg>wohl für die Nutzung von besonderen Brückendurchlässen oder das Öffnen von beweglichen Brücken erhoben. Kritik an der Interpretation als Brückenzoll äußert <bibl n="&lt;span class=&quot;surname&quot;&gt;Stoclet&lt;/span&gt;, Alain J.: &quot;Immunes ab omni teloneo&quot;, études de diplomatique, de philologie et d'histoire sur l'exemption de tonlieux au haut Moyen Âge, et spécialement sur la &quot;praeceptio de navibus&quot;, Bruxelles [u.a.] 1999 (Bibliothèque de l'Institut Historique Belge de Rome 45).">A. J. Stoclet, Immunes</bibl>, S. 163f.</p></note>.</p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

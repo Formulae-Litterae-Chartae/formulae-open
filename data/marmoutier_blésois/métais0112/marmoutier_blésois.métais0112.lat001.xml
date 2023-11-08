@@ -1,0 +1,89 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 112</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">111-112</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0112">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Vulgrin, fils d´Ingelbaud de Vendôme, et son frère Geoffroy payen, donnent à MM. l´église paroissiale de Lancé et l´église de Sainte-Marie.</p>
+         </div>
+         <dateline>Vers 1100<date notBefore="1090-01-01" notAfter="1110-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0112.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve">«<w lemmaRef="notitia">NOTITIA</w> <w>ECCLESIARUM</w> <w>DE</w> <w>LANCIACO</w>, <w>QUAS</w> <w>DONAUIT</w> <w>VULGRINUS</w> <w>CUM</w> <w>FRATRE</w> <w>SUO</w> <w>GAUFFREDO</w>»</head>
+               <p xml:space="preserve"><w>Nouerint</w> <w>nostri</w> <w>praesentes</w> <w>et</w> <w>posteri</w> <w>Vulgrinum</w> <w>filium</w> <w>Ingelbaldi</w> <w>de</w> <w>Vindocino</w>, <w>et</w> <w>Gaufredum</w> <w>paganum</w>, <w>fratrem</w> <w>ipsius</w>, <w>donasse</w> <w>S</w>. <w>Martino</w> <w>et</w> <w>nobis</w> <w>suis</w> <w>majoris</w> <w>monasterii</w> <w>monachis</w>, <w>per</w> <w>manum</w> <w>fratris</w> <w>nostri</w> <w>Jarnegonii</w>, <w>ecclesiam</w> <w>parochialem</w> <w>S</w>. <w>Martini</w> <w>de</w> <w>Lanciaco</w>, <w>cum</w> <w>altera</w> <w>ejusdem</w> <w>loci</w> <w>ecclesia</w> <w>in</w> <w>honorem</w> <w>S</w>. <w>Mariae</w> <w>constructa</w>, <w>et</w> <w>cum</w> <w>tota</w> <w>ipsius</w> <w lemmaRef="parochia">parochialis</w> <w>ecclesiae</w> <w>decima</w> <w>et</w> <w>sepultura</w>, <w>terraque</w> <w>altaris</w>, <w>quidquid</w> <w>etiam</w> <w>in</w> <w>eodem</w> <w>loco</w> <w>alii</w> <w>tenent</w> <w>de</w> <w>illis</w> <w>concessisse</w> <w>donari</w> <w>aut</w> <w>vendi</w>, <w>et</w> <w>insuper</w> <w>ut</w> <w>hoc</w> <w>fieret</w> <w>se</w> <w>spopondisse</w>, <w>per</w> <w>fidem</w> <w>nos</w> <w>adjuvare</w> <w>tam</w> <w>donationis</w> <w>illorum</w> <w>quam</w> <w>sponsionis</w> <w>ac</w> <w>concessionis</w>; <w>testibus</w> <w>istis</w>: <w>Lancelino</w> <w>milite</w>, <w>Hugone</w> <w>Pullo</w>. <w>De</w> <w>nostris</w> <w>hominibus</w>: <w>Gausmaro</w> <w>cellerario</w>, <w>Bernardo</w> <w>clerico</w> <w>fratre</w> <w>ejus</w>, <w>Lamberto</w> <w>famulo</w> <w>ipsius</w> <w>supradicti</w> <w>monachi</w> <w>Jarnegonii</w>, <w>qui</w> <w>donum</w> <w>suscepit</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez) Nr. 30</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de l’abbaye de Gorze (Ed. D'Herbomez)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de l’abbaye de Gorze</title>
+                  <editor>Armand D'Herbomez</editor>
+                  <imprint>
+                     <pubPlace>Paris</pubPlace>
+                     <date when="1898" n="originalAusgabe">1898</date>
+                     <biblScope unit="pp">60</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Mettensia</title>
+                  <biblScope unit="volume">II</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de l’abbaye de Gorze, welches 1898 von A. D'Herbomez herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="gorze.dherbomez0030">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Dodo déclare tenir de l'abbaye de Gorze, à titre de bénéfice ou de précaire, tous les biens qu'il a donnés à cette abbaye à Maffrécourt, dans l'Astenois.</p>
+         </div>
+         <dateline>790<date notBefore="0790-01-01" notAfter="0790-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:gorze.dherbomez0030.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w lemmaRef="precarium">PRECARIA</w> <w>EIUSDEM</w></head>
+               <p xml:space="preserve"><w>Domino</w> <w>et</w> <w>in</w> <w>Christo</w> <w>venerabili</w> <w>patri</w> <w>Optario</w>, <w>abbati</w>, <w>una</w> <w>cum</w> <w>illis</w> <w>fratribus</w> <w>qui</w> <w>in</w> <w>Gorzie</w> <w>monasterio</w> <w>consistere</w> <w>videntur</w>, <w>Dodo</w> <w>precator</w>. <w>Cognoscatis</w>, <w>dum</w> <w>et</w> <w>omnibus</w> <w>non</w> <w>est</w> <w>incognitum</w>, <w>qualiter</w> <w>ego</w> <w>donavi</w> <w>res</w> <w>meas</w> <w>in</w> <w>pago</w> <w>Stadunensi</w>, <w>in</w> <w>loco</w> <w>qui</w> <w>dicitur</w> <w>ad</w> <w>Madafrido</w> <w>curte</w>, <w>super</w> <w>fluviolum</w> <w>Tufo</w>, <w>vel</w> <w>in</w> <w>ipsa</w> <w>fine</w> <w>Stovense</w>, <w>id</w> <w>est</w> <w>tam</w> <w>terris</w>, <w>mansis</w>, <w>casis</w>, <w>cum</w> <w>omnibus</w> <w>edificiis</w> <w>superpositis</w>, <w>olchis</w>, <w>campis</w>, <w>pratis</w>, <w>silvis</w> <w>sive</w> <w>concidis</w>, <w>omnia</w> <w>et</w> <w>ex</w> <w>omnibus</w> <w>quicquid</w> <w>in</w> <w>ipsas</w> <w>fines</w> <w>habeo</w>, <w>totum</w> <w>in</w> <w>integrum</w> <w>ad</w> <w>partem</w> <w>sancti</w> <w>Petri</w> <w>vel</w> <w>sancti</w> <w>Gorgonii</w>, <w>vel</w> <w>ad</w> <w lemmaRef="monasterium">monasterium</w> <w>Gorzie</w> <w>donavi</w> <w>vel</w> <w>affirmavi</w>. <w>Postea</w> <w>mea</w> <w>fuit</w> <w>peticio</w>, <w>et</w> <w>vestra</w> <w>vel</w> <w>fratrum</w> <w>vestrorum</w> <w>fuit</w> <w>voluntas</w>, <w>ut</w> <w>ipsas</w> <w>res</w> <w>et</w> <w>alias</w> <w>sancti</w> <w>Petri</w> <w>et</w> <w>sancti</w> <w>Gorgonii</w> <w>vel</w> <w>vestras</w>, <w>quas</w> <w lemmaRef="germanus">germanus</w> <w>meus</w> <w>Bartolomeus</w>, <w>et</w> <w>genitrix</w> <w>mea</w> <w>Hagitea</w>, <w>et</w> <w>Harfridus</w>, <w>in</w> <w>ipso</w> <w>pago</w> <w>Stadunensi</w>, <w>vel</w> <w>in</w> <w>ipsa</w> <w>fine</w> <w>superius</w> <w>nominata</w>, <w>ad</w> <w>ipsum</w> <w lemmaRef="monasterium">monasterium</w> <w>condonaverunt</w>, <w>excepto</w> <w>illo</w> <w>prato</w> <w>indominicato</w>, <w>illas</w> <w>alias</w> <w>res</w> <w>michi</w> <w>beneficiare</w> <w>deberetis</w>; <w>quod</w> <w>ita</w> <w>et</w> <w>fecistis</w>, <w>in</w> <w>ea</w> <w>vero</w> <w>ratione</w> <w>ut</w>, <w>quandiu</w> <w>ego</w> <w>advivo</w>, <w>ipsas</w> <w>per</w> <w>vestrum</w> <w lemmaRef="beneficium">beneficium</w> <w>seu</w> <w>successorum</w> <w>vestrorum</w> <w>diebus</w> <w>vite</w> <w>mee</w> <w>valeam</w> <w>excolere</w> <w>vel</w> <w>usare</w>, <w>et</w> <w>nichil</w> <w>exinde</w> <w>in</w> <w>quibuslibet</w> <w>rebus</w> <w>vel</w> <w>corporibus</w> <w>nullum</w> <w>pontificium</w> <w>habeo</w> <w>aliquid</w> <w>minuendi</w>, <w>nisi</w> <w>quicquid</w> <w>ibidem</w> <w>addere</w> <w>vel</w> <w>adtrahere</w> <w>potuero</w>. <w>Postmeum</w> <w>quoque</w> <w>discessum</w>, <w>quando</w> <w>quidem</w> <w>Deus</w> <w>voluerit</w>, <w>ipse</w> <w>res</w> <w>immeliorate</w>, <w>absque</w> <w>ullius</w> <w>contradictione</w> <w>vel</w> <w>iudicis</w> <w>assignatione</w>, <w>ad</w> <w>ipsum</w> <w lemmaRef="monasterium">monasterium</w> <w>iam</w> <w>dictum</w> <w>omnimodis</w> <w>revertantur</w>. <w>Et</w> <w>convenit</w> <w>in</w> <w>censum</w>, <w>annis</w> <w>singulis</w> <w>ad</w> <w>festum</w> <w>sancti</w> <w>Gorgonii</w>, <w>quod</w> <w>est</w> <w>V</w> <w lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w> <w>septembris</w>, <w>de</w> <w>argento</w> <w>solidum</w> <w>unum</w> <w>dare</w> <w>et</w> <w>adimplere</w> <w>facio</w>; <w>et</w> <w>si</w> <w>de</w> <w>ipso</w> <w>censu</w> <w>tardus</w> <w>aut</w> <w>negligens</w> <w>apparuero</w> <w>ad</w> <w>reddendum</w>, <w>cum</w> <w>legis</w> <w lemmaRef="beneficium">beneficium</w> <w>est</w>, <w>fidem</w> <w>exinde</w> <w>facio</w>, <w>et</w> <w>ipsas</w> <w>res</w>, <w>quandiu</w> <w>advivo</w>, <w>valeo</w> <w>excolere</w> <w>vel</w> <w>usare</w>. <w>Facta</w> <w lemmaRef="precarium">precaria</w> <w>die</w> <w>et</w> <w>anno</w> <w>quo</w> <w>supra</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,95 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 53</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">73-74</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0053">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Notice qui relate l’abandon fait au profit de l’abbaye de Saint-Julien par Tesceline, femme de Pierre de Montbazon, des droits qu’elle avait sur quatre enfants issus d’un de ses cuverts marié a une femme appartenant a l’abbaye.</p>
+         </div>
+         <dateline>1080-1128<date/>
+            <date notBefore="1080-01-01" notAfter="1128-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0053.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Rerum</w>...</p>
+               <p xml:space="preserve"><w>Uxor</w> <w>Petri</w> <w>de</w> <w>Montebasonis</w>, <w>Thescelina</w>, <w>a</w> <w>thesaurario</w> <w>Sancti</w> <w>Martini</w> <w>quemdam</w> <w>culvertum</w>, <w>nomine</w> <w>Manerium</w> <w>de</w> <w>Moncello</w>, <w>in</w> <w>feodo</w> <w>tenebat</w>, <w>qui</w> <w>de</w> <w lemmaRef="familia">familia</w> <w>Sancti</w> <w>Juliani</w> <w>uxorem</w> <w>accepit</w>, <w>de</w> <w>qua</w> <w>quatuor</w> <w>filios</w> <w>habuit</w>. <w>Horum</w> <w>infantium</w> <w>partem</w> <w>suam</w> <w>Thescelina</w> <w>Sancto</w> <w>Juliano</w>... <w>dedit</w>, <w>Ugone</w> <w>et</w> <w>Gaufredo</w>, <w>clerico</w>, <w>Hulgerio</w> <w>quoque</w> <w>Buffardo</w>, <w>necnon</w> <w>Raherio</w>, <w>filiis</w> <w>ejus</w>, <w>concedentibus</w>, <w>atque</w> <w>Rosca</w> <w>et</w> <w>Florentia</w>, <w>filiabus</w> <w>eius</w>...</p>
+               <p xml:space="preserve"><w>Postmodum</w>, <w>Raherius</w> <w>eos</w> <w>calumpniare</w> <w>cepit</w>. <w>Unus</w> <w>testis</w> <w>de</w> <w lemmaRef="familia">familia</w> <w>Sancti</w>... <w>in</w> <w lemmaRef="curia">curia</w> <w>Hugonis</w>, <w>de</w> <w>Ambaciaco</w> <w>domini</w>, <w>duellio</w> <w>affirmare</w> <w>voluit</w> <w>quod</w> <w>Raherius</w> <w>Sancto</w> <w>Juliano</w> <w>dederat</w> <w>et</w> <w>concesserat</w> <w>donum</w> <w>quod</w> <w>mater</w> <w>ejus</w> <w>Thescelina</w> <w>fecerat</w>... <w>Se</w> <w>recognoscens</w>... <w>calumniam</w> <w>dimisit</w>. <w>Hi</w> <w>sunt</w> <w>testes</w>... <w>Ugo</w>, <w lemmaRef="dominus">dominus</w> <w>de</w> <w>Ambaciaco</w>, ... <w>Ulricus</w> <w>Pejor</w> <w>Lupo</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

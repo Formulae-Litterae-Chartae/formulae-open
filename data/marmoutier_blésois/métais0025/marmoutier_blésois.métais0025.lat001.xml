@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Marmoutier Cartulaire blésois (Ed. Métais) Nr. 25</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Marmoutier Cartulaire blésois (Ed. Métais)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Elisabeth Schröder/Vanessa Krüger (Studentische Hilfskräfte, Universität
+                  Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes,
+                  Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Marmoutier Cartulaire blésois</title>
+                  <editor>Charles Métais</editor>
+                  <imprint>
+                     <pubPlace>Blois</pubPlace>
+                     <date notBefore="1889" notAfter="1891" n="originalAusgabe">1889-1891</date>
+                     <biblScope unit="pp">30-32</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Marmoutier
+            Cartulaire blésois, welches 1889-1891 von Charles Métais herausgegeben worden ist. Die
+            OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien,
+            umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die
+            Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_blésois.métais0025">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Vente à Marmoutier pour le prix de 50 sous, de la moitié de l'étang de Monteaux, près Blois, par Guarinus, prévôt de Blois, avec garantie contre toutes revendications. </p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Mesland</p>
+         </div>
+         <dateline>Avant 1044<date notBefore="1000-01-01" notAfter="1044-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_blésois.métais0025.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"> <w lemmaRef="notitia">NOTITIA</w> <w>DE</w> <w>STAGNO</w> <w>IN</w> <w>BOSCO</w> <w>BLIMARCIO</w></head>
+               <p xml:space="preserve"><w>Nosse</w> <w>debebitis</w> <w>si</w> <w>qui</w> <w>eritis</w> <w>posteri</w> <w>nostri</w> <w>maioris</w> <w>scilicet</w> <w>huius</w> <w>habitatores</w> <w>monasterii</w> <w>sancti</w> <w>Martini</w>, <w>Galterium</w> <w>nostre</w> <w>congregationis</w> <w>monachum</w> <w>terre</w> <w>nostre</w> <w>in</w> <w>bosco</w> <w>blimarcio</w> <w>prepositum</w>, <w>emisse</w> <w>stagnum</w> <w>quod</w> <w>quidem</w> <w>situm</w> (<w>est</w>) <w>in</w> <w>pago</w> <w>blesensi</w> <w>apud</w> <w lemmaRef="villa">villam</w> <w>que</w> <w>vocatur</w> <w>mons</w> <w>Tedaldi</w>, <w>a</w> <w>Guarino</w> <w>blesensi</w> <w>vicario</w>, <w>atque</w> <w>ab</w> <w>Abelino</w> <w>milite</w> <w>quodam</w> <w>qui</w> <w>partem</w> <w>illius</w> <w>stagni</w> <w>dimidiam</w> <w>tenebat</w> <w>de</w> <w>Gradulfo</w> <w>fratre</w> <w>Guarini</w>. <w>Que</w> <w>empcio</w> <w>facta</w> <w>est</w> <w>coram</w> <w>Herueo</w> <w>cognomento</w> <w>cornesino</w>, <w>auctorizante</w> <w>de</w> <w>dimidia</w> <w>illa</w> <w>parte</w> <w>jam</w> <w>dicto</w> <w>Gradulfo</w>, <w>filioque</w> <w>eius</w> <w>nomine</w> <w>Guarino</w>, <w>constante</w> <w>precio</w> <w>venditoribus</w> <w>singulis</w> <w>solidis</w> <w>L</w>. <w>spondentibus</w> <w>omnibus</w> <w>tam</w> <w>venditoribus</w> <w>scilicet</w> <w>illis</w> <w>quam</w> <w>auctorizatoribus</w> <w>acquictaturos</w> <w>sese</w> <w>per</w> <w>omnia</w>, <w>si</w> <w>qua</w> <w>numquam</w> <w>adversus</w> <w>emptorem</w> <w>de</w> <w>stagno</w> <w>illo</w> <w>exurgeret</w> <w>calumnia</w>. <w>Que</w> <w>eciam</w> <w>sponcio</w> <w>ad</w> <w>terminum</w> <w>quo</w> <w>ambobus</w> <w>venditoribus</w> <w>precium</w> <w>solutum</w> <w>est</w> <w>dimidium</w> <w>repectita</w> <w>est</w> <w>et</w> <w>confirmata</w> <w>a</w> <w>Guarino</w> <w>vicario</w> <w>et</w> <w>nepote</w> <w>eius</w> <w>Guarino</w> <w>Gradulphi</w> <w>filio</w>, <w>cui</w> <w>pro</w> <w>suo</w> <w>auctoramento</w> <w>dederat</w> <w>manochus</w> <w>XII</w><seg type="superscript "><w>cim</w></seg> <w>denarios</w>. <w>Ad</w> <w>persolvendum</w> <w>dictum</w> <w>totum</w> <w>precium</w> <w>ventum</w> <w>est</w> <w>in</w> <w>domum</w> <w>Guarini</w> <w>vicarii</w>, <w>ibique</w> <w>tunc</w> <w>auctorizavit</w> <w>hec</w> <w>Adenauris</w> <w>nomine</w> <w>uxor</w> <w>ipsius</w> <w>et</w> <w>filius</w> <w>eius</w> <w>Niuelo</w> <w>dictus</w>, <w>accipiente</w> <w>illa</w> <w>IIII</w><seg type="superscript "><w>or</w></seg> <w>denarios</w>, <w>et</w> <w>isto</w> <w>solidos</w> <w>XXV</w>. <w>Post</w> <w>aliquantum</w> <w>temporis</w> <w>Herbertus</w> <w>quidam</w>, <w>filiaster</w> <w>supradicti</w> <w>Abelini</w>, <w>conuentu</w> <w>monacho</w> <w>qui</w> <w>emerat</w> <w>ab</w> <w>illo</w> <w>partem</w> <w>illam</w> <w>stagni</w>, <w>calumniam</w> <w>ipsis</w> <w>intulit</w> <w>empcioni</w>. <w>At</w> <w>ille</w> <w>calumniatorem</w> <w>ad</w> <w>venditorem</w> <w>ilium</w> <w>secum</w> <w>ducens</w>, <w>admonuit</w> <w>eum</w> <w>conuencionis</w> <w>quam</w> <w>erga</w> <w>se</w> <w>habebat</w>, <w>ab</w> <w>omnibus</w> <w>scilicet</w> <w>hominibus</w> <w>acquietandi</w> <w>quod</w> <w>sibi</w> <w>vendiderat</w>. <w>Ad</w> <w>quod</w> <w>ille</w> <w>presto</w> <w>se</w> <w>esset</w> <w>respondit</w>, <w>suoque</w> <w>illi</w> <w>filiastro</w> <w>omne</w> <w>mox</w> <w>obtulit</w> <w>quod</w> <w>exigeret</w> <w>rectitudo</w>, <w>ut</w> <w>videlicet</w> <w>aut</w> <w>restitui</w> <w>statim</w> <w>eidem</w> <w>faceret</w> <w>feuum</w> <w>illum</w>, <w>eciam</w> <w>inquadruxum</w> <w>si</w> <w>vellet</w> <w>eum</w> <w>tenere</w> <w>ut</w> <w>debebat</w> <w>de</w> <w>Guarino</w> <w>Gradulfi</w> <w>jam</w> <w>tunc</w> <w>defuncti</w> <w>filio</w>, <w>aut</w> <w>aliquo</w> <w>edificamentum</w> <w>quod</w> <w>emeret</w> <w>Abelinus</w> <w>ipse</w> <w>de</w> <w>precio</w> <w>sue</w> <w>illius</w> <w>vendicionis</w>, <w>teneret</w> <w>iste</w> <w>de</w> <w>abbate</w> <w>sancti</w> <w>Launomari</w> <w>sicut</w> <w>Abelinus</w> <w>ipse</w> <w>tenere</w> <w>debebat</w>. <w>Hoc</w> <w>enim</w> <w>Gradulfus</w>, <w>cum</w> <w>in</w> <w>eiusdem</w> <w>sancti</w> <w>monasterio</w> <w>fieret</w> <w lemmaRef="monachus">monachus</w>, <w>eidem</w> <w>loco</w> <w>concesserat</w>, <w>aut</w> <w>certe</w> <w>veniret</w> <w>eadem</w> <w>hora</w> <w>in</w> <w lemmaRef="curia">curia</w> <w>sui</w> <w>ipsius</w> <w>auunculi</w>, <w lemmaRef="honorati">honorati</w> <w>scilicet</w> <w>cuiusdam</w> <w>nomine</w> <w>Guaiferii</w> <w>ibique</w> <w>quicquid</w> <w>judicaretur</w>, <w>rectum</w> <w>mox</w> <w>haberet</w> <w>effectum</w>. <w>Omnia</w> <w>hec</w> <w>ille</w> <w>refutavit</w>, <w>sed</w> <w>cur</w> <w>reffutaret</w> <w>inuenire</w> <w>non</w> <w>potuit</w>. <w>Improbata</w> <w>itaque</w> <w>illius</w> <w>improbitate</w> <w>Abelinus</w> <w>in</w> <w>sua</w> <w>se</w> <w>dixit</w> <w>perpetuo</w> <w>persistere</w> <w>sponcione</w>, <w>quod</w> <w>vendicionem</w> <w>suam</w> <w>scilicet</w> <w>sancto</w> <w>Martino</w> <w>omnimodis</w> <w>adquietaret</w>. <w>Ob</w> <w>hoc</w> <w>etiam</w> <w>post</w> <w>aliquantum</w> <w>temporis</w> <w>ostendit</w> <w>sepedicto</w> <w>monacho</w> <w>clausum</w> <w>quoddam</w> <w>vinee</w> <w>situm</w> <w>iuxta</w> <w>vineas</w> <w>sancti</w> <w>Launomari</w> <w>a</w> <w>parte</w> <w>occidentali</w> <w>inter</w> <w>publicam</w> <w>viam</w> <w>et</w> <w>fluvium</w> <w>Ligerim</w>. <w>Dixit</w> <w>que</w> <w>illi</w> <w>ut</w> <w>si</w> <w>quum</w> <w>calumniacione</w> <w>cuiusdam</w> <w>quod</w> <w>sibi</w> <w>vendiderat</w> <w>perderet</w>, <w>vineas</w> <w>ipsas</w> <w>pro</w> <w>eo</w> <w>acciperet</w> <w>quas</w> <w>ipse</w> <w>scilicet</w> <w>a</w> <w>se</w> <w>ipso</w> <w>abbati</w> <w>sancti</w> <w>Launomari</w> <w>traditas</w> <w>ab</w> <w>eodem</w> <w>receperat</w> <w>in</w> <w>feuum</w>, <w>juxta</w> <w>id</w> <w>quod</w> <w>eidem</w> <w>loco</w> <w>a</w> <w>Gradulpho</w> <w>prediximus</w> <w>fuisse</w> <w>concessum</w>. <w>Uxor</w> <w>proinde</w> <w>Abelini</w>, <w>nomine</w> <w>Ermelina</w>, <w>ex</w> <w>cuius</w> <w>jure</w> <w>stagnum</w> <w>illud</w> <w>ipse</w> <w>tenebat</w>, <w>vendicioni</w> <w>mariti</w> <w>per</w> <w>omnia</w> <w>favit</w>, <w>et</w> <w>ob</w> <w>id</w> <w>ab</w> <w>emptore</w> <w>monacho</w> <w>duos</w> <w>denarios</w> <w>solidorum</w> <w>accepit</w>. <w>Bernardus</w> <w>quoque</w> <w>de</w> <w>sancto</w> <w>Aniano</w> <w>de</w> <w>cuius</w> <w>erat</w> <w>stagnum</w> <w>illud</w> <w>casamento</w>, <w>vendicionem</w> <w>eis</w> <w>vel</w> <w>empcionem</w> <w>ut</w> <w>gesta</w> <w>et</w> <w>supradigesta</w> <w>est</w> <w>auctorizavit</w> <w>cum</w> <w>filio</w> <w>suo</w> <w>Gualterio</w> <w>vocabulo</w>, <w>de</w> <w>quo</w> <w>videlicet</w> <w>Bernardo</w> <w>tenent</w> <w>censum</w> <w>molendini</w> <w>illius</w> <w>stagni</w> <w>Johannes</w> <w lemmaRef="frater">frater</w> <w>Guilberti</w> <w>forestarii</w> <w>atque</w> <w>Gualterii</w>, <w>amborum</w> <w lemmaRef="germanus">germanus</w>, <w>qui</w> <w lemmaRef="census">census</w> <w>tres</w> <w>denarii</w> <w>sunt</w> <w>reddendi</w> <w>quoque</w> <w>anno</w> <w>ad</w> <w>blesense</w> <w lemmaRef="forum">forum</w>, <w>de</w> <w>hiis</w> <w>iisdem</w> <w>duobus</w> <w>fratribus</w> <w>tenent</w> <w>medietatem</w> <w lemmaRef="census">census</w> <w>isti</w> <w>alii</w> <w>duo</w> <w>fratres</w> <w>Bouellus</w> <w>et</w> <w>Hastellinus</w>. <w>His</w> <w>igitur</w> <w>quatuor</w> <w>dedit</w> <w lemmaRef="monachus">monachus</w> <w>supra</w> <w>nominatus</w> <w>vendencias</w> <w>sue</w> <w>empcionis</w> <w>dimidias</w> <w>duobus</w> <w>primis</w>, <w>et</w> <w>dimidias</w> <w>alteris</w>, <w>terre</w> <w>quoque</w> <w>paululum</w> <w>hoc</w> <w>est</w> <w>brevem</w> <w>quamdam</w>, <w>et</w> <w>per</w> <w>angustam</w> <w>viam</w> <w>que</w> <w>duxit</w> <w>ad</w> <w>molendinum</w> <w>illum</w>. <w>Ab</w> <w>Hastelino</w> <w>emit</w> <w>plena</w> <w>mina</w> <w>frumenti</w> <w>dedit</w> <w>et</w> <w>Lisoio</w> <w>de</w> <w>caluo</w> <w>monte</w> <w>dimidium</w> <w>modium</w> <w>auene</w>, <w>et</w> <w>Gautfredo</w> <w>bigoto</w> <w>solidos</w> <w>V</w>, <w>ob</w> <w>auctoramentum</w> <w>scilicet</w> <w>empcionis</w> <w>sue</w>, <w>quum</w> <w>pro</w> <w>guerra</w> <w>que</w> <w>erat</w> <w>inter</w> <w>comitem</w> <w>Tetbaldum</w> <w>et</w> <w>comitem</w> <w>Gauffredum</w> <w>res</w> <w>illius</w> <w>loci</w> <w>habebant</w> <w>intaxamentum</w>. <w>Testes</w> <w>eorum</w> <w>que</w> <w>diximus</w> <w>subter</w> <w>ascripsimus</w>, <w>non</w> <w>quidem</w> <w>omnibus</w> <w>omnia</w> <w>testificantibus</w>, <w>sed</w> <w>aliis</w> <w>alia</w> <w>pro</w> <w>loco</w> <w>vel</w> <w>tempore</w> <w>quo</w> <w>gesta</w> <w>sunt</w> <w>singula</w>. <w>Herueus</w> <w>cornesinus</w>, <w>Hugo</w> <w lemmaRef="homo">homo</w> <w>cius</w>, <w>Otbertus</w> <w>decanus</w> <w>sancti</w> <w>Sollemnis</w>, <w>Hugo</w> <w lemmaRef="canonicus">canonicus</w> <w>sancte</w> <w>Marie</w>, <w>Guarinus</w> <w>filius</w> <w>Gradulfi</w>, <w>Girardus</w> <w>agguiratus</w>, <w>Frotmundus</w> <w lemmaRef="vicarius">vicarius</w>, <w>Adunarus</w> <w lemmaRef="maior">maior</w>, <w>Ingelbaldus</w> <w>tabernarius</w>, <w>Bernerius</w> <w>miles</w>, <w>Hilgodus</w> <w>presbiter</w>, <w>Ernaldus</w> <w lemmaRef="monachus">monachus</w>, <w>Rainaldus</w> <w lemmaRef="monachus">monachus</w>, <w>Stephanus</w> <w>de</w> <w>maucis</w>, <w>Durandus</w> <w>de</w> <w>camera</w>, <w>Herbertus</w> <w>loripes</w>, <w>Aubertus</w> <w>glaciatus</w>, <w>Vuarinus</w> <w>quocus</w>, <w>Hildebertus</w> <w>famulus</w>, <w>Beringerius</w> <w>famulus</w>, <w>Archembaldus</w> <w>famulus</w>, <w>Mauricius</w> <w>schirpellus</w>, <w>Harduinus</w> <w>juvenis</w>, <w>Gualterius</w> <w lemmaRef="monachus">monachus</w>, <w>Beringerius</w> <w lemmaRef="monachus">monachus</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

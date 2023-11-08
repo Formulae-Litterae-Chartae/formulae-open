@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault) Nr. 116 bis</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire de Marmoutier pour le Vendômois (Ed. Trémault)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire de Marmoutier pour le Vendômois</title>
+                  <editor>M. de Trémault</editor>
+                  <imprint>
+                     <pubPlace>Paris, Alphonse Picard et fils, éditeurs, 82, Rue BonaparteVendome, Librairie Clovis Ripé, 15-17, Rue Poterie</pubPlace>
+                     <date when="1893" n="originalAusgabe">1893</date>
+                     <biblScope unit="pp">181-182</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire de Marmoutier pour le Vendômois, welches 1893 von M. de Trémault herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_vendomois.trémault0116bis">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Rothon étant venu à Marmoutier donne à Saint-Martin, en retour de son admission au bénéfice de l’association, sa part de l’alleu de Villemalard, se réservant, sa vie durant, la moitié des coutumes des villains. Mais, à sa mort, toute la terre reviendra à Marmoutier, et, de plus, cent sols de deniers de son argent, pour que sa mémoire soit gardée parmi les familiers des moines.</p>
+         </div>
+         <dateline>1034-1064<date notBefore="1034-01-01" notAfter="1064-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_vendomois.trémault0116bis.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <head xml:space="preserve"><w lemma="notitia" n="notitia" lemmaRef="notitia">NOTICIA</w> <w lemma="personenname" n="personenname">ROTHONIS</w> <w lemma="de" n="de">DE</w> <w lemma="villa" n="villa" lemmaRef="villa">VILLA</w> <w lemma="ortsname" n="ortsname">MALARDI</w>.</head>
+               <p xml:space="preserve"><w lemma="notus" n="notus/noscere/nosco">Notum</w> <w lemma="esse" n="esse/sum">sit</w> <w lemma="omnis" n="omnis">omnibus</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">sancte</w> <w lemma="deus" n="deus">Dei</w> <w lemma="ecclesia" n="ecclesia">ecclesie</w> <w lemma="fidelis_urkunden" n="fidelis" lemmaRef="fidelis">fidelibus</w>, <w lemma="quod" n="quod/qui">quod</w> <w lemma="personenname" n="personenname">Rostho</w> <w lemma="filius" n="filius">filius</w> <w lemma="personenname" n="personenname">Rotgerii</w> <w lemma="personenname" n="personenname">Divitis</w>, <w lemma="venire" n="venire/venio">venit</w> <w lemma="ad" n="ad">ad</w> <w lemma="ortsname" n="ortsname">Maius</w> <w lemma="ortsname" n="ortsname" lemmaRef="monasterium">Monasterium</w> <w lemma="in" n="in">in</w> <w lemma="praesentia" n="praesentia">presentia</w> <w lemma="domnus" n="domnus/dominus" lemmaRef="dominus">domni</w> <w lemma="personenname" n="personenname">Alberti</w> <w lemma="abbas" n="abbas/abba" lemmaRef="abbas">abbatis</w>, <w lemma="et" n="et">et</w> <w lemma="acceptus" n="acceptus/accipere/accipio">accepto</w> <w lemma="locus" n="locus">loci</w> <w lemma="beneficium" n="beneficium" lemmaRef="beneficium">beneficio</w>, <w lemma="dare" n="dare/do">dedit</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancto</w> <w lemma="personenname" n="personenname">Martino</w> <w lemma="totus" n="totus">totam</w> <w lemma="suus" n="suus">suam</w> <w lemma="pars" n="pars">partem</w> <w lemma="de" n="de">de</w> <w lemma="allodis" n="allodis/alodis/allodium" lemmaRef="allodium">alodibus</w> <w lemma="ortsname" n="ortsname">Ville</w> <w lemma="ortsname" n="ortsname">Malardi</w>, <w lemma="talis" n="talis">tali</w> <w lemma="convenientia" n="convenientia" lemmaRef="convenientia">convenientia</w> <w lemma="ut" n="ut">ut</w> <w lemma="quamdiu" n="quamdiu">quamdiu</w> <w lemma="ipse" n="ipse">ipse</w> <w lemma="vivere" n="vivere/vivo">vixerit</w>, <w lemma="habere" n="habere/habeo">habeat</w> <w lemma="de" n="de">de</w> <w lemma="consuetudo" n="consuetudo" lemmaRef="consuetudo">consuetudinibus</w> <w lemma="villanus" n="villanus">villanorum</w> <w lemma="pars" n="pars">partem</w> <w lemma="unus" n="unus/1/i/zahl">unam</w> <w lemma="et" n="et">et</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">sanctus</w> <w lemma="personenname" n="personenname">Martinus</w> <w lemma="alter" n="alter/alius">alteram</w>. <w lemma="si" n="si">Si</w> <w lemma="vero" n="vero/verus">vero</w> <w lemma="monachus" n="monachus" lemmaRef="monachus">monachus</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancti</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martini</w> <w lemma="terra" n="terra">terram</w> <w lemma="in" n="in">in</w> <w lemma="suus" n="suus">suo</w> <w lemma="dominium" n="dominium" lemmaRef="dominium">dominio</w> <w lemma="exercere" n="exercere/exerceo">exercere</w> <w lemma="velle" n="velle/volo">voluerit</w>, <w lemma="talis" n="talis">talem</w> <w lemma="pars" n="pars">partem</w> <w lemma="praedictus" n="praedictus/praedicere/praedico">predicto</w> <w lemma="personenname" n="personenname">Rothoni</w> <w lemma="reddere" n="reddere/reddo">reddiderit</w> <w lemma="qualis" n="qualis">qualem</w> <w lemma="ipse" n="ipse">ipse</w> <w lemma="ad" n="ad">ad</w> <w lemma="laborare" n="laborare/laboro">laborandum</w> <w lemma="mittere" n="mittere/mitto">miserit</w>. <w lemma="si" n="si">Si</w> <w lemma="autem" n="autem">autem</w> <w lemma="nihil" n="nihil">nichil</w> <w lemma="mittere" n="mittere/mitto">miserit</w>, <w lemma="totus" n="totus">totus</w> <w lemma="labor" n="labor">laboris</w> <w lemma="fructus" n="fructus">fructus</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancto</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martino</w> <w lemma="esse" n="esse/sum">erit</w>, <w lemma="et" n="et">et</w> <w lemma="post" n="post">post</w> <w lemma="is" n="is">eius</w> <w lemma="obitus" n="obitus">obitum</w>, <w lemma="terra" n="terra">terra</w> <w lemma="sanctus" n="sanctus/sancire/sancio" lemmaRef="sanctus">Sancto</w> <w lemma="personenname_ortsname" n="personenname+ortsname">Martino</w> <w lemma="remanere" n="remanere/remaneo">remanebit</w> <w lemma="quietus" n="quietus">quieta</w> <w lemma="et" n="et">et</w> <w lemma="solutus" n="solutus/solvere/solvo">soluta</w>, <w lemma="et" n="et">et</w> <w lemma="100" n="100/c/zahl">centum</w> <w lemma="solidus" n="solidus" lemmaRef="solidus">solidi</w> <w lemma="denarius" n="denarius" lemmaRef="denarius">denariorum</w> <w lemma="de" n="de">de</w> <w lemma="suus" n="suus">sua</w> <w lemma="pecunia" n="pecunia">pecunia</w>, <w lemma="ut" n="ut">ut</w> <w lemma="inter" n="inter">inter</w> <w lemma="monachus" n="monachus" lemmaRef="monachus">monachorum</w> <w lemma="familiaris" n="familiaris">familiares</w> <w lemma="is" n="is">eius</w> <w lemma="fieri" n="fieri/fio">fiat</w> <w lemma="memoria" n="memoria">memoria</w>. <w lemma="qui" n="qui">Cuius</w> <w lemma="res" n="res">rei</w> <w lemma="testis" n="testis">testes</w>, <w lemma="qui" n="qui">qui</w> <w lemma="audire" n="audire/audio">audierunt</w> <w lemma="et" n="et">et</w> <w lemma="videre" n="videre/video">viderunt</w>, <w lemma="subtus" n="subtus">subtus</w> <w lemma="notatus" n="notatus/notare/noto">notati</w> <w lemma="esse" n="esse/sum">sunt</w>: <w lemma="personenname" n="personenname">Fulbertus</w> – <w lemma="personenname" n="personenname">Hugo</w> <w lemma="clericus" n="clericus" lemmaRef="clericus">clericus</w> – <w lemma="personenname" n="personenname">Gauzcelinus</w> – <w lemma="personenname" n="personenname">Fulcherius</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

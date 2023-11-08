@@ -1,0 +1,82 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin) Nr. 151</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Recueil des chartes de l’abbaye de Stavelot-Malmedy (Ed. Halkin)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Lina-Marie Mittelbach (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2023"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/"> Distributed under a
+                  Creative Commons Attribution 4.0 International License. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Recueil des chartes de l’abbaye de Stavelot-Malmedy</title>
+                  <editor>Joseph Halkin</editor>
+                  <imprint>
+                     <pubPlace>Brüssel</pubPlace>
+                     <date when="1909" n="originalAusgabe">1909</date>
+                     <biblScope unit="pp">304</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Recueil des chartes de l’abbaye de Stavelot-Malmedy, welches 1909 von Joseph Halkin herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="stavelot_malmedy.halkin0151">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Dénombrement des biens de l'avouerie de Stavelot-Malmedy.</p>
+         </div>
+         <dateline>[1130-1131]<date notBefore="1130-01-01" notAfter="1131-12-31"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:stavelot_malmedy.halkin0151.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Hec</w> <w>sunt</w> <w>que</w> <w>ad</w> <w>advocatiam</w> <w>pertinent</w> : <w>Marcha</w> <w>cum</w> <w>suis</w> <w>appenditiis</w>; <w>Wailens</w>; <w>Grinberti</w> <w>mons</w>; <w>Bordouz</w>; <w>Maniz</w>; <w>Tristeim</w>; <w>Octrouilla</w>; <w>Habeis</w>; <w>Gillonis</w> <w>vallis</w>; <w>Jupille</w>; <w>Warenceis</w>; <w>Cerlensur</w>; <w>Woens</w>; <w>Humins</w>;... <w>Baceiles</w>; <w>Fineuals</w>; <w>Falarges</w>; <w>Wonoum</w>; <w>silva</w> <w>de</w> <w>Hardineis</w>; <w>silva</w> <w>de</w> <w>Rupe</w> <w>que</w> <w>est</w> <w>de</w> <w>banno</w> <w>regis</w>; <w>et</w> <w>omnes</w> <w>qui</w> <w>morantur</w> <w>in</w> <w>banno</w> <w>silve</w> <w>de</w> <w>Freires</w> <w>debent</w> <w>obolum</w> <w>I</w> <w>per</w> <w>singulos</w>; <w>attinet</w> <w>etiam</w> <w lemmaRef="villa">villa</w> <w>que</w> <w>est</w> <w>de</w> <w>banno</w> <w>silve</w> <w>Freires</w>, <w>que</w> <w>debet</w> <w>advocato</w> <w lemmaRef="servitium">servitium</w> <w>unius</w> <w>diei</w> <w>et</w> <w>unius</w> <w>noctis</w> <w>quando</w> <w>venatum</w> <w>vadit</w>; <w>Lingiers</w> <w>sunt</w> <w>etiam</w> <w>II</w> <w>quadrantes</w> <w>terre</w> <w>de</w> <w>feodo</w> <w>que</w> <w>ad</w> <w>Marcham</w> <w>pertinet</w>. <w>Summa</w> <w>omnium</w> <w>que</w> <w>ad</w> <w>advocatiam</w> <w>pertinent</w> : <w>CCC</w> <w lemmaRef="mansus">mansus</w> <w>terre</w>, <w>excepta</w> <w>silva</w> <w>de</w> <w>Freires</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

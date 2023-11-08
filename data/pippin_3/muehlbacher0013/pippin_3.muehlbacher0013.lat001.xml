@@ -1,0 +1,100 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Die Urkunden Pippins (Ed. Mühlbacher) Nr. 13</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Die Urkunden Pippins (Ed. Mühlbacher)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Jennifer Nielsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Alexander Kahnt (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <idno type="URI">https://d-nb.info/976526034</idno>
+                  <idno type="ISBN">3-921575-54-0</idno>
+                  <title>Die Urkunden Pippins, Karlmanns und Karl des Grossen</title>
+                  <editor>Engelbert Mühlbacher</editor>
+                  <imprint>
+                     <pubPlace>München</pubPlace>
+                     <date when="1906" n="originalAusgabe">1906</date>
+                     <biblScope unit="pp"/>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Monumenta Germaniae historica</title>
+                  <biblScope unit="volume">MGH Pippin III</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Die Urkunden Pippins, Karlmanns und Karl des Grossen, welches 1906 von Engelbert Mühlbacher herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="pippin_3.muehlbacher0013">
+      <front xml:lang="deu">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Pippin schenkt dem Kloster Fulda die Villa Deiningen.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>Attigny</p>
+         </div>
+         <dateline>760 06<date notBefore="0760-06-01" notAfter="0760-06-30"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:pippin_3.muehlbacher0013.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Pippinus</w> <w>rex</w> <w>Francorum</w> <w>vir</w> <w>inluster</w>. <w>Nihil</w>, <w>ut</w> <w>ait</w> <w>apostolus</w>, <w>in</w> <w>hunc</w> <w>mundum</w> <w>intulimus</w> <w>nec</w> <w>dubium</w>, <w>quia</w> <w>nihil</w> <w>[ex</w> <w>eo]</w> <w>quicquam</w> <w>nobiscum</w> <w>auferre</w> <w>poterimus</w>, <w>nisi</w> <w>quod</w> <w>ob</w> <w>animae</w> <w>salutis</w> <w>devota</w> <w>mente</w> <w>locis</w> <w>sanctorum</w> <w>deo</w> <w>inspirante</w> <w>inpertire</w> <w>videmur</w>. <w>Ergo</w> <w>cognoscat</w> <w>magnitudo</w> <w>seu</w> <w>industria</w> <w>vestra</w>, <w>quod</w> <w>nos</w> <w>propter</w> <w>nomen</w> <w>domini</w> <w>vel</w> <w>aeterna</w> <w>retributione</w> <w>donamus</w> <w>a</w> <w>die</w> <w>praesente</w> <w>ad</w> <w>monastirio</w> <w>noncupante</w> <w>Fulda</w>, <w>qui</w> <w>est</w> <w>constructus</w> <w>in</w> <w>honore</w> <w>sancti</w> <w>Salvatoris</w>, <w>quem</w> <w lemmaRef="sanctus">sanctus</w> <w>Bonefatius</w> <w>a</w> <w>novo</w> <w>construxit</w> <w>opere</w>, <w>ubi</w> <w>ipse</w> <w>praeciosus</w> <w>martyr</w> <w>corpore</w> <w>requiescit</w>, <w>quin</w> <w>potius</w> <w>prumptissima</w> <w>devotione</w> <w>tradimus</w> <w lemmaRef="villa">villa</w> <w>qui</w> <w>dicitur</w> <w>Thininga</w> <w>sitam</w> <w>in</w> <w>pago</w> <w>Rezi</w> <w>super</w> <w>fluvio</w> <w>qui</w> <w>vocatur</w> <w>Agira</w> <w>cum</w> <w>omni</w> <w>integritate</w>, <w>quicquid</w> <w>ad</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>aspicere</w> <w>vel</w> <w>pertenere</w> <w>videtur</w>, <w>id</w> <w>est</w> <w>tam</w> <w>terris</w> <w>mansis</w> <w>cum</w> <w>hominibus</w> <w>conmanentes</w> <w>mancipiis</w> <w>silvis</w> <w>marcas</w> <w>vel</w> <w>fines</w> <w>campis</w> <w>pratis</w> <w>pascois</w> <w>aquis</w> <w>aquarumve</w> <w>decursibus</w> <w>mobilibus</w> <w>et</w> <w>immobilibus</w> <w>praesidiis</w> <w>quibuslibet</w> <w>adiacentiis</w> <w>totum</w> <w>et</w> <w>ad</w> <w>integrum</w>, <w>ut</w> <w>diximus</w>, <w>a</w> <w>die</w> <w>praesente</w> <w>ad</w> <w>ipso</w> <w>monastirio</w> <w>sancti</w> <w>Salvatoris</w>, <w>ubi</w> <w>ipse</w> <w>praeciosus</w> <w>martyr</w> <w lemmaRef="sanctus">sanctus</w> <w>Bonefatius</w> <w>corpore</w> <w>requiescit</w>, <w>super</w> <w>fluvio</w> <w>Fulda</w> <w>per</w> <w>hanc</w> <w>seriem</w> <w>traditionis</w> <w>pro</w> <w>mercede</w> <w>nostrae</w> <w>augmentum</w> <w>donamus</w> <w>perpetualiter</w> <w>ad</w> <w>possedendum</w>, <w>ita</w> <w>ut</w> <w>ab</w> <w>ac</w> <w>die</w> <w>rectores</w> <w>ipsius</w> <w>monastirii</w> <w>ipsa</w> <w lemmaRef="villa">villa</w> <w>qui</w> <w>dicitur</w> <w>Tininga</w> <w>cum</w> <w>omnibus</w> <w>adiaecentiis</w> <w>vel</w> <w>appendiciis</w> <w>suis</w> <w>ad</w> <w>profectum</w> <w>ipsius</w> <w>ecclesiae</w> <w>eam</w> <w>teneant</w> <w>et</w> <w>possedeant</w> <w>et</w> <w>usque</w> <w>in</w> <w>perpetuum</w> <w>eis</w> <w>proficiat</w> <w>in</w> <w>augmentum</w>. <w>Et</w> <w>ut</w> <w>haec</w> <w lemmaRef="auctoritas">auctoritas</w> <w>firmior</w> <w>habeatur</w> <w>vel</w> <w>per</w> <w>tempora</w> <w>melius</w> <w>conservetur</w>, <w>subter</w> <w>eam</w> <w>firmavimus</w> <w>vel</w> <w>de</w> <w>anulo</w> <w>nostro</w> <w>sigillavimus</w>.</p>
+               <p xml:space="preserve"><w>Signum</w> (<w>MF</w>.) <w>Pippino</w> <w>gloriosissimo</w> <w>rege</w>.</p>
+               <p xml:space="preserve">(<w>C</w>.) <w>Hitherius</w> <w>invice</w> <w>Baddilone</w> (<w>SR</w>. <w>NT</w>.: <w>Hitherius</w> <w>subscripsi</w>). (<w>SI</w>. <w>D</w>.)</p>
+               <p xml:space="preserve"><w>Data</w> <w>in</w> <w>mense</w> <w>iunio</w> <w>anno</w> <w>nono</w> <w lemmaRef="regnum">regnum</w> <w>nostri</w> ; <w>actum</w> <w>Atiniago</w> <w>palatio</w> <w>publico</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,84 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain), Origné, Nr. 4</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Cartulaire manceau de Marmoutier, Tome Second (Ed. Laurain)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Franziska Quaas (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Mafalda Ertsen (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2020"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Cartulaire manceau de Marmoutier, Tome Second</title>
+                  <editor>Ernest Laurain</editor>
+                  <imprint>
+                     <pubPlace>Laval</pubPlace>
+                     <date when="1945" n="originalAusgabe">1945</date>
+                     <biblScope unit="pp">48-49</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Cartulaire manceau de Marmoutier, Tome Second, welches 1945 von Ernest Laurain herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="marmoutier_manceau.laurain_origné_0004">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p>Donation par Guillaume de Passavant de l’église de Houssay et de deux traits de dîme.</p>
+         </div>
+         <dateline>1180 – 1187<date notBefore="1180-01-01" notAfter="1187-12-31"/>
+         </dateline>
+         <note type="echtheit"/>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:marmoutier_manceau.laurain_origné_0004.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Willermus</w>, <w>Dei</w> <w lemmaRef="gratia">gratia</w> <w>Cenomanensis</w> <w lemmaRef="episcopus">episcopus</w>, <w>universis</w> <w>fidelibus</w> <w lemmaRef="in_domino_salutem">salutem</w>. <w>Nos</w> <w>intelligentes</w> <w>quod</w> <w>veritas</w> <w>sub</w> <w>scripti</w> <w>authoritate</w> <w>tutior</w> <w>debeat</w> <w>conservari</w>, <w>notum</w> <w>fieri</w> <w>curavimus</w> <w>nos</w> <w>intuitu</w> <w>divine</w> <w>pietatis</w> <w>et</w> <w>ex</w> <w>racione</w> <w>familiaritatis</w> <w>qua</w> <w>ecclesie</w> <w>Majoris</w> <w>monasterii</w> <w>sincera</w> <w>caritate</w> <w>uniti</w> <w>tenebamur</w>, <w>monachis</w> <w>ejusdem</w> <w>monasterii</w> <w>in</w> <w>perpetuum</w> <w>dedisse</w> <w>et</w> <w>concessisse</w> <w>ecclesiam</w> <w>Sancti</w> <w>Hylarii</w> <w>de</w> <w>Housseyo</w> <w>cum</w> <w>duabus</w> <w>partibus</w> <w>decimarum</w> <w>bladi</w> <w>et</w> <w>vini</w> <w>ultra</w> <w>aquam</w> <w>de</w> <w>Goece</w>, <w>que</w> <w>due</w> <w>partes</w> <w>cum</w> <w>tertia</w> <w>parte</w> <w>rectoris</w> <w>predicte</w> <w>ecclesie</w> <w>tracte</w> <w>erunt</w> <w>insimul</w> <w>in</w> <w>prioratu</w> <w>suo</w> <w>de</w> <w>Origneio</w> <w>in</w> <w>futuram</w> <w>cum</w> <w>duabusque</w> <w>partibus</w> <w>primitiarum</w> <w>tocius</w> <w>parrochie</w> <w>et</w> <w>cum</w> <w>duabus</w> <w>partibus</w> <w>oblacionem</w> <w>quinque</w> <w>festivitatum</w> <w>anni</w>, <w>videlicet</w> <w>Nativitatis</w> <w>Domini</w>, <w>beati</w> <w>Hylarii</w>, <w>Purificationis</w> <w>beate</w> <w>Marie</w>, <w>Pasche</w> <w>et</w> <w>festo</w> <w>Omnium</w> <w>Sanctorum</w>, <w>ita</w> <w>tamen</w> <w>quod</w> <w>rector</w> <w>predicte</w> <w>ecclesie</w> <w>qui</w> <w>pro</w> <w>tempore</w> <w>fuerit</w> <w>solvet</w> <w>super</w> <w>tertia</w> <w>parte</w> <w>sua</w> <w>de</w> <w>cetero</w> <w>synodum</w> <w>jusque</w> <w>Cenomanensis</w> <w>ecclesie</w>, <w>procuraciones</w> <w>et</w> <w>redevencias</w> <w>archidiaconi</w> <w>et</w> <w>decani</w> <w>pro</w> <w>se</w>, <w>pro</w> <w>prioratu</w> <w>capelle</w> <w>de</w> <w>Origniaco</w>, <w>et</w> <w>due</w> <w>partes</w> <w>premissorum</w> <w>cum</w> <w>predicto</w> <w>tractu</w> <w>predictis</w> <w>monachis</w> <w>remanebunt</w> <w>integre</w> <w>et</w> <w>perfecte</w>. <w>Et</w> <w>hoc</w> <w>concesserunt</w> <w>Nycholaus</w>, <w>decanus</w> <w>ecclesie</w> <w>nostre</w>, <w>illius</w> <w>terre</w> <w lemmaRef="diaconus">archidiaconus</w>, <w>et</w> <w>Raginaldus</w> <w>de</w> <w>Asneriis</w>, <w>ejusdem</w> <w>terre</w> <w lemmaRef="presbyter">archipresbyter</w>. <w>Et</w> <w>quod</w> <w>id</w> <w>fidelius</w> <w>in</w> <w>perpetuum</w> <w>conservetur</w>, <w>idem</w> <w>literis</w> <w>annotari</w> <w>et</w> <w>sigillo</w> <w>nostro</w> <w>fecimus</w> <w>communiri</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

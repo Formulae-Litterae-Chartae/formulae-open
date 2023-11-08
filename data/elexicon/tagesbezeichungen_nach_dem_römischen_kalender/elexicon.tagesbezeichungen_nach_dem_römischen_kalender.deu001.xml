@@ -1,0 +1,50 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Tagesbezeichungen nach dem römischen Kalender</title>
+            <author>Horst Lößlein</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021-12-09">2021-12-09</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                            Distributed under a Creative Commons Attribution 4.0 International License.
+                        </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="formula" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pattern extracts the whole formula</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="deu" n="urn:cts:formulae:elexicon.tagesbezeichungen_nach_dem_römischen_kalender.deu001">
+            <div type="textpart" n="1">
+               <p xml:space="preserve"><seg type="lex-title"><w>Tagesbezeichungen</w> <w>nach</w> <w>dem</w> <w>römischen</w> <w>Kalender</w></seg></p>
+               <p xml:space="preserve"><w>Im</w> <w>römischen</w> <w>Kalender</w> <w>wurden</w> <w>die</w> <w>Tage</w> <w>des</w> <w>Monats</w> <w>ausgehend</w> <w>von</w> <w>bestimmten</w> <w>Tagen</w> <w>rückwärts</w> <w>gezählt</w><note><p xml:space="preserve"> Der erste Tag vor dem Ausgangstag wurde mit <seg type="italic">pridie </seg>beschrieben<seg>.</seg></p></note>. <w>Ausgangspunkte</w> <w>für</w> <w>die</w> <w>Zählung</w> <w>waren</w> <w>die</w> <w>Kalenden</w> (<w type="latin-word" lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">kalendae</w>), <w>die</w> <w>Nonen</w> (<w type="latin-word" lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">nonae</w>) <w>sowie</w> <w>die</w> <w>Iden</w> (<w type="latin-word" lemmaRef="tagesbezeichungen_nach_dem_römischen_kalender">idus</w><note><p xml:space="preserve"> Vgl. zum römischen Kalender und seiner Benutzung im Mittelalter <bibl n="&lt;span class=&quot;surname&quot;&gt;Grotefend&lt;/span&gt;, Hermann: Handbuch der historischen Chronologie des deutschen Mittelalters und der Neuzeit, Hannover 1872.">H. Grotefend, Handbuch</bibl>, insb. S. 33-35 und Tafel XIX.</p></note>:</p>
+               <p xml:space="preserve">- <seg type="lex-keyword"><w>Kalenden</w></seg>: <w>der</w> <w>1</w>. <w>Tag</w> <w>des</w> <w>Monats</w></p>
+               <p xml:space="preserve">- <seg type="lex-keyword"><w>Nonen</w></seg>: <w>der</w> <w>5</w>. (<w>Januar</w>, <w>Februar</w>, <w>April</w>, <w>Juni</w>, <w>August</w>, <w>September</w>, <w>November</w>, <w>Dezember</w>) <w>beziehungsweise</w> <w>7</w>. (<w>März</w>, <w>Mai</w>, <w>Juli</w>, <w>Oktober</w>) <w>Tag</w> <w>des</w> <w>Monats</w></p>
+               <p xml:space="preserve">- <seg type="lex-keyword"><w>Iden</w></seg>: <w>der</w> <w>13</w>. (<w>Januar</w>, <w>Februar</w>, <w>April</w>, <w>Juni</w>, <w>August</w>, <w>September</w>, <w>November</w>, <w>Dezember</w>) <w>beziehungsweise</w> <w>15</w>. (<w>März</w>, <w>Mai</w>, <w>Juli</w>, <w>Oktober</w>) <w>Tag</w> <w>des</w> <w>Monats</w></p>
+               <p xml:space="preserve"><w>Beispiele</w>:</p>
+               <p xml:space="preserve"><w>Iden</w> <w>des</w> <w>März</w>: <w>15</w>. <w>März</w></p>
+               <p xml:space="preserve"><w>4</w>. <w>Nonen</w> <w>des</w> <w>Januar</w>: <w>2</w>. <w>Januar</w></p>
+               <p xml:space="preserve"><w>3</w>. <w>Kalenden</w> <w>des</w> <w>August</w>: <w>30</w>. <w>Juli</w></p>
+               <p xml:space="preserve"><w>Kalenderrechner</w>: <ref target="http://bilder.manuscripta-mediaevalia.de/gaeste/grotefend/grotefend.htm"><w>http</w>:<w>//bilder</w>.<w>manuscripta-mediaevalia</w>.<w>de/gaeste//grotefend/grotefend</w>.<w>htm</w></ref></p>
+               <p xml:space="preserve"><w>HL</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

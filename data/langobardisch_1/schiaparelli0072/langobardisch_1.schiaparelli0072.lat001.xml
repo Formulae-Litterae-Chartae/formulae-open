@@ -1,0 +1,88 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Codice Diplomatico Longobardo I (Ed. Schiaparelli) Nr. 72</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Codice Diplomatico Longobardo I (Ed. Schiaparelli)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Christina Rothe (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Dennis Lorenzen Studentische Hilfskraft, Universität Hamburg</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2022"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Codice Diplomatico Longobardo I</title>
+                  <editor>Luigi Schiaparelli</editor>
+                  <imprint>
+                     <pubPlace>Rom</pubPlace>
+                     <date when="1929" n="originalAusgabe">1929</date>
+                     <biblScope unit="pp">217–218</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Fonti per la storia d’Italia</title>
+                  <biblScope unit="volume">Bd. 1</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Codice Diplomatico Longobardo I, welches 1929 von Luigi Schiaparelli herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="langobardisch_1.schiaparelli0072">
+      <front xml:lang="ita">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">I fratelli Agelmo e Dazo promettono, anche per il fratello Pietro, di dare facoltà al cugino Stavelis di trattare la causa che avevano col cugino Borgolino e di esigere la parte loro spettante. Cedono a lui una metà della loro parte, e dell’ altra parte egli pagherà il prezzo che verrà fissato da quattro persone.</p>
+         </div>
+         <div type="section" subtype="ausstellungsort">
+            <p>„Sibiano“ (Bergamo?)</p>
+         </div>
+         <dateline>740 02 20<date when="0740-02-20"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:langobardisch_1.schiaparelli0072.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve">+ <w>Regnante</w> <w lemmaRef="dominus">domnus</w> <w>nostrus</w> <w>Liutprand</w> <w>et</w> <w>Hilprand</w> <w>uerus</w> <w>excellentissimi</w> <w>reges</w>, <w>anno</w> <w>piaetatis</w> <w>eorum</w> <w>uigesimo</w> <w>octauo</w> <w>et</w> <w>quinto</w>, <w>sud</w> <w>diae</w> <w>decimo</w> <w>kalendas</w> <w>martias</w>, <w>indictione</w> <w>octaua</w>. <w>Repromittemus</w> <w>adque</w> <w>spondemus</w> <w>nos</w> <w>Agelmus</w> <w>et</w> <w>Dazo</w> <w>germanis</w>, <w>pro</w> <w>nos</w> <w>et</w> <w>germano</w> <w>nostro</w> <w>Petrone</w>, <w>tibi</w> <w>Staueleni</w> <w>consoprino</w> <w>nostro</w> <w>de</w> <w>causas</w> <w>quas</w> <w>cum</w> <w>Borgolino</w> <w>consoprino</w> <w>nostro</w> <w>auemus</w>, <w>ut</w> <w>tu</w> <w>sebe</w> <w>dictus</w> <w>Stauelis</w> <w>deueas</w> <w>exegere</w> <w>de</w> <w>portione</w> <w>nostra</w> <w>et</w> <w>germano</w> <w>nostro</w> <w>Petroni</w> <w>de</w> <w>omnia</w> <w>et</w> <w>ex</w> <w>omnibus</w> <w>quanto</w> <w>Borgolinus</w> <w>de</w> <w>nostra</w> <w lemmaRef="iustitia">iustitia</w> <w>auit</w> <w>contra</w> <w>lege</w>, <w>tam</w> <w>de</w> <w>terras</w> <w>quam</w> <w>familias</w> <w>seo</w> <w>scherfas</w> <w>uel</w> <w>peculias</w> <w>aut</w> <w>qualiscumque</w> <w>res</w> <w>ad</w> <w>nos</w> <w>pertenente</w>, <w>ut</w> <w>tu</w> <w>iam</w> <w>dictus</w> <w>Stauelis</w> <w>per</w> <w>potestate</w> <w>deueas</w> <w>maenare</w> <w>omnis</w> <w>causas</w> <w>nostra</w> <w>cum</w> <w>eum</w> <w>tamquam</w> <w>nos</w> <w>ipsi</w> <w>et</w> <w>ad</w> <w lemmaRef="causa">causa</w> <w>nostra</w> <w>uice</w>. <w>et</w> <w>excossa</w> <w>de</w> <w>omnia</w>, <w>metiaetate</w> <w>de</w> <w>nostra</w> <w>portione</w> <w>tollas</w> <w>tu</w> <w>Stauelis</w>, <w>metiaetate</w> <w>tollamus</w> <w>nos</w> <w>Agelmus</w> <w>et</w> <w>Dazo</w>. <w>et</w> <w>Petrus</w>; <w>et</w> <w>de</w> <w>illa</w> <w>metiaetate</w>, <w>qui</w> <w>a</w> <w>nos</w> <w>peruenire</w> <w>deuit</w>, <w>tu</w> <w>Stauelis</w> <w>nobis</w> <w>pretio</w> <w>deueas</w> <w>dare</w>, <w>sicut</w> <w>ad</w> <w>quattuor</w> <w>homines</w> <w>Deo</w> <w>temens</w> <w>extimado</w> <w>fuere</w>. <w>unde</w> <w>repromittemus</w> <w>tibi</w> <w>eo</w> <w>supra</w> <w>Staueleni</w>, <w>si</w> <w>de</w> <w>sto</w> <w>omnia</w>, <w>que</w> <w>superius</w> <w>legitur</w>, <w>remouere</w> <w>presumseremus</w>, <w>nos</w> <w>aut</w> <w lemmaRef="germanus">germanus</w> <w>noster</w> <w>Petrus</w>, <w>aut</w> <w>nos</w> <w>antepuseremus</w> <w>ante</w> <w>Borgolino</w> <w>chonsobrino</w> <w>ipsas</w> <w>causas</w> <w>antea</w> <w>cum</w> <w>Borgolino</w> <w>finidas</w> <w>auemus</w>, <w>conponumus</w> <w>tibi</w> <w>Staueleni</w> <w>uel</w> <w>ad</w> <w>tuis</w> <w>heredibus</w> <w>[nos]</w> <w>Agelmus</w> <w>et</w> <w>Dazo</w> <w>aut</w> <w>nostri</w> <w>heredes</w> <w>pena</w> <w>nomine</w> <w>soledus</w> <w>ducentus</w>, <w>et</w> <w>ex</w> <w>ipsas</w> <w>res</w> <w>aueas</w> <w>in</w> <w>tua</w> <w>potestate</w> <w>per</w> <w>strumento</w> <w>uenditionis</w> <w>que</w> <w>ad</w> <w>nos</w> <w>pertenit</w>. <w>Garioald</w> <w>notarium</w> <w>scriuere</w> <w>rogauimus</w>. <w>Acto</w> <w>in</w> <w>Sibiano</w>. <w>Signum</w> + <w>manus</w> <w>Agelmo</w> <w>uiri</w> <w>deuoti</w>, <w>qui</w> <w>hanc</w> <w>cartolam</w> <w>fiere</w> <w>rogauit</w>. <w>Signum</w> + <w>manus</w> <w>Dazoni</w> <w>uiri</w> <w>deuoti</w>, <w>qui</w> <w>hanc</w> <w>cartolam</w> <w>promissionis</w> <w>fiere</w> <w>rogauit</w>. <w>Signum</w> + <w>manus</w> <w>Garibaldi</w> <w>uiri</w> <w>deuoti</w> <w>filius</w> <w>Albrichis</w> <w>testis</w>. <w>Signum</w> + <w>manus</w> <w>Staueleni</w> <w>uiri</w> <w>deuoti</w> <w>de</w> <w>Sibiano</w>, <w>quem</w> <w>ipsi</w> <w>singuli</w> <w>rogauerunt</w>, <w>testis</w>. + <w>Maurentius</w> <w>uir</w> <w>uenerabilis</w> <w>presbiter</w> <w>in</w> <w>hanc</w> <w>cartolam</w> <w>promissione</w> <w>rocatus</w> <w>ad</w> <w>Agelmu</w> <w>ad</w> <w>Dazone</w> <w>me</w> <w>teste</w> <w>subscrisi</w>. + <w>Ego</w> <w>qui</w> <w>supra</w> <w>Garioald</w> <w>pos</w> <w>tradida</w> <w>conpleui</w> <w>et</w> <w>dedi</w>.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

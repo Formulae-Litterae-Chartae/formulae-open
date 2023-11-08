@@ -1,0 +1,92 @@
+<?xml-model href="https://digitallatin.github.io/guidelines/critical-editions.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="deu">
+      <fileDesc>
+         <titleStmt>
+            <title>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis) Nr. 172</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Chartes de Saint-Julien de Tours (1002-1227) (Ed. Denis)</edition>
+            <respStmt>
+               <resp>Projektleiter</resp>
+               <resp xml:lang="eng">Principal investigator</resp>
+               <persName>Prof. Dr. Philippe Depreux (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Korrektur</resp>
+               <resp xml:lang="eng">Proofreading</resp>
+               <persName>Alexander Mueller (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Ida Focks (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Dokument- und Urkundenbearbeitung</resp>
+               <resp xml:lang="eng">Initial charter processing</resp>
+               <persName>Vanessa Krüger (Studentische Hilfskraft, Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Hauptentwickler</resp>
+               <resp xml:lang="eng">Lead developer</resp>
+               <persName>Dr. Matthew Munson (Universität Hamburg)</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Umwandlung in XML/TEI</resp>
+               <resp xml:lang="eng">Conversion into XML</resp>
+               <persName xml:lang="mul">Morgane Pica (Praktikantin, Ecole nationale des Chartes, Paris, Frankreich)</persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="mul">Formulae-Litterae-Chartae Projekt</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <date when="2021"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  Distributed under a Creative Commons Attribution 4.0 International License.
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Chartes de Saint-Julien de Tours (1002-1227)</title>
+                  <editor>Louis-J. Denis</editor>
+                  <imprint>
+                     <pubPlace>Le Mans</pubPlace>
+                     <date when="1912" n="originalAusgabe">1912</date>
+                     <biblScope unit="pp">194-195</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <title level="s">Archives historiques du Maine</title>
+                  <biblScope unit="volume">12</biblScope>
+               </series>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Bei dieser Datei handelt es sich um eine OCR-bearbeitete Transkription von Chartes de Saint-Julien de Tours (1002-1227), welches 1912 von Louis-J. Denis herausgegeben worden ist. Die OCR-Texte wurden korrigiert und in gemäß TEI-P5-Vorgaben in einzelne XML-TEI-Dateien, umgewandelt. Auf dieser Grundlage und unter Einhaltung der CapiTainS-Vorgaben wurde die Formulae-Litterae-Chartae-Projektdatenbank erstellt.</p>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+)" n="charta" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text type="charta" xml:id="tours_st_julien_denis.denis0172">
+      <front xml:lang="fre">
+         <div type="section" subtype="regest">
+            <p xml:space="preserve">Charte de l´official de Tours attestant la donation faite a l´abbaye de Saint-Julien de deux setiers de blé par feu Geoffroy du Moulinet, et la ratification de sa donation par Jeanne, sa veuve.</p>
+         </div>
+         <dateline>1219 02<date notBefore="1219-02-01" notAfter="1219-02-28"/>
+         </dateline>
+      </front>
+      <body>
+         <div type="edition" xml:lang="lat" n="urn:cts:formulae:tours_st_julien_denis.denis0172.lat001">
+            <div type="textpart" subtype="charta" n="1">
+               <p xml:space="preserve"><w>Magister</w> <w>A</w>., <w>officialis</w> <w>curie</w> <w>Turonensis</w>, <w>omnibus</w> <w>presentes</w> <w>litteras</w> <w>inspecturis</w>, <w lemmaRef="in_domino_salutem">salutem</w> <w>in</w> <w>Domino</w>. <w>Noverint</w> <w>universi</w> <w>quod</w> <w>bone</w> <w>memorie</w> <w>Gaufridus</w> <w>de</w> <w>Molineto</w>, <w>miles</w>, <w>agens</w> <w>in</w> <w>extremis</w>, <w>dedit</w> <w>Deo</w> <w>et</w> <w>ecclesie</w> <w>Beati</w> <w>Juliani</w> <w>Turonensis</w>, <w>pro</w> <w>remedio</w> <w>anime</w> <w>sue</w> <w>et</w> <w>antecessorum</w> <w>suorum</w>, <w>in</w> <w>puram</w> <w>et</w> <w>perpetuam</w> <w>elemosinam</w>, <w>duos</w> <w>sextarios</w> <w>bladi</w>, <w>unum</w> <w>scilicet</w> <w>frumenti</w> <w>et</w> <w>alium</w> <w>siliginis</w>, <w>in</w> <w>graingneria</w> <w>sua</w> <w>sita</w> <w>prope</w> <w>anteriorem</w> <w>calciatam</w> <w>staugni</w> <w>sui</w> <w>de</w> <w>Molineto</w>, <w>que</w> <w>dicitur</w> <w>graingneria</w> <w>Garini</w> <w>de</w> <w>Rocherello</w>. <w>Reddentur</w> <w>autem</w> <w>illi</w> <w>duo</w> <w>sextarii</w> <w>annuatim</w> <w>in</w> <w>festo</w> <w>Sancti</w> <w>Michaelis</w> <w>ad</w> <w>mensuram</w> <w>de</w> <w>Nozilleio</w>, <w>a</w> <w>possessore</w> <w>illius</w> <w>graingnerie</w>, <w>quicumque</w> <w>sit</w> <w>ille</w>, <w>abbati</w> <w>Sancti</w> <w>Juliani</w>, <w>vel</w> <w>mandato</w> <w>ipsius</w>. <w>Postmodum</w> <w>vero</w>, <w>eodem</w> <w>milite</w> <w>in</w> <w>ecclesia</w> <w>Beati</w> <w>Juliani</w> <w>ecclesiasticam</w> <w>sepulturam</w> <w>assecuto</w>, <w>Johanna</w>, <w>uxor</w> <w>ejusdem</w> <w>militis</w>, <w>coram</w> <w>nobis</w> <w>constituta</w>, <w>donationem</w> <w>a</w> <w>marito</w> <w>suo</w> <w>ecclesie</w> <w>Beati</w> <w>Juliani</w>, <w>nomine</w> <w>elemosine</w> <w>factam</w>, <w>concessit</w> <w>[</w>...<w>]</w> <w>et</w> <w>elemosinam</w> <w>ipsam</w> <w>predicte</w> <w>[ecclesie]</w> <w>in</w> <w>manu</w> <w>nostra</w> <w>firmavit</w>. <w>Presentibus</w> <w>Guillelmo</w> <w>de</w> <w>Rosariis</w>; <w>W</w>. <w>de</w> <w>Nogento</w> ... <w>ico</w> <w>de</w> <w>[</w>...<w>]</w> <w>[M</w><seg type="superscript "><w>o</w></seg> <w>CC</w><seg type="superscript "><w>o</w></seg> <w>XVIII</w><seg type="superscript "><w>o</w></seg>, <w>mense</w> <w>februario</w>.<w>]</w></p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
